@@ -1,0 +1,19 @@
+#!/bin/sh
+
+UT=/home/migration/other/MIDENG/PPCMBE/ut
+
+# wrapper for scripts that remove and add ID labels
+# assumes blanklines between tokens and after last token
+
+for file in $*
+
+do
+	cp $file $file.old
+	$UT/rm-id.prl $file > $file.no.id
+	echo "" >> $file.no.id
+	$UT/add-id.prl $file.no.id > $file.new
+	mv -f $file.new $file
+	/bin/rm $file.no.id
+done
+
+

@@ -1,0 +1,31 @@
+noun: N-*|NS-*|NPR-*|NPRS-*
+
+// conjunctions
+
+coordinatingConjunction:	*-og|*-heldur|*-enda|*-en|*-eða|*-ellegar
+
+// verbs
+
+finiteVerb: *MD*|*HVP*|*HVD*|*DOP*|*DOD*|*BEP*|*BED*|*VBP*|*VBD*|*AXD*|*AXP*
+
+linkingVerb: *-vera|*-verða|*-virðast|*-munu
+// EME : ... app*|BECAM*|bec[aou]m*|*beec[aou]m*|chanc*|chans*|Contin*|contin*|contyn*|fall*|feel*|fel*|get*|got*|grew*|grone|groying|grow*|gru*|keep*|kep*|Look*|lok*|look*|plead*|pled*|proou*|proov*|prou*|prov*|remain*|remaned|remayn*|sauor*|savor*|sauour*|savour*|sem*|seem*|shew*|show*|smel*|sound*|stay*|tast*|turn*|wax*|wex*
+
+// conjunctions
+
+relativeConjuction:	*-sem|*-er
+
+// adverbs
+
+reflexive:	*-sig|*-sinn
+whAdverb:	*-hvað|*-hvaðan|*-hvar|*-hve|*-hvenær|*-hvernig|*-hversu|*-hvert|*-hví
+temporalAdverb: *-þá|*-nú|*-núna|*-áður|*-síðar|*-seint|*-snemma|*-aldrei|*-sjaldan|*-stundum|*-oft|*-alltaf
+locativeAdverb:  *-inni|*-úti|*-niðri|*-heima|*-þar|*-hér|*-vestra|*-nyrðra|*-frammi|*-uppi
+negationAdverb:  *-ekki|*-eigi|*-ei
+
+// 125
+directionalAdverbTo: *-inn|*-út|*-niður|*-heim|*-þangað|*-hingað|*-fram|*-upp|*-suður|*-vestur|*-norður|*-austur
+directionalAdverbFrom: *-innan|*-utan|*-neðan|*-þaðan|*-héðan|*-heiman|*-sunnan|*-vestan|*-norðan|*-austan|*-framan|*-ofan
+
+
+

@@ -1,0 +1,27 @@
+#!/usr/bin/perl
+# use strict; use warnings;
+
+# part of make-ref
+# adds base of filename as ID and page and token numbers
+# assumes blanklines between tokens
+
+$/ = "";
+# $* = 1;			# multi-line matching (deprecated)
+
+$filename = shift(@ARGV);	# assign first arg to $filename
+$count = 0;
+
+($name, $rest) = split(/\./, $filename); # get base of filename
+
+($NAME = $name) =~ tr/a-z/A-Z/; # capitalize it
+
+open(FILENAME, "$filename");	# open input file 
+
+while (<FILENAME>) {
+    if (/\<P_([^\>]+)\>/) {	# find page reference
+	$page = $1;		# assign page number to PN
+    }
+    $count++;			# increment counter
+    s/\)\)\)\n\n/\)\) \(ID $NAME,$page.$count\)\)\n\n/;	# add ID
+    print;
+}       			

@@ -1,0 +1,17 @@
+#!/usr/bin/perl 
+# use strict; use warnings;
+
+# part of make-ref
+# removes old IDs in files 
+# updated IDs are added by add-id.prl
+
+$/ = "";
+
+while (<>) {
+
+	s/\(ID[^)]*\)//gm;			# get id for type (ID XXX)
+	s/\)[\t\s]*\n*[\t\s*]\)/\)\)/gm;	# delete space left by ID
+	s/\)\n\)/\)\)/gm;
+	print;
+
+    }

@@ -1,4 +1,4 @@
-CS="java -classpath ../forrit/CS_2.002.69.jar csearch/CorpusSearch"
+CS="java -classpath CS_2.002.75.jar csearch/CorpusSearch"
 
 python scripts/splitdet.py $1 $1.out
 python scripts/split2person.py $1.out $1.out

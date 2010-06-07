@@ -1,4 +1,4 @@
-CS="java -classpath ../forrit/CS_2.002.69.jar csearch/CorpusSearch"
+CS="java -classpath CS_2.002.75.jar csearch/CorpusSearch"
 
 tempfile="temp.psd"
 cp -f $1.psd $tempfile

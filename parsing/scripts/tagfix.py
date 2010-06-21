@@ -276,7 +276,7 @@ reps["\(ADVP-MWE \(P að-að\) \(ADJS-D minnsta-lítill\) \(N-D kosti-kostur\)\)
 
 reps["\(MWE_CP \(ADV svo-svo\) \(C að-að\)\)"]="(ADVP (ADVR svo-svo) (C að-að))"
 
-reps["\(MWE_CP \(ADV áður-áður\) \(C en-en\)\)"]="(ADVP-TMP (ADVR áður-áður) (PP (P en-en) (CP-CMP (WADVP-X 0))))"
+reps["\(MWE_CP \(ADV áður-áður\) \(C en-en\)\)"]="(ADVP-TMP (ADVR áður-áður) (PP (P en-en) (CP-CMP (WADVP 0))))"
 
 reps["\(MWE_AP \(PRO-G þess-það\) \(N-G háttar-háttur\)\)"]="(NP-POS (PRO-G þess-það) (N-G háttar-háttur))"
 
@@ -316,7 +316,7 @@ reps["\(ADJS-([NADG]) (mest[a-z]+)-mikill\)"]="(QS-\\1 \\2-mikill)"
 reps["MWE_"]=""
 reps["-MWE"]=""
 
-reps["\(CP-ADV \(C (sem|er)-\\1\)\)"]="(CP-REL (WXP-X 0) (C \\1-\\1))"
+reps["\(CP-ADV \(C (sem|er)-\\1\)\)"]="(CP-REL (WNP 0) (C \\1-\\1))"
 reps["\(CP-ADV \(C ([Aa]ð)-að\)\)"]="(CP-THT (C \\1-að))"
 
 for before,after in reps.items():	

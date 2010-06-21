@@ -282,6 +282,9 @@ reps["\((NS|PRO)-[NADG] ((hvorirtv|hvortv|hvorttv)[a-z]+)-([a-z]+)\)"]="(Q+NUM \
 
 reps["\(ADVP \(ADV einnig-einnig\)\)"]="(ALSO einnig-einnig)"
 
+reps["\(ADV ekki-ekki\)"]="(NEG ekki-ekki)"
+
+
 reps["\(ADJP \(ADJ-([NADG]) (marg[a-z]+)-margur\)\)"]="(Q-\\1 \\2-margur)"
 reps["\(ADJP \(ADJR-([NADG]) (fleir[a-z]+)-margur\)\)"]="(QR-\\1 \\2-margur)"
 reps["\(ADJP \(ADJS-([NADG]) (flest[a-z]+)-margur\)\)"]="(QS-\\1 \\2-margur)"

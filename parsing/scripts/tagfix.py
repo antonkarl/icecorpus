@@ -262,7 +262,7 @@ reps["\(ADVP-MWE \(OTHER-G annars-annar\) \(N-G staðar-staður\)\)"]="(NP-ADV (
 
 reps["\(ADVP-MWE \(C hvort-hvort\) \(C sem-sem\)\)"]="(CP-QUE (WQ hvort-hvort) (C sem-sem))"
 
-reps["\(ADVP-MWE \(P um-um\) \(N-A leið-leið\)\)"]="(PP (P um-um) (N-A leið-leið))"
+reps["\(ADVP-MWE \(P um-um\) \(N-A leið-leið\)\)"]="(PP (P um-um) (NP (N-A leið-leið)))"
 
 reps["\(PP \(MWE_PP \(ADV á-á\) \(P móti-móti\)\)"]="(PP (P á-á) (NP (N-D móti-móti))"
 

@@ -86,7 +86,7 @@ reps["\(ADJ-([A-Z]{4}S)"]="(ADJS-\\1" # adjective, superlative
 reps["\(V-(D[A-Z]{4})"]="(VAN-\\1" # VAN, passive participle (verbal or adjectival)
 reps["\(V-(P[A-Z123])"]="(VAG-\\1" # VAN, present participle
 reps["\(V-T[AM]"]="(VB" # VB, infinitive
-reps["\(V-(M[A-Z]+)"]="(VBI-\\1"  # VBI, imperative
+reps["\(V-(M[A-Z123]+)"]="(VBI-\\1"  # VBI, imperative
 reps["\(V-([IS][A-Z][123][A-Z]D)"]="(VBD-\\1"  # VBD, past (including past subjunctive)
 reps["\(V-([IS][A-Z][123][A-Z]P)"]="(VBP-\\1"  # VBP, present (including present subjunctive)
 reps["\(V-(U[AM])"]="(VBN-\\1"  # VBN, perfect participle
@@ -201,6 +201,9 @@ reps["\(ADV-W (["+allchars+"]+-["+allchars+"]+)\)"]="(WADV \\1)"
 # XXXXX
 reps["\((VBP|VBD|BED|BEP|HVD|HVP|MDP|MDD)-([IS])[A-Z123]{4} (["+allchars+"]+-["+allchars+"]+)\)"]="(\\1\\2 \\3)"
 
+# Preserve only predashial tag on imperative verbs
+reps["\(VBI-[A-Z123]+ "]="(VBI "
+
 # Preserve only predashial tag on infinitive verbs
 # disappears earlier
 # reps["\((VB|HV|BE)-[A-Z]{2} (["+allchars+"]+-["+allchars+"]+)\)"]="(\\1 \\2)"
@@ -284,6 +287,7 @@ reps["\(ADVP \(ADV einnig-einnig\)\)"]="(ALSO einnig-einnig)"
 
 reps["\(ADV ekki-ekki\)"]="(NEG ekki-ekki)"
 
+reps["\(ADVP \(ADV hvernig-hvernig\)\)"]="(CP-QUE (WADVP (WADV hvernig-hvernig)))"
 
 reps["\(ADJP \(ADJ-([NADG]) (marg[a-z]+)-margur\)\)"]="(Q-\\1 \\2-margur)"
 reps["\(ADJP \(ADJR-([NADG]) (fleir[a-z]+)-margur\)\)"]="(QR-\\1 \\2-margur)"

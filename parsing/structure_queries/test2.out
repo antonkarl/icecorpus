@@ -1,0 +1,34 @@
+/*
+PREFACE:  
+CorpusSearch copyright Beth Randall 2005.
+Date:  Tue Jun 22 15:33:30 GMT 2010
+
+command file:     test.q
+input file:       test.out
+output file:      test2.out
+
+node:   PP*
+query:  ([1]PP idoms  [2]PP) 
+  AND  ([1]PP idoms  NP*) 
+  AND  ([2]PP idoms  ADV) 
+*/
+/*
+HEADER:
+source file:  test.out
+*/
+/*
+HEADER:
+source file:  NULL
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  NULL			0/0/177
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  NULL			0/0/177
+whole search, hits/tokens/total
+				0/0/177
+*/

@@ -38,5 +38,9 @@ echo "Fix NP-POS"
 $CS structure_queries/move_np_pos2.q $FILE
 mv -f $FILE.out $FILE
 
+echo ""
+echo "Prune PP"
+$CS structure_queries/prune-pp.q $FILE
+mv -f $FILE.out $FILE
 
 mv -f $FILE $2

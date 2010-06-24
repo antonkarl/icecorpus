@@ -24,8 +24,8 @@ $CS structure_queries/prune-vp.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""
-echo "Fix CP-ADV"
-$CS structure_queries/fix-cpadv.q $FILE
+echo "Prune PP"
+$CS structure_queries/prune-pp.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""
@@ -39,8 +39,19 @@ $CS structure_queries/move_np_pos2.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""
-echo "Prune PP"
-$CS structure_queries/prune-pp.q $FILE
+echo "Add NP-POS for pronouns"
+$CS structure_queries/add_np_pos.q $FILE
 mv -f $FILE.out $FILE
+
+echo ""
+echo "Fix CP-ADV"
+$CS structure_queries/fix-cpadv.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Fix CP-REL"
+$CS structure_queries/fix-cprel.q $FILE
+mv -f $FILE.out $FILE
+
 
 mv -f $FILE $2

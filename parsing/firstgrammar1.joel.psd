@@ -1484,11 +1484,11 @@
 			   (NP-SBJ (D-N hinn-hinn) (ADJ-N hási-hás))))
 	  (. .-.)))
 
-( (IP-MAT 
-	  (NP-PRD (N-N ǫl-öl))
+( (IP-MAT (NP-PRD (N-N ǫl-öl))
 	  (VBPI heitir-heita)
-	  (NP-SBJ (N-N drykkur-drykkur))
-	  (CONJ en-en)
+	  (NP-SBJ (N-N drykkur-drykkur))))
+
+( (IP-MAT (CONJ en-en)
 	  (NP-SBJ (N-N l-ól))
 	  (BEPI er-vera)
 	  (NP-PRD (N-N band-band))
@@ -1496,14 +1496,16 @@
 
 ( (IP-MAT (NP-SBJ (N-N Tunga$-tunga) (D-N $n-hinn))
 	  (BEPI er-vera)
-	  (NP (N-D mál$-mál) (D-D $inu-hinn))
-	  (ADJP (ADJ-N vǫn-vanur))
-	  (CONJ en-en)
+	  (ADJP (NP (N-D mál$-mál) (D-D $inu-hinn))
+		(ADJ-N vǫn-vanur))))
+
+( (IP-MAT (CONJ en-en)
+	  (NP-SBJ-1 *exp*)
 	  (PP (P að-að)
 	      (NP (NS-D tönnu$-tönn) (D-D $num-hinn)))
 	  (BEPI er-vera)
-	  (NP-POS (N-G bits$-bitur) (D-G $ins-hinn))
-	  (NP-XXX (N-N vn-von))
+	  (NP-1 (NP-POS (N-G bits$-bitur) (D-G $ins-hinn))
+		(N-N vn-von))
 	  (. .-.)
 	  (MODERN-XXX (VBI sé-sjá)
 		      (NP (PRO-N þú-þú))
@@ -1555,8 +1557,7 @@
 	  (ADVP (ADV nær-nær))
 	  (. .-.)))
 
-( (IP-MAT 
-	  (VPBS vėnesk-venjast)
+( (IP-MAT (VPBS vėnesk-venjast)
 	  (NEG eigi-ekki)
 	  (NP-SBJ (ADJ-N góður-góður) (N-N maður-maður))
 	  (NP-OB1 (PRO-D því-það))
@@ -1654,8 +1655,7 @@
 	  (IP-INF (VB dúra-dúra))
 	  (. .-.)))
 
-( (IP-MAT 
-	  (NP-SBJ (NS-N rnar-runi))
+( (IP-MAT (NP-SBJ (NS-N rnar-runi))
 	  (VBPI heita-heita)
 	  (NP-PRD (NS-N geltir-göltur))
 	  (CONJ en-en)

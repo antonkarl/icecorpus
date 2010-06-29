@@ -1,7 +1,7 @@
 copy_corpus:t
 
 node: IP*
-query: (IP* idoms {1}CP-ADV) AND (CP-ADV idoms {2}C|P) AND (C|P idoms ef*|þegar*|meðan*|uns*|þó*|nema*|siðan*) AND (CP-ADV hassister {3}[1]*P*) AND (CP-ADV iprecedes [1]*P*)
+query: (IP* idoms {1}CP*) AND (CP* idoms {2}C|P) AND (C|P idoms [Ee]f*|Þegar*|þegar*|[Mm]eðan*|[Uu]ns*|Þó*|þó*|[Nn]ema*|[Ss]iðan*) AND (CP* hassister {3}[1]*P*) AND (CP* iprecedes [1]*P*)
 
 replace_label{1}:PP
 replace_label{2}:P

@@ -23,7 +23,7 @@ for line in linelist:
 		stem = re.search(verbMatch,line).group(3)
 		pro = re.search(verbMatch,line).group(4)
 		lemma = re.search(verbMatch,line).group(5)
-		fixed = '(V-'+tag+'2'+tag2+' '+stem+'$-'+lemma+') (NP-SBJ (PRO $'+pro+'-þú))'
+		fixed = '(V-'+tag+'2'+tag2+' '+stem+'$-'+lemma+') (NP-SBJ (PRO-N $'+pro+'-þú))'
 		fixed = re.sub( verbMatch, fixed, line )		
 		output = output + fixed 
 	else:

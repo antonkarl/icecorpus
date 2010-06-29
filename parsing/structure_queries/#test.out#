@@ -1,0 +1,2664 @@
+/*
+PREFACE:  
+CorpusSearch copyright Beth Randall 2005.
+Date:  Tue Jun 22 15:30:43 GMT 2010
+
+command file:     test.q
+output file:      test.out
+
+node:   PP*
+query:  ([1]PP idoms  NP*) 
+  AND  ([1]PP idoms  [2]PP) 
+*/
+/*
+HEADER:
+source file:  piltur4.anton.17apr1.psd
+*/
+
+/~*
+şağ-şağ er-vera eins og mér-ég sınist-sına ,-, ağ-ağ ég-ég hafi-hafa séğ-sjá
+şessa-şessi kind-kind áğur-áğur ,-, şegar-şegar ég-ég kom-koma fram-fram ağ-ağ
+húsu$-hús $num-hinn şar-şar í-í Tungu-tunga í-í vetur-vetur ,-, en-en
+ekki-ekki şori-şora ég-ég ağ-ağ sverja-sverja şağ-şağ ,-, held-halda ég-ég ,-,
+nei-nei ,-, ekki-ekki şori-şora ég-ég ağ-ağ sverja-sverja şağ-şağ ,-, og-og
+síğan-síğan şetta-şessi bris-bris ,-, sem-sem şarna-şarna er-vera á-á
+eyra$-eyra $nu-hinn .-.
+*~/
+/*
+52 PP:  52 PP, 58 NP, 53 PP
+*/
+( (PP (PP (ADV fram-fram) (P ağ-ağ))
+      (NP (NS-D húsu$-hús) (D-D $num-hinn)))
+  ) 
+
+
+/~*
+Rétt-rétt í-í şessu-şessi kom-koma Sigríğur-sigríğur litla-lítill frá-frá
+Tungu-tunga hlaupandi-hlaupa şar-şar ağ-ağ ,-, sem-sem şeir-hann voru-vera
+ağ-ağ şrefa-şrefa um-um tvævetlu$-tvævetla $na-hinn ,-, og-og kallaği-kalla
+,-, áğur-áğur en-en hún-hún kom-koma til-til şeirra-şağ :-:
+*~/
+/*
+2 PP:  2 PP, 8 NP, 3 PP
+*/
+( (PP (PP (ADV Rétt-rétt) (P í-í))
+      (NP (D-D şessu-şessi)))
+  ) 
+
+
+/~*
+sagği-segja Jón-jón og-og brá-bregğa hend$-hönd $inni-hinn framan-framan á-á
+nasir-nös Ásbirni-ásbirnur ,-, svo-svo úr-úr dreyrği-dreyrğur ;-;
+*~/
+/*
+16 PP:  16 PP, 22 NP, 17 PP
+*/
+( (PP (PP (ADV framan-framan) (P á-á))
+      (NP (NS-A nasir-nös)))
+  ) 
+
+
+/~*
+Şegar-şegar Sigríğur-sigríğur litla-lítill sá-sjá ,-, ağ-ağ Kolla-kolla
+var-vera burtu-burtu leidd-leiğa ,-, og-og heyrği-heyra ,-, ağ-ağ Jón-jón á-á
+Gili-gil ætti-eiga ağ-ağ eiga-eiga hana-hún ,-, gat-geta hún-hún ekki-ekki
+gjört-gera ağ-ağ sér-sig ağ-ağ fara-fara ağ-ağ gráta-gráta ,-, şví-şağ
+henni-hún şótti-şykja svo-svo vænt-vænn um-um hana-hún og-og hafği-hafa
+hlakkağ-hlakka svo-svo lengi-lengi til-til ağ-ağ sjá-sjá hana-hún aftur-aftur
+af-af fjall$-fjall $inu-hinn ;-;
+*~/
+/*
+128 PP:  128 PP, 134 NP, 129 PP
+*/
+( (PP (PP (ADV aftur-aftur) (P af-af))
+      (NP (N-D fjall$-fjall) (D-D $inu-hinn)))
+  ) 
+
+
+/~*
+Mér-ég er-vera svo-svo vel-vel viğ-viğ şig-şú ,-, ağ-ağ tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, şegar-şegar ég-ég
+sé-sjá şig-şú gráta-gráta ,-, sagği-segja hann-hann og-og klappaği-klappa
+Sigríği-sigríğur á-á herğar$-herğar $nar-hinn meğ-meğ hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+30 PP:  30 PP, 36 NP, 31 PP
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+
+/~*
+Ver$-vera $tu-şú samt-samt ekki-ekki ağ-ağ gráta-gráta út-út úr-úr şví-şağ ,-,
+Sigga-sigga mín-minn góğ-góğur ,-, sagği-segja Indriği-indriği ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+şú-şú eiga-eiga hvort-hvor şeirra-şağ ,-, sem-sem şú-şú vilt-vilja ;-;
+*~/
+/*
+17 PP:  17 PP, 23 NP, 18 PP
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D şví-şağ)))
+  ) 
+
+
+/~*
+En-en şú-şú ,-, Indriği-indriği ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir ağ-ağ Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, şví-şağ vera-vera má-mega ,-, ağ-ağ
+şiğ-şú unga-ungur fólk$-fólk $iğ-hinn fell$-fell $iğ-hinn meira-meira
+huga-hugi saman-saman en-en viğ-viğ feğur-fağir ykkar-şú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-şú şağ-şağ .-.
+*~/
+/*
+24 PP:  24 PP, 30 NP, 25 PP
+*/
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagği-leggja Fagurá-fagurá şar-şar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriği-indriği einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvağ-hver Bjarni-bjarni í-í Tungu-tunga hafği-hafa
+sagt-segja viğ-viğ hann-hann ,-, og-og biğur-biğja foreldra-foreldrar
+sína-sinn ağ-ağ lofa-lofa sér-sig yfir-yfir ağ-ağ Tungu-tunga ağ-ağ
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga şau-şağ şví-şağ ,-, en-en
+segja-segja honum-hann ağ-ağ vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+36 PP:  36 PP, 42 NP, 37 PP
+108 PP:  108 PP, 114 NP, 109 PP
+153 PP:  153 PP, 159 NP, 154 PP
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+
+/~*
+Şağ-şağ var-vera şá-şá ekki-ekki verra-verri ,-, sagği-segja Sigríğur-sigríğur
+í-í hálfum-hálfur hljóğum-hljóğ og-og ætlar-ætla ağ-ağ stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriğa-indriği ,-, og-og
+átti-eiga şağ-şağ ağ-ağ şığa-şığa hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í şess-şağ stağ-stağur óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móğur-móğir sinni-sinn undir-undir borğ$-borğ $inu-hinn .-.
+*~/
+/*
+45 PP:  45 PP, 51 NP, 46 PP
+97 PP:  97 PP, 103 NP, 98 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+
+/~*
+Şú-şú sagğir-sagğa honum-hann Indriğa-indriği til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+şín-şinn ,-, og-og svo-svo stelur-stela şú-şú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og şví-şağ fæ-fá ég-ég ekki-ekki roğ-roğ .-.
+*~/
+/*
+21 PP:  21 PP, 27 NP, 22 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.17apr1.psd	13/10/101
+*/
+/*
+HEADER:
+source file:  piltur4.anton.18apr1.psd
+*/
+
+/~*
+şağ-şağ er-vera eins og mér-ég sınist-sına ,-, ağ-ağ ég-ég hafi-hafa séğ-sjá
+şessa-şessi kind-kind áğur-áğur ,-, şegar-şegar ég-ég kom-koma fram-fram ağ-ağ
+húsu$-hús $num-hinn şar-şar í-í Tungu-tunga í-í vetur-vetur ,-, en-en
+ekki-ekki şori-şora ég-ég ağ-ağ sverja-sverja şağ-şağ ,-, held-halda ég-ég ,-,
+nei-nei ,-, ekki-ekki şori-şora ég-ég ağ-ağ sverja-sverja şağ-şağ ,-, og-og
+síğan-síğan şetta-şessi bris-bris ,-, sem-sem şarna-şarna er-vera á-á
+eyra$-eyra $nu-hinn .-.
+*~/
+/*
+52 PP:  52 PP, 58 NP, 53 PP
+*/
+( (PP (PP (ADV fram-fram) (P ağ-ağ))
+      (NP (NS-D húsu$-hús) (D-D $num-hinn)))
+  ) 
+
+
+/~*
+Rétt-rétt í-í şessu-şessi kom-koma Sigríğur-sigríğur litla-lítill frá-frá
+Tungu-tunga hlaupandi-hlaupa şar-şar ağ-ağ ,-, sem-sem şeir-hann voru-vera
+ağ-ağ şrefa-şrefa um-um tvævetlu$-tvævetla $na-hinn ,-, og-og kallaği-kalla
+,-, áğur-áğur en-en hún-hún kom-koma til-til şeirra-şağ :-:
+*~/
+/*
+2 PP:  2 PP, 8 NP, 3 PP
+*/
+( (PP (PP (ADV Rétt-rétt) (P í-í))
+      (NP (D-D şessu-şessi)))
+  ) 
+
+
+/~*
+sagği-segja Jón-jón og-og brá-bregğa hend$-hönd $inni-hinn framan-framan á-á
+nasir-nös Ásbirni-ásbirnur ,-, svo-svo úr-úr dreyrği-dreyrğur ;-;
+*~/
+/*
+16 PP:  16 PP, 22 NP, 17 PP
+*/
+( (PP (PP (ADV framan-framan) (P á-á))
+      (NP (NS-A nasir-nös)))
+  ) 
+
+
+/~*
+Şegar-şegar Sigríğur-sigríğur litla-lítill sá-sjá ,-, ağ-ağ Kolla-kolla
+var-vera burtu-burtu leidd-leiğa ,-, og-og heyrği-heyra ,-, ağ-ağ Jón-jón á-á
+Gili-gil ætti-eiga ağ-ağ eiga-eiga hana-hún ,-, gat-geta hún-hún ekki-ekki
+gjört-gera ağ-ağ sér-sig ağ-ağ fara-fara ağ-ağ gráta-gráta ,-, şví-şağ
+henni-hún şótti-şykja svo-svo vænt-vænn um-um hana-hún og-og hafği-hafa
+hlakkağ-hlakka svo-svo lengi-lengi til-til ağ-ağ sjá-sjá hana-hún aftur-aftur
+af-af fjall$-fjall $inu-hinn ;-;
+*~/
+/*
+128 PP:  128 PP, 134 NP, 129 PP
+*/
+( (PP (PP (ADV aftur-aftur) (P af-af))
+      (NP (N-D fjall$-fjall) (D-D $inu-hinn)))
+  ) 
+
+
+/~*
+Mér-ég er-vera svo-svo vel-vel viğ-viğ şig-şú ,-, ağ-ağ tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, şegar-şegar ég-ég
+sé-sjá şig-şú gráta-gráta ,-, sagği-segja hann-hann og-og klappaği-klappa
+Sigríği-sigríğur á-á herğar$-herğar $nar-hinn meğ-meğ hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+30 PP:  30 PP, 36 NP, 31 PP
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+
+/~*
+Ver$-vera $tu-şú samt-samt ekki-ekki ağ-ağ gráta-gráta út-út úr-úr şví-şağ ,-,
+Sigga-sigga mín-minn góğ-góğur ,-, sagği-segja Indriği-indriği ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+şú-şú eiga-eiga hvort-hvor şeirra-şağ ,-, sem-sem şú-şú vilt-vilja ;-;
+*~/
+/*
+17 PP:  17 PP, 23 NP, 18 PP
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D şví-şağ)))
+  ) 
+
+
+/~*
+En-en şú-şú ,-, Indriği-indriği ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir ağ-ağ Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, şví-şağ vera-vera má-mega ,-, ağ-ağ
+şiğ-şú unga-ungur fólk$-fólk $iğ-hinn fell$-fell $iğ-hinn meira-meira
+huga-hugi saman-saman en-en viğ-viğ feğur-fağir ykkar-şú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-şú şağ-şağ .-.
+*~/
+/*
+24 PP:  24 PP, 30 NP, 25 PP
+*/
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagği-leggja Fagurá-fagurá şar-şar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriği-indriği einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvağ-hver Bjarni-bjarni í-í Tungu-tunga hafği-hafa
+sagt-segja viğ-viğ hann-hann ,-, og-og biğur-biğja foreldra-foreldrar
+sína-sinn ağ-ağ lofa-lofa sér-sig yfir-yfir ağ-ağ Tungu-tunga ağ-ağ
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga şau-şağ şví-şağ ,-, en-en
+segja-segja honum-hann ağ-ağ vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+36 PP:  36 PP, 42 NP, 37 PP
+108 PP:  108 PP, 114 NP, 109 PP
+153 PP:  153 PP, 159 NP, 154 PP
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+
+/~*
+Şağ-şağ var-vera şá-şá ekki-ekki verra-verri ,-, sagği-segja Sigríğur-sigríğur
+í-í hálfum-hálfur hljóğum-hljóğ og-og ætlar-ætla ağ-ağ stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriğa-indriği ,-, og-og
+átti-eiga şağ-şağ ağ-ağ şığa-şığa hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í şess-şağ stağ-stağur óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móğur-móğir sinni-sinn undir-undir borğ$-borğ $inu-hinn .-.
+*~/
+/*
+45 PP:  45 PP, 51 NP, 46 PP
+97 PP:  97 PP, 103 NP, 98 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+
+/~*
+Şú-şú sagğir-sagğa honum-hann Indriğa-indriği til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+şín-şinn ,-, og-og svo-svo stelur-stela şú-şú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og şví-şağ fæ-fá ég-ég ekki-ekki roğ-roğ .-.
+*~/
+/*
+21 PP:  21 PP, 27 NP, 22 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.18apr1.psd	13/10/103
+*/
+/*
+HEADER:
+source file:  piltur4.anton.21apr1.psd
+*/
+
+/~*
+şağ-şağ er-vera eins og mér-ég sınist-sına ,-, ağ-ağ ég-ég hafi-hafa séğ-sjá
+şessa-şessi kind-kind áğur-áğur ,-, şegar-şegar ég-ég kom-koma fram-fram ağ-ağ
+húsu$-hús $num-hinn şar-şar í-í Tungu-tunga í-í vetur-vetur ,-, en-en
+ekki-ekki şori-şora ég-ég ağ-ağ sverja-sverja şağ-şağ ,-, held-halda ég-ég ,-,
+nei-nei ,-, ekki-ekki şori-şora ég-ég ağ-ağ sverja-sverja şağ-şağ ,-, og-og
+síğan-síğan şetta-şessi bris-bris ,-, sem-sem şarna-şarna er-vera á-á
+eyra$-eyra $nu-hinn .-.
+*~/
+/*
+52 PP:  52 PP, 58 NP, 53 PP
+*/
+( (PP (PP (ADV fram-fram) (P ağ-ağ))
+      (NP (NS-D húsu$-hús) (D-D $num-hinn)))
+  ) 
+
+
+/~*
+Rétt-rétt í-í şessu-şessi kom-koma Sigríğur-sigríğur litla-lítill frá-frá
+Tungu-tunga hlaupandi-hlaupa şar-şar ağ-ağ ,-, sem-sem şeir-hann voru-vera
+ağ-ağ şrefa-şrefa um-um tvævetlu$-tvævetla $na-hinn ,-, og-og kallaği-kalla
+,-, áğur-áğur en-en hún-hún kom-koma til-til şeirra-şağ :-:
+*~/
+/*
+2 PP:  2 PP, 8 NP, 3 PP
+*/
+( (PP (PP (ADV Rétt-rétt) (P í-í))
+      (NP (D-D şessu-şessi)))
+  ) 
+
+
+/~*
+sagği-segja Jón-jón og-og brá-bregğa hend$-hönd $inni-hinn framan-framan á-á
+nasir-nös Ásbirni-ásbirnur ,-, svo-svo úr-úr dreyrği-dreyrğur ;-;
+*~/
+/*
+16 PP:  16 PP, 22 NP, 17 PP
+*/
+( (PP (PP (ADV framan-framan) (P á-á))
+      (NP (NS-A nasir-nös)))
+  ) 
+
+
+/~*
+Şegar-şegar Sigríğur-sigríğur litla-lítill sá-sjá ,-, ağ-ağ Kolla-kolla
+var-vera burtu-burtu leidd-leiğa ,-, og-og heyrği-heyra ,-, ağ-ağ Jón-jón á-á
+Gili-gil ætti-eiga ağ-ağ eiga-eiga hana-hún ,-, gat-geta hún-hún ekki-ekki
+gjört-gera ağ-ağ sér-sig ağ-ağ fara-fara ağ-ağ gráta-gráta ,-, şví-şağ
+henni-hún şótti-şykja svo-svo vænt-vænn um-um hana-hún og-og hafği-hafa
+hlakkağ-hlakka svo-svo lengi-lengi til-til ağ-ağ sjá-sjá hana-hún aftur-aftur
+af-af fjall$-fjall $inu-hinn ;-;
+*~/
+/*
+128 PP:  128 PP, 134 NP, 129 PP
+*/
+( (PP (PP (ADV aftur-aftur) (P af-af))
+      (NP (N-D fjall$-fjall) (D-D $inu-hinn)))
+  ) 
+
+
+/~*
+Mér-ég er-vera svo-svo vel-vel viğ-viğ şig-şú ,-, ağ-ağ tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, şegar-şegar ég-ég
+sé-sjá şig-şú gráta-gráta ,-, sagği-segja hann-hann og-og klappaği-klappa
+Sigríği-sigríğur á-á herğar$-herğar $nar-hinn meğ-meğ hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+30 PP:  30 PP, 36 NP, 31 PP
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+
+/~*
+Ver$-vera $tu-şú samt-samt ekki-ekki ağ-ağ gráta-gráta út-út úr-úr şví-şağ ,-,
+Sigga-sigga mín-minn góğ-góğur ,-, sagği-segja Indriği-indriği ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+şú-şú eiga-eiga hvort-hvor şeirra-şağ ,-, sem-sem şú-şú vilt-vilja ;-;
+*~/
+/*
+17 PP:  17 PP, 23 NP, 18 PP
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D şví-şağ)))
+  ) 
+
+
+/~*
+En-en şú-şú ,-, Indriği-indriği ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir ağ-ağ Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, şví-şağ vera-vera má-mega ,-, ağ-ağ
+şiğ-şú unga-ungur fólk$-fólk $iğ-hinn fell$-fell $iğ-hinn meira-meira
+huga-hugi saman-saman en-en viğ-viğ feğur-fağir ykkar-şú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-şú şağ-şağ .-.
+*~/
+/*
+24 PP:  24 PP, 30 NP, 25 PP
+*/
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagği-leggja Fagurá-fagurá şar-şar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriği-indriği einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvağ-hver Bjarni-bjarni í-í Tungu-tunga hafği-hafa
+sagt-segja viğ-viğ hann-hann ,-, og-og biğur-biğja foreldra-foreldrar
+sína-sinn ağ-ağ lofa-lofa sér-sig yfir-yfir ağ-ağ Tungu-tunga ağ-ağ
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga şau-şağ şví-şağ ,-, en-en
+segja-segja honum-hann ağ-ağ vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+36 PP:  36 PP, 42 NP, 37 PP
+108 PP:  108 PP, 114 NP, 109 PP
+153 PP:  153 PP, 159 NP, 154 PP
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+
+/~*
+Şağ-şağ var-vera şá-şá ekki-ekki verra-verri ,-, sagği-segja Sigríğur-sigríğur
+í-í hálfum-hálfur hljóğum-hljóğ og-og ætlar-ætla ağ-ağ stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriğa-indriği ,-, og-og
+átti-eiga şağ-şağ ağ-ağ şığa-şığa hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í şess-şağ stağ-stağur óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móğur-móğir sinni-sinn undir-undir borğ$-borğ $inu-hinn .-.
+*~/
+/*
+45 PP:  45 PP, 51 NP, 46 PP
+97 PP:  97 PP, 103 NP, 98 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+
+/~*
+Şú-şú sagğir-sagğa honum-hann Indriğa-indriği til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+şín-şinn ,-, og-og svo-svo stelur-stela şú-şú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og şví-şağ fæ-fá ég-ég ekki-ekki roğ-roğ .-.
+*~/
+/*
+21 PP:  21 PP, 27 NP, 22 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.21apr1.psd	13/10/103
+*/
+/*
+HEADER:
+source file:  piltur4.anton.25apr1.psd
+*/
+
+/~*
+şağ-şağ er-vera eins og mér-ég sınist-sına ,-, ağ-ağ ég-ég hafi-hafa séğ-sjá
+şessa-şessi kind-kind áğur-áğur ,-, şegar-şegar ég-ég kom-koma fram-fram ağ-ağ
+húsu$-hús $num-hinn şar-şar í-í Tungu-tunga í-í vetur-vetur ,-, en-en
+ekki-ekki şori-şora ég-ég ağ-ağ sverja-sverja şağ-şağ ,-, held-halda ég-ég ,-,
+nei-nei ,-, ekki-ekki şori-şora ég-ég ağ-ağ sverja-sverja şağ-şağ ,-, og-og
+síğan-síğan şetta-şessi bris-bris ,-, sem-sem şarna-şarna er-vera á-á
+eyra$-eyra $nu-hinn .-.
+*~/
+/*
+52 PP:  52 PP, 58 NP, 53 PP
+*/
+( (PP (PP (ADV fram-fram) (P ağ-ağ))
+      (NP (NS-D húsu$-hús) (D-D $num-hinn)))
+  ) 
+
+
+/~*
+Rétt-rétt í-í şessu-şessi kom-koma Sigríğur-sigríğur litla-lítill frá-frá
+Tungu-tunga hlaupandi-hlaupa şar-şar ağ-ağ ,-, sem-sem şeir-hann voru-vera
+ağ-ağ şrefa-şrefa um-um tvævetlu$-tvævetla $na-hinn ,-, og-og kallaği-kalla
+,-, áğur-áğur en-en hún-hún kom-koma til-til şeirra-şağ :-:
+*~/
+/*
+2 PP:  2 PP, 8 NP, 3 PP
+*/
+( (PP (PP (ADV Rétt-rétt) (P í-í))
+      (NP (D-D şessu-şessi)))
+  ) 
+
+
+/~*
+sagği-segja Jón-jón og-og brá-bregğa hend$-hönd $inni-hinn framan-framan á-á
+nasir-nös Ásbirni-ásbirnur ,-, svo-svo úr-úr dreyrği-dreyrğur ;-;
+*~/
+/*
+16 PP:  16 PP, 22 NP, 17 PP
+*/
+( (PP (PP (ADV framan-framan) (P á-á))
+      (NP (NS-A nasir-nös)))
+  ) 
+
+
+/~*
+Şegar-şegar Sigríğur-sigríğur litla-lítill sá-sjá ,-, ağ-ağ Kolla-kolla
+var-vera burtu-burtu leidd-leiğa ,-, og-og heyrği-heyra ,-, ağ-ağ Jón-jón á-á
+Gili-gil ætti-eiga ağ-ağ eiga-eiga hana-hún ,-, gat-geta hún-hún ekki-ekki
+gjört-gera ağ-ağ sér-sig ağ-ağ fara-fara ağ-ağ gráta-gráta ,-, şví-şağ
+henni-hún şótti-şykja svo-svo vænt-vænn um-um hana-hún og-og hafği-hafa
+hlakkağ-hlakka svo-svo lengi-lengi til-til ağ-ağ sjá-sjá hana-hún aftur-aftur
+af-af fjall$-fjall $inu-hinn ;-;
+*~/
+/*
+128 PP:  128 PP, 134 NP, 129 PP
+*/
+( (PP (PP (ADV aftur-aftur) (P af-af))
+      (NP (N-D fjall$-fjall) (D-D $inu-hinn)))
+  ) 
+
+
+/~*
+Mér-ég er-vera svo-svo vel-vel viğ-viğ şig-şú ,-, ağ-ağ tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, şegar-şegar ég-ég
+sé-sjá şig-şú gráta-gráta ,-, sagği-segja hann-hann og-og klappaği-klappa
+Sigríği-sigríğur á-á herğar$-herğar $nar-hinn meğ-meğ hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+30 PP:  30 PP, 36 NP, 31 PP
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+
+/~*
+Ver$-vera $tu-şú samt-samt ekki-ekki ağ-ağ gráta-gráta út-út úr-úr şví-şağ ,-,
+Sigga-sigga mín-minn góğ-góğur ,-, sagği-segja Indriği-indriği ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+şú-şú eiga-eiga hvort-hvor şeirra-şağ ,-, sem-sem şú-şú vilt-vilja ;-;
+*~/
+/*
+17 PP:  17 PP, 23 NP, 18 PP
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D şví-şağ)))
+  ) 
+
+
+/~*
+En-en şú-şú ,-, Indriği-indriği ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir ağ-ağ Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, şví-şağ vera-vera má-mega ,-, ağ-ağ
+şiğ-şú unga-ungur fólk$-fólk $iğ-hinn fell$-fell $iğ-hinn meira-meira
+huga-hugi saman-saman en-en viğ-viğ feğur-fağir ykkar-şú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-şú şağ-şağ .-.
+*~/
+/*
+24 PP:  24 PP, 30 NP, 25 PP
+*/
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagği-leggja Fagurá-fagurá şar-şar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriği-indriği einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvağ-hver Bjarni-bjarni í-í Tungu-tunga hafği-hafa
+sagt-segja viğ-viğ hann-hann ,-, og-og biğur-biğja foreldra-foreldrar
+sína-sinn ağ-ağ lofa-lofa sér-sig yfir-yfir ağ-ağ Tungu-tunga ağ-ağ
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga şau-şağ şví-şağ ,-, en-en
+segja-segja honum-hann ağ-ağ vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+36 PP:  36 PP, 42 NP, 37 PP
+108 PP:  108 PP, 114 NP, 109 PP
+153 PP:  153 PP, 159 NP, 154 PP
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+
+/~*
+Şağ-şağ var-vera şá-şá ekki-ekki verra-verri ,-, sagği-segja Sigríğur-sigríğur
+í-í hálfum-hálfur hljóğum-hljóğ og-og ætlar-ætla ağ-ağ stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriğa-indriği ,-, og-og
+átti-eiga şağ-şağ ağ-ağ şığa-şığa hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í şess-şağ stağ-stağur óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móğur-móğir sinni-sinn undir-undir borğ$-borğ $inu-hinn .-.
+*~/
+/*
+45 PP:  45 PP, 51 NP, 46 PP
+97 PP:  97 PP, 103 NP, 98 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+
+/~*
+Şú-şú sagğir-sagğa honum-hann Indriğa-indriği til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+şín-şinn ,-, og-og svo-svo stelur-stela şú-şú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og şví-şağ fæ-fá ég-ég ekki-ekki roğ-roğ .-.
+*~/
+/*
+21 PP:  21 PP, 27 NP, 22 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.25apr1.psd	13/10/107
+*/
+/*
+HEADER:
+source file:  piltur4.anton.25apr2.psd
+*/
+
+/~*
+şağ-şağ er-vera eins og mér-ég sınist-sına ,-, ağ-ağ ég-ég hafi-hafa séğ-sjá
+şessa-şessi kind-kind áğur-áğur ,-, şegar-şegar ég-ég kom-koma fram-fram ağ-ağ
+húsu$-hús $num-hinn şar-şar í-í Tungu-tunga í-í vetur-vetur ,-, en-en
+ekki-ekki şori-şora ég-ég ağ-ağ sverja-sverja şağ-şağ ,-, held-halda ég-ég ,-,
+nei-nei ,-, ekki-ekki şori-şora ég-ég ağ-ağ sverja-sverja şağ-şağ ,-, og-og
+síğan-síğan şetta-şessi bris-bris ,-, sem-sem şarna-şarna er-vera á-á
+eyra$-eyra $nu-hinn .-.
+*~/
+/*
+52 PP:  52 PP, 58 NP, 53 PP
+*/
+( (PP (PP (ADV fram-fram) (P ağ-ağ))
+      (NP (NS-D húsu$-hús) (D-D $num-hinn)))
+  ) 
+
+
+/~*
+Rétt-rétt í-í şessu-şessi kom-koma Sigríğur-sigríğur litla-lítill frá-frá
+Tungu-tunga hlaupandi-hlaupa şar-şar ağ-ağ ,-, sem-sem şeir-hann voru-vera
+ağ-ağ şrefa-şrefa um-um tvævetlu$-tvævetla $na-hinn ,-, og-og kallaği-kalla
+,-, áğur-áğur en-en hún-hún kom-koma til-til şeirra-şağ :-:
+*~/
+/*
+2 PP:  2 PP, 8 NP, 3 PP
+*/
+( (PP (PP (ADV Rétt-rétt) (P í-í))
+      (NP (D-D şessu-şessi)))
+  ) 
+
+
+/~*
+sagği-segja Jón-jón og-og brá-bregğa hend$-hönd $inni-hinn framan-framan á-á
+nasir-nös Ásbirni-ásbirnur ,-, svo-svo úr-úr dreyrği-dreyrğur ;-;
+*~/
+/*
+16 PP:  16 PP, 22 NP, 17 PP
+*/
+( (PP (PP (ADV framan-framan) (P á-á))
+      (NP (NS-A nasir-nös)))
+  ) 
+
+
+/~*
+Şegar-şegar Sigríğur-sigríğur litla-lítill sá-sjá ,-, ağ-ağ Kolla-kolla
+var-vera burtu-burtu leidd-leiğa ,-, og-og heyrği-heyra ,-, ağ-ağ Jón-jón á-á
+Gili-gil ætti-eiga ağ-ağ eiga-eiga hana-hún ,-, gat-geta hún-hún ekki-ekki
+gjört-gera ağ-ağ sér-sig ağ-ağ fara-fara ağ-ağ gráta-gráta ,-, şví-şağ
+henni-hún şótti-şykja svo-svo vænt-vænn um-um hana-hún og-og hafği-hafa
+hlakkağ-hlakka svo-svo lengi-lengi til-til ağ-ağ sjá-sjá hana-hún aftur-aftur
+af-af fjall$-fjall $inu-hinn ;-;
+*~/
+/*
+128 PP:  128 PP, 134 NP, 129 PP
+*/
+( (PP (PP (ADV aftur-aftur) (P af-af))
+      (NP (N-D fjall$-fjall) (D-D $inu-hinn)))
+  ) 
+
+
+/~*
+Mér-ég er-vera svo-svo vel-vel viğ-viğ şig-şú ,-, ağ-ağ tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, şegar-şegar ég-ég
+sé-sjá şig-şú gráta-gráta ,-, sagği-segja hann-hann og-og klappaği-klappa
+Sigríği-sigríğur á-á herğar$-herğar $nar-hinn meğ-meğ hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+30 PP:  30 PP, 36 NP, 31 PP
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+
+/~*
+Ver$-vera $tu-şú samt-samt ekki-ekki ağ-ağ gráta-gráta út-út úr-úr şví-şağ ,-,
+Sigga-sigga mín-minn góğ-góğur ,-, sagği-segja Indriği-indriği ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+şú-şú eiga-eiga hvort-hvor şeirra-şağ ,-, sem-sem şú-şú vilt-vilja ;-;
+*~/
+/*
+17 PP:  17 PP, 23 NP, 18 PP
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D şví-şağ)))
+  ) 
+
+
+/~*
+En-en şú-şú ,-, Indriği-indriği ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir ağ-ağ Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, şví-şağ vera-vera má-mega ,-, ağ-ağ
+şiğ-şú unga-ungur fólk$-fólk $iğ-hinn fell$-fell $iğ-hinn meira-meira
+huga-hugi saman-saman en-en viğ-viğ feğur-fağir ykkar-şú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-şú şağ-şağ .-.
+*~/
+/*
+24 PP:  24 PP, 30 NP, 25 PP
+*/
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagği-leggja Fagurá-fagurá şar-şar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriği-indriği einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvağ-hver Bjarni-bjarni í-í Tungu-tunga hafği-hafa
+sagt-segja viğ-viğ hann-hann ,-, og-og biğur-biğja foreldra-foreldrar
+sína-sinn ağ-ağ lofa-lofa sér-sig yfir-yfir ağ-ağ Tungu-tunga ağ-ağ
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga şau-şağ şví-şağ ,-, en-en
+segja-segja honum-hann ağ-ağ vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+36 PP:  36 PP, 42 NP, 37 PP
+108 PP:  108 PP, 114 NP, 109 PP
+153 PP:  153 PP, 159 NP, 154 PP
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+
+/~*
+Şağ-şağ var-vera şá-şá ekki-ekki verra-verri ,-, sagği-segja Sigríğur-sigríğur
+í-í hálfum-hálfur hljóğum-hljóğ og-og ætlar-ætla ağ-ağ stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriğa-indriği ,-, og-og
+átti-eiga şağ-şağ ağ-ağ şığa-şığa hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í şess-şağ stağ-stağur óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móğur-móğir sinni-sinn undir-undir borğ$-borğ $inu-hinn .-.
+*~/
+/*
+45 PP:  45 PP, 51 NP, 46 PP
+97 PP:  97 PP, 103 NP, 98 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+
+/~*
+Şú-şú sagğir-sagğa honum-hann Indriğa-indriği til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+şín-şinn ,-, og-og svo-svo stelur-stela şú-şú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og şví-şağ fæ-fá ég-ég ekki-ekki roğ-roğ .-.
+*~/
+/*
+21 PP:  21 PP, 27 NP, 22 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.25apr2.psd	13/10/109
+*/
+/*
+HEADER:
+source file:  piltur4.anton.25apr3.psd
+*/
+
+/~*
+şağ-şağ er-vera eins og mér-ég sınist-sına ,-, ağ-ağ ég-ég hafi-hafa séğ-sjá
+şessa-şessi kind-kind áğur-áğur ,-, şegar-şegar ég-ég kom-koma fram-fram ağ-ağ
+húsu$-hús $num-hinn şar-şar í-í Tungu-tunga í-í vetur-vetur ,-, en-en
+ekki-ekki şori-şora ég-ég ağ-ağ sverja-sverja şağ-şağ ,-, held-halda ég-ég ,-,
+nei-nei ,-, ekki-ekki şori-şora ég-ég ağ-ağ sverja-sverja şağ-şağ ,-, og-og
+síğan-síğan şetta-şessi bris-bris ,-, sem-sem şarna-şarna er-vera á-á
+eyra$-eyra $nu-hinn .-.
+*~/
+/*
+52 PP:  52 PP, 58 NP, 53 PP
+*/
+( (PP (PP (ADV fram-fram) (P ağ-ağ))
+      (NP (NS-D húsu$-hús) (D-D $num-hinn)))
+  ) 
+
+
+/~*
+Rétt-rétt í-í şessu-şessi kom-koma Sigríğur-sigríğur litla-lítill frá-frá
+Tungu-tunga hlaupandi-hlaupa şar-şar ağ-ağ ,-, sem-sem şeir-hann voru-vera
+ağ-ağ şrefa-şrefa um-um tvævetlu$-tvævetla $na-hinn ,-, og-og kallaği-kalla
+,-, áğur-áğur en-en hún-hún kom-koma til-til şeirra-şağ :-:
+*~/
+/*
+2 PP:  2 PP, 8 NP, 3 PP
+*/
+( (PP (PP (ADV Rétt-rétt) (P í-í))
+      (NP (D-D şessu-şessi)))
+  ) 
+
+
+/~*
+sagği-segja Jón-jón og-og brá-bregğa hend$-hönd $inni-hinn framan-framan á-á
+nasir-nös Ásbirni-ásbirnur ,-, svo-svo úr-úr dreyrği-dreyrğur ;-;
+*~/
+/*
+16 PP:  16 PP, 22 NP, 17 PP
+*/
+( (PP (PP (ADV framan-framan) (P á-á))
+      (NP (NS-A nasir-nös)))
+  ) 
+
+
+/~*
+Şegar-şegar Sigríğur-sigríğur litla-lítill sá-sjá ,-, ağ-ağ Kolla-kolla
+var-vera burtu-burtu leidd-leiğa ,-, og-og heyrği-heyra ,-, ağ-ağ Jón-jón á-á
+Gili-gil ætti-eiga ağ-ağ eiga-eiga hana-hún ,-, gat-geta hún-hún ekki-ekki
+gjört-gera ağ-ağ sér-sig ağ-ağ fara-fara ağ-ağ gráta-gráta ,-, şví-şağ
+henni-hún şótti-şykja svo-svo vænt-vænn um-um hana-hún og-og hafği-hafa
+hlakkağ-hlakka svo-svo lengi-lengi til-til ağ-ağ sjá-sjá hana-hún aftur-aftur
+af-af fjall$-fjall $inu-hinn ;-;
+*~/
+/*
+128 PP:  128 PP, 134 NP, 129 PP
+*/
+( (PP (PP (ADV aftur-aftur) (P af-af))
+      (NP (N-D fjall$-fjall) (D-D $inu-hinn)))
+  ) 
+
+
+/~*
+Mér-ég er-vera svo-svo vel-vel viğ-viğ şig-şú ,-, ağ-ağ tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, şegar-şegar ég-ég
+sé-sjá şig-şú gráta-gráta ,-, sagği-segja hann-hann og-og klappaği-klappa
+Sigríği-sigríğur á-á herğar$-herğar $nar-hinn meğ-meğ hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+30 PP:  30 PP, 36 NP, 31 PP
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+
+/~*
+Ver$-vera $tu-şú samt-samt ekki-ekki ağ-ağ gráta-gráta út-út úr-úr şví-şağ ,-,
+Sigga-sigga mín-minn góğ-góğur ,-, sagği-segja Indriği-indriği ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+şú-şú eiga-eiga hvort-hvor şeirra-şağ ,-, sem-sem şú-şú vilt-vilja ;-;
+*~/
+/*
+17 PP:  17 PP, 23 NP, 18 PP
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D şví-şağ)))
+  ) 
+
+
+/~*
+En-en şú-şú ,-, Indriği-indriği ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir ağ-ağ Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, şví-şağ vera-vera má-mega ,-, ağ-ağ
+şiğ-şú unga-ungur fólk$-fólk $iğ-hinn fell$-fell $iğ-hinn meira-meira
+huga-hugi saman-saman en-en viğ-viğ feğur-fağir ykkar-şú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-şú şağ-şağ .-.
+*~/
+/*
+24 PP:  24 PP, 30 NP, 25 PP
+*/
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagği-leggja Fagurá-fagurá şar-şar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriği-indriği einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvağ-hver Bjarni-bjarni í-í Tungu-tunga hafği-hafa
+sagt-segja viğ-viğ hann-hann ,-, og-og biğur-biğja foreldra-foreldrar
+sína-sinn ağ-ağ lofa-lofa sér-sig yfir-yfir ağ-ağ Tungu-tunga ağ-ağ
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga şau-şağ şví-şağ ,-, en-en
+segja-segja honum-hann ağ-ağ vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+36 PP:  36 PP, 42 NP, 37 PP
+108 PP:  108 PP, 114 NP, 109 PP
+153 PP:  153 PP, 159 NP, 154 PP
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+
+/~*
+Şağ-şağ var-vera şá-şá ekki-ekki verra-verri ,-, sagği-segja Sigríğur-sigríğur
+í-í hálfum-hálfur hljóğum-hljóğ og-og ætlar-ætla ağ-ağ stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriğa-indriği ,-, og-og
+átti-eiga şağ-şağ ağ-ağ şığa-şığa hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í şess-şağ stağ-stağur óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móğur-móğir sinni-sinn undir-undir borğ$-borğ $inu-hinn .-.
+*~/
+/*
+45 PP:  45 PP, 51 NP, 46 PP
+97 PP:  97 PP, 103 NP, 98 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+
+/~*
+Şú-şú sagğir-sagğa honum-hann Indriğa-indriği til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+şín-şinn ,-, og-og svo-svo stelur-stela şú-şú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og şví-şağ fæ-fá ég-ég ekki-ekki roğ-roğ .-.
+*~/
+/*
+21 PP:  21 PP, 27 NP, 22 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.25apr3.psd	13/10/110
+*/
+/*
+HEADER:
+source file:  piltur4.anton.26apr1.psd
+*/
+
+/~*
+şağ-şağ er-vera eins og mér-ég sınist-sına ,-, ağ-ağ ég-ég hafi-hafa séğ-sjá
+şessa-şessi kind-kind áğur-áğur ,-, şegar-şegar ég-ég kom-koma fram-fram ağ-ağ
+húsu$-hús $num-hinn şar-şar í-í Tungu-tunga í-í vetur-vetur ,-, en-en
+ekki-ekki şori-şora ég-ég ağ-ağ sverja-sverja şağ-şağ ,-, held-halda ég-ég ,-,
+nei-nei ,-, ekki-ekki şori-şora ég-ég ağ-ağ sverja-sverja şağ-şağ ,-, og-og
+síğan-síğan şetta-şessi bris-bris ,-, sem-sem şarna-şarna er-vera á-á
+eyra$-eyra $nu-hinn .-.
+*~/
+/*
+52 PP:  52 PP, 58 NP, 53 PP
+*/
+( (PP (PP (ADV fram-fram) (P ağ-ağ))
+      (NP (NS-D húsu$-hús) (D-D $num-hinn)))
+  ) 
+
+
+/~*
+Rétt-rétt í-í şessu-şessi kom-koma Sigríğur-sigríğur litla-lítill frá-frá
+Tungu-tunga hlaupandi-hlaupa şar-şar ağ-ağ ,-, sem-sem şeir-hann voru-vera
+ağ-ağ şrefa-şrefa um-um tvævetlu$-tvævetla $na-hinn ,-, og-og kallaği-kalla
+,-, áğur-áğur en-en hún-hún kom-koma til-til şeirra-şağ :-:
+*~/
+/*
+2 PP:  2 PP, 8 NP, 3 PP
+*/
+( (PP (PP (ADV Rétt-rétt) (P í-í))
+      (NP (D-D şessu-şessi)))
+  ) 
+
+
+/~*
+sagği-segja Jón-jón og-og brá-bregğa hend$-hönd $inni-hinn framan-framan á-á
+nasir-nös Ásbirni-ásbirnur ,-, svo-svo úr-úr dreyrği-dreyrğur ;-;
+*~/
+/*
+16 PP:  16 PP, 22 NP, 17 PP
+*/
+( (PP (PP (ADV framan-framan) (P á-á))
+      (NP (NS-A nasir-nös)))
+  ) 
+
+
+/~*
+Şegar-şegar Sigríğur-sigríğur litla-lítill sá-sjá ,-, ağ-ağ Kolla-kolla
+var-vera burtu-burtu leidd-leiğa ,-, og-og heyrği-heyra ,-, ağ-ağ Jón-jón á-á
+Gili-gil ætti-eiga ağ-ağ eiga-eiga hana-hún ,-, gat-geta hún-hún ekki-ekki
+gjört-gera ağ-ağ sér-sig ağ-ağ fara-fara ağ-ağ gráta-gráta ,-, şví-şağ
+henni-hún şótti-şykja svo-svo vænt-vænn um-um hana-hún og-og hafği-hafa
+hlakkağ-hlakka svo-svo lengi-lengi til-til ağ-ağ sjá-sjá hana-hún aftur-aftur
+af-af fjall$-fjall $inu-hinn ;-;
+*~/
+/*
+128 PP:  128 PP, 134 NP, 129 PP
+*/
+( (PP (PP (ADV aftur-aftur) (P af-af))
+      (NP (N-D fjall$-fjall) (D-D $inu-hinn)))
+  ) 
+
+
+/~*
+Mér-ég er-vera svo-svo vel-vel viğ-viğ şig-şú ,-, ağ-ağ tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, şegar-şegar ég-ég
+sé-sjá şig-şú gráta-gráta ,-, sagği-segja hann-hann og-og klappaği-klappa
+Sigríği-sigríğur á-á herğar$-herğar $nar-hinn meğ-meğ hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+30 PP:  30 PP, 36 NP, 31 PP
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+
+/~*
+Ver$-vera $tu-şú samt-samt ekki-ekki ağ-ağ gráta-gráta út-út úr-úr şví-şağ ,-,
+Sigga-sigga mín-minn góğ-góğur ,-, sagği-segja Indriği-indriği ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+şú-şú eiga-eiga hvort-hvor şeirra-şağ ,-, sem-sem şú-şú vilt-vilja ;-;
+*~/
+/*
+17 PP:  17 PP, 23 NP, 18 PP
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D şví-şağ)))
+  ) 
+
+
+/~*
+En-en şú-şú ,-, Indriği-indriği ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir ağ-ağ Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, şví-şağ vera-vera má-mega ,-, ağ-ağ
+şiğ-şú unga-ungur fólk$-fólk $iğ-hinn fell$-fell $iğ-hinn meira-meira
+huga-hugi saman-saman en-en viğ-viğ feğur-fağir ykkar-şú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-şú şağ-şağ .-.
+*~/
+/*
+24 PP:  24 PP, 30 NP, 25 PP
+*/
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagği-leggja Fagurá-fagurá şar-şar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriği-indriği einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvağ-hver Bjarni-bjarni í-í Tungu-tunga hafği-hafa
+sagt-segja viğ-viğ hann-hann ,-, og-og biğur-biğja foreldra-foreldrar
+sína-sinn ağ-ağ lofa-lofa sér-sig yfir-yfir ağ-ağ Tungu-tunga ağ-ağ
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga şau-şağ şví-şağ ,-, en-en
+segja-segja honum-hann ağ-ağ vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+36 PP:  36 PP, 42 NP, 37 PP
+108 PP:  108 PP, 114 NP, 109 PP
+153 PP:  153 PP, 159 NP, 154 PP
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+
+/~*
+Şağ-şağ var-vera şá-şá ekki-ekki verra-verri ,-, sagği-segja Sigríğur-sigríğur
+í-í hálfum-hálfur hljóğum-hljóğ og-og ætlar-ætla ağ-ağ stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriğa-indriği ,-, og-og
+átti-eiga şağ-şağ ağ-ağ şığa-şığa hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í şess-şağ stağ-stağur óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móğur-móğir sinni-sinn undir-undir borğ$-borğ $inu-hinn .-.
+*~/
+/*
+45 PP:  45 PP, 51 NP, 46 PP
+97 PP:  97 PP, 103 NP, 98 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+
+/~*
+Şú-şú sagğir-sagğa honum-hann Indriğa-indriği til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+şín-şinn ,-, og-og svo-svo stelur-stela şú-şú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og şví-şağ fæ-fá ég-ég ekki-ekki roğ-roğ .-.
+*~/
+/*
+21 PP:  21 PP, 27 NP, 22 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.26apr1.psd	13/10/109
+*/
+/*
+HEADER:
+source file:  piltur4.anton.26apr2.psd
+*/
+
+/~*
+şağ-şağ er-vera eins og mér-ég sınist-sına ,-, ağ-ağ ég-ég hafi-hafa séğ-sjá
+şessa-şessi kind-kind áğur-áğur ,-, şegar-şegar ég-ég kom-koma fram-fram ağ-ağ
+húsu$-hús $num-hinn şar-şar í-í Tungu-tunga í-í vetur-vetur ,-, en-en
+ekki-ekki şori-şora ég-ég ağ-ağ sverja-sverja şağ-şağ ,-, held-halda ég-ég ,-,
+nei-nei ,-, ekki-ekki şori-şora ég-ég ağ-ağ sverja-sverja şağ-şağ ,-, og-og
+síğan-síğan şetta-şessi bris-bris ,-, sem-sem şarna-şarna er-vera á-á
+eyra$-eyra $nu-hinn .-.
+*~/
+/*
+52 PP:  52 PP, 58 NP, 53 PP
+*/
+( (PP (PP (ADV fram-fram) (P ağ-ağ))
+      (NP (NS-D húsu$-hús) (D-D $num-hinn)))
+  ) 
+
+
+/~*
+Rétt-rétt í-í şessu-şessi kom-koma Sigríğur-sigríğur litla-lítill frá-frá
+Tungu-tunga hlaupandi-hlaupa şar-şar ağ-ağ ,-, sem-sem şeir-hann voru-vera
+ağ-ağ şrefa-şrefa um-um tvævetlu$-tvævetla $na-hinn ,-, og-og kallaği-kalla
+,-, áğur-áğur en-en hún-hún kom-koma til-til şeirra-şağ :-:
+*~/
+/*
+2 PP:  2 PP, 8 NP, 3 PP
+*/
+( (PP (PP (ADV Rétt-rétt) (P í-í))
+      (NP (D-D şessu-şessi)))
+  ) 
+
+
+/~*
+sagği-segja Jón-jón og-og brá-bregğa hend$-hönd $inni-hinn framan-framan á-á
+nasir-nös Ásbirni-ásbirnur ,-, svo-svo úr-úr dreyrği-dreyrğur ;-;
+*~/
+/*
+16 PP:  16 PP, 22 NP, 17 PP
+*/
+( (PP (PP (ADV framan-framan) (P á-á))
+      (NP (NS-A nasir-nös)))
+  ) 
+
+
+/~*
+Şegar-şegar Sigríğur-sigríğur litla-lítill sá-sjá ,-, ağ-ağ Kolla-kolla
+var-vera burtu-burtu leidd-leiğa ,-, og-og heyrği-heyra ,-, ağ-ağ Jón-jón á-á
+Gili-gil ætti-eiga ağ-ağ eiga-eiga hana-hún ,-, gat-geta hún-hún ekki-ekki
+gjört-gera ağ-ağ sér-sig ağ-ağ fara-fara ağ-ağ gráta-gráta ,-, şví-şağ
+henni-hún şótti-şykja svo-svo vænt-vænn um-um hana-hún og-og hafği-hafa
+hlakkağ-hlakka svo-svo lengi-lengi til-til ağ-ağ sjá-sjá hana-hún aftur-aftur
+af-af fjall$-fjall $inu-hinn ;-;
+*~/
+/*
+128 PP:  128 PP, 134 NP, 129 PP
+*/
+( (PP (PP (ADV aftur-aftur) (P af-af))
+      (NP (N-D fjall$-fjall) (D-D $inu-hinn)))
+  ) 
+
+
+/~*
+Mér-ég er-vera svo-svo vel-vel viğ-viğ şig-şú ,-, ağ-ağ tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, şegar-şegar ég-ég
+sé-sjá şig-şú gráta-gráta ,-, sagği-segja hann-hann og-og klappaği-klappa
+Sigríği-sigríğur á-á herğar$-herğar $nar-hinn meğ-meğ hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+30 PP:  30 PP, 36 NP, 31 PP
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+
+/~*
+Ver$-vera $tu-şú samt-samt ekki-ekki ağ-ağ gráta-gráta út-út úr-úr şví-şağ ,-,
+Sigga-sigga mín-minn góğ-góğur ,-, sagği-segja Indriği-indriği ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+şú-şú eiga-eiga hvort-hvor şeirra-şağ ,-, sem-sem şú-şú vilt-vilja ;-;
+*~/
+/*
+17 PP:  17 PP, 23 NP, 18 PP
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D şví-şağ)))
+  ) 
+
+
+/~*
+En-en şú-şú ,-, Indriği-indriği ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir ağ-ağ Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, şví-şağ vera-vera má-mega ,-, ağ-ağ
+şiğ-şú unga-ungur fólk$-fólk $iğ-hinn fell$-fell $iğ-hinn meira-meira
+huga-hugi saman-saman en-en viğ-viğ feğur-fağir ykkar-şú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-şú şağ-şağ .-.
+*~/
+/*
+24 PP:  24 PP, 30 NP, 25 PP
+*/
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagği-leggja Fagurá-fagurá şar-şar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriği-indriği einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvağ-hver Bjarni-bjarni í-í Tungu-tunga hafği-hafa
+sagt-segja viğ-viğ hann-hann ,-, og-og biğur-biğja foreldra-foreldrar
+sína-sinn ağ-ağ lofa-lofa sér-sig yfir-yfir ağ-ağ Tungu-tunga ağ-ağ
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga şau-şağ şví-şağ ,-, en-en
+segja-segja honum-hann ağ-ağ vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+36 PP:  36 PP, 42 NP, 37 PP
+108 PP:  108 PP, 114 NP, 109 PP
+153 PP:  153 PP, 159 NP, 154 PP
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+
+/~*
+Şağ-şağ var-vera şá-şá ekki-ekki verra-verri ,-, sagği-segja Sigríğur-sigríğur
+í-í hálfum-hálfur hljóğum-hljóğ og-og ætlar-ætla ağ-ağ stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriğa-indriği ,-, og-og
+átti-eiga şağ-şağ ağ-ağ şığa-şığa hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í şess-şağ stağ-stağur óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móğur-móğir sinni-sinn undir-undir borğ$-borğ $inu-hinn .-.
+*~/
+/*
+45 PP:  45 PP, 51 NP, 46 PP
+97 PP:  97 PP, 103 NP, 98 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+
+/~*
+Şú-şú sagğir-sagğa honum-hann Indriğa-indriği til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+şín-şinn ,-, og-og svo-svo stelur-stela şú-şú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og şví-şağ fæ-fá ég-ég ekki-ekki roğ-roğ .-.
+*~/
+/*
+21 PP:  21 PP, 27 NP, 22 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.26apr2.psd	13/10/112
+*/
+/*
+HEADER:
+source file:  piltur4.anton.26apr3.psd
+*/
+
+/~*
+sagği-segja Jón-jón og-og brá-bregğa hend$-hönd $inni-hinn framan-framan á-á
+nasir-nös Ásbirni-ásbirnur ,-, svo-svo úr-úr dreyrği-dreyrğur ;-;
+*~/
+/*
+16 PP:  16 PP, 22 NP, 17 PP
+*/
+( (PP (PP (ADV framan-framan) (P á-á))
+      (NP (NS-A nasir-nös)))
+  ) 
+
+
+/~*
+Şegar-şegar Sigríğur-sigríğur litla-lítill sá-sjá ,-, ağ-ağ Kolla-kolla
+var-vera burtu-burtu leidd-leiğa ,-, og-og heyrği-heyra ,-, ağ-ağ Jón-jón á-á
+Gili-gil ætti-eiga ağ-ağ eiga-eiga hana-hún ,-, gat-geta hún-hún ekki-ekki
+gjört-gera ağ-ağ sér-sig ağ-ağ fara-fara ağ-ağ gráta-gráta ,-, şví-şağ
+henni-hún şótti-şykja svo-svo vænt-vænn um-um hana-hún og-og hafği-hafa
+hlakkağ-hlakka svo-svo lengi-lengi til-til ağ-ağ sjá-sjá hana-hún aftur-aftur
+af-af fjall$-fjall $inu-hinn ;-;
+*~/
+/*
+128 PP:  128 PP, 134 NP, 129 PP
+*/
+( (PP (PP (ADV aftur-aftur) (P af-af))
+      (NP (N-D fjall$-fjall) (D-D $inu-hinn)))
+  ) 
+
+
+/~*
+Mér-ég er-vera svo-svo vel-vel viğ-viğ şig-şú ,-, ağ-ağ tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, şegar-şegar ég-ég
+sé-sjá şig-şú gráta-gráta ,-, sagği-segja hann-hann og-og klappaği-klappa
+Sigríği-sigríğur á-á herğar$-herğar $nar-hinn meğ-meğ hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+30 PP:  30 PP, 36 NP, 31 PP
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+
+/~*
+Ver$-vera $tu-şú samt-samt ekki-ekki ağ-ağ gráta-gráta út-út úr-úr şví-şağ ,-,
+Sigga-sigga mín-minn góğ-góğur ,-, sagği-segja Indriği-indriği ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+şú-şú eiga-eiga hvort-hvor şeirra-şağ ,-, sem-sem şú-şú vilt-vilja ;-;
+*~/
+/*
+17 PP:  17 PP, 23 NP, 18 PP
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D şví-şağ)))
+  ) 
+
+
+/~*
+En-en şú-şú ,-, Indriği-indriği ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir ağ-ağ Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, şví-şağ vera-vera má-mega ,-, ağ-ağ
+şiğ-şú unga-ungur fólk$-fólk $iğ-hinn fell$-fell $iğ-hinn meira-meira
+huga-hugi saman-saman en-en viğ-viğ feğur-fağir ykkar-şú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-şú şağ-şağ .-.
+*~/
+/*
+24 PP:  24 PP, 30 NP, 25 PP
+*/
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagği-leggja Fagurá-fagurá şar-şar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriği-indriği einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvağ-hver Bjarni-bjarni í-í Tungu-tunga hafği-hafa
+sagt-segja viğ-viğ hann-hann ,-, og-og biğur-biğja foreldra-foreldrar
+sína-sinn ağ-ağ lofa-lofa sér-sig yfir-yfir ağ-ağ Tungu-tunga ağ-ağ
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga şau-şağ şví-şağ ,-, en-en
+segja-segja honum-hann ağ-ağ vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+36 PP:  36 PP, 42 NP, 37 PP
+108 PP:  108 PP, 114 NP, 109 PP
+153 PP:  153 PP, 159 NP, 154 PP
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+
+/~*
+Şağ-şağ var-vera şá-şá ekki-ekki verra-verri ,-, sagği-segja Sigríğur-sigríğur
+í-í hálfum-hálfur hljóğum-hljóğ og-og ætlar-ætla ağ-ağ stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriğa-indriği ,-, og-og
+átti-eiga şağ-şağ ağ-ağ şığa-şığa hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í şess-şağ stağ-stağur óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móğur-móğir sinni-sinn undir-undir borğ$-borğ $inu-hinn .-.
+*~/
+/*
+45 PP:  45 PP, 51 NP, 46 PP
+97 PP:  97 PP, 103 NP, 98 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+
+/~*
+Şú-şú sagğir-sagğa honum-hann Indriğa-indriği til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+şín-şinn ,-, og-og svo-svo stelur-stela şú-şú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og şví-şağ fæ-fá ég-ég ekki-ekki roğ-roğ .-.
+*~/
+/*
+21 PP:  21 PP, 27 NP, 22 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.26apr3.psd	11/8/118
+*/
+/*
+HEADER:
+source file:  piltur4.anton.26apr4.psd
+*/
+
+/~*
+Mér-ég er-vera svo-svo vel-vel viğ-viğ şig-şú ,-, ağ-ağ tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, şegar-şegar ég-ég
+sé-sjá şig-şú gráta-gráta ,-, sagği-segja hann-hann og-og klappaği-klappa
+Sigríği-sigríğur á-á herğar$-herğar $nar-hinn meğ-meğ hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+30 PP:  30 PP, 36 NP, 31 PP
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+
+/~*
+Ver$-vera $tu-şú samt-samt ekki-ekki ağ-ağ gráta-gráta út-út úr-úr şví-şağ ,-,
+Sigga-sigga mín-minn góğ-góğur ,-, sagği-segja Indriği-indriği ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+şú-şú eiga-eiga hvort-hvor şeirra-şağ ,-, sem-sem şú-şú vilt-vilja ;-;
+*~/
+/*
+17 PP:  17 PP, 23 NP, 18 PP
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D şví-şağ)))
+  ) 
+
+
+/~*
+En-en şú-şú ,-, Indriği-indriği ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir ağ-ağ Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, şví-şağ vera-vera má-mega ,-, ağ-ağ
+şiğ-şú unga-ungur fólk$-fólk $iğ-hinn fell$-fell $iğ-hinn meira-meira
+huga-hugi saman-saman en-en viğ-viğ feğur-fağir ykkar-şú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-şú şağ-şağ .-.
+*~/
+/*
+24 PP:  24 PP, 30 NP, 25 PP
+*/
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagği-leggja Fagurá-fagurá şar-şar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriği-indriği einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvağ-hver Bjarni-bjarni í-í Tungu-tunga hafği-hafa
+sagt-segja viğ-viğ hann-hann ,-, og-og biğur-biğja foreldra-foreldrar
+sína-sinn ağ-ağ lofa-lofa sér-sig yfir-yfir ağ-ağ Tungu-tunga ağ-ağ
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga şau-şağ şví-şağ ,-, en-en
+segja-segja honum-hann ağ-ağ vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+36 PP:  36 PP, 42 NP, 37 PP
+108 PP:  108 PP, 114 NP, 109 PP
+153 PP:  153 PP, 159 NP, 154 PP
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+
+/~*
+Şağ-şağ var-vera şá-şá ekki-ekki verra-verri ,-, sagği-segja Sigríğur-sigríğur
+í-í hálfum-hálfur hljóğum-hljóğ og-og ætlar-ætla ağ-ağ stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriğa-indriği ,-, og-og
+átti-eiga şağ-şağ ağ-ağ şığa-şığa hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í şess-şağ stağ-stağur óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móğur-móğir sinni-sinn undir-undir borğ$-borğ $inu-hinn .-.
+*~/
+/*
+45 PP:  45 PP, 51 NP, 46 PP
+97 PP:  97 PP, 103 NP, 98 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+
+/~*
+Şú-şú sagğir-sagğa honum-hann Indriğa-indriği til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+şín-şinn ,-, og-og svo-svo stelur-stela şú-şú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og şví-şağ fæ-fá ég-ég ekki-ekki roğ-roğ .-.
+*~/
+/*
+21 PP:  21 PP, 27 NP, 22 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.26apr4.psd	9/6/141
+*/
+/*
+HEADER:
+source file:  piltur4.anton.27apr1.psd
+*/
+
+/~*
+og-og veitti-veita şó-şó miğur-lítt ,-, ŞVÍ-ŞVÍ Sigríğur-sigríğur kunni-kunna
+allar-allur Úlfarsrímur-úlfarsrímur spjaldan$-spjald $na-hinn á-á milli-milli
+auk-auk alls-allur annars-annar .-.
+*~/
+/*
+33 PP:  33 PP, 34 NP-1, 41 PP
+*/
+( (PP (NP-1 (NS-G spjaldan$-spjald) (D-G $na-hinn))
+      (P á-á)
+      (PP (P milli-milli)
+	  (NP *ICH*-1)))
+  ) 
+
+
+/~*
+Şağ-şağ var-vera şá-şá ekki-ekki verra-verri ,-, sagği-segja Sigríğur-sigríğur
+í-í hálfum-hálfur hljóğum-hljóğ og-og ætlar-ætla ağ-ağ stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriğa-indriği ,-, og-og
+átti-eiga şağ-şağ ağ-ağ şığa-şığa hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í şess-şağ stağ-stağur óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móğur-móğir sinni-sinn undir-undir borğ$-borğ $inu-hinn .-.
+*~/
+/*
+45 PP:  45 PP, 51 NP, 46 PP
+97 PP:  97 PP, 103 NP, 98 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+
+/~*
+Şú-şú sagğir-sagğa honum-hann Indriğa-indriği til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+şín-şinn ,-, og-og svo-svo stelur-stela şú-şú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og şví-şağ fæ-fá ég-ég ekki-ekki roğ-roğ .-.
+*~/
+/*
+21 PP:  21 PP, 27 NP, 22 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.27apr1.psd	4/3/164
+*/
+/*
+HEADER:
+source file:  piltur4.anton.27apr2.psd
+*/
+
+/~*
+og-og veitti-veita şó-şó miğur-lítt ,-, ŞVÍ-ŞVÍ Sigríğur-sigríğur kunni-kunna
+allar-allur Úlfarsrímur-úlfarsrímur spjaldan$-spjald $na-hinn á-á milli-milli
+auk-auk alls-allur annars-annar .-.
+*~/
+/*
+33 PP:  33 PP, 34 NP-1, 41 PP
+*/
+( (PP (NP-1 (NS-G spjaldan$-spjald) (D-G $na-hinn))
+      (P á-á)
+      (PP (P milli-milli)
+	  (NP *ICH*-1)))
+  ) 
+
+
+/~*
+Şağ-şağ var-vera şá-şá ekki-ekki verra-verri ,-, sagği-segja Sigríğur-sigríğur
+í-í hálfum-hálfur hljóğum-hljóğ og-og ætlar-ætla ağ-ağ stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriğa-indriği ,-, og-og
+átti-eiga şağ-şağ ağ-ağ şığa-şığa hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í şess-şağ stağ-stağur óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móğur-móğir sinni-sinn undir-undir borğ$-borğ $inu-hinn .-.
+*~/
+/*
+45 PP:  45 PP, 51 NP, 46 PP
+97 PP:  97 PP, 103 NP, 98 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+
+/~*
+Şú-şú sagğir-sagğa honum-hann Indriğa-indriği til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+şín-şinn ,-, og-og svo-svo stelur-stela şú-şú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og şví-şağ fæ-fá ég-ég ekki-ekki roğ-roğ .-.
+*~/
+/*
+21 PP:  21 PP, 27 NP, 22 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.27apr2.psd	4/3/167
+*/
+/*
+HEADER:
+source file:  piltur4.anton.27apr3..psd
+*/
+
+/~*
+og-og veitti-veita şó-şó miğur-lítt ,-, ŞVÍ-ŞVÍ Sigríğur-sigríğur kunni-kunna
+allar-allur Úlfarsrímur-úlfarsrímur spjaldan$-spjald $na-hinn á-á milli-milli
+auk-auk alls-allur annars-annar .-.
+*~/
+/*
+33 PP:  33 PP, 34 NP-1, 41 PP
+*/
+( (PP (NP-1 (NS-G spjaldan$-spjald) (D-G $na-hinn))
+      (P á-á)
+      (PP (P milli-milli)
+	  (NP *ICH*-1)))
+  ) 
+
+
+/~*
+Şağ-şağ var-vera şá-şá ekki-ekki verra-verri ,-, sagği-segja Sigríğur-sigríğur
+í-í hálfum-hálfur hljóğum-hljóğ og-og ætlar-ætla ağ-ağ stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriğa-indriği ,-, og-og
+átti-eiga şağ-şağ ağ-ağ şığa-şığa hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í şess-şağ stağ-stağur óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móğur-móğir sinni-sinn undir-undir borğ$-borğ $inu-hinn .-.
+*~/
+/*
+45 PP:  45 PP, 51 NP, 46 PP
+97 PP:  97 PP, 103 NP, 98 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+
+/~*
+Şú-şú sagğir-sagğa honum-hann Indriğa-indriği til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+şín-şinn ,-, og-og svo-svo stelur-stela şú-şú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og şví-şağ fæ-fá ég-ég ekki-ekki roğ-roğ .-.
+*~/
+/*
+21 PP:  21 PP, 27 NP, 22 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.27apr3..psd	4/3/170
+*/
+/*
+HEADER:
+source file:  piltur4.anton.27apr4.psd
+*/
+
+/~*
+og-og veitti-veita şó-şó miğur-lítt ,-, ŞVÍ-ŞVÍ Sigríğur-sigríğur kunni-kunna
+allar-allur Úlfarsrímur-úlfarsrímur spjaldan$-spjald $na-hinn á-á milli-milli
+auk-auk alls-allur annars-annar .-.
+*~/
+/*
+33 PP:  33 PP, 34 NP-1, 41 PP
+*/
+( (PP (NP-1 (NS-G spjaldan$-spjald) (D-G $na-hinn))
+      (P á-á)
+      (PP (P milli-milli)
+	  (NP *ICH*-1)))
+  ) 
+
+
+/~*
+en-en sté-stíga í-í şess-şağ stağ-stağur óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móğur-móğir sinni-sinn undir-undir borğ$-borğ $inu-hinn .-.
+*~/
+/*
+20 PP:  20 PP, 26 NP, 21 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur)
+	  (D-A $inn-hinn)
+	  (PP (P á-á)
+	      (NP (N-D móğur-móğir) (PRO-D sinni-sinn)))))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.27apr4.psd	2/2/176
+*/
+/*
+HEADER:
+source file:  piltur4.anton.27apr5.psd
+*/
+
+/~*
+og-og veitti-veita şó-şó miğur-lítt ,-, ŞVÍ-ŞVÍ Sigríğur-sigríğur kunni-kunna
+allar-allur Úlfarsrímur-úlfarsrímur spjaldan$-spjald $na-hinn á-á milli-milli
+auk-auk alls-allur annars-annar .-.
+*~/
+/*
+33 PP:  33 PP, 34 NP-1, 41 PP
+*/
+( (PP (NP-1 (NS-G spjaldan$-spjald) (D-G $na-hinn))
+      (P á-á)
+      (PP (P milli-milli)
+	  (NP *ICH*-1)))
+  ) 
+
+
+/~*
+en-en sté-stíga í-í şess-şağ stağ-stağur óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móğur-móğir sinni-sinn undir-undir borğ$-borğ $inu-hinn .-.
+*~/
+/*
+20 PP:  20 PP, 26 NP, 21 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur)
+	  (D-A $inn-hinn)
+	  (PP (P á-á)
+	      (NP (N-D móğur-móğir) (PRO-D sinni-sinn)))))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.27apr5.psd	2/2/198
+*/
+/*
+HEADER:
+source file:  piltur4.anton.28apr1.psd
+*/
+
+/~*
+og-og veitti-veita şó-şó miğur-lítt ,-, ŞVÍ-ŞVÍ Sigríğur-sigríğur kunni-kunna
+allar-allur Úlfarsrímur-úlfarsrímur spjaldan$-spjald $na-hinn á-á milli-milli
+auk-auk alls-allur annars-annar .-.
+*~/
+/*
+33 PP:  33 PP, 34 NP-1, 41 PP
+*/
+( (PP (NP-1 (NS-G spjaldan$-spjald) (D-G $na-hinn))
+      (P á-á)
+      (PP (P milli-milli)
+	  (NP *ICH*-1)))
+  ) 
+
+
+/~*
+en-en sté-stíga í-í şess-şağ stağ-stağur óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móğur-móğir sinni-sinn undir-undir borğ$-borğ $inu-hinn .-.
+*~/
+/*
+20 PP:  20 PP, 26 NP, 21 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur)
+	  (D-A $inn-hinn)
+	  (PP (P á-á)
+	      (NP (N-D móğur-móğir) (PRO-D sinni-sinn)))))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.28apr1.psd	2/2/223
+*/
+/*
+HEADER:
+source file:  piltur4.anton.29apr1.psd
+*/
+
+/~*
+og-og veitti-veita şó-şó miğur-lítt ,-, ŞVÍ-ŞVÍ Sigríğur-sigríğur kunni-kunna
+allar-allur Úlfarsrímur-úlfarsrímur spjaldan$-spjald $na-hinn á-á milli-milli
+auk-auk alls-allur annars-annar .-.
+*~/
+/*
+33 PP:  33 PP, 34 NP-1, 41 PP
+*/
+( (PP (NP-1 (NS-G spjaldan$-spjald) (D-G $na-hinn))
+      (P á-á)
+      (PP (P milli-milli)
+	  (NP *ICH*-1)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.29apr1.psd	1/1/223
+*/
+/*
+HEADER:
+source file:  piltur4.anton.joel.may20.psd
+*/
+
+/~*
+og-og veitti-veita şó-şó miğur-lítt ,-, ŞVÍ-ŞVÍ Sigríğur-sigríğur kunni-kunna
+allar-allur Úlfarsrímur-úlfarsrímur spjaldan$-spjald $na-hinn á-á milli-milli
+auk-auk alls-allur annars-annar .-.
+*~/
+/*
+33 PP:  33 PP, 34 NP-1, 41 PP
+*/
+( (PP (NP-1 (NS-G spjaldan$-spjald) (D-G $na-hinn))
+      (P á-á)
+      (PP (P milli-milli)
+	  (NP *ICH*-1)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.joel.may20.psd	1/1/223
+*/
+/*
+HEADER:
+source file:  piltur4.anton.joel.may22.psd
+*/
+
+/~*
+og-og veitti-veita şó-şó miğur-lítt ,-, ŞVÍ-ŞVÍ Sigríğur-sigríğur kunni-kunna
+allar-allur Úlfarsrímur-úlfarsrímur spjaldan$-spjald $na-hinn á-á milli-milli
+auk-auk alls-allur annars-annar .-.
+*~/
+/*
+33 PP:  33 PP, 34 NP-1, 41 PP
+*/
+( (PP (NP-1 (NS-G spjaldan$-spjald) (D-G $na-hinn))
+      (P á-á)
+      (PP (P milli-milli)
+	  (NP *ICH*-1)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.joel.may22.psd	1/1/223
+*/
+/*
+HEADER:
+source file:  piltur4.anton.joel.may22a.psd
+*/
+
+/~*
+og-og veitti-veita şó-şó miğur-lítt ,-, ŞVÍ-ŞVÍ Sigríğur-sigríğur kunni-kunna
+allar-allur Úlfarsrímur-úlfarsrímur spjaldan$-spjald $na-hinn á-á milli-milli
+auk-auk alls-allur annars-annar .-.
+*~/
+/*
+33 PP:  33 PP, 34 NP-1, 41 PP
+*/
+( (PP (NP-1 (NS-G spjaldan$-spjald) (D-G $na-hinn))
+      (P á-á)
+      (PP (P milli-milli)
+	  (NP *ICH*-1)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.joel.may22a.psd	1/1/223
+*/
+/*
+HEADER:
+source file:  piltur4.anton.joel.may22b.psd
+*/
+
+/~*
+og-og veitti-veita şó-şó miğur-lítt ,-, ŞVÍ-ŞVÍ Sigríğur-sigríğur kunni-kunna
+allar-allur Úlfarsrímur-úlfarsrímur spjaldan$-spjald $na-hinn á-á milli-milli
+auk-auk alls-allur annars-annar .-.
+*~/
+/*
+33 PP:  33 PP, 34 NP-1, 41 PP
+*/
+( (PP (NP-1 (NS-G spjaldan$-spjald) (D-G $na-hinn))
+      (P á-á)
+      (PP (P milli-milli)
+	  (NP *ICH*-1)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.joel.may22b.psd	1/1/223
+*/
+/*
+HEADER:
+source file:  piltur4.anton.joel.may23.psd
+*/
+
+/~*
+og-og veitti-veita şó-şó miğur-lítt ,-, ŞVÍ-ŞVÍ Sigríğur-sigríğur kunni-kunna
+allar-allur Úlfarsrímur-úlfarsrímur spjaldan$-spjald $na-hinn á-á milli-milli
+auk-auk alls-allur annars-annar .-.
+*~/
+/*
+33 PP:  33 PP, 34 NP-1, 41 PP
+*/
+( (PP (NP-1 (NS-G spjaldan$-spjald) (D-G $na-hinn))
+      (P á-á)
+      (PP (P milli-milli)
+	  (NP *ICH*-1)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.joel.may23.psd	1/1/223
+*/
+/*
+HEADER:
+source file:  piltur4.anton.joel.may23a.psd
+*/
+
+/~*
+og-og veitti-veita şó-şó miğur-lítt ,-, ŞVÍ-ŞVÍ Sigríğur-sigríğur kunni-kunna
+allar-allur Úlfarsrímur-úlfarsrímur spjaldan$-spjald $na-hinn á-á milli-milli
+auk-auk alls-allur annars-annar .-.
+*~/
+/*
+33 PP:  33 PP, 34 NP-1, 41 PP
+*/
+( (PP (NP-1 (NS-G spjaldan$-spjald) (D-G $na-hinn))
+      (P á-á)
+      (PP (P milli-milli)
+	  (NP *ICH*-1)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur4.anton.joel.may23a.psd	1/1/223
+*/
+/*
+HEADER:
+source file:  piltur5.joel.jun1.psd
+*/
+
+/~*
+Bjarni-bjarni hreppstjóri-hreppstjóri skipaği-skipa einum-einn af-af
+vinnumönnum-vinnumağur sínum-sinn ağ-ağ fylgja-fylgja Indriğa-indriği
+yfir-yfir ağ-ağ Hóli-hóll ,-, en-en bağ-biğja Indriğa-indriği ağ-ağ koma-koma
+şar-şar oftar-oft ,-, er-vera hann-hann hefği-hafa tíma-tími til-til ---
+şví-şağ mér-ég segir-segja svo-svo hugur-hugur um-um ,-, ağ-ağ şú-şú
+verğir-verğa gæfumağur-gæfumağur ,-, og-og eru-vera komur-koma şínar-şinn
+hingağ-hingağ mér-ég kærar-kæra .-.
+*~/
+/*
+30 PP:  30 PP, 36 NP, 31 PP
+*/
+( (PP (PP (ADV yfir-yfir) (P ağ-ağ))
+      (NP (NPR-D Hóli-hóll)))
+  ) 
+
+
+/~*
+Sigríğur-sigríğur litla-lítill beiddi-beidda föğur-fağir sinn-sinn ağ-ağ
+lofa-lofa sér-sig ağ-ağ fylgja-fylgja Indriğa-indriği á-á veg-vegur ofan-ofan
+fyrir-fyrir tún$-tún $iğ-hinn ,-, og-og leyfği-leyfa hann-hann şağ-şağ .-.
+*~/
+/*
+37 PP:  37 PP, 43 NP, 38 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P fyrir-fyrir))
+      (NP (N-A tún$-tún) (D-A $iğ-hinn)))
+  ) 
+
+
+/~*
+Şegar-şegar komiğ-koma var-vera ofan-ofan fyrir-fyrir tún$-tún $iğ-hinn ,-,
+segir-segja Sigríğur-sigríğur viğ-viğ Indriğa-indriği :-:
+*~/
+/*
+9 PP:  9 PP, 15 NP, 10 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P fyrir-fyrir))
+      (NP (N-A tún$-tún) (D-A $iğ-hinn)))
+  ) 
+
+
+/~*
+Şú-şú hefur-hafa svip-svipur af-af henni-hún Steinunni-steina minni-minn
+heitinni-heitinn utan-utan á-á vangan$-vangi $n-hinn og-og enn$-enni $iğ-hinn
+ekki-ekki ólíkt-ólíkur heldur-heldur ,-, en-en augu$-auga $n-hinn hefur$-hafa
+$ğu-şú úr-úr henni-hún móğur-móğir okkar-ég sælu-sæla .-.
+*~/
+/*
+24 PP:  24 PP, 30 NP, 25 PP
+*/
+( (PP (PP (ADV utan-utan) (P á-á))
+      (NP (NP (N-A vangan$-vangi) (D-A $n-hinn))
+	  (CONJ og-og)
+	  (NP (N-A enn$-enni) (D-A $iğ-hinn))))
+  ) 
+
+
+/~*
+hún-hún lærir-læra ekki-ekki svo-svo mikiğ-mikiğ sem-sem ağ-ağ búa-búa til-til
+utan-utan á-á sig-sig spjör-spjör eğa-eğa gjöra-gera graut-grautur í-í
+ask-askur ;-;
+*~/
+/*
+24 PP:  24 PP, 30 NP, 25 PP
+*/
+( (PP (PP (ADV utan-utan) (P á-á))
+      (NP (PRO-A sig-sig)))
+  ) 
+
+
+/~*
+Bjarna-bjarni şótti-şykja nú-nú vel-vel skipast-skipa ,-, og-og er-vera
+şağ-şağ af-af ráğiğ-ráğa ,-, ağ-ağ Sigríğur-sigríğur færi-fara şegar-şegar
+norğur-norğur meğ-meğ Björgu-björg ;-;
+*~/
+/*
+45 PP:  45 PP, 51 NP, 46 PP
+*/
+( (PP (PP (ADV norğur-norğur) (P meğ-meğ))
+      (NP (NPR-A Björgu-björg)))
+  ) 
+
+
+/~*
+Hlíğ$-hlíğ $in-hinn eins-eins græn-grænn fyrir-fyrir ofan-ofan bæ$-bær
+$inn-hinn .-.
+*~/
+/*
+12 PP:  12 PP, 18 NP, 13 PP
+*/
+( (PP (PP (P fyrir-fyrir) (ADV ofan-ofan))
+      (NP (N-A bæ$-bær) (D-A $inn-hinn)))
+  ) 
+
+
+/~*
+Loksins-loksins hné-hné hún-hún út-út af-af úrvinda-úrvinda af-af svefni-svefn
+og-og lagği-leggja höfuğ$-höfuğ $iğ-hinn á-á koddan$-koddi $n-hinn fyrir-fyrir
+framan-framan systur-systir sína-sinn ,-, og-og rann-renna á-á hana-hún
+mók-mók nokkuğ-nokkur ;-;
+*~/
+/*
+42 PP:  42 PP, 48 NP, 43 PP
+*/
+( (PP (PP (P fyrir-fyrir) (ADV framan-framan))
+      (NP (N-A systur-systir) (PRO-A sína-sinn)))
+  ) 
+
+
+/~*
+Şá-şá var-vera kominn-koma ljómandi-ljómandi dagur-dagur ,-, og-og skinu-skína
+fyrstu-fyrstur morgunsólargeislar$-morgunsólargeisli $nir-hinn inn-inn um-um
+allt-allur hús$-hús $iğ-hinn .-.
+*~/
+/*
+27 PP:  27 PP, 33 NP, 28 PP
+*/
+( (PP (PP (ADV inn-inn) (P um-um))
+      (NP (Q-A allt-allur) (N-A hús$-hús) (D-A $iğ-hinn)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur5.joel.jun1.psd	9/9/100
+*/
+/*
+HEADER:
+source file:  piltur5.joel.jun1a.psd
+*/
+
+/~*
+Şegar-şegar komiğ-koma var-vera ofan-ofan fyrir-fyrir tún$-tún $iğ-hinn ,-,
+segir-segja Sigríğur-sigríğur viğ-viğ Indriğa-indriği :-:
+*~/
+/*
+9 PP:  9 PP, 15 NP, 10 PP
+*/
+( (PP (PP (ADV ofan-ofan) (P fyrir-fyrir))
+      (NP (N-A tún$-tún) (D-A $iğ-hinn)))
+  ) 
+
+
+/~*
+Şú-şú hefur-hafa svip-svipur af-af henni-hún Steinunni-steina minni-minn
+heitinni-heitinn utan-utan á-á vangan$-vangi $n-hinn og-og enn$-enni $iğ-hinn
+ekki-ekki ólíkt-ólíkur heldur-heldur ,-, en-en augu$-auga $n-hinn hefur$-hafa
+$ğu-şú úr-úr henni-hún móğur-móğir okkar-ég sælu-sæla .-.
+*~/
+/*
+24 PP:  24 PP, 30 NP, 25 PP
+*/
+( (PP (PP (ADV utan-utan) (P á-á))
+      (NP (NP (N-A vangan$-vangi) (D-A $n-hinn))
+	  (CONJ og-og)
+	  (NP (N-A enn$-enni) (D-A $iğ-hinn))))
+  ) 
+
+
+/~*
+hún-hún lærir-læra ekki-ekki svo-svo mikiğ-mikiğ sem-sem ağ-ağ búa-búa til-til
+utan-utan á-á sig-sig spjör-spjör eğa-eğa gjöra-gera graut-grautur í-í
+ask-askur ;-;
+*~/
+/*
+24 PP:  24 PP, 30 NP, 25 PP
+*/
+( (PP (PP (ADV utan-utan) (P á-á))
+      (NP (PRO-A sig-sig)))
+  ) 
+
+
+/~*
+Bjarna-bjarni şótti-şykja nú-nú vel-vel skipast-skipa ,-, og-og er-vera
+şağ-şağ af-af ráğiğ-ráğa ,-, ağ-ağ Sigríğur-sigríğur færi-fara şegar-şegar
+norğur-norğur meğ-meğ Björgu-björg ;-;
+*~/
+/*
+45 PP:  45 PP, 51 NP, 46 PP
+*/
+( (PP (PP (ADV norğur-norğur) (P meğ-meğ))
+      (NP (NPR-A Björgu-björg)))
+  ) 
+
+
+/~*
+Hlíğ$-hlíğ $in-hinn eins-eins græn-grænn fyrir-fyrir ofan-ofan bæ$-bær
+$inn-hinn .-.
+*~/
+/*
+12 PP:  12 PP, 18 NP, 13 PP
+*/
+( (PP (PP (P fyrir-fyrir) (ADV ofan-ofan))
+      (NP (N-A bæ$-bær) (D-A $inn-hinn)))
+  ) 
+
+
+/~*
+Loksins-loksins hné-hné hún-hún út-út af-af úrvinda-úrvinda af-af svefni-svefn
+og-og lagği-leggja höfuğ$-höfuğ $iğ-hinn á-á koddan$-koddi $n-hinn fyrir-fyrir
+framan-framan systur-systir sína-sinn ,-, og-og rann-renna á-á hana-hún
+mók-mók nokkuğ-nokkur ;-;
+*~/
+/*
+42 PP:  42 PP, 48 NP, 43 PP
+*/
+( (PP (PP (P fyrir-fyrir) (ADV framan-framan))
+      (NP (N-A systur-systir) (PRO-A sína-sinn)))
+  ) 
+
+
+/~*
+Şá-şá var-vera kominn-koma ljómandi-ljómandi dagur-dagur ,-, og-og skinu-skína
+fyrstu-fyrstur morgunsólargeislar$-morgunsólargeisli $nir-hinn inn-inn um-um
+allt-allur hús$-hús $iğ-hinn .-.
+*~/
+/*
+27 PP:  27 PP, 33 NP, 28 PP
+*/
+( (PP (PP (ADV inn-inn) (P um-um))
+      (NP (Q-A allt-allur) (N-A hús$-hús) (D-A $iğ-hinn)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur5.joel.jun1a.psd	7/7/106
+*/
+/*
+HEADER:
+source file:  piltur5.joel.jun3.psd
+*/
+
+/~*
+Bjarna-bjarni şótti-şykja nú-nú vel-vel skipast-skipa ,-, og-og er-vera
+şağ-şağ af-af ráğiğ-ráğa ,-, ağ-ağ Sigríğur-sigríğur færi-fara şegar-şegar
+norğur-norğur meğ-meğ Björgu-björg ;-;
+*~/
+/*
+45 PP:  45 PP, 51 NP, 46 PP
+*/
+( (PP (PP (ADV norğur-norğur) (P meğ-meğ))
+      (NP (NPR-A Björgu-björg)))
+  ) 
+
+
+/~*
+Hlíğ$-hlíğ $in-hinn eins-eins græn-grænn fyrir-fyrir ofan-ofan bæ$-bær
+$inn-hinn .-.
+*~/
+/*
+12 PP:  12 PP, 18 NP, 13 PP
+*/
+( (PP (PP (P fyrir-fyrir) (ADV ofan-ofan))
+      (NP (N-A bæ$-bær) (D-A $inn-hinn)))
+  ) 
+
+
+/~*
+Loksins-loksins hné-hné hún-hún út-út af-af úrvinda-úrvinda af-af svefni-svefn
+og-og lagği-leggja höfuğ$-höfuğ $iğ-hinn á-á koddan$-koddi $n-hinn fyrir-fyrir
+framan-framan systur-systir sína-sinn ,-, og-og rann-renna á-á hana-hún
+mók-mók nokkuğ-nokkur ;-;
+*~/
+/*
+42 PP:  42 PP, 48 NP, 43 PP
+*/
+( (PP (PP (P fyrir-fyrir) (ADV framan-framan))
+      (NP (N-A systur-systir) (PRO-A sína-sinn)))
+  ) 
+
+
+/~*
+Şá-şá var-vera kominn-koma ljómandi-ljómandi dagur-dagur ,-, og-og skinu-skína
+fyrstu-fyrstur morgunsólargeislar$-morgunsólargeisli $nir-hinn inn-inn um-um
+allt-allur hús$-hús $iğ-hinn .-.
+*~/
+/*
+27 PP:  27 PP, 33 NP, 28 PP
+*/
+( (PP (PP (ADV inn-inn) (P um-um))
+      (NP (Q-A allt-allur) (N-A hús$-hús) (D-A $iğ-hinn)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur5.joel.jun3.psd	4/4/126
+*/
+/*
+HEADER:
+source file:  piltur5.joel.jun6.psd
+*/
+
+/~*
+şess-şağ á-á millum-milli ritaği-rita Sigríğur-sigríğur föğur-fağir sínum-sinn
+viğ-viğ og-og viğ-viğ og-og svo-svo móğur-móğur sinni-sinn ,-,
+*~/
+/*
+3 PP:  3 PP, 4 NP-1, 9 PP
+*/
+( (PP (NP-1 (PRO-G şess-şağ))
+      (P á-á)
+      (PP (P millum-milli)
+	  (NP *ICH*-1)))
+  ) 
+
+
+/~*
+Loksins-loksins hné-hné hún-hún út-út af-af úrvinda-úrvinda af-af svefni-svefn
+og-og lagği-leggja höfuğ$-höfuğ $iğ-hinn á-á koddan$-koddi $n-hinn fyrir-fyrir
+framan-framan systur-systir sína-sinn ,-, og-og rann-renna á-á hana-hún
+mók-mók nokkuğ-nokkur ;-;
+*~/
+/*
+42 PP:  42 PP, 48 NP, 43 PP
+*/
+( (PP (PP (P fyrir-fyrir) (ADV framan-framan))
+      (NP (N-A systur-systir) (PRO-A sína-sinn)))
+  ) 
+
+
+/~*
+Şá-şá var-vera kominn-koma ljómandi-ljómandi dagur-dagur ,-, og-og skinu-skína
+fyrstu-fyrstur morgunsólargeislar$-morgunsólargeisli $nir-hinn inn-inn um-um
+allt-allur hús$-hús $iğ-hinn .-.
+*~/
+/*
+27 PP:  27 PP, 33 NP, 28 PP
+*/
+( (PP (PP (ADV inn-inn) (P um-um))
+      (NP (Q-A allt-allur) (N-A hús$-hús) (D-A $iğ-hinn)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur5.joel.jun6.psd	3/3/140
+*/
+/*
+HEADER:
+source file:  piltur5.joel.jun7.psd
+*/
+
+/~*
+şess-şağ á-á millum-milli ritaği-rita Sigríğur-sigríğur föğur-fağir sínum-sinn
+viğ-viğ og-og viğ-viğ og-og svo-svo móğur-móğur sinni-sinn ,-,
+*~/
+/*
+3 PP:  3 PP, 4 NP-1, 9 PP
+*/
+( (PP (NP-1 (PRO-G şess-şağ))
+      (P á-á)
+      (PP (P millum-milli)
+	  (NP *ICH*-1)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur5.joel.jun7.psd	1/1/151
+*/
+/*
+HEADER:
+source file:  piltur5.joel.jun8.psd
+*/
+
+/~*
+şess-şağ á-á millum-milli ritaği-rita Sigríğur-sigríğur föğur-fağir sínum-sinn
+viğ-viğ og-og viğ-viğ og-og svo-svo móğur-móğur sinni-sinn ,-,
+*~/
+/*
+3 PP:  3 PP, 4 NP-2, 9 PP
+*/
+( (PP (NP-2 (PRO-G şess-şağ))
+      (P á-á)
+      (PP (P millum-milli)
+	  (NP *ICH*-2)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur5.joel.jun8.psd	1/1/151
+*/
+/*
+HEADER:
+source file:  piltur6.joel.jun22.psd
+*/
+
+/~*
+og-og şess-şağ á-á millum-milli gjöra-gera sér-sig ferğir-ferğ ağ-ağ
+Tungu-tunga ,-, şó-şó lítiğ-lítill væri-vera annağ-annar erindi-erindi en-en
+ağ-ağ sjá-sjá Sigríği-sigríğur ;-;
+*~/
+/*
+6 PP:  6 PP, 7 NP-1, 12 PP
+*/
+( (PP (NP-1 (PRO-G şess-şağ))
+      (P á-á)
+      (PP (P millum-milli)
+	  (NP *ICH*-1)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur6.joel.jun22.psd	1/1/170
+*/
+/*
+HEADER:
+source file:  piltur6.joel.jun22b.psd
+*/
+
+/~*
+og-og şess-şağ á-á millum-milli gjöra-gera sér-sig ferğir-ferğ ağ-ağ
+Tungu-tunga ,-, şó-şó lítiğ-lítill væri-vera annağ-annar erindi-erindi en-en
+ağ-ağ sjá-sjá Sigríği-sigríğur ;-;
+*~/
+/*
+6 PP:  6 PP, 7 NP-1, 12 PP
+*/
+( (PP (NP-1 (PRO-G şess-şağ))
+      (P á-á)
+      (PP (P millum-milli)
+	  (NP *ICH*-1)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur6.joel.jun22b.psd	1/1/169
+*/
+/*
+HEADER:
+source file:  piltur6.joel.sanity.jun22.psd
+*/
+
+/~*
+og-og şess-şağ á-á millum-milli gjöra-gera sér-sig ferğir-ferğ ağ-ağ
+Tungu-tunga ,-, şó-şó lítiğ-lítill væri-vera annağ-annar erindi-erindi en-en
+ağ-ağ sjá-sjá Sigríği-sigríğur ;-;
+*~/
+/*
+6 PP:  6 PP, 7 NP-1, 12 PP
+*/
+( (PP (NP-1 (PRO-G şess-şağ))
+      (P á-á)
+      (PP (P millum-milli)
+	  (NP *ICH*-1)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  piltur6.joel.sanity.jun22.psd	1/1/170
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  piltur4.anton.17apr1.psd	13/10/101
+  piltur4.anton.18apr1.psd	13/10/103
+  piltur4.anton.21apr1.psd	13/10/103
+  piltur4.anton.25apr1.psd	13/10/107
+  piltur4.anton.25apr2.psd	13/10/109
+  piltur4.anton.25apr3.psd	13/10/110
+  piltur4.anton.26apr1.psd	13/10/109
+  piltur4.anton.26apr2.psd	13/10/112
+  piltur4.anton.26apr3.psd	11/8/118
+  piltur4.anton.26apr4.psd	9/6/141
+  piltur4.anton.27apr1.psd	4/3/164
+  piltur4.anton.27apr2.psd	4/3/167
+  piltur4.anton.27apr3..psd	4/3/170
+  piltur4.anton.27apr4.psd	2/2/176
+  piltur4.anton.27apr5.psd	2/2/198
+  piltur4.anton.28apr1.psd	2/2/223
+  piltur4.anton.29apr1.psd	1/1/223
+  piltur4.anton.joel.may20.psd	1/1/223
+  piltur4.anton.joel.may22.psd	1/1/223
+  piltur4.anton.joel.may22a.psd	1/1/223
+  piltur4.anton.joel.may22b.psd	1/1/223
+  piltur4.anton.joel.may23.psd	1/1/223
+  piltur4.anton.joel.may23a.psd	1/1/223
+  piltur5.joel.jun1.psd	9/9/100
+  piltur5.joel.jun1a.psd	7/7/106
+  piltur5.joel.jun3.psd	4/4/126
+  piltur5.joel.jun6.psd	3/3/140
+  piltur5.joel.jun7.psd	1/1/151
+  piltur5.joel.jun8.psd	1/1/151
+  piltur6.joel.jun22.psd	1/1/170
+  piltur6.joel.jun22b.psd	1/1/169
+  piltur6.joel.sanity.jun22.psd	1/1/170
+whole search, hits/tokens/total
+		177/144/5055
+*/

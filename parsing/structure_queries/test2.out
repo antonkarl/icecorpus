@@ -1,0 +1,2258 @@
+/*
+PREFACE:  
+CorpusSearch copyright Beth Randall 2005.
+Date:  Tue Jun 22 15:40:14 GMT 2010
+
+command file:     test.q
+input file:       test1.out
+output file:      test2.out
+
+node:   $ROOT
+query:  ([1]PP idoms  [2]PP) 
+  AND  ([1]PP idoms  NP*) 
+  AND  ([2]PP idomslast  P) 
+*/
+/*
+HEADER:
+source file:  test1.out
+*/
+/*
+HEADER:
+source file:  NULL
+*/
+/~*
+það-það er-vera eins og mér-ég sýnist-sýna ,-, að-að ég-ég hafi-hafa séð-sjá
+þessa-þessi kind-kind áður-áður ,-, þegar-þegar ég-ég kom-koma fram-fram að-að
+húsu$-hús $num-hinn þar-þar í-í Tungu-tunga í-í vetur-vetur ,-, en-en
+ekki-ekki þori-þora ég-ég að-að sverja-sverja það-það ,-, held-halda ég-ég ,-,
+nei-nei ,-, ekki-ekki þori-þora ég-ég að-að sverja-sverja það-það ,-, og-og
+síðan-síðan þetta-þessi bris-bris ,-, sem-sem þarna-þarna er-vera á-á
+eyra$-eyra $nu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV fram-fram) (P að-að))
+      (NP (NS-D húsu$-hús) (D-D $num-hinn)))
+  ) 
+
+/~*
+Rétt-rétt í-í þessu-þessi kom-koma Sigríður-sigríður litla-lítill frá-frá
+Tungu-tunga hlaupandi-hlaupa þar-þar að-að ,-, sem-sem þeir-hann voru-vera
+að-að þrefa-þrefa um-um tvævetlu$-tvævetla $na-hinn ,-, og-og kallaði-kalla
+,-, áður-áður en-en hún-hún kom-koma til-til þeirra-það :-:
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV Rétt-rétt) (P í-í))
+      (NP (D-D þessu-þessi)))
+  ) 
+
+/~*
+sagði-segja Jón-jón og-og brá-bregða hend$-hönd $inni-hinn framan-framan á-á
+nasir-nös Ásbirni-ásbirnur ,-, svo-svo úr-úr dreyrði-dreyrður ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV framan-framan) (P á-á))
+      (NP (NS-A nasir-nös)))
+  ) 
+
+/~*
+Þegar-þegar Sigríður-sigríður litla-lítill sá-sjá ,-, að-að Kolla-kolla
+var-vera burtu-burtu leidd-leiða ,-, og-og heyrði-heyra ,-, að-að Jón-jón á-á
+Gili-gil ætti-eiga að-að eiga-eiga hana-hún ,-, gat-geta hún-hún ekki-ekki
+gjört-gera að-að sér-sig að-að fara-fara að-að gráta-gráta ,-, því-það
+henni-hún þótti-þykja svo-svo vænt-vænn um-um hana-hún og-og hafði-hafa
+hlakkað-hlakka svo-svo lengi-lengi til-til að-að sjá-sjá hana-hún aftur-aftur
+af-af fjall$-fjall $inu-hinn ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P af-af))
+      (NP (N-D fjall$-fjall) (D-D $inu-hinn)))
+  ) 
+
+/~*
+Mér-ég er-vera svo-svo vel-vel við-við þig-þú ,-, að-að tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, þegar-þegar ég-ég
+sé-sjá þig-þú gráta-gráta ,-, sagði-segja hann-hann og-og klappaði-klappa
+Sigríði-sigríður á-á herðar$-herðar $nar-hinn með-með hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+/~*
+Ver$-vera $tu-þú samt-samt ekki-ekki að-að gráta-gráta út-út úr-úr því-það ,-,
+Sigga-sigga mín-minn góð-góður ,-, sagði-segja Indriði-indriði ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+þú-þú eiga-eiga hvort-hvor þeirra-það ,-, sem-sem þú-þú vilt-vilja ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D því-það)))
+  ) 
+
+/~*
+En-en þú-þú ,-, Indriði-indriði ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir að-að Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, því-það vera-vera má-mega ,-, að-að
+þið-þú unga-ungur fólk$-fólk $ið-hinn fell$-fell $ið-hinn meira-meira
+huga-hugi saman-saman en-en við-við feður-faðir ykkar-þú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-þú það-það .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+Þú-þú sagðir-sagða honum-hann Indriða-indriði til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+þín-þinn ,-, og-og svo-svo stelur-stela þú-þú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og því-það fæ-fá ég-ég ekki-ekki roð-roð .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+það-það er-vera eins og mér-ég sýnist-sýna ,-, að-að ég-ég hafi-hafa séð-sjá
+þessa-þessi kind-kind áður-áður ,-, þegar-þegar ég-ég kom-koma fram-fram að-að
+húsu$-hús $num-hinn þar-þar í-í Tungu-tunga í-í vetur-vetur ,-, en-en
+ekki-ekki þori-þora ég-ég að-að sverja-sverja það-það ,-, held-halda ég-ég ,-,
+nei-nei ,-, ekki-ekki þori-þora ég-ég að-að sverja-sverja það-það ,-, og-og
+síðan-síðan þetta-þessi bris-bris ,-, sem-sem þarna-þarna er-vera á-á
+eyra$-eyra $nu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV fram-fram) (P að-að))
+      (NP (NS-D húsu$-hús) (D-D $num-hinn)))
+  ) 
+
+/~*
+Rétt-rétt í-í þessu-þessi kom-koma Sigríður-sigríður litla-lítill frá-frá
+Tungu-tunga hlaupandi-hlaupa þar-þar að-að ,-, sem-sem þeir-hann voru-vera
+að-að þrefa-þrefa um-um tvævetlu$-tvævetla $na-hinn ,-, og-og kallaði-kalla
+,-, áður-áður en-en hún-hún kom-koma til-til þeirra-það :-:
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV Rétt-rétt) (P í-í))
+      (NP (D-D þessu-þessi)))
+  ) 
+
+/~*
+sagði-segja Jón-jón og-og brá-bregða hend$-hönd $inni-hinn framan-framan á-á
+nasir-nös Ásbirni-ásbirnur ,-, svo-svo úr-úr dreyrði-dreyrður ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV framan-framan) (P á-á))
+      (NP (NS-A nasir-nös)))
+  ) 
+
+/~*
+Þegar-þegar Sigríður-sigríður litla-lítill sá-sjá ,-, að-að Kolla-kolla
+var-vera burtu-burtu leidd-leiða ,-, og-og heyrði-heyra ,-, að-að Jón-jón á-á
+Gili-gil ætti-eiga að-að eiga-eiga hana-hún ,-, gat-geta hún-hún ekki-ekki
+gjört-gera að-að sér-sig að-að fara-fara að-að gráta-gráta ,-, því-það
+henni-hún þótti-þykja svo-svo vænt-vænn um-um hana-hún og-og hafði-hafa
+hlakkað-hlakka svo-svo lengi-lengi til-til að-að sjá-sjá hana-hún aftur-aftur
+af-af fjall$-fjall $inu-hinn ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P af-af))
+      (NP (N-D fjall$-fjall) (D-D $inu-hinn)))
+  ) 
+
+/~*
+Mér-ég er-vera svo-svo vel-vel við-við þig-þú ,-, að-að tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, þegar-þegar ég-ég
+sé-sjá þig-þú gráta-gráta ,-, sagði-segja hann-hann og-og klappaði-klappa
+Sigríði-sigríður á-á herðar$-herðar $nar-hinn með-með hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+/~*
+Ver$-vera $tu-þú samt-samt ekki-ekki að-að gráta-gráta út-út úr-úr því-það ,-,
+Sigga-sigga mín-minn góð-góður ,-, sagði-segja Indriði-indriði ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+þú-þú eiga-eiga hvort-hvor þeirra-það ,-, sem-sem þú-þú vilt-vilja ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D því-það)))
+  ) 
+
+/~*
+En-en þú-þú ,-, Indriði-indriði ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir að-að Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, því-það vera-vera má-mega ,-, að-að
+þið-þú unga-ungur fólk$-fólk $ið-hinn fell$-fell $ið-hinn meira-meira
+huga-hugi saman-saman en-en við-við feður-faðir ykkar-þú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-þú það-það .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+Þú-þú sagðir-sagða honum-hann Indriða-indriði til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+þín-þinn ,-, og-og svo-svo stelur-stela þú-þú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og því-það fæ-fá ég-ég ekki-ekki roð-roð .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+það-það er-vera eins og mér-ég sýnist-sýna ,-, að-að ég-ég hafi-hafa séð-sjá
+þessa-þessi kind-kind áður-áður ,-, þegar-þegar ég-ég kom-koma fram-fram að-að
+húsu$-hús $num-hinn þar-þar í-í Tungu-tunga í-í vetur-vetur ,-, en-en
+ekki-ekki þori-þora ég-ég að-að sverja-sverja það-það ,-, held-halda ég-ég ,-,
+nei-nei ,-, ekki-ekki þori-þora ég-ég að-að sverja-sverja það-það ,-, og-og
+síðan-síðan þetta-þessi bris-bris ,-, sem-sem þarna-þarna er-vera á-á
+eyra$-eyra $nu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV fram-fram) (P að-að))
+      (NP (NS-D húsu$-hús) (D-D $num-hinn)))
+  ) 
+
+/~*
+Rétt-rétt í-í þessu-þessi kom-koma Sigríður-sigríður litla-lítill frá-frá
+Tungu-tunga hlaupandi-hlaupa þar-þar að-að ,-, sem-sem þeir-hann voru-vera
+að-að þrefa-þrefa um-um tvævetlu$-tvævetla $na-hinn ,-, og-og kallaði-kalla
+,-, áður-áður en-en hún-hún kom-koma til-til þeirra-það :-:
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV Rétt-rétt) (P í-í))
+      (NP (D-D þessu-þessi)))
+  ) 
+
+/~*
+sagði-segja Jón-jón og-og brá-bregða hend$-hönd $inni-hinn framan-framan á-á
+nasir-nös Ásbirni-ásbirnur ,-, svo-svo úr-úr dreyrði-dreyrður ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV framan-framan) (P á-á))
+      (NP (NS-A nasir-nös)))
+  ) 
+
+/~*
+Þegar-þegar Sigríður-sigríður litla-lítill sá-sjá ,-, að-að Kolla-kolla
+var-vera burtu-burtu leidd-leiða ,-, og-og heyrði-heyra ,-, að-að Jón-jón á-á
+Gili-gil ætti-eiga að-að eiga-eiga hana-hún ,-, gat-geta hún-hún ekki-ekki
+gjört-gera að-að sér-sig að-að fara-fara að-að gráta-gráta ,-, því-það
+henni-hún þótti-þykja svo-svo vænt-vænn um-um hana-hún og-og hafði-hafa
+hlakkað-hlakka svo-svo lengi-lengi til-til að-að sjá-sjá hana-hún aftur-aftur
+af-af fjall$-fjall $inu-hinn ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P af-af))
+      (NP (N-D fjall$-fjall) (D-D $inu-hinn)))
+  ) 
+
+/~*
+Mér-ég er-vera svo-svo vel-vel við-við þig-þú ,-, að-að tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, þegar-þegar ég-ég
+sé-sjá þig-þú gráta-gráta ,-, sagði-segja hann-hann og-og klappaði-klappa
+Sigríði-sigríður á-á herðar$-herðar $nar-hinn með-með hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+/~*
+Ver$-vera $tu-þú samt-samt ekki-ekki að-að gráta-gráta út-út úr-úr því-það ,-,
+Sigga-sigga mín-minn góð-góður ,-, sagði-segja Indriði-indriði ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+þú-þú eiga-eiga hvort-hvor þeirra-það ,-, sem-sem þú-þú vilt-vilja ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D því-það)))
+  ) 
+
+/~*
+En-en þú-þú ,-, Indriði-indriði ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir að-að Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, því-það vera-vera má-mega ,-, að-að
+þið-þú unga-ungur fólk$-fólk $ið-hinn fell$-fell $ið-hinn meira-meira
+huga-hugi saman-saman en-en við-við feður-faðir ykkar-þú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-þú það-það .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+Þú-þú sagðir-sagða honum-hann Indriða-indriði til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+þín-þinn ,-, og-og svo-svo stelur-stela þú-þú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og því-það fæ-fá ég-ég ekki-ekki roð-roð .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+það-það er-vera eins og mér-ég sýnist-sýna ,-, að-að ég-ég hafi-hafa séð-sjá
+þessa-þessi kind-kind áður-áður ,-, þegar-þegar ég-ég kom-koma fram-fram að-að
+húsu$-hús $num-hinn þar-þar í-í Tungu-tunga í-í vetur-vetur ,-, en-en
+ekki-ekki þori-þora ég-ég að-að sverja-sverja það-það ,-, held-halda ég-ég ,-,
+nei-nei ,-, ekki-ekki þori-þora ég-ég að-að sverja-sverja það-það ,-, og-og
+síðan-síðan þetta-þessi bris-bris ,-, sem-sem þarna-þarna er-vera á-á
+eyra$-eyra $nu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV fram-fram) (P að-að))
+      (NP (NS-D húsu$-hús) (D-D $num-hinn)))
+  ) 
+
+/~*
+Rétt-rétt í-í þessu-þessi kom-koma Sigríður-sigríður litla-lítill frá-frá
+Tungu-tunga hlaupandi-hlaupa þar-þar að-að ,-, sem-sem þeir-hann voru-vera
+að-að þrefa-þrefa um-um tvævetlu$-tvævetla $na-hinn ,-, og-og kallaði-kalla
+,-, áður-áður en-en hún-hún kom-koma til-til þeirra-það :-:
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV Rétt-rétt) (P í-í))
+      (NP (D-D þessu-þessi)))
+  ) 
+
+/~*
+sagði-segja Jón-jón og-og brá-bregða hend$-hönd $inni-hinn framan-framan á-á
+nasir-nös Ásbirni-ásbirnur ,-, svo-svo úr-úr dreyrði-dreyrður ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV framan-framan) (P á-á))
+      (NP (NS-A nasir-nös)))
+  ) 
+
+/~*
+Þegar-þegar Sigríður-sigríður litla-lítill sá-sjá ,-, að-að Kolla-kolla
+var-vera burtu-burtu leidd-leiða ,-, og-og heyrði-heyra ,-, að-að Jón-jón á-á
+Gili-gil ætti-eiga að-að eiga-eiga hana-hún ,-, gat-geta hún-hún ekki-ekki
+gjört-gera að-að sér-sig að-að fara-fara að-að gráta-gráta ,-, því-það
+henni-hún þótti-þykja svo-svo vænt-vænn um-um hana-hún og-og hafði-hafa
+hlakkað-hlakka svo-svo lengi-lengi til-til að-að sjá-sjá hana-hún aftur-aftur
+af-af fjall$-fjall $inu-hinn ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P af-af))
+      (NP (N-D fjall$-fjall) (D-D $inu-hinn)))
+  ) 
+
+/~*
+Mér-ég er-vera svo-svo vel-vel við-við þig-þú ,-, að-að tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, þegar-þegar ég-ég
+sé-sjá þig-þú gráta-gráta ,-, sagði-segja hann-hann og-og klappaði-klappa
+Sigríði-sigríður á-á herðar$-herðar $nar-hinn með-með hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+/~*
+Ver$-vera $tu-þú samt-samt ekki-ekki að-að gráta-gráta út-út úr-úr því-það ,-,
+Sigga-sigga mín-minn góð-góður ,-, sagði-segja Indriði-indriði ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+þú-þú eiga-eiga hvort-hvor þeirra-það ,-, sem-sem þú-þú vilt-vilja ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D því-það)))
+  ) 
+
+/~*
+En-en þú-þú ,-, Indriði-indriði ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir að-að Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, því-það vera-vera má-mega ,-, að-að
+þið-þú unga-ungur fólk$-fólk $ið-hinn fell$-fell $ið-hinn meira-meira
+huga-hugi saman-saman en-en við-við feður-faðir ykkar-þú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-þú það-það .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+Þú-þú sagðir-sagða honum-hann Indriða-indriði til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+þín-þinn ,-, og-og svo-svo stelur-stela þú-þú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og því-það fæ-fá ég-ég ekki-ekki roð-roð .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+það-það er-vera eins og mér-ég sýnist-sýna ,-, að-að ég-ég hafi-hafa séð-sjá
+þessa-þessi kind-kind áður-áður ,-, þegar-þegar ég-ég kom-koma fram-fram að-að
+húsu$-hús $num-hinn þar-þar í-í Tungu-tunga í-í vetur-vetur ,-, en-en
+ekki-ekki þori-þora ég-ég að-að sverja-sverja það-það ,-, held-halda ég-ég ,-,
+nei-nei ,-, ekki-ekki þori-þora ég-ég að-að sverja-sverja það-það ,-, og-og
+síðan-síðan þetta-þessi bris-bris ,-, sem-sem þarna-þarna er-vera á-á
+eyra$-eyra $nu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV fram-fram) (P að-að))
+      (NP (NS-D húsu$-hús) (D-D $num-hinn)))
+  ) 
+
+/~*
+Rétt-rétt í-í þessu-þessi kom-koma Sigríður-sigríður litla-lítill frá-frá
+Tungu-tunga hlaupandi-hlaupa þar-þar að-að ,-, sem-sem þeir-hann voru-vera
+að-að þrefa-þrefa um-um tvævetlu$-tvævetla $na-hinn ,-, og-og kallaði-kalla
+,-, áður-áður en-en hún-hún kom-koma til-til þeirra-það :-:
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV Rétt-rétt) (P í-í))
+      (NP (D-D þessu-þessi)))
+  ) 
+
+/~*
+sagði-segja Jón-jón og-og brá-bregða hend$-hönd $inni-hinn framan-framan á-á
+nasir-nös Ásbirni-ásbirnur ,-, svo-svo úr-úr dreyrði-dreyrður ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV framan-framan) (P á-á))
+      (NP (NS-A nasir-nös)))
+  ) 
+
+/~*
+Þegar-þegar Sigríður-sigríður litla-lítill sá-sjá ,-, að-að Kolla-kolla
+var-vera burtu-burtu leidd-leiða ,-, og-og heyrði-heyra ,-, að-að Jón-jón á-á
+Gili-gil ætti-eiga að-að eiga-eiga hana-hún ,-, gat-geta hún-hún ekki-ekki
+gjört-gera að-að sér-sig að-að fara-fara að-að gráta-gráta ,-, því-það
+henni-hún þótti-þykja svo-svo vænt-vænn um-um hana-hún og-og hafði-hafa
+hlakkað-hlakka svo-svo lengi-lengi til-til að-að sjá-sjá hana-hún aftur-aftur
+af-af fjall$-fjall $inu-hinn ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P af-af))
+      (NP (N-D fjall$-fjall) (D-D $inu-hinn)))
+  ) 
+
+/~*
+Mér-ég er-vera svo-svo vel-vel við-við þig-þú ,-, að-að tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, þegar-þegar ég-ég
+sé-sjá þig-þú gráta-gráta ,-, sagði-segja hann-hann og-og klappaði-klappa
+Sigríði-sigríður á-á herðar$-herðar $nar-hinn með-með hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+/~*
+Ver$-vera $tu-þú samt-samt ekki-ekki að-að gráta-gráta út-út úr-úr því-það ,-,
+Sigga-sigga mín-minn góð-góður ,-, sagði-segja Indriði-indriði ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+þú-þú eiga-eiga hvort-hvor þeirra-það ,-, sem-sem þú-þú vilt-vilja ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D því-það)))
+  ) 
+
+/~*
+En-en þú-þú ,-, Indriði-indriði ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir að-að Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, því-það vera-vera má-mega ,-, að-að
+þið-þú unga-ungur fólk$-fólk $ið-hinn fell$-fell $ið-hinn meira-meira
+huga-hugi saman-saman en-en við-við feður-faðir ykkar-þú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-þú það-það .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+Þú-þú sagðir-sagða honum-hann Indriða-indriði til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+þín-þinn ,-, og-og svo-svo stelur-stela þú-þú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og því-það fæ-fá ég-ég ekki-ekki roð-roð .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+það-það er-vera eins og mér-ég sýnist-sýna ,-, að-að ég-ég hafi-hafa séð-sjá
+þessa-þessi kind-kind áður-áður ,-, þegar-þegar ég-ég kom-koma fram-fram að-að
+húsu$-hús $num-hinn þar-þar í-í Tungu-tunga í-í vetur-vetur ,-, en-en
+ekki-ekki þori-þora ég-ég að-að sverja-sverja það-það ,-, held-halda ég-ég ,-,
+nei-nei ,-, ekki-ekki þori-þora ég-ég að-að sverja-sverja það-það ,-, og-og
+síðan-síðan þetta-þessi bris-bris ,-, sem-sem þarna-þarna er-vera á-á
+eyra$-eyra $nu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV fram-fram) (P að-að))
+      (NP (NS-D húsu$-hús) (D-D $num-hinn)))
+  ) 
+
+/~*
+Rétt-rétt í-í þessu-þessi kom-koma Sigríður-sigríður litla-lítill frá-frá
+Tungu-tunga hlaupandi-hlaupa þar-þar að-að ,-, sem-sem þeir-hann voru-vera
+að-að þrefa-þrefa um-um tvævetlu$-tvævetla $na-hinn ,-, og-og kallaði-kalla
+,-, áður-áður en-en hún-hún kom-koma til-til þeirra-það :-:
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV Rétt-rétt) (P í-í))
+      (NP (D-D þessu-þessi)))
+  ) 
+
+/~*
+sagði-segja Jón-jón og-og brá-bregða hend$-hönd $inni-hinn framan-framan á-á
+nasir-nös Ásbirni-ásbirnur ,-, svo-svo úr-úr dreyrði-dreyrður ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV framan-framan) (P á-á))
+      (NP (NS-A nasir-nös)))
+  ) 
+
+/~*
+Þegar-þegar Sigríður-sigríður litla-lítill sá-sjá ,-, að-að Kolla-kolla
+var-vera burtu-burtu leidd-leiða ,-, og-og heyrði-heyra ,-, að-að Jón-jón á-á
+Gili-gil ætti-eiga að-að eiga-eiga hana-hún ,-, gat-geta hún-hún ekki-ekki
+gjört-gera að-að sér-sig að-að fara-fara að-að gráta-gráta ,-, því-það
+henni-hún þótti-þykja svo-svo vænt-vænn um-um hana-hún og-og hafði-hafa
+hlakkað-hlakka svo-svo lengi-lengi til-til að-að sjá-sjá hana-hún aftur-aftur
+af-af fjall$-fjall $inu-hinn ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P af-af))
+      (NP (N-D fjall$-fjall) (D-D $inu-hinn)))
+  ) 
+
+/~*
+Mér-ég er-vera svo-svo vel-vel við-við þig-þú ,-, að-að tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, þegar-þegar ég-ég
+sé-sjá þig-þú gráta-gráta ,-, sagði-segja hann-hann og-og klappaði-klappa
+Sigríði-sigríður á-á herðar$-herðar $nar-hinn með-með hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+/~*
+Ver$-vera $tu-þú samt-samt ekki-ekki að-að gráta-gráta út-út úr-úr því-það ,-,
+Sigga-sigga mín-minn góð-góður ,-, sagði-segja Indriði-indriði ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+þú-þú eiga-eiga hvort-hvor þeirra-það ,-, sem-sem þú-þú vilt-vilja ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D því-það)))
+  ) 
+
+/~*
+En-en þú-þú ,-, Indriði-indriði ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir að-að Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, því-það vera-vera má-mega ,-, að-að
+þið-þú unga-ungur fólk$-fólk $ið-hinn fell$-fell $ið-hinn meira-meira
+huga-hugi saman-saman en-en við-við feður-faðir ykkar-þú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-þú það-það .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+Þú-þú sagðir-sagða honum-hann Indriða-indriði til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+þín-þinn ,-, og-og svo-svo stelur-stela þú-þú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og því-það fæ-fá ég-ég ekki-ekki roð-roð .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+það-það er-vera eins og mér-ég sýnist-sýna ,-, að-að ég-ég hafi-hafa séð-sjá
+þessa-þessi kind-kind áður-áður ,-, þegar-þegar ég-ég kom-koma fram-fram að-að
+húsu$-hús $num-hinn þar-þar í-í Tungu-tunga í-í vetur-vetur ,-, en-en
+ekki-ekki þori-þora ég-ég að-að sverja-sverja það-það ,-, held-halda ég-ég ,-,
+nei-nei ,-, ekki-ekki þori-þora ég-ég að-að sverja-sverja það-það ,-, og-og
+síðan-síðan þetta-þessi bris-bris ,-, sem-sem þarna-þarna er-vera á-á
+eyra$-eyra $nu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV fram-fram) (P að-að))
+      (NP (NS-D húsu$-hús) (D-D $num-hinn)))
+  ) 
+
+/~*
+Rétt-rétt í-í þessu-þessi kom-koma Sigríður-sigríður litla-lítill frá-frá
+Tungu-tunga hlaupandi-hlaupa þar-þar að-að ,-, sem-sem þeir-hann voru-vera
+að-að þrefa-þrefa um-um tvævetlu$-tvævetla $na-hinn ,-, og-og kallaði-kalla
+,-, áður-áður en-en hún-hún kom-koma til-til þeirra-það :-:
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV Rétt-rétt) (P í-í))
+      (NP (D-D þessu-þessi)))
+  ) 
+
+/~*
+sagði-segja Jón-jón og-og brá-bregða hend$-hönd $inni-hinn framan-framan á-á
+nasir-nös Ásbirni-ásbirnur ,-, svo-svo úr-úr dreyrði-dreyrður ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV framan-framan) (P á-á))
+      (NP (NS-A nasir-nös)))
+  ) 
+
+/~*
+Þegar-þegar Sigríður-sigríður litla-lítill sá-sjá ,-, að-að Kolla-kolla
+var-vera burtu-burtu leidd-leiða ,-, og-og heyrði-heyra ,-, að-að Jón-jón á-á
+Gili-gil ætti-eiga að-að eiga-eiga hana-hún ,-, gat-geta hún-hún ekki-ekki
+gjört-gera að-að sér-sig að-að fara-fara að-að gráta-gráta ,-, því-það
+henni-hún þótti-þykja svo-svo vænt-vænn um-um hana-hún og-og hafði-hafa
+hlakkað-hlakka svo-svo lengi-lengi til-til að-að sjá-sjá hana-hún aftur-aftur
+af-af fjall$-fjall $inu-hinn ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P af-af))
+      (NP (N-D fjall$-fjall) (D-D $inu-hinn)))
+  ) 
+
+/~*
+Mér-ég er-vera svo-svo vel-vel við-við þig-þú ,-, að-að tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, þegar-þegar ég-ég
+sé-sjá þig-þú gráta-gráta ,-, sagði-segja hann-hann og-og klappaði-klappa
+Sigríði-sigríður á-á herðar$-herðar $nar-hinn með-með hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+/~*
+Ver$-vera $tu-þú samt-samt ekki-ekki að-að gráta-gráta út-út úr-úr því-það ,-,
+Sigga-sigga mín-minn góð-góður ,-, sagði-segja Indriði-indriði ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+þú-þú eiga-eiga hvort-hvor þeirra-það ,-, sem-sem þú-þú vilt-vilja ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D því-það)))
+  ) 
+
+/~*
+En-en þú-þú ,-, Indriði-indriði ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir að-að Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, því-það vera-vera má-mega ,-, að-að
+þið-þú unga-ungur fólk$-fólk $ið-hinn fell$-fell $ið-hinn meira-meira
+huga-hugi saman-saman en-en við-við feður-faðir ykkar-þú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-þú það-það .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+Þú-þú sagðir-sagða honum-hann Indriða-indriði til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+þín-þinn ,-, og-og svo-svo stelur-stela þú-þú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og því-það fæ-fá ég-ég ekki-ekki roð-roð .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+það-það er-vera eins og mér-ég sýnist-sýna ,-, að-að ég-ég hafi-hafa séð-sjá
+þessa-þessi kind-kind áður-áður ,-, þegar-þegar ég-ég kom-koma fram-fram að-að
+húsu$-hús $num-hinn þar-þar í-í Tungu-tunga í-í vetur-vetur ,-, en-en
+ekki-ekki þori-þora ég-ég að-að sverja-sverja það-það ,-, held-halda ég-ég ,-,
+nei-nei ,-, ekki-ekki þori-þora ég-ég að-að sverja-sverja það-það ,-, og-og
+síðan-síðan þetta-þessi bris-bris ,-, sem-sem þarna-þarna er-vera á-á
+eyra$-eyra $nu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV fram-fram) (P að-að))
+      (NP (NS-D húsu$-hús) (D-D $num-hinn)))
+  ) 
+
+/~*
+Rétt-rétt í-í þessu-þessi kom-koma Sigríður-sigríður litla-lítill frá-frá
+Tungu-tunga hlaupandi-hlaupa þar-þar að-að ,-, sem-sem þeir-hann voru-vera
+að-að þrefa-þrefa um-um tvævetlu$-tvævetla $na-hinn ,-, og-og kallaði-kalla
+,-, áður-áður en-en hún-hún kom-koma til-til þeirra-það :-:
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV Rétt-rétt) (P í-í))
+      (NP (D-D þessu-þessi)))
+  ) 
+
+/~*
+sagði-segja Jón-jón og-og brá-bregða hend$-hönd $inni-hinn framan-framan á-á
+nasir-nös Ásbirni-ásbirnur ,-, svo-svo úr-úr dreyrði-dreyrður ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV framan-framan) (P á-á))
+      (NP (NS-A nasir-nös)))
+  ) 
+
+/~*
+Þegar-þegar Sigríður-sigríður litla-lítill sá-sjá ,-, að-að Kolla-kolla
+var-vera burtu-burtu leidd-leiða ,-, og-og heyrði-heyra ,-, að-að Jón-jón á-á
+Gili-gil ætti-eiga að-að eiga-eiga hana-hún ,-, gat-geta hún-hún ekki-ekki
+gjört-gera að-að sér-sig að-að fara-fara að-að gráta-gráta ,-, því-það
+henni-hún þótti-þykja svo-svo vænt-vænn um-um hana-hún og-og hafði-hafa
+hlakkað-hlakka svo-svo lengi-lengi til-til að-að sjá-sjá hana-hún aftur-aftur
+af-af fjall$-fjall $inu-hinn ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P af-af))
+      (NP (N-D fjall$-fjall) (D-D $inu-hinn)))
+  ) 
+
+/~*
+Mér-ég er-vera svo-svo vel-vel við-við þig-þú ,-, að-að tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, þegar-þegar ég-ég
+sé-sjá þig-þú gráta-gráta ,-, sagði-segja hann-hann og-og klappaði-klappa
+Sigríði-sigríður á-á herðar$-herðar $nar-hinn með-með hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+/~*
+Ver$-vera $tu-þú samt-samt ekki-ekki að-að gráta-gráta út-út úr-úr því-það ,-,
+Sigga-sigga mín-minn góð-góður ,-, sagði-segja Indriði-indriði ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+þú-þú eiga-eiga hvort-hvor þeirra-það ,-, sem-sem þú-þú vilt-vilja ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D því-það)))
+  ) 
+
+/~*
+En-en þú-þú ,-, Indriði-indriði ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir að-að Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, því-það vera-vera má-mega ,-, að-að
+þið-þú unga-ungur fólk$-fólk $ið-hinn fell$-fell $ið-hinn meira-meira
+huga-hugi saman-saman en-en við-við feður-faðir ykkar-þú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-þú það-það .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+Þú-þú sagðir-sagða honum-hann Indriða-indriði til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+þín-þinn ,-, og-og svo-svo stelur-stela þú-þú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og því-það fæ-fá ég-ég ekki-ekki roð-roð .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+sagði-segja Jón-jón og-og brá-bregða hend$-hönd $inni-hinn framan-framan á-á
+nasir-nös Ásbirni-ásbirnur ,-, svo-svo úr-úr dreyrði-dreyrður ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV framan-framan) (P á-á))
+      (NP (NS-A nasir-nös)))
+  ) 
+
+/~*
+Þegar-þegar Sigríður-sigríður litla-lítill sá-sjá ,-, að-að Kolla-kolla
+var-vera burtu-burtu leidd-leiða ,-, og-og heyrði-heyra ,-, að-að Jón-jón á-á
+Gili-gil ætti-eiga að-að eiga-eiga hana-hún ,-, gat-geta hún-hún ekki-ekki
+gjört-gera að-að sér-sig að-að fara-fara að-að gráta-gráta ,-, því-það
+henni-hún þótti-þykja svo-svo vænt-vænn um-um hana-hún og-og hafði-hafa
+hlakkað-hlakka svo-svo lengi-lengi til-til að-að sjá-sjá hana-hún aftur-aftur
+af-af fjall$-fjall $inu-hinn ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P af-af))
+      (NP (N-D fjall$-fjall) (D-D $inu-hinn)))
+  ) 
+
+/~*
+Mér-ég er-vera svo-svo vel-vel við-við þig-þú ,-, að-að tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, þegar-þegar ég-ég
+sé-sjá þig-þú gráta-gráta ,-, sagði-segja hann-hann og-og klappaði-klappa
+Sigríði-sigríður á-á herðar$-herðar $nar-hinn með-með hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+/~*
+Ver$-vera $tu-þú samt-samt ekki-ekki að-að gráta-gráta út-út úr-úr því-það ,-,
+Sigga-sigga mín-minn góð-góður ,-, sagði-segja Indriði-indriði ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+þú-þú eiga-eiga hvort-hvor þeirra-það ,-, sem-sem þú-þú vilt-vilja ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D því-það)))
+  ) 
+
+/~*
+En-en þú-þú ,-, Indriði-indriði ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir að-að Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, því-það vera-vera má-mega ,-, að-að
+þið-þú unga-ungur fólk$-fólk $ið-hinn fell$-fell $ið-hinn meira-meira
+huga-hugi saman-saman en-en við-við feður-faðir ykkar-þú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-þú það-það .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+Þú-þú sagðir-sagða honum-hann Indriða-indriði til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+þín-þinn ,-, og-og svo-svo stelur-stela þú-þú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og því-það fæ-fá ég-ég ekki-ekki roð-roð .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+Mér-ég er-vera svo-svo vel-vel við-við þig-þú ,-, að-að tár$-tár $in-hinn
+koma-koma fram-fram í-í augu$-auga $n-hinn á-á mér-ég ,-, þegar-þegar ég-ég
+sé-sjá þig-þú gráta-gráta ,-, sagði-segja hann-hann og-og klappaði-klappa
+Sigríði-sigríður á-á herðar$-herðar $nar-hinn með-með hend$-hönd $inni-hinn
+;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV fram-fram) (P í-í))
+      (NP (NS-A augu$-auga) (D-A $n-hinn)))
+  ) 
+
+/~*
+Ver$-vera $tu-þú samt-samt ekki-ekki að-að gráta-gráta út-út úr-úr því-það ,-,
+Sigga-sigga mín-minn góð-góður ,-, sagði-segja Indriði-indriði ,-, ég-ég á-á
+tvö-tveir lömb-lömb hérna-hérna í-í rétt$-rétt $inni-hinn ,-, og-og mátt-mega
+þú-þú eiga-eiga hvort-hvor þeirra-það ,-, sem-sem þú-þú vilt-vilja ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV út-út) (P úr-úr))
+      (NP (PRO-D því-það)))
+  ) 
+
+/~*
+En-en þú-þú ,-, Indriði-indriði ,-, skalt-skulu einhvern-einhver tíma-tíma
+koma-koma yfir-yfir að-að Tungu-tunga í-í vetur-vetur og-og finna-finna
+hana-hún Siggu-sigga litlu-lítill ,-, því-það vera-vera má-mega ,-, að-að
+þið-þú unga-ungur fólk$-fólk $ið-hinn fell$-fell $ið-hinn meira-meira
+huga-hugi saman-saman en-en við-við feður-faðir ykkar-þú ,-, og-og vil-vilja
+ég-ég ekki-ekki meina-meina ykkur-þú það-það .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV á-á) (P milli-milli))
+      (NP (NS-G bæjan$-bær) (D-G $na-hinn)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Tungu-tunga)))
+  ) 
+
+/~*
+En-en um-um vetur$-vetur $inn-hinn voru-vera frost-frost mikil-mikill og-og
+ísalög-ísalag ,-, og-og lagði-leggja Fagurá-fagurá þar-þar á-á milli-milli
+bæjan$-bær $na-hinn ,-, og-og minntist-minna Indriði-indriði einhvern-einhver
+sunnudag-sunnudagur á-á ,-, hvað-hver Bjarni-bjarni í-í Tungu-tunga hafði-hafa
+sagt-segja við-við hann-hann ,-, og-og biður-biðja foreldra-foreldrar
+sína-sinn að-að lofa-lofa sér-sig yfir-yfir að-að Tungu-tunga að-að
+finna-finna Siggu-sigga ,-, og-og játtu-jeiga þau-það því-það ,-, en-en
+segja-segja honum-hann að-að vera-vera kominn-koma aftur-aftur fyrir-fyrir
+vökulok-vökulok .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV aftur-aftur) (P fyrir-fyrir))
+      (NP (NS-A vökulok-vökulok)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+Þú-þú sagðir-sagða honum-hann Indriða-indriði til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+þín-þinn ,-, og-og svo-svo stelur-stela þú-þú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og því-það fæ-fá ég-ég ekki-ekki roð-roð .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+Þú-þú sagðir-sagða honum-hann Indriða-indriði til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+þín-þinn ,-, og-og svo-svo stelur-stela þú-þú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og því-það fæ-fá ég-ég ekki-ekki roð-roð .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+Þú-þú sagðir-sagða honum-hann Indriða-indriði til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+þín-þinn ,-, og-og svo-svo stelur-stela þú-þú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og því-það fæ-fá ég-ég ekki-ekki roð-roð .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A tá$-tá) (D-A $na-hinn)))
+  ) 
+
+/~*
+Það-það var-vera þá-þá ekki-ekki verra-verri ,-, sagði-segja Sigríður-sigríður
+í-í hálfum-hálfur hljóðum-hljóð og-og ætlar-ætla að-að stíga-stíga fæt$-fótur
+$inum-hinn ofan-ofan á-á tá$-tá $na-hinn á-á Indriða-indriði ,-, og-og
+átti-eiga það-það að-að þýða-þýða hjartatvistinn-hjartatvistinn ,-, en-en
+sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+Þú-þú sagðir-sagða honum-hann Indriða-indriði til-til og-og steigst-steiga
+ofan-ofan á-á fót$-fótur $inn-hinn á-á mér-ég ,-, stelpa$-stelpa $n-hinn
+þín-þinn ,-, og-og svo-svo stelur-stela þú-þú úr-úr stokk$-stokkur $num-hinn
+,-, held-halda ég-ég ,-, og-og því-það fæ-fá ég-ég ekki-ekki roð-roð .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur) (D-A $inn-hinn)))
+  ) 
+
+/~*
+en-en sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur)
+	  (D-A $inn-hinn)
+	  (PP (P á-á)
+	      (NP (N-D móður-móðir) (PRO-D sinni-sinn)))))
+  ) 
+
+/~*
+en-en sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur)
+	  (D-A $inn-hinn)
+	  (PP (P á-á)
+	      (NP (N-D móður-móðir) (PRO-D sinni-sinn)))))
+  ) 
+
+/~*
+en-en sté-stíga í-í þess-það stað-staður óvart-óvar ofan-ofan á-á fót$-fótur
+$inn-hinn á-á móður-móðir sinni-sinn undir-undir borð$-borð $inu-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P á-á))
+      (NP (N-A fót$-fótur)
+	  (D-A $inn-hinn)
+	  (PP (P á-á)
+	      (NP (N-D móður-móðir) (PRO-D sinni-sinn)))))
+  ) 
+
+/~*
+Bjarni-bjarni hreppstjóri-hreppstjóri skipaði-skipa einum-einn af-af
+vinnumönnum-vinnumaður sínum-sinn að-að fylgja-fylgja Indriða-indriði
+yfir-yfir að-að Hóli-hóll ,-, en-en bað-biðja Indriða-indriði að-að koma-koma
+þar-þar oftar-oft ,-, er-vera hann-hann hefði-hafa tíma-tími til-til ---
+því-það mér-ég segir-segja svo-svo hugur-hugur um-um ,-, að-að þú-þú
+verðir-verða gæfumaður-gæfumaður ,-, og-og eru-vera komur-koma þínar-þinn
+hingað-hingað mér-ég kærar-kæra .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV yfir-yfir) (P að-að))
+      (NP (NPR-D Hóli-hóll)))
+  ) 
+
+/~*
+Sigríður-sigríður litla-lítill beiddi-beidda föður-faðir sinn-sinn að-að
+lofa-lofa sér-sig að-að fylgja-fylgja Indriða-indriði á-á veg-vegur ofan-ofan
+fyrir-fyrir tún$-tún $ið-hinn ,-, og-og leyfði-leyfa hann-hann það-það .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P fyrir-fyrir))
+      (NP (N-A tún$-tún) (D-A $ið-hinn)))
+  ) 
+
+/~*
+Þegar-þegar komið-koma var-vera ofan-ofan fyrir-fyrir tún$-tún $ið-hinn ,-,
+segir-segja Sigríður-sigríður við-við Indriða-indriði :-:
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P fyrir-fyrir))
+      (NP (N-A tún$-tún) (D-A $ið-hinn)))
+  ) 
+
+/~*
+Þú-þú hefur-hafa svip-svipur af-af henni-hún Steinunni-steina minni-minn
+heitinni-heitinn utan-utan á-á vangan$-vangi $n-hinn og-og enn$-enni $ið-hinn
+ekki-ekki ólíkt-ólíkur heldur-heldur ,-, en-en augu$-auga $n-hinn hefur$-hafa
+$ðu-þú úr-úr henni-hún móður-móðir okkar-ég sælu-sæla .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV utan-utan) (P á-á))
+      (NP (NP (N-A vangan$-vangi) (D-A $n-hinn))
+	  (CONJ og-og)
+	  (NP (N-A enn$-enni) (D-A $ið-hinn))))
+  ) 
+
+/~*
+hún-hún lærir-læra ekki-ekki svo-svo mikið-mikið sem-sem að-að búa-búa til-til
+utan-utan á-á sig-sig spjör-spjör eða-eða gjöra-gera graut-grautur í-í
+ask-askur ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV utan-utan) (P á-á))
+      (NP (PRO-A sig-sig)))
+  ) 
+
+/~*
+Bjarna-bjarni þótti-þykja nú-nú vel-vel skipast-skipa ,-, og-og er-vera
+það-það af-af ráðið-ráða ,-, að-að Sigríður-sigríður færi-fara þegar-þegar
+norður-norður með-með Björgu-björg ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV norður-norður) (P með-með))
+      (NP (NPR-A Björgu-björg)))
+  ) 
+
+/~*
+Þá-þá var-vera kominn-koma ljómandi-ljómandi dagur-dagur ,-, og-og skinu-skína
+fyrstu-fyrstur morgunsólargeislar$-morgunsólargeisli $nir-hinn inn-inn um-um
+allt-allur hús$-hús $ið-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV inn-inn) (P um-um))
+      (NP (Q-A allt-allur) (N-A hús$-hús) (D-A $ið-hinn)))
+  ) 
+
+/~*
+Þegar-þegar komið-koma var-vera ofan-ofan fyrir-fyrir tún$-tún $ið-hinn ,-,
+segir-segja Sigríður-sigríður við-við Indriða-indriði :-:
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV ofan-ofan) (P fyrir-fyrir))
+      (NP (N-A tún$-tún) (D-A $ið-hinn)))
+  ) 
+
+/~*
+Þú-þú hefur-hafa svip-svipur af-af henni-hún Steinunni-steina minni-minn
+heitinni-heitinn utan-utan á-á vangan$-vangi $n-hinn og-og enn$-enni $ið-hinn
+ekki-ekki ólíkt-ólíkur heldur-heldur ,-, en-en augu$-auga $n-hinn hefur$-hafa
+$ðu-þú úr-úr henni-hún móður-móðir okkar-ég sælu-sæla .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV utan-utan) (P á-á))
+      (NP (NP (N-A vangan$-vangi) (D-A $n-hinn))
+	  (CONJ og-og)
+	  (NP (N-A enn$-enni) (D-A $ið-hinn))))
+  ) 
+
+/~*
+hún-hún lærir-læra ekki-ekki svo-svo mikið-mikið sem-sem að-að búa-búa til-til
+utan-utan á-á sig-sig spjör-spjör eða-eða gjöra-gera graut-grautur í-í
+ask-askur ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV utan-utan) (P á-á))
+      (NP (PRO-A sig-sig)))
+  ) 
+
+/~*
+Bjarna-bjarni þótti-þykja nú-nú vel-vel skipast-skipa ,-, og-og er-vera
+það-það af-af ráðið-ráða ,-, að-að Sigríður-sigríður færi-fara þegar-þegar
+norður-norður með-með Björgu-björg ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV norður-norður) (P með-með))
+      (NP (NPR-A Björgu-björg)))
+  ) 
+
+/~*
+Þá-þá var-vera kominn-koma ljómandi-ljómandi dagur-dagur ,-, og-og skinu-skína
+fyrstu-fyrstur morgunsólargeislar$-morgunsólargeisli $nir-hinn inn-inn um-um
+allt-allur hús$-hús $ið-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV inn-inn) (P um-um))
+      (NP (Q-A allt-allur) (N-A hús$-hús) (D-A $ið-hinn)))
+  ) 
+
+/~*
+Bjarna-bjarni þótti-þykja nú-nú vel-vel skipast-skipa ,-, og-og er-vera
+það-það af-af ráðið-ráða ,-, að-að Sigríður-sigríður færi-fara þegar-þegar
+norður-norður með-með Björgu-björg ;-;
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV norður-norður) (P með-með))
+      (NP (NPR-A Björgu-björg)))
+  ) 
+
+/~*
+Þá-þá var-vera kominn-koma ljómandi-ljómandi dagur-dagur ,-, og-og skinu-skína
+fyrstu-fyrstur morgunsólargeislar$-morgunsólargeisli $nir-hinn inn-inn um-um
+allt-allur hús$-hús $ið-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV inn-inn) (P um-um))
+      (NP (Q-A allt-allur) (N-A hús$-hús) (D-A $ið-hinn)))
+  ) 
+
+/~*
+Þá-þá var-vera kominn-koma ljómandi-ljómandi dagur-dagur ,-, og-og skinu-skína
+fyrstu-fyrstur morgunsólargeislar$-morgunsólargeisli $nir-hinn inn-inn um-um
+allt-allur hús$-hús $ið-hinn .-.
+*~/
+/*
+1 PP:  1 PP, 2 PP, 7 NP, 5 P
+*/
+( (PP (PP (ADV inn-inn) (P um-um))
+      (NP (Q-A allt-allur) (N-A hús$-hús) (D-A $ið-hinn)))
+  ) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  NULL			151/151/177
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  NULL			151/151/177
+whole search, hits/tokens/total
+				151/151/177
+*/

@@ -86,7 +86,7 @@ reps["\(ADJ-([A-Z]{4}S)"]="(ADJS-\\1" # adjective, superlative
 reps["\(V-(D[A-Z]{4})"]="(VAN-\\1" # VAN, passive participle (verbal or adjectival)
 reps["\(V-(P[A-Z123])"]="(VAG-\\1" # VAN, present participle
 reps["\(V-T[AM]"]="(VB" # VB, infinitive
-reps["\(V-(M[A-Z]+)"]="(VBI-\\1"  # VBI, imperative
+reps["\(V-(M[A-Z123]+)"]="(VBI-\\1"  # VBI, imperative
 reps["\(V-([IS][A-Z][123][A-Z]D)"]="(VBD-\\1"  # VBD, past (including past subjunctive)
 reps["\(V-([IS][A-Z][123][A-Z]P)"]="(VBP-\\1"  # VBP, present (including present subjunctive)
 reps["\(V-(U[AM])"]="(VBN-\\1"  # VBN, perfect participle
@@ -201,6 +201,9 @@ reps["\(ADV-W (["+allchars+"]+-["+allchars+"]+)\)"]="(WADV \\1)"
 # XXXXX
 reps["\((VBP|VBD|BED|BEP|HVD|HVP|MDP|MDD)-([IS])[A-Z123]{4} (["+allchars+"]+-["+allchars+"]+)\)"]="(\\1\\2 \\3)"
 
+# Preserve only predashial tag on imperative verbs
+reps["\(VBI-[A-Z123]+ "]="(VBI "
+
 # Preserve only predashial tag on infinitive verbs
 # disappears earlier
 # reps["\((VB|HV|BE)-[A-Z]{2} (["+allchars+"]+-["+allchars+"]+)\)"]="(\\1 \\2)"
@@ -262,7 +265,7 @@ reps["\(ADVP-MWE \(OTHER-G annars-annar\) \(N-G staðar-staður\)\)"]="(NP-ADV (
 
 reps["\(ADVP-MWE \(C hvort-hvort\) \(C sem-sem\)\)"]="(CP-QUE (WQ hvort-hvort) (C sem-sem))"
 
-reps["\(ADVP-MWE \(P um-um\) \(N-A leið-leið\)\)"]="(PP (P um-um) (N-A leið-leið))"
+reps["\(ADVP-MWE \(P um-um\) \(N-A leið-leið\)\)"]="(PP (P um-um) (NP (N-A leið-leið)))"
 
 reps["\(PP \(MWE_PP \(ADV á-á\) \(P móti-móti\)\)"]="(PP (P á-á) (NP (N-D móti-móti))"
 
@@ -273,7 +276,7 @@ reps["\(ADVP-MWE \(P að-að\) \(ADJS-D minnsta-lítill\) \(N-D kosti-kostur\)\)
 
 reps["\(MWE_CP \(ADV svo-svo\) \(C að-að\)\)"]="(ADVP (ADVR svo-svo) (C að-að))"
 
-reps["\(MWE_CP \(ADV áður-áður\) \(C en-en\)\)"]="(ADVP-TMP (ADVR áður-áður) (PP (P en-en) (CP-CMP (WADVP-X 0))))"
+reps["\(MWE_CP \(ADV áður-áður\) \(C en-en\)\)"]="(ADVP-TMP (ADVR áður-áður) (PP (P en-en) (CP-CMP (WADVP 0))))"
 
 reps["\(MWE_AP \(PRO-G þess-það\) \(N-G háttar-háttur\)\)"]="(NP-POS (PRO-G þess-það) (N-G háttar-háttur))"
 
@@ -281,6 +284,10 @@ reps["\((NS|PRO)-[NADG] ((hvorirtv|hvortv|hvorttv)[a-z]+)-([a-z]+)\)"]="(Q+NUM \
 #"(NS-G hvorirtveggja-hvorirtveggur)"
 
 reps["\(ADVP \(ADV einnig-einnig\)\)"]="(ALSO einnig-einnig)"
+
+reps["\(ADV ekki-ekki\)"]="(NEG ekki-ekki)"
+
+reps["\(ADVP \(ADV hvernig-hvernig\)\)"]="(CP-QUE (WADVP (WADV hvernig-hvernig)))"
 
 reps["\(ADJP \(ADJ-([NADG]) (marg[a-z]+)-margur\)\)"]="(Q-\\1 \\2-margur)"
 reps["\(ADJP \(ADJR-([NADG]) (fleir[a-z]+)-margur\)\)"]="(QR-\\1 \\2-margur)"
@@ -309,7 +316,7 @@ reps["\(ADJS-([NADG]) (mest[a-z]+)-mikill\)"]="(QS-\\1 \\2-mikill)"
 reps["MWE_"]=""
 reps["-MWE"]=""
 
-reps["\(CP-ADV \(C (sem|er)-\\1\)\)"]="(CP-REL (WXP-X 0) (C \\1-\\1))"
+reps["\(CP-ADV \(C (sem|er)-\\1\)\)"]="(CP-REL (WNP 0) (C \\1-\\1))"
 reps["\(CP-ADV \(C ([Aa]ð)-að\)\)"]="(CP-THT (C \\1-að))"
 
 for before,after in reps.items():	

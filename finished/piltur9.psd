@@ -1,6 +1,11 @@
-
-( (IP-MAT-PRN-XXX (VBDI sagði-segja)
-		  (NP-SBJ (NPR-N Guðmundur-guðmundur))))
+( (IP-MAT-SPE (ADVP (ADV Nú-nú))
+	      (, ,-,)
+	      (NP-SBJ (PRO-N það-það))
+	      (BEDI var-vera)
+	      (NP-PRD (OTHER-N annað-annar) (N-N mál-mál))
+	      (; !-!)
+	      (IP-MAT-PRN (VBDI sagði-segja)
+			  (NP-SBJ (NPR-N Guðmundur-guðmundur)))))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)

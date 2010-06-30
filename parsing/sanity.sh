@@ -127,6 +127,15 @@ echo "Verb iDoms not lemma ending with a"
 $CS sanity_checks/v-idoms-ur.q $tempfile
 mv -f $tempfile.out $tempfile
 
+echo ""
+echo "wrong order of PRN and SPE"
+$CS sanity_checks/PRN-SPE-wrongly.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
+echo "IP-SMC iDominating verb"
+$CS sanity_checks/smc-with-verb.q $tempfile
+mv -f $tempfile.out $tempfile
 
 
 mv -f $tempfile $1.sanity.psd

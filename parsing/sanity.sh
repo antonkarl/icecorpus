@@ -63,6 +63,15 @@ echo "Bad CP-THT-PRN"
 $CS sanity_checks/bad-cp-tht-prn.q $tempfile
 mv -f $tempfile.out $tempfile
 
+echo ""
+echo "Bad CP-ADV"
+$CS sanity_checks/bad-cp-adv.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
+echo "Bad CP-REL"
+$CS sanity_checks/bad-cp-rel.q $tempfile
+mv -f $tempfile.out $tempfile
 
 echo ""
 echo "SMC with TO"

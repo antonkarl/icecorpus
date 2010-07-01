@@ -3,7 +3,11 @@
 
 import sys,string
 
-list = sys.stdin.readlines()
+list = sys.stdin.read().split()
 
-for ii in list:
-    sys.stdout.write("%s|" % ii)
+ii = 1
+sys.stdout.write(list[0])
+
+while ii <= (len(list)-1):
+    sys.stdout.write("|%s" % list[ii])
+    ii = ii+1

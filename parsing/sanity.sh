@@ -93,6 +93,10 @@ echo "Bad *ICH* trace"
 $CS sanity_checks/bad-ich-trace.q $tempfile
 mv -f $tempfile.out $tempfile
 
+echo ""
+echo "Bad *T* trace"
+$CS sanity_checks/bad-t-trace.q $tempfile
+mv -f $tempfile.out $tempfile
 
 
 #echo ""

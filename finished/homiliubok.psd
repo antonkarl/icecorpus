@@ -1,4 +1,3 @@
-
 ( (IP-MAT (NP-1 (N-N Fögnuður-fögnuður))
 	  (RDPI verður-verða)
 	  (NP-SBJ (NP-POS (D-G þessa-þessi) (N-G heims-heimur))
@@ -13,12 +12,12 @@
 			  (PP (P á-á)
 			      (NP (N-D dauðastundu-dauðastund)
 				  (NP-POS (PRO-D sinni-sinn))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.1))
 
 ( (CODE (CODE <heading>)
 	(NP (N-N Þjónusta-þjónusta)
 	    (NP-POS (NS-G kennimanna-kennimaður)))
-	(CODE </heading>)))
+	(CODE </heading>)) (ID HOMILIUBOK,.2))
 
 ( (IP-MAT (NP-LFD (NS-N Menn-maður)
 		  (D-N ÞEIR-SÁ)
@@ -43,7 +42,7 @@
 	      (NP (Q-D öllum-allur) (NS-D hátíðum-hátíð)))
 	  (PP (P með-með)
 	      (NP (NUM-D TVINNRI-TVENNUR) (N-D þjónustu-þjónusta)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.3))
 
 ( (IP-MAT (NP-SBJ (PRO-N þeir-hann))
 	  (BEPI eru-vera)
@@ -97,7 +96,7 @@
 										     (RP til-til)
 										     (BEPI eru-vera)
 										     (VAN settar-setja))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.4))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (D-N sú-sá)
@@ -156,7 +155,7 @@
 												(IP-SUB (NP-SBJ *T*-4)
 													(NP-OB1 (D-D þeim-sá) (NS-D jarteinum-jarteinn))
 													(VBDI fylgdi-fylgja))))))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.5))
 
 ( (IP-MAT (VBDS ÆTTIM-EIGA)
 	  (NP-SBJ (PRO-N vér-ég))
@@ -198,7 +197,7 @@
 							    (NP-OB2 (PRO-D oss-ég))
 							    (RP til-til)
 							    (VBN boðið-bjóða)))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.6))
 
 ( (IP-MAT (ADVP (ADV Nú-nú))
 	  (PP-LFD (P þó-þó)
@@ -275,7 +274,7 @@
 												   (C sem-sem)
 												   (IP-SUB (WADVP *T*-8)
 													   (NP-SBJ (PRO-N vér-ég))))))))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.7))
 
 ( (IP-MAT (VBPI Þurfum-þurfa)
 	  (NP-SBJ (PRO-N vér-ég))
@@ -325,7 +324,7 @@
 						(VAN farið-fara)
 						(CONJP-4 (CONJ eða-eða)
 							 (ADVP (ADV skörulega-skörulegur))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.8))
 
 ( (IP-MAT (VBPI Vitum-vita)
 	  (NP-SBJ (PRO-N vér-ég))
@@ -371,7 +370,7 @@
 							    (IP-SUB (ADJP *T*-7)
 								    (NP-SBJ (PRO-N vér-ég))
 								    (BEPS SÉIM-VERA))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.9))
 
 ( (IP-MAT (ADVP (ADV Nú-nú))
 	  (PP-LFD (P ef-ef)
@@ -427,14 +426,14 @@
 				  (NP (N-D snilld-snilld) (ADJ-D mikilli-mikill)))
 			      (RP fram-fram)
 			      (VAN túlkað-túlka))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.10))
 
-( (LATIN (FW Assumptio-assumptio) (FW sancte-sancte) (FW Marie-marie)))
+( (LATIN (FW Assumptio-assumptio) (FW sancte-sancte) (FW Marie-marie)) (ID HOMILIUBOK,.11))
 
 ( (TRANSLATION (CODE <translation>)
 	       (NP (NPR-G Uppnumning-uppnumning)
 		   (NP-POS (ADJ-G heilagrar-heilagur) (NPR-G Maríu-maría)))
-	       (CODE </translation>)))
+	       (CODE </translation>)) (ID HOMILIUBOK,.12))
 
 ( (IP-MAT (IP-MAT-1 (NP-SBJ (D-N IN-HINN)
 			    (ADJ-N HELGA-HELGUR)
@@ -457,14 +456,14 @@
 				   (NP (N-D kyni-kyn)
 				       (NP-POS (NPR-G Davíðs-davíð)
 					       (NP-PRN (N-G konungs-konungur))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.13))
 
 ( (IP-MAT (NP-SBJ (D-N INIR-HINN)
 		  (ADJS-N nánustu-náinn)
 		  (NS-N frændur-frændi)
 		  (NP-POS (PRO-G hennar-hún)))
 	  (BEDI VÓRU-VERA)
-	  (ADJP (ADJ-N réttlátir-réttlátur))))
+	  (ADJP (ADJ-N réttlátir-réttlátur))) (ID HOMILIUBOK,.14))
 
 ( (IP-MAT (IP-MAT-1 (CONJ og-og)
 		    (NP-SBJ *con*)
@@ -477,7 +476,7 @@
 		 (IP-MAT=1 (NP-OB1 (ADJ-A lítið-lítill) (N-A auralán-auralán))
 			   (PP (P af-af)
 			       (NP (N-D heimi-heimur)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.15))
 
 ( (IP-MAT (CONJ En-en)
 	  (PP-LFD (P þegar-þegar)
@@ -521,7 +520,7 @@
 								     (BEDI var-vera)
 								     (PP (P í-í)
 									 (NP (Q-D NEKKVERU-NOKKUR) (ADJ-D góðu-góður) (N-D verki-verk)))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.16))
 
 ( (IP-MAT (ADJP-SPR (ADJS-N Fyrst-fyrst)
 		    (NP-POS (NS-G kvenna-kona)))
@@ -534,7 +533,7 @@
 	  (IP-INF-1 (TO að-að)
 		    (VB halda-halda)
 		    (NP-OB1 (N-A HREINLÍFI-HREINLÍFI)))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.17))
 
 ( (IP-MAT (CONJ og-og)
 	  (VBDI nam-nema)
@@ -546,7 +545,7 @@
 		  (NS-D dæmum-dæmi)
 		  (CONJP (CONJ né-né)
 			 (NX (NS-D kenningum-kenning)))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.18))
 
 ( (IP-MAT (ADVP (ADVR heldur-heldur))
 	  (VBDI GLÍKTI-GLÍKJA)
@@ -555,7 +554,7 @@
 	  (PP (P eftir-eftir)
 	      (NP (NP-POS (NPR-G Guðs-guð))
 		  (NS-D englum-engill)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.19))
 
 ( (IP-MAT (HV Hafa-hafa)
 	  (MDPI megu-mega)
@@ -574,7 +573,7 @@
 		      (IP-SUB (NP-SBJ (PRO-N hún-hún))
 			      (VBDS bæri-bera)
 			      (NP-OB1 (NPR-A Krist-krist)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.20))
 
 ( (IP-MAT (CONJ En-en)
 	  (ADVP (ADV þó-þó))
@@ -605,7 +604,7 @@
 							(IP-INF-SBJ=2 (ADVP (ADV eftir-eftir))
 								      (TO að-að)
 								      (VB glíkja-glíkja)))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.21))
 
 ( (IP-MAT (CONJ En-en)
 	  (PP-LFD (P síðan-síðan)
@@ -631,7 +630,7 @@
 					      (VB GLÍKJA-GLÍKJA))
 				    (CONJP (CONJ eða-eða)
 					   (IP-SUB=2 (RP frá-frá) (VB segja-segja)))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.22))
 
 ( (IP-MAT (CONJ En-en)
 	  (PP-LFD (P af-af)
@@ -671,7 +670,7 @@
 				(C 0)
 				(IP-SUB (ADVP *T*-6)
 					(NP-SBJ (OTHERS-A aðra-annar) (ADJ-A helga-helgur) (NS-A menn-maður))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.23))
 
 ( (IP-MAT (NP-LFD (Q-A Öll-allur)
 		  (ADJ-A góð-góður)
@@ -693,7 +692,7 @@
 	  (PP (P við-við)
 	      (NP (NP-PRN (PRO-A sjálfan-sjálfur))
 		  (NPR-A Drottin-drottinn)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.24))
 
 ( (IP-MAT (IP-MAT-1 (NP-SBJ (OTHERS-N Aðrir-annar) (NS-N menn-maður))
 		    (VBPI gefa-gefa)
@@ -703,7 +702,7 @@
 		    (CONJP (CONJ en-en)
 			   (IP-MAT=1 (NP-OB2 (ADJ-D ÞYRSTUM-ÞYRSTUR))
 				     (NP-OB1 (N-A drykk-drykkur)))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.25))
 
 ( (IP-MAT (CONJ en-en)
 	  (NP-SBJ (NPR-N María-maría))
@@ -718,7 +717,7 @@
 		     (PP (P af-af)
 			 (NP (NP-POS (PRO-D sínu-sinn))
 			     (N-D erfiði-erfiði)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.26))
 
 ( (IP-MAT (NP-SBJ (OTHERS-N Aðrir-annar) (NS-N menn-maður))
 	  (VBPI klæða-klæða)
@@ -729,7 +728,7 @@
 			  (IP-SUB (NP-SBJ *T*-1)
 				  (VAN kalnir-kala)
 				  (BEPI eru-vera))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.27))
 
 ( (IP-MAT (CONJ en-en)
 	  (NP-SBJ (NPR-N María-maría))
@@ -742,7 +741,7 @@
 			 (NX (NS-D REIFUM-REIFAR)))
 		  (CONJP (CONJ og-og)
 			 (NX (NS-D klæðum-klæði))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.28))
 
 ( (IP-MAT (NP-SBJ (OTHERS-N Aðrir-annar) (NS-N menn-maður))
 	  (VBPI vitja-vitja)
@@ -753,7 +752,7 @@
 			  (IP-SUB (NP-SBJ *T*-1)
 				  (PP (P í-í)
 				      (NP (NS-D myrkvastofum-myrkvastofa)))
-				  (BEPI eru-vera))))))
+				  (BEPI eru-vera))))) (ID HOMILIUBOK,.29))
 
 ( (IP-MAT (CONJ eða-eða)
 	  (NP-SBJ *con*)
@@ -770,7 +769,7 @@
 			    (PP (P af-af)
 				(NP (N-D ofríki-ofríki)
 				    (NP-POS (ADJ-G vondra-vondur) (NS-G manna-maður))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.30))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (NPR-N María-maría))
@@ -783,7 +782,7 @@
 		  (NP-POS (PRO-A vorn-vor))))
 	  (PP (P til-til)
 	      (NP (NPR-G EGIPTALANDS-EGYPTALAND)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.31))
 
 ( (IP-MAT (CONJ En-en)
 	  (PP-LFD (P meðan-meðan)
@@ -796,7 +795,7 @@
 	  (ADVP-TMP-RSP (ADV þá-þá))
 	  (VBDI fylgdi-fylgja)
 	  (NP-SBJ (NPR-N María-maría))
-	  (NP-OB1 (PRO-D honum-hann))))
+	  (NP-OB1 (PRO-D honum-hann))) (ID HOMILIUBOK,.32))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -826,7 +825,7 @@
 				       (IP-SUB (ADVP *T*-2)
 					       (NP-SBJ (Q-N hver-hver)
 						       (NP-POS (OTHERS-G annarra-annar) (ADJ-G heilagra-heilagur) (NS-G manna-maður)))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.33))
 
 ( (IP-MAT (CONJ En-en)
 	  (PP-LFD (P þó-þó)
@@ -841,7 +840,7 @@
 	  (NP-SBJ (PRO-N hún-hún))
 	  (NP-OB2 (PRO-A sig-sig))
 	  (ADVP (ADV þó-þó))
-	  (NP-OB1 (ADJ-G lítils-lítill))))
+	  (NP-OB1 (ADJ-G lítils-lítill))) (ID HOMILIUBOK,.34))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -857,7 +856,7 @@
 			  (VBDI veitti-veita)
 			  (NP-OB2 (PRO-D henni-hún))
 			  (NP-OB1 (ADJR-A meiri-mikill) (N-A dýrð-dýrð))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.35))
 
 ( (IP-MAT (NP-SBJ (D-N Þeir-sá)
 		  (NS-N menn-maður)
@@ -879,7 +878,7 @@
 			    (PP (P FYR-FYRIR)
 				(NP (NP-POS (PRO-G hans-hann))
 				    (NS-A SAKAR-SÖK)))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.36))
 
 ( (IP-MAT=1 (CONJ en-en)
 	    (ADVP (ADV þó-þó))
@@ -902,7 +901,7 @@
 				    (PP (P á-á)
 					(NP (NS-A líkami-líkami)
 					    (NP-POS (PRO-A sína-sinn))))))))
-	    (. ,-,)))
+	    (. ,-,)) (ID HOMILIUBOK,.37))
 
 ( (IP-MAT (CONJ en-en)
 	  (NP-SBJ (N-N önd-önd)
@@ -922,7 +921,7 @@
 					(NP (N-A píning-píning)
 					    (NP-POS (NPR-G Drottins-drottinn)
 						    (NP-POS (PRO-G vors-vor))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.38))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ-1 (PRO-N það-það))
@@ -955,8 +954,7 @@
 									  (VBN getinn-getinn)
 									  (PP (P af-af)
 									      (NP (ADJ-D helgum-helgur) (N-D anda-andi))))))))))
-	  (. ,-,)))
-
+	  (. ,-,)) (ID HOMILIUBOK,.39))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ (PRO-N hún-hún))
@@ -1002,7 +1000,7 @@
 										    (PP (P af-af)
 											(NP (N-D SYNDUM-SYND)))
 										    (BEPI er-vera)
-										    (VAN getið-geta)))))))))))))
+										    (VAN getið-geta)))))))))))) (ID HOMILIUBOK,.40))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ (PRO-D sjálfum-sjálfur))
@@ -1010,7 +1008,7 @@
 	  (HVPI hefir-hafa)
 	  (NP-OB1 (NP-POS (ADJ-G lítils-lítill) (ADJ-G góðs-góður))
 		  (N-A kost-kostur))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.41))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-MSR-1 (D-D ÞEIM-SÁ) (N-D MUN-MUNUR))
@@ -1035,7 +1033,7 @@
 				    (CP-CMP (WADJP-5 0)
 					    (IP-SUB (ADJP *T*-5)
 						    (NP-SBJ (OTHERS-N aðrir-annar))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.42))
 
 ( (IP-MAT (NP-SBJ-1 (ES Það-það))
 	  (MDPI má-mega)
@@ -1082,7 +1080,7 @@
 						    (IP-SUB (NP-MSR *T*-6)
 							    (NP-OB1 (NP-PRN (PRO-D sjálfri-sjálfur))
 								    (PRO-D sér-sig)))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.43))
 
 ( (IP-MAT (PP (P 0)
 	      (NP (PRO-D Því-það)
@@ -1118,7 +1116,7 @@
 						  (PP (P á-á)
 						      (NP (N-D LÍKAM-LÍKAMI)
 							  (NP-POS (PRO-D sínum-sinn)))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.44))
 
 ( (IP-MAT (PP-LFD (P Eftir-eftir)
 		  (NP (N-A píning-píning)
@@ -1132,7 +1130,7 @@
 	  (NP-SBJ (PRO-N hún-hún))
 	  (NP-OB1 (NS-D POSTULUM-POSTULI)
 		  (NP-POS (NPR-G Guðs-guð)))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.45))
 
 ( (IP-MAT (CONJ og-og)
 	  (VBDI varðveitti-varðveita)
@@ -1173,7 +1171,7 @@
 						      (IP-SUB (ADVP *T*-4)
 							      (NP-OB1 (NP-POS (PRO-D sinni-sinn))
 								      (N-D móður-móðir)))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.46))
 
 ( (IP-MAT (PP-LFD (P Meðan-meðan)
 		  (CP-ADV (C 0)
@@ -1216,7 +1214,7 @@
 			  (NP-OB1 (N-N stórmerki-stórmerki)
 				  (NP-POS (NPR-G Drottins-drottinn)
 					  (NP-POS (PRO-G vors-vor))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.47))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ-1 (ES það-það))
@@ -1253,7 +1251,7 @@
 					  (C sem-sem)
 					  (IP-SUB (ADVP *T*-2)
 						  (NP-SBJ (ADJ-N góðir-góður))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.48))
 
 ( (IP-MAT (IP-MAT-5 (CONJ En-en)
 		    (QP-4 (Q-N EKKI-EKKERT))
@@ -1282,7 +1280,7 @@
 					      (NP-SBJ (ADJ-N góðir-góður))
 					      (RP of-of)
 					      (VBPS nái-ná))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.49))
 
 ( (IP-MAT (CONJ En-en)
 	  (ADVP (ADV þó-þó))
@@ -1318,7 +1316,7 @@
 										   (NP (Q-A alla-allur) (N-A miskunn-miskunn))))
 								    (VBPI veitir-veita)
 								    (NP-OB2 (ADJ-D helgum-helgur) (NS-D mönnum-maður)))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.50))
 
 ( (IP-MAT (CONJ Og-og)
 	  (NP-LFD (PRO-N það-það)
@@ -1366,7 +1364,7 @@
 									(PP (P frá-frá)
 									    (NP (NP-POS (N-G helvítis-helvíti))
 										(NS-D kvölum-kvöl))))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.51))
 
 ( (CP-QUE (CONJ Eða-eða)
 	  (WNP-1 (WPRO-N hvað-hver))
@@ -1430,7 +1428,7 @@
 																	   (PP (P við-við)
 																	       (NP (PRO-A hann-hann)))
 																	   (CONJP-7 (CONJ eða-eða) (N-A svefn-svefn)))))))))))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.52))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (NPR-N María-maría))
@@ -1446,7 +1444,7 @@
 			      (P í-í)
 			      (NP (N-D kviði-kviður)
 				  (NP-COM *ICH*-1)))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.53))
 
 ( (IP-MAT (CONJ og-og)
 	  (VBDI tók-taka)
@@ -1455,7 +1453,7 @@
 	      (NP (NP-POS (PRO-G hennar-hún))
 		  (N-D holdi-hold)))
 	  (NP-OB1 (Q-A allt-allur) (ADJ-A líkamlegt-líkamlegur) (N-A eðli-eðli))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.54))
 
 ( (IP-MAT (ADVP (ADV Nú-nú))
 	  (ADVP-LFD (ADVR svo-svo)
@@ -1563,7 +1561,7 @@
 															 (ADJP (VAN-A LUKTAN-LYKJA)
 															       (NP (N-D líkama-líkami)
 																   (NP-POS (PRO-D sínum-sinn))))))))))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.55))
 
 ( (IP-MAT (CONJ En-en)
 	  (ADVP-LFD (ADV þar-þar)
@@ -1602,7 +1600,7 @@
 					      (MDPS MEGIM-MEGA)
 					      (NP-OB1 (D-A IÐ-HINN) (ADJ-A ANDLEGA-ANDLEGUR))
 					      (VB skilja-skilja))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.56))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (D-A þau-það)
@@ -1632,7 +1630,7 @@
 							(VBPI (VBPI lýsist-lýsa) (CONJ og-og) (VBPI hitnar-hitna))
 							(PP (P af-af)
 							    (NP (N-D sólu$-sóla) (D-D $nni-hinn)))))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.57))
 
 ( (IP-MAT (CONJ en-en)
 	  (NP-SBJ (N-N geisli-geisli)
@@ -1657,7 +1655,7 @@
 			 (NP (N-A líkneski-líkneski)
 			     (PP (P af-af)
 				 (NP (N-D gler$-gler) (D-D $inu-hinn))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.58))
 
 ( (IP-MAT (IP-MAT-1 (NP-SBJ (N-N Sól$-sól) (D-N $in-hinn))
 		    (VBPI merkir-merkja)
@@ -1672,7 +1670,7 @@
 			   (NP-OB1 (NPR-A Drottin-drottinn)
 				   (NP-POS (PRO-A vorn-vor))
 				   (NP-PRN (NPR-A IESUM-JESÚ) (NPR-A CHRISTUM-KRISTUR)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.59))
 
 ( (IP-MAT (ADVP-TMP-LFD (ADV Þá-þá)
 			(CP-REL (WADVP-1 0)
@@ -1691,7 +1689,7 @@
 			(C sem-sem)
 			(IP-SUB (ADJP *T*-2)
 				(ADVP-TMP (ADV áður-áður)))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.60))
 
 ( (IP-MAT (CONJ og-og)
 	  (VBPI tekst-taka)
@@ -1699,7 +1697,7 @@
 	  (PP (P af-af)
 	      (NP (N-D lýsi-lýsi)
 		  (NP-POS (PRO-G hennar-hún))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.61))
 
 ( (IP-MAT (ADVP (ADV Svo-svo))
 	  (BEDI var-vera)
@@ -1721,7 +1719,7 @@
 			      (ADVP-LOC (ADV hér-hér))
 			      (PP (P á-á)
 				  (NP (N-D jörðu-jörð))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.62))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (N-N gler$-gler) (D-N $ið-hinn))
@@ -1743,7 +1741,7 @@
 						(BEPS sé-vera)
 						(RP fyrir-fyrir)))
 				(NP-OB1 (CONJ bæði-bæði) (N-A sól-sól) (CONJ og-og) (OTHER-A annað-annar)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.63))
 
 ( (IP-MAT (ADVP (ADV Svo-svo))
 	  (NP-SBJ *exp*)
@@ -1796,7 +1794,7 @@
 																	(ADVP (ADV sundur-sundur)))
 																    (BEPI er-vera)
 																    (VAN skorið-skera))))))))))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.64))
 
 ( (IP-MAT (PP (P 0)
 	      (NP (P Því-það)
@@ -1832,7 +1830,7 @@
 							      (C 0)
 							      (IP-SUB (ADJP *T*-3)
 								      (NP-SBJ (OTHER-N annað-annar) (N-N smíði-smíði))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.65))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (NPR-N Drottinn-drottinn))
@@ -1868,7 +1866,7 @@
 											(PP (P í-í)
 											    (ADVP (ADV gegnum-gegnum)))
 											(VBPI skín-skína)))))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.66))
 
 ( (IP-MAT (PP-LFD (P Þótt-þótt)
 		  (CP-ADV (C 0)
@@ -1892,7 +1890,7 @@
 				  (BEPI er-vera)
 				  (NEG EIGI-EKKI)
 				  (ADJP (ADJ-N GAGNSÆTT-GAGNSÆR))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.67))
 
 ( (IP-MAT (NP-SBJ *pro*)
 	  (ADVP (ADVR Svo-svo)
@@ -1961,7 +1959,7 @@
 												       (IP-INF (NP-OB1 *T*-4)
 													       (TO að-að)
 													       (VB reyna-reyna)))))))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.68))
 
 ( (IP-MAT (PP (P Á-á)
 	      (NP (ADJ-D góðu-góður) (N-D gleri-gler)))
@@ -1974,7 +1972,7 @@
 			   (NP-POS (N-G silfurs-silfur)))
 		  (CONJP (CONJ og-og)
 			 (NP (Q-N allir-allur) (D-N INIR-HINN) (ADJS-N fegurstu-fagur) (NS-N litir-litur))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.69))
 
 ( (IP-MAT (ADVP (ADV Svo-svo))
 	  (BEDI var-vera)
@@ -2030,8 +2028,7 @@
 										 (IP-SUB (ADJP *T*-5)
 											 (NP-SBJ (WADV hvar-hvar)
 												 (NP-POS (OTHER-G annars-annar) (N-G staðar-staður)))))))))))))
-	  (. .-.)))
-
+	  (. .-.)) (ID HOMILIUBOK,.70))
 
 ( (IP-MAT (NP-SBJ (N-N Gler-gler)
 		  (D-N ÞAÐ-SÁ)
@@ -2076,7 +2073,7 @@
 						      (NP-OB1 (NP-POS (PRO-A sitt-sinn))
 							      (N-A eðli-eðli))
 						      (VBN saurgað-saurga)))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.71))
 
 ( (IP-MAT-1 (PP-LFD (P Ef-ef)
 		    (CP-ADV (C 0)
@@ -2106,7 +2103,7 @@
 					    (CONJP (CONJ og-og)
 						   (PP (P með-með)
 						       (NP (Q-D ÖNGU-ENGINN) (N-D líkneski-líkneski)))))))))
-	    (. .-.)))
+	    (. .-.)) (ID HOMILIUBOK,.72))
 
 ( (IP-MAT (ADVP (ADV Svo-svo))
 	  (HVPI hafa-hafa)
@@ -2118,7 +2115,7 @@
 	  (PP (P í-í)
 	      (NP (N-D eðli-eðli)
 		  (NP-POS (PRO-D sínu-sinn))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.73))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ *exp*)
@@ -2157,7 +2154,7 @@
 						    (BEPI er-vera)
 						    (PP (P af-af)
 							(NP (N-D gler$-gler) (D-D $inu-hinn)))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.74))
 
 ( (IP-MAT (IP-MAT-1 (ADVP (ADV Svo-svo))
 		    (HVDI hafði-hafa)
@@ -2172,7 +2169,7 @@
 		    (NP-OB1 (Q-A alla-allur) (N-A manndýrð-manndýrð))
 		    (PP (P að-að)
 			(NP (N-D aukahlut-aukahlutur))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.75))
 
 ( (IP-MAT (PP (P 0)
 	      (NP (PRO-D Því-það)
@@ -2222,14 +2219,14 @@
 											    (PP (P frá-frá)
 												(NP (N-D manni-maður)))
 											    (VB getast-geta)))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.76))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (N-N GEISLI$-GEISLI) (D-N $NN-HINN))
 	  (VBPI skín-skína)
 	  (PP (P í-í)
 	      (PP (P gegnum-gegnum)
-		  (NP (N-A gler$-gler) (D-A $ið-hinn))))))
+		  (NP (N-A gler$-gler) (D-A $ið-hinn))))) (ID HOMILIUBOK,.77))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -2241,7 +2238,7 @@
 			 (NP (N-A líkneski-líkneski)
 			     (PP (P af-af)
 				 (NP (N-D GLERI$-GLER) (D-D $NU-HINN))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.78))
 
 ( (IP-MAT (ADVP (ADV Svo-svo))
 	  (HVPI hefir-hafa)
@@ -2260,7 +2257,7 @@
 			 (NP (N-A manndóm-manndómur)
 			     (PP (P af-af)
 				 (NP (NPR-D Maríu-maría))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.79))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-OB1 (Q-A alla-allur)
@@ -2277,7 +2274,7 @@
 				(VBDS grandaði-granda)
 				(ADVP-TMP (ADV ALDREGI-ALDREGI))
 				(NP-SBJ (N-N OFMETNUÐUR-OFMETNAÐUR)))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.80))
 
 ( (IP-MAT (CONJ og-og)
 	  (VBDI kvaðst-kveða)
@@ -2297,7 +2294,7 @@
 					(NP-OB2 (PRO-D henni-hún))
 					(NP-OB1 (NP-MSR (ADVR svo-svo) (Q-A mikla-mikill))
 						(N-A dýrð-dýrð)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.81))
 
 ( (IP-MAT (CONJ En-en)
 	  (PP-LFD (P meðan-meðan)
@@ -2313,7 +2310,7 @@
 	  (NP-OB1 (PRO-D sér-sig))
 	  (ADVP (ADV lítið-lítið))
 	  (PP (P af-af)
-	      (NP (QS-D flestu-margur)))))
+	      (NP (QS-D flestu-margur)))) (ID HOMILIUBOK,.82))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -2322,7 +2319,7 @@
 		(CONJP *ICH*-1))
 	  (ADVP-TMP (ADV OFVALT-ÁVALLT))
 	  (CONJP-1 (CONJ og-og)
-		   (ADJP (ADJ-N hógvær-hógvær)))))
+		   (ADJP (ADJ-N hógvær-hógvær)))) (ID HOMILIUBOK,.83))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -2334,7 +2331,7 @@
 		  (N-A dýrð-dýrð)
 		  (CONJP (CONJ og-og)
 			 (NX (NS-A JARTEINIR-JARTEIN))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.84))
 
 ( (IP-MAT (CONJ en-en)
 	  (NP-SBJ *con*)
@@ -2350,7 +2347,7 @@
 		    (IP-SUB (NP-SBJ *T*-2)
 			    (NP-OB1 (NS-D NAUÐSYNJUM-NAUÐSYN))
 			    (VBDI sætti-sætta)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.85))
 
 ( (IP-MAT (CONJ En-en)
 	  (PP (P við-við)
@@ -2374,7 +2371,7 @@
 								    (VBDS skiptist-skipta)
 								    (PP (P til-til)
 									(NP (NS-G landa-land)))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.86))
 
 ( (IP-MAT (NP-SBJ-1 (ES Það-það))
 	  (VBPI finnst-finna)
@@ -2408,7 +2405,7 @@
 						  (IP-SUB (NP-SBJ *con*)
 							  (VBPI heyra-heyra)
 							  (NP-OB1 (ADJ-A fagran-fagur) (N-A söng-söngur))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.87))
 
 ( (IP-MAT (CONJ En-en)
 	  (PP-LFD (P ef-ef)
@@ -2448,7 +2445,7 @@
 							  (NP-PRD (N-N drottning-drottning))
 							  (BEPI er-vera)
 							  (LATIN (FW omnium-omnium) (FW sanctorum-sanctorum)))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.88))
 
 ( (IP-MAT (CONJ Eða-eða)
 	  (ADVP (ADV ella-ella))
@@ -2470,7 +2467,7 @@
 								  (NP-POS (PRO-A sinn-sinn))
 								  (CONJP (CONJ og-og)
 									 (NX (N-A móður-móðir)))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.89))
 
 ( (IP-MAT (PP (P Af-af)
 	      (NP (PRO-D því-það)
@@ -2494,7 +2491,7 @@
 					(N-D dýrð-dýrð))
 				    (CONJP (CONJ og-og)
 					   (NP (ADJ-D góðum-góður) (N-D ilm-ilmur)))))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.90))
 
 ( (IP-MAT-1 (CONJ og-og)
 	    (BEDI var-vera)
@@ -2515,7 +2512,7 @@
 				    (IP-INF (NP-OB1 *T*-2)
 					    (TO að-að)
 					    (VB (VB sjá-sjá) (CONJ eða-eða) (VB heyra-heyra))))))
-	    (. .-.)))
+	    (. .-.)) (ID HOMILIUBOK,.91))
 
 ( (IP-MAT (CONJ En-en)
 	  (PP-LFD (P ALLS-ALLS)
@@ -2541,7 +2538,7 @@
 				  (N-D önd-önd)
 				  (CONJ og-og)
 				  (N-D líkama-líkami)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.92))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (NS-N LÍKAMUR-LÍKAMI)
@@ -2557,7 +2554,7 @@
 			  (IP-SUB (NP-SBJ *T*-1)
 				  (VBPI HEITIR-HEITA)
 				  (NP-PRD (NPR-N Vallis-vallis) (NPR-N Jósafat-jósafat))))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.93))
 
 ( (IP-MAT (CONJ og-og)
 	  (BEDI var-vera)
@@ -2569,7 +2566,7 @@
 	      (P til-til)
 	      (NP (N-G vegs-vegur)
 		  (NP-COM *ICH*-1)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.94))
 
 ( (IP-MAT (CONJ En-en)
 	  (ADVP-TMP (ADV nú-nú))
@@ -2579,7 +2576,7 @@
 		  (ADJP (ADJ-N tóm-tómur)))
 	  (VAN fundin-finna)
 	  (NP-SBJ-1 (N-N gröf$-gröf) (D-N $in-hinn))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.95))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (N-N önd-önd)
@@ -2591,7 +2588,7 @@
 	      (NP (Q-A öll-allur)
 		  (NP-POS (NS-G engla-engill))
 		  (N-A fylki-fylki)))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.96))
 
 ( (IP-MAT (CONJ og-og)
 	  (VBPI lúta-lúta)
@@ -2599,7 +2596,7 @@
 	  (NP-SBJ (NP (Q-N allir-allur) (NS-N englar-engill))
 		  (CONJP (CONJ og-og)
 			 (NP (Q-N allir-allur) (ADJ-N helgir-helga) (NS-N menn-maður))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.97))
 
 ( (IP-MAT (NP-SBJ (NPR-N Jeronimus-jeronimus)
 		  (NP-PRN (N-N prestur-prestur)))
@@ -2613,7 +2610,7 @@
 				 (IP-SUB (NP-SBJ *con*)
 					 (BEDI var-vera)
 					 (VAN grafin-grafa)))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.98))
 
 ( (IP-MAT (CONJ en-en)
 	  (NP-SBJ (PRO-N hann-hann))
@@ -2648,7 +2645,7 @@
 								     (MDPS megi-mega)
 								     (NEG EIGI-EKKI)
 								     (VB sjá-sjá))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.99))
 
 ( (IP-MAT (NP-SBJ (N-N Hátíð-hátíð)
 		  (NP-POS (NS-G UPPNUMNINGAR-UPPNUMNING)
@@ -2663,7 +2660,7 @@
 			 (NP (NS-D mönnum-maður)
 			     (PP (P á-á)
 				 (NP (N-D jörðu-jörð))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.100))
 
 ( (IP-MAT (PP-LFD (P Ef-ef)
 		  (CP-ADV (C 0)
@@ -2712,7 +2709,7 @@
 							 (NP (N-N móðir-móðir)
 							     (NP-POS (NPR-G Drottins-drottinn)
 								     (NP-POS (PRO-G þeirra-hann))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.101))
 
 ( (IP-MAT (PP (P Á-á)
 	      (NP (N-D jörðu-jörð)))
@@ -2738,7 +2735,7 @@
 						      (IP-SUB (NP-SBJ *T*-1)
 							      (NP-OB1 (PRO-A hana-hún))
 							      (VBPI dýrka-dýrka))))))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.102))
 
 ( (IP-MAT (CONJ og-og)
 	  (MDPI má-mega)
@@ -2754,7 +2751,7 @@
 				  (NP-SBJ (PRO-N hún-hún))
 				  (MDPI vill-vilja)
 				  (VB *))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.103))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (D-N SÁ-SÁ)
@@ -2792,7 +2789,7 @@
 									 (VB banna-banna)
 									 (NP-OB2 (PRO-D sér-sig))
 									 (NP-OB1 (NS-A MUNÚÐIR-MUNÚÐ) (ADJ-A RANGAR-RANGUR))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.104))
 
 ( (IP-MAT (ADVP-TMP (ADV Nú-nú))
 	  (VBDI ræddum-ræða)
@@ -2818,7 +2815,7 @@
 							    (C 0)
 							    (IP-SUB (ADJP *T*-2)
 								    (NP-SBJ (OTHERS-N aðrir-annar) (ADJ-N HELGIR-HELGUR) (NS-A menn-maður))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.105))
 
 ( (IP-MAT (CONJ En-en)
 	  (ADVP-LFD (ADVR svo-svo)
@@ -2858,7 +2855,7 @@
 				      (BEPI er-vera)
 				      (PP (P af-af)
 					  (NP (NPR-D Guði-guð)))))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.106))
 
 ( (IP-MAT (CONJ og-og)
 	  (BEPI eru-vera)
@@ -2873,7 +2870,7 @@
 			    (BEPI eru-vera)
 			    (ADJP (NP *ICH*-2)
 				  (ADJS-N glíkastir-glíkur))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.107))
 
 ( (IP-MAT-1 (PP (P Af-af)
 		(NP (PRO-D því-það)
@@ -2913,7 +2910,7 @@
 							(VBPI þurfum-þurfa)
 							(NP-OB1 (PRO-G hennar-hún))
 							(ADVP (ADVR meir-meira)))))))
-	    (. .-.)))
+	    (. .-.)) (ID HOMILIUBOK,.108))
 
 ( (IP-MAT (NP-SBJ *exp*)
 	  (RDPI Verður-verða)
@@ -2936,7 +2933,7 @@
 							(NP (NP (NS-D sóttum-sótta))
 							    (CONJP (CONJ eða-eða)
 								   (NP (OTHERS-D öðrum-annar) (ADJ-D líkamlegum-líkamlegur) (NS-D MEINUM-MEIN)))))))))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.109))
 
 ( (IP-MAT (CONJ en-en)
 	  (PP-LFD (P þó-þó)
@@ -2971,7 +2968,7 @@
 				     (IP-SUB=1 (NP-OB1 (OTHER-N annað-annar)
 						       (NP-PRN (ADJR-N NAUÐSYNLEGRA-NAUÐSYNLEGUR)))
 					       (ADVP (ADV ella-ella))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.110))
 
 ( (CP-QUE (CONJ En-en)
 	  (WNP-1 (WPRO-N hvað-hver))
@@ -3040,8 +3037,7 @@
 										       (IP-INF (NP-OB1 *T*-7)
 											       (TO að-að)
 											       (MD geta-geta))))))))))))
-	  (. .-.)))
-
+	  (. .-.)) (ID HOMILIUBOK,.111))
 
 ( (IP-MAT (ADVP (ADV ÞVÍ-ÞVÍ))
 	  (MDPI skal-skulu)
@@ -3145,7 +3141,7 @@
 											 (IP-SUB=12-XXX-UNSURE (ADVP (ADV þá-þá))
 													       (PP (P að-að)
 														   (NP (OTHER-D öðrum-annar))))))))
-						       (. ,-,)))))))))
+						       (. ,-,)))))))) (ID HOMILIUBOK,.112))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *pro*)
@@ -3169,7 +3165,7 @@
 					   (VB þjóna-þjóna)
 					   (NP-PRN (PRO-N sjálfur-sjálfur))
 					   (NP-OB1 (OTHER-D öðrum-annar)))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.113))
 
 ( (IP-MAT (IP-MAT-1 (- ---)
 		    (ADVP (ADV nú-nú))
@@ -3236,7 +3232,7 @@
 									    (NP-OB1 (OTHER-D öðrum-annar))
 									    (PP (P með-með)
 										(NP (NS-D orðum-orð)))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.114))
 
 ( (IP-MAT (CONJ En-en)
 	  (PP-LFD (P ef-ef)
@@ -3289,7 +3285,7 @@
 							      (ADJ-N verður-verður))
 							(PP (P af-af)
 							    (NP (NPR-D Guði-guð)))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.115))
 
 ( (IP-MAT (NP-SBJ (NPR-N Dominus-dominus)
 		  (NP-PRN *ICH*-1))
@@ -3309,14 +3305,14 @@
 				    (VBDI taldi-telja)
 				    (PP (P fyr-fyrir)
 					(NP (NS-D mönnum-maður))))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.116))
 
 ( (IP-MAT (CONJ en-en)
 	  (NP-SBJ (N-N kona-kona) (Q-N nekkver-nokkur))
 	  (VBDI heyrði-heyra)
 	  (NP-OB1 (N-A mál-mál)
 		  (NP-POS (PRO-G hans-hann)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.117))
 
 ( (IP-MAT-SPE (" "-")
 	      (ADJP (ADJ-N Sæll-sæll))
@@ -3338,7 +3334,7 @@
 							 (NP-SBJ (PRO-N þú-þú))
 							 (VBDI sóst-sjúga))))))
 	      (. .-.)
-	      (" "-")))
+	      (" "-")) (ID HOMILIUBOK,.118))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (PRO-N hann-hann))
@@ -3363,7 +3359,7 @@
 						       (NP-OB1 (PRO-A þau-það))
 						       (ADVP-TMP (ADV síðan-síðan)))))))
 	  (. .-.)
-	  (" "-")))
+	  (" "-")) (ID HOMILIUBOK,.119))
 
 ( (IP-MAT (NP-SBJ-1 (D-N Þessi-þessi) (NS-N orð-orð))
 	  (MDPI munu-munu)
@@ -3399,7 +3395,7 @@
 													   (P á-á)
 													   (NP (N-D brjósti-brjóst)
 													       (NP-COM *ICH*-7)))))))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.120))
 
 ( (IP-MAT (CONJ En-en)
 	  (PP-LFD (P ef-ef)
@@ -3416,7 +3412,7 @@
 	  (VAN mælt-mæla)
 	  (PP (P of-of)
 	      (NP (ADJ-D sankta-sankta) (NPR-D Maríu-maría)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.121))
 
 ( (IP-MAT (CONJ Og-og)
 	  (NP-SBJ *exp*)
@@ -3484,7 +3480,7 @@
 																					     (IP-SUB (NP-OB1 *T*-8)
 																						     (NP-SBJ (NS-N austurvegskonungar$-austurvegskonungur) (D-N $nir-hinn))
 																						     (VBDI mæltu-mæla)))))))))))))))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.122))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-OB1 (Q-A allt-allur) (D-A þetta-þessi))
@@ -3493,7 +3489,7 @@
 	  (PP (P í-í)
 	      (NP (N-A hug-hugur)
 		  (NP-COM (PRO-D sér-sig))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.123))
 
 ( (IP-MAT (CONJ En-en)
 	  (PP-LFD (P er-er)
@@ -3508,7 +3504,7 @@
 	  (ADVP-TMP-RSP (ADV þá-þá))
 	  (VBDI fylgdi-fylgja)
 	  (NP-SBJ (PRO-N hún-hún))
-	  (NP-OB1 (PRO-D honum-hann))))
+	  (NP-OB1 (PRO-D honum-hann))) (ID HOMILIUBOK,.124))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -3517,7 +3513,7 @@
 	  (PP (P úr-úr)
 	      (NP (NP-POS (PRO-G hans-hann))
 		  (N-D munni-munnur)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.125))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-OB1 (Q-A allt-allur)
@@ -3536,14 +3532,14 @@
 		    (CP-CMP (WADJP-2 0)
 			    (C 0)
 			    (IP-SUB (ADJP *T*-2)
-				    (NP-SBJ (OTHER-N aðrir-annar))))))))
+				    (NP-SBJ (OTHER-N aðrir-annar))))))) (ID HOMILIUBOK,.126))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
 	  (BEDI var-vera)
 	  (ADJP (ADJ-N minngari-minnug))
 	  (RP að-að)
-	  (ADVP (ADV eftir-eftir))))
+	  (ADVP (ADV eftir-eftir))) (ID HOMILIUBOK,.127))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -3551,14 +3547,14 @@
 	  (NP-OB1 (ADJR-A betri-góður) (NS-A lok-lok))
 	  (RP á-á)
 	  (IP-INF (TO að-að) (VB efna-efna))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.128))
 
 ( (IP-MAT (PP (P Fyr-fyrir)
 	      (NP (D-A þetta-þessi)))
 	  (BEDI var-vera)
 	  (NP-SBJ (N-N verðleikur-verðleikur)
 		  (NP-POS (PRO-G hennar-hún)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.129))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-OB1 (SUCH-A slík-slíkur)
@@ -3576,13 +3572,13 @@
 			    (MDPI mun-munu)
 			    (NP-SBJ (PRO-N eg-ég))
 			    (VB segja-segja)))
-	  (. :-:)))
+	  (. :-:)) (ID HOMILIUBOK,.130))
 
 ( (IP-MAT (NP-SBJ (PRO-N Hún-hún))
 	  (VBDI bar-bera)
 	  (NP-OB1 (NPR-A Drottin-drottinn))
 	  (PP (P í-í)
-	      (NP (D-A þenna-þessi) (N-A heim-heimur)))))
+	      (NP (D-A þenna-þessi) (N-A heim-heimur)))) (ID HOMILIUBOK,.131))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -3593,7 +3589,7 @@
 		  (CONJP (CONJ og-og)
 			 (ADJP (NP-CMP (Q-D öllum-allur) (ADJ-D helgum-helgur) (NS-D mönnum-maður))
 			       (ADJR-N helgari-helgur))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.132))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-OB1 (D-A þessi-þessi)
@@ -3669,7 +3665,7 @@
 						       (IP-SUB=9 (VB halda-halda)
 								 (NP-OB1 (PRO-A þau-það))
 								 (ADVP-TMP (ADV síðan-síðan))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.133))
 
 ( (IP-MAT (VBPI Kostum-kosta)
 	  (NP-SBJ (PRO-N vér-ég))
@@ -3710,8 +3706,7 @@
 						       (IP-SUB (NP-OB1 *T*-2)
 							       (NP-SBJ (PRO-N hún-hún))
 							       (DODI gjörði-gera)))))))))
-	  (. .-.)))
-
+	  (. .-.)) (ID HOMILIUBOK,.134))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (Q-N hver-hver)
@@ -3750,7 +3745,7 @@
 				 (NP (NP (NPR-D Guði-guð))
 				     (CONJP (CONJ og-og)
 					    (NP (ADJ-D helgum-helgur) (NS-D mönnum-maður))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.135))
 
 ( (IP-MAT (IP-MAT-1 (CONJ En-en)
 		    (NP-SBJ (NPR-N Drottinn-drottinn)
@@ -3840,11 +3835,11 @@
 						 (NP (ADJ-D helgum-helga) (N-D anda-andi)))))
 				  (VBPI (VBPI lifir-lifa) (CONJ og-og) (VBPI ríkir-ríkja)))))
 	  (LATIN (FW per-per) (FW omnia-omnia) (FW secula-secula) (FW seculorum-seculorum))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.136))
 
 ( (CODE (CODE <heading>)
 	(LATIN (FW Nativitas-nativitaur) (FW sancti-sancti) (FW Johannis-johannis) (FW baptiste-baptiste))
-	(CODE </heading>)))
+	(CODE </heading>)) (ID HOMILIUBOK,.137))
 
 ( (CODE (CODE <modern_translation_of_heading>)
 	(CODE <bracket>)
@@ -3855,7 +3850,7 @@
 	(, .-.)
 	(PP (P Á-á)
 	    (NP (NPR-D Jónsmessu-jónsmessa)))
-	(CODE </modern_translation_of_heading>)))
+	(CODE </modern_translation_of_heading>)) (ID HOMILIUBOK,.138))
 
 ( (IP-MAT (ADVP (ADV Svo-svo))
 	  (VBPI segir-segja)
@@ -3877,14 +3872,14 @@
 					  (IP-SUB (NP-SBJ *T*-1)
 						  (NP-PRD (NPR-N Sakarías-sakarías))
 						  (VBDI hét-heita))))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.139))
 
 ( (IP-MAT (CONJ en-en)
 	  (NP-SBJ (N-N kona-kona)
 		  (NP-POS (PRO-G hans-hann)))
 	  (VBDI hét-heita)
 	  (NP-PRD (NPR-N Elísabet-elísabet))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.140))
 
 ( (IP-MAT (NP-SBJ (PRO-N Hún-hún))
 	  (BEDI var-vera)
@@ -3894,14 +3889,14 @@
 		  (, ,-,)
 		  (NP-PRN (N-D bróður-bróðir)
 			  (NP-POS (NPR-G MOISES-MÓSES)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.141))
 
 ( (IP-MAT (NP-SBJ (PRO-N Þau-það))
 	  (BEDI VÓRU-VERA)
 	  (ADJP (ADJ-N réttlát-réttlátur))
 	  (Q-N bæði-bæði)
 	  (PP (P FYR-FYRIR)
-	      (NP (NPR-D Guði-guð)))))
+	      (NP (NPR-D Guði-guð)))) (ID HOMILIUBOK,.142))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -3916,7 +3911,7 @@
 				(VBDI fann-finna)
 				(PP (P að-að)
 				    (NP (PRO-D þeim-það))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.143))
 
 ( (IP-MAT (QP-1 (Q-A EKKI-EKKERT))
 	  (VBDI áttu-eiga)
@@ -3930,7 +3925,7 @@
 			  (IP-SUB (NP-SBJ (NPR-N Elísabet-elísabet))
 				  (BEDI var-vera)
 				  (NP-PRD (N-N óbyrja-óbyrja))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.144))
 
 ( (IP-MAT (CONJ En-en)
 	  (ADVP-TMP-LFD (ADV þá-þá)
@@ -3954,7 +3949,7 @@
 		      (VB bera-bera)
 		      (ADVP-DIR (ADV þar-þar))
 		      (NP-OB1 (N-A reykelsi-reykelsi)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.145))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (OTHERS-N aðrir-annar) (NS-N menn-maður))
@@ -3968,7 +3963,7 @@
 		      (IP-SUB (NP-SBJ (PRO-N hann-hann))
 			      (VBDI bar-bera)
 			      (NP-OB1 (N-A reykels$-reykelsi) (D-A $ið-hinn)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.146))
 
 ( (IP-MAT (ADVP-TMP (ADV Þá-þá))
 	  (VBPI sér-sjá)
@@ -3977,14 +3972,14 @@
 		  (NP-POS (NPR-G Guðs-guð)))
 	  (PP (P til-til)
 	      (NP (ADJ-G hægri-hægri) (N-G handar-hönd)))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.147))
 
 ( (IP-MAT (CONJ en-en)
 	  (NP-SBJ (N-N ótti-ótti) (ADJ-N mikill-mikill))
 	  (VBDI fylgdi-fylgja)
 	  (NP-OB1 (N-D sýn-sýn)
 		  (NP-POS (N-G ENGILS$-ENGILL) (D-G $ins-hinn)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.148))
 
 ( (IP-MAT (NP-SBJ (N-N Engill$-engilli) (D-N $inn-hinn))
 	  (VBDI kvaddi-kveðja)
@@ -4005,14 +4000,14 @@
 						      (BEPI er-vera)
 						      (NP-SBJ (N-N bæn-bæn)
 							      (NP-POS (PRO-N þín-þinn))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.149))
 
 ( (IP-MAT-SPE (MDPI Munuð-munu)
 	      (NP-SBJ (N-N IÐ-ÞÚ)
 		      (NP-PRN (NPR-N Elísabet-elísabet)))
 	      (NP-OB1 (N-A son-sonur))
 	      (VB eiga-eiga)
-	      (. ,-,)))
+	      (. ,-,)) (ID HOMILIUBOK,.150))
 
 ( (IP-MAT-SPE (CONJ og-og)
 	      (MDPI skal$-skulu)
@@ -4020,7 +4015,7 @@
 	      (IP-SMC-SPE (NP-SBJ (PRO-A hann-hann))
 			  (NP-PRD (NPR-A Jóan-jóan)))
 	      (VB kalla-kalla)
-	      (. .-.)))
+	      (. .-.)) (ID HOMILIUBOK,.151))
 
 ( (IP-MAT-SPE (MDPI Mun-munu)
 	      (NP-SBJ (PRO-N hann-hann))
@@ -4028,7 +4023,7 @@
 	      (RD verða-verða)
 	      (PP (P að-að)
 		  (NP (N-D yndi-yndi) (CONJ og-og) (N-D gleði-gleði)))
-	      (. ,-,)))
+	      (. ,-,)) (ID HOMILIUBOK,.152))
 
 ( (IP-MAT-SPE (CONJ og-og)
 	      (NP-SBJ (Q-N margir-margur))
@@ -4037,7 +4032,7 @@
 	      (PP (P í-í)
 		  (NP (N-A burð-burður)
 		      (NP-POS (PRO-G hans-hann))))
-	      (. .-.)))
+	      (. .-.)) (ID HOMILIUBOK,.153))
 
 ( (IP-MAT-SPE (ADJP (ADJ-N Mikill-mikill))
 	      (MDPI mun-munu)
@@ -4045,7 +4040,7 @@
 	      (RD verða-verða)
 	      (PP (P FYR-FYRIR)
 		  (NP (NPR-D Guði-guð)))
-	      (. .-.)))
+	      (. .-.)) (ID HOMILIUBOK,.154))
 
 ( (IP-MAT-SPE (MDPI MUN$-MUNU)
 	      (NEG $a-at)
@@ -4061,7 +4056,7 @@
 				       (IP-SUB-SPE (NP-SBJ *T*-2)
 						   (ADJP (ADJ-N ÁFENGIÐ-ÁFENGINN))
 						   (BEPI er-vera)))))
-	      (. ,-,)))
+	      (. ,-,)) (ID HOMILIUBOK,.155))
 
 ( (IP-MAT-SPE (ADVP (ADVR heldur-heldur))
 	      (MDPI mun-munu)
@@ -4078,7 +4073,7 @@
 						    (NP-SBJ (PRO-N hann-hann))
 						    (BEPS sé-vera)
 						    (VAN borinn-bera)))))
-	      (. ,-,)))
+	      (. ,-,)) (ID HOMILIUBOK,.156))
 
 ( (IP-MAT-SPE (CONJ og-og)
 	      (NP-OB1 (Q-D mörgum-margur) (N-D lýð-lýður))
@@ -4093,7 +4088,7 @@
 		  (NP (NS-D kenningum-kenning)
 		      (NP-POS (PRO-D sínum-sinn))))
 	      (" "-")
-	      (. .-.)))
+	      (. .-.)) (ID HOMILIUBOK,.157))
 
 ( (IP-MAT (NP-SBJ (NPR-N Sakarías-sakarías))
 	  (VBDI svaraði-svara)
@@ -4107,12 +4102,12 @@
 				  (NP-SBJ (PRO-N eg-ég))
 				  (NP-OB1 (D-A þetta-þessi))
 				  (VB VITA-VITA)))
-	  (. ?-?)))
+	  (. ?-?)) (ID HOMILIUBOK,.158))
 
 ( (IP-MAT-SPE (NP-SBJ (PRO-N Eg-ég))
 	      (BEPI EM-VERA)
 	      (ADJP (ADJ-N gamall-gamall))
-	      (. ,-,)))
+	      (. ,-,)) (ID HOMILIUBOK,.159))
 
 ( (IP-MAT-SPE (CONJ en-en)
 	      (NP-SBJ (N-N kona-kona)
@@ -4124,7 +4119,7 @@
 		  (NP (NP-POS (NS-G barna-barn))
 		      (N-G eldis-eldi)))
 	      (" "-")
-	      (. .-.)))
+	      (. .-.)) (ID HOMILIUBOK,.160))
 
 ( (IP-MAT (ADVP-TMP (ADV Þá-þá))
 	  (VBDI svaraði-svara)
@@ -4141,7 +4136,7 @@
 						      (NP-SBJ-RSP-1 (PRO-N eg-ég))
 						      (PP (P FYR-FYRIR)
 							  (NP (NPR-D Guði-guð)))))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.161))
 
 ( (IP-MAT-SPE (CONJ og-og)
 	      (BEPI EM-VERA)
@@ -4156,7 +4151,7 @@
 						     (VB segja-segja)
 						     (NP-OB2 (PRO-D þér-þú))
 						     (NP-OB1 (D-A þessa-þessi) (NS-A hluti-hlutur)))))
-	      (. .-.)))
+	      (. .-.)) (ID HOMILIUBOK,.162))
 
 ( (IP-MAT-SPE (ADVP-TMP (ADV Nú-nú))
 	      (MDPI skal$-skulu)
@@ -4191,12 +4186,12 @@
 										      (MDPI munu-munu)
 										      (VB koma-koma)))))))))
 	      (, .-.)
-	      (" "-")))
+	      (" "-")) (ID HOMILIUBOK,.163))
 
 ( (IP-MAT (NP-SBJ (N-N Þjóð$-þjóð) (D-N $in-hinn))
 	  (VBDI beið-bíða)
 	  (ADVP-LOC (ADV úti-úti))
-	  (NP-OB1 (NPR-G Sakarías-sakarías))))
+	  (NP-OB1 (NPR-G Sakarías-sakarías))) (ID HOMILIUBOK,.164))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -4206,7 +4201,7 @@
 		  (IP-SUB (NP-SBJ (PRO-N hann-hann))
 			  (RDDI varð-verða)
 			  (ADJP (ADVR svo-svo) (ADJ seinn-seinn))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.165))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (PRO-N hann-hann))
@@ -4215,7 +4210,7 @@
 	  (VB mæla-mæla)
 	  (PP (P við-við)
 	      (NP (PRO-A þá-hann)))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.166))
 
 ( (IP-MAT (CONJ en-en)
 	  (ADVP (ADV þó-þó))
@@ -4235,31 +4230,31 @@
 			  (IP-SUB (NP-SBJ (PRO-N hann-hann))
 				  (VBDI benti-benda)
 				  (NP-OB1 (PRO-D þeim-það))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.167))
 
 ( (IP-MAT (ADVP-TMP (ADV Síðan-síðan))
 	  (VBDI fór-fara)
 	  (NP-SBJ (NPR-N Sakarías-sakarías))
-	  (ADVP-DIR (ADV HEIM-HEIM))))
+	  (ADVP-DIR (ADV HEIM-HEIM))) (ID HOMILIUBOK,.168))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
 	  (VBDI vitjaði-vitja)
 	  (NP-OB1 (N-G konu-kona)
 		  (NP-POS (PRO-G sinnar-sinn)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.169))
 
 ( (IP-MAT (ADVP-TMP (ADV Þá-þá))
 	  (RDPI verður-verða)
 	  (NP-SBJ (NPR-N Elísabet-elísabet))
-	  (HAG hafandi-hafa)))
+	  (HAG hafandi-hafa)) (ID HOMILIUBOK,.170))
 
 ( (IP-MAT (CONJ og-og)
 	  (VBDI leyndi-leyna)
 	  (NP-SBJ (PRO-N hún-hún))
 	  (NP-OB1 (PRO-D því-það))
 	  (NP-MSR (NUM-A fimm-fimm) (NS-A mánuður-mánuður))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.171))
 
 ( (IP-MAT-SPE (" "-")
 	      (ADVP-DIR (ADV Braut-braut))
@@ -4276,7 +4271,7 @@
 	      (PP (P frá-frá)
 		  (NP (PRO-D mér-ég)))
 	      (, .-.)
-	      (" "-")))
+	      (" "-")) (ID HOMILIUBOK,.172))
 
 ( (IP-MAT (PP (P Á-á)
 	      (NP (D-D INUM-HINN) (ADJ-D SÉTTA-SÉTTI) (N-D mánaði-mánaður)))
@@ -4286,7 +4281,7 @@
 	  (PP (P til-til)
 	      (NP (NPR-G Maríu-maría)
 		  (NP-PRN (N-G guðsmóður-guðsmóðir))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.173))
 
 ( (IP-MAT (CONJ En-en)
 	  (PP (P eftir-eftir)
@@ -4297,14 +4292,14 @@
 	      (NP (N-G fundar-fundur)))
 	  (PP (P við-við)
 	      (NP (NPR-A Elísabet-elísabet)))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.174))
 
 ( (IP-MAT (CONJ og-og)
 	  (VBPI KVEÐUR-KVEÐJA)
 	  (NP-SBJ (N-N drottning-drottning))
 	  (NP-OB1 (PRO-A hana-hún))
 	  (ADVP-TMP (ADVR fyrr-fyrr))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.175))
 
 ( (IP-MAT (CONJ En-en)
 	  (CP-ADV-LFD (C ER-ER)
@@ -4327,7 +4322,7 @@
 				    (NP-OB1 (D-A INN-HINN) (ADJ-A helga-helga) (N-A anda-andi))
 				    (PP (P í-í)
 					(NP (N-D móðurkviði-móðurkviður))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.176))
 
 ( (IP-MAT (VBPI Tekur-taka)
 	  (PP (ADV þaðan-þaðan) (P af-af))
@@ -4342,7 +4337,7 @@
 				  (HVDI hafði-hafa)
 				  (ADVP-TMP (ADV áður-áður))
 				  (VBN tekið-taka))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.177))
 
 ( (IP-MAT (CONJ En-en)
 	  (CP-ADV-LFD (C er-er)
@@ -4361,7 +4356,7 @@
 	  (RDPI verður-verða)
 	  (NP-SBJ (NPR-N Elísabet-elísabet))
 	  (ADJP (ADJR-N léttari-léttur))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.178))
 
 ( (IP-MAT (CONJ En-en)
 	  (CP-ADV-LFD (C ER-ER)
@@ -4383,7 +4378,7 @@
 	  (ADVP-TMP-RSP (ADV þá-þá))
 	  (VBDI fögnuðu-fagna)
 	  (NP-SBJ (PRO-N þeir-hann))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.179))
 
 ( (IP-MAT (NP-TMP (D-A INN-HINN) (ADJ-A ÁTTA-ÁTTUNDI) (N-A dag-dagur))
 	  (VBDI komu-koma)
@@ -4393,7 +4388,7 @@
 		      (NP-OB1 (N-A skurðarskírn-skurðarskírn)
 			      (CONJP *ICH*-1))
 		      (NP-OB2 (N-D svein$-sveinn) (D-D $inum-hinn))
-		      (CONJP-1 (CONJ og-og) (N-A nafn-nafn)))))
+		      (CONJP-1 (CONJ og-og) (N-A nafn-nafn)))) (ID HOMILIUBOK,.180))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -4403,7 +4398,7 @@
 		  (VB heita-heita))
 	  (VB láta-láta)
 	  (NP-1 (NPR-A SAKARÍAM-SAKARÍAS))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.181))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (NPR-N Elísabet-elísabet))
@@ -4412,13 +4407,13 @@
 		  (NP-PRD (NPR-A Jóan-jóan))
 		  (MD skyldu-skulu)
 		  (VB heita-heita))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.182))
 
 ( (IP-MAT (NP-SBJ (PRO-N Þeir-hann))
 	  (VBDI létu-láta)
 	  (PP (P OF-OF)
 	      (NP (PRO-D því-það)))
-	  (ADVP (ADV KYNLEGA-KYNLEGA))))
+	  (ADVP (ADV KYNLEGA-KYNLEGA))) (ID HOMILIUBOK,.183))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -4429,14 +4424,14 @@
 		  (NP-SBJ (QP *ICH*-1)
 			  (NP-POS (NP-POS (PRO-G hennar-hún))
 				  (NS-G frænda-frændi))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.184))
 
 ( (IP-MAT (NP-SBJ *con*)
 	  (VBDI báru-bera)
 	  (ADVP-TMP (ADV síðan-síðan))
 	  (NP-OB1 (N-A RITFÆRI-RITFÆRI))
 	  (PP (P að-að)
-	      (NP (NPR-D SAKARÍA-SAKARÍAS)))))
+	      (NP (NPR-D SAKARÍA-SAKARÍAS)))) (ID HOMILIUBOK,.185))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -4450,7 +4445,7 @@
 				  (NP-SBJ (PRO-N hann-hann))
 				  (MDDS skyldi-skulu)
 				  (VB heita-heita))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.186))
 
 ( (IP-MAT (CONJ En-en)
 	  (ADVP-TMP-LFD (ADV þá-þá)
@@ -4465,7 +4460,7 @@
 	  (VBPI GEFST-GEFAST)
 	  (NP-SBJ (PRO-D honum-hann))
 	  (NP-OB1 (N-N mál$-mál) (D-N $ið-hinn))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.187))
 
 ( (IP-MAT-SPE (" "-")
 	      (NP-PRD (N-N Jóan-jóan))
@@ -4476,12 +4471,12 @@
 	      (" "-")
 	      (IP-MAT-PRN (VBDI kvað-kveða)
 			  (NP-SBJ (PRO-N hann-hann)))
-	      (. .-.)))
+	      (. .-.)) (ID HOMILIUBOK,.188))
 
 ( (IP-MAT (NP-SBJ (D-N Þessi-þessi) (NS-N tíðindi-tíðindi))
 	  (VBDI fóru-fara)
 	  (ADVP-DIR (ADV víða-víða))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.189))
 
 ( (IP-MAT (CONJ og-og)
 	  (VBDI þótti-þykja)
@@ -4491,7 +4486,7 @@
 		  (PP (P um-um)
 		      (ADJP (ADJ-A vert-verður)
 			    (ADJP *ICH*-1))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.190))
 
 ( (IP-MAT (BEDI Var-vera)
 	  (PP (P OF-OF)
@@ -4505,7 +4500,7 @@
 			      (RD verða-verða)
 			      (PP (P FYR-FYRIR)
 				  (NP (PRO-D SÉR-SIG)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.191))
 
 ( (IP-MAT (ADVP-TMP (ADV Þá-þá))
 	  (VBPI tekur-taka)
@@ -4516,7 +4511,7 @@
 	  (IP-INF (TO að-að) (VB yrkja-yrkja))
 	  (, :-:)
 	  (LATIN (FW Benedictus-benedictus) (FW Dominus-dominus) (FW Deus-deus) (FW Israel-israel))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.192))
 
 ( (IP-MAT (NP-SBJ (N-N Jóan-jóan))
 	  (VBDI magnaðist-magna)
@@ -4548,7 +4543,7 @@
 					 (IP-INF (TO *)
 						 (VB fremja-fremja)
 						 (NP-OB1 (N-A manndýrð-manndýrð) (Q-A hverja-hver)))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.193))
 
 ( (IP-MAT (NP-SBJ (PRO-N Hann-hann))
 	  (VBDI varaðist-vara)
@@ -4571,7 +4566,7 @@
 					  (C 0)
 					  (IP-SUB (ADVP *T*-3)
 						  (NP-OB1 (ADJR-A stærri-stór) (NS-A glæpi-glæpur)))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.194))
 
 ( (IP-MAT (NP-SBJ (PRO-N Hann-hann))
 	  (VBDI orkaðist-orka)
@@ -4624,7 +4619,7 @@
 								  (IP-SUB (ADVP *T*-4)
 									  (PP (P í-í)
 									      (NP (N-D mál$-mál) (D-D $inu-hinn))))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.195))
 
 ( (IP-MAT (VAN SKYLDUR-SKYLDA)
 	  (BEPI er-vera)
@@ -4661,7 +4656,7 @@
 		  (IP-SUB (NP-SBJ (PRO-N hann-hann))
 			  (BEPI er-vera)
 			  (ADJP (ADJ-N lærður-lærður) (CONJ eða-eða) (ADJ-N ólærður-ólærður))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.196))
 
 ( (IP-MAT (NP-SBJ (PRO-N Hann-hann))
 	  (VBDI kenndi-kenna)
@@ -4696,7 +4691,7 @@
 							     (NP-OB1 (N-D fæðslu$-fæðsla) (D-D $nni-hinn))
 							     (PP (P við-við)
 								 (NP (OTHERS-A aðra-annar)))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.197))
 
 ( (IP-MAT (IP-MAT-2 (NP-1 (D-N Það-sá) (N-N boðorð-boðorð))
 		    (MDPI mun-munu)
@@ -4715,7 +4710,7 @@
 				     (IP-SUB (NP-SBJ *T*-4)
 					     (ADVP (ADV svo-svo))
 					     (BEPI er-vera)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.198))
 
 ( (IP-MAT (CONJ Og-og)
 	  (NEG EIGI-EKKI)
@@ -4725,7 +4720,7 @@
 	  (IP-INF (TO að-að)
 		  (VB gefa-gefa)
 		  (NP-MSR (ADJR framar-framar)))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.199))
 
 ( (IP-MAT (CONJ en-en)
 	  (NEG EIGI-EKKI)
@@ -4764,7 +4759,7 @@
 								   (NP-SBJ (PRO-D honum-hann))
 								   (BEPI er-vera)
 								   (VAN LEYFÐUR-LEYFA))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.200))
 
 ( (IP-MAT (NP-OB1 (PRO-A Það-það))
 	  (VBPI sýna-sýna)
@@ -4792,14 +4787,14 @@
 							  (BEDI var-vera)
 							  (ADJP (ADV varla-varla) (ADJ-N óber-óber))
 							  (ADVP-TMP (ADV eftir-eftir))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.201))
 
 ( (IP-MAT (NP-SBJ (N-N Jóan-jóan))
 	  (MDDI (MDDI kunni-kunna) (CONJ og-og) (MDDI vildi-vilja))
 	  (VB velja-velja)
 	  (NP-OB2 (PRO-D sér-sig))
 	  (NP-OB1 (D-A INN-HINN) (ADJS-A besta-góður) (N-A hlut-hlutur))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.202))
 
 ( (IP-MAT (PP (P 0)
 	      (NP (PRO-D Því-það)
@@ -4815,7 +4810,7 @@
 			    (BEPI er-vera)
 			    (ADJP (NP (ADJ-D góðu-góður))
 				  (ADJR-N betra-góður))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.203))
 
 ( (IP-MAT (ADJP (ADJ-N Gott-góður))
 	  (BEPI er-vera)
@@ -4827,7 +4822,7 @@
 			  (NP (NP-POS (NPR-G Guðs-guð))
 			      (N-A SAKAR-SÖK)))
 		      (NP-OB2 (NS-D ÞURFÖNDUM-ÞURFANDI)))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.204))
 
 ( (IP-MAT (CONJ en-en)
 	  (ADVP (ADV enn-enn))
@@ -4842,7 +4837,7 @@
 				     (VB una-una)
 				     (PP (P við-við)
 					 (NP (PRO-A það-það))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.205))
 
 ( (IP-MAT (NP-OB1 (PRO-A Það-það))
 	  (VBDI sýndi-sýna)
@@ -4878,8 +4873,7 @@
 							  (NP-POS (NS-G fjárhlutan$-fjárhlutur) (D-G $na-hinn)))
 						  (VBDS færir-fara)
 						  (NP-OB2 (NPR-D Guði-guð)))))))
-	  (. .-.)))
-
+	  (. .-.)) (ID HOMILIUBOK,.206))
 
 ( (IP-MAT (NP-SBJ (ES Það-það))
 	  (BEPI er-vera)
@@ -4895,7 +4889,7 @@
 			      (NP (ONE-D einu-einn) (N-D klæði-klæði)))
 			  (NP-SBJ (N-N VERÐ-VERÐ)
 				  (NP-POS (NUM-G tveggja-tveir) (CONJ eða-eða) (NUM-G þriggja-þrír) (CONJ eða-eða) (QR-G meir-meira)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.207))
 
 ( (IP-MAT (NP-2 (Q-D FÁUM-FÁR))
 	  (VBPI ætla-ætla)
@@ -4935,7 +4929,7 @@
 					  (NP-SBJ (PRO-N vér-ég))
 					  (PP (P um-um)
 					      (NP *T*-4)))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.208))
 
 ( (IP-MAT (NP-SBJ (PRO-N Hann-hann))
 	  (VBDI lét-láta)
@@ -4952,7 +4946,7 @@
 				 (NP-OB1 (N-A kyrtil-kyrtill))
 				 (PP (ADVP *ICH*-1)
 				     (P úr-úr)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.209))
 
 ( (IP-MAT (NP-OB1 (D-A Það-það) (N-A KLÆÐI-KLÆÐI))
 	  (HVDI hafði-hafa)
@@ -4965,19 +4959,19 @@
 			      (IP-SUB (NP-SBJ *pro*)
 				      (NP-PRD (D-N sá-sá) (ONE-N einn-einn))
 				      (BEDI var-vera)))))
-	  (. ;-;)))
+	  (. ;-;)) (ID HOMILIUBOK,.210))
 
 ( (IP-MAT (NP-SBJ (PRO-N það-það))
 	  (BEDI var-vera)
 	  (ADJP (CONJ hvorki-hvorki) (ADJ-N hægt-hægur) (CONJ né-né) (ADJ-N skrautlegt-skrautlegur))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.211))
 
 ( (IP-MAT (ADVP (ADV Þannig-þannig) (ADV svo-svo))
 	  (VBDS varaðist-vara)
 	  (NP-SBJ (PRO-N hann-hann))
 	  (NP-OB1 (NS-A syndir-synd)
 		  (NP-POS (N-G skrauts-skraut) (CONJ og-og) (NS-G HÓGINDA-HÓGINDI)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.212))
 
 ( (IP-MAT (NP-3 (D-A ÞAU-SÁ))
 	  (VBDI setti-setja)
@@ -5003,7 +4997,7 @@
 				    (VBDI þótti-þykja)
 				    (IP-INF (NP-PRD *ICH*-4)
 					    (BE vera-vera)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.213))
 
 ( (IP-MAT (NP-OB1 (NS-A Fugla-fugl)
 		  (D-A þá-þá)
@@ -5022,7 +5016,7 @@
 				    (NP-PRD (FW locuste-locuste)))
 			    (BEPI eru-vera)
 			    (VAN kallaðir-kalla)))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.214))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -5030,7 +5024,7 @@
 	  (PP (ADVP (ADV þar-þar))
 	      (P við-við))
 	  (NP-OB1 (N-A vatn-vatn) (CONJ eða-eða) (N-A skógarhunang-skógarhunang))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.215))
 
 ( (IP-MAT (NP-SBJ-1 *pro*)
 	  (PP (P 0)
@@ -5040,7 +5034,7 @@
 	  (IP-SMC (NP-SBJ *-1)
 		  (ADJP (ADJ-N beiskt-beiskur)
 			(IP-INF (TO að-að) (VB bergja-bergja))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.216))
 
 ( (IP-MAT (CONJ En-en)
 	  (PP-LFD (P við-við)
@@ -5077,7 +5071,7 @@
 							     (IP-SUB (NP-SBJ (PRO-N hann-hann))
 								     (BEDS væri-vera)
 								     (NP-PRD (NPR-N Kristur-kristur)))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.217))
 
 ( (IP-MAT (CONJ En-en)
 	  (PP (P við-við)
@@ -5102,7 +5096,7 @@
 		      (IP-SUB (PP *T*-2)
 			      (NP-SBJ (PRO-N hann-hann))
 			      (VBDI stóð-standa)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.218))
 
 ( (IP-MAT-SPE (" "-")
 	      (NEG EIGI-EKKI)
@@ -5113,7 +5107,7 @@
 	      (" "-")
 	      (IP-MAT-PRN (VBDI kvað-kveða)
 			  (NP-SBJ (PRO-N hann-hann)))
-	      (. ,-,)))
+	      (. ,-,)) (ID HOMILIUBOK,.219))
 
 ( (IP-MAT-SPE (" "-")
 	      (CONJ en-en)
@@ -5146,21 +5140,21 @@
 						    (VAN rakinn-rekja))
 					  (PP (P FYR-FYRIR)
 					      (NP (PRO-D honum-hann))))))
-	      (. .-.)))
+	      (. .-.)) (ID HOMILIUBOK,.220))
 
 ( (IP-MAT-SPE (MDPI Mun-munu)
 	      (NP-SBJ (PRO-N hann-hann))
 	      (VB vaxa-vaxa)
 	      (PP (P að-að)
 		  (NP (N-D virðingu-virðing)))
-	      (. ,-,)))
+	      (. ,-,)) (ID HOMILIUBOK,.221))
 
 ( (IP-MAT-SPE (CONJ en-en)
 	      (NP-SBJ (PRO-N eg-ég))
 	      (MDPI mun-munu)
 	      (VB þverra-þverra)
 	      (. .-.)
-	      (" "-")))
+	      (" "-")) (ID HOMILIUBOK,.222))
 
 ( (IP-MAT (NP-SBJ (Q-N Margir-margur) (NS-N menn-maður))
 	  (ADVP-TMP (ADV síðan-síðan))
@@ -5179,7 +5173,7 @@
 				(NP-OB1 (NS-A afgerðir-afgerð)
 					(NP-POS (PRO-A sínar-sinn)))
 				(VB bæta-bæta)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.223))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (PRO-N hann-hann))
@@ -5212,7 +5206,7 @@
 				    (NP (N-D á$-á)
 					(D-D $nni-hinn)
 					(NP-PRN (NPR-D Jórdan-jórdan))))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.224))
 
 ( (IP-MAT (CONJ og-og)
 	  (BEDI var-vera)
@@ -5221,7 +5215,7 @@
 	  (IP-SMC (NP-SBJ *-1)
 		  (NP-PRD (NP-POS (N-G IÐRANAR-IÐRUN))
 			  (N-N skírn-skírn)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.225))
 
 ( (IP-MAT (ADVP-TMP (ADV Þá-þá))
 	  (VBDI bar-bera)
@@ -5251,10 +5245,10 @@
 					     (IP-INF (NP-SBJ (PRO-A hann-hann))
 						     (VB skíra-skíra)
 						     (NP-OB1 (PRO-A sig-sig))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.226))
 
 ( (IP-MAT (NP-SBJ (NPR-N Jóan-jóan))
-	  (VBDI óaðist-óa)))
+	  (VBDI óaðist-óa)) (ID HOMILIUBOK,.227))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -5273,7 +5267,7 @@
 					    (VBDI þurfti-þurfa)
 					    (PP (P að-að)
 						(NP (WPRO-D hvívetna-hvívetna)))))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.228))
 
 ( (IP-MAT (CONJ en-en)
 	  (NP-SBJ (D-N sá-sá))
@@ -5281,7 +5275,7 @@
 	  (NP-OB1 (PRO-G hans-hann))
 	  (PP (P að-að)
 	      (NP (Q-D engu-enginn)))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.229))
 
 ( (IP-MAT-SPE (IP-MAT (CONJ og-og)
 		      (NP-SBJ *pro*)
@@ -5327,7 +5321,7 @@
 											       (BEPI ert-vera)
 											       (ADJP (ADJ-N syndalaus-syndalaus))))))))))
 	      (. .-.)
-	      (" "-")))
+	      (" "-")) (ID HOMILIUBOK,.230))
 
 ( (IP-MAT-SPE (" "-")
 	      (ADVP (ADV Svo-svo))
@@ -5345,7 +5339,7 @@
 	      (" "-")
 	      (IP-MAT-PRN (VBDI kvað-kveða)
 			  (NP-SBJ (NPR-N Jesús-jesús)))
-	      (. ,-,)))
+	      (. ,-,)) (ID HOMILIUBOK,.231))
 
 ( (IP-MAT-SPE (" "-")
 	      (CONJ og-og)
@@ -5363,7 +5357,7 @@
 					      (VBDI þurfu-þurfa)
 					      (NP-OB1 (N-G helgunar-helgun))))))
 	      (. .-.)
-	      (" "-")))
+	      (" "-")) (ID HOMILIUBOK,.232))
 
 ( (IP-MAT (ADVP-TMP (ADV Þá-þá))
 	  (VBDI bar-bera)
@@ -5399,7 +5393,7 @@
 								(NP-OB1 (NS-A syndir-synd)
 									(NP-POS (N-G heims$-heimur) (D-G $ins-hinn))))))
 				(. .-.)
-				(" "-")))))
+				(" "-")))) (ID HOMILIUBOK,.233))
 
 ( (IP-MAT (CONJ Og-og)
 	  (NP-SBJ (PRO-N hann-hann))
@@ -5419,7 +5413,7 @@
 				    (NP-SBJ (PRO-N hann-hann))
 				    (VBDI skírði-skíra)
 				    (NP-OB1 (PRO-A hann-hann)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.234))
 
 ( (IP-MAT (BEPI Er-vera)
 	  (NP-SBJ-2 (PRO-N hann-hann))
@@ -5434,7 +5428,7 @@
 		    (IP-SUB (NP-SBJ (PRO-N hann-hann))
 			    (VBDI skírði-skíra)
 			    (NP-OB1 (CONJ bæði-bæði) (NPR-A Guð-guð) (CONJ og-og) (NS-A menn-maður))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.235))
 
 ( (IP-MAT (ADVP (ADV Nú-nú))
 	  (PP-LFD (P af-af)
@@ -5470,7 +5464,7 @@
 					  (IP-SUB (NP-SBJ *T*-2)
 						  (RP á-á)
 						  (RDDI urðu-verða)))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.236))
 
 ( (IP-MAT (ADVP-TMP (ADV Þá-þá))
 	  (RDDI urðu-verða)
@@ -5495,7 +5489,7 @@
 						  (VBDI lét-láta)
 						  (IP-INF (NP-SBJ *ICH*-2)
 							  (VB fara-fara)))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.237))
 
 ( (IP-MAT (HVDI Hafði-hafa)
 	  (NP-SBJ (NPR-N Heródes-heródes))
@@ -5505,7 +5499,7 @@
 				      (NP-POS (PRO-G síns-sinn))))
 		      (PP (P frá-frá)
 			  (NP (PRO-D honum-hann))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.238))
 
 ( (IP-MAT (VBDI Bar-bera)
 	  (NP-SBJ (PRO-N hann-hann))
@@ -5513,7 +5507,7 @@
 	  (ADVP-TMP (ADV síðan-síðan))
 	  (PP (P á-á)
 	      (NP (NPR-A Jóan-jóan)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.239))
 
 ( (IP-MAT (VBDI Sagði-segja)
 	  (NP-SBJ (NPR-N Jóan-jóan))
@@ -5526,7 +5520,7 @@
 				  (HV hafa-hafa)
 				  (NP-OB1 (N-A bróðurkonu-bróðurkona)
 					  (NP-POS (PRO-A sína-sinn))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.240))
 
 ( (IP-MAT (ADVP-TMP (ADV Þá-þá))
 	  (VBDI lét-láta)
@@ -5539,7 +5533,7 @@
 				 (VB setja-setja)
 				 (PP (P í-í)
 				     (NP (N-A myrkvastofu-myrkvastofa))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.241))
 
 ( (IP-MAT (ADVP-TMP (ADV Síðan-síðan))
 	  (VBPI FYLLIST-FYLLAST)
@@ -5566,7 +5560,7 @@
 		  (IP-SUB (NP-SBJ (PRO-N hann-hann))
 			  (BEDS væri-vera)
 			  (VAN borinn-bera)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.242))
 
 ( (IP-MAT (NP-PRD (NPR-N Herodiadis-herodiadis))
 	  (VBDI hét-heita)
@@ -5581,13 +5575,13 @@
 				  (PP (P af-af)
 				      (NP (NPR-D Philippo-philippo)))
 				  (VBN tekið-taka))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.243))
 
 ( (IP-MAT (NP-SBJ (N-N Dóttir-dóttir)
 		  (NP-POS (PRO-G hennar-hún)))
 	  (VBDI fylgdi-fylgja)
 	  (NP-OB1 (PRO-D henni-hún))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.244))
 
 ( (IP-MAT (CONJ En-en)
 	  (CP-ADV-LFD (C ER-ER)
@@ -5600,7 +5594,7 @@
 	  (ADVP (ADV VEL-VEL))
 	  (PP (P FYR-FYRIR)
 	      (NP (N-D konungi-konungur) (CONJ og-og) (NS-D boðsmönnum-boðsmaður)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.245))
 
 ( (IP-MAT (ADVP-TMP (ADV Þá-þá))
 	  (VBPI mælir-mæla)
@@ -5620,7 +5614,7 @@
 						      (PP (P að-að)
 							  (NP (NP-POS (N-G leiks-leikur))
 							      (NS-D launum-laun)))))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.246))
 
 ( (IP-MAT-SPE (CONJ og-og)
 	      (MDPI mun-munu)
@@ -5636,14 +5630,14 @@
 						  (N-A ríki-ríki)
 						  (NP-POS (PRO-A mitt-minn))))))
 	      (. .-.)
-	      (" "-")))
+	      (" "-")) (ID HOMILIUBOK,.247))
 
 ( (IP-MAT (NP-SBJ (N-N Mær$-mær) (D-N $in-hinn))
 	  (VBPI rennur-renna)
 	  (ADVP-TMP (ADV þá-þá))
 	  (PP (P til-til)
 	      (NP (N-G móður-móðir)
-		  (NP-POS (PRO-G sinnar-sinn))))))
+		  (NP-POS (PRO-G sinnar-sinn))))) (ID HOMILIUBOK,.248))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -5658,13 +5652,13 @@
 			  (NP-SBJ *pro*)
 			  (VB biðja-biðja)
 			  (MDDS skyldi-skulu)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.249))
 
 ( (IP-MAT (CONJ En-en)
 	  (ADVP-DIR (ADV þaðan-þaðan))
 	  (VBDI kom-koma)
 	  (NP-SBJ (D-N IÐ-HINN) (QS-N mesta-mikill) (N-N óráð-óráð))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.250))
 
 ( (IP-MAT-SPE (" "-")
 	      (NP-OB1 (N-G ÞESS-ÞAÐ)
@@ -5687,7 +5681,7 @@
 					(PP (P á-á)
 					    (NP (N-D diski-diskur)))))
 	      (. .-.)
-	      (" "-")))
+	      (" "-")) (ID HOMILIUBOK,.251))
 
 ( (IP-MAT (NP-SBJ (N-N Mær$-mær) (D-N $in-hinn))
 	  (VBPI kýs-kjósa)
@@ -5702,7 +5696,7 @@
 				  (PP (P fyrir-fyrir)
 				      (NP (PRO-A hana-hún)))
 				  (VBN lagt-leggja))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.252))
 
 ( (IP-MAT (VBDI Kom-koma)
 	  (NP-SBJ-4 (PRO-N það-það)
@@ -5723,7 +5717,7 @@
 			    (BEPI eru-vera)
 			    (NP-SBJ (NP-POS (NS-G kvenna-kona))
 				    (NS-N ráð-ráð))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.253))
 
 ( (IP-MAT (BEDI Var-vera)
 	  (NP-SBJ (NPR-N Jóan-jóan))
@@ -5732,7 +5726,7 @@
 	  (PP (P af-af)
 	      (NP (N-D lífi-líf)))
 	  (VAN tekinn-taka)
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.254))
 
 ( (IP-MAT (CONJ og-og)
 	  (BEDI var-vera)
@@ -5751,7 +5745,7 @@
 				      (IP-SUB (ADVP *T*-2)
 					      (NP-SBJ *pro*)
 					      (BEDI var-vera))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.255))
 
 ( (IP-MAT (NP-SBJ (NS-N Lærisveinar-lærisveinn)
 		  (NP-POS (PRO-G hans-hann)))
@@ -5759,7 +5753,7 @@
 	  (NP-OB1 (N-A líkama-líkami)
 		  (NP-POS (PRO-G hans-hann)))
 	  (ADVP (ADV virðilega-virðilega))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.256))
 
 ( (IP-MAT (NP-OB1 (N-A Burðartíð-burðartíð)
 		  (NP-POS (NPR-G Jóans-jóans) (NPR-G baptiste-baptiste)))
@@ -5769,7 +5763,7 @@
 	      (NP (N-A dag-dagur)))
 	  (, ,-,)
 	  (NP-VOC (ADJ-N góð-góður) (NS-N SYSTKIN-SYSTKIN))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.257))
 
 ( (IP-MAT (CONJ en-en)
 	  (NP-SBJ (PRO-N það-það))
@@ -5779,7 +5773,7 @@
 	  (NP-OB2 (QP *ICH*-1)
 		  (QR-D fleirum-margur)
 		  (NP-POS (ADJR-G HEILAGRA-HEILAGUR)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.258))
 
 ( (IP-MAT (NP-1 (NP-POS (NPR-G Guðs-guð))
 		(N-G sonar-sonur)
@@ -5790,11 +5784,11 @@
 	  (NP-SBJ (NP-POS *ICH*-1)
 		  (N-N burðartíð-burðartíð))
 	  (VAN haldin-halda)
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.259))
 
 ( (IP-MAT (NP-SBJ (N-N Óbyrja$-óbyrja) (D-N $n-hinn))
 	  (VBDI bar-bera)
-	  (NP-OB1 (NPR-A Jóan-jóan))))
+	  (NP-OB1 (NPR-A Jóan-jóan))) (ID HOMILIUBOK,.260))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -5803,7 +5797,7 @@
 	  (PP (P við-við)
 	      (NP (N-D búanda-búandi)
 		  (NP-POS (PRO-D sínum-sinn))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.261))
 
 ( (IP-MAT (CONJ en-en)
 	  (NP-SBJ (N-N mær$-mær) (D-N $in-hinn))
@@ -5812,7 +5806,7 @@
 	  (PP (P af-af)
 	      (NP (N-D gift-giftur)
 		  (NP-POS (D-G INS-HINN) (ADJ-G HELGA-HELGUR) (N-G anda-andi))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.262))
 
 ( (IP-MAT (NP-PRD (Q-N Mikill-mikill))
 	  (BEPI er-vera)
@@ -5846,7 +5840,7 @@
 											(NP (N-D hjúskap-hjúskapur)))
 										    (BEDS væri-vera)
 										    (VAN GETNIR-GETA)))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.263))
 
 ( (FRAG (CONJ En-en)
 	(CODE {com:could_this_be_part_of_last_token?})
@@ -5912,7 +5906,7 @@
 										     (NP-SBJ (PRO-N þeir-hann))
 										     (VBPI taka-taka)
 										     (IP-INF (TO að-að) (VB lengjast-lengjast)))))))))))))
-	(. .-.)))
+	(. .-.)) (ID HOMILIUBOK,.264))
 
 ( (IP-MAT (PP (P 0)
 	      (NP (PRO-D ÞVÍ-ÞAÐ)
@@ -5940,7 +5934,7 @@
 				(NP (N-D tákni-tákn)
 				    (NP-POS (N-G hæðar-hæð)
 					    (NP-POS (PRO-G VORRAR-ÉG)))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.265))
 
 ( (IP-MAT (VBPI Lægjum-lægja)
 	  (NP-SBJ (PRO-N vér-ég)
@@ -5952,7 +5946,7 @@
 		  (IP-SUB (NP-SBJ (NPR-N Guð-guð))
 			  (VBPS hefji-hefja)
 			  (NP-OB1 (PRO-A oss-ég))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.266))
 
 ( (IP-MAT (VBPI LÆGIST-LÆGJA)
 	  (NP-SBJ (N-N dirfð-dirfð)
@@ -5961,7 +5955,7 @@
 	  (CP-ADV (C að-að)
 		  (IP-SUB (VBPS vaxi-vaxa)
 			  (NP-SBJ (FW misericordia-misericordia) (FW Domini-domini))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.267))
 
 ( (IP-MAT (NP-SBJ (N-N Tákn-tákn)
 		  (NP-POS (D-G þessa-þessi) (N-G hlutar-hlutur)))
@@ -5969,7 +5963,7 @@
 	  (PP (P í-í)
 	      (NP (N-D písl-písl)
 		  (NP-POS (PRO-G þeirra-það))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.268))
 
 ( (IP-MAT (PP (P 0)
 	      (NP (PRO-D ÞVÍ-ÞVÍ)
@@ -5983,7 +5977,7 @@
 	  (CP-THT-1 (C að-að)
 		    (IP-SUB (VBDI minnkaðist-minnka)
 			    (NP-SBJ (N-N maður$-maður) (D-N $inn-hinn))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.269))
 
 ( (IP-MAT (CONJ en-en)
 	  (PP (P 0)
@@ -5999,8 +5993,7 @@
 		    (IP-SUB (NP-SBJ (NPR-N Guð-guð))
 			    (VBDS hæfist-hefja)
 			    (RP upp-upp)))
-	  (. .-.)))
-
+	  (. .-.)) (ID HOMILIUBOK,.270))
 
 ( (IP-MAT (VB Segja-segja)
 	  (MDPI mun-munu)
@@ -6026,7 +6019,7 @@
 					     (NP (PRO-A sig-sig)))
 					 (PP (P í-í)
 					     (NP (N-A heim-heimur) (D-A þenna-þessi))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.271))
 
 ( (IP-MAT (PP (P Af-af)
 	      (NP (PRO-D því-það)))
@@ -6037,7 +6030,7 @@
 	  (IP-SMC (NP-SBJ *-1)
 		  (NP-PRD (N-N fyrirrennari-fyrirrennari)
 			  (NP-POS (FW Domini-dominur))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.272))
 
 ( (IP-MAT (NP-SBJ (N-N Jóan-jóan))
 	  (BEPI er-vera)
@@ -6079,7 +6072,7 @@
 			  (NP-SBJ (N-N vinur-vinur))
 			  (PP (P FYR-FYRIR)
 			      (NP (N-D brúðguma-brúðgumi)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.273))
 
 ( (IP-MAT (CONJ En-en)
 	  (PP-LFD (P áður-áður)
@@ -6129,7 +6122,7 @@
 						      (MDDI MÁTTU-MEGA)
 						      (VB líta-líta)
 						      (NP-OB1 (Q-A mikið-mikill) (N-A ljós-ljós) (CONJ og-og) (ADJ-A satt-sannur)))))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.274))
 
 ( (IP-MAT (PP (P 0)
 	      (NP (PRO-D því-það)
@@ -6168,7 +6161,7 @@
 			      (CP-ADV (C er-er)
 				      (IP-SUB (VBDS kæmi-koma)
 					      (NP-SBJ (FW Iesus-iesus) (FW Christus-christus) (FW Dominus-dominus) (FW noster-noster)))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.275))
 
 ( (IP-MAT (NP-SBJ *pro*)
 	  (FW Sicut-sicut)
@@ -6182,7 +6175,7 @@
 			      (PP (P að-að)
 				  (NP (N-D manni-maður)))
 			      (NP-OB1 (ADJ-N bjart-bjartur) (N-A ljós-ljós)))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.276))
 
 ( (IP-MAT (CONJ og-og)
 	  (CP-ADV-LFD (IP-SUB (BEPS sé-vera)
@@ -6198,7 +6191,7 @@
 	      (NP (NS-D augum-auga)
 		  (NP-POS (PRO-G hans-hann))))
 	  (RP við-við)
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.277))
 
 ( (IP-MAT (CONJ en-en)
 	  (NEG EIGI-EKKI)
@@ -6206,7 +6199,7 @@
 	  (NP-SBJ (PRO-D honum-hann))
 	  (NP-OB1 (N-N gagn-gagn))
 	  (RP að-að)
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.278))
 
 ( (IP-MAT (NP-SBJ *pro*)
 	  (ADVP (ADV Svo-svo))
@@ -6219,7 +6212,7 @@
 			      (PP (P við-við)
 				  (NP (NS-A syndir-synd)
 				      (NP-POS (PRO-A sínar-sinn)))))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.279))
 
 ( (IP-MAT (IP-MAT-1 (ADVP (ADV þá-þá))
 		    (RDPI VERÐUR$-VERÐUR)
@@ -6233,7 +6226,7 @@
 	  (IP-MAT=1 (NP-SBJ *con*)
 		    (ADVP (ADVR heldur-heldur))
 		    (NP-OB1 (N-N mein-mein)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.280))
 
 ( (IP-MAT (PP (P 0)
 	      (NP (PRO-D Því-það)
@@ -6260,7 +6253,7 @@
 			    (ADVP (ADVR ellegar-ellegar))
 			    (NP-OB1 (N-A bjartleik-bjartleikur)
 				    (NP-POS (PRO-G hans-hann)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.281))
 
 ( (IP-MAT (NP-SBJ *exp*)
 	  (ADVP (ADV Svo-svo))
@@ -6279,7 +6272,7 @@
 			  (PP (P á-á)
 			      (NP (N-A ÞURFT-ÞURFT)
 				  (NP-POS (PRO-A sína-sinn))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.282))
 
 ( (CP-QUE (CONJ En-en)
 	  (WADVP-1 (WADV hví-hví))
@@ -6313,7 +6306,7 @@
 			      (VBDI þýðist-þýa)
 			      (NP-OB1 (FW misericordia-misericordia)
 				      (NP-POS (NPR-G Guðs-guð))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.283))
 
 ( (IP-MAT (CONJ En-en)
 	  (CP-ADV (C að-að)
@@ -6342,14 +6335,14 @@
 	  (PP (P til-til)
 	      (NP (N-G miskunnar-miskunn)
 		  (PP (P við-við)
-		      (NP (NS-A vesalinga-vesalingur)))))))
+		      (NP (NS-A vesalinga-vesalingur)))))) (ID HOMILIUBOK,.284))
 
 ( (IP-IMP (CONJ og-og)
 	  (VBI verum-vera)
 	  (ADJP (ADJ-N friðsamir-friðsamur))
 	  (PP (P við-við)
 	      (NP (Q-A alla-allur)))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.285))
 
 ( (IP-IMP (VBI kostgæfum-kostgæfa)
 	  (IP-INF (IP-INF-1 (TO að-að)
@@ -6381,7 +6374,7 @@
 							   (PP (P FYR-FYRIR)
 							       (NP (NP-POS (NPR-G Guðs-guð))
 								   (NS-A sakar-saka)))))))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.286))
 
 ( (IP-IMP (CONJ og-og)
 	  (VBI látum-láta)
@@ -6395,7 +6388,7 @@
 			      (NS-A orð-orð))
 			  (CONJP (CONJ né-né)
 				 (NP (NP-POS (N-G munúðar-munúð))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.287))
 
 ( (IP-MAT (ADVP-TMP (ADV Þá-þá))
 	  (MDPI má-mega)
@@ -6420,7 +6413,7 @@
 				      (IP-SMC (NP-SBJ (N-A hátíð-hátíð)
 						      (NP-POS (PRO-A sína-sinn)))
 					      (ADJP (ADJ-A friðsama-friðsamur) (CONJ og-og) (ADJ-A hreina-hreinn) (CONJ og-og) (ADJ-A grandvara-grandvari)))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.288))
 
 ( (IP-MAT (PP (P Á-á)
 	      (NP (D-A þessa-þessi) (NS-A hluti-hlutur)))
@@ -6433,7 +6426,7 @@
 	  (, ,-,)
 	  (PP (P af-af)
 	      (NP (ADJ-D föðurlegri-föðurlegur) (N-D umhyggju-umhyggja)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.289))
 
 ( (IP-MAT (CONJ En-en)
 	  (ADVP (ADVR svo-svo)
@@ -6466,14 +6459,14 @@
 								     (PP (P við-við)
 									 (NP *T*-3))
 								     (VB koma-koma))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.290))
 
 ( (IP-MAT (ADVP (ADV Þaðan-þaðan) (RP af-af))
 	  (DOPI gjöri-gera)
 	  (NP-SBJ (PRO-N eg-ég))
 	  (NP-OB1 (NS-A þakkir-þökk))
 	  (NP-OB2 (ADJ-D almáttkum-almáttkur) (NPR-D Guði-guð))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.291))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-OB1 (PRO-G þess-það)
@@ -6507,7 +6500,7 @@
 							(NP-SBJ (N-N ér-ér))
 							(VBDI hófuð-hófa)
 							(ADVP (ADV vel-vel)))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.292))
 
 ( (IP-MAT (CONJ En-en)
 	  (PP-LFD (P ef-ef)
@@ -6541,13 +6534,13 @@
 		    (FW (ADJ-N noster-noster))
 		    (FW Jesus-jesus)
 		    (FW (NPR-N Christus-christus)))
-	  (, ,-,)))
+	  (, ,-,)) (ID HOMILIUBOK,.293))
 
-( (LATIN (FW qvi-qvi) (FW cum-cum) (FW patre-patre) (FW et-et) (FW spiritu-spirita) (FW sancto-sancto) (FW vivit-vivit) (FW et-et) (FW regit-regit) (FW per-per) (FW omnia-omnia) (FW secula-secula) (FW seculorum-seculorum) (. .-.)))
+( (LATIN (FW qvi-qvi) (FW cum-cum) (FW patre-patre) (FW et-et) (FW spiritu-spirita) (FW sancto-sancto) (FW vivit-vivit) (FW et-et) (FW regit-regit) (FW per-per) (FW omnia-omnia) (FW secula-secula) (FW seculorum-seculorum) (. .-.)) (ID HOMILIUBOK,.294))
 
 ( (META (CODE <heading>)
 	(NP (NS-N Postulamál-postulamál))
-	(CODE </heading>)))
+	(CODE </heading>)) (ID HOMILIUBOK,.295))
 
 ( (IP-MAT (NP-1 (Q-A Allar-allur)
 		(NS-A hátíðir-hátíð)
@@ -6562,7 +6555,7 @@
 		  (NP-OB1 *ICH*-1))
 	  (, ,-,)
 	  (NP-VOC (ADJ-N góðir-góður) (NS-N bræður-bróðir))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.296))
 
 ( (IP-MAT (CONJ en-en)
 	  (ADVP (NP-POS (Q-G allra-allur))
@@ -6585,7 +6578,7 @@
 							 (NP (NS-N forystusauðir-forystusauður)
 							     (NP-POS (NP-POS (NPR-G Guðs-guð))
 								     (N-G hjarðar-hjörð)))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.297))
 
 ( (IP-MAT (NP-SBJ (Q-N Allir-allur) (ADJ-N helgir-helgur) (NS-N menn-maður))
 	  (BEPI eru-vera)
@@ -6607,7 +6600,7 @@
 					      (NP-POS (NS-G haga-hagi)
 						      (NP-POS (PRO-G hans-hann))))
 				      (. .-.)
-				      (" "-"))))))
+				      (" "-"))))) (ID HOMILIUBOK,.298))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (NS-N postular-postuli))
@@ -6640,7 +6633,7 @@
 									      (NP (NS-D sauðum-sauður)
 										  (NP-POS (PRO-D sínum-sinn))))
 									  (; .-.)
-									  (" "-")))))))))))
+									  (" "-")))))))))) (ID HOMILIUBOK,.299))
 
 ( (IP-MAT (NP-SBJ-1 (NS-N Postular-postuli))
 	  (VBPI kallast-kalla)
@@ -6657,7 +6650,7 @@
 				      (NP-OB1 (NP-POS (NPR-G Guðs-guð))
 					      (N-D hjörðu-hjörð))
 				      (PP (P of-of)
-					  (NP (Q-A allan-allur) (N-A heim-heimur)))))))))
+					  (NP (Q-A allan-allur) (N-A heim-heimur)))))))) (ID HOMILIUBOK,.300))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -6702,7 +6695,7 @@
 								    (NP (N-D hendi-hönd)))
 								(NP-OB1 (NS-A sauði-sauður)
 									(NP-POS (NPR-G Krists-kristur))))))
-					    (. .-.))))))))
+					    (. .-.))))))) (ID HOMILIUBOK,.301))
 
 ( (IP-MAT (ADVP (ADV Maklega-maklega))
 	  (VBPI kallast-kalla)
@@ -6726,7 +6719,7 @@
 				      (PP (P í-í)
 					  (NP (NS-D kenningum-kenning)
 					      (NP-POS (PRO-D sínum-sinn))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.302))
 
 ( (IP-MAT (PP (P Af-af)
 	      (NP (PRO-D því-það)
@@ -6751,7 +6744,7 @@
 				(PP (P til-til)
 				    (NP (N-G miskunnar-miskunn)
 					(NP-POS (NPR-G Guðs-guð))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.303))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ-1 (ES það-það))
@@ -6813,7 +6806,7 @@
 										     (IP-SUB (NP-SBJ (ONE+Q-N einhver-einhver))
 											     (BEPI er-vera)
 											     (VAN göfgaður-göfga)))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.304))
 
 ( (IP-MAT (CONJ En-en)
 	  (ADVP-TMP (ADV nú-nú))
@@ -6843,7 +6836,7 @@
 			  (VBN hlotið-hljóta)
 			  (PP (P af-af)
 			      (NP (PRO-D þeim-það)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.305))
 
 ( (IP-MAT (ADVP (ADV Svo-svo))
 	  (VBPI mælir-mæla)
@@ -6867,7 +6860,7 @@
 				  (VAN bundið-binda)
 				  (PP (P á-á)
 				      (NP (N-D himni-himinn)))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.306))
 
 ( (CP-QUE-SPE (CONJ og-og)
 	      (WNP-1 (WQ-N hvatki-hvatki)
@@ -6887,7 +6880,7 @@
 			      (NP (N-D himni-himinn)))
 			  (BE vera-vera))
 	      (. .-.)
-	      (" "-")))
+	      (" "-")) (ID HOMILIUBOK,.307))
 
 ( (IP-MAT (NP-PRD (ADJ-G Mikillar-mikill) (N-G tignar-tign))
 	  (BEPI er-vera)
@@ -6935,7 +6928,7 @@
 										     (IP-SUB (NP-SBJ (PRO-N þeir-hann))
 											     (MDPI vilja-vilja)
 											     (VB byrgja-byrgja)))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.308))
 
 ( (IP-MAT (ADVP-TMP (ADV Enn-enn))
 	  (VBPI mælir-mæla)
@@ -6949,14 +6942,14 @@
 		      (NP-SBJ (N-N Ér-þér))
 		      (BEPI eruð-vera)
 		      (NP-PRD (N-N ljós-ljós)
-			      (NP-POS (N-G heims-heimur))))))
+			      (NP-POS (N-G heims-heimur))))) (ID HOMILIUBOK,.309))
 
 ( (IP-MAT-SPE (CONJ og-og)
 	      (NP-SBJ (N-N ér-þér))
 	      (BEPI eruð-vera)
 	      (NP-PRD (N-N salt-salt)
 		      (NP-POS (N-G jarðar-jörð)))
-	      (. .-.)))
+	      (. .-.)) (ID HOMILIUBOK,.310))
 
 ( (IP-MAT (ADVP (ADV Maklega-maklega))
 	  (VBPI kallast-kalla)
@@ -6980,13 +6973,13 @@
 							      (BEDI vóru-vera)
 							      (PP (P í-í)
 								  (NP (N-D villumyrkri-villumyrkur))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.311))
 
 ( (IP-MAT (NP-SBJ (N-N Jörð-jörð))
 	  (VBPI kallast-kalla)
 	  (NP-PRD (NS-N hjörtu-hjarta)
 		  (NP-POS (ADJ-G jarðlegra-jarðlegur) (NS-G manna-maður)))
-	  (, ,-,)))
+	  (, ,-,)) (ID HOMILIUBOK,.312))
 
 ( (IP-MAT (CONJ en-en)
 	  (NP-SBJ (PRO-N það-það)
@@ -6999,7 +6992,7 @@
 		    (IP-SUB (NP-SBJ *T*-2)
 			    (VAN saltað-salta)
 			    (BEPI er-vera)))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.313))
 
 ( (IP-MAT (NP-SBJ (NS-N Postular-postuli))
 	  (VBPI kallast-kalla)
@@ -7020,7 +7013,7 @@
 						  (NEG eigi-ekki)
 						  (PP (P af-af)
 						      (NP (N-D sauri-saur)))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.314))
 
 ( (IP-MAT (NP-SBJ (D-N Þessir-þessi) (NUM-N tólf-tólf) (NS-N postular-postuli))
 	  (BEPI eru-vera)
@@ -7082,7 +7075,7 @@
 														   (NP-POS (N-G veldis-veldi)
 															   (NP-POS (PRO-G síns-sinn)))))))))
 							    (. .-.)
-							    (" "-")))))))))
+							    (" "-")))))))) (ID HOMILIUBOK,.315))
 
 ( (IP-MAT (ADVP (ADV Maklega-maklega))
 	  (VBDI valdi-velja)
@@ -7098,7 +7091,7 @@
 				      (NP-PRD (D-N inn-hinn) (ADJ-N sanni-sannur) (N-N dagur-dagur))
 				      (PP (P á-á)
 					  (NP (NS-D bókum-bók)))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.316))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (NUM-N tólf-tólf)
@@ -7118,7 +7111,7 @@
 					  (IP-SUB (ADVP *T*-2)
 						  (NP-SBJ (NS-N stundir-stund))
 						  (NP-OB1 (N-D degi-dagur)))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.317))
 
 ( (IP-MAT (NP-1 (D-A Þessa-þessi))
 	  (VBDI sá-sjá)
@@ -7161,7 +7154,7 @@
 																	     (NP (NS-A glugga-gluggi)
 																		 (NP-POS (PRO-A sína-sinn)))))))))))))
 					    (. ?-?)
-					    (" "-")))))))
+					    (" "-")))))) (ID HOMILIUBOK,.318))
 
 ( (IP-MAT (NP-SBJ (NS-N Postular-postuli))
 	  (VBPI kallast-kalla)
@@ -7200,7 +7193,7 @@
 									   (NP-OB1 (NS-A ár-ár))
 									   (PP (P á-á)
 									       (NP (N-D jörð-jörð))))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.319))
 
 ( (IP-MAT (NP-SBJ (NS-N Dúfur-dúfa))
 	  (VBPI kallast-kalla)
@@ -7227,13 +7220,13 @@
 								      (VBDI sáu-sjá)
 								      (PP (P á-á)
 									  (NP (N-D jörðu-jörð))))))))))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.320))
 
 ( (IP-MAT (CONJ og-og)
 	  (VBDI girntust-girnast)
 	  (NP-SBJ (PRO-N þeir-hann))
 	  (NP-OB1 (Q-G engra-enginn) (NS-G hluta-hlutur) (ADJ-G líkamlegra-líkamlegur))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.321))
 
 ( (IP-MAT (NP-SBJ (D-N Þessir-þessi))
 	  (BEPI eru-vera)
@@ -7254,7 +7247,7 @@
 					      (NP (NUM-A tólf-tólf)
 						  (NS-D hliðum-hlið)
 						  (NP-POS (D-G innar-hinn) (ADJ-G himnesku-himneskur) (NPR-G Jerúsalem-jerúsalem))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.322))
 
 ( (IP-MAT (NP-SBJ (NPR-N Jerúsalem-jerúsalem))
 	  (VBDI þýðist-þýða)
@@ -7262,7 +7255,7 @@
 	  (" "-")
 	  (NP-PRD (NP-POS (N-G friðar-friður))
 		  (N-N sýn-sýn))
-	  (" "-")))
+	  (" "-")) (ID HOMILIUBOK,.323))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -7282,7 +7275,7 @@
 					      (NP (PRO-D sér-sig)))
 					  (PP (P á-á)
 					      (NP (NS-D himnum-himinn)))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.324))
 
 ( (IP-MAT (NP-SBJ (NUM-N Tólf-tólf)
 		  (NS-N hlið-hlið)
@@ -7304,7 +7297,7 @@
 							  (NP-POS (NP (N-G himinríkis-himinríki))
 								  (CONJP (CONJ og-og)
 									 (NP (ADJ-G almennilegrar-almennilegur) (N-G trúu-trú))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.325))
 
 ( (IP-MAT (NP-SBJ (D-N Sjá-sjá) (N-N borg-borg))
 	  (BEPI er-vera)
@@ -7345,7 +7338,7 @@
 											      (VBPI koma-koma)
 											      (PP (P til-til)
 												  (NP (PRO-G hennar-hún))))))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.326))
 
 ( (IP-MAT (NP-SBJ (NUM-N Tólf-tólf) (NS-N gimsteinar-gimsteinn))
 	  (PP (P yfir-yfir)
@@ -7367,7 +7360,7 @@
 						  (N-D lífi-líf)
 						  (CONJP (CONJ og-og)
 							 (NX (NS-D kenningum-kenning)))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.327))
 
 ( (IP-MAT (NP-SBJ-1 (PRO-N Það-það))
 	  (BEPI er-vera)
@@ -7383,7 +7376,7 @@
 					(PP (P yfir-yfir)
 					    (NP (NS-D hliðum-hlið)
 						(NP-POS (D-G innar-hinn) (ADJ-G himnesku-himneskur) (NPR-G Jerúsalem-jerúsalem)))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.328))
 
 ( (CP-QUE (WPP-1 (P Fyr-fyrir)
 		 (ADVP (WADV hví-hví)))
@@ -7416,7 +7409,7 @@
 							(PP (P til-til)
 							    (NP (N-G himins-himinn)
 								(NP-POS (N-G dýrðar-dýrð))))))))))
-	  (. ?-?)))
+	  (. ?-?)) (ID HOMILIUBOK,.329))
 
 ( (IP-MAT (PP (P Af-af)
 	      (NP (PRO-D því-það)
@@ -7445,7 +7438,7 @@
 							       (PP (P í-í)
 								   (NP (N-D þýðingu-þýðing)
 								       (NP-POS (NS-G nafna$-nafn) (D-G $nna-hinn))))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.330))
 
 ( (IP-MAT (IP-MAT-1 (NP-SBJ (NPR-N Petrus-petrus))
 		    (VBDI þýðist-þýða)
@@ -7489,7 +7482,7 @@
 	  (CONJP (IP-MAT=1 (NP-SBJ (NPR-N Maþías-maþías))
 			   (ADJP (ADJ-N lítill-lítill)
 				 (NP-POS (NPR-G Guðs-guð)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.331))
 
 ( (IP-MAT (NP-OB1 (D-A Þetta-þessi) (Q-A allt-allur))
 	  (MDPI skulum-skulu)
@@ -7511,7 +7504,7 @@
 			      (PP (P í-í)
 				  (NP (N-A hlið-hlið)
 				      (NP-POS (ADJ-G postullegra-postullegur) (NS-G kenninga-kenning)))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.332))
 
 ( (IP-MAT (NP-LFD (PRO-N Hver-hver)
 		  (CP-REL (WNP-1 0)
@@ -7562,7 +7555,7 @@
 							(IP-SUB (ADVP *T*-3)
 								(NP-SBJ (VAG lifandi-lifa) (NS-N steinar-steinn)))))
 					  (; .-.)
-					  (" "-"))))))
+					  (" "-"))))) (ID HOMILIUBOK,.333))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-LFD (PRO-N hver-hver)
@@ -7592,7 +7585,7 @@
 	  (IP-IMP-SPE (" "-")
 		      (DOPI Gerið-gera)
 		      (NP-OB1 (PRO-N ér-þér))
-		      (ADVP (ADV drengilega-drengilega)))))
+		      (ADVP (ADV drengilega-drengilega)))) (ID HOMILIUBOK,.334))
 
 ( (IP-IMP-SPE (CONJ og-og)
 	      (VBPI styrkið-styrka)
@@ -7609,7 +7602,7 @@
 					      (PP (P und-undir)
 						  (NP (NPR-D Guði-guð))))))
 	      (. .-.)
-	      (" "-")))
+	      (" "-")) (ID HOMILIUBOK,.335))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (Q-N engi-enginn))
@@ -7634,7 +7627,7 @@
 						  (NP-POS (PRO-D sínu-sinn))
 						  (CONJP (CONJ og-og)
 							 (NX (N-D atferð-atferð)))))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.336))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (Q-N mangi-manngi))
@@ -7687,7 +7680,7 @@
 													    (IP-MAT-SPE (NP-SBJ (PRO-N eg-ég))
 															(BEPI em-vera)))
 											    (; .-.)
-											    (" "-")))))))))))))
+											    (" "-")))))))))))) (ID HOMILIUBOK,.337))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-LFD (D-N sá-sá)
@@ -7703,7 +7696,7 @@
 	  (RDPI verður-verða)
 	  (NP-SBJ (PRO-N hann-hann))
 	  (NP-PRD (NPR-N Þómas-þómas))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.338))
 
 ( (IP-MAT (ADVP (ADV þá-þá))
 	  (RDPI verður-verða)
@@ -7716,7 +7709,7 @@
 				  (N-G elsku-elska)
 				  (CONJP-1 (CONJ og-og)
 					   (NP-POS (N-G náungs-náungi))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.339))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (Q-N engi-enginn))
@@ -7736,7 +7729,7 @@
 			      (IP-MAT-PRN (NP-SBJ (PRO-N það-það))
 					  (BEPI er-vera)
 					  (NP-PRD (N-N lýsikersmunnur-lýsikersmunnur))))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.340))
 
 ( (IP-MAT (NP-SBJ (D-N Sá-sá)
 		  (CP-REL *ICH*-1))
@@ -7778,7 +7771,7 @@
 									    (NP-POS (PRO-A yður-yður))
 									    (ADJ-N góð-góður))))
 					    (. .-.)
-					    (" "-")))))))
+					    (" "-")))))) (ID HOMILIUBOK,.341))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-LFD (D-N sá-sá)
@@ -7794,7 +7787,7 @@
 	  (, ,-,)
 	  (VBPI glíkist-glíkja)
 	  (NP-SBJ-RSP (PRO-N hann-hann))
-	  (NP-OB1 (NPR-D Guði-guð))))
+	  (NP-OB1 (NPR-D Guði-guð))) (ID HOMILIUBOK,.342))
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
@@ -7830,7 +7823,7 @@
 										(NP-PRD (NS-N synir-sonur)
 											(NP-POS (NPR-G Guðs-guð)))))))
 					    (. .-.)
-					    (" "-")))))))
+					    (" "-")))))) (ID HOMILIUBOK,.343))
 
 ( (QTP (PP (P 0)
 	   (NP (PRO-D Því-það)
@@ -7847,7 +7840,7 @@
 							     (NP-SBJ (PRO-N hann-hann))
 							     (VBPI stöðvar-stöðva)
 							     (NP-OB1 (N-A regn-regn) (CONJ og-og) (NS-A hríðir-hríð)))))))))
-       (. .-.)))
+       (. .-.)) (ID HOMILIUBOK,.344))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-LFD (D-N sá-sá))
@@ -7872,7 +7865,7 @@
 		      (VAN reifður-reifa)
 		      (NP-OB1 (NS-D gjöfum-gjöf)
 			      (NP-POS (ADJ-G margfaldrar-margfaldur) (N-G miskunnar-miskunn))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.345))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-LFD (D-N sá-sá)
@@ -7893,7 +7886,7 @@
 		      (ADJP (ADJ-N hlýðinn-hlýða)
 			    (NP (NP-POS (NPR-G Guðs-guð))
 				(N-D vilja-vilja))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.346))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-LFD (D-N sá-sá)
@@ -7916,7 +7909,7 @@
 			  (CONJP (CONJ og-og)
 				 (NP (N-A nafn-nafn)
 				     (NP-POS (PRO-G hans-hann))))))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.347))
 
 ( (IP-MAT (CONJ heldur-heldur)
 	  (DOPI gerist-gera)
@@ -7955,7 +7948,7 @@
 						(NP (NS-D feður-faðir)
 						    (NP-POS (PRO-D mínum-minn))))
 					    (; .-.)
-					    (" "-")))))))
+					    (" "-")))))) (ID HOMILIUBOK,.348))
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-LFD (D-N sá-sá)
@@ -7975,7 +7968,7 @@
 	  (PP (P af-af)
 	      (NP (NP-POS (PRO-D sínu-sinn))
 		  (N-D lífi-líf)))
-	  (. ,-,)))
+	  (. ,-,)) (ID HOMILIUBOK,.349))
 
 ( (IP-MAT (CONJ heldur-heldur)
 	  (MDPI skal-skulu)
@@ -7987,7 +7980,7 @@
 			      (BEPI er-vera)
 			      (ADJP (ADJ-N lítill-lítill)
 				    (NP-POS (NPR-G Guðs-guð)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.350))
 
 ( (IP-MAT (NP-SBJ (D-N Sá-sá)
 		  (CP-REL *ICH*-1))
@@ -8005,5 +7998,5 @@
 			    (PP (P fyr-fyrir)
 				(NP (NP-POS (PRO-G hans-hann))
 				    (N-A elsku-elska)))))
-	  (. .-.)))
+	  (. .-.)) (ID HOMILIUBOK,.351))
 

@@ -59,7 +59,7 @@ for before,after in reps.items():
 ####### SECOND REPLACE LOOP
 
 reps = {}
-
+reps["\(ADV aðeins-aðeins\)"]="(FP aðeins-aðeins)"
 # Some basic structures
 # reps["\(CP-ADV \(C (sem|er)-\\1\)\)"]="(CP-REL (WNP-X 0) (C \\1-\\1))"
 
@@ -119,6 +119,8 @@ reps['\(ADVP \(ADV ([Ee]kki|[Ee]igi|[Ee]i)-(ekki|eigi|ei)\)\)']='(NEG \\1-\\2)'
 # CONJUNCTIONS
 reps['\(CP \(C ([Oo]g|[Ee]n|[Ee]ða|[Ee]llegar|[Hh]eldur|[Ee]nda)-([Oo]g|[Ee]n|[Ee]ða|[Ee]llegar|[Hh]eldur|[Ee]nda)\)\)']='(CONJ \\1-\\2)'
 
+
+reps["\(CP-ADV \(C bæði-bæði\)\)"]="(CONJ bæði-bæði)"
 
 for before,after in reps.items():	
 	output = re.sub(before, after, output)
@@ -248,8 +250,9 @@ reps["\(PP \(MWE_PP \(ADV út-út\) \(P í-í\)\)"]="(PP (RP út-út) (P í-í)"
 reps["\(MWE_CP \(P til-til\) \(TO að-að\)\)"]="(PP (P til-til) (TO að-að))"
 reps["\(MWE_CP \(P til-til\) \(PRO-G þess-það\)\)"]="(PP (P til-til) (PRO-G þess-það))"
 
-reps["\(MWE_CP \(P til-til\) \(PRO-G þess-það\) \(C að-að\)\)"]="(PP (P til-til) (NP (PRO-G þess-það)) (IP-INF-PRP (C að-að)))"
-
+reps["\(MWE_CP \(P til-til\) \(PRO-G þess-það\) \(TO að-að\)\)"]="(PP (P til-til) (NP (PRO-G þess-það)) (IP-INF-PRP (C að-að)))"
+# reps["\(CP \(P til-til\) \(PRO-G þess-það\) \(TO að-að\)\)"]="(PP (P til-til) (NP (PRO-G þess-það)) (IP-INF-PRP (C að-að)))"
+      #(CP (P til-til) (PRO-G þess-það) (TO að-að))
 
 reps["\(ADVP-MWE \(PRO-D einu-einn\) \(N-D sinni-sinn\)\)"]="(NP-TMP (ONE-D einu-einn) (N-D sinni-sinn))"
 
@@ -266,6 +269,8 @@ reps["\(ADVP-MWE \(OTHER-G annars-annar\) \(N-G staðar-staður\)\)"]="(NP-ADV (
 reps["\(ADVP-MWE \(C hvort-hvort\) \(C sem-sem\)\)"]="(CP-QUE (WQ hvort-hvort) (C sem-sem))"
 
 reps["\(ADVP-MWE \(P um-um\) \(N-A leið-leið\)\)"]="(PP (P um-um) (NP (N-A leið-leið)))"
+
+reps["\(ADVP \(ADV þó-þó\) \(ADV "]="(ADVP (ADV þó-þó)) (ADVP (ADV "
 
 reps["\(PP \(MWE_PP \(ADV á-á\) \(P móti-móti\)\)"]="(PP (P á-á) (NP (N-D móti-móti))"
 
@@ -296,6 +301,10 @@ reps["\(ADJP \(ADJS-([NADG]) (flest[a-z]+)-margur\)\)"]="(QS-\\1 \\2-margur)"
 reps["\(ADJP \(ADJ-([NADG]) (miki[a-z]+)-mikill\)\)"]="(Q-\\1 \\2-mikill)"
 reps["\(ADJP \(ADJR-([NADG]) (meir[a-z]+)-mikill\)\)"]="(QR-\\1 \\2-mikill)"
 reps["\(ADJP \(ADJS-([NADG]) (mest[a-z]+)-mikill\)\)"]="(QS-\\1 \\2-mikill)"
+
+reps["\(PRO-([NADG]) (["+allchars+"]+)-slíkur\)"]="(SUCH-\\1 \\2-slíkur)"
+
+# (PRO-N slíkt-slíkur)
 
 for before,after in reps.items():	
 	output = re.sub(before, after, output)

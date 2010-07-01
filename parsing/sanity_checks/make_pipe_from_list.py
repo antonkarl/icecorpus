@@ -3,7 +3,7 @@
 
 import sys,string
 
-list = sys.stdin.readlines()
+list = sys.stdin.read().split()
 
 for ii in list:
     sys.stdout.write("%s|" % ii)

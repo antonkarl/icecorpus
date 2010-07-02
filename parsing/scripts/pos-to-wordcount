@@ -1,0 +1,21 @@
+
+#!/bin/tcsh
+
+# USAGE: pos-to-wordcount {file(s)}
+
+
+for file in $*
+
+do
+
+        BASE=`basename $file .pos`
+	echo "$BASE `cat $BASE.pos | grep . | \
+	grep -v '/CODE' | \
+	grep -v '/ID' | \
+	grep -v '/PON*' | \
+	grep -v '/"' | \
+	grep -v "/'" | \
+	wc -l`"
+
+done
+

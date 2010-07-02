@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+use strict; use warnings;
+
+# part of psd-to-pos
+# changes format from tag-word to word-tag
+
+while (<>) {  
+
+      s=^\((\S+)\s+(\S+)\s*$=$2/$1\n=g;		# move tag
+      s=[\(\)]==g;				# delete remaining parens
+      s=-LFD==g;				# delete dash tags
+      s=-RSP==g;
+						# delete indices on pos tags
+      s=(ALSO|ADVR*|BE|CONJ|DO|FP|NEG|RP|VAN|VB)-[0-9]+$=$1=g;
+
+      print;
+
+}

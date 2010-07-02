@@ -155,5 +155,9 @@ echo "Bad *T*-trace insed IP-INF"
 $CS sanity_checks/bad-ip-inf-t-trace.q $tempfile
 mv -f $tempfile.out $tempfile
 
+echo ""
+echo "wrong order of LFD and SPE"
+$CS sanity_checks/LFD-SPE-wrongly.q $tempfile
+mv -f $tempfile.out $tempfile
 
 mv -f $tempfile $1.sanity.psd

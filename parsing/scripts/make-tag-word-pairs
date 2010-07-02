@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+use strict; use warnings;
+
+# part of psd-to-pos
+# puts words with their pos tags on separate line
+
+while (<>) {  
+
+      s/\(/\n(/g;
+
+      print;
+
+}

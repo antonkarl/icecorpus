@@ -98,6 +98,10 @@ echo "Bad *T* trace"
 $CS sanity_checks/bad-t-trace.q $tempfile
 mv -f $tempfile.out $tempfile
 
+echo ""
+echo "Bad WPRO"
+$CS sanity_checks/bad-wpro.q $tempfile
+mv -f $tempfile.out $tempfile
 
 #echo ""
 #echo "Missing antecedent"

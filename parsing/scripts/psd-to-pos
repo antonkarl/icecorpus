@@ -14,8 +14,8 @@ do
         BASE=`basename $file .psd`
 
 	cat $BASE.psd |
-	save-blanklines |
-	make-tag-word-pairs |
+	./save-blanklines |
+	./make-tag-word-pairs |
 	grep ')' |			# get tag-word pairs
 	grep -v '\*T\*' |		# omit traces and empty categories
 	grep -v '\*ICH\*' |
@@ -29,7 +29,7 @@ do
 	grep -v '(CONJS 0)' |
 	grep -v '(W[^ ]* 0)' |
 	grep -v '([A-Z]*X 0)' |
-	change-tag-format |
-	restore-blanklines > $BASE.pos
+	./change-tag-format |
+	./restore-blanklines > $BASE.pos
 
 done

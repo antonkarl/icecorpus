@@ -7,6 +7,6 @@ define: def/ICE.def
 query: (IP* iDoms {1}ADJP)
    AND (IP* iDoms finiteVerb)
    AND (IP* iDoms !B*)
-   AND (IP* iDomsMod V*|M*|R* !linkingVerb|*-þykja)
+   AND (IP* iDomsMod V*|M*|R* !linkingVerb|*-þykja|*-gerast)
 
 append_label{1}: -ZZZ-BARE_ADJP

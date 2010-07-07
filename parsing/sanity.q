@@ -1,2 +1,2 @@
 node: $ROOT
-query: (*P* doms *-ZZZ*)
+query: (*-ZZZ* exists)

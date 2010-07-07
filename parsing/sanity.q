@@ -1,2 +1,2 @@
-node: *P*
+node: $ROOT
 query: (*P* doms *-ZZZ*)

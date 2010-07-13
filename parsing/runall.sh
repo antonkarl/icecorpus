@@ -1,10 +1,6 @@
 CS="java -classpath CS_2.002.75.jar csearch/CorpusSearch"
 
-python scripts/splitdet.py $1 $1.out
-python scripts/split2person.py $1.out $1.out
-python scripts/tagfix.py $1.out $1.out
-
-mv -f $1.out temp.psd
+cp $1 temp.psd
 FILE="temp.psd"
 
 echo ""

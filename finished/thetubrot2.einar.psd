@@ -1,4 +1,3 @@
-
 ( (IP-MAT (IP-MAT-SPE-1 (HVPI hefi-hafa)
 			(NP-SBJ (PRO-N ég-ég))
 			(ADVP-LOC (ADV þar-þar))
@@ -1695,11 +1694,12 @@
 	  (BEDI var-vera)
 	  (NP-SBJ (PRO-D mér-ég))
 	  (ADJP (ADJ-N grunlaust-grunlaus))
-	  (CP-ADV (C nema-nema)
-		  (IP-SUB-SPE (NP-SBJ (NS-N skildir-skjöldur) (Q-N nokkrir-nokkur))
-			      (MDDS myndu-munu)
-			      (BE vera-vera)
-			      (ADVP (ADV þar-þar))))
+	  (PP (P nema-nema)
+	      (CP-ADV (C 0)
+		      (IP-SUB-SPE (NP-SBJ (NS-N skildir-skjöldur) (Q-N nokkrir-nokkur))
+				  (MDDS myndu-munu)
+				  (BE vera-vera)
+				  (ADVP (ADV þar-þar)))))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (NPR-N Þorsteinn-þorsteinn))

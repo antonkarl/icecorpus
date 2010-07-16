@@ -1,4 +1,3 @@
-
 ( (IP-MAT-SPE (CODE VS:V_45J)
 	      (NEG Eigi-ekki)
 	      (MDPI skulu-skulu)
@@ -516,7 +515,7 @@
 			(IP-SUB (ADVP-LOC-1 *T*)
 				(NP-MSR (NUMP-XXX (NUMP (NUM-N fimm-fimm) (CONJ og-og) (NUM-G tuttugu-tuttugu))
 						  (CONJP (CONJ eður-eður)
-							 (NUMP (NUM-G xxx-þrjátíu)))
+							 (NUMP (CODE <paren>) (NUM-G xxx-þrjátíu) (CODE </paren>)))
 						  (NP-POS (NS-G skeiða-skeið)))))))
 	  (. .-.)))
 

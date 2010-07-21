@@ -49,5 +49,14 @@ echo "Fix CP-REL"
 $CS structure_queries/fix-cprel.q $FILE
 mv -f $FILE.out $FILE
 
+echo ""
+echo "Fix NP hvad"
+$CS structure_queries/fix-np-hva.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Fix ADVP hvar"
+$CS structure_queries/fix-adv-hva.q $FILE
+mv -f $FILE.out $FILE
 
 mv -f $FILE $2

@@ -59,4 +59,9 @@ echo "Fix ADVP hvar"
 $CS structure_queries/fix-adv-hva.q $FILE
 mv -f $FILE.out $FILE
 
+echo ""
+echo "Fix EM to be tagged BEPI"
+$CS structure_queries/fix-em.q $FILE
+mv -f $FILE.out $FILE
+
 mv -f $FILE $2

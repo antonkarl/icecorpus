@@ -28,7 +28,7 @@
 	  (NP-PRD (D-N það-sá) (N-N orð-orð))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (CODE VS:I_2J))
+( (IP-MAT (CODE VS:I_2J)
 	  (NP-SBJ (D-N Það-það) (ADJ-N sama-samur))
 	  (BEDI var-vera)
 	  (PP (P í-í)
@@ -37,7 +37,7 @@
 	      (NP (NPR-D Guði-guður)))
 	  (. .-.)))
 
-( (IP-MAT (NP (CODE VS:I_3J))
+( (IP-MAT (CODE VS:I_3J)
 	  (CONJ Og-og)
 	  (NP-SBJ (Q-N allir-allur) (NS-N hlutir-hlutur))
 	  (BEPI eru-vera)
@@ -60,7 +60,7 @@
 			    (BEPI er-vera)))
 	  (. .-.)))
 
-( (IP-MAT (NP (CODE VS:I_4J))
+( (IP-MAT (CODE VS:I_4J)
 	  (PP (P Í-í)
 	      (NP (PRO-D því-það)))
 	  (BEDI var-vera)
@@ -74,7 +74,7 @@
 		  (NP-POS (NS-G manna$-maður) (D-G $nna-hinn)))
 	  (. .-.)))
 
-( (IP-MAT (NP (CODE VS:I_5J))
+( (IP-MAT (CODE VS:I_5J)
 	  (CONJ Og-og)
 	  (NP-SBJ (N-N ljós$-ljós) (D-N $ið-hinn))
 	  (VBPI lýsir-lýsa)
@@ -90,7 +90,7 @@
 	  (VBN höndlað-höndla)
 	  (. .-.)))
 
-( (IP-MAT (NP (CODE VS:I_6J))
+( (IP-MAT (CODE VS:I_6J)
 	  (ADVP-LOC (ADV Þar-þar))
 	  (BEDI var-vera)
 	  (NP-SBJ (ONE-N einn-einn) (N-N maður-maður))
@@ -430,7 +430,7 @@
 						    (NP-OB2 (PRO-A hann-hann))
 						    (, :-:)
 						    (CP-QUE-SPE (WNP-2 (WPRO-A Hver-hver))
-								(IP-SUB-SPE (NP-SBJ *T*-2)
+								(IP-SUB-SPE (NP-PRD *T*-2)
 									    (BEPI ert-vera)
 									    (NP-SBJ (PRO-N þú-þú)))))))))
 	  (. ?-?)))
@@ -468,8 +468,9 @@
 	  (ADVP-TMP (ADV enn-enn))
 	  (RP að-að)
 	  (, :-:)
-	  (QTP (WNP (WPRO-N Hvað-hver))
-	       (IP-SUB-SPE (ADVP-TMP (ADV þá-þá))))
+	  (CP-QUE-SPE (WNP (WPRO-N Hvað-hver))
+		      (C 0)
+		      (IP-SUB-SPE=XXX (ADVP-TMP (ADV þá-þá))))
 	  (. ?-?)))
 
 ( (CP-QUE-SPE (IP-SUB-SPE (BEPI Ert-vera)
@@ -539,7 +540,7 @@
 	  (, :-:)
 	  (IP-MAT-SPE (NP-SBJ (PRO-N Eg-eg))
 		      (BEPI em-vera)
-		      (NP-PRD (VAG hrópandi-hrópandi) (N-N rödd-rödd))
+		      (NP-PRD (VAG hrópandi-hrópa) (N-N rödd-rödd))
 		      (PP (P í-í)
 			  (NP (N-D eyðimörku-eyðimörka))))
 	  (. :-:)))
@@ -795,7 +796,7 @@
 			  (PP (P af-af)
 			      (NP (NS-D himnum-himinn)))
 			  (PP (P í-í)
-			      (NP (NP-POS (N-D dúfu-dúfa))
+			      (NP (NP-POS (N-G dúfu-dúfa))
 				  (N-D líki-líka))))))
 
 ( (IP-MAT-SPE (CONJ og-og)
@@ -809,7 +810,7 @@
 	      (CONJ og-og)
 	      (NP-SBJ (PRO-N eg-ég))
 	      (VBDI þekkta-þekkja)
-	      (NP-SBJ (PRO-N hann-hann))
+	      (NP-OB1 (PRO-A hann-hann))
 	      (NEG eigi-ekki)
 	      (. ,-,)))
 

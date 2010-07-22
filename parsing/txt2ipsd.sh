@@ -5,7 +5,7 @@ echo "Tagging using IceTagger"
 cat $1.enc | java -classpath "../IceNLP/IceNLPCore.jar" is.iclt.icenlp.runner.RunIceTagger > $1.tagged
 
 echo "Lemmatizing using Lemmald"
-cat $1.enc | java -classpath "../IceNLP/IceNLPCore.jar" is.iclt.icenlp.runner.RunIceTagger -of 1 -lem > $1.lemmatized
+cat $1.enc | java -Xmx256m -classpath "../IceNLP/IceNLPCore.jar" is.iclt.icenlp.runner.RunIceTagger -of 1 -lem > $1.lemmatized
 
 # python3 ./scripts/joinlemma.py $1.tagged $1.lemmatized
 

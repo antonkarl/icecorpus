@@ -252,38 +252,38 @@ def replace_special_verb_tags():
     global currentText
     # infinitives
     currentText = re.sub("\(VB (["+allchars+"]+)\-vera\)","(BE \\1-vera)", currentText)
-    currentText = re.sub("\(VB (["+allchars+"]+)\-gera\)","(DO \\1-gera)", currentText)
+    currentText = re.sub("\(VB (["+allchars+"]+)\-(gera|gjöra)\)","(DO \\1-gera)", currentText)
     currentText = re.sub("\(VB (["+allchars+"]+)\-verða\)","(RD \\1-verða)", currentText)
     currentText = re.sub("\(VB (["+allchars+"]+)\-hafa\)","(HV \\1-hafa)", currentText)    
     currentText = re.sub("\(VB (["+allchars+"]+)\-("+modal+")\)","(MD \\1-\\2)", currentText)
 
     # present participle
     currentText = re.sub("\(VAG (["+allchars+"]+)\-vera\)","(BAG \\1-vera)", currentText)
-    currentText = re.sub("\(VAG (["+allchars+"]+)\-gera\)","(DAG \\1-gera)", currentText)
+    currentText = re.sub("\(VAG (["+allchars+"]+)\-(gera|gjöra)\)","(DAG \\1-gera)", currentText)
     currentText = re.sub("\(VAG (["+allchars+"]+)\-verða\)","(RAG \\1-verða)", currentText)
     currentText = re.sub("\(VAG (["+allchars+"]+)\-hafa\)","(HAG \\1-hafa)", currentText)    
 
     # passive participle
     currentText = re.sub("\(VAN (["+allchars+"]+)\-hafa\)","(HAN \\1-hafa)", currentText)
     currentText = re.sub("\(VAN (["+allchars+"]+)\-verða\)","(RAN \\1-verða)", currentText)
-    currentText = re.sub("\(VAN (["+allchars+"]+)\-gera\)","(DAN \\1-gera)", currentText)
+    currentText = re.sub("\(VAN (["+allchars+"]+)\-(gera|gjöra)\)","(DAN \\1-gera)", currentText)
 
     # perfect participle
     currentText = re.sub("\(VBN (["+allchars+"]+)\-hafa\)","(BEN \\1-hafa)", currentText)
     currentText = re.sub("\(VBN (["+allchars+"]+)\-verða\)","(RDN \\1-verða)", currentText)
-    currentText = re.sub("\(VBN (["+allchars+"]+)\-gera\)","(DON \\1-gera)", currentText)    
+    currentText = re.sub("\(VBN (["+allchars+"]+)\-(gera|gjöra)\)","(DON \\1-gera)", currentText)
     currentText = re.sub("\(VBN (["+allchars+"]+)\-hafa\)","(HVN \\1-hafa)", currentText)
 
     # imperative
     currentText = re.sub("\(VBI (["+allchars+"]+)\-vera\)","(BEI \\1-vera)", currentText)
-    currentText = re.sub("\(VBI (["+allchars+"]+)\-gera\)","(DOI \\1-gera)", currentText)
+    currentText = re.sub("\(VBI (["+allchars+"]+)\-(gera|gjöra)\)","(DOI \\1-gera)", currentText)
     currentText = re.sub("\(VBI (["+allchars+"]+)\-verða\)","(RDI \\1-verða)", currentText)
     currentText = re.sub("\(VBI (["+allchars+"]+)\-hafa\)","(HVI \\1-hafa)", currentText)
     currentText = re.sub("\(VBI (["+allchars+"]+)\-("+modal+")\)","(MDI \\1-\\2)", currentText)
 
     # present and past (including subjunctive)
     currentText = re.sub("\(VB([PD])([IS]) (["+allchars+"]+)\-vera\)","(BE\\1\\2 \\3-vera)", currentText)
-    currentText = re.sub("\(VB([PD])([IS]) (["+allchars+"]+)\-gera\)","(DO\\1\\2 \\3-gera)", currentText)
+    currentText = re.sub("\(VB([PD])([IS]) (["+allchars+"]+)\-(gera|gjöra)\)","(DO\\1\\2 \\3-gera)", currentText)
     currentText = re.sub("\(VB([PD])([IS]) (["+allchars+"]+)\-hafa\)","(HV\\1\\2 \\3-hafa)", currentText)
     currentText = re.sub("\(VB([PD])([IS]) (["+allchars+"]+)\-verða\)","(RD\\1\\2 \\3-verða)", currentText)
     currentText = re.sub("\(VB([PD])([IS]) (["+allchars+"]+)\-("+modal+")\)","(MD\\1\\2 \\3-\\4)", currentText)

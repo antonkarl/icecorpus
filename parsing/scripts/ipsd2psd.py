@@ -370,6 +370,11 @@ def final_replacements():
     rep("\(SCP ","(CP-ADV ")
     rep("\(CP-ADV \(C að-að\)\)","(CP-THT (C að-að))")
 
+    # fix þótt að
+    rep("\(PP \(P þó-þó\) \(CP-THT \(C að-að\)\)\)","(PP (P þó-þó) (CP-ADV (C að-að)))")
+    rep("\(CP-ADV \(C þótt-þótt\)\)\n\(CP-THT \(C að-að\)\)","(PP (P þótt-þótt) (CP-ADV (C að-að)))")
+
+
 # Start script
 # Load input file (ipsd)
 f = open(sys.argv[1]+".ipsdx", 'r')

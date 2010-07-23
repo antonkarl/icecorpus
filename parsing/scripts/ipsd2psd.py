@@ -326,6 +326,9 @@ def final_replacements():
     rep("\(ADJR-([NADG]) (meir[a-z]+)-mikill\)","(QR-\\1 \\2-mikill)")
     rep("\(ADJS-([NADG]) (mest[a-z]+)-mikill\)","(QS-\\1 \\2-mikill)")
 
+    # einhver
+    rep("\(Q-([NADG]) (einhve[a-z]+)-einhver\)","(ONE+Q-\\1 \\2-einhver)")
+
     # demonstratives
     rep("\(PRO-([NADG]) (["+allchars+"]+-sá)\)","(D-\\1 \\2)")
     rep("\(PRO-([NADG]) (["+allchars+"]+-þessi)\)","(D-\\1 \\2)")

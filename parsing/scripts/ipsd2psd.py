@@ -252,38 +252,38 @@ def replace_special_verb_tags():
     global currentText
     # infinitives
     currentText = re.sub("\(VB (["+allchars+"]+)\-vera\)","(BE \\1-vera)", currentText)
-    currentText = re.sub("\(VB (["+allchars+"]+)\-gera\)","(DO \\1-gera)", currentText)
+    currentText = re.sub("\(VB (["+allchars+"]+)\-(gera|gjöra)\)","(DO \\1-gera)", currentText)
     currentText = re.sub("\(VB (["+allchars+"]+)\-verða\)","(RD \\1-verða)", currentText)
     currentText = re.sub("\(VB (["+allchars+"]+)\-hafa\)","(HV \\1-hafa)", currentText)    
     currentText = re.sub("\(VB (["+allchars+"]+)\-("+modal+")\)","(MD \\1-\\2)", currentText)
 
     # present participle
     currentText = re.sub("\(VAG (["+allchars+"]+)\-vera\)","(BAG \\1-vera)", currentText)
-    currentText = re.sub("\(VAG (["+allchars+"]+)\-gera\)","(DAG \\1-gera)", currentText)
+    currentText = re.sub("\(VAG (["+allchars+"]+)\-(gera|gjöra)\)","(DAG \\1-gera)", currentText)
     currentText = re.sub("\(VAG (["+allchars+"]+)\-verða\)","(RAG \\1-verða)", currentText)
     currentText = re.sub("\(VAG (["+allchars+"]+)\-hafa\)","(HAG \\1-hafa)", currentText)    
 
     # passive participle
     currentText = re.sub("\(VAN (["+allchars+"]+)\-hafa\)","(HAN \\1-hafa)", currentText)
     currentText = re.sub("\(VAN (["+allchars+"]+)\-verða\)","(RAN \\1-verða)", currentText)
-    currentText = re.sub("\(VAN (["+allchars+"]+)\-gera\)","(DAN \\1-gera)", currentText)
+    currentText = re.sub("\(VAN (["+allchars+"]+)\-(gera|gjöra)\)","(DAN \\1-gera)", currentText)
 
     # perfect participle
     currentText = re.sub("\(VBN (["+allchars+"]+)\-hafa\)","(BEN \\1-hafa)", currentText)
     currentText = re.sub("\(VBN (["+allchars+"]+)\-verða\)","(RDN \\1-verða)", currentText)
-    currentText = re.sub("\(VBN (["+allchars+"]+)\-gera\)","(DON \\1-gera)", currentText)    
+    currentText = re.sub("\(VBN (["+allchars+"]+)\-(gera|gjöra)\)","(DON \\1-gera)", currentText)
     currentText = re.sub("\(VBN (["+allchars+"]+)\-hafa\)","(HVN \\1-hafa)", currentText)
 
     # imperative
     currentText = re.sub("\(VBI (["+allchars+"]+)\-vera\)","(BEI \\1-vera)", currentText)
-    currentText = re.sub("\(VBI (["+allchars+"]+)\-gera\)","(DOI \\1-gera)", currentText)
+    currentText = re.sub("\(VBI (["+allchars+"]+)\-(gera|gjöra)\)","(DOI \\1-gera)", currentText)
     currentText = re.sub("\(VBI (["+allchars+"]+)\-verða\)","(RDI \\1-verða)", currentText)
     currentText = re.sub("\(VBI (["+allchars+"]+)\-hafa\)","(HVI \\1-hafa)", currentText)
     currentText = re.sub("\(VBI (["+allchars+"]+)\-("+modal+")\)","(MDI \\1-\\2)", currentText)
 
     # present and past (including subjunctive)
     currentText = re.sub("\(VB([PD])([IS]) (["+allchars+"]+)\-vera\)","(BE\\1\\2 \\3-vera)", currentText)
-    currentText = re.sub("\(VB([PD])([IS]) (["+allchars+"]+)\-gera\)","(DO\\1\\2 \\3-gera)", currentText)
+    currentText = re.sub("\(VB([PD])([IS]) (["+allchars+"]+)\-(gera|gjöra)\)","(DO\\1\\2 \\3-gera)", currentText)
     currentText = re.sub("\(VB([PD])([IS]) (["+allchars+"]+)\-hafa\)","(HV\\1\\2 \\3-hafa)", currentText)
     currentText = re.sub("\(VB([PD])([IS]) (["+allchars+"]+)\-verða\)","(RD\\1\\2 \\3-verða)", currentText)
     currentText = re.sub("\(VB([PD])([IS]) (["+allchars+"]+)\-("+modal+")\)","(MD\\1\\2 \\3-\\4)", currentText)
@@ -302,7 +302,7 @@ def final_replacements():
     # CONJUNCTIONS
     currentText = re.sub("\(CP \(C ([Oo]g|[Ee]n|[Ee]ða|[Ee]llegar|[Hh]eldur|[Ee]nda)-([Oo]g|[Ee]n|[Ee]ða|[Ee]llegar|[Hh]eldur|[Ee]nda)\)\)","(CONJ \\1-\\2)",currentText)
     rep("\(SCP \(C bæði\-bæði\)\)","(CONJ bæði-bæði)")
-
+    rep("\(CP \(C né-né\)\)","(CONJ né-né)")
     # Quantifiers
     rep("\(PRO-([A-Z]) (["+allchars+"]+)-(allur|báðir|nokkur|enginn|sumur|fáeinir|fár|einhver)\)","(Q-\\1 \\2-\\3)")
     
@@ -314,8 +314,15 @@ def final_replacements():
     rep("\(ADVP \(ADV líka-líka\)\)","(ALSO líka-líka)")
     rep("\(ADVP \(ADV einnig-einnig\)\)","(ALSO einnig-einnig)")
 
+    # heldur
+    rep("\(CONJ heldur-heldur\)","(ADVP (ADVR heldur-heldur))")
+
+    # negation, ekki and eigi
+    rep("\(ADV ekki-ekki\)","(NEG ekki-ekki)")
+    rep("\(NEG eigi-eigi\)","(NEG eigi-ekki)")
+
     # relative clauses
-    rep("\(SCP \(CT sem-sem\)\)","(CP-REL (WNP 0) (C sem-sem))")
+    rep("\(SCP \(CT ([Ss])em-sem\)\)","(CP-REL (WNP 0) (C \\1em-sem))")
     rep("\(SCP \(CT er-er\)\)","(CP-REL (WNP 0) (C er-er))")
 
     # margur and mikill
@@ -324,7 +331,11 @@ def final_replacements():
     rep("\(ADJS-([NADG]) (flest[a-z]+)-margur\)","(QS-\\1 \\2-margur)")
     rep("\(ADJ-([NADG]) (miki[a-zð]+)-mikill\)","(Q-\\1 \\2-mikill)")
     rep("\(ADJR-([NADG]) (meir[a-z]+)-mikill\)","(QR-\\1 \\2-mikill)")
+    rep("\(ADVR (meir[a-z]*)-meira\)","(QR-N \\1-mikill)")
     rep("\(ADJS-([NADG]) (mest[a-z]+)-mikill\)","(QS-\\1 \\2-mikill)")
+
+    # einhver
+    rep("\(Q-([NADG]) (einhve[a-z]+)-einhver\)","(ONE+Q-\\1 \\2-einhver)")
 
     # demonstratives
     rep("\(PRO-([NADG]) (["+allchars+"]+-sá)\)","(D-\\1 \\2)")
@@ -346,8 +357,9 @@ def final_replacements():
     #  (PP (P til-til) (PRO-G þess-það) (TO að-að))
 
     # (af) því að
-    rep("\(CP \(PRO-D því-það\) \(C að-að\)\)","(PP (P 0) (NP (PRO-D því-það)) (CP-THT-PRN (C að-að)))")
-    rep("\(CP \(P af-af\) \(PRO-D því-það\) \(C að-að\)\)","(PP (P af-af) (NP (PRO-D því-það)) (CP-THT-PRN (C að-að)))")
+    rep("\(CP \(ADV því-því\) \(C að-að\)\)","(PP (P 0) (NP (PRO-D því-það) (CP-THT-PRN (C að-að))))")
+    rep("\(CP \(PRO-D því-það\) \(C að-að\)\)","(PP (P 0) (NP (PRO-D því-það) (CP-THT-PRN (C að-að))))")
+    rep("\(CP \(P af-af\) \(PRO-D því-það\) \(C að-að\)\)","(PP (P af-af) (NP (PRO-D því-það) (CP-THT-PRN (C að-að))))")
        #(CP (P af-af) (PRO-D því-það) (C að-að))
 
     # þótt að
@@ -361,6 +373,11 @@ def final_replacements():
     # more
     rep("\(SCP ","(CP-ADV ")
     rep("\(CP-ADV \(C að-að\)\)","(CP-THT (C að-að))")
+
+    # fix þótt að
+    rep("\(PP \(P þó-þó\) \(CP-THT \(C að-að\)\)\)","(PP (P þó-þó) (CP-ADV (C að-að)))")
+    rep("\(CP-ADV \(C þótt-þótt\)\)\n\(CP-THT \(C að-að\)\)","(PP (P þótt-þótt) (CP-ADV (C að-að)))")
+
 
 # Start script
 # Load input file (ipsd)

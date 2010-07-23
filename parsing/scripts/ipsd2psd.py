@@ -314,6 +314,9 @@ def final_replacements():
     rep("\(ADVP \(ADV líka-líka\)\)","(ALSO líka-líka)")
     rep("\(ADVP \(ADV einnig-einnig\)\)","(ALSO einnig-einnig)")
 
+    # heldur
+    rep("\(CONJ heldur-heldur\)","(ADVP (ADVR heldur-heldur))")
+
     # negation, ekki and eigi
     rep("\(ADV ekki-ekki\)","(NEG ekki-ekki)")
     rep("\(NEG eigi-eigi\)","(NEG eigi-ekki)")

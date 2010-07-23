@@ -319,7 +319,7 @@ def final_replacements():
     rep("\(NEG eigi-eigi\)","(NEG eigi-ekki)")
 
     # relative clauses
-    rep("\(SCP \(CT sem-sem\)\)","(CP-REL (WNP 0) (C sem-sem))")
+    rep("\(SCP \(CT ([Ss])em-sem\)\)","(CP-REL (WNP 0) (C \\1em-sem))")
     rep("\(SCP \(CT er-er\)\)","(CP-REL (WNP 0) (C er-er))")
 
     # margur and mikill

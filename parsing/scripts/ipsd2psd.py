@@ -314,6 +314,9 @@ def final_replacements():
     rep("\(ADVP \(ADV líka-líka\)\)","(ALSO líka-líka)")
     rep("\(ADVP \(ADV einnig-einnig\)\)","(ALSO einnig-einnig)")
 
+    # NEG eigi lemma
+    rep("\(NEG eigi-eigi\)","(NEG eigi-ekki)")
+
     # relative clauses
     rep("\(SCP \(CT sem-sem\)\)","(CP-REL (WNP 0) (C sem-sem))")
     rep("\(SCP \(CT er-er\)\)","(CP-REL (WNP 0) (C er-er))")

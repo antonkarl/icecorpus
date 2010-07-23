@@ -1,4 +1,3 @@
-
 ( (IP-MAT-SPE (CONJ En-en)
 	      (NP-SBJ (PRO-N eg-ég))
 	      (BEPI em-vera)
@@ -44,6 +43,7 @@
 						     (CP-REL-SPE (WNP-1 (WNP-POS-XXX (WPRO-G hvers-hver))
 									(NS-N sauðir$-sauður)
 									(D-N $nir-hinn))
+								 (C 0)
 								 (IP-SUB-SPE (NP-SBJ *T*-1)
 									     (BEPI eru-vera)
 									     (NEG eigi-ekki)
@@ -61,7 +61,7 @@
 
 ( (IP-MAT-SPE (CONJ og-og)
 	      (NP-SBJ *con*)
-	      (NP-SBJ (N-N flýr-flýr))
+	      (VBPI flýr-flýja)
 	      (. ,-,)))
 
 ( (IP-MAT-SPE (CONJ en-en)
@@ -191,8 +191,8 @@
 				(IP-SUB-SPE (NP-SBJ (PRO-N eg-ég))
 					    (VBPI legg-leggja)
 					    (RP út-út)
-					    (NP (N-A önd-önd)
-						(NP-POS (PRO-A mína-minn)))))
+					    (NP-OB1 (N-A önd-önd)
+						    (NP-POS (PRO-A mína-minn)))))
 	      (. ,-,)))
 
 ( (IP-MAT-SPE (NP-SBJ (PRO-N eg-ég))
@@ -628,10 +628,11 @@
 				      (CONJP (CONJ og-og)
 					     (PP (P 0)
 						 (NP (PRO-D því-það)
-						     (IP-SUB-SPE (NP-SBJ (N-N ritning$-ritning) (D-N $in-hinn))
-								 (MDPI má-mega)
-								 (NEG eigi-eigi)
-								 (VB rjúfast-rjúfa)))))
+						     (CP-THT-SPE-PRN (C 0)
+								     (IP-SUB-SPE (NP-SBJ (N-N ritning$-ritning) (D-N $in-hinn))
+										 (MDPI má-mega)
+										 (NEG eigi-ekki)
+										 (VB rjúfast-rjúfa))))))
 				      (, -)
 				      (CODE VS:X_36J)
 				      (CONJP (CONJ en-en)

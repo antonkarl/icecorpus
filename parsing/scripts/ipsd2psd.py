@@ -346,8 +346,8 @@ def final_replacements():
     #  (PP (P til-til) (PRO-G þess-það) (TO að-að))
 
     # (af) því að
-    rep("\(CP \(PRO-D því-það\) \(C að-að\)\)","(PP (P 0) (NP (PRO-D því-það)) (CP-THT-PRN (C að-að)))")
-    rep("\(CP \(P af-af\) \(PRO-D því-það\) \(C að-að\)\)","(PP (P af-af) (NP (PRO-D því-það)) (CP-THT-PRN (C að-að)))")
+    rep("\(CP \(PRO-D því-það\) \(C að-að\)\)","(PP (P 0) (NP (PRO-D því-það) (CP-THT-PRN (C að-að))))")
+    rep("\(CP \(P af-af\) \(PRO-D því-það\) \(C að-að\)\)","(PP (P af-af) (NP (PRO-D því-það) (CP-THT-PRN (C að-að))))")
        #(CP (P af-af) (PRO-D því-það) (C að-að))
 
     # þótt að

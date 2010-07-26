@@ -1,0 +1,61 @@
+/*
+PREFACE:  
+CorpusSearch copyright Beth Randall 2005.
+Date:  Mon Jul 26 15:15:49 GMT 2010
+
+command file:     extend-ip1.q
+output file:      extend-ip1.out
+
+definition file:  ../def/verbtopic.def
+node:   $ROOT
+query:  ({1}IP-SUB hassister  [1]*VB|V*N*|*HV|H*N*|*DO|D*N*|*BE|B*N*|*AX|AXN*|*RD|R*N) 
+  AND  (IP-SUB precedes 
+   {2}[1]*VB|V*N*|*HV|H*N*|*DO|D*N*|*BE|B*N*|*AX|AXN*|*RD|R*N)  
+
+extend_span{1,2}:
+*/
+/*
+HEADER:
+source file:  test.psd
+*/
+
+/~*
+Jesús-jesús svaraði-svara honum-hann :-: Ef-ef eg-ég skal-skulu eigi-ekki
+þvo-þvo þér-þú ,-, þá-þá hefir-hafa þú-þú ekki-ekki hlutdeild-hlutdeild
+meður-meður mér-ég .-.
+*~/
+/*
+1 IP-MAT:  19 IP-SUB, 27 VB
+*/
+( (IP-MAT (NP-SBJ (NPR-N Jesús-jesús))
+	  (VP (VBDI svaraði-svara))
+	  (NP-OB1 (PRO-D honum-hann))
+	  (, :-:)
+	  (PP (P Ef-ef)
+	      (CP-ADV (C 0)))
+	  (IP-SUB (NP-SBJ (PRO-N eg-ég))
+		  (MDPI skal-skulu)
+		  (NEG eigi-ekki)
+		  (VB þvo-þvo))
+	  (NP-OB1 (PRO-D þér-þú))
+	  (, ,-,)
+	  (ADVP (ADV þá-þá))
+	  (VP (HVPI hefir-hafa))
+	  (NP-SBJ (PRO-N þú-þú))
+	  (NEG ekki-ekki)
+	  (NP-OB1 (N-A hlutdeild-hlutdeild))
+	  (PP (P meður-meður)
+	      (NP (PRO-D mér-ég)))
+	  (. .-.)))
+/*
+FOOTER
+  source file, hits/tokens/total
+  test.psd		1/1/1
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  test.psd		1/1/1
+whole search, hits/tokens/total
+			1/1/1
+*/

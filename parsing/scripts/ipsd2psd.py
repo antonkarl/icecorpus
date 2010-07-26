@@ -297,6 +297,11 @@ def final_replacements():
     global currentText
     # ONE 	the word ONE (except as focus particle)
     currentText = re.sub("\((NUM|ADJ|PRO)-([NADG] ["+allchars+"]+-einn)\)","(ONE-\\2)",currentText)
+
+    # hinn
+    currentText = re.sub("\(PRO-(N) ([Hh]inn)-hinn\)","(D-\\1 \\2-hinn)",currentText)
+
+
     # NEGATION
     currentText = re.sub("\(ADVP \(ADV ([Ee]kki|[Ee]igi|[Ee]i)-(ekki|eigi|ei)\)\)","(NEG \\1-\\2)",currentText)
     # CONJUNCTIONS

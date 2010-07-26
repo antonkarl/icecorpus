@@ -126,8 +126,8 @@ def convert_tag( match ):
         # check for suffixed determiner
         determiner=None
         detmatch1="(["+allchars+"]+)(inn|inum|ins|inir|ina|inna|in|inni|innar|inar|ið|inu)$"
-        detmatch2="(["+allchars+"]+)(num|ns|nir|n{1,2}a|nn|nni|n{1,2}ar|ð|nu)$"
-        detmatch3="(["+allchars+"]+)(n)$"
+        detmatch2="(["+allchars+"]+)(num|ns|nir|nna|nn|nni|n{1,2}ar|ð|nu)$"
+        detmatch3="(["+allchars+"]+)(n|na)$"
         if re.match("n[a-zþ]{3}g[a-zþ]*",theTag) and (re.match(detmatch1,theWord) or re.match(detmatch2,theWord)):
             # there is a determiner
             currentMatch = None

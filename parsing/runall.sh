@@ -60,6 +60,11 @@ $CS structure_queries/fix-adv-hva.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""
+echo "Fix NEG inside ADVP"
+$CS structure_queries/fix-advp-neg.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
 echo "Fix EM to be tagged BEPI"
 $CS structure_queries/fix-em.q $FILE
 mv -f $FILE.out $FILE

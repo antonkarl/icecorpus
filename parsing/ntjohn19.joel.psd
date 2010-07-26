@@ -5,7 +5,7 @@
 
 ( (IP-MAT-SPE (CODE VS:XV_1J)
 	      (NP-SBJ (PRO-N Eg-eg))
-	      (BEPI em-em)
+	      (BEPI em-vera)
 	      (NP-PRD (ADJ-N sannur-sannur) (N-N vínviður-vínviður))
 	      (. ,-,)))
 
@@ -112,16 +112,17 @@
 						(NP (PRO-D mér-ég))))))
 		(. .-.)))
 
-( (IP-MAT (NP-SBJ (CODE VS:XV_5J))
-	  (NP-SBJ (PRO-N Eg-eg))
-	  (BEPI em-em)
-	  (NP-SBJ (N-N vínviðartré$-vínviðartréi) (D-N $ið-hinn))
-	  (, ,-,)
-	  (CONJ en-en)
-	  (NP-SBJ (PRO-N þér-þú))
-	  (BEPI eruð-vera)
-	  (NP-PRD (NS-N vínv$-vínviðarkvistur) (D-N $ið-hinn))
-	  (. .-.)))
+( (IP-MAT-SPE (CODE VS:XV_5J)
+	      (NP-SBJ (PRO-N Eg-eg))
+	      (BEPI em-vera)
+	      (NP-PRD (N-N vínviðartré$-vínviðartré) (D-N $ið-hinn))
+	      (. ,-,)))
+
+( (IP-MAT-SPE (CONJ en-en)
+	      (NP-SBJ (PRO-N þér-þú))
+	      (BEPI eruð-vera)
+	      (NP-PRD (NS-N vínviðarkvistir$-vínviðarkvistur) (D-N $nir-hinn))
+	      (. .-.)))
 
 ( (IP-MAT (CP-XXX (WNP (WPRO-CASE Hver-hver))
 		  (C 0)

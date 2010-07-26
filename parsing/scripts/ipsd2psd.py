@@ -269,7 +269,7 @@ def replace_special_verb_tags():
     currentText = re.sub("\(VAN (["+allchars+"]+)\-(gera|gjöra)\)","(DAN \\1-gera)", currentText)
 
     # perfect participle
-    currentText = re.sub("\(VBN (["+allchars+"]+)\-hafa\)","(BEN \\1-hafa)", currentText)
+    currentText = re.sub("\(VBN (["+allchars+"]+)\-vera\)","(BEN \\1-vera)", currentText)
     currentText = re.sub("\(VBN (["+allchars+"]+)\-verða\)","(RDN \\1-verða)", currentText)
     currentText = re.sub("\(VBN (["+allchars+"]+)\-(gera|gjöra)\)","(DON \\1-gera)", currentText)
     currentText = re.sub("\(VBN (["+allchars+"]+)\-hafa\)","(HVN \\1-hafa)", currentText)
@@ -297,6 +297,11 @@ def final_replacements():
     global currentText
     # ONE 	the word ONE (except as focus particle)
     currentText = re.sub("\((NUM|ADJ|PRO)-([NADG] ["+allchars+"]+-einn)\)","(ONE-\\2)",currentText)
+
+    # hinn
+    currentText = re.sub("\(PRO-(N) ([Hh]inn)-hinn\)","(D-\\1 \\2-hinn)",currentText)
+
+
     # NEGATION
     currentText = re.sub("\(ADVP \(ADV ([Ee]kki|[Ee]igi|[Ee]i)-(ekki|eigi|ei)\)\)","(NEG \\1-\\2)",currentText)
     # CONJUNCTIONS

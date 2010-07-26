@@ -117,9 +117,9 @@ def convert_tag( match ):
         theLemma = get_lemma(theWord,theTag)
 
         # check for 2n person clitic
-        if re.match("s[a-z]{2}2[a-zþ]{2}",theTag) and re.match("['"+allchars+"']+(ðu|du|tu)",theWord):
-            verbstem = re.search("(['"+allchars+"']+)(ðu|du|tu)",theWord).group(1)
-            clitic = re.search("(['"+allchars+"']+)(ðu|du|tu)",theWord).group(2)
+        if re.match("s[a-z]{2}2[a-zþ]{2}",theTag) and re.match("['"+allchars+"']+(ðu|du|tu)$",theWord):
+            verbstem = re.search("(['"+allchars+"']+)(ðu|du|tu)$",theWord).group(1)
+            clitic = re.search("(['"+allchars+"']+)(ðu|du|tu)$",theWord).group(2)
             # print(theWord + " "+theTag)
             return "("+treebank_tag(theTag)+" "+verbstem+"$-"+theLemma+") (NP-SBJ (PRO-N $"+clitic+"-þú))"
             

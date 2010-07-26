@@ -117,23 +117,26 @@ def convert_tag( match ):
         theLemma = get_lemma(theWord,theTag)
 
         # check for 2n person clitic
-        if re.match("s[a-z]{2}2[a-zþ]{2}",theTag) and re.match("['"+allchars+"']+(ðu|du|tu)",theWord):
-            verbstem = re.search("(['"+allchars+"']+)(ðu|du|tu)",theWord).group(1)
-            clitic = re.search("(['"+allchars+"']+)(ðu|du|tu)",theWord).group(2)
+        if re.match("s[a-z]{2}2[a-zþ]{2}",theTag) and re.match("['"+allchars+"']+(ðu|du|tu)$",theWord):
+            verbstem = re.search("(['"+allchars+"']+)(ðu|du|tu)$",theWord).group(1)
+            clitic = re.search("(['"+allchars+"']+)(ðu|du|tu)$",theWord).group(2)
             # print(theWord + " "+theTag)
             return "("+treebank_tag(theTag)+" "+verbstem+"$-"+theLemma+") (NP-SBJ (PRO-N $"+clitic+"-þú))"
             
         # check for suffixed determiner
         determiner=None
-        detmatch1="(["+allchars+"]+)(inn|inum|ins|inir|ina|inna|in|inni|innar|inar|ið|inu)"
-        detmatch2="(["+allchars+"]+)(num|ns|nir|n{1,2}a|n{1,2}|nni|n{1,2}ar|ð|nu)"
-        if re.match("n[a-z]{3}g[a-zþ]*",theTag) and (re.match(detmatch1,theWord) or re.match(detmatch2,theWord)):
+        detmatch1="(["+allchars+"]+)(inn|inum|ins|inir|ina|inna|in|inni|innar|inar|ið|inu)$"
+        detmatch2="(["+allchars+"]+)(num|ns|nir|nna|nn|nni|n{1,2}ar|ð|nu)$"
+        detmatch3="(["+allchars+"]+)(n|na)$"
+        if re.match("n[a-zþ]{3}g[a-zþ]*",theTag) and (re.match(detmatch1,theWord) or re.match(detmatch2,theWord)):
             # there is a determiner
             currentMatch = None
             if re.match(detmatch1,theWord):
                 currentMatch = detmatch1
             elif re.match(detmatch2,theWord):
                 currentMatch = detmatch2
+            elif re.match(detmatch3,theWord):
+                currentMatch = detmatch3
 
 #            print(theWord + " "+theTag)
             determiner = re.search(currentMatch,theWord).group(2)
@@ -295,6 +298,7 @@ def replace_special_verb_tags():
 # This renames stuff and builds/removes some pieces of structure
 def final_replacements():
     global currentText
+
     # ONE 	the word ONE (except as focus particle)
     currentText = re.sub("\((NUM|ADJ|PRO)-([NADG] ["+allchars+"]+-einn)\)","(ONE-\\2)",currentText)
 
@@ -384,7 +388,7 @@ def final_replacements():
     rep("\(CP-ADV \(C þótt-þótt\)\)\n\(CP-THT \(C að-að\)\)","(PP (P þótt-þótt) (CP-ADV (C að-að)))")
 
     # ADVP-TMP
-    currentText = re.sub("\(ADVP \(ADV (þá|nú|áður|ætíð|aldrei|aldregi|árla|ávallt|brátt|snemma|loks|loksins|oft|ofvalt|seint|sjaldan|snemma|þegar)-\\1\)\)","(ADVP-TMP (ADV \\1-\\1))",currentText)
+    currentText = re.sub("\(ADVP \(ADV ([Þþ]á|[Nn]ú|[Áá]ður|[Ææ]tíð|[Aa]ldrei|[Aa]ldregi|[Áá]rla|[Áá]vallt|[Bb]rátt|[Ss]nemma|[Ll]oks|[Ll]oksins|[Oo]ft|[Oo]fvalt|[Ss]eint|[Ss]jaldan|[Ss]nemma|[Þþ]egar)-(["+allchars+"]+)\)\)","(ADVP-TMP (ADV \\1-\\2))",currentText)
 
 # Start script
 # Load input file (ipsd)

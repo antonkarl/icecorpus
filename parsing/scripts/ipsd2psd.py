@@ -378,6 +378,8 @@ def final_replacements():
     rep("\(PP \(P þó-þó\) \(CP-THT \(C að-að\)\)\)","(PP (P þó-þó) (CP-ADV (C að-að)))")
     rep("\(CP-ADV \(C þótt-þótt\)\)\n\(CP-THT \(C að-að\)\)","(PP (P þótt-þótt) (CP-ADV (C að-að)))")
 
+    # ADVP-TMP
+    currentText = re.sub("\(ADVP \(ADV (þá|nú|áður|ætíð|aldrei|aldregi|árla|ávallt|brátt|snemma|loks|loksins|oft|ofvalt|seint|sjaldan|snemma|þegar)-\\1\)\)","(ADVP-TMP (ADV \\1-\\1))",currentText)
 
 # Start script
 # Load input file (ipsd)

@@ -69,4 +69,9 @@ echo "Fix EM to be tagged BEPI"
 $CS structure_queries/fix-em.q $FILE
 mv -f $FILE.out $FILE
 
+echo ""
+echo "Delete NP that idomsonly CODE"
+$CS structure_queries/fix-np-over-code.q $FILE
+mv -f $FILE.out $FILE
+
 mv -f $FILE $2

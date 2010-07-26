@@ -125,15 +125,18 @@ def convert_tag( match ):
             
         # check for suffixed determiner
         determiner=None
-        detmatch1="(["+allchars+"]+)(inn|inum|ins|inir|ina|inna|in|inni|innar|inar|ið|inu)"
-        detmatch2="(["+allchars+"]+)(num|ns|nir|n{1,2}a|n{1,2}|nni|n{1,2}ar|ð|nu)"
-        if re.match("n[a-z]{3}g[a-zþ]*",theTag) and (re.match(detmatch1,theWord) or re.match(detmatch2,theWord)):
+        detmatch1="(["+allchars+"]+)(inn|inum|ins|inir|ina|inna|in|inni|innar|inar|ið|inu)$"
+        detmatch2="(["+allchars+"]+)(num|ns|nir|n{1,2}a|nn|nni|n{1,2}ar|ð|nu)$"
+        detmatch3="(["+allchars+"]+)(n)$"
+        if re.match("n[a-zþ]{3}g[a-zþ]*",theTag) and (re.match(detmatch1,theWord) or re.match(detmatch2,theWord)):
             # there is a determiner
             currentMatch = None
             if re.match(detmatch1,theWord):
                 currentMatch = detmatch1
             elif re.match(detmatch2,theWord):
                 currentMatch = detmatch2
+            elif re.match(detmatch3,theWord):
+                currentMatch = detmatch3
 
 #            print(theWord + " "+theTag)
             determiner = re.search(currentMatch,theWord).group(2)
@@ -295,6 +298,7 @@ def replace_special_verb_tags():
 # This renames stuff and builds/removes some pieces of structure
 def final_replacements():
     global currentText
+
     # ONE 	the word ONE (except as focus particle)
     currentText = re.sub("\((NUM|ADJ|PRO)-([NADG] ["+allchars+"]+-einn)\)","(ONE-\\2)",currentText)
 

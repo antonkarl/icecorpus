@@ -71,7 +71,7 @@ mv -f $FILE.out $FILE
 
 echo ""
 echo "Fix EM to be tagged BEPI"
-$CS structure_queries/fix-Em.q $FILE
+$CS structure_queries/Em.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""

@@ -25,11 +25,6 @@ $CS structure_queries/prune-pp.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""
-echo "Prune IP-INF"
-$CS structure_queries/prune-ipinf.q $FILE
-mv -f $FILE.out $FILE
-
-echo ""
 echo "Fix NP-POS"
 $CS structure_queries/move_np_pos.q $FILE
 mv -f $FILE.out $FILE
@@ -74,6 +69,11 @@ echo "Fix EM to be tagged BEPI"
 $CS structure_queries/fix-em.q $FILE
 mv -f $FILE.out $FILE
 
+echo ""
+echo "Delete NP that idomsonly CODE"
+$CS structure_queries/fix-np-over-code.q $FILE
+mv -f $FILE.out $FILE
+
 #These last two queries must run at the end of the sequence, and in the same relative order with extend-ip1.q running first
 
 echo ""
@@ -84,6 +84,5 @@ mv -f $FILE.out $FILE
 echo ""
 echo "Extending span of IP-SUB to finite verb"
 $CS structure_queries/extend-ip.q $FILE
-mv -f $FILE.out $FILE
 
 mv -f $FILE $2

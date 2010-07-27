@@ -1,0 +1,4 @@
+#!/bin/sh
+# usage: ./tsearch "some query"
+# example: ./tsearch "þegar að"
+python3 ./scripts/tsearch.py "$1" "../finished/*.psd"

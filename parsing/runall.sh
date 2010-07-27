@@ -75,6 +75,11 @@ $CS structure_queries/Em.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""
+echo "Fix EIGI to be tagged NEG"
+$CS structure_queries/eigi.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
 echo "Delete NP that idomsonly CODE"
 $CS structure_queries/fix-np-over-code.q $FILE
 mv -f $FILE.out $FILE

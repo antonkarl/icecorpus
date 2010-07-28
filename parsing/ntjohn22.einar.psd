@@ -809,7 +809,7 @@
 	  (NP-SBJ (PRO-N Hann-hann)
 		  (NP-PRN (PRO-N sjálfur-sjálfur)))
 	  (VBDI bar-bar)
-	  (NP-SBJ (NP-POS (PRO-A sinn-sinn))
+	  (NP-OB1 (NP-POS (PRO-A sinn-sinn))
 		  (N-A kross-kross))))
 
 ( (IP-MAT (CONJ og-og)
@@ -842,7 +842,7 @@
 						   (PP (P með-með)
 						       (NP (PRO-D honum-hann)))
 						   (, ,-,)))
-				  (IP-ABS-XXX (IP-ABS (NP-SBJ (PRO-A sinn-sinn)
+				  (IP-ABS-XXX (IP-ABS (NP-SBJ (NP-POS-XXX (PRO-A sinn-sinn))
 							      (PP (P til-til)
 								  (NP (Q-G hvorrar-hvor) (N-G handar-hönd)))))
 					      (, ,-,)

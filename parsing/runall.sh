@@ -60,8 +60,23 @@ $CS structure_queries/fix-adv-hvar.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""
-echo "Fix ADVP hvenaer"
-$CS structure_queries/fix-adv-hvenaer.q $FILE
+echo "Fix NP hvad direct questions"
+$CS structure_queries/fix-np-hva-direct.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Fix ADVP hvar direct questions"
+$CS structure_queries/fix-adv-hvar-direct.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Add hvar trace"
+$CS structure_queries/add-hvar-trace.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Add hvenaer trace"
+$CS structure_queries/add-hvenaer-trace.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""

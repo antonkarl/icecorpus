@@ -56,7 +56,12 @@ mv -f $FILE.out $FILE
 
 echo ""
 echo "Fix ADVP hvar"
-$CS structure_queries/fix-adv-hva.q $FILE
+$CS structure_queries/fix-adv-hvar.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Fix ADVP hvenaer"
+$CS structure_queries/fix-adv-hvenaer.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""

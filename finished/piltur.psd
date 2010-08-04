@@ -10588,11 +10588,10 @@
 	  (. ;-;))
   (ID PILTUR,.739))
 
-( (IP-MAT (NP-SBJ *exp*)
-	  (VBDI fylgdi-fylgja)
-	  (ADVP-TMP (ADV þar-þar))
-	  (PP (P með-með)
-	      (NP (N-D rænuleysi-rænuleysi) (CONJ og-og) (N-D magnleysi-magnleysi)))
+( (IP-MAT (VBDI fylgdi-fylgja)
+	  (PP (ADVP (ADV þar-þar))
+	      (P með-með))
+	  (NP-SBJ (N-N rænuleysi-rænuleysi) (CONJ og-og) (N-N magnleysi-magnleysi))
 	  (. .-.))
   (ID PILTUR,.740))
 

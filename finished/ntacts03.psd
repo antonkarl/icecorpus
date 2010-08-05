@@ -1,4 +1,3 @@
-
 ( (IP-MAT (CODE VS:IV_15P)
 	  (ADVP-TMP (ADV Þá-þá))
 	  (VBDI skipuðu-skipa)
@@ -1018,8 +1017,8 @@
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
 	  (VBDI fundu-finna)
-	  (NP-OB1 (PRO-A hana-hún))
-	  (ADJP-SPR (ADJ-A dauða-dauður))
+	  (IP-SMC (NP-SBJ (PRO-A hana-hún))
+		  (ADJP (ADJ-A dauða-dauður)))
 	  (. ,-,)))
 
 ( (IP-MAT (NP-SBJ *con*)

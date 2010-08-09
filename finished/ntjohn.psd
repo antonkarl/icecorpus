@@ -314,7 +314,7 @@
 					  (C 0)
 					  (IP-SUB-SPE (PP *T*-1)
 						      (NP-SBJ (PRO-N eg-ég))
-						      (VBPI sagða-segja)
+						      (VBDI sagða-segja)
 						      (, :-:)
 						      (IP-MAT-SPE (PP (P Eftir-eftir)
 								      (NP (PRO-A mig-ég)))
@@ -724,7 +724,7 @@
 				  (C 0)
 				  (IP-SUB-SPE (PP *T*-1)
 					      (NP-SBJ (PRO-N eg-ég))
-					      (VBPI sagða-segja)
+					      (VBDI sagða-segja)
 					      (, :-:)
 					      (IP-MAT-SPE (PP (P Eftir-eftir)
 							      (NP (PRO-A mig-ég)))
@@ -1004,7 +1004,6 @@
 	  (ADVP-TMP (ADV nær-nærri)
 		    (NP (ADJ-D tíundu-tíundi) (N-D stund-stund)))
 	  (. .-.)))
-
 
 ( (IP-MAT (CODE VS:I_40J)
 	  (NP-SBJ (ONE-N Einn-einn)
@@ -1317,7 +1316,7 @@
 			  (NP (PRO-D því-það)
 			      (CP-THT-PRN (C að-að)
 					  (IP-MAT-SPE (NP-SBJ (PRO-N eg-ég))
-						      (VBPI sagða-segja)
+						      (VBDI sagða-segja)
 						      (NP-OB2 (PRO-D þér-þú))
 						      (CP-THT-SPE (C að-að)
 								  (IP-MAT-SPE (NP-SBJ (PRO-N eg-ég))
@@ -2125,7 +2124,6 @@
 				   (ADVP-TMP (ADV svo-svo))))
 	      (. ?-?)))
 
-
 ( (IP-MAT (CODE VS:III_6J)
 	  (NP-LFD (CP-FRL (WNP-1 (WPRO-N Hvað-hver))
 			  (C 0)
@@ -2732,7 +2730,7 @@
 
 ( (IP-MAT (IP-MAT-1 (NP-OB1=2 (PRO-A það-það))
 		    (NP-SBJ (PRO-N eg-ég))
-		    (VBPI sagða-sagða)
+		    (VBDI sagða-segja)
 		    (CP-THT-2 (C að-að)
 			      (IP-SUB (NP-SBJ (PRO-N eg-ég))
 				      (BEDS væri-vera)
@@ -3420,7 +3418,7 @@
 	      (NP (PRO-G hennar-hún)))
 	  (, :-:)
 	  (IP-MAT-SPE (NP-SBJ (PRO-N Þú-þú))
-		      (ADJP (ADJ-N sagðir-sagður))
+		      (VBDI sagðir-segja)
 		      (ADVP (ADV vel-vel))
 		      (, :-:)
 		      (IP-MAT-SPE (NEG Eigi-ekki)
@@ -3435,7 +3433,7 @@
 					      (IP-SUB-SPE (NP-OB1 (NUM-A fimm-fimm) (NS-A menn-maður))
 							  (HVPI hefir-hafa)
 							  (NP-SBJ (PRO-N þú-þú))
-							  (BEN haft-hafa))))))
+							  (HVN haft-hafa))))))
 	  (. ,-,)))
 
 ( (IP-MAT-SPE-XXX (CONJ og-og)
@@ -3453,11 +3451,10 @@
 			  (N-N maður-maður))
 		  (. .-.)))
 
-( (IP-MAT-SPE (NP-OB1-1 (D-N Þetta-þessi))
-	      (VAN sagðir-saga)
+( (IP-MAT-SPE (NP-OB1 (D-A Þetta-þessi))
+	      (VBDI sagðir-segja)
 	      (NP-SBJ (PRO-N þú-þú))
-	      (IP-SMC-SPE (NP-SBJ *-1)
-			  (ADJP (ADJ-N satt-sannur)))
+	      (ADJP-SPR (ADJ-A satt-sannur))
 	      (. .-.)))
 
 ( (IP-MAT (CODE VS:IV_19J)
@@ -6703,7 +6700,7 @@
 
 ( (IP-MAT-SPE-XXX-NEXTSENTENCE (CODE VS:VI_36J)
 			       (NP-SBJ (PRO-N Eg-ég))
-			       (VBPI sagða-segja)
+			       (VBDI sagða-segja)
 			       (NP-OB2 (PRO-D yður-þú))
 			       (NP-OB1 (PRO-A það-það))))
 
@@ -6778,7 +6775,6 @@
 																  (NP-OB1 (PRO-A mig-ég))
 																  (VBDI sendi-senda))))))))))))
 	      (. .-.)))
-
 
 ( (IP-MAT-SPE (CODE VS:VI_39J)
 	      (NP-SBJ (D-N Þetta-þessi))
@@ -7513,7 +7509,7 @@
 	  (QTP (PP (P Fyrir-fyrir)
 		   (NP (PRO-D því-það)
 		       (CP-THT-PRN-SPE (C 0)
-				       (IP-SUB-SPE (VBPI sagða-sagða)
+				       (IP-SUB-SPE (VBDI sagða-segja)
 						   (NP-SBJ (PRO-N eg-ég))
 						   (NP-OB2 (PRO-D yður-þú))
 						   (CP-THT-SPE (C það-að)
@@ -7754,7 +7750,6 @@
 					  (PP (P á-á)
 					      (NP (PRO-A hann-hann)))))))
 	      (. .-.)))
-
 
 ( (IP-MAT (CODE VS:VII_6J)
 	  (NP-SBJ (NPR-N Jesús-jesús))
@@ -8930,7 +8925,6 @@
 													 (NP-SBJ (PRO-N hann-hann))
 													 (DOPI gjörir-gjöra))))))))))
 	  (. ?-?)))
-
 
 ( (IP-MAT (CODE VS:VII_52J)
 	  (NP-SBJ (PRO-N Þeir-þeir))
@@ -11462,7 +11456,6 @@
 	      (NEG ekki-ekki)
 	      (. .-.)))
 
-
 ( (IP-MAT-SPE (NP-OB1 (ONE-A Eitt-einn)
 		      (CP-THT-SPE-PRN *ICH*-1))
 	      (VBPI veit-vita)
@@ -11507,7 +11500,7 @@
 	  (NP-OB2 (PRO-D þeim-það))
 	  (, :-:)
 	  (IP-MAT-SPE (NP-SBJ (PRO-N Eg-eg))
-		      (VBPI sagða-segja)
+		      (VBDI sagða-segja)
 		      (NP-OB2 (PRO-D yður-þú))
 		      (NP-OB1 (PRO-A það-það)))
 	  (. .-.)))
@@ -12527,7 +12520,7 @@
 	  (NP-OB2 (PRO-D þeim-það))
 	  (, :-:)
 	  (IP-MAT-SPE (NP-SBJ (PRO-N Eg-eg))
-		      (VBPI sagða-segja)
+		      (VBDI sagða-segja)
 		      (NP-OB2 (PRO-D yður-þú))
 		      (NP-OB1 (PRO-A það-það)))
 	  (. ,-,)))
@@ -12579,7 +12572,7 @@
 				(C sem-sem)
 				(IP-SUB-SPE (ADVP *T*-1)
 					    (NP-SBJ (PRO-N eg-ég))
-					    (VBPI sagða-segja)
+					    (VBDI sagða-segja)
 					    (NP-OB2 (PRO-D yður-þú))
 					    (CP-THT-SPE (C að-að)
 							(IP-SUB-SPE (NP-SBJ (NP-POS (PRO-N mínir-minn))
@@ -12751,7 +12744,7 @@
 				      (NP (PRO-D yðru-yðar) (N-D lögmáli-lögmál)))
 				  (, :-:)
 				  (IP-MAT-SPE (NP-SBJ (PRO-N Eg-ég))
-					      (VBPI sagða-segja)
+					      (VBDI sagða-segja)
 					      (NP-OB1 (PRO-A það-það)
 						      (CP-THT-SPE-PRN-XXX (C 0)
 									  (IP-SUB-SPE (NP-SBJ (PRO-N þér-þú))
@@ -12814,7 +12807,7 @@
 			      (NP (PRO-D því-það)
 				  (CP-THT-SPE-PRN (C 0)
 						  (IP-SUB-SPE (NP-SBJ (PRO-N eg-ég))
-							      (VBPI sagða-segja)
+							      (VBDI sagða-segja)
 							      (, :-:)
 							      (IP-MAT-SPE (NP-SBJ (PRO-N Eg-ég))
 									  (BEPI em-vera)
@@ -12960,7 +12953,6 @@
 	  (PP (P á-á)
 	      (NP (PRO-A hann-hann)))
 	  (. .-.)))
-
 
 ( (CODE (CODE <heading>)
 	(NP (ADJ-N Ellefti-elleftur) (N-N kapítuli-kapítuli))
@@ -13823,7 +13815,6 @@
 		      (CONJ og-og)
 		      (VBI skoða-skoða))
 	  (. .-.)))
-
 
 ( (IP-MAT (CODE VS:XI_35J)
 	  (CONJ En-en)
@@ -14797,7 +14788,6 @@
 	  (, :-:)
 	  (QTP (NP-VOC (NPR-N Hósíanna-hósíanna)))
 	  (. .-.)))
-
 
 ( (IP-MAT-SPE (ADJP (ADJ-N Blessaður-blessaður))
 	      (BEPS sé-vera)
@@ -15778,7 +15768,6 @@
 	      (PP (P á-á)
 		  (NP (ADJS-D efsta-efri) (N-D degi-dagur)))
 	      (. .-.)))
-
 
 ( (IP-MAT-SPE (CODE VS:XII_49J)
 	      (PP (P 0)
@@ -16941,7 +16930,6 @@
 		  (NP (PRO-A þig-þú)))
 	      (. .-.)))
 
-
 ( (IP-MAT (CODE VS:XIII_38J)
 	  (NP-SBJ (NPR-N Jesús-jesús))
 	  (VBDI svaraði-svara)
@@ -17819,7 +17807,7 @@
 	      (VBDI heyrðuð-heyra)
 	      (CP-THT-SPE-XXX (C það-það)
 			      (IP-SUB-SPE (NP-SBJ (PRO-N eg-ég))
-					  (VBPI sagða-segja)
+					  (VBDI sagða-segja)
 					  (NP-OB2 (PRO-D yður-þú))
 					  (, :-:)
 					  (IP-MAT-SPE (NP-SBJ (PRO-N Eg-ég))
@@ -17942,7 +17930,6 @@
 	      (VBI göngum-ganga)
 	      (ADVP-DIR (ADV héðan-héðan))
 	      (. .-.)))
-
 
 ( (CODE (CODE <heading>)
 	(NP (ADJ-N Fimmtándi-fimmtándur) (N-N kapítuli-kapítuli))
@@ -18508,7 +18495,7 @@
 				  (C er-er)
 				  (IP-SUB-SPE (NP-OB1 *T*-1)
 					      (NP-SBJ (PRO-N eg-ég))
-					      (VB sagða-segja)))
+					      (VBDI sagða-segja)))
 		      (, :-:)
 		      (IP-MAT-SPE-PRN (NP-SBJ (N-N Þjón$-þjónur) (D-N $inn-hinn))
 				      (BEPI er-vera)
@@ -18857,7 +18844,7 @@
 
 ( (IP-MAT-SPE (CONJ En-en)
 	      (NP-OB1 (D-A þetta-þessi))
-	      (VBDI sagða-sagða)
+	      (VBDI sagða-segja)
 	      (NP-SBJ (PRO-N eg-ég))
 	      (NP-OB2 (PRO-D yður-þú))
 	      (NEG eigi-ekki)
@@ -19036,7 +19023,6 @@
 								       (VAN dæmdur-dæma)))))))
 	      (. .-.)))
 
-
 ( (IP-MAT-SPE (CODE VS:XVI_12J)
 	      (ADVP-TMP (ADV Enn-enn))
 	      (HVPI hefi-hafa)
@@ -19143,7 +19129,7 @@
 
 ( (IP-MAT-SPE (PP (P Fyrir-fyrir)
 		  (NP (PRO-D því-það)))
-	      (VBPI sagða-segja)
+	      (VBDI sagða-segja)
 	      (NP-SBJ (PRO-N eg-ég))
 	      (CP-THT-SPE (C að-að)
 			  (IP-SUB-SPE (IP-SUB-SPE-1 (PP (P af-af)
@@ -20245,7 +20231,6 @@
 		  (NP (NP-POS (PRO-D þínum-þinn))
 		      (N-A sannleik-sannleikur)))
 	      (. .-.)))
-
 
 ( (IP-MAT-SPE (NP-SBJ (NP-POS (PRO-N Þín-þinn))
 		      (NS-N orð-orð))
@@ -21432,7 +21417,6 @@
 		      (NP-OB1 (PRO-A hann-hann)))
 	  (. .-.)))
 
-
 ( (IP-MAT (CODE VS:XVIII_31J)
 	  (ADVP-TMP (ADV Þá-þá))
 	  (VBDI sagði-segja)
@@ -22285,7 +22269,6 @@
 							     (PP (P í-í)
 								 (NP (N-A mið$-mið) (D-A $ið-hinn))))))))))
 	  (. .-.)))
-
 
 ( (IP-MAT (CODE VS:XIX_19J)
 	  (NP-SBJ (NPR-N Pílatus-pílatus))
@@ -24467,7 +24450,6 @@
 		      (NP-OB1 (NS-A lömb-lömb)
 			      (NP-POS (PRO-A mín-minn))))
 	  (. .-.)))
-
 
 ( (IP-MAT (CODE VS:XXI_16J)
 	  (ADVP-TMP (ADV Enn-enn))

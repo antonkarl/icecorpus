@@ -14,6 +14,11 @@ $CS sanity_checks/missing-subject-2.q $tempfile
 mv -f $tempfile.out $tempfile
 
 echo ""
+echo "Missing Finite Verb"
+$CS sanity_checks/bad-finite-ip.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
 echo "Superfluous ADJP"
 $CS sanity_checks/superfluous-adjp.q $tempfile
 mv -f $tempfile.out $tempfile

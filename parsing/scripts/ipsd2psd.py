@@ -215,6 +215,7 @@ def parenthesize_punctuation():
     rep("\! \!","(. !-!)")
     rep("\? \?","(. ?-?)")
     rep("\- \-","(, -)")
+    rep("\" \"","(\" \")")
 
 def convert_phrase_labels():
     # Make Phrase labels uppercase

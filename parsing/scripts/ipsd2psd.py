@@ -391,6 +391,9 @@ def final_replacements():
     # ADVP-TMP
     currentText = re.sub("\(ADVP \(ADV ([Þþ]á|[Nn]ú|[Áá]ður|[Ææ]tíð|[Aa]ldrei|[Aa]ldregi|[Áá]rla|[Áá]vallt|[Bb]rátt|[Ss]nemma|[Ll]oks|[Ll]oksins|[Oo]ft|[Oo]fvalt|[Ss]eint|[Ss]jaldan|[Ss]nemma|[Þþ]egar)-(["+allchars+"]+)\)\)","(ADVP-TMP (ADV \\1-\\2))",currentText)
 
+    # ADVP-LOC
+    currentText = re.sub("\(ADVP \(ADV ([Þþ]ar|[Hh]ér|[Þþ]arna|[Hh]érna|[Hh]eima|[Uu]ppi|[Nn]iðri|[Vv]íða|[Óó]víða|[Aa]llvíða|[Úú]ti|[Ii]nni)-(["+allchars+"]+)\)\)","(ADVP-LOC (ADV \\1-\\2))",currentText)
+
 # Start script
 # Load input file (ipsd)
 f = open(sys.argv[1]+".ipsdx", 'r')

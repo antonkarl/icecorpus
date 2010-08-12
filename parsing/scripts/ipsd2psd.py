@@ -397,7 +397,13 @@ def final_replacements():
 
     # fix þótt að
     rep("\(PP \(P þó-þó\) \(CP-THT \(C að-að\)\)\)","(PP (P þó-þó) (CP-ADV (C að-að)))")
+    rep("\(PP \(P Þó-þó\) \(CP-THT \(C að-að\)\)\)","(PP (P Þó-þó) (CP-ADV (C að-að)))")
     rep("\(CP-ADV \(C þótt-þótt\)\)\n\(CP-THT \(C að-að\)\)","(PP (P þótt-þótt) (CP-ADV (C að-að)))")
+    rep("\(CP-ADV \(C Þótt-þótt\)\)\n\(CP-THT \(C að-að\)\)","(PP (P Þótt-þótt) (CP-ADV (C að-að)))")
+
+    # ef að
+    rep("\(CP-ADV \(C ef-ef\)\)\n\(CP-THT \(C að-að\)\)","(PP (P ef-ef) (CP-ADV (C að-að)))")
+    rep("\(CP-ADV \(C Ef-ef\)\)\n\(CP-THT \(C að-að\)\)","(PP (P Ef-ef) (CP-ADV (C að-að)))")
 
     # ADVP-TMP
     currentText = re.sub("\(ADVP \(ADV ([Þþ]á|[Nn]ú|[Áá]ður|[Ææ]tíð|[Aa]ldrei|[Aa]ldregi|[Áá]rla|[Áá]vallt|[Bb]rátt|[Ss]nemma|[Ll]oks|[Ll]oksins|[Oo]ft|[Oo]fvalt|[Ss]eint|[Ss]jaldan|[Ss]nemma|[Þþ]egar)-(["+allchars+"]+)\)\)","(ADVP-TMP (ADV \\1-\\2))",currentText)

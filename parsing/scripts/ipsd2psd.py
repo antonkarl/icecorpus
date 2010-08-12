@@ -315,7 +315,13 @@ def final_replacements():
     rep("\(CP \(C né-né\)\)","(CONJ né-né)")
     # Quantifiers
     rep("\(PRO-([A-Z]) (["+allchars+"]+)-(allur|báðir|nokkur|enginn|sumur|fáeinir|fár|einhver)\)","(Q-\\1 \\2-\\3)")
-    
+
+    # Make sjálfur -PRN
+    # (NP-SBJ (PRO-N sjálfur-sjálfur))
+    rep("\(NP-SBJ \(PRO-([A-Z]) (["+allchars+"]+)-(sjálfur)\)\)","(NP-PRN (PRO-\\1 \\2-\\3))")
+    rep("\(PRO-([A-Z]) (["+allchars+"]+)-(sjálfur)\)","(NP-PRN (PRO-\\1 \\2-\\3))")
+    rep("\(NP-PRN \(NP-PRN \(PRO-([A-Z]) (["+allchars+"]+)-(sjálfur)\)\)\)","(NP-PRN (PRO-\\1 \\2-\\3))")
+
     # Focus particle
     rep("\(ADVP \(ADV aðeins-aðeins\)\)","(FP aðeins-aðeins)")
     rep("\(ADV aðeins-aðeins\)","(FP aðeins-aðeins)")

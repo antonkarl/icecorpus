@@ -403,6 +403,9 @@ def final_replacements():
     # Shouldn't really be an ADV at this point, but just in case
     rep("\(ADV sem-sem\)","(C sem-sem)")
 
+    # For some reason there is still a problem with SVO AÐ here, so fix it
+    rep("\(PP \(P svo-svo\) \(CP-THT \(C að-að\)\)\)","(PP (P svo-svo) (CP-ADV (C að-að)))")
+
 # Start script
 # Load input file (ipsd)
 f = open(sys.argv[1]+".ipsdx", 'r')

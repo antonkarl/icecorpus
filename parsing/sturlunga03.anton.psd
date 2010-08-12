@@ -267,11 +267,12 @@
 
 ( (IP-MAT-SPE (CONJ og-og)
 	      (MDPI munu-munu)
-	      (NP-SBJ (PRO-N þér-þú))
+	      (NP-SBJ (PRO-D þér-þú))
 	      (VB þykja-þykja)
-	      (PP-XXX (NP (Q-G engis-engi))
-		      (P til-til))
-	      (ADJP-SPR (ADJ-N miklir-mikill))
+	      (IP-SMC-SPE (NP-SBJ *pro*)
+			  (PP (NP (Q-G engis-engi))
+			      (P til-til))
+			  (ADJP (Q-N miklir-mikill)))
 	      (. .-.)
 	      (" ")))
 

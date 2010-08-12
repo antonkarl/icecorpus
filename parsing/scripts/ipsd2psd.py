@@ -380,6 +380,9 @@ def final_replacements():
     rep("\(CP \(ADV svo-svo\) \(C að-að\)\)","(PP (P svo-svo) (CP-ADV (C að-að)))")
     rep("\(CP \(ADV þar-þar\) \(C sem-sem\)\)","(CP-REL (ADV þar-þar) (C sem-sem))")
 
+    # svo sem 
+    rep("\(ADV svo-svo\) \(ADV sem-sem\)","(ADV svo-svo) (C sem-sem)")
+
     # more
     rep("\(SCP ","(CP-ADV ")
     rep("\(CP-ADV \(C að-að\)\)","(CP-THT (C að-að))")
@@ -396,6 +399,9 @@ def final_replacements():
 
     # ADVP-DIR
     currentText = re.sub("\(ADVP \(ADV ([Þþ]angað|[Hh]ingað|[Hh]eim|[Áá]leiðis|[Uu]pp|[Nn]iður|[Bb]urt|[Oo]fan|[Þþ]aðan)-(["+allchars+"]+)\)\)","(ADVP-DIR (ADV \\1-\\2))",currentText)
+
+    # Shouldn't really be an ADV at this point, but just in case
+    rep("\(ADV sem-sem\)","(C sem-sem)")
 
 # Start script
 # Load input file (ipsd)

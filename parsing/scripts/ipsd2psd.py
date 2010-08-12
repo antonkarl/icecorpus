@@ -303,6 +303,9 @@ def final_replacements():
     # ONE 	the word ONE (except as focus particle)
     currentText = re.sub("\((NUM|ADJ|PRO)-([NADG] ["+allchars+"]+-einn)\)","(ONE-\\2)",currentText)
 
+    # samur
+    currentText = re.sub("\((PRO)-([NADG] ["+allchars+"]+-samur)\)","(ADJ-\\2)",currentText)
+
     # hinn
     currentText = re.sub("\(PRO-(N) ([Hh]inn)-hinn\)","(D-\\1 \\2-hinn)",currentText)
 

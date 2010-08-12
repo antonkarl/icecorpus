@@ -317,7 +317,7 @@ def final_replacements():
     rep("\(SCP \(C bæði\-bæði\)\)","(CONJ bæði-bæði)")
     rep("\(CP \(C né-né\)\)","(CONJ né-né)")
     # Quantifiers
-    rep("\(PRO-([A-Z]) (["+allchars+"]+)-(allur|báðir|nokkur|enginn|sumur|fáeinir|fár|einhver)\)","(Q-\\1 \\2-\\3)")
+    rep("\(PRO-([A-Z]) (["+allchars+"]+)-(allur|báðir|nokkur|enginn|sumur|fáeinir|fár|einhver|neinn)\)","(Q-\\1 \\2-\\3)")
 
     # Make sjálfur -PRN
     # (NP-SBJ (PRO-N sjálfur-sjálfur))

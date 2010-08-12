@@ -343,6 +343,8 @@ def final_replacements():
     # negation, ekki and eigi
     rep("\(ADV ekki-ekki\)","(NEG ekki-ekki)")
     rep("\(NEG eigi-eigi\)","(NEG eigi-ekki)")
+    rep("\(ADV eigi-eigi\)","(NEG eigi-ekki)")
+    rep("\(ADV Eigi-eigi\)","(NEG Eigi-ekki)")
     rep("\(ADV Ekki-ekki\)","(NEG Ekki-ekki)")
     rep("\(NEG Eigi-eigi\)","(NEG Eigi-ekki)")
 

@@ -336,6 +336,8 @@ def final_replacements():
     # negation, ekki and eigi
     rep("\(ADV ekki-ekki\)","(NEG ekki-ekki)")
     rep("\(NEG eigi-eigi\)","(NEG eigi-ekki)")
+    rep("\(ADV Ekki-ekki\)","(NEG Ekki-ekki)")
+    rep("\(NEG Eigi-eigi\)","(NEG Eigi-ekki)")
 
     # relative clauses
     rep("\(SCP \(CT ([Ss])em-sem\)\)","(CP-REL (WNP 0) (C \\1em-sem))")

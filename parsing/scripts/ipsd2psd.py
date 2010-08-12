@@ -319,6 +319,10 @@ def final_replacements():
     # Quantifiers
     rep("\(PRO-([A-Z]) (["+allchars+"]+)-(allur|báðir|nokkur|enginn|sumur|fáeinir|fár|einhver|neinn)\)","(Q-\\1 \\2-\\3)")
 
+    # WQ
+    rep("\(PRO-([A-Z]) (["+allchars+"]+)-(hvor)\)","(WQ-\\1 \\2-\\3)")
+
+
     # Make sjálfur -PRN
     # (NP-SBJ (PRO-N sjálfur-sjálfur))
     rep("\(NP-SBJ \(PRO-([A-Z]) (["+allchars+"]+)-(sjálfur)\)\)","(NP-PRN (PRO-\\1 \\2-\\3))")

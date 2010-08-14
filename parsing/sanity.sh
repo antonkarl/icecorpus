@@ -84,6 +84,11 @@ $CS sanity_checks/bad-cp-rel.q $tempfile
 mv -f $tempfile.out $tempfile
 
 echo ""
+echo "Bad Passive Participle"
+$CS sanity_checks/bad-passive.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
 echo "SMC with TO"
 $CS sanity_checks/smc-with-to.q $tempfile
 mv -f $tempfile.out $tempfile

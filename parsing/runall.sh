@@ -114,5 +114,6 @@ mv -f $FILE.out $FILE
 echo ""
 echo "Extending span of IP-SUB to finite verb"
 $CS structure_queries/extend-ip.q $FILE
+mv -f $FILE.out $FILE
 
 mv -f $FILE $2

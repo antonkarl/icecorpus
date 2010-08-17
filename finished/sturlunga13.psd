@@ -91,7 +91,7 @@
 
 ( (IP-MAT (CONJ og-og)
 	  (VBDI lagði-leggja)
-	  (NP-OB1 (NPR-N Guðmundur-guðmundur) (NPR-A Gilsson-gilsson))
+	  (NP-SBJ (NPR-N Guðmundur-guðmundur) (NPR-N Gilsson-gilsson))
 	  (PP (P til-til)
 	      (NP (NPR-G Halls-hallur)
 		  (PP (P úr-úr)
@@ -111,7 +111,7 @@
 	      (NP (N-D gerð$-gerði) (D-D $inu-hinn)))
 	  (PP (P á-á)
 	      (NP (N-A mót-mót)
-		  (NP (NPRS-D Skagfirðingum-skagfirðingur))))
+		  (NP-COM (NPRS-D Skagfirðingum-skagfirðingur))))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (PRO-N Hann-hann))
@@ -328,7 +328,7 @@
 	  (" ")))
 
 ( (QTP (" ")
-       (NP-SBJ (NPR-N Sighvatur-sighvatur))
+       (NP (NPR-N Sighvatur-sighvatur))
        (, ,-,)
        (" ")
        (IP-MAT-PRN (VBDI sögðu-segja)
@@ -511,7 +511,6 @@
 				  (VBDI hét-heita)))))))
 
 ( (IP-MAT (CONJ og-og)
-	  (NP-SBJ *conj*)
 	  (VBDI gengu-ganga)
 	  (NEG ekki-ekki)
 	  (NP-SBJ (NS-N spjótalög-spjótalag))
@@ -763,8 +762,7 @@
 
 ( (IP-MAT (NP-SBJ (NPR-N Húnröður-húnröður)
 		  (NP-PRN (N-N son-sonur)
-			  (NP-POS (NPR-N Magnúss-magnúss)
-				  (NP-POS (NPR-G Húnröðarsonar-húnröðarson)))))
+			  (NP-POS (NPR-G Magnúss-magnúss) (NPR-G Húnröðarsonar-húnröðarson))))
 	  (VBDI lagði-leggja)
 	  (NP-OB1 (N-D spjóti-spjót))
 	  (PP (P til-til)

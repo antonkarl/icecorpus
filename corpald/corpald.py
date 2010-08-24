@@ -2,6 +2,7 @@
 
 import os
 import sys
+import re
 import shutil
 import subprocess
 import pygtk
@@ -11,18 +12,36 @@ import gtk.glade
 import pango
 import ConfigParser
 from corpussearch import CSQuery
-# from gtkcodebuffer import CodeBuffer, SyntaxLoader, add_syntax_path       
-
+ 
 class Corpald:
     
     config = None
     is_saved = False
     query_file = "unsaved"
+    definitions_file = None
     thequery = None
-    
-
+    combo = None
+    filter_size=0    
     querybuffer = None  # ! CodeBuffer(None)
-    resultbuffer = None  # ! CodeBuffer(None)
+    resultbuffer = None  # ! CodeBuffer(None)    
+    
+    # syntax highlighting styles
+    operator_match = r"\b(AND|OR|NOT)\b"
+    operator_style = None        
+    keyword_match = r"\b(CCommands|cCommands|ccommands|Column|column|Col|col|Dominates|dominates|Doms|doms\
+    DomsWords|domsWords|domswords|Exists|exists|HasLabel|hasLabel|haslabel|HasSister|hasSister|hassister\
+    iDominates|idominates|iDoms|idoms|iDomsFirst|idomsfirst|iDomsLast|idomslast|iDomsMod|idomsmod\
+    iDomsNumber|idomsnumber|iDomsNum|idomsnum|iDomsOnly|idomsonly|iDomsTotal|idomstotal\
+    iDomsViaTrace|idomsviatrace|InID|inID|iPrecedes|iprecedes|iPres|ipres|IsRoot|isRoot|isroot\
+    Precedes|precedes|Pres|pres|SameIndex|sameIndex|sameindex)\b"
+    keyword_style = None
+    definition_match = None
+    definition_style = None
+    
+    comment_match = r"/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/"
+    comment_style = None
+    text_match = r"/\~\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+\~/"
+    text_style = None
     
     # ###############################
     # Getters and setters
@@ -60,7 +79,7 @@ class Corpald:
         
     def set_saved(self, is_saved):
         self.is_saved = is_saved
-        self.set_query_file(self.query_file)        
+        self.set_query_file(self.query_file)            
         
     def set_query_file(self, query_file):
         self.query_file = query_file
@@ -77,6 +96,10 @@ class Corpald:
     def clear_result(self):
         self.builder.get_object("label_resultsframe").set_markup("<b>Results</b>")
         self.builder.get_object("resultbuffer").set_text("")
+        
+    def get_filter(self):
+        filter_id=combo.get_active()
+        return self.config.get("filters","path"+str(filter_id))
 
     # ###############################
     # IO stuff
@@ -233,15 +256,110 @@ class Corpald:
             self.thequery.save(self.query_file)
             self.set_saved(True)
             self.builder.get_object("button_save_query").set_sensitive(False)  
-            self.builder.get_object("menuitem_save_query").set_sensitive(False)        
-    
+            self.builder.get_object("menuitem_save_query").set_sensitive(False)  
+            
+            #XXX
+            # self.do_highlight()      
+        
+
+    def do_highlight_result(self):                    
+        querybuffer = self.builder.get_object("textview_results").get_buffer()   
+        thequery=querybuffer.get_text(querybuffer.get_start_iter(), querybuffer.get_end_iter(), include_hidden_chars=True)                
+
+        startall = querybuffer.get_iter_at_offset(0)
+        endall = querybuffer.get_iter_at_offset(len(thequery))
+        querybuffer.remove_all_tags(startall,endall)        
+                            
+        for m in re.finditer(self.comment_match, thequery.decode(),re.U):
+            startoffset = m.start()
+            endoffset = m.end()                    
+            start = querybuffer.get_iter_at_offset(startoffset)
+            end = querybuffer.get_iter_at_offset(endoffset)                            
+            querybuffer.apply_tag(self.comment_style, start, end)
+            
+        for m in re.finditer(self.text_match, thequery.decode(),re.U):
+            startoffset = m.start()
+            endoffset = m.end()                    
+            start = querybuffer.get_iter_at_offset(startoffset)
+            end = querybuffer.get_iter_at_offset(endoffset)                            
+            querybuffer.apply_tag(self.text_style, start, end)            
+                    
+        
+    def do_highlight(self):                    
+        querybuffer = self.builder.get_object("textview_query").get_buffer()   
+        thequery=querybuffer.get_text(querybuffer.get_start_iter(), querybuffer.get_end_iter(), include_hidden_chars=True)                
+
+        startall = querybuffer.get_iter_at_offset(0)
+        endall = querybuffer.get_iter_at_offset(len(thequery))
+        querybuffer.remove_all_tags(startall,endall)        
+                            
+        for m in re.finditer(self.operator_match, thequery.decode(),re.U):
+            startoffset = m.start()
+            endoffset = m.end()                    
+            start = querybuffer.get_iter_at_offset(startoffset)
+            end = querybuffer.get_iter_at_offset(endoffset)                            
+            querybuffer.apply_tag(self.operator_style, start, end)
+            
+        for m in re.finditer(self.keyword_match, thequery.decode(),re.U):
+            startoffset = m.start()
+            endoffset = m.end()                    
+            start = querybuffer.get_iter_at_offset(startoffset)
+            end = querybuffer.get_iter_at_offset(endoffset)                            
+            querybuffer.apply_tag(self.keyword_style, start, end)            
+            
+        if self.definition_match:
+            for m in re.finditer(self.definition_match, thequery.decode(),re.U):
+                startoffset = m.start()
+                endoffset = m.end()                    
+                start = querybuffer.get_iter_at_offset(startoffset)
+                end = querybuffer.get_iter_at_offset(endoffset)                            
+                querybuffer.apply_tag(self.definition_style, start, end)            
+        
+            
+            # textbuffer.apply_tag_by_name(name, start, end)            
+            #print( thequery )            
+                
     def perform_query_changed(self):
         self.set_saved(False)
         self.builder.get_object("button_save_query").set_sensitive(True)
         self.builder.get_object("menuitem_save_query").set_sensitive(True)        
         self.builder.get_object("button_save_as").set_sensitive(True)   
         self.builder.get_object("menuitem_save_as").set_sensitive(True)             
-        self.builder.get_object("button_new").set_sensitive(True)             
+        self.builder.get_object("button_new").set_sensitive(True)            
+                
+        self.do_highlight()
+        
+        defs = self.builder.get_object("filechooserbutton_def").get_filename()
+        if self.definitions_file != defs:
+            # print("setting file to: " + defs)
+            self.definitions_file = defs
+            self.reload_definitions()
+            
+            
+    # Reload definitions
+    def reload_definitions(self):
+        if self.definitions_file == None:
+            return None
+        
+        keywordlist=""
+        # definitions_file = open(self.definitions_file,"r")
+        lines = open(self.definitions_file).readlines()
+        for line in lines:
+            if not line[0]=='/':                
+                chunks=line.split(":")
+                if len(chunks)==2:
+                    keyword=chunks[0].strip()
+                    keywordlist=keywordlist+keyword+"|"
+        
+        if len(keywordlist) > 0:
+            keywordlist=keywordlist[0:len(keywordlist)-1]
+        
+        
+        self.definition_match = r"\b("+keywordlist +r")\b"
+        # print(self.definition_match)
+    
+    def on_result_changed(self,widget,data=None):
+        self.do_highlight_result()
     
     # User made a change to the current query
     def on_query_changed(self, widget, data=None):
@@ -249,10 +367,13 @@ class Corpald:
     
     # User selected "About" menu item
     def on_about(self, widget, data=None):
-        self.aboutdialog = self.builder.get_object('aboutdialog')
-        # Show the main window
-        self.aboutdialog.show()  
-
+        aboutdialog = self.builder.get_object('aboutdialog')
+        # Show the main window        
+        response = aboutdialog.run()  
+        if response == gtk.RESPONSE_DELETE_EVENT or response == gtk.RESPONSE_CANCEL:
+            aboutdialog.hide()
+        # aboutdialog.destroy()
+                         
     def on_show_directory(self, widget, data=None):
         d = self.get_query_directory()
         if sys.platform=='win32':
@@ -273,6 +394,12 @@ class Corpald:
         resultbuffer = self.builder.get_object("resultbuffer")
         resultbuffer.select_range(resultbuffer.get_start_iter(), resultbuffer.get_end_iter())
         resultbuffer.copy_clipboard(clipboard)
+    
+    def on_filter_changed(self, widget, data=None):
+        # tooltips = gtk.Tooltips()        
+        # tooltips.set_tip(combo, self.get_filter(), tip_private=None)                        
+        combo.set_tooltip_text( self.get_filter() )
+            
     
     # User pressed "Run query" button
     def on_run_query(self, widget, data=None):        
@@ -313,6 +440,7 @@ class Corpald:
     # Core functions
     # ###############################        
 
+    firstrun = True
     def run_query(self, queryfile, outfile=None):        
         if not outfile:        
             outfile =  os.path.splitext( queryfile )[0] + ".out"    
@@ -324,7 +452,9 @@ class Corpald:
         
         
         # searchCommand = "java -classpath "+corpussearch+" csearch/CorpusSearch "+queryfile+" /home/anton/icecorpus/finished/*.psd"
-        searchCommand = "java -classpath "+corpussearch+" csearch/CorpusSearch "+queryfile+" "+ os.path.expanduser("~")+"/icecorpus/finished/*.psd"
+        # filter = os.path.expanduser("~")+"/icecorpus/finished/*.psd"
+        filter = self.get_filter()
+        searchCommand = "java -classpath "+corpussearch+" csearch/CorpusSearch "+queryfile+" "+filter
         searchCommand = searchCommand + " -out "+outfile        
         os.system( searchCommand )
 
@@ -335,17 +465,29 @@ class Corpald:
             resultfile.close()
             self.set_result(resultstring)
             self.builder.get_object("label_resultsframe").set_markup("<b>Results</b> ("+outfile+")")
+            # self.do_highlight_result()
+            global combo            
+            if self.firstrun:                            
+                combo.append_text("Search last result")
+                self.config.set("filters","path"+str(self.filter_size),outfile)                
+                self.firstrun=False
+            else:
+                combo.remove_text(self.filter_size)
+                combo.append_text("Search last result")
+                self.config.set("filters","path"+str(self.filter_size),outfile)
+            
 
         # print("Search finished")    
         
     # ###############################
     # Initialization
     # ###############################        
+
     
     def load_settings(self):
             
         config_path = self.get_query_directory() + "/config/corpald.ini"        
-        self.config = ConfigParser.ConfigParser()
+        self.config = ConfigParser.ConfigParser(dict())
         
         # Create a config file with default settings if it is missing
         if not os.path.exists(config_path):
@@ -353,26 +495,45 @@ class Corpald:
             self.config.add_section("paths")
             self.config.set("paths", "definitions", self.get_query_directory()+"/config/icepahc.def" )
             
-            #self.config.set("paths", "corpussearch", self.get_corpald_path()+"/lib/CS_2.002.75.jar" )
+            self.config.set("paths", "corpussearch", self.get_corpald_path()+"/lib/CS_2.002.75.jar" )
             #/home/anton/icecorpus/parsing
             # XXX
-            self.config.set("paths", "corpussearch", os.path.expanduser("~")+"/icecorpus/parsing/CS_2.002.75.jar" )
+            # self.config.set("paths", "corpussearch", os.path.expanduser("~")+"/icecorpus/parsing/CS_2.002.75.jar" )
             
             #self.config.add_section("style")
             #self.config.set("style", "font", "Monospaced 12")
+            
+            # create filters
+            
+            default_filters_path = self.get_corpald_path()+"/filters.ini"
+            default_filters = open(default_filters_path, "r")
+            filtersection=default_filters.read()
 
             with open(config_path, "wb") as configfile:
                 self.config.write(configfile)    
+                configfile.write(filtersection)
                 configfile.close()
-        else:
-            self.config.read(config_path)
+        
+        self.config.read(config_path)
     
     def populate_gui(self):
         self.builder.get_object("filechooserbutton_def").set_filename( self.config.get("paths", "definitions") )
-                    
+                                                                                                    
+        global combo 
         combo = gtk.combo_box_new_text()
-        combo.append_text("IcePaHC (Entire corpus)")
-        # combo.append_text("IcePaHC (12th century)")
+        combo.connect("changed", self.on_filter_changed)
+        # combo.child.connect("activate", self.on_filter_changed)      
+        # comboboxentry.child.connect('activate', self.on_change)  
+        
+
+        fcount=0
+        while( self.config.has_option("filters","name"+str(fcount) ) ):
+            combo.append_text( self.config.get("filters","name"+str(fcount)) )
+            # combo.append_text("IcePaHC (12th century)")
+            fcount = fcount + 1
+        
+        self.filter_size= fcount
+        
         combo.set_active(0)
         combo.show()
 
@@ -425,6 +586,14 @@ class Corpald:
         query = CSQuery()
         self.populate_gui()                
         
+        # Make font vars
+        # self.operator = self.builder.get_object("textview_query").get_buffer().create_tag('bold', weight = pango.WEIGHT_BOLD )
+        self.operator_style = self.builder.get_object("textview_query").get_buffer().create_tag('operator', weight = pango.WEIGHT_BOLD, foreground = gtk.gdk.Color('#008') )
+        self.keyword_style = self.builder.get_object("textview_query").get_buffer().create_tag('keyword', weight = pango.WEIGHT_BOLD, foreground = gtk.gdk.Color('#E56717') )
+        self.definition_style = self.builder.get_object("textview_query").get_buffer().create_tag('definition', weight = pango.WEIGHT_BOLD, foreground = gtk.gdk.Color('#800') )
+        self.comment_style = self.builder.get_object("textview_results").get_buffer().create_tag('comment', foreground = gtk.gdk.Color('#C68E17') )
+        self.text_style = self.builder.get_object("textview_results").get_buffer().create_tag('text', foreground = gtk.gdk.Color('#342D7E') )
+                
         # Show the main window
         self.window.show()
         

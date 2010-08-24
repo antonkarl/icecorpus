@@ -5,8 +5,8 @@
   <object class="GtkWindow" id="corpaldwindow">
     <property name="width_request">800</property>
     <property name="height_request">650</property>
-    <property name="title" translatable="yes">Corpald</property>
-    <property name="icon_name">face-smile</property>
+    <property name="title" translatable="yes">Corpald - IcePaHC 0.2</property>
+    <property name="icon">Search HD_64.png</property>
     <child>
       <object class="GtkVBox" id="vbox_top">
         <property name="visible">True</property>
@@ -143,6 +143,7 @@
                   <object class="GtkToolButton" id="button_new">
                     <property name="visible">True</property>
                     <property name="sensitive">False</property>
+                    <property name="tooltip_text" translatable="yes">Create a new empty query</property>
                     <property name="is_important">True</property>
                     <property name="label" translatable="yes">New</property>
                     <property name="use_underline">True</property>
@@ -157,6 +158,7 @@
                 <child>
                   <object class="GtkToolButton" id="toolbutton1">
                     <property name="visible">True</property>
+                    <property name="tooltip_text" translatable="yes">Open a query file</property>
                     <property name="is_important">True</property>
                     <property name="label" translatable="yes">Open</property>
                     <property name="use_underline">True</property>
@@ -172,6 +174,7 @@
                   <object class="GtkToolButton" id="button_save_query">
                     <property name="visible">True</property>
                     <property name="sensitive">False</property>
+                    <property name="tooltip_text" translatable="yes">Save current query</property>
                     <property name="is_important">True</property>
                     <property name="label" translatable="yes">Save</property>
                     <property name="use_underline">True</property>
@@ -187,6 +190,7 @@
                   <object class="GtkToolButton" id="button_save_as">
                     <property name="visible">True</property>
                     <property name="sensitive">False</property>
+                    <property name="tooltip_text" translatable="yes">Save the current query under a new file name</property>
                     <property name="is_important">True</property>
                     <property name="label" translatable="yes">Save as</property>
                     <property name="use_underline">True</property>
@@ -201,6 +205,7 @@
                 <child>
                   <object class="GtkToolButton" id="button_run_query">
                     <property name="visible">True</property>
+                    <property name="tooltip_text" translatable="yes">Run the current query using CorpusSearch</property>
                     <property name="is_important">True</property>
                     <property name="label" translatable="yes">Run query</property>
                     <property name="use_underline">True</property>
@@ -301,6 +306,8 @@
                         <child>
                           <object class="GtkLabel" id="label2">
                             <property name="visible">True</property>
+                            <property name="has_tooltip">True</property>
+                            <property name="tooltip_text" translatable="yes">Search within instances of a particular type of node, such as IP-*, IP-SUB, NP-*, etc. $ROOT matches the root node of every tree in the corpus.</property>
                             <property name="label" translatable="yes">Root node:</property>
                           </object>
                           <packing>
@@ -312,6 +319,8 @@
                           <object class="GtkEntry" id="entry_root_node">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
+                            <property name="has_tooltip">True</property>
+                            <property name="tooltip_text" translatable="yes">Search within instances of a particular type of node, such as IP-*, IP-SUB, NP-*, etc. $ROOT matches the root node of every tree in the corpus.</property>
                             <property name="invisible_char">&#x25CF;</property>
                             <property name="text" translatable="yes">$ROOT</property>
                             <signal name="changed" handler="on_query_changed"/>
@@ -332,7 +341,7 @@
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
                         <property name="has_tooltip">True</property>
-                        <property name="tooltip_text" translatable="yes">Prints only the nodes that match the query, omitting the rest of the tree.</property>
+                        <property name="tooltip_text" translatable="yes">If checked, CorpusSearch prints out only the nodes that contain the structure described in "Query". If not checked, CorpusSearch prints out the entire sentence that contains the structure described in "Query".</property>
                         <property name="draw_indicator">True</property>
                         <signal name="toggled" handler="on_query_changed"/>
                       </object>
@@ -347,6 +356,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
+                        <property name="tooltip_text" translatable="yes">Remove subtrees whose root is of the same syntactic category as the node boundary embedded within a instance of that node boundary. "Remove_nodes" thus removes recursive structure.</property>
                         <property name="draw_indicator">True</property>
                         <signal name="toggled" handler="on_query_changed"/>
                       </object>
@@ -360,6 +370,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
+                        <property name="tooltip_text" translatable="yes">Tells CorpusSearch whether or not to print indices in the output. Indices start at 0 and are used to label every node in the tree. CorpusSearch uses indices to distinguish, for instance, between several different NP nodes in the same output structure.</property>
                         <property name="draw_indicator">True</property>
                         <signal name="toggled" handler="on_query_changed"/>
                       </object>
@@ -373,6 +384,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
+                        <property name="tooltip_text" translatable="yes">Setting print_complement to true causes CorpusSearch to print not only the matching tokens (in the regular output file, extension .out), but also all the tokens that don't match, in a separate file called the complement file (extension .cmp). This is useful when searching the output of a previous query.</property>
                         <property name="draw_indicator">True</property>
                         <signal name="toggled" handler="on_query_changed"/>
                       </object>
@@ -393,6 +405,7 @@
                     <child>
                       <object class="GtkLabel" id="label4">
                         <property name="visible">True</property>
+                        <property name="tooltip_text" translatable="yes">A definition file allows you to assign a label to a list of arguments. When you write a query, you can refer to this label instead of writing out the argument list. Corpald will highlight keywords from the definitions file in red.</property>
                         <property name="label" translatable="yes">Definitions file:</property>
                       </object>
                       <packing>
@@ -402,6 +415,7 @@
                     <child>
                       <object class="GtkFileChooserButton" id="filechooserbutton_def">
                         <property name="visible">True</property>
+                        <property name="tooltip_text" translatable="yes">A definition file allows you to assign a label to a list of arguments. When you write a query, you can refer to this label instead of writing out the argument list. Corpald will highlight keywords from the definitions file in red.</property>
                         <signal name="file_set" handler="on_query_changed"/>
                       </object>
                       <packing>
@@ -411,6 +425,7 @@
                     <child>
                       <object class="GtkLabel" id="label1">
                         <property name="visible">True</property>
+                        <property name="tooltip_text" translatable="yes">CorpusSearch prints user's remark in the output Preface. This is a way for the user to record a note, for instance to remember the goal of the search.</property>
                         <property name="ypad">2</property>
                         <property name="label" translatable="yes">Query remark:</property>
                       </object>
@@ -422,6 +437,7 @@
                       <object class="GtkEntry" id="entry_remark">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
+                        <property name="tooltip_text" translatable="yes">CorpusSearch prints user's remark in the output Preface. This is a way for the user to record a note, for instance to remember the goal of the search.</property>
                         <property name="invisible_char">&#x25CF;</property>
                         <signal name="changed" handler="on_query_changed"/>
                       </object>
@@ -475,7 +491,6 @@
                         <property name="sensitive">False</property>
                         <property name="can_focus">True</property>
                         <property name="pixels_above_lines">3</property>
-                        <property name="editable">False</property>
                         <property name="left_margin">3</property>
                         <property name="buffer">resultbuffer</property>
                       </object>
@@ -502,8 +517,9 @@
             <child>
               <object class="GtkToolButton" id="toolbutton5">
                 <property name="visible">True</property>
+                <property name="tooltip_text" translatable="yes">Open the folder containing the queries and their output in a file browser.</property>
                 <property name="is_important">True</property>
-                <property name="label" translatable="yes">Show in directory</property>
+                <property name="label" translatable="yes">Show in folder</property>
                 <property name="use_underline">True</property>
                 <property name="stock_id">gtk-directory</property>
                 <signal name="clicked" handler="on_show_directory"/>
@@ -516,25 +532,12 @@
             <child>
               <object class="GtkToolButton" id="button_copy_clipboard">
                 <property name="visible">True</property>
+                <property name="tooltip_text" translatable="yes">Copy the contents of the "Results" box to the clipboard so that it can be pasted in a text editor.</property>
                 <property name="is_important">True</property>
                 <property name="label" translatable="yes">Copy results to clipboard</property>
                 <property name="use_underline">True</property>
                 <property name="stock_id">gtk-copy</property>
                 <signal name="clicked" handler="on_copy_clipboard"/>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="homogeneous">True</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkToolButton" id="toolbutton4">
-                <property name="visible">True</property>
-                <property name="sensitive">False</property>
-                <property name="is_important">True</property>
-                <property name="label" translatable="yes">Rename output</property>
-                <property name="use_underline">True</property>
-                <property name="stock_id">gtk-save-as</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -553,7 +556,9 @@
   <object class="GtkTextBuffer" id="querybuffer">
     <signal name="changed" handler="on_query_changed"/>
   </object>
-  <object class="GtkTextBuffer" id="resultbuffer"/>
+  <object class="GtkTextBuffer" id="resultbuffer">
+    <signal name="changed" handler="on_result_changed"/>
+  </object>
   <object class="GtkDialog" id="dialog_areyousure">
     <property name="border_width">5</property>
     <property name="type_hint">normal</property>
@@ -597,9 +602,187 @@
     <property name="has_separator">False</property>
     <property name="program_name">Corpald</property>
     <property name="version">0.1</property>
-    <property name="copyright" translatable="yes">Copyright 2010. Anton Karl Ingason.</property>
-    <property name="website">http://www.linguist.is/corpald</property>
-    <property name="license" translatable="yes">Licensed under LGPL.</property>
+    <property name="copyright" translatable="yes">Corpald Copyright 2010. Anton Karl Ingason.
+All of the above resources are released under the LGPL license</property>
+    <property name="comments" translatable="yes">Corpald is a visual interface for running CorpusSearch 
+queries, developed at the University of Iceland 
+by Anton Karl Ingason.
+
+The Icelandic Parsed Historical Corpus (IcePaHC), version 0.2,
+was created by Joel Wallenberg, Anton Karl Ingason,
+Einar Freyr Sigur&#xF0;sson and Eir&#xED;kur R&#xF6;gnvaldsson at
+the University of Iceland.
+(see http://www.linguist.is/icelandic_treebank)
+
+CorpusSearch is developed by Beth Randall 
+at the university of Pennsylvania.
+(see http://corpussearch.sourceforge.net/)</property>
+    <property name="website">http://www.linguist.is/icelandic_treebank/corpald</property>
+    <property name="license" translatable="yes">		   GNU LESSER GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. &lt;http://fsf.org/&gt;
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+
+  This version of the GNU Lesser General Public License incorporates
+the terms and conditions of version 3 of the GNU General Public
+License, supplemented by the additional permissions listed below.
+
+  0. Additional Definitions.
+
+  As used herein, "this License" refers to version 3 of the GNU Lesser
+General Public License, and the "GNU GPL" refers to version 3 of the GNU
+General Public License.
+
+  "The Library" refers to a covered work governed by this License,
+other than an Application or a Combined Work as defined below.
+
+  An "Application" is any work that makes use of an interface provided
+by the Library, but which is not otherwise based on the Library.
+Defining a subclass of a class defined by the Library is deemed a mode
+of using an interface provided by the Library.
+
+  A "Combined Work" is a work produced by combining or linking an
+Application with the Library.  The particular version of the Library
+with which the Combined Work was made is also called the "Linked
+Version".
+
+  The "Minimal Corresponding Source" for a Combined Work means the
+Corresponding Source for the Combined Work, excluding any source code
+for portions of the Combined Work that, considered in isolation, are
+based on the Application, and not on the Linked Version.
+
+  The "Corresponding Application Code" for a Combined Work means the
+object code and/or source code for the Application, including any data
+and utility programs needed for reproducing the Combined Work from the
+Application, but excluding the System Libraries of the Combined Work.
+
+  1. Exception to Section 3 of the GNU GPL.
+
+  You may convey a covered work under sections 3 and 4 of this License
+without being bound by section 3 of the GNU GPL.
+
+  2. Conveying Modified Versions.
+
+  If you modify a copy of the Library, and, in your modifications, a
+facility refers to a function or data to be supplied by an Application
+that uses the facility (other than as an argument passed when the
+facility is invoked), then you may convey a copy of the modified
+version:
+
+   a) under this License, provided that you make a good faith effort to
+   ensure that, in the event an Application does not supply the
+   function or data, the facility still operates, and performs
+   whatever part of its purpose remains meaningful, or
+
+   b) under the GNU GPL, with none of the additional permissions of
+   this License applicable to that copy.
+
+  3. Object Code Incorporating Material from Library Header Files.
+
+  The object code form of an Application may incorporate material from
+a header file that is part of the Library.  You may convey such object
+code under terms of your choice, provided that, if the incorporated
+material is not limited to numerical parameters, data structure
+layouts and accessors, or small macros, inline functions and templates
+(ten or fewer lines in length), you do both of the following:
+
+   a) Give prominent notice with each copy of the object code that the
+   Library is used in it and that the Library and its use are
+   covered by this License.
+
+   b) Accompany the object code with a copy of the GNU GPL and this license
+   document.
+
+  4. Combined Works.
+
+  You may convey a Combined Work under terms of your choice that,
+taken together, effectively do not restrict modification of the
+portions of the Library contained in the Combined Work and reverse
+engineering for debugging such modifications, if you also do each of
+the following:
+
+   a) Give prominent notice with each copy of the Combined Work that
+   the Library is used in it and that the Library and its use are
+   covered by this License.
+
+   b) Accompany the Combined Work with a copy of the GNU GPL and this license
+   document.
+
+   c) For a Combined Work that displays copyright notices during
+   execution, include the copyright notice for the Library among
+   these notices, as well as a reference directing the user to the
+   copies of the GNU GPL and this license document.
+
+   d) Do one of the following:
+
+       0) Convey the Minimal Corresponding Source under the terms of this
+       License, and the Corresponding Application Code in a form
+       suitable for, and under terms that permit, the user to
+       recombine or relink the Application with a modified version of
+       the Linked Version to produce a modified Combined Work, in the
+       manner specified by section 6 of the GNU GPL for conveying
+       Corresponding Source.
+
+       1) Use a suitable shared library mechanism for linking with the
+       Library.  A suitable mechanism is one that (a) uses at run time
+       a copy of the Library already present on the user's computer
+       system, and (b) will operate properly with a modified version
+       of the Library that is interface-compatible with the Linked
+       Version.
+
+   e) Provide Installation Information, but only if you would otherwise
+   be required to provide such information under section 6 of the
+   GNU GPL, and only to the extent that such information is
+   necessary to install and execute a modified version of the
+   Combined Work produced by recombining or relinking the
+   Application with a modified version of the Linked Version. (If
+   you use option 4d0, the Installation Information must accompany
+   the Minimal Corresponding Source and Corresponding Application
+   Code. If you use option 4d1, you must provide the Installation
+   Information in the manner specified by section 6 of the GNU GPL
+   for conveying Corresponding Source.)
+
+  5. Combined Libraries.
+
+  You may place library facilities that are a work based on the
+Library side by side in a single library together with other library
+facilities that are not Applications and are not covered by this
+License, and convey such a combined library under terms of your
+choice, if you do both of the following:
+
+   a) Accompany the combined library with a copy of the same work based
+   on the Library, uncombined with any other library facilities,
+   conveyed under the terms of this License.
+
+   b) Give prominent notice with the combined library that part of it
+   is a work based on the Library, and explaining where to find the
+   accompanying uncombined form of the same work.
+
+  6. Revised Versions of the GNU Lesser General Public License.
+
+  The Free Software Foundation may publish revised and/or new versions
+of the GNU Lesser General Public License from time to time. Such new
+versions will be similar in spirit to the present version, but may
+differ in detail to address new problems or concerns.
+
+  Each version is given a distinguishing version number. If the
+Library as you received it specifies that a certain numbered version
+of the GNU Lesser General Public License "or any later version"
+applies to it, you have the option of following the terms and
+conditions either of that published version or of any later version
+published by the Free Software Foundation. If the Library as you
+received it does not specify a version number of the GNU Lesser
+General Public License, you may choose any version of the GNU Lesser
+General Public License ever published by the Free Software Foundation.
+
+  If the Library as you received it specifies that a proxy can decide
+whether future versions of the GNU Lesser General Public License shall
+apply, that proxy's public statement of acceptance of any version is
+permanent authorization for you to choose that version for the
+Library.</property>
     <property name="authors">Anton Karl Ingason</property>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox2">

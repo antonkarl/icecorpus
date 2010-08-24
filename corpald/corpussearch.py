@@ -77,5 +77,7 @@ class CSQuery:
             output = output + "print_complement: true" + "\n"        
         output=output+"\nquery: " + self.query.replace("\n", "\n       ")
         return output
+    
+
 
     

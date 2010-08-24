@@ -104,6 +104,12 @@ echo "Delete NP that idomsonly CODE"
 $CS structure_queries/fix-np-over-code.q $FILE
 mv -f $FILE.out $FILE
 
+echo ""
+echo "Fix NP-PRN"
+$CS structure_queries/prune-npprn.q $FILE
+mv -f $FILE.out $FILE
+
+
 #These last two queries must run at the end of the sequence, and in the same relative order with extend-ip1.q running first
 
 echo ""

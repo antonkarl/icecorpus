@@ -106,7 +106,7 @@
 		  (NP-POS (PRO-A sín-sinn)))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (N-N Brandur-brandur))
+( (IP-MAT (NP-SBJ (NPR-N Brandur-brandur))
 	  (HVDI hafði-hafa)
 	  (VBN komið-koma)
 	  (ADVP-DIR (ADV heim-heim))
@@ -190,7 +190,7 @@
 	  (NP-PRD (N-N banasár-banasár))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (N-N Brandur-brandur))
+( (IP-MAT (NP-SBJ (NPR-N Brandur-brandur))
 	  (VBPI hleypur-hlaupa)
 	  (RP út-út)))
 
@@ -232,7 +232,7 @@
 		       (NP-POS (PRO-G hans-hann))))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (N-N Brandur-brandur))
+( (IP-MAT (NP-SBJ (NPR-N Brandur-brandur))
 	  (VBDI gekk-ganga)
 	  (PP (P að-að)
 	      (NP (N-D húðfati-húðfat)
@@ -360,7 +360,7 @@
 		      (C 0)
 		      (IP-SUB (ADVP-LOC *T*-1)
 			      (NP-SBJ (PRO-N þeir-hann)
-				      (NP-PRN (NS-A Brandur-brandur)))
+				      (NP-PRN (NPR-N Brandur-brandur)))
 			      (BEDI voru-vera))))))
 
 ( (IP-MAT (CONJ og-og)
@@ -402,7 +402,7 @@
 
 ( (IP-MAT (NP-SBJ (NPR-N Þorsteinn-þorsteinn)
 		  (NP-PRN (N-N faðir-faðir)
-			  (NP-POS (N-G Brands-brand))))
+			  (NP-POS (NPR-G Brands-brand))))
 	  (VBDI fór-fara)
 	  (PP (P með-með)
 	      (NP (PRO-D þeim-það)))))
@@ -545,7 +545,7 @@
 	  (NP-SBJ (NPR-N Kolbeinn-kolbeinn))
 	  (VBDI virti-virða)
 	  (ADVP (ADV þó-þó))
-	  (NP-OB1 (N-A Brand-brand))
+	  (NP-OB1 (NPR-A Brand-brand))
 	  (NP-MSR (QS-N mest-meira)
 		  (NP (N-G frænda-frændi)
 		      (NP-POS (PRO-A sinn-sinn))))
@@ -625,7 +625,7 @@
 ( (IP-MAT (CONJ og-og)
 	  (VBDI minnti-minna)
 	  (NP-SBJ (PRO-N hann-hann))
-	  (NP-OB1 (N-A Brand-brandur))
+	  (NP-OB1 (NPR-A Brand-brandur))
 	  (PP (P á-á)
 	      (CP-ADV (C að-að)
 		      (IP-SUB (NP-SBJ (NPR-N Þórálfur-þórálfur))
@@ -651,7 +651,7 @@
 	  (VB leggja-leggja)
 	  (, ,-,)
 	  (NP-PRN-1 (N-N húsfreyja-húsfreyja)
-		    (NP-POS (N-G Brands-brand)))
+		    (NP-POS (NPR-G Brands-brand)))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (PRO-N Hún-hún))
@@ -670,7 +670,7 @@
 	  (CP-THT-PRN-1 (C að-að)
 			(IP-SUB (NP-SBJ (PRO-N hún-hún))
 				(HVDS hefði-hafa)
-				(NP-OB1 (N-A Brand-brand))
+				(NP-OB1 (NPR-A Brand-brand))
 				(ADVP (ADV fram-fram))
 				(VBN hvatt-hvetja)))
 	  (. .-.)))

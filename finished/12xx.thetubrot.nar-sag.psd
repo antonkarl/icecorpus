@@ -246,7 +246,7 @@
 	      (NP (N-A vetur$-vetur) (D-A $inn-hinn)))
 	  (. .-.)) (ID THETUBROT,.24))
 
-( (IP-MAT (NP-SBJ (N-N Bergönundur-bergönundur)
+( (IP-MAT (NP-SBJ (NPR-N Bergönundur-bergönundur)
 		  (NP-PRN (N-A son-sonur)
 			  (NP-POS (NPR-G Þorgeirs-þorgeir)
 				  (NP-PRN (N-G þyrni-þyrnir) (N-G fótar-fótur)))))
@@ -734,7 +734,7 @@
 
 ( (CODE (CODE <heading>)
 	(PP (P Frá-frá)
-	    (NP (CODE <bracket>) (N-D Agli-Egill) (CODE <bracket>)))
+	    (NP (CODE <bracket>) (NPR-D Agli-Egill) (CODE <bracket>)))
 	(CODE </heading>)
 	(. .-.)) (ID THETUBROT,.70))
 
@@ -2837,7 +2837,7 @@
 								       (ADVP-LOC (ADV hér-hér))
 								       (NP-OB1 (NS-A lönd-land) (Q-A öll-allur))
 								       (PP (P um-um)
-									   (NP (NS-A Mýrar-mýri)
+									   (NP (NPRS-A Mýrar-mýri)
 									       (CONJP (CONJ og-og)
 										      (PP (ADV víða-víða)
 											  (P um-um)

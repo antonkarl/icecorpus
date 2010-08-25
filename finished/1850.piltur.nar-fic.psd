@@ -1,4 +1,3 @@
-
 ( (IP-MAT (PP (P Á-á)
 	      (NP (ADJ-D austanverðu-austanverður) (NPR-D Íslandi-ísland)))
 	  (VBPI liggur-liggja)
@@ -1952,10 +1951,9 @@
 ( (IP-MAT (CONJ og-og)
 	  (VBDI þótti-þykja)
 	  (NP-SBJ (PRO-D honum-hann))
-	  (ADJP (ADV harla-harla)
-		(ADJ-N vænt-vænn)
-		(PP (P um-um)
-		    (NP (PRO-A hana-hún))))
+	  (ADJP (ADV harla-harla) (ADJ-N vænt-vænn))
+	  (PP (P um-um)
+	      (NP (PRO-A hana-hún)))
 	  (. ;-;))
   (ID PILTUR,.131))
 
@@ -12008,7 +12006,7 @@
 								     (NP-SBJ *con*)
 								     (VBDI þótti-þykja)
 								     (ADJP (ADJ-N vænt-vænn))
-								     (NP-ADV (PRO-N hvort-hvor)
+								     (NP-ADV (Q-N hvort-hvor)
 									     (PP (P um-um)
 										 (NP (OTHER-A annað-annar)))))))))
 	      (. ?-?))

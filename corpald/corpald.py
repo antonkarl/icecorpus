@@ -243,7 +243,8 @@ class Corpald:
     
     # 
     def perform_save_query(self):
-            # self.write_file(self.get_query(), self.query_file)                        
+            # self.write_file(self.get_query(), self.query_file)           
+            self.thequery = CSQuery()             
             self.thequery.query=self.get_query()
             self.thequery.nodes_only = self.builder.get_object("checkbutton_nodes_only").get_active()
             self.thequery.remove_nodes = self.builder.get_object("checkbutton_remove_nodes").get_active()

@@ -25,6 +25,11 @@ $CS structure_queries/prune-pp.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""
+echo "Add NP-POS for pronouns"
+$CS structure_queries/add_np_pos.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
 echo "Fix NP-POS"
 $CS structure_queries/move_np_pos.q $FILE
 mv -f $FILE.out $FILE
@@ -35,8 +40,13 @@ $CS structure_queries/move_np_pos2.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""
-echo "Add NP-POS for pronouns"
-$CS structure_queries/add_np_pos.q $FILE
+echo "Fix NP-POS"
+$CS structure_queries/move_np_pos.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Fix NP-POS"
+$CS structure_queries/move_np_pos2.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""

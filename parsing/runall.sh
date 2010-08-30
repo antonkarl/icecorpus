@@ -40,16 +40,6 @@ $CS structure_queries/move_np_pos2.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""
-echo "Fix NP-POS"
-$CS structure_queries/move_np_pos.q $FILE
-mv -f $FILE.out $FILE
-
-echo ""
-echo "Fix NP-POS"
-$CS structure_queries/move_np_pos2.q $FILE
-mv -f $FILE.out $FILE
-
-echo ""
 echo "Fix CP-ADV"
 $CS structure_queries/fix-cpadv.q $FILE
 mv -f $FILE.out $FILE

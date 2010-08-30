@@ -81,7 +81,7 @@
 
 ( (IP-MAT (CONJ En-en)
 	  (NP-SBJ (PRO-N þeir-hann)
-		  (NP-POS (NPR-N Órækja-órækja)))
+		  (NP-PRN (NPR-N Órækja-órækja)))
 	  (VBDI riðu-ríða)
 	  (NP-DIR (D-A það-það) (N-A vað$-vað) (D-A $ið-hinn))))
 
@@ -208,7 +208,7 @@
 
 ( (IP-MAT (CONJ Og-og)
 	  (VBDI lagði-leggja)
-	  (NP-OB1 (NPR-N Ingjaldur-ingjaldur))
+	  (NP-SBJ (NPR-N Ingjaldur-ingjaldur))
 	  (NP-OB1 (N-D spjóti-spjót))
 	  (PP (P til-til)
 	      (NP (PRO-G þess-það)
@@ -725,7 +725,7 @@
 		    (NP-SBJ (PRO-N hann-hann))
 		    (ADVP-DIR (ADV vestur-vestur)))
 	  (CONJP (CONJ og-og)
-		 (IP-MAT-1 (NP-SBJ (QS-N flestir-margur)
+		 (IP-MAT=1 (NP-SBJ (QS-N flestir-margur)
 				   (NP-POS (PRO-G hans-hann))
 				   (NS-N menn-maður))))
 	  (. .-.)))

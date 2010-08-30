@@ -1,3 +1,4 @@
+
 ( (IP-MAT (VBDI Gengu-genga)
 	  (NP-SBJ (PRO-N þeir-hann)
 		  (NP-PRN (NPR-N Sturla-sturla)))
@@ -116,7 +117,7 @@
 
 ( (IP-MAT (CONJ og-og)
 	  (VBDI sór-sverja)
-	  (NP-OB1 (PRO-A hann-hann))
+	  (NP-SBJ (PRO-N hann-hann))
 	  (NP-OB1 (N-A eið-eiður)
 		  (IP-INF (TO að-að)
 			  (VB halda-halda)
@@ -195,7 +196,7 @@
 
 ( (IP-MAT (CONJ og-og)
 	  (VBDI sá-sjá)
-	  (NP-SPJ (N-N biskup-biskup))
+	  (NP-SBJ (N-N biskup-biskup))
 	  (PP (P fyrir-fyrir)
 	      (NP (PRO-D þeim-hann)))
 	  (. .-.)))
@@ -271,7 +272,7 @@
 ( (IP-MAT-SPE (" ")
 	      (NP-SBJ (N-N Nauðsyn-nauðsyn))
 	      (VBDI þótti-þykja)
-	      (IP-INF (RPX á-á) (BE vera-vera))
+	      (IP-INF-SPE (RPX á-á) (BE vera-vera))
 	      (, ,-,)
 	      (" ")
 	      (IP-MAT-PRN (VBDI sagði-segja)
@@ -304,7 +305,7 @@
 	      (" ")))
 
 ( (QTP (" ")
-       (NP-SBJ (QR-N Meiri-mikill) (N-N von-von))
+       (NP (QR-N Meiri-mikill) (N-N von-von))
        (CP-THT-SPE (C að-að)
 		   (IP-SUB-SPE (NP-SBJ *pro*)
 			       (ADJP (ADJ-N satt-sannur))

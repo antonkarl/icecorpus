@@ -9,6 +9,11 @@ $CS sanity_checks/2sbj.q $tempfile
 mv -f $tempfile.out $tempfile
 
 echo ""
+echo "Two nominatives"
+$CS sanity_checks/bad-double-nom.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
 echo "Missing subject"
 $CS sanity_checks/missing-subject-2.q $tempfile
 mv -f $tempfile.out $tempfile

@@ -108,7 +108,10 @@ def treebank_tag( icenlp_tag ):
     return icenlp_tag
 
 def get_lemma(word,tag):
-	return lemmas[word+"-"+tag]
+	if word+"-"+tag in lemmas:
+		return lemmas[word+"-"+tag]
+	else:
+		return word
 
 def convert_tag( match ):
         tagPattern="(["+allchars+"\_\-0-9]+) (["+allchars+"\_\-0-9]+)"
@@ -443,7 +446,7 @@ parenthesize_punctuation() # before this command those do not have their own par
 # Fix foreign word "bug" and similar stuff
 currentText = re.sub("\n(["+allchars+"]+) e\n","\n(e \\1)\n",currentText)
 currentText = re.sub("\nað cn\n","\n(cn að)\n",currentText)
-
+currentText = re.sub("\n(["+allchars+"]+) ft([a-z123]+)\n","\n(WPRO \\1)\n",currentText)
 
 make_tag_word_pars()
 add_ip_mat()

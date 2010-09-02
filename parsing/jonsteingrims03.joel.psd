@@ -1,4 +1,3 @@
-
 ( (IP-MAT (NP-SBJ (Q-N Allt-allur)
 		  (N-N fólk-fólk)
 		  (PP *ICH*-1))
@@ -83,8 +82,8 @@
 	  (, ,-,)
 	  (NP-SBJ (NS-N item-item))
 	  (NP-SBJ (NP (N-N bær$-bær) (D-N $inn-hinn))
-		  (CONJ og-og)
-		  (NP (N-N tjörn$-tjörn) (D-N $in-hinn)))
+		  (CONJP (CONJ og-og)
+			 (NP (N-N tjörn$-tjörn) (D-N $in-hinn))))
 	  (. .-.)))
 
 ( (IP-MAT (RDDI Varð-verða)
@@ -774,7 +773,7 @@
 	  (VBDI komu-koma)
 	  (PP (ADV upp-upp)
 	      (P í-í)
-	      (NP (N-D Reynistaðarsókn$-reynistaðarsókni) (D-D $inni-hinn)))
+	      (NP (N-D Reynistaðarsókn$-reynistaðarsókn) (D-D $inni-hinn)))
 	  (CONJ og-og)
 	  (VBDI færðust-færa)
 	  (ADVP (ADV svo-svo))
@@ -804,4 +803,3 @@
 		  (C 0)
 		  (IP-SUB (NP-SBJ (ADJS-N smánarlegast-smánarlegur) (N-N uppnefnd-uppnefnd))))
 	  (. .-.)))
-

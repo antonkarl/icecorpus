@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP-SBJ (Q-N Allt-allur)
 		  (N-N fólk-fólk)
 		  (PP *ICH*-1))
@@ -79,12 +80,13 @@
 		    (NP-POS (PRO-N minn-minn))
 		    (CONJP (CONJ og-og)
 			   (NX (ONE-N eitt-einn) (N-N drykkisvín-drykkisvín))))
-	  (, ,-,)
-	  (NP-SBJ (NS-N item-item))
-	  (NP-SBJ (NP (N-N bær$-bær) (D-N $inn-hinn))
-		  (CONJP (CONJ og-og)
-			 (NP (N-N tjörn$-tjörn) (D-N $in-hinn))))
-	  (. .-.)))
+	  (. ,-,)))
+
+( (FRAG (ADVP (FW item-item))
+	(NP (NP (N-N bær$-bær) (D-N $inn-hinn))
+	    (CONJP (CONJ og-og)
+		   (NP (N-N tjörn$-tjörn) (D-N $in-hinn))))
+	(. .-.)))
 
 ( (IP-MAT (RDDI Varð-verða)
 	  (NP-OB1 (PRO-D mér-ég))
@@ -803,3 +805,4 @@
 		  (C 0)
 		  (IP-SUB (NP-SBJ (ADJS-N smánarlegast-smánarlegur) (N-N uppnefnd-uppnefnd))))
 	  (. .-.)))
+

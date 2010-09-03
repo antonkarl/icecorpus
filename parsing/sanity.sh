@@ -59,6 +59,11 @@ $CS sanity_checks/bad-ip-daughter.q $tempfile
 mv -f $tempfile.out $tempfile
 
 echo ""
+echo "Bad ADV at IP level"
+$CS sanity_checks/bad-adv.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
 echo "Bad argument"
 $CS sanity_checks/bad-argument.q $tempfile
 mv -f $tempfile.out $tempfile

@@ -1,4 +1,4 @@
-node: $ROOT
+node: IP*
 
 copy_corpus: t
 

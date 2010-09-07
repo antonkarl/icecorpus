@@ -43,6 +43,7 @@ def count_file(filename):
             wordCount = wordCount + len(stripped.split(" "))
             currentSentence=""
             displaySentence=""
+    wordCount=wordCount-1
     print(filename + ": " + str(wordCount) )
     return wordCount
 # Start script

@@ -25,7 +25,7 @@ req_tag.append( ("OTHER[S]*-[NADG]",anything,"annar","should be tagged OTHER/OTH
 req_tag.append( ("C","sem","sem","sem should be tagged C") )
 req_tag.append( ("RP","upp|inn|fram|út","\\2","should be tagged RP") )
 req_tag.append( ("ALSO","einnig|einninn|einnin","\\2","should be tagged ALSO") )
-req_tag.append( ("SUCH",anything,"þvílíkur|slíkur|svoddan","should be tagged ALSO") )
+req_tag.append( ("SUCH",anything,"þvílíkur|slíkur|svoddan","should be tagged SUCH") )
 
 # In this section the program complains if the tag-word pattern is matchec but the lemma is not matched
 req_lemma=[]

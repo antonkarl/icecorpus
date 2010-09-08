@@ -127,8 +127,8 @@ def process_sentence(sentence,line_local):
 			corpustag=re.search(fullpattern,line).group(1)
 			corpusword=re.search(fullpattern,line).group(2)
 			corpuslemma=re.search(fullpattern,line).group(3)
-			if re.search("[A-ZÞÆÖÍÁÚÓÉ][\sþæðöÞÆÐÖáéýúíó]+",corpusword):
-				print(corpusword)
+			if re.search("[A-ZÞÆÖÍÁÚÓÉ][a-zþæðöÞÆÐÖáéýúíó]+",corpusword):
+				# print(corpusword)
 				sentence_report+="-----\n"
 				sentence_report+=sentenceID+"\n"
 				display_line = re.sub(fullpattern,'\033[1m'+'\033[91m'+"("+corpustag+" "+corpusword+"-"+corpuslemma+")"+'\033[0m',line)

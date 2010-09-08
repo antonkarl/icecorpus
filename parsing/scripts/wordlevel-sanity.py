@@ -13,6 +13,8 @@ allchars = 'a-zA-ZþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ$'
 anything = "["+allchars+"]+"
 # word="["+allchars+"]+"
 
+#################### START OF PATTERNS THAT SHOULD BE EDITED #############################
+
 # Required tag for word-lemma pattern
 # IMPORTANT, THE ORDER IS ALWAYS: TAG, WORD, LEMMA, MESSAGE
 # copy an existing line and change it to avoid typos
@@ -34,6 +36,9 @@ req_lemma.append( ("NEG","eigi","ekki","lemma for NEG eigi is ekki") )
 # In this section the program complains if all the fields are matched
 bad=[]
 bad.append( ("VB\S*",anything,"(út|inn)([a-zA-ZþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+)a","should a particle be split off here?") )
+
+##################### END OF PATTERNS THAT SHOULD BE EDITED ############################
+
 
 # bad.append( ("[^C]","sem","sem","sem should be C") )
 # bad.append( ("[^R]\S*","upp|inn|fram|út","\\2","should be RP") )

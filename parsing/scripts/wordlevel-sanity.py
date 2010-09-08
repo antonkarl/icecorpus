@@ -15,6 +15,12 @@ anything = "["+allchars+"]+"
 
 #################### START OF PATTERNS THAT SHOULD BE EDITED #############################
 
+# In the bad parse section there are two elements in a pattern, a regular expression, and a message
+
+bad_parse=[]
+bad_parse.append( ("\(ADVP-TMP \(ADV þar\-þar\)\)","should probably be ADVP-LOC") )
+
+
 # Required tag for word-lemma pattern
 # IMPORTANT, THE ORDER IS ALWAYS: TAG, WORD, LEMMA, MESSAGE
 # copy an existing line and change it to avoid typos
@@ -27,6 +33,7 @@ req_tag.append( ("OTHER[S]*-[NADG]",anything,"annar","should be tagged OTHER/OTH
 req_tag.append( ("C","sem","sem","sem should be tagged C") )
 req_tag.append( ("RP","upp|inn|fram|út","\\2","should be tagged RP") )
 req_tag.append( ("ALSO","einnig|einninn|einnin","\\2","should be tagged ALSO") )
+req_tag.append( ("SUCH",anything,"þvílíkur|slíkur|svoddan","should be tagged SUCH") )
 req_tag.append( ("SUCH",anything,"þvílíkur|slíkur|svoddan","should be tagged SUCH") )
 
 # In this section the program complains if the tag-word pattern is matchec but the lemma is not matched
@@ -74,6 +81,19 @@ def process_sentence(sentence,line_local):
 				sentence_report+="LINE "+str(line_local)+": " + display_line + "\n"
 				sentence_report+="MSG: "+message+"\n"
 				sentence_report+="-----\n"
+
+		for pattern in bad_parse:
+			fullpattern="("+pattern[0]+")"
+			message=pattern[1]
+
+			if re.search(fullpattern,line):
+				sentence_report+="-----\n"
+				sentence_report+=sentenceID+"\n"
+				display_line = re.sub(fullpattern,'\033[1m'+'\033[91m'+"\\1"+'\033[0m',line)
+				sentence_report+="LINE "+str(line_local)+": " + display_line + "\n"
+				sentence_report+="MSG: "+message+"\n"
+				sentence_report+="-----\n"
+			
 		# General badness done
 
 		# Do require tag

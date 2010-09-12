@@ -57,7 +57,7 @@
 		  (CONJP (CONJ og-og)
 			 (NX (N-A lærdóm-lærdómur)))))
 	  (, ,-,)
-	  (PP (PP ásamt-ásamt)
+	  (PP (P ásamt-ásamt)
 	      (NP (N-D lifnað-lifnaður)))
 	  (. ,-,)))
 
@@ -221,6 +221,7 @@
 	  (VAN brúkuð-brúka)))
 
 ( (IP-MAT (CONJ og-og)
+	  (NP-SBJ *exp*)
 	  (PP (P 0)
 	      (NP (PRO-D því-það)))
 	  (VBDI fór-fara)
@@ -466,9 +467,9 @@
 				  (VBDI átti-eiga)
 				  (ADVP-LOC (ADV þar-þar) (CONJ og-og) (ADV þar-þar)))))))
 
-( (IP-MAT (IP-PPL (VBN þraut-þraut))
+( (IP-MAT (IP-PPL (VBN þraut-þrjóta))
 	  (VBDI tók-taka)
-	  (NP-OB1 (PRO-A hann-hann))
+	  (NP-SBJ (PRO-N hann-hann))
 	  (PP (P til-til)
 	      (NP (N-G láns-lán)))
 	  (. ,-,)))
@@ -486,7 +487,7 @@
 	  (ADVP-TMP (ADV aftur-aftur))
 	  (. .-.)))
 
-( (IP-MAT (NP-TMP (N-N Ár$-ári) (D-N $ið-hinn) (ADV eftir-eftir))
+( (IP-MAT (NP-TMP (N-A Ár$-ár) (D-A $ið-hinn) (ADV eftir-eftir))
 	  (DODI gjörði-gera)
 	  (NP-SBJ (PRO-N hann-hann))
 	  (RP inn-inn)
@@ -603,6 +604,7 @@
 	  (ADVP (ADVR svo-svo) (ADV vel-vel))
 	  (NP-PRN-1 (PRO-A það-það)
 		    (CP-REL (WNP-2 0)
+			    (C 0)
 			    (IP-SUB (NP-OB1 *T*-2)
 				    (NP-SBJ (PRO-N hann-hann)
 					    (NP-PRN (PRO-N sjálfur-sjálfur)))
@@ -679,7 +681,7 @@
 	  (PP (P á-á)
 	      (NP (NPR-D Eyrarbakka-eyrarbakki)))
 	  (, ,-,)
-	  (ADJP-SPR (VAN-N aðspurður-aðspurður))
+	  (ADJP-SPR (VAN-N aðspurður-aðspyrja))
 	  (ADVP-LOC (ADV þar-þar))
 	  (PP (P af-af)
 	      (ADJP (ADJ-D vissum-viss) (NS-D mönnum-maður)))
@@ -690,7 +692,7 @@
 			  (NP-SBJ (PRO-N hann-hann))
 			  (HVPS hafi-hafa)
 			  (RP út-út)
-			  (VAN sókt-sækja)))
+			  (VBN sókt-sækja)))
 	  (, ,-,)))
 
 ( (IP-MAT (NP-SBJ *con*)
@@ -764,7 +766,7 @@
 										(NP-OB1 (NUM-A 600-600) (NS-A rd.-rd))
 										(PP (P til-til)
 										    (NP (NPR-G Jóns-jón)
-											(NP-POS (NS-N stjúpsonar-stjúpsonur)
+											(NP-POS (NS-G stjúpsonar-stjúpsonur)
 												(NP-POS (PRO-G síns-sinn)))))))))))))
 
 ( (IP-MAT-SPE (CONJ og-og)

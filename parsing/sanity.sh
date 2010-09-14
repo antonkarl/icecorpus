@@ -14,6 +14,11 @@ $CS sanity_checks/bad-double-nom.q $tempfile
 mv -f $tempfile.out $tempfile
 
 echo ""
+echo "Two finite verbs in the same IP"
+$CS sanity_checks/2finite.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
 echo "Missing subject"
 $CS sanity_checks/missing-subject-2.q $tempfile
 mv -f $tempfile.out $tempfile

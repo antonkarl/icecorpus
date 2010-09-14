@@ -59,6 +59,11 @@ $CS sanity_checks/bad-bare-adjp-1.q $tempfile
 mv -f $tempfile.out $tempfile
 
 echo ""
+echo "Bare NP-PRN at IP level"
+$CS sanity_checks/bad-npprn.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
 echo "Bad IP daughter"
 $CS sanity_checks/bad-ip-daughter.q $tempfile
 mv -f $tempfile.out $tempfile

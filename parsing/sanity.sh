@@ -49,6 +49,11 @@ $CS sanity_checks/missing-c.q $tempfile
 mv -f $tempfile.out $tempfile
 
 echo ""
+echo "Bad IP-MAT"
+$CS sanity_checks/bad-ipmat.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
 echo "Missing NP-PRN"
 $CS sanity_checks/missing-np-prn.q $tempfile
 mv -f $tempfile.out $tempfile

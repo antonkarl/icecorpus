@@ -978,6 +978,7 @@
 	  (CP-THT-PRN-1 (C að-að)
 			(IP-SUB (NP-SBJ (PRO-N ég-ég))
 				(VBDI lofaði-lofa)
+<<<<<<< HEAD
 				(IP-INF-XXX (NP-OB1 (PRO-A mig-ég))
 					    (ADVP-LOC (ADV þar-þar))
 					    (RP til-til)
@@ -990,6 +991,20 @@
 							   (NP-POS (N-G junkurs$-junkurur)
 								   (D-G $ins-hinn)
 								   (NP-PRN (NPR-N Grabov-grabov)))))))))
+=======
+				(IP-INF (NP-OB1 (PRO-A mig-ég))
+					(ADVP-LOC (ADV þar-þar))
+					(RP til-til)
+					(TO að-að)
+					(VB gefa-gefa)
+					(PP (P undir-undir)
+					    (NP (N-D heyrn-heyrn))
+					    (CONJP (CONJ og-og)
+						   (NP (N-A handsöl-handsöl)
+						       (NP-POS (N-G junkurs$-junkurur)
+							       (D-G $ins-hinn)
+							       (NP-PRN (NPR-N Grabov-grabov)))))))))
+>>>>>>> 28710c923108115edd0b578ba226633c0ce40f97
 	  (. .-.))
   (ID 1611.INDIAFARI.BIO-TRA,25.52))
 

@@ -1,4 +1,3 @@
-
 ( (IP-MAT (CODE COM:Chapter_271)
 	  (CODE <P_388>)
 	  (NP-SBJ (NPR-N Gissur-gissur) (NPR-N Þorvaldsson-þorvaldsson))
@@ -1832,7 +1831,7 @@
 ( (IP-MAT (VBDI Lést-látast)
 	  (ADVP-LOC (ADV þar-þar))
 	  (ADVP-TMP (ADV þá-þá))
-	  (NP-SBJ (Q-A margt-margur)
+	  (NP-SBJ (Q-N margt-margur)
 		  (NP-POS (NS-G manna-maður))))
   (ID 12XX.STURLUNGA.NAR-SAG,392.149))
 
@@ -8794,10 +8793,10 @@
 	  (. .-.))
   (ID 12XX.STURLUNGA.NAR-SAG,407.698))
 
-( (IP-MAT (NP-SBJ (NPR-A Steinvöru-steinvara)
+( (IP-MAT (NP-SBJ (NPR-A Steinvöru-steinvör)
 		  (NPR-A Sighvatsdóttur-sighvatsdóttir)
 		  (PP (P að-að)
-		      (NP (NPRS-D Keldum-keldar))))
+		      (NP (NPRS-D Keldum-Keldur))))
 	  (VBDI dreymdi-dreyma)
 	  (ALSO og-og)
 	  (PP (P í-í)
@@ -9828,7 +9827,7 @@
 		(CP-DEG *ICH*-1))
 	  (NP-OB1 (N-D reið$-reið) (D-D $inni-hinn) (ADV sunnan-sunnan))
 	  (CP-DEG-1 (C að-að)
-		    (IP-SUB (IP-SUB (IP-SUB (NP-SBJ (NPR-A Gissur-gissur))
+		    (IP-SUB (IP-SUB (IP-SUB (NP-SBJ (NPR-N Gissur-gissur))
 					    (VBDI reið-ríða)
 					    (ADVP-TMP (ADVS síðast-síðar)))
 				    (CONJP (CONJ og-og)
@@ -10747,7 +10746,7 @@
   (ID 12XX.STURLUNGA.NAR-SAG,416.848))
 
 ( (IP-MAT-SPE (" ")
-	      (NP-OB1 (PRO-N Það-það)
+	      (NP-OB1 (PRO-A Það-það)
 		      (CP-THT-SPE-PRN *ICH*-1))
 	      (VBDI dreymdi-dreyma)
 	      (NP-SBJ (PRO-A mig-ég))
@@ -10806,7 +10805,7 @@
   (ID 12XX.STURLUNGA.NAR-SAG,416.853))
 
 ( (IP-MAT-SPE (" ")
-	      (NP-SBJ (D-A Þetta-þetta))
+	      (NP-SBJ (D-N Þetta-þetta))
 	      (BEPI er-vera)
 	      (ADVP (ADV vel-vel))
 	      (VAN dreymt-dreyma)
@@ -11800,7 +11799,7 @@
 ( (IP-MAT (CONJ og-og)
 	  (VBDI vógu-vega)
 	  (NP-SBJ (NP-POS (NPR-G Kolbeins-kolbeinn))
-		  (NS-A menn-maður))
+		  (NS-N menn-maður))
 	  (NP-OB1 (NUM-A tvo-tveir)
 		  (NS-A menn-maður)
 		  (NP-POS (PRO-G hans-hann))
@@ -13355,7 +13354,7 @@
 
 ( (IP-MAT (ADVP-TMP (ADV Þá-þá))
 	  (VBDI lögðu-leggja)
-	  (NP-SBJ (NUM-N tveir-tveir) (NS-A menn-maður))
+	  (NP-SBJ (NUM-N tveir-tveir) (NS-N menn-maður))
 	  (ADVP-TMP (ADV senn-senn))
 	  (PP (P til-til)
 	      (NP (NPR-G Sturlu-sturla)))
@@ -13565,7 +13564,7 @@
   (ID 12XX.STURLUNGA.NAR-SAG,421.1086))
 
 ( (IP-MAT (CONJ en-en)
-	  (NP-SBJ (NPR-A Játgeir-játgeir)
+	  (NP-SBJ (NPR-N Játgeir-játgeir)
 		  (NPR-N Teitsson-teitsson)
 		  (NP-PRN (N-N mágur-mágur)
 			  (NP-POS (NPR-G Gissurar-gissurur))))
@@ -13797,7 +13796,7 @@
 
 ( (IP-MAT (NP-OB1 (NUM-A Þrjú-þrír) (N-A sár-sár))
 	  (HVDI hafði-hafa)
-	  (NP-SBJ (PRO-A hann-hann))
+	  (NP-SBJ (PRO-N hann-hann))
 	  (PP (P á-á)
 	      (NP (N-D bringu$-bringa)
 		  (D-D $nni-hinn)
@@ -15763,7 +15762,7 @@
   (ID 12XX.STURLUNGA.NAR-SAG,427.1251))
 
 ( (IP-MAT (CONJ en-en)
-	  (NP-SBJ (NPR-A Brandur-brandur)
+	  (NP-SBJ (NPR-N Brandur-brandur)
 		  (NP-PRN (N-N son-sonur)
 			  (NP-POS (PRO-G hans-hann))))
 	  (BEDI var-vera)
@@ -16345,7 +16344,7 @@
 ( (IP-MAT (ADVP-LOC (ADV Þar-þar))
 	  (VBDI bjó-búa)
 	  (ADVP-TMP (ADV þá-þá))
-	  (NP-SBJ (NPR-N Kollsveinn-kollsveinn) (NPR-A Karf<dash/>Helgason-karf<dash/>helgason))
+	  (NP-SBJ (NPR-N Kollsveinn-kollsveinn) (NPR-N Karf<dash/>Helgason-karf<dash/>helgason))
 	  (. .-.))
   (ID 12XX.STURLUNGA.NAR-SAG,428.1309))
 
@@ -19785,7 +19784,7 @@
 			(NP (PRO-A það-það)))
 		    (VBDI fóru-fara)
 		    (NP-SBJ (NP-POS (NPRS-G Illuga-illugur))
-			    (NS-A menn-maður))
+			    (NS-N menn-maður))
 		    (PP (P í-í)
 			(NP (N-A braut-braut))))
 	  (CONJP (CONJ og-og)

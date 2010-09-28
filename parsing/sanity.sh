@@ -53,6 +53,8 @@ echo "Missing WXP"
 $CS sanity_checks/missing-wxp.q $tempfile
 mv -f $tempfile.out $tempfile
 
+#Bad IP-MAT must come after Missing C
+
 echo ""
 echo "Bad IP-MAT"
 $CS sanity_checks/bad-ipmat.q $tempfile

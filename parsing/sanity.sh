@@ -60,10 +60,10 @@ echo "Bad IP-MAT"
 $CS sanity_checks/bad-ipmat.q $tempfile
 mv -f $tempfile.out $tempfile
 
-echo ""
-echo "Bad CONJ"
-$CS sanity_checks/bad-conj.q $tempfile
-mv -f $tempfile.out $tempfile
+#echo ""
+#echo "Bad CONJ"
+#$CS sanity_checks/bad-conj.q $tempfile
+#mv -f $tempfile.out $tempfile
 
 echo ""
 echo "Missing NP-PRN"

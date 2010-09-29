@@ -36,11 +36,12 @@ req_tag.append( ("ALSO","einnig|einninn|einnin","\\2","should be tagged ALSO") )
 req_tag.append( ("SUCH",anything,"þvílíkur|slíkur|svoddan","should be tagged SUCH") )
 req_tag.append( ("SUCH",anything,"þvílíkur|slíkur|svoddan","should be tagged SUCH") )
 
-# In this section the program complains if the tag-word pattern is matchec but the lemma is not matched
+# In this section the program complains if the tag-word pattern is matched but the lemma is not matched
 req_lemma=[]
 req_lemma.append( ("NEG","eigi","ekki","lemma for NEG eigi is ekki") )
 req_lemma.append( ("C","er","er","lemma for C er is er") )
 req_lemma.append( ("BE[A-Z]+|BAG|BAN",anything,"vera","lemma for BE should be vera") )
+req_lemma.append( ("PRO-D","því","það","lemma for því should be það") )
 
 # In this section the program complains if all the fields are matched
 bad=[]

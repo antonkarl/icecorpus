@@ -41,7 +41,7 @@ req_lemma=[]
 req_lemma.append( ("NEG","eigi","ekki","lemma for NEG eigi is ekki") )
 req_lemma.append( ("C","er","er","lemma for C er is er") )
 req_lemma.append( ("BE[A-Z]+|BAG|BAN",anything,"vera","lemma for BE should be vera") )
-req_lemma.append( ("PRO-D","því","því","lemma for því should be það") )
+req_lemma.append( ("PRO-D","því","það","lemma for því should be það") )
 
 # In this section the program complains if all the fields are matched
 bad=[]

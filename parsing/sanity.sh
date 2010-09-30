@@ -160,6 +160,11 @@ echo "Bad HVER"
 $CS sanity_checks/bad-hver.q $tempfile
 mv -f $tempfile.out $tempfile
 
+echo ""
+echo "Bad HVER2"
+$CS sanity_checks/bad-hver2.q $tempfile
+mv -f $tempfile.out $tempfile
+
 #echo ""
 #echo "Missing antecedent"
 #$CS sanity_checks/missing-antecedent.q $tempfile

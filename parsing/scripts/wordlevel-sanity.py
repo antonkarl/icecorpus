@@ -45,7 +45,7 @@ req_lemma.append( ("PRO-D","því","það","lemma for því should be það") )
 
 # In this section the program complains if all the fields are matched
 bad=[]
-bad.append( ("VB\S*",anything,"(út|inn)([a-zA-ZþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+)a","should a particle be split off here?") )
+bad.append( ("VB\S*",anything,"(út|inn|á|af|að|fram|frá|fyrir|hjá|í|niður|með|of|til|um|upp|úr|við|yfir)([a-zA-ZþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ]+)a","should a particle be split off here?") )
 
 ##################### END OF PATTERNS THAT SHOULD BE EDITED ############################
 

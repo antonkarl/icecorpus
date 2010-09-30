@@ -5,8 +5,8 @@ copy_corpus: t
 // define: EME.def
 
 query: (!NP-ADV* iDoms [2]NP)
-   AND ([1]NP* iDoms {1}[2]NP)
-   AND ([1]NP* iDoms !CONJP|$)
+   AND ([1]NP* iDoms [2]{1}NP)
+   AND ([1]NP* iDoms !CONJP*)
    AND ([2]NP idoms !\*T*|\*ICH*)
    AND ([1]NP* idoms !OTHER*)
 

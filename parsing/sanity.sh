@@ -182,6 +182,20 @@ echo "Nonbranching NP"
 $CS sanity_checks/nonbranching-np.q $tempfile
 mv -f $tempfile.out $tempfile
 
+echo ""
+echo "Case agreement error"
+$CS sanity_checks/case-agreement-error.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
+echo "Bad NP-PRD"
+$CS sanity_checks/bad-np-prd.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
+echo "Bad NP-VOC"
+$CS sanity_checks/bad-np-voc.q $tempfile
+mv -f $tempfile.out $tempfile
 
 # PP stuff
 

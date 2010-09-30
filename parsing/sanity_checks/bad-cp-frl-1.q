@@ -1,4 +1,4 @@
-node: IP*|FRAG*
+node: IP*|FRAG*|QTP
 
 copy_corpus: t
 

@@ -66,6 +66,11 @@ mv -f $tempfile.out $tempfile
 #mv -f $tempfile.out $tempfile
 
 echo ""
+echo "Branching CONJ"
+$CS sanity_checks/branching-conj.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
 echo "Missing NP-PRN"
 $CS sanity_checks/missing-np-prn.q $tempfile
 mv -f $tempfile.out $tempfile

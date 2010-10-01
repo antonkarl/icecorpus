@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP-1 (N-N Fögnuður-fögnuður))
 	  (RDPI verður-verða)
 	  (NP-SBJ (NP-POS (D-G þessa-þessi) (N-G heims-heimur))
@@ -2440,7 +2441,7 @@
 	      (NP (N-A andlát-andlát)
 		  (NP-POS (PRO-G hennar-hún))))
 	  (BEDI vóru-vera)
-	  (VBN staddir-standa)
+	  (ADJP (ADJ-N staddir-staddur))
 	  (NP-SBJ (Q-N allir-allur) (NS-N postular-postuli))
 	  (, ,-,)
 	  (PP (P 0)
@@ -5543,7 +5544,7 @@
 										(CONJP (CONJ og-og)
 										       (IP-SUB-SPE (ADVP *T*-2)
 												   (VBPI át$-eiga)
-												   (NP-SBJ (PRO $tu-þú))
+												   (NP-SBJ (PRO-N $tu-þú))
 												   (IP-INF-SPE (NP-OB1 (PRO-A mig-ég))
 													       (TO að-að)
 													       (VB skíra-skíra)

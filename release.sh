@@ -1,5 +1,5 @@
 CORPUSNAME="icepahc"
-VERSION="0.1"
+VERSION="0.2"
 DIRNAME=$CORPUSNAME"-v"$VERSION"/"
 TEMPFILE="temp.psd"
 rm -rf $DIRNAME
@@ -14,7 +14,7 @@ mkdir $DIRNAME"info"
 cp finished/*.psd $DIRNAME"psd"
 cp info/*.info $DIRNAME"info"
 
-for i in $(ls icepahc-v0.1/psd/*.psd);
+for i in $(ls icepahc-v0.2/psd/*.psd);
 do
 echo "/*" >> $TEMPFILE
 cat README >> $TEMPFILE

@@ -210,6 +210,11 @@ $CS sanity_checks/bad-pp-case.q $tempfile
 mv -f $tempfile.out $tempfile
 
 echo ""
+echo "Bad PP case 2"
+$CS sanity_checks/bad-pp-case2.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
 echo "Nonbranching PP"
 $CS sanity_checks/nonbranching-pp.q $tempfile
 mv -f $tempfile.out $tempfile

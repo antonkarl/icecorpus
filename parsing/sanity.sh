@@ -19,6 +19,11 @@ $CS sanity_checks/2finite.q $tempfile
 mv -f $tempfile.out $tempfile
 
 echo ""
+echo "Infinitive without IP-INF"
+$CS sanity_checks/bad-inf.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
 echo "Missing subject"
 $CS sanity_checks/missing-subject-2.q $tempfile
 mv -f $tempfile.out $tempfile

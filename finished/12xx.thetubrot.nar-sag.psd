@@ -1,3 +1,4 @@
+
 ( (QTP (ADVP-TMP (ADV Nú-nú))
        (VB fara-fara)
        (ADVP-TMP (ADVS fyrst-fyrst))
@@ -2532,11 +2533,8 @@
 		    (PP (P til-til)
 			(NP (NP (NS-G laga-lög))
 			    (CONJP (CONJ eða-eða)
-				   (NP (D-G þeirra-það) (NS-G ma-ma))))))))
-
-( (IP-MAT (XXX (VB EYÐA-eyða))
-	  (. .-.))
-  (ID THETUBROT,.167))
+				   (NP (D-G þeirra-það) (NS-G ma-ma))))))
+	(CODE {COM:manuscript_is_missing_text})))
 
 ( (FRAG (NP (PRO-N þú-þú))
 	(ADJP-LOC (ADV þar-þar))
@@ -4016,5 +4014,6 @@
 	      (NP-SBJ (NPR-D Ölvaldi-ölvaldur))
 	      (VB þykja-þykja)
 	      (IP-SMC (CODE {COM:missing_text})
-		      (NEG ó-ó))))
+		      (NEG ó-ó)
+		      (CODE {COM:ed.note:probably_ósannligt}))))
 

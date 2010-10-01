@@ -1,4 +1,3 @@
-
 ( (META (CODE <P_184>)
 	(CODE MS:0)
 	(CODE <heading>)
@@ -1617,9 +1616,9 @@
 	  (NP-SBJ (PRO-N þeir-hann))
 	  (VBDI fylltu-fylla)
 	  (NP-OB1 (PRO-A þau-það))
-	  (NP-ADV-XXX (Q-A allt-allur)
-		      (PP (P á-á)
-			  (NP (NS-A barma-barmur))))
+	  (PP (Q-N allt-allur)
+	      (P á-á)
+	      (NP (NS-A barma-barmur)))
 	  (. .-.))
   (ID 1540.NTJOHN.REL-BIB,187.118))
 
@@ -21008,7 +21007,7 @@
   (ID 1540.NTJOHN.REL-BIB,223.1325))
 
 ( (IP-MAT-SPE (CODE VS:XVI_32J)
-	      (IP-IMP-SPE-PRN-XXX (VBI Sjáið-sjá))
+	      (IP-IMP-SPE-PRN (VBI Sjáið-sjá))
 	      (, ,-,)
 	      (NP-SBJ (D-N sú-sá)
 		      (N-N stund-stund)
@@ -21030,7 +21029,7 @@
 						   (IP-SUB-SPE (NP-SBJ *con*)
 							       (VBPI látið-láta)
 							       (IP-SMC-SPE-XXX (NP-SBJ (PRO-A mig-ég))
-									       (NP-PRD-XXX (ONE-A einan-einn))
+									       (NP-PRD (ONE-A einan-einn))
 									       (ADVP (ADV saman-saman)))))))
 	      (. .-.))
   (ID 1540.NTJOHN.REL-BIB,223.1326))

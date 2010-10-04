@@ -1,6 +1,6 @@
 node: IP*
 
-define: ../def/ICE.def
+define: def/ICE.def
 
 copy_corpus: t
 

@@ -4476,8 +4476,8 @@
 
 ( (IP-MAT (NP-SBJ (NPR-N Sturla-sturla))
 	  (VBDI kvað-kveða)
-	  (IP-INF (NP-SBJ (PRO-A hann-hann))
-		  (NP-OB1 (PRO-A það-það))
+	  (NP-OB1 (PRO-A hann-hann))
+	  (IP-INF (NP-OB1 (PRO-A það-það))
 		  (NEG eigi-ekki)
 		  (MDDS mundu-munu)
 		  (VB vita-vita))

@@ -18,10 +18,15 @@ echo "Two finite verbs in the same IP"
 $CS sanity_checks/2finite.q $tempfile
 mv -f $tempfile.out $tempfile
 
-#echo ""
-#echo "Infinitive without IP-INF"
-#$CS sanity_checks/bad-inf.q $tempfile
-#mv -f $tempfile.out $tempfile
+echo ""
+echo "Infinitive without IP-INF 1"
+$CS sanity_checks/bad-inf1.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
+echo "Infinitive without IP-INF 2"
+$CS sanity_checks/bad-inf2.q $tempfile
+mv -f $tempfile.out $tempfile
 
 echo ""
 echo "Missing subject"

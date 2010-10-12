@@ -275,4 +275,9 @@ echo "Bad Passive2"
 $CS sanity_checks/bad-passive2.q $tempfile
 mv -f $tempfile.out $tempfile
 
+echo ""
+echo "New Passive"
+$CS sanity_checks/new-passive.q $tempfile
+mv -f $tempfile.out $tempfile
+
 mv -f $tempfile $1.sanity.psd

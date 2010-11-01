@@ -110,7 +110,17 @@ $CS structure_queries/prune-npprn.q $FILE
 mv -f $FILE.out $FILE
 
 
-#These last two queries must run at the end of the sequence, and in the same relative order with extend-ip1.q running first
+#These last four queries must run at the end of the sequence, and in the same relative order with extend-cp1.q and extend-ip1.q running before the other of the pair
+
+echo ""
+echo "Extending span of VP to nonfinite verb"
+$CS structure_queries/extend-cp1.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Extending span of CP to finite verb"
+$CS structure_queries/extend-cp.q $FILE
+mv -f $FILE.out $FILE
 
 echo ""
 echo "Extending span of IP-SUB to nonfinite verb"

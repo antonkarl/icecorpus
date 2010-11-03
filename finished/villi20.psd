@@ -666,9 +666,11 @@
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
 	  (BEDI var-vera)
-	  (ADVP-XXX (ADV þó-þó) (ADV að-að))
+	  (ADVP (ADV þó-þó))
+	  (PP (P að-að)
+	      (NP *ICH*-1))
 	  (VBN kominn-koma)
-	  (NP-OB1 (N-D dauða-dauði))))
+	  (NP-1 (N-D dauða-dauði))))
 
 ( (IP-MAT (CONJ og-og)
 	  (VBDI gaf-gefa)

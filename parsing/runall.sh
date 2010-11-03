@@ -109,6 +109,16 @@ echo "Fix NP-PRN"
 $CS structure_queries/prune-npprn.q $FILE
 mv -f $FILE.out $FILE
 
+echo ""
+echo "Prune extra NP nodes in conjunction"
+$CS structure_queries/prune-extranps.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Add CONJP to NP conjunction"
+$CS structure_queries/fix-npconj.q $FILE
+mv -f $FILE.out $FILE
+
 
 #These last four queries must run at the end of the sequence, and in the same relative order with extend-cp1.q and extend-ip1.q running before the other of the pair
 

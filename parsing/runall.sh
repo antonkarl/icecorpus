@@ -113,13 +113,23 @@ mv -f $FILE.out $FILE
 #These last four queries must run at the end of the sequence, and in the same relative order with extend-cp1.q and extend-ip1.q running before the other of the pair
 
 echo ""
-echo "Extending span of VP to nonfinite verb"
+echo "Move IP-SUB under preceding CP"
+$CS structure_queries/move-ip.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Extending span of CP to nonfinite verb"
 $CS structure_queries/extend-cp1.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""
 echo "Extending span of CP to finite verb"
 $CS structure_queries/extend-cp.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Making IP-SUB under CP which does not have an IP-SUB"
+$CS structure_queries/make-ip-under-cp.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""

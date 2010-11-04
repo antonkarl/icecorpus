@@ -60,6 +60,11 @@ $CS structure_queries/fix-adv-hvar.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""
+echo "Fix C hvort"
+$CS structure_queries/fix-hvort.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
 echo "Fix NP hvad direct questions"
 $CS structure_queries/fix-np-hva-direct.q $FILE
 mv -f $FILE.out $FILE

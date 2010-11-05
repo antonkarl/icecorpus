@@ -1,13 +1,15 @@
-( (IP-MAT (IP-INF (VB Síga-síga))
-	  (ADVP (ADV nú-nú) (ADV saman-saman))
-	  (NP-POS (N-G fylkingar-fylking))
+
+( (IP-MAT (VBPI Síga-síga)
+	  (ADVP-TMP (ADV nú-nú))
+	  (ADVP (ADV saman-saman))
+	  (NP-SBJ (NS-N fylkingar-fylking))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (N-N Manasses-manasses))
 	  (NP-OB1 (N-D hertogi-hertogur))
 	  (VBDI reið-ríða)
 	  (NP-SBJ (N-N örskot-örskot))
-	  (ADVP (ADV fram-fram))
+	  (RP fram-fram)
 	  (PP (P undan-undan)
 	      (NP (PRO-D sínum-sinn) (NS-D merkjum-merkji)))))
 
@@ -27,7 +29,7 @@
 	  (NP-SBJ (ADJP (ADV nú-nú) (Q-N mikið-mikill))
 		  (N-N mannfall-mannfall))
 	  (PP (P af-af)
-	      (NP (WQ-D hvorum-hvor) (NS-D tveggjum-tveggur)))))
+	      (NP (Q-D hvorum-hvor) (NS-D tveggjum-tveggur)))))
 
 ( (IP-MAT (CONJ og-og)
 	  (ADVP-LOC (ADV þar-þar))
@@ -132,7 +134,7 @@
 	  (NP-OB1 (N-A hest$-hestur) (D-A $inn-hinn))
 	  (PP (P af-af)
 	      (NP (OTHER-D öðrum-annar)
-		  (WQ-D hvorum-hvor)
+		  (Q-D hvorum-hvor)
 		  (NP-POS (PRO-G þeirra-hann))))
 	  (CP-REL (WNP 0)
 		  (C sem-sem)
@@ -762,7 +764,7 @@
 			  (BEDI voru-vera)
 			  (ADVP (ADVR svo-svo) (ADV vandlega-vandlega))
 			  (CP-DEG (C að-að)
-			      (NP (N-D engi-enginn)))
+				  (NP (N-D engi-enginn)))
 			  (NP-SBJ (N-N maður-maður))
 			  (VBDI komst-koma)
 			  (ADVP (ADV undan-undan))
@@ -846,8 +848,8 @@
 ( (IP-MAT (CONJ og-og)
 	  (DOI gjör-gera)
 	  (NP-SBJ (PRO-N þú-þú))
-	  (CP-ADV (C (WQ )
-		     (C 0))(IP-SUB (NP-SBJ (PRO-N þú-þú))
+	  (CP-ADV (WQ hvort-hvort)
+		  (IP-SUB (NP-SBJ (PRO-N þú-þú))
 			  (MDPI vilt-vilja)))
 	  (. ,-,)))
 
@@ -996,3 +998,4 @@
 	      (P til-til)
 	      (NP (NPR-G Níníve-níníve)))
 	  (. .-.)))
+

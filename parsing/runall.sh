@@ -124,6 +124,25 @@ echo "Add CONJP to NP conjunction"
 $CS structure_queries/fix-npconj.q $FILE
 mv -f $FILE.out $FILE
 
+echo ""
+echo "Fix N labels that should be NPR"
+$CS structure_queries/label-npr-n.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Fix N labels that should be NPR"
+$CS structure_queries/label-npr-a.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Fix N labels that should be NPR"
+$CS structure_queries/label-npr-d.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Fix N labels that should be NPR"
+$CS structure_queries/label-npr-g.q $FILE
+mv -f $FILE.out $FILE
 
 #These last four queries must run at the end of the sequence, and in the same relative order with extend-cp1.q and extend-ip1.q running before the other of the pair
 

@@ -1,4 +1,3 @@
-
 ( (IP-MAT (VBDI Kunnu-kunna)
 	  (NP-SBJ (NS-N synir-sonur)
 		  (NP-POS (N-G kóngs-kóngur)))
@@ -255,8 +254,8 @@
 	  (VBDI mælti-mæla)
 	  (, :-:)
 	  (" ")
-	  (IP-MAT-SPE (NP-PRD (QP-XXX (Q-N Mikill-mikill)
-				      (CONJP *ICH*-1))
+	  (IP-MAT-SPE (NP-PRD (QP (Q-N Mikill-mikill)
+				  (CONJP *ICH*-1))
 			      (N-N maður-maður))
 		      (BEPI ert$-vera)
 		      (NP-SBJ (PRO-N $u-þú))
@@ -548,7 +547,7 @@
 	  (, :-:)
 	  (" ")
 	  (IP-MAT-SPE (NP-SBJ (PRO-N Þú-þú))
-		      (NP-VOC-XXX (NPR-N Sjóður-sjóður))
+		      (NP-VOC (NPR-N Sjóður-sjóður))
 		      (" ")
 		      (IP-MAT-PRN (VBDI sagði-segja)
 				  (NP-SBJ (PRO-N hann-hann)))
@@ -566,7 +565,7 @@
 
 ( (CP-QUE-SPE (" ")
 	      (WADVP-1 (WADV Hvað-hvað))
-	      (IP-SUB-SPE (ADVP-XXX *T*-1)
+	      (IP-SUB-SPE (ADVP *T*-1)
 			  (MDPI mun-munu)
 			  (NP-SBJ (PRO-N ég-ég))
 			  (NP-OB1 (PRO-D yður-þú))

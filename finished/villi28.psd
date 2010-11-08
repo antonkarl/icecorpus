@@ -1,9 +1,9 @@
 
 ( (IP-MAT (NEG Ei-ekki)
 	  (VBPI finnst-finna)
-	  (ADJP (NP-CMP (PRO-D honum-hann))
-		(ADJR-N vaskari-vaskur))
-	  (NP-SBJ (N-N maður-maður))
+	  (NP-SBJ (ADJP (NP-CMP (PRO-D honum-hann))
+			(ADJR-N vaskari-vaskur))
+		  (N-N maður-maður))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (Q-N Margir-margur) (ADJ-N ágætir-ágætur) (NS-N menn-maður))
@@ -133,7 +133,7 @@
 		  (NP-POS (N-G kóngs$-kóngur) (D-G $ins-hinn)))
 	  (VBDI stóð-standa)
 	  (PP (P í-í)
-	      (NP (ADJ-D-ZZZ miðjum-miður) (N-D her$-her) (D-D $num-hinn)))
+	      (NP (ADJ-D miðjum-miður) (N-D her$-her) (D-D $num-hinn)))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ-1 (ES Það-það))

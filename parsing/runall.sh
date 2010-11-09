@@ -152,6 +152,11 @@ mv -f $FILE.out $FILE
 #These last four queries must run at the end of the sequence, and in the same relative order with extend-cp1.q and extend-ip1.q running before the other of the pair
 
 echo ""
+echo "Move adjacent thing under CP"
+$CS structure_queries/move-thing-under-cp.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
 echo "Move IP-SUB under preceding CP"
 $CS structure_queries/move-ip.q $FILE
 mv -f $FILE.out $FILE

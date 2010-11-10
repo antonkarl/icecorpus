@@ -464,12 +464,14 @@
 	      (NP (PRO-A hana-hún)))))
 
 ( (IP-MAT-XXX (CONJ og-og)
+	      (NP-SBJ *con*-D)
 	      (VBDI þótti-þykja)
-	      (NP-SBJ (PRO-N hún-hún))
+	      (NP-OB1 (PRO-N hún-hún))
 	      (IP-INF (NP-MSR (ADV ærið-ærið))
-		      (ADVP (ADV nær-nær))
-		      (VB ganga-ganga))
-	      (NP-OB1 (NPR-D Þorgerði-þorgerði))
+		      (ADJP (ADJ nær-nær)
+			    (NP *ICH*-1))
+		      (VB ganga-ganga)
+		      (NP-1 (NPR-D Þorgerði-þorgerði)))
 	      (. .-.)))
 
 ( (IP-MAT (PP (P Fyrir-fyrir)

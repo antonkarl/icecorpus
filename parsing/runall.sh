@@ -149,6 +149,11 @@ echo "Fix ADVP and ADV labels that should be PP and P"
 $CS structure_queries/label-pp.q $FILE
 mv -f $FILE.out $FILE
 
+echo ""
+echo "Fix ADVP and PP and ADV and Plabels that should be RP"
+$CS structure_queries/label-rp.q $FILE
+mv -f $FILE.out $FILE
+
 #These last four queries must run at the end of the sequence, and in the same relative order with extend-cp1.q and extend-ip1.q running before the other of the pair
 
 echo ""

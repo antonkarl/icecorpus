@@ -1,7 +1,7 @@
 copy_corpus:t
 
 node: IP*
-query: ({1}ADVP idoms {2}ADV) AND (ADV idoms í-*|á-*|til-*|af-*)
+query: ({1}ADVP idoms {2}ADV) AND (ADV idoms í-*|á-*|til-*|af-*|með-*)
 
 replace_label{1}: PP
 replace_label{2}: P

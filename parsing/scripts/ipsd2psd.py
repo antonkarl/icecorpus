@@ -432,6 +432,9 @@ def final_replacements():
     # For some reason there is still a problem with SVO AÐ here, so fix it
     rep("\(PP \(P svo-svo\) \(CP-THT \(C að-að\)\)\)","(PP (P svo-svo) (CP-ADV (C að-að)))")
 
+    # Fix (VAN Það-þa)
+    currentText = re.sub("\(VAN ([Þþ]að)-þa\)", "(NP-SBJ (PRO-N \\1-það))",currentText)
+
 # Start script
 # Load input file (ipsd)
 f = open(sys.argv[1]+".ipsdx", 'r')

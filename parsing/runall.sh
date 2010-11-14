@@ -155,8 +155,13 @@ $CS structure_queries/label-rp.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""
-echo "Fix ADVP and PP and ADV and Plabels that should be RP"
+echo "Fix ADVP and PP and ADV and P labels that should be RP"
 $CS structure_queries/label-rp2.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Fix PP and P labels that should be RP"
+$CS structure_queries/label-rp3.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""

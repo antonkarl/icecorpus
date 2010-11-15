@@ -1,4 +1,4 @@
-node: IP*SPE*
+node: IP*SPE*|CP*SPE*
 
 define: def/ICE.def
 

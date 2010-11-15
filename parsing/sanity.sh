@@ -39,6 +39,11 @@ $CS sanity_checks/bad-finite-ip.q $tempfile
 mv -f $tempfile.out $tempfile
 
 echo ""
+echo "Add missing SPE"
+$CS sanity_checks/add-spe.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
 echo "Missing SPE"
 $CS sanity_checks/missing-spe.q $tempfile
 mv -f $tempfile.out $tempfile

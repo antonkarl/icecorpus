@@ -241,7 +241,7 @@ def make_tag_word_pars():
 
 def add_ip_mat():
     global currentText
-    currentText = re.sub("\)\n\n\(",")))\n\n((IP-MAT (",currentText)
+    currentText = re.sub("\)[ ]{0,1}\n\n\(",")))\n\n((IP-MAT (",currentText)
     currentText = "((IP-MAT " + currentText.strip() + "))"
 
 def split_determiners():

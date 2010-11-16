@@ -116,6 +116,11 @@ $CS sanity_checks/bad-argument.q $tempfile
 mv -f $tempfile.out $tempfile
 
 echo ""
+echo "Verb appearing at CP level"
+$CS sanity_checks/missing-ip.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
 echo "Bad bare QP"
 $CS sanity_checks/bad-bare-qp.q $tempfile
 mv -f $tempfile.out $tempfile

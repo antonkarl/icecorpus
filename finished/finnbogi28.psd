@@ -360,9 +360,8 @@
 	  (. ?-?)
 	  (" ")))
 
-( (IP-MAT (NP-SBJ *con*)
-	  (VBPI Spyrjast-spyrja)
-	  (NP-OB1 (D-A þessi-þessi) (NS-A tíðindi-tíðindi))
+( (IP-MAT (VBPI Spyrjast-spyrja)
+	  (NP-SBJ (D-N þessi-þessi) (NS-N tíðindi-tíðindi))
 	  (ADVP-TMP (ADV nú-nú))))
 
 ( (IP-MAT (CONJ og-og)

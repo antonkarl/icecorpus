@@ -105,6 +105,11 @@ $CS structure_queries/eigi.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""
+echo "Fix ÞAR TIL ER"
+$CS structure_queries/fix-thar-til.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
 echo "Delete NP that idomsonly CODE"
 $CS structure_queries/fix-np-over-code.q $FILE
 mv -f $FILE.out $FILE

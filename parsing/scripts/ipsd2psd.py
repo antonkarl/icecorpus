@@ -376,7 +376,7 @@ def final_replacements():
 
     # eins og
     rep("\(ADV eins-eins\)","(ADVR eins-eins)")
-    rep("\(CP \(ADVR eins-eins\) \(C og-og\)\)","(ADJP (ADVR eins) (PP (P og)))")
+    rep("\(CP \(ADVR eins-eins\) \(C og-og\)\)","(ADVP (ADVR eins) (PP (P og)))")
 
     # til (þess) að
     #(CP (P til-til) (TO að-að))

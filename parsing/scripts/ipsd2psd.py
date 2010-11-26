@@ -356,7 +356,7 @@ def final_replacements():
     rep("\(SCP \(CT er-er\)\)","(CP-REL (WNP 0) (C er-er))")
 
     # margur and mikill
-    rep("\(ADJ-([NADG]) ([Mm]arg[a-z]+)-margur\)","(Q-\\1 \\2-margur)")
+    rep("\(ADJ-([NADG]) ([Mm][aö]rg[a-z]+)-margur\)","(Q-\\1 \\2-margur)")
     rep("\(ADJR-([NADG]) ([Ff]leir[a-z]+)-margur\)","(QR-\\1 \\2-margur)")
     rep("\(ADJS-([NADG]) ([Ff]lest[a-z]+)-(margur|fles[a-z]+)\)","(QS-\\1 \\2-margur)")
     rep("\(ADJ-([NADG]) ([Mm]iki[a-zð]+)-mikill\)","(Q-\\1 \\2-mikill)")

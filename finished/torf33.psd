@@ -199,7 +199,7 @@
 	      (" ")
 	      (IP-MAT-PRN (VBDI sagði-segja)
 			  (NP-SBJ (NPR-N Staðar<dash/>Sveinn-staðar<dash/>sveinn)
-				  (NP-PRN (ADJ-N gamli-gamall))
+				  (ADJ-N gamli-gamall)
 				  (, ,-,)
 				  (CP-REL (WNP-2 0)
 					  (C sem-sem)
@@ -286,8 +286,7 @@
 	      (, ?-?)
 	      (" ")
 	      (IP-MAT-PRN (VBDI spurði-spyrja)
-			  (NP-SBJ (NPR-N Sveinn-sveinn)
-				  (NP-PRN (ADJ-N gamli-gamall))))
+			  (NP-SBJ (NPR-N Sveinn-sveinn) (ADJ-N gamli-gamall)))
 	      (. .-.)))
 
 ( (IP-MAT-SPE (" ")
@@ -330,8 +329,7 @@
 	      (, ,-,)
 	      (" ")
 	      (IP-MAT-PRN (VBDI sagði-segja)
-			  (NP-SBJ (NPR-N Sveinn-sveinn)
-				  (NP-PRN (ADJ-N gamli-gamall))))
+			  (NP-SBJ (NPR-N Sveinn-sveinn) (ADJ-N gamli-gamall)))
 	      (. ,-,)))
 
 ( (QTP (" ")
@@ -490,8 +488,7 @@
 				(CP-CMP-SPE (WADVP-1 0)
 					    (C 0)
 					    (IP-SUB-SPE (ADVP *T*-1)
-							(NP-SBJ (NPR-N Sveinn-sveinn)
-								(NP-PRN (ADJ-N gamli-gamall)))
+							(NP-SBJ (NPR-N Sveinn-sveinn) (ADJ-N gamli-gamall))
 							(VBDI sagði-segja))))))
 	  (. .-.)))
 

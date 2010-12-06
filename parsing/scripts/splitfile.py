@@ -13,7 +13,7 @@ textId=1
 for line in linelist:
 	output = output + line
 	i+=1
-	if i%25 == 0:
+	if i%15 == 0:
 		extra=""
 		if textId<10:
 			extra="0"

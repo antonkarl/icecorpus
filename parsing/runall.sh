@@ -174,6 +174,16 @@ echo "Fix PP and P labels that should be NP and N"
 $CS structure_queries/label-mot2.q $FILE
 mv -f $FILE.out $FILE
 
+echo ""
+echo "Fix til ad collocation 1"
+$CS structure_queries/tilad.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Fix til ad collocation 2"
+$CS structure_queries/tilad2.q $FILE
+mv -f $FILE.out $FILE
+
 #These last four queries must run at the end of the sequence, and in the same relative order with extend-cp1.q and extend-ip1.q running before the other of the pair
 
 echo ""

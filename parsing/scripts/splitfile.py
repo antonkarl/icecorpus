@@ -1,8 +1,10 @@
 # This Python file uses the following encoding: utf-8
+# usage for file georg.txt and 25 sentences per file: python3 scripts/splitfile.py georg 25 
 
 import sys,re,os
 
 textname=sys.argv[1]
+perfile=int(sys.argv[2])
 
 # Open input file for reading
 f = open(textname+".txt", "r")
@@ -13,7 +15,7 @@ textId=1
 for line in linelist:
 	output = output + line
 	i+=1
-	if i%15 == 0:
+	if i%perfile == 0:
 		extra=""
 		if textId<10:
 			extra="0"

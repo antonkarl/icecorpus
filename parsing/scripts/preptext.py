@@ -11,6 +11,8 @@ currentText = re.sub("\.\n",". ",currentText)
 currentText = re.sub("\n"," ",currentText)
 currentText = re.sub("[ ]+"," ",currentText)
 currentText = re.sub("([\.\?][\"]{0,1}) ([A-ZÞÆÖÓÁÉÚÍ\"\'\(])","\\1\n\\2",currentText)
+currentText = re.sub("\.\nKapituli.",". Kapituli.",currentText)
+
 currentText = currentText.strip()
 
 print(currentText)

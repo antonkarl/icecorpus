@@ -28,7 +28,7 @@ output = re.sub("\(NUM-[A-Z]+ 99xPR_Ex66-99xpr_ex66\)", "(CODE </paren>)", outpu
 
 # Decode COM comments
 #(NUM-PMPA 99xCOM_Insertion_from_manuscript_B_endsx66-99xcom_insertion_from_manuscript_b_endsx66)
-output = re.sub("\(NUM-[A-Z]+ 99xCOM_(["+allchars+"0-9_]+)x66-99xcom_(["+allchars+"0-9_]+)x66\)", "(CODE COM:\\1)", output)
+output = re.sub("\(NUM-[A-Z]+ 99xCOM_(["+allchars+"0-9_]+)x66-99xcom_(["+allchars+"0-9_]+)x66\)", "(CODE {COM:\\1})", output)
 
 #output = re.sub("\(MS:(["+allchars+"0-9]+)\)", "99xMS_\\1x66", output)
 

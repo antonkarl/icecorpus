@@ -184,6 +184,11 @@ echo "Fix til ad collocation 2"
 $CS structure_queries/tilad2.q $FILE
 mv -f $FILE.out $FILE
 
+echo ""
+echo "Fix þá"
+$CS structure_queries/tha.q $FILE
+mv -f $FILE.out $FILE
+
 #These last four queries must run at the end of the sequence, and in the same relative order with extend-cp1.q and extend-ip1.q running before the other of the pair
 
 echo ""

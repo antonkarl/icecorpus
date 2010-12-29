@@ -2954,7 +2954,6 @@
 	      (NP-OB1 (N-A stöng$-stöng) (D-A $ina-hinn))
 	      (. .-.)))
 
-
 ( (IP-MAT-SPE (NP-SBJ (PRO-N Hún-hún))
 	      (VBPI heitir-heita)
 	      (NP-PRD (NPR-N Bulta-bulta))
@@ -3903,7 +3902,6 @@
 		  (NP-SBJ (N-A sigur$-sigurur) (D-A $inn-hinn)))
 	  (. .-.)))
 
-
 ( (IP-MAT (NEG Ekki-ekki)
 	  (MDPI vill-vilja)
 	  (NP-SBJ (N-N jötunn$-jötunn) (D-N $inn-hinn))
@@ -4619,7 +4617,6 @@
 	  (NP-OB1 (NS-A dunur-duna) (Q-A miklar-mikill))
 	  (. .-.)))
 
-
 ( (IP-MAT (NP-SBJ (NS-N Sveinar$-sveinn) (D-N $nir-hinn))
 	  (VBDI hljupu-hlaupa)
 	  (RP út-út)))
@@ -4691,7 +4688,7 @@
 									      (IP-SUB (NP-OB1 *T*-2)
 										      (ADVP-TMP (ADV þá-þá))
 										      (VBPI sér-sjá)
-										      (NP-SBJ-TTT (PRO-A það-það))))))))))))
+										      (NP-SBJ (PRO-N það-það))))))))))))
 	  (. .-.)))
 
 ( (IP-MAT (ADVP-TMP (ADV Nú-nú))
@@ -5370,7 +5367,6 @@
 	      (NP (NS-D borðum-borð)))
 	  (. .-.)))
 
-
 ( (IP-MAT (NP-SBJ (NPR-N Vilhjálmur-vilhjálmur))
 	  (VBDI gekk-ganga)
 	  (ADVP-TMP (ADV þá-þá))
@@ -6026,7 +6022,7 @@
 	      (. .-.)))
 
 ( (IP-MAT-SPE (" ")
-	      (NP-SBJ-TTT *con*)
+	      (NP-SBJ *pro*)
 	      (NP-OB1 (NS-D Öngum-enginn))
 	      (MDPI munu-munu)
 	      (ADVP (ADVR betur-vel))
@@ -6240,7 +6236,6 @@
 				      (VB drepa-drepa)
 				      (NP-OB1 (PRO-A hann-hann)))))
 	  (. .-.)))
-
 
 ( (IP-MAT (NP-SBJ (NPR-N Reginbald-reginbald))
 	  (VBDI mælti-mæla)
@@ -7027,7 +7022,6 @@
 			      (NP (N-A mót-mót)
 				  (NP-COM (NPR-A Reginbald-reginbald))))))
 	  (. .-.)))
-
 
 ( (IP-MAT (ADVP (ADV Þó-þó))
 	  (HVDI hafði-hafa)
@@ -8504,7 +8498,6 @@
 	      (NP (N-A sætt-sætt)))
 	  (VAN tekinn-taka)
 	  (. .-.)))
-
 
 ( (IP-MAT (VBDI Lögðu-leggja)
 	  (ADVP-TMP (ADV nú-nú))
@@ -10045,7 +10038,6 @@
 			  (NP-SBJ (ONE-N einn-einn) (Q-N mikill-mikill) (N-N fíll-fíll))))
 	  (. .-.)))
 
-
 ( (IP-MAT (ADJP (ADVR Svo-svo)
 		(Q-N mikil-mikill)
 		(CP-DEG *ICH*-1))
@@ -10900,7 +10892,6 @@
 	  (PP (P með-með)
 	      (NP (PRO-D henni-hún)))
 	  (. .-.)))
-
 
 ( (IP-MAT (NP-SBJ-1 *exp*)
 	  (QP-2 (Q-N Fátt-fár))
@@ -12113,7 +12104,6 @@
 		  (VB lifa-lifa))
 	  (. .-.)))
 
-
 ( (IP-MAT (NP-SBJ (NPR-N Ermlaug-ermlaug))
 	  (VBDI gekk-ganga)
 	  (PP (P á-á)
@@ -12585,9 +12575,10 @@
 	      (PP (P ef-ef)
 		  (CP-ADV-SPE (C 0)
 			      (IP-SUB-SPE (NP-SBJ (PRO-N þú-þú))
-					  (VBDS mættir-meiga)
+					  (MDDS mættir-mega)
 					  (NP-OB1 (Q-D nokkru-nokkur))
-					  (VB-TTT umráða-umráða))))
+					  (RP um$-um)
+					  (VB $ráða-ráða))))
 	      (MDDS vilda-vilja)
 	      (NP-SBJ (PRO-N ég-ég))
 	      (CP-THT-SPE (C 0)
@@ -12625,7 +12616,7 @@
 				  (NP-OB1 (PRO-D honum-hann))))))))
 
 ( (IP-MAT (CONJ og-og)
-	  (NP-SBJ-TTT *exp*)
+	  (NP-SBJ *exp*)
 	  (VBPI tekur-taka)
 	  (ADVP-TMP (ADV nú-nú))
 	  (ADVP (ADVR heldur-heldur))
@@ -12635,7 +12626,7 @@
 		      (NP (NS-D augum-auga))))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ-TTT *xxx*)
+( (IP-MAT (NP-SBJ *xxx*)
 	  (BEPI Er-vera)
 	  (ADVP-TMP (ADV nú-nú))
 	  (ADVP-TMP (ADVS oftast-oft))
@@ -12933,9 +12924,9 @@
 		(PP (P en-en)
 		    (CP-CMP (WADVP-1 0)
 			    (C 0)
-			    (IP-SUB-TTT (ADVP *T*-1)
-					(NP-SBJ (PRO-N hann-hann))
-					(VBDI varði-vara)))))
+			    (IP-SUB (ADVP *T*-1)
+				    (NP-SBJ (PRO-N hann-hann))
+				    (VBDI varði-vara)))))
 	  (. ,-,)))
 
 ( (IP-MAT (IP-MAT-1 (CONJ og-og)
@@ -12971,7 +12962,7 @@
 
 ( (IP-MAT (VBDI Beiddi-beiða)
 	  (NP-SBJ (PRO-N hann-hann))
-	  (ADVP-TMP-TTT (ADV þá-þá))
+	  (ADVP-TMP (ADV þá-þá))
 	  (NP-OB1 (NS-G griða-grið))
 	  (. .-.)))
 
@@ -13064,12 +13055,12 @@
 								    (N-G móðu-móða)
 								    (CP-REL (WNP-2 0)
 									    (C er-er)
-									    (IP-SUB-TTT (NP-OB1 *T*-2)
-											(NP-SBJ (NPR-N Ermlaug-ermlaug))
-											(HVDI hafði-hafa)
-											(NP-OB2 (PRO-D honum-hann))
-											(RP til-til)
-											(VBN sagt-segja)))))))))))
+									    (IP-SUB (NP-SBJ (NPR-N Ermlaug-ermlaug))
+										    (HVDI hafði-hafa)
+										    (NP-OB2 (PRO-D honum-hann))
+										    (PP (P til-til)
+											(NP *T*-2))
+										    (VBN sagt-segja)))))))))))
 	  (. .-.)))
 
 ( (IP-MAT (VBDI Sýndist-sýnast)
@@ -13253,7 +13244,7 @@
 				(NP-PRD (NUM-N tírætt-tíræður))
 				(PP (ADVP (ADV neðan-neðan))
 				    (P undir-undir))
-				(NP-SBJ-TTT (N-N limar-limi)))))))
+				(NP-SBJ-XXX (N-N limar-lim)))))))
 
 ( (IP-MAT (CONJ en-en)
 	  (NP-SBJ (PRO-N þær-hún))
@@ -13270,9 +13261,9 @@
 	  (CP-THT-PRN-2 (C að-að)
 			(IP-SUB (NP-SBJ (PRO-N hann-hann))
 				(VBPI höggur-höggva)
-				(NP-OB1-TTT (N-A tré$-tré)
-					    (D-A $ið-hinn)
-					    (NP-PRN *ICH*-3))
+				(NP-OB1 (N-A tré$-tré)
+					(D-A $ið-hinn)
+					(NP-PRN *ICH*-3))
 				(PP (ADV niðri-niðri)
 				    (P við-við)
 				    (NP (N-A rót$-rót) (D-A $ina-hinn)))
@@ -13294,7 +13285,7 @@
 	  (NP-SBJ (PRO-N það-það))
 	  (NP-PRD (QP (ADVR svo-svo)
 		      (Q-N mikið-mikill)
-		      (CP-DEG-TTT *ICH*-1))
+		      (CP-DEG *ICH*-1))
 		  (N-N erfiði-erfiði)
 		  (CP-DEG-1 (C að-að)
 			    (IP-SUB (NP-SBJ (PRO-N hann-hann))
@@ -13319,7 +13310,7 @@
 	  (ADVP-TMP (ADV þá-þá))
 	  (VBDI létti-létta)
 	  (NP-SBJ (PRO-N hann-hann))
-	  (NP-OB1-TTT (NS-G höggva-högg))))
+	  (NP-OB1 (NS-G höggva-högg))))
 
 ( (IP-MAT (CONJ en-en)
 	  (NP-SBJ (NS-N tágir-tág)
@@ -13346,13 +13337,13 @@
 	  (VBDI hallaðist-hallast)
 	  (NP-SBJ (PRO-N hún-hún))
 	  (PP (P að-að)
-	      (NP (NS-D björgu$-björga) (D-D $num-hinn)))
-	  (NP-ADV-TTT (N-D hinumegin-hinumegin))))
+	      (NP (NS-D björgu$-bjarg) (D-D $num-hinn)))
+	  (NP-ADV (N-D hinumegin-hinumegin))))
 
 ( (IP-MAT (CONJ og-og)
 	  (RDDI varð-verða)
 	  (ADVP-TMP (ADV þá-þá))
-	  (NP-SBJ-TTT (N-N dykkkkur-dykkkkur) (Q-N mikill-mikill))))
+	  (NP-SBJ (N-N dykur-dykur) (Q-N mikill-mikill))))
 
 ( (IP-MAT (CONJ en-en)
 	  (NP-SBJ (QP (ADVR svo-svo)
@@ -13374,14 +13365,14 @@
 						(ADVP-DIR (ADV ofan-ofan)))))))
 	  (. .-.)))
 
-( (IP-MAT-TTT (NP-SBJ *pro*)
-	      (VBDI Dvaldist-dveljast)
-	      (ADVP-LOC (ADV þar-þar))
-	      (ADVP-TMP (ADV enn-enn))
-	      (PP (P um-um)
-		  (NP (N-A nótt$-nótt) (D-A $ina-hinn)))
-	      (PP (P í-í)
-		  (NP (D-D þessum-þessi) (N-D stað-staður)))))
+( (IP-MAT (NP-SBJ *pro*)
+	  (VBDI Dvaldist-dveljast)
+	  (ADVP-LOC (ADV þar-þar))
+	  (ADVP-TMP (ADV enn-enn))
+	  (PP (P um-um)
+	      (NP (N-A nótt$-nótt) (D-A $ina-hinn)))
+	  (PP (P í-í)
+	      (NP (D-D þessum-þessi) (N-D stað-staður)))))
 
 ( (IP-MAT (CONJ en-en)
 	  (PP (P að-að)
@@ -13411,7 +13402,6 @@
 			     (IP-MAT-SPE=1 (VB bíða-bíða)
 					   (NP-OB1 (PRO-G mín-ég)))))
 	  (. .-.)))
-
 
 ( (IP-MAT-SPE (ADVP-LOC (ADV Hér-hér))
 	      (MDPI skulu-skulu)
@@ -14925,7 +14915,7 @@
 	      (ADVP (CP-CMP-SPE-XXX (WADVP-2 0)
 				    (C sem-sem)
 				    (IP-SUB-SPE (ADVP *T*-2)
-						(NP-SBJ-TTT (N-N stjáki-stjáka) (VAN bundinn-binda)))))
+						(NP-SBJ (N-N stjáki-stjáki) (VAN bundinn-binda)))))
 	      (PP (P uns-uns)
 		  (CP-ADV-SPE (C að-að)
 			      (IP-SUB-SPE (NP-SBJ (PRO-N ég-ég))
@@ -15064,7 +15054,6 @@
 	      (NP-SBJ (ADJ-N heimskar-heimskur) (NS-N tröllkonur-tröllkona))
 	      (. .-.)
 	      (" ")))
-
 
 ( (IP-MAT (PP (P Við-við)
 	      (NP (D-A þessi-þessi) (NS-A orð-orð)))
@@ -15754,7 +15743,6 @@
 	  (VBDI dó-deyja)
 	  (ADVP-TMP (ADV síðan-síðan))
 	  (. .-.)))
-
 
 ( (IP-MAT (VBDI Bjuggu-búa)
 	  (NP-SBJ (PRO-N þeir-hann))
@@ -16795,7 +16783,6 @@
 	  (VBN komnir-koma)
 	  (. .-.)))
 
-
 ( (IP-MAT (VBDI Sátu-sáta)
 	  (NP-SBJ (PRO-N þeir-hann))
 	  (ADVP-TMP (ADV nú-nú))
@@ -17022,11 +17009,12 @@
 	  (IP-INF (ADVP (ADV þó-þó))
 		  (ADVP (ADV svo-svo))
 		  (NP-OB2-XXX (N-A hug-hugur))
-		  (RP-TTT um-um)
-		  (VB segja-segja)
+		  (RP um$-um)
+		  (VB $segja-segja)
 		  (CP-THT (C að-að)
 			  (IP-SUB (NEG eigi-ekki)
 				  (MDDS mundi-munu)
+				  (BE *)
 				  (ADVP-TMP (ADV enn-enn))
 				  (ADVP (ADV úti-úti))
 				  (NP-SBJ (Q-N allar-allur)
@@ -17493,7 +17481,7 @@
 					(C 0)
 					(IP-SUB-SPE (ADVP-TMP *T*-1)
 						    (NP-SBJ (PRO-N ég-ég))
-						    (VBPS-TTT færa-færa)
+						    (VBPS færa-færa)
 						    (NP-OB2 (PRO-D þeim-það))
 						    (ADVP (ADV sjálfkrafa-sjálfkrafa))
 						    (NP-OB1 (NP-POS (PRO-A mína-minn))
@@ -17704,7 +17692,6 @@
 	  (PP (P í-í)
 	      (NP (N-D borg$-borg) (D-D $inni-hinn)))
 	  (. .-.)))
-
 
 ( (IP-MAT (NP-TMP (D-A Þenna-þessi) (N-A morgun-morgunn) (ADV snemma-snemma))
 	  (VBDI þeysti-þeysa)
@@ -19348,7 +19335,6 @@
 		      (NP (N-G hnakka-hnakki))))
 	  (. .-.)))
 
-
 ( (IP-MAT (VBPI Síga-síga)
 	  (ADVP-TMP (ADV nú-nú))
 	  (ADVP (ADV saman-saman))
@@ -20480,7 +20466,6 @@
 	  (PP (P til-til)
 	      (NP (NPR-G Níníve-níníve)))
 	  (. .-.)))
-
 
 ( (IP-MAT (CONJ Og-og)
 	  (PP-LFD (P með-með)
@@ -22116,7 +22101,6 @@
 				  (VBDI hét-heita))))
 	  (. .-.)))
 
-
 ( (IP-MAT (NEG Ei-ekki)
 	  (VBPI finnst-finna)
 	  (NP-SBJ (ADJP (NP-CMP (PRO-D honum-hann))
@@ -22547,7 +22531,6 @@
 		      (NP (N-D liði-lið)
 			  (NP-POS (PRO-G þeirra-hann)))))
 	  (. .-.)))
-
 
 ( (IP-MAT (NEG Ei-ei)
 	  (VBDI vissu-vita)
@@ -24469,7 +24452,6 @@
 				    (NP-POS (NS-G risa$-risi) (D-G $nna-hinn)))))
 	  (. .-.)))
 
-
 ( (IP-MAT (VBPI Ríða-ríða)
 	  (NP-SBJ (NS-N menn-maður))
 	  (ADVP-TMP (ADV nú-nú))
@@ -25617,7 +25599,6 @@
 				  (NP (N-A hnakka$-hnakki) (D-A $nn-hinn))))))
 	  (. .-.)))
 
-
 ( (IP-MAT (NP-SBJ (NPR-N Gnepja-gnepja))
 	  (VBDI hjó-höggva)
 	  (ADVP-TMP (ADV þá-þá))
@@ -26256,7 +26237,6 @@
 	      (NP (NP-POS (PRO-D sínum-sinn))
 		  (NS-D hestum-hestur)))
 	  (. .-.)))
-
 
 ( (IP-MAT (NP-SBJ *con*)
 	  (VBPI Taka-taka)

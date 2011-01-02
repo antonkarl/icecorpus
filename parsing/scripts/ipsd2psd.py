@@ -316,7 +316,7 @@ def final_replacements():
     # NEGATION
     currentText = re.sub("\(ADVP \(ADV ([Ee]kki|[Ee]igi|[Ee]i)-(ekki|eigi|ei)\)\)","(NEG \\1-\\2)",currentText)
     # CONJUNCTIONS
-    currentText = re.sub("\(CP \(C ([Oo]g|[Ee]n|[Ee]ða|[Ee]ður|[Ee]llegar|[Hh]eldur|[Ee]nda)-([Oo]g|[Ee]n|[Ee]ða|[Ee]llegar|[Hh]eldur|[Ee]nda)\)\)","(CONJ \\1-\\2)",currentText)
+    currentText = re.sub("\(CP \(C ([Oo]g|[Ee]n|[Ee]ða|[Ee]ður|[Ee]llegar|[Hh]eldur|[Ee]nda)-([Oo]g|[Ee]n|[Ee]ða|[Ee]ður|[Ee]llegar|[Hh]eldur|[Ee]nda)\)\)","(CONJ \\1-\\2)",currentText)
     rep("\(SCP \(C bæði\-bæði\)\)","(CONJ bæði-bæði)")
     rep("\(CP \(C né-né\)\)","(CONJ né-né)")
     # Quantifiers

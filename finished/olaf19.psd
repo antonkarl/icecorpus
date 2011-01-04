@@ -1,4 +1,3 @@
-
 ( (IP-MAT (CONJ Og-og)
 	  (PP (P í-í)
 	      (NP (D-D þeim-sá) (N-D stað-staður)))
@@ -41,6 +40,7 @@
 	  (. .-.)))
 
 ( (IP-MAT (CP-QUE (WQ Hvort-hvort)
+		  (C 0)
 		  (IP-SUB (NP-SBJ (PRO-N það-það))
 			  (BEDI var-vera)
 			  (NP-PRD-TTT (N-N nunnuklaustur-nunnuklaustur) (CONJ eða-eða) (N-N múkaklaustur-múkaklaustur))))
@@ -129,7 +129,7 @@
 	  (PP (P í-í)
 	      (NP (Q-D hverri-hver) (N-D röð$-röð) (D-D $inni-hinn)))
 	  (VBDI gekk-ganga)
-	  (NP-SBJ (PRO-N hver-hver))
+	  (NP-SBJ (Q-N hver-hver))
 	  (PP (RP út-út)
 	      (P af-af)
 	      (NP (OTHER-D annarri-annar)))
@@ -206,10 +206,10 @@
 		  (CP-THT-PRN (C 0)
 			      (IP-SUB (IP-SUB (NP-SBJ (PRO-N hann-hann))
 					      (BEDI var-vera)
-					      (NP (NP-POS (PRO-G þeirra-það)
-							  (QP *ICH*-1))
-						  (N-N vinur-vinur)
-						  (QP-1 (Q-G allra-allur))))
+					      (NP-PRD (NP-POS (PRO-G þeirra-það)
+							      (QP *ICH*-1))
+						      (N-N vinur-vinur)
+						      (QP-1 (Q-G allra-allur))))
 				      (CONJP (CONJ og-og)
 					     (IP-SUB (NP-SBJ *con*)
 						     (HVDI hafði-hafa)
@@ -253,7 +253,7 @@
 
 ( (IP-MAT (NP-SBJ (D-N það-það) (ADJ-N þriðja-þriðji))
 	  (HVDI hafði-hafa)
-	  (NP-SBJ (NUM-A xii-tólf) (NS-A gotlinga-gotlingur))
+	  (NP-OB1 (NUM-A xii-tólf) (NS-A gotlinga-gotlingur))
 	  (. .-.)))
 
 ( (IP-MAT (IP-MAT-1 (CONJ Og-og)
@@ -510,7 +510,7 @@
 			      (VB miskunna-miskunna))))
 	  (. .-.)))
 
-( (IP-MAT (VBPI Er-vera)
+( (IP-MAT (BEPI Er-vera)
 	  (NP-SBJ (NP (N-N morð-morð) (CONJ og-og) (N-N eldur-eldur))
 		  (CONJP *ICH*-1))
 	  (VAN tíðkaður-tíðka)

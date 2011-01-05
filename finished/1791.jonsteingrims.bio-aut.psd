@@ -1,3 +1,4 @@
+
 ( (CODE (CODE <heading>) (N-N KAP.-kapítuli) (NUM-N XXI.-xxi.) (CODE </heading>))
   (ID 1791.JONSTEINGRIMS.BIO-AUT,.1))
 
@@ -7816,7 +7817,7 @@
   (ID 1791.JONSTEINGRIMS.BIO-AUT,117.413))
 
 ( (IP-MAT (CONJ og-og)
-	  (NP-SBJ-XXX *pro*)
+	  (NP-SBJ *pro*)
 	  (VBDI sagði-segja)
 	  (CP-THT (C 0)
 		  (IP-SUB (IP-SUB (NP-SBJ (D-N þessir-þessi) (NS-N fuglar-fugl))
@@ -7875,7 +7876,7 @@
 	  (. ,-,))
   (ID 1791.JONSTEINGRIMS.BIO-AUT,117.418))
 
-( (IP-MAT (NP-SBJ-XXX *pro*)
+( (IP-MAT (NP-SBJ *pro*)
 	  (VBDI átum-éta)
 	  (PP (P með-með)
 	      (NP (N-D flýtir-flýtir)))
@@ -7926,7 +7927,7 @@
 	  (. ,-,))
   (ID 1791.JONSTEINGRIMS.BIO-AUT,117.422))
 
-( (IP-MAT (NP-SBJ-XXX *pro*)
+( (IP-MAT (NP-SBJ *pro*)
 	  (VBDI skildi-skilja)
 	  (ADVP-LOC (ADV þar-þar))
 	  (PP (P við-við)
@@ -8434,7 +8435,7 @@
 		  (, ,-,)
 		  (CP-REL (WNP-1 0)
 			  (C er-er)
-			  (IP-SUB (NP-SBJ-XXX *pro*)
+			  (IP-SUB (NP-SBJ *pro*)
 				  (PP (P yfir-yfir)
 				      (NP *T*-1))
 				  (HVDI höfðum-hafa)
@@ -12175,9 +12176,10 @@
 ( (IP-MAT (NP-SBJ-XXX *pro*)
 	  (VBDI ráðlagði-ráðleggja)
 	  (NP-OB2 (PRO-D mér-ég))
-	  (IP-INF (TO að-að) (VB heimta-heimta))
-	  (NP-OB1 (PRO-A þá-hann))
-	  (ADVP-TMP-XXX (D-A hið-hinn) (ADVR bráðasta-brátt)))
+	  (IP-INF (TO að-að)
+		  (VB heimta-heimta)
+		  (NP-OB1 (PRO-A þá-hann))
+		  (ADVP-TMP-XXX (D-A hið-hinn) (ADVR bráðasta-brátt))))
   (ID 1791.JONSTEINGRIMS.BIO-AUT,126.715))
 
 ( (IP-MAT (CONJ og-og)

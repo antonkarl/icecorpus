@@ -1,3 +1,4 @@
+
 ( (QTP (ADVP-TMP (ADV Nú-nú))
        (VB fara-fara)
        (ADVP-TMP (ADVS fyrst-fyrst))
@@ -9,9 +10,9 @@
 			 (IP-SUB-SPE (ADVP *T*-1)
 				     (NP-SBJ (PRO-D mér-ég))
 				     (VBPI þykir-þykja)
-				     (PP (NP (NS-G skulda-skuld))
-					 (P til-til))
-				     (VB bera-bera))))
+				     (IP-INF (PP (NP (NS-G skulda-skuld))
+						 (P til-til))
+					     (VB bera-bera)))))
        (. .-.))
   (ID 12XX.THETUBROT.NAR-SAG,.1))
 
@@ -3519,7 +3520,7 @@
 	      (NP-VOC (NPR-N Önundur-önundur))
 	      (CP-THT-SPE (C að-að)
 			  (IP-SUB-SPE (NP-SBJ (PRO-N þú-þú))
-				      (VBDS myndir-munu)
+				      (MDDS myndir-munu)
 				      (NP-OB1 (PRO-A það-það)
 					      (CP-THT-SPE-PRN *ICH*-1))
 				      (VB vita-vita)

@@ -305,4 +305,9 @@ echo "Missing index2"
 $CS sanity_checks/missing-index-4.q $tempfile
 mv -f $tempfile.out $tempfile
 
+echo ""
+echo "Bad VB*"
+$CS sanity_checks/bad-vb.q $tempfile
+mv -f $tempfile.out $tempfile
+
 mv -f $tempfile $1.sanity.psd

@@ -295,10 +295,10 @@ echo "New Passive"
 $CS sanity_checks/new-passive.q $tempfile
 mv -f $tempfile.out $tempfile
 
-echo ""
-echo "Bad NP-OB1-1"
-$CS sanity_checks/bad-ob1-1.q $tempfile
-mv -f $tempfile.out $tempfile
+#echo ""
+#echo "Bad NP-OB1-1"
+#$CS sanity_checks/bad-ob1-1.q $tempfile
+#mv -f $tempfile.out $tempfile
 
 echo ""
 echo "Missing index2"

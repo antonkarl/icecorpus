@@ -1,3 +1,4 @@
+
 ( (IP-MAT (CODE <P_3>)
 	  (NP-SBJ (N-N Saga-saga) (D-N þessi-þessi))
 	  (VBPI hefst-hefja)
@@ -1807,7 +1808,8 @@
 ( (IP-MAT (NP-SBJ (PRO-N Hann-hann))
 	  (VBDI heyrði-heyra)
 	  (ADVP-TMP (ADV þá-þá))
-	  (VBN kveðið-kveða)
+	  (IP-SMC (NP-SBJ *exp*)
+		  (VBN kveðið-kveða))
 	  (PP (P svo-svo)
 	      (CP-ADV (C 0)
 		      (IP-SUB (NP-SBJ *exp*)
@@ -2814,7 +2816,7 @@
 									    (C að-að)
 									    (IP-SUB-SPE (NP-OB1 *T*-2)
 											(NEG eigi-ekki)
-											(VBDI gat-geta)
+											(MDDI gat-geta)
 											(NP-SBJ (NUM-N c-100)
 												(NP-POS (NS-G manna-maður)))
 											(PP (P í-í)
@@ -3258,7 +3260,7 @@
   (ID 1450.VILHJALMUR.NAR-SAG,17.253))
 
 ( (CP-QUE-SPE (" ")
-	      (IP-SUB-SPE (VBPI Vil$-vilja)
+	      (IP-SUB-SPE (MDPI Vil$-vilja)
 			  (NP-SBJ $tu-þú)
 			  (NEG ekki-ekki)
 			  (VB tefla-tefla)
@@ -3415,7 +3417,7 @@
 
 ( (IP-MAT-SPE (" ")
 	      (NP-OB1 (PRO-A Það-það))
-	      (VBDS vilda-vilja)
+	      (MDDS vilda-vilja)
 	      (NP-SBJ (PRO-N ég-ég))
 	      (ADVP (ADV þó-þó))
 	      (ADVP (ADVS síst-síður))

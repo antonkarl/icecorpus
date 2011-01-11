@@ -1,3 +1,4 @@
+
 ( (IP-MAT (CODE {COM:chapter1})
 	  (CODE <P_625>)
 	  (NP-PRD (NPR-N Ásbjörn-ásbjörn))
@@ -20723,10 +20724,11 @@
 	  (. .-.))
   (ID 13XX.FINNBOGI.NAR-SAG,655.1670))
 
-( (IP-MAT (NP-SBJ (N-N Maður-maður))
+( (IP-MAT (NP-SBJ-1 (N-N Maður-maður))
 	  (BEPI er-vera)
 	  (VAN nefndur-nefna)
-	  (NP-PRD (NPR-N Þórarinn-þórarinn))
+	  (IP-SMC (NP-SBJ *-1)
+		  (NP-PRD (NPR-N Þórarinn-þórarinn)))
 	  (. .-.))
   (ID 13XX.FINNBOGI.NAR-SAG,655.1671))
 

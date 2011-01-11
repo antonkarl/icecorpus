@@ -310,4 +310,9 @@ echo "Bad VB*"
 $CS sanity_checks/bad-vb.q $tempfile
 mv -f $tempfile.out $tempfile
 
+echo ""
+echo "BAD NP-TMP CASE"
+$CS sanity_checks/bad-np-tmp.q $tempfile
+mv -f $tempfile.out $tempfile
+
 mv -f $tempfile $1.sanity.psd

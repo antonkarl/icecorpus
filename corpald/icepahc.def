@@ -4,13 +4,17 @@
 //This still excludes imperative forms.
 
 finite_aux: *MD*|*HVP*|*HVD*|*BEP*|*BED*|*AXD*|*AXP*|*DOD*|*DOP*|*RDP*|*RDD*
+finite_aux_ice: *MDD*|MDP*|*HVP*|*HVD*|*BEP*|*BED*|*AXD*|*AXP*|*DOD*|*DOP*|RDP*|RDD*
 nonfin_aux: *HV|H*N*|*DO|D*N*|*BE|B*N*|*AX|AXN*|*RD|R*N*
+nonfin_aux_ice: *HV|H*N*|*DO|D*N*|*BE|B*N*|*AX|AXN*|RD|R*N*|MD
 nonfin_mainverb: *VB|V*N*
 rpnonfin: RP+*VB|RP+V*N*|RP+*HV|RP+H*N*|RP+*DO|RP+D*N*|RP+*BE|RP+B*N*|RP+*AX|RP+AXN*
 finite_mainverb: *VBP*|*VBD*
 heavy_const: *PP*|*ADJP*|CP*
 nonfin_verb:  *VB|V*N*|*HV|H*N*|*DO|D*N*|*BE|B*N*|*AX|AXN*|*RD|R*N*
+nonfin_verb_ice:  *VB|V*N*|*HV|H*N*|*DO|D*N*|*BE|B*N*|*AX|AXN*|RD|R*N*|MD
 finite_verb:  *MD*|*HVP*|*HVD*|*DOP*|*DOD*|*BEP*|*BED*|*VBP|*VBD*|*AXD*|*AXP*|*RDP*|*RDD*
+finite_verb_ice:  *MDD*|MDP*|*HVP*|*HVD*|*DOP*|*DOD*|*BEP*|*BED*|*VBP|*VBD*|*AXD*|*AXP*|RDP*|RDD*
 any_nominal: N|N$|NS|NS$|NR|NR$|NRS|NRS$|NPR|NPR$|NPRS|NPRS$|NUM*|NEG*|Q*|ADJ*|*OTHER*|D|WD|V*|H*|B*
 pos_np: !Q*|NEG*|NUM*|PRO*|\**
 yid_finite_verb: *0

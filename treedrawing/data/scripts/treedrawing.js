@@ -5,11 +5,24 @@ var undostack=new Array();
 var redostack=new Array();
 var commands=new Object();
 
+
+var name = "#floatMenu";  
+var menuYloc = null;  
+
 $(document).ready(function() {
 	resetIds();
 	assignEvents(); 
 	$("#debugpane").empty();
-	$("#debugpane").append( toLabeledBrackets($("#editpane")) );
+	// $("#debugpane").append( wnodeString($("#editpane")) );
+
+    // make menu float
+    menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")))  
+    $(window).scroll(function () {  
+        var offset = menuYloc+$(document).scrollTop()+"px";  
+        $(name).animate({top:offset},{duration:500,queue:false});  
+    });  
+    // floatmenu ready
+
 });
 
 
@@ -51,6 +64,14 @@ function undo(){
 		clearSelection();
 		$(".snode").mousedown(handleNodeClick);
 	}
+}
+
+function save(){
+	// alert("saving");
+
+	var tosave = toLabeledBrackets($("#editpane"));
+	$.post("/doSave", {trees: tosave});
+	
 }
 
 function assignEvents(){
@@ -96,6 +117,8 @@ function assignEvents(){
 
 	}	
 	$(".snode").mousedown(handleNodeClick);
+	$("#butsave").mousedown(save);
+
 /*
 	$(".snode>.snode").mouseover(
 	    function(e) {
@@ -198,11 +221,20 @@ function isPossibleTarget(node){
 		return false;
 	}
 
+	if(node == "s01"){
+		return false;
+	}
+
 	return true;
 }
 
+function currentText(){
+	return wnodeString($("#editpane"));
+}
 
 function moveNode(targetParent){
+	textbefore = currentText();
+
 	if( ! isPossibleTarget(targetParent) ){
 		// can't move under a tag node		
 	}
@@ -220,23 +252,30 @@ function moveNode(targetParent){
 		if( startnode.id == firstchildId ){
 			stackTree();
 			$("#"+startnode.id).insertBefore( $("#"+targetParent).children().filter( $("#"+startnode.id).parents() ) );		
+			if( currentText() != textbefore ){undo();redostack.pop();}
 		}
 		else if( startnode.id == lastchildId ){
 			stackTree();
  			$("#"+startnode.id).insertAfter( $("#"+targetParent).children().filter( $("#"+startnode.id).parents() ) );		
+			if( currentText() != textbefore ){undo();redostack.pop();}
 		}
 		else {
 			// alert("cannot move from this position");
 		}
 	} // otherwise move under my sister
-	else {
+	else {		
+//		if( parseInt( startnode.id.substr(2) ) >  parseInt( targetParent.substr(2) ) ){
 		if( parseInt( startnode.id.substr(2) ) > parseInt( targetParent.substr(2) ) ){
-			stackTree();
-			$("#"+startnode.id).appendTo("#"+targetParent);	
+			//if( $("#"+startnode.id).siblings().is("#"+startnode.id+"~.snode") ){
+				stackTree();
+				$("#"+startnode.id).appendTo("#"+targetParent);	
+				if( currentText() != textbefore ){undo();redostack.pop();}
+			//}
 		}
-		else {
+		else if( parseInt( startnode.id.substr(2) ) <  parseInt( targetParent.substr(2) ) ) {
 			stackTree();
 			$("#"+startnode.id).insertBefore( $("#"+targetParent).children().first() );	
+			if( currentText() != textbefore ){undo();redostack.pop();}
 		}
 	}
 	clearSelection();
@@ -269,7 +308,7 @@ function makeNode(label){
 	if( !endnode ){
 		// if only one node, wrap around that one
 		stackTree();
-		$("#"+startnode.id).wrapAll('<div class="snode">'+label+'</div>');
+		$("#"+startnode.id).wrapAll('<div class="snode">'+label+' </div>');
 	}
 	else {
 		if( parseInt(startnode.id.substr(2)) > parseInt(endnode.id.substr(2)) ){
@@ -334,9 +373,23 @@ function resetIds(){
 	// assignEvents();
 }
 
+function wnodeString( node ){
+	thenode = node.clone();
+	wnodes = thenode.find(".wnode");
+	text="";
+	for( i=0; i<wnodes.length; i++){
+		text = text + wnodes[i].innerHTML + " ";
+	}
+	return text;
+}
+
 function toLabeledBrackets( node ){		
 	// return recurseNode(node,"");
 	out=node.clone();		
+	out.find("#sn0>.snode").after("\n\n");
+	out.find("#sn0>.snode").before("( ");
+	out.find("#sn0>.snode").after(")");
+
 	out.find(".snode").before("(");
 	out.find(".snode").after(")");
 	out.find(".wnode").before(" ");

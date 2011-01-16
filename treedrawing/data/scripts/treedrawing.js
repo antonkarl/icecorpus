@@ -23,8 +23,31 @@ $(document).ready(function() {
     });  
     // floatmenu ready
 
+   // setup context menu
+				// Show menu when #myDiv is clicked
+				/* $(".wnode").contextMenu({
+					menu: 'myMenu'
+				},
+					function(action, el, pos) {
+					alert(
+						'Action: ' + action + '\n\n' +
+						'Element ID: ' + $(el).attr('id') + '\n\n' + 
+						'X: ' + pos.x + '  Y: ' + pos.y + ' (relative to element)\n\n' + 
+						'X: ' + pos.docX + '  Y: ' + pos.docY+ ' (relative to document)'
+						);
+				}); */
+
+
+
 });
 
+function connectContextMenu(){
+	// XXX 
+}
+
+function disableContextMenu(){
+	// XXX
+}
 
 function addCommand( keycode, type, label ){
 	commands[keycode]=new function(){
@@ -75,7 +98,9 @@ function save(){
 }
 
 function assignEvents(){
-	addCommand(69,"makenode","IP-INF"); //e
+	addCommand(65,"leafafter"); //e
+	addCommand(66,"leafbefore"); //e
+
 	addCommand(88,"makenode","XP"); // x
 	addCommand(67,"makenode","CP-CMP"); // c
 	addCommand(82,"makenode","CP-REL"); // r
@@ -87,8 +112,40 @@ function assignEvents(){
 	addCommand(87,"redo"); // w
 	addCommand(68,"prunenode"); // d
 	addCommand(90,"clearselection"); // z
+	addCommand(76,"rename"); // x
+	addCommand(78, "makenode","XP"); // n
+        //78 n
 
-	document.body.onkeydown = function(e){	
+	document.body.onkeydown = handleKeyDown;	
+	$(".snode").mousedown(handleNodeClick);
+	$("#butsave").mousedown(save);
+	$("#butundo").mousedown(undo);
+	$("#butredo").mousedown(redo);
+
+/*
+	$(".snode>.snode").mouseover(
+	    function(e) {
+		    e.stopPropagation();
+		    updateMouseNode(this);
+		}
+	);
+*/
+}
+
+/*
+function updateMouseNode(node){	
+	if( mousenode ){
+		$(mousenode).css('color','black');
+	}
+	mousenode=node;
+	$(mousenode).css('color','red');
+	$(mousenode).children().css('color','black');
+}
+*/
+
+function handleKeyDown(e){	
+
+		// alert(e.keyCode);
 
 		if( commands[e.keyCode] !=null ){
 			type = commands[e.keyCode]["type"];
@@ -113,32 +170,21 @@ function assignEvents(){
 			else if (type=="clearselection"){
 				clearSelection();
 			}
+			else if (type=="rename"){
+				//e.stopPropagation();
+				displayRename();
+				e.preventDefault();
+				// e.stopPropagation();
+			}
+			else if (type=="leafbefore"){
+				leafBefore();
+			}
+			else if (type=="leafafter"){
+				leafAfter();
+			}
 		}
 
-	}	
-	$(".snode").mousedown(handleNodeClick);
-	$("#butsave").mousedown(save);
-
-/*
-	$(".snode>.snode").mouseover(
-	    function(e) {
-		    e.stopPropagation();
-		    updateMouseNode(this);
-		}
-	);
-*/
-}
-
-/*
-function updateMouseNode(node){	
-	if( mousenode ){
-		$(mousenode).css('color','black');
 	}
-	mousenode=node;
-	$(mousenode).css('color','red');
-	$(mousenode).children().css('color','black');
-}
-*/
 
 function handleNodeClick(e){
 	  		e = e || window.event;
@@ -220,11 +266,11 @@ function isPossibleTarget(node){
 	if( $("#"+node).children().first().is("span") ){
 		return false;
 	}
-
+/*
 	if(node == "s01"){
 		return false;
 	}
-
+*/
 	return true;
 }
 
@@ -281,6 +327,102 @@ function moveNode(targetParent){
 	clearSelection();
 }
 
+function trim( s ){
+	return s.replace(/^\s*/, "").replace(/\s*$/, "");
+}
+
+function leafBefore(){
+	makeLeaf(true);
+}
+
+function leafAfter(){
+	makeLeaf(false);
+}
+
+
+function makeLeaf(before){
+	if( startnode && !endnode ){
+		document.body.onkeydown = null;	
+		editor=$("<div id='leafeditor' class='snode'><input id='leafphrasebox' class='labeledit' type='text' value='WADVP' /> <input id='leaftextbox' class='labeledit' type='text' value='0' /></div>")
+
+		if( before ){
+			editor.insertBefore(startnode);
+		}
+		else {
+			editor.insertAfter(startnode);
+		}
+
+		$("#leafphrasebox,#leaftextbox").keydown(function(event) {
+			if(event.keyCode == '13'){			   
+			   newphrase = $("#leafphrasebox").val().toUpperCase()+" ";
+			   newtext = $("#leaftextbox").val();
+
+			   stackTree();
+  			   $("#leafeditor").replaceWith( "<div class='snode'>"+ newphrase+" <span class='wnode'>"+newtext+"</span></div>" );
+
+			   startnode=null; endnode=null;
+			   resetIds();
+			   updateSelection();
+			   document.body.onkeydown = handleKeyDown;	
+			}
+
+		});
+
+		
+		setTimeout(function(){ $("#leafphrasebox").focus(); }, 10);
+
+		// $("#leafphrasebox").val("xxx");
+		//startnode=null; endnode=null;
+		//resetIds();
+		//updateSelection();
+		//document.body.onkeydown = handleKeyDown;
+
+	}
+
+//		alert( oldtext );
+//		clearSelection();		
+//		$("#renamebox").blur();
+//  		e = e || window.event;
+//		e.stopPropagate();
+}
+
+function displayRename(){
+	if( startnode && !endnode ){
+		document.body.onkeydown = null;	
+		oldtext = $("#"+startnode.id).contents().filter(function() {
+  			return this.nodeType == 3;
+		}).first().text();
+		stackTree();
+		$("#"+startnode.id).contents().filter(function() {
+  			return this.nodeType == 3;
+		}).first().replaceWith("<input id='renamebox' class='labeledit' type='text' />");	
+		$("#renamebox").keydown(function(event) {
+			if(event.keyCode == '13'){			   
+			   newtext = $("#renamebox").val().toUpperCase()+" ";
+  			   $("#renamebox").replaceWith( newtext );
+			   if( newtext == oldtext ){ undo(); redostack.pop(); }
+				startnode=null;
+				//endnode=null;
+				//resetIds();
+				updateSelection();
+			   	document.body.onkeydown = handleKeyDown;	
+			}
+		});
+//		alert( oldtext );
+//		clearSelection();		
+//		$("#renamebox").blur();
+//  		e = e || window.event;
+//		e.stopPropagate();
+
+
+		// setTimeout(function(){ $("#renamebox").focus(); }, 10);
+//		$("#renamebox").focus();
+		$("#renamebox").val( trim(oldtext) );		
+		$("#renamebox").select(); 
+
+	}
+}
+
 function setLabel(label){
 	if( !isPossibleTarget(startnode.id) ){
 		return;	
@@ -318,9 +460,15 @@ function makeNode(label){
 			endnode = temp;
 		} 
 
-		// otherwise, collect startnode and its sister up until endnode
-		stackTree();
-		$("#"+startnode.id).add($("#"+startnode.id).nextUntil("#"+endnode.id)).add("#"+endnode.id).wrapAll('<div class="snode">'+label+'</div>');	
+		// check if they are really sisters
+		//if( $("#".startnode.id+"~.snode").is("#"+endnode.id) ){
+			// otherwise, collect startnode and its sister up until endnode
+			oldtext = currentText();
+			stackTree();
+			$("#"+startnode.id).add($("#"+startnode.id).nextUntil("#"+endnode.id)).add("#"+endnode.id).wrapAll('<div class="snode">'+label+'</div>');	
+			// undo if this messed up the text order
+			if( currentText() != oldtext ){	undo(); redostack.pop(); }
+		//}
 	}
 
 	startnode=null; endnode=null;
@@ -330,13 +478,28 @@ function makeNode(label){
 
 function pruneNode(){
 	if( startnode && !endnode ){
-		if( ! isPossibleTarget(startnode.id) ){
+
+		deltext = $("#"+startnode.id).children().first().text();
+
+		// if this is a leaf
+		if( deltext == "0" || deltext.charAt(0) == "*" ){
+			// it is ok to delete leaf if is empty/trace
+			stackTree();
+			$("#"+startnode.id).remove();
+			startnode=null;
+			endnode=null;
+			resetIds();
+			updateSelection();
+			return;
+		} // but other leafs are not deleted
+		else if( ! isPossibleTarget(startnode.id) ){
+			return;
+		}
+		else if( startnode.id == "sn0" ){
 			return;
 		}
 
-		if( startnode.id == "sn0" ){
-			return;
-		}
+
 
 //		$("#"+startnode.id+">*:text").remove();
 		stackTree();

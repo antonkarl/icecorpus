@@ -18,10 +18,13 @@ class Treedraw(object):
 
     @cherrypy.expose
     def doSave(self, trees=None):
-	f = open(self.thefile+".new",'w')
+	os.system('mv '+self.thefile+' bak.'+self.thefile)
+	f = open(self.thefile,'w')
 	tosave = trees.strip()[1:-1]
 	f.write(tosave)
 	f.close()
+	os.system('java -classpath ../parsing/CS_Tony_oct19.jar csearch.CorpusSearch nothing.q '+self.thefile)
+	os.system('mv '+self.thefile+'.out '+self.thefile)
 
     def loadPsd( self, fileName ):
 	self.thefile = fileName
@@ -84,7 +87,9 @@ class Treedraw(object):
 <head>  <title>Treedrawing</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="stylesheet" type="text/css" href="css/treedrawing.css" type="text/css"></link>
+	<link rel="stylesheet" href="css/jquery.contextMenu.css" type="text/css" />
 	<script type= "application/javascript" src="scripts/jquery.js"/></script>		
+	<script src="scripts/jquery.contextMenu.js" type="text/javascript"></script>
 	<script type= "application/javascript" src="scripts/treedrawing.js"/></script>		
 </head>
 <body oncontextmenu="return false;">
@@ -97,14 +102,23 @@ class Treedraw(object):
 <div style="background-color: navy; color: white; font-weight: bold;">IcePaHC Treedrawing 0.1</div>
 
 Editing: """+self.thefile+""" <br />
-
-<input class="menubutton" type="button" value="Save" id="butsave">
+<input class="menubutton" type="button" value="Save" id="butsave"><br />
+<input class="menubutton" type="button" value="Undo" id="butundo"><br />
+<input class="menubutton" type="button" value="Redo" id="butredo"><br />
 
 <div id="debugpane">x</div>
 </div>
 <div id="editpane">"""+currentTree+"""</div>
 
 
+		<ul id="myMenu" class="contextMenu">
+			<li class="edit"><a href="#edit">IP-SUB</a></li>
+			<li class="cut"><a href="#cut">IP-INF</a></li>
+			<li class="copy"><a href="#copy">IP-SMC</a></li>
+			<li class="paste separator"><a href="#paste">-SPE</a></li>
+			<li class="delete"><a href="#delete">-PRN</a></li>
+			<li class="quit separator"><a href="#quit">-XXX</a></li>
+		</ul>
 
 </body>
 </html>"""

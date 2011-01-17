@@ -9,6 +9,10 @@ var commands=new Object();
 var name = "#floatMenu";  
 var menuYloc = null;  
 
+String.prototype.startsWith = function(str){
+    return (this.substr(0,str.length) === str);
+}
+
 $(document).ready(function() {
 	resetIds();
 	assignEvents(); 
@@ -21,6 +25,19 @@ $(document).ready(function() {
         var offset = menuYloc+$(document).scrollTop()+"px";  
         $(name).animate({top:offset},{duration:500,queue:false});  
     });  
+
+    // inital highlight of IPs
+    var snodes = $(".snode"); 
+    for( i=0; i<snodes.length; i++ ){
+
+		text = $("#"+snodes[i].id).contents().filter(function() {
+  			return this.nodeType == 3;
+		}).first().text();
+		if( trim(text).startsWith("IP-SUB") || trim(text).startsWith("IP-MAT") || trim(text).startsWith("IP-IMP") ){
+			$("#"+snodes[i].id).addClass('ipnode');
+		}
+    }
+
     // floatmenu ready
 
    // setup context menu
@@ -102,18 +119,22 @@ function assignEvents(){
 	addCommand(66,"leafbefore"); //e
 
 	addCommand(88,"makenode","XP"); // x
-	addCommand(67,"makenode","CP-CMP"); // c
-	addCommand(82,"makenode","CP-REL"); // r
-	addCommand(83,"makenode","NP-SBJ"); // s
-	addCommand(49,"makenode","NP-OB1"); // 1
-	addCommand(50,"makenode","NP-OB2"); // 2
-	addCommand(51,"makenode","NP-PRD"); // 3
+	addCommand(67,"setlabel",["CP-ADV","CP-CMP"]); // c
+	addCommand(82,"setlabel",["CP-REL","CP-FRL","CP-CAR"]); // r
+	addCommand(83,"setlabel",["IP-SUB","IP-MAT","IP-IMP"]); // s
+	addCommand(86,"setlabel",["IP-SMC","IP-INF","IP-INF-PRP"]); // v
+	addCommand(84,"setlabel",["CP-THT","CP-THT-PRN","CP-QUE"]); // t
+	addCommand(71,"setlabel",["PP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR"]); // g
+//	addCommand(49,"makenode","NP-OB1"); // 1
+//	addCommand(50,"makenode","NP-OB2"); // 2
+//	addCommand(51,"makenode","NP-PRD"); // 3
+	addCommand(52,"redo"); // 4
 	addCommand(81,"undo"); // q
-	addCommand(87,"redo"); // w
+	addCommand(87,"setlabel",["NP-SBJ","NP-OB1","NP-OB2","NP"]); // w
 	addCommand(68,"prunenode"); // d
 	addCommand(90,"clearselection"); // z
 	addCommand(76,"rename"); // x
-	addCommand(78, "makenode","XP"); // n
+//	addCommand(78, "makenode","XP"); // n
         //78 n
 
 	document.body.onkeydown = handleKeyDown;	
@@ -175,6 +196,9 @@ function handleKeyDown(e){
 				displayRename();
 				e.preventDefault();
 				// e.stopPropagation();
+			}
+			else if (type=="setlabel"){
+				setLabel(label);
 			}
 			else if (type=="leafbefore"){
 				leafBefore();
@@ -345,6 +369,8 @@ function makeLeaf(before){
 		document.body.onkeydown = null;	
 		editor=$("<div id='leafeditor' class='snode'><input id='leafphrasebox' class='labeledit' type='text' value='WADVP' /> <input id='leaftextbox' class='labeledit' type='text' value='0' /></div>")
 
+  	        stackTree();
+
 		if( before ){
 			editor.insertBefore(startnode);
 		}
@@ -357,7 +383,6 @@ function makeLeaf(before){
 			   newphrase = $("#leafphrasebox").val().toUpperCase()+" ";
 			   newtext = $("#leaftextbox").val();
 
-			   stackTree();
   			   $("#leafeditor").replaceWith( "<div class='snode'>"+ newphrase+" <span class='wnode'>"+newtext+"</span></div>" );
 
 			   startnode=null; endnode=null;
@@ -429,10 +454,27 @@ function setLabel(label){
 	}
 
 	stackTree();
-	$("#"+startnode.id).contents().filter(function() {
+	textnode = $("#"+startnode.id).contents().filter(function() {
   			return this.nodeType == 3;
-		}).first().replaceWith(label);
-	clearSelection();
+		}).first();
+	oldlabel=trim(textnode.text());
+//	newlabel=label[0];
+	for( i=0; i<label.length; i++ ){
+		if( label[i] == oldlabel ){
+		   if( i<label.length-1 ){
+		      textnode.replaceWith(label[i+1]+" ");
+		      return;
+		   }
+		   else {
+		      textnode.replaceWith(label[0]+" ");
+		      return;
+		   }		   
+		}
+	}
+        textnode.replaceWith(label[0]+" ");
+
+// 	textnode.replaceWith(label[0]+" ");
+//	clearSelection();
 //  && $(this).is(":contains('Some Label ')"
 }
 
@@ -450,7 +492,7 @@ function makeNode(label){
 	if( !endnode ){
 		// if only one node, wrap around that one
 		stackTree();
-		$("#"+startnode.id).wrapAll('<div class="snode">'+label+' </div>');
+		$("#"+startnode.id).wrapAll('<div xxx="newnode" class="snode">'+label+' </div>');
 	}
 	else {
 		if( parseInt(startnode.id.substr(2)) > parseInt(endnode.id.substr(2)) ){
@@ -465,14 +507,23 @@ function makeNode(label){
 			// otherwise, collect startnode and its sister up until endnode
 			oldtext = currentText();
 			stackTree();
-			$("#"+startnode.id).add($("#"+startnode.id).nextUntil("#"+endnode.id)).add("#"+endnode.id).wrapAll('<div class="snode">'+label+'</div>');	
+			$("#"+startnode.id).add($("#"+startnode.id).nextUntil("#"+endnode.id)).add("#"+endnode.id).wrapAll('<div xxx="newnode" class="snode">'+label+'</div>');	
 			// undo if this messed up the text order
 			if( currentText() != oldtext ){	undo(); redostack.pop(); }
 		//}
 	}
 
 	startnode=null; endnode=null;
+	
+	// toselect = $(".snode[xxx=newnode]").first();	
+//	alert(toselect.attr("xxx"));
+
 	resetIds();
+	toselect = $(".snode[xxx=newnode]").first();	
+	// alert(toselect.attr("id"));
+
+	selectNode( toselect.attr("id") );
+	toselect.attr("xxx",null)
 	updateSelection();
 }
 
@@ -482,7 +533,7 @@ function pruneNode(){
 		deltext = $("#"+startnode.id).children().first().text();
 
 		// if this is a leaf
-		if( deltext == "0" || deltext.charAt(0) == "*" ){
+		if( deltext == "0" || deltext.charAt(0) == "*" || deltext.charAt(0) == "{" ){
 			// it is ok to delete leaf if is empty/trace
 			stackTree();
 			$("#"+startnode.id).remove();
@@ -499,14 +550,15 @@ function pruneNode(){
 			return;
 		}
 
-
-
 //		$("#"+startnode.id+">*:text").remove();
 		stackTree();
+		
+		toselect = $("#"+startnode.id+">*").first();
 		$("#"+startnode.id).replaceWith( $("#"+startnode.id+">*") );		
 		startnode=null;
 		endnode=null;
 		resetIds();
+		selectNode( toselect.attr("id") );
  	        updateSelection();
 
 /*
@@ -525,10 +577,25 @@ function pruneNode(){
 	}
 }
 
+
+
 function resetIds(){
 	var snodes = $(".snode"); // document.getElementsByClassName("snode");
 	for( i=0; i<snodes.length; i++ ){
 		snodes[i].id="sn"+i;
+		
+		
+//		$("#"+snodes[i].id).addClass('snodesel');
+/*
+		text = $("#"+snodes[i].id).contents().filter(function() {
+  			return this.nodeType == 3;
+		}).first().text();
+		if( trim(text).startsWith("IP-SUB") ){
+			$("#"+snodes[i].id).addClass('snodesel');
+		}
+*/
+
+//		snodes[i].="sn"+i;
 		//snodes[i].onmousedown=null;
                 //snodes[i].onmousedown=handleNodeClick;
 	}

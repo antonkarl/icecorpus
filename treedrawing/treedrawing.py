@@ -32,7 +32,7 @@ class Treedraw(object):
 	print("sdssssssssssssssssssssssssssssss")
 	f = open(fileName, 'r')
 	currentText = f.read()	
-	allchars = 'a-zA-Z0-9þæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\*\"\,\.\:$\-\{\}'
+	allchars = 'a-zA-Z0-9þæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\*\"\,\.\:$\-\{\}\_'
 	trees = currentText.split("\n\n")
 
 	alltrees = '<div class="snode">'
@@ -84,7 +84,7 @@ class Treedraw(object):
         #
         return """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html>
-<head>  <title>Treedrawing</title>
+<head>  <title>Annotald</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="stylesheet" type="text/css" href="css/treedrawing.css" type="text/css"></link>
 	<link rel="stylesheet" href="css/jquery.contextMenu.css" type="text/css" />
@@ -99,7 +99,7 @@ class Treedraw(object):
 <br />
 
 <div id="floatMenu">
-<div style="background-color: navy; color: white; font-weight: bold;">IcePaHC Treedrawing 0.1</div>
+<div style="background-color: navy; color: white; font-weight: bold;">Annotald</div>
 
 Editing: """+self.thefile+""" <br />
 <input class="menubutton" type="button" value="Save" id="butsave"><br />

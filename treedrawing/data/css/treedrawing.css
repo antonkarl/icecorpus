@@ -7,15 +7,12 @@ body {
 }
 
 .snode {
-	margin-left:12px;
+	margin-left:20px;
 	border:1px solid silver;
+	border-left: 3px solid darkorange;
 	background-color:#efefef;
 	padding: 2px;
 	cursor: pointer;
-}
-
-.snodesel {
-	background-color: orange;
 }
 
 .tnode {
@@ -35,9 +32,20 @@ body {
 	border: 1px solid black;
 }
 
-#sn0 > .snode {
+ #sn0 > .snode {
+//	background-color: silver;
+	border: 2px solid black;	
+ }
+
+.ipnode {
+//	border-left: 3px solid navy;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 	background-color: silver;
-	border: 1px solid black;
+}
+
+.snodesel {
+	background-color: orange;
 }
 
 .menubutton {
@@ -68,7 +76,8 @@ body {
 .labeledit {
 	font-family:sans;
 	font-size:12px;
-	background-color: yellow;	
+	background-color: #DCDBFF;	
 	margin: 0px;
 	border: 0px;
+	width: 80px;
 }

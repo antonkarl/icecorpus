@@ -11,7 +11,7 @@ class Treedraw(object):
     thefile = 'xxx'
 
     _cp_config = {'tools.staticdir.on' : True,
-                  'tools.staticdir.dir' : '/home/anton/icecorpus/treedrawing/data',
+                  'tools.staticdir.dir' : '~/icecorpus/treedrawing/data',
                   'tools.staticdir.index' : 'index.html',
   	           'tools.caching.on' : False,
     }

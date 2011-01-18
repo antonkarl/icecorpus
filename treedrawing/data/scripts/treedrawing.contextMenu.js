@@ -16,7 +16,7 @@ for(i=0; i<verbGroup.length; i++){
    addConMenu(verbGroup[i],verbGroup);
 }
 
-rpGroup=["RP","P","ADV","ADVR","ADVS"];
+rpGroup=["RP","P","ADV","ADVR","ADVS","C"];
 for(i=0; i<rpGroup.length; i++){
    addConMenu(rpGroup[i],rpGroup);
 }
@@ -37,7 +37,7 @@ function getContextMenu( nodeId ){
 			<li class="delete"><a href="#delete">-PRN</a></li>
 			<li class="quit separator"><a href="#quit">-XXX</a></li>
 */
-
+	// XXX todo, wnode framkallar error on rightclick
 	node = $("#"+nodeId).clone();
 	nodelabel=trim(node.contents().filter(function() {
   			return this.nodeType == 3;

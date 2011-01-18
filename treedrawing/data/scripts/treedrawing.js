@@ -38,11 +38,19 @@ $(document).ready(function() {
 		}
     }
 
-    // floatmenu ready
 
+    // floatmenu ready
+   connectContextMenu( $(".snode") );
    // setup context menu
 	// Show menu when #myDiv is clicked
-	$(".snode").contextMenu({
+
+	//$(".snode").disableContextMenu();
+
+
+});
+
+function connectContextMenu(node){
+	node.contextMenu({
 		menu: 'conMenu'
 	},
 		function(action, el, pos) {
@@ -65,13 +73,6 @@ $(document).ready(function() {
 			'X: ' + pos.docX + '  Y: ' + pos.docY+ ' (relative to document)'
 			); */
 	});
-	//$(".snode").disableContextMenu();
-
-
-});
-
-function connectContextMenu(){
-	// XXX 
 }
 
 function disableContextMenu(){
@@ -131,7 +132,7 @@ function assignEvents(){
 	addCommand(66,"leafbefore"); // b
 	addCommand(69,"setlabel",["CP-ADV","CP-CMP"]); //e
 	addCommand(88,"makenode","XP"); // x
-	addCommand(67,"clearselection"); // c
+	addCommand(67,"coindex"); // c
 	addCommand(82,"setlabel",["CP-REL","CP-FRL","CP-CAR"]); // r
 	addCommand(83,"setlabel",["IP-SUB","IP-MAT","IP-IMP"]); // s
 	addCommand(86,"setlabel",["IP-SMC","IP-INF","IP-INF-PRP"]); // v
@@ -142,11 +143,12 @@ function assignEvents(){
 //	addCommand(50,"makenode","NP-OB2"); // 2
 //	addCommand(51,"makenode","NP-PRD"); // 3
 	addCommand(52,"redo"); // 4
-	addCommand(81,"setlabel",["CONJP"]); // q
+	addCommand(81,"setlabel",["CONJP","ALSO","FP"]); // q
 	addCommand(87,"setlabel",["NP-SBJ","NP-OB1","NP-OB2","NP","NP-POS"]); // w
 	addCommand(68,"prunenode"); // d
 	addCommand(90,"undo"); // z
 	addCommand(76,"rename"); // x
+	addCommand(188,"clearselection"); // <
 //	addCommand(78, "makenode","XP"); // n
         //78 n
 
@@ -200,6 +202,9 @@ function handleKeyDown(e){
 			}
 			else if (type=="prunenode"){
 				pruneNode();
+			}
+			else if (type=="coindex"){
+				coIndex();
 			}
 			else if (type=="clearselection"){
 				clearSelection();
@@ -560,6 +565,10 @@ function makeNode(label){
 	toselect.attr("xxx",null)
 	updateSelection();
 	resetIds();
+
+	toselect.mousedown(handleNodeClick);
+	connectContextMenu( toselect );
+
 }
 
 function pruneNode(){
@@ -612,6 +621,107 @@ function pruneNode(){
 	}
 }
 
+function getLabel(node){
+	return node.contents().filter(function() {
+  			return this.nodeType == 3;
+		}).first().text();
+}
+
+function appendExtension(node,extension){
+	node.contents().filter(function() {
+  			return this.nodeType == 3;
+		}).first().replaceWith( $.trim(getLabel(node))+"-"+extension+" " );
+}
+
+function getTokenRoot(node){
+	//	return $("#sn0>.snode").filter($("#"+node.id).parents($("#sn0>.snode")));
+	return $("#sn0>.snode").filter($(node).parents($("#sn0>.snode")));
+}
+
+/*
+ * returns value of lowest index if there are any indices, returns -1 otherwise
+*/
+function minIndex( tokenRoot, offset ){
+			allSNodes = $("#"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
+			// temp="";
+			highnumber=9000000;
+			index=highnumber;
+			for( i=0; i<allSNodes.length; i++){
+				label=getLabel( $(allSNodes[i]) );
+				lastpart=parseInt( label.substr(label.lastIndexOf("-")+1) );
+				// lastpart=label.substr(label.lastIndexOf("-")+1);
+				// temp+=" "+lastpart;
+				if( ! isNaN( parseInt(lastpart) ) ){
+					if( lastpart != 0){
+						index = Math.min( lastpart, index );
+					}
+				}
+			}
+			if( index == highnumber ){return -1;}
+
+			if( index < offset){return -1;}
+
+			// alert(temp);
+			return index;	
+}
+
+/*
+function getNodesByIndex( tokenRoot, index ){
+		allSNodes = $("#"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
+		for( i=0; i<allSNodes.length; i++){
+			label=getLabel( $(allSNodes[i]) );
+			lastpart=parseInt( label.substr(label.lastIndexOf("-")+1) );
+			// lastpart=label.substr(label.lastIndexOf("-")+1);
+			// temp+=" "+lastpart;
+			if( ! isNaN( parseInt(lastpart) ) ){
+				index = Math.max( lastpart, index );
+			}
+		}	
+}
+*/
+
+function updateIndices( tokenRoot ){
+	index=1;
+	while( minIndex( tokenRoot, index ) != -1){
+		minindex = minIndex( tokenRoot, index );
+		// replaceIndex( tokenRoot, minindex, index ); XXX todo getbyindex
+		index++;
+	}
+}
+
+function maxIndex( tokenRoot ){
+			allSNodes = $("#"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
+			// temp="";
+			index=0;
+			for( i=0; i<allSNodes.length; i++){
+				label=getLabel( $(allSNodes[i]) );
+				lastpart=parseInt( label.substr(label.lastIndexOf("-")+1) );
+				// lastpart=label.substr(label.lastIndexOf("-")+1);
+				// temp+=" "+lastpart;
+				if( ! isNaN( parseInt(lastpart) ) ){
+					index = Math.max( lastpart, index );
+				}
+			}
+			// alert(temp);
+			return index;
+}
+
+function coIndex(){
+	if( startnode && endnode ){
+		
+		startRoot = getTokenRoot(startnode).attr("id");
+		endRoot = getTokenRoot(endnode).attr("id");
+		// alert( lowestIndex(startRoot) );
+		
+		// if start and end are within the same token, do coindexing		
+		if( startRoot == endRoot ){			
+			index = maxIndex(startRoot)+1;
+			stackTree();
+			appendExtension($(startnode),index);
+			appendExtension($(endnode),index);
+		}
+	}
+}
 
 
 function resetIds(){

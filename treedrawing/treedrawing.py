@@ -32,7 +32,7 @@ class Treedraw(object):
 	print("sdssssssssssssssssssssssssssssss")
 	f = open(fileName, 'r')
 	currentText = f.read()	
-	allchars = 'a-zA-Z0-9þæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\*\"\,\.\:$\-\{\}\_'
+	allchars = 'a-zA-Z0-9þæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\*\"\,\.\:$\-\{\}\_\<\>\/'
 	trees = currentText.split("\n\n")
 
 	alltrees = '<div class="snode">'
@@ -91,6 +91,7 @@ class Treedraw(object):
 	<script type= "application/javascript" src="scripts/jquery.js"/></script>		
 	<script src="scripts/jquery.contextMenu.js" type="text/javascript"></script>
 	<script type= "application/javascript" src="scripts/treedrawing.js"/></script>		
+	<script type= "application/javascript" src="scripts/treedrawing.contextMenu.js"/></script>	
 </head>
 <body oncontextmenu="return false;">
 <div style="display:none"><span>Sel1: </span><span id="labsel1">null</span></div>
@@ -111,7 +112,7 @@ Editing: """+self.thefile+""" <br />
 <div id="editpane">"""+currentTree+"""</div>
 
 
-		<ul id="myMenu" class="contextMenu">
+		<ul id="conMenu" class="contextMenu">
 			<li class="edit"><a href="#edit">IP-SUB</a></li>
 			<li class="cut"><a href="#cut">IP-INF</a></li>
 			<li class="copy"><a href="#copy">IP-SMC</a></li>

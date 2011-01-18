@@ -41,19 +41,31 @@ $(document).ready(function() {
     // floatmenu ready
 
    // setup context menu
-				// Show menu when #myDiv is clicked
-				/* $(".wnode").contextMenu({
-					menu: 'myMenu'
-				},
-					function(action, el, pos) {
-					alert(
-						'Action: ' + action + '\n\n' +
-						'Element ID: ' + $(el).attr('id') + '\n\n' + 
-						'X: ' + pos.x + '  Y: ' + pos.y + ' (relative to element)\n\n' + 
-						'X: ' + pos.docX + '  Y: ' + pos.docY+ ' (relative to document)'
-						);
-				}); */
+	// Show menu when #myDiv is clicked
+	$(".snode").contextMenu({
+		menu: 'conMenu'
+	},
+		function(action, el, pos) {
 
+			nodeid = $(el).attr('id');
+			if( action.startsWith("setlabel") ){
+				newlabel=action.substr(9);
+				// alert(newlabel);
+
+				stackTree();
+				textnode = $(el).contents().filter(function() {
+			  			return this.nodeType == 3;
+					}).first().replaceWith(newlabel+" ");
+			}
+/*
+		alert(
+			'Action: ' + action + '\n\n' +
+			'Element ID: ' + $(el).attr('id') + '\n\n' + 
+			'X: ' + pos.x + '  Y: ' + pos.y + ' (relative to element)\n\n' + 
+			'X: ' + pos.docX + '  Y: ' + pos.docY+ ' (relative to document)'
+			); */
+	});
+	//$(".snode").disableContextMenu();
 
 
 });
@@ -115,24 +127,25 @@ function save(){
 }
 
 function assignEvents(){
-	addCommand(65,"leafafter"); //e
-	addCommand(66,"leafbefore"); //e
-
+	addCommand(65,"leafafter"); // a
+	addCommand(66,"leafbefore"); // b
+	addCommand(69,"setlabel",["CP-ADV","CP-CMP"]); //e
 	addCommand(88,"makenode","XP"); // x
-	addCommand(67,"setlabel",["CP-ADV","CP-CMP"]); // c
+	addCommand(67,"clearselection"); // c
 	addCommand(82,"setlabel",["CP-REL","CP-FRL","CP-CAR"]); // r
 	addCommand(83,"setlabel",["IP-SUB","IP-MAT","IP-IMP"]); // s
 	addCommand(86,"setlabel",["IP-SMC","IP-INF","IP-INF-PRP"]); // v
 	addCommand(84,"setlabel",["CP-THT","CP-THT-PRN","CP-QUE"]); // t
-	addCommand(71,"setlabel",["PP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR"]); // g
+	addCommand(71,"setlabel",["ADJP","ADJP-SPR","NP-MSR","QP"]); // g
+	addCommand(70,"setlabel",["PP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR"]); // f
 //	addCommand(49,"makenode","NP-OB1"); // 1
 //	addCommand(50,"makenode","NP-OB2"); // 2
 //	addCommand(51,"makenode","NP-PRD"); // 3
 	addCommand(52,"redo"); // 4
-	addCommand(81,"undo"); // q
-	addCommand(87,"setlabel",["NP-SBJ","NP-OB1","NP-OB2","NP"]); // w
+	addCommand(81,"setlabel",["CONJP"]); // q
+	addCommand(87,"setlabel",["NP-SBJ","NP-OB1","NP-OB2","NP","NP-POS"]); // w
 	addCommand(68,"prunenode"); // d
-	addCommand(90,"clearselection"); // z
+	addCommand(90,"undo"); // z
 	addCommand(76,"rename"); // x
 //	addCommand(78, "makenode","XP"); // n
         //78 n
@@ -214,15 +227,21 @@ function handleNodeClick(e){
 	  		e = e || window.event;
 	  		var elementId = (e.target || e.srcElement).id;
 			// alert(e.button);
+				$(".snode").enableContextMenu();
 			if( e.button == 2 ){
-				if( startnode ){
+
+				if( startnode && !endnode ){
 					moveNode( elementId ); 
+					$(".snode").disableContextMenu();
 				}
+				e.stopPropagation();
 			}
 			else {
+				//$(".snode").enableContextMenu();
 				// leftclick
 				selectNode(elementId);
 			}
+  		        $("#conMenu").html( getContextMenu( elementId ) );
 			e.stopPropagation();
 }
 
@@ -277,10 +296,24 @@ function updateSelection(){
 
 	// update selection display
 	$('.snode').removeClass('snodesel');
-	if( startnode )
+
+	//$("#conMenu").attr("style,","display:block");
+	if( startnode ){
+		//$("#conMenu").attr("style,","display:none");
 		$("#"+startnode.id).addClass('snodesel');
-	if( endnode )
+//		$("#"+startnode.id).enableContextMenu();
+//		$(".snode").disableContextMenu();
+	}
+	else {
+		//$(".snode").enableContextMenu();
+
+	}
+
+	if( endnode ){
 		$("#"+endnode.id).addClass('snodesel');
+		// $("#"+endnode.id).enableContextMenu();
+//		$("#conMenu").html( getContextMenu( $("#"+endnode.id) ) );
+	}
 	
 }
 
@@ -522,9 +555,11 @@ function makeNode(label){
 	toselect = $(".snode[xxx=newnode]").first();	
 	// alert(toselect.attr("id"));
 
+	// BUG when making XP and then use context menu: todo XXX
 	selectNode( toselect.attr("id") );
 	toselect.attr("xxx",null)
 	updateSelection();
+	resetIds();
 }
 
 function pruneNode(){

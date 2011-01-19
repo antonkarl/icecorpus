@@ -139,12 +139,12 @@ function assignEvents(){
 	addCommand(84,"setlabel",["CP-THT","CP-THT-PRN","CP-QUE"]); // t
 	addCommand(71,"setlabel",["ADJP","ADJP-SPR","NP-MSR","QP"]); // g
 	addCommand(70,"setlabel",["PP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR"]); // f
-//	addCommand(49,"makenode","NP-OB1"); // 1
-//	addCommand(50,"makenode","NP-OB2"); // 2
-//	addCommand(51,"makenode","NP-PRD"); // 3
-	addCommand(52,"redo"); // 4
+	addCommand(49,"redo"); // 1
+	addCommand(50,"setlabel",["NP","NP-PRD","NP-POS"]); // 2
+//	addCommand(51,"makenode","NP","NP-PRD","NP-POS"); // 3
+//	addCommand(52,"redo"); // 4
 	addCommand(81,"setlabel",["CONJP","ALSO","FP"]); // q
-	addCommand(87,"setlabel",["NP-SBJ","NP-OB1","NP-OB2","NP","NP-POS"]); // w
+	addCommand(87,"setlabel",["NP-SBJ","NP-OB1","NP-OB2"]); // w
 	addCommand(68,"prunenode"); // d
 	addCommand(90,"undo"); // z
 	addCommand(76,"rename"); // x
@@ -401,13 +401,39 @@ function leafAfter(){
 	makeLeaf(false);
 }
 
-
 function makeLeaf(before){
-	if( startnode && !endnode ){
-		document.body.onkeydown = null;	
-		editor=$("<div id='leafeditor' class='snode'><input id='leafphrasebox' class='labeledit' type='text' value='WADVP' /> <input id='leaftextbox' class='labeledit' type='text' value='0' /></div>")
 
+	if( startnode ){
   	        stackTree();
+
+		label="WADVP";
+		word="0";
+
+		if( endnode ){
+
+	// if start and end are within the same token, do coindexing		
+			startRoot = getTokenRoot(startnode).attr("id");
+			endRoot = getTokenRoot(endnode).attr("id");
+			if( startRoot == endRoot ){			
+
+			word="*ICH*";
+			label=getLabel($(endnode));
+
+			if( label.startsWith("W") ){
+				word="*T*";
+				label=label.substr(1);
+			}								
+
+			toadd = maxIndex( $(startRoot).attr("id") ) + 1;			
+			word+="-"+toadd;
+			appendExtension($(endnode),toadd);
+			updateIndices();
+  		   }
+		}
+		document.body.onkeydown = null;	
+		editor=$("<div id='leafeditor' class='snode'><input id='leafphrasebox' class='labeledit' type='text' value='"+label+"' /> <input id='leaftextbox' class='labeledit' type='text' value='"+word+"' /></div>")
+
+
 
 		if( before ){
 			editor.insertBefore(startnode);
@@ -571,6 +597,23 @@ function makeNode(label){
 
 }
 
+/*
+function traceBefore(){
+	makeTrace(true);
+}
+
+function traceAfter(){
+	makeTrace(false);
+}
+
+function makeTrace( before ){
+	if( startnode && endnode ){
+		if( getLabel($(startnode) )
+		makeLeaf(before,"ADVP","*T*");
+	}
+}
+*/
+
 function pruneNode(){
 	if( startnode && !endnode ){
 
@@ -621,16 +664,25 @@ function pruneNode(){
 	}
 }
 
-function getLabel(node){
-	return node.contents().filter(function() {
+function setNodeLabel(node,label){
+	node.contents().filter(function() {
   			return this.nodeType == 3;
-		}).first().text();
+	}).first().replaceWith($.trim(label)+" ");
+}
+
+function getLabel(node){
+	return $.trim(node.contents().filter(function() {
+  			return this.nodeType == 3;
+		}).first().text());
 }
 
 function appendExtension(node,extension){
+	setNodeLabel(node,getLabel(node)+"-"+extension);
+/*
 	node.contents().filter(function() {
   			return this.nodeType == 3;
 		}).first().replaceWith( $.trim(getLabel(node))+"-"+extension+" " );
+*/
 }
 
 function getTokenRoot(node){
@@ -652,7 +704,7 @@ function minIndex( tokenRoot, offset ){
 				// lastpart=label.substr(label.lastIndexOf("-")+1);
 				// temp+=" "+lastpart;
 				if( ! isNaN( parseInt(lastpart) ) ){
-					if( lastpart != 0){
+					if( lastpart != 0 && lastpart >=offset){
 						index = Math.min( lastpart, index );
 					}
 				}
@@ -680,24 +732,57 @@ function getNodesByIndex( tokenRoot, index ){
 }
 */
 
+function getIndex( node ){
+	// alert( "eee"+ getLabel( node ) );
+	index=-1;
+	label=getLabel( node );
+	lastpart=parseInt( label.substr(label.lastIndexOf("-")+1) );
+	if( ! isNaN( parseInt(lastpart) ) ){
+		index = Math.max( lastpart, index );
+	}	
+	return index;
+}
+
+function getNodesByIndex(tokenRoot, ind){	
+	nodes = $("#"+tokenRoot+" .snode,#"+tokenRoot+" .wnode").filter(function(index) {		
+	  return getIndex( $(this) )==ind;
+	});  
+	// alert("count "+nodes.size() );
+	return nodes;
+}
+
 function updateIndices( tokenRoot ){
-	index=1;
-	while( minIndex( tokenRoot, index ) != -1){
-		minindex = minIndex( tokenRoot, index );
+	ind=1;
+
+	// alert( minIndex( tokenRoot, index )  );
+	
+	while( minIndex( tokenRoot, ind ) != -1){
+		// alert( "startind: "+ind+" minind"+ minIndex( tokenRoot, ind )  );
+		minindex = minIndex( tokenRoot, ind );
+
+		nodes = getNodesByIndex(tokenRoot,minindex);
+
+		// alert("sss" + nodes.size() );
+
+ 		nodes.each(function(index) {
+		      label=getLabel($(this)).substr(0,getLabel($(this)).length-1);
+		      label=label+ind;
+		      setNodeLabel( $(this), label );
+		});
+		ind++;		
 		// replaceIndex( tokenRoot, minindex, index ); XXX todo getbyindex
-		index++;
 	}
 }
 
 function maxIndex( tokenRoot ){
 			allSNodes = $("#"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
-			// temp="";
+			 //temp="";
 			index=0;
 			for( i=0; i<allSNodes.length; i++){
 				label=getLabel( $(allSNodes[i]) );
-				lastpart=parseInt( label.substr(label.lastIndexOf("-")+1) );
-				// lastpart=label.substr(label.lastIndexOf("-")+1);
-				// temp+=" "+lastpart;
+				//lastpart=parseInt( label.substr(label.lastIndexOf("-")) );
+				 lastpart=label.substr(label.lastIndexOf("-")+1);
+			//	 temp+=" "+lastpart;
 				if( ! isNaN( parseInt(lastpart) ) ){
 					index = Math.max( lastpart, index );
 				}
@@ -706,20 +791,54 @@ function maxIndex( tokenRoot ){
 			return index;
 }
 
+function removeIndex( node ){
+	setNodeLabel( $(node), getLabel( $(node)).substr(0, getLabel( $(node)).length-2 ) );
+}
+
 function coIndex(){
-	if( startnode && endnode ){
-		
-		startRoot = getTokenRoot(startnode).attr("id");
-		endRoot = getTokenRoot(endnode).attr("id");
-		// alert( lowestIndex(startRoot) );
-		
-		// if start and end are within the same token, do coindexing		
-		if( startRoot == endRoot ){			
-			index = maxIndex(startRoot)+1;
-			stackTree();
-			appendExtension($(startnode),index);
-			appendExtension($(endnode),index);
+
+	if( startnode && !endnode ){
+		if( getIndex($(startnode)) > 0 ){
+			removeIndex(startnode);
 		}
+	}
+	else if( startnode && endnode ){
+
+		// if both nodes already have an index
+		if( getIndex($(startnode)) > 0 && getIndex($(endnode)) > 0 ){
+
+			// and if it is the same index
+			if( getIndex($(startnode)) == getIndex($(endnode)) ){
+				// remove it
+				stackTree();
+				removeIndex(startnode);
+				removeIndex(endnode);
+			}
+
+		}
+		else if ( getIndex($(startnode)) > 0 && getIndex($(endnode)) == -1 ){
+			stackTree();
+			appendExtension( $(endnode), getIndex($(startnode)) );
+		}
+		else if ( getIndex($(startnode)) == -1 && getIndex($(endnode)) > 0 ){
+			stackTree();
+			appendExtension( $(startnode), getIndex($(endnode)) );
+		}
+		else { // no indices here, so make them
+				
+			startRoot = getTokenRoot(startnode).attr("id");
+			endRoot = getTokenRoot(endnode).attr("id");
+			// alert( lowestIndex(startRoot) );
+		
+			// if start and end are within the same token, do coindexing		
+			if( startRoot == endRoot ){			
+				index = maxIndex(startRoot)+1;
+				stackTree();
+				appendExtension($(startnode),index);
+				appendExtension($(endnode),index);
+			}
+		}
+		updateIndices(startRoot);
 	}
 }
 

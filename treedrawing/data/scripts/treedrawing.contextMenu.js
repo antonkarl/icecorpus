@@ -1,7 +1,7 @@
 var conmenus=new Object();	
 defaultsPhrases=["IP-SUB","IP-MAT","IP-MAT-PRN","IP-INF","IP-IMP","CP-QUE"];
 
-npGroup=["NP-SBJ","NP-OB1","NP-OB2","NP-POS","NP-PRN","NP","NP-MSR","NP-TMP","NP-ADV","NP-DIR","NP-ADT","NP-LFD","NP-SBJ-RSP","NP-OB1-RSP","QP"];
+npGroup=["NP-SBJ","NP-OB1","NP-OB2","NP-PRD","NP-POS","NP-PRN","NP","NP-MSR","NP-TMP","NP-ADV","NP-DIR","NP-ADT","NP-LFD","NP-SBJ-RSP","NP-OB1-RSP","QP"];
 for(i=0; i<npGroup.length; i++){
    addConMenu(npGroup[i],npGroup);
 }
@@ -16,7 +16,7 @@ for(i=0; i<verbGroup.length; i++){
    addConMenu(verbGroup[i],verbGroup);
 }
 
-rpGroup=["RP","P","ADV","ADVR","ADVS","C"];
+rpGroup=["RP","P","ADV","ADVR","ADVS","C","CONJ","ALSO"];
 for(i=0; i<rpGroup.length; i++){
    addConMenu(rpGroup[i],rpGroup);
 }

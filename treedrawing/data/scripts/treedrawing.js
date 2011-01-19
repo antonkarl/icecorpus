@@ -149,11 +149,11 @@ function assignEvents(){
 	addCommand(71,"setlabel",["ADJP","ADJP-SPR","NP-MSR","QP"]); // g
 	addCommand(70,"setlabel",["PP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR"]); // f
 	addCommand(49,"redo"); // 1
-	addCommand(50,"setlabel",["NP","NP-PRD","NP-POS"]); // 2
+	addCommand(50,"setlabel",["NP","NP-PRN","NP-POS"]); // 2
 //	addCommand(51,"makenode","NP","NP-PRD","NP-POS"); // 3
 //	addCommand(52,"redo"); // 4
 	addCommand(81,"setlabel",["CONJP","ALSO","FP"]); // q
-	addCommand(87,"setlabel",["NP-SBJ","NP-OB1","NP-OB2"]); // w
+	addCommand(87,"setlabel",["NP-SBJ","NP-OB1","NP-OB2","NP-PRD"]); // w
 	addCommand(68,"prunenode"); // d
 	addCommand(90,"undo"); // z
 	addCommand(76,"rename"); // x

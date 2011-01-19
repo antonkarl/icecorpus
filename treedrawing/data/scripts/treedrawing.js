@@ -57,13 +57,20 @@ function connectContextMenu(node){
 
 			nodeid = $(el).attr('id');
 			if( action.startsWith("setlabel") ){
+				stackTree();
 				newlabel=action.substr(9);
+
 				// alert(newlabel);
 
-				stackTree();
+				// stackTree();
 				textnode = $(el).contents().filter(function() {
 			  			return this.nodeType == 3;
 					}).first().replaceWith(newlabel+" ");
+			
+				clearSelection();
+				// startnode=$("#"+nodeid);
+				// endnode=null;
+			 	// updateSelection();
 			}
 /*
 		alert(
@@ -75,9 +82,11 @@ function connectContextMenu(node){
 	});
 }
 
+/*
 function disableContextMenu(){
 	// XXX
 }
+*/
 
 function addCommand( keycode, type, label ){
 	commands[keycode]=new function(){
@@ -234,12 +243,33 @@ function handleNodeClick(e){
 			// alert(e.button);
 				$(".snode").enableContextMenu();
 			if( e.button == 2 ){
-
+					// $("#"+elementId).enableContextMenu();
+				
 				if( startnode && !endnode ){
+
+					// alert( elementId + "  " + startnode.id );
+					//if( elementId == startnode.id  ){
+					//	alert( elementId + "  " + startnode.id );
+					//	$(elementId).enableContextMenu();
+					//	startnode=null;
+						// handleNodeClick(e);
+					//}
+
+					// tokenRoot = getTokenRoot(elementId).attr("id");
+					// allSNodes = $("#"+tokenRoot+" #"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
+					// allSNodes.disableContextMenu();
+  				        $(".snode").disableContextMenu(); // VVV
+
 					moveNode( elementId ); 
-					$(".snode").disableContextMenu();
+//					tokenRoot = getTokenRoot(elementId).attr("id");
+//					allSNodes = $("#"+tokenRoot+" #"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
+//					allSNodes.disableContextMenu();
+
+
+
+
 				}
-				e.stopPropagation();
+	//	???		e.stopPropagation();
 			}
 			else {
 				//$(".snode").enableContextMenu();
@@ -476,7 +506,15 @@ function makeLeaf(before){
 }
 
 function displayRename(){
-	if( startnode && !endnode ){
+	if( startnode ){
+
+		// if rename attempted at two selected 
+		if( endnode ){
+			startnode=endnode;
+			endnode=null;
+			updateSelection();
+		}
+
 		document.body.onkeydown = null;	
 		oldtext = $("#"+startnode.id).contents().filter(function() {
   			return this.nodeType == 3;
@@ -513,6 +551,8 @@ function displayRename(){
 }
 
 function setLabel(label){
+//	if( startnode && endnode )
+
 	if( !isPossibleTarget(startnode.id) ){
 		return;	
 	}
@@ -774,7 +814,7 @@ function updateIndices( tokenRoot ){
 	}
 }
 
-function maxIndex( tokenRoot ){
+function maxIndex( tokenRoot ){ 
 			allSNodes = $("#"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
 			 //temp="";
 			index=0;

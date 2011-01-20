@@ -28,7 +28,7 @@ for(i=0; i<wpGroup.length; i++){
 
 // fixedLeaf(before,tag,label)
 
-function getContextMenu( nodeId ){
+function loadContextMenu( nodeId ){
 
 
 /*
@@ -45,12 +45,13 @@ function getContextMenu( nodeId ){
   			return this.nodeType == 3;
 		}).first().text());
 
-	html="";
+	//html=$("");
 
 	// alert(nodelabel);
 
-	html+="<li class='paste'><a href='#fixedleaf:NP-SBJ:*con*:"+nodeId+"'>&lt; NP-SBJ *con*</a></li>";
+//	html+="<div class='conMenuItem'><a href='#fixedleaf:NP-SBJ:*con*:"+nodeId+"'>&lt; NP-SBJ *con*</a></div>";
 
+	$("#conLeft").empty();	
 	suggestions=defaultsPhrases;
 	if( conmenus[nodelabel] != null ){
 		suggestions=conmenus[nodelabel].suggestions;
@@ -58,13 +59,32 @@ function getContextMenu( nodeId ){
 
 	for( i=0; i<suggestions.length; i++){
 	    if( suggestions[i] != nodelabel ){
-	    	html+="<li class='edit'><a href='#setlabel:"+suggestions[i]+"'>"+suggestions[i]+"</a></li>";
+	    	newnode = $("<div class='conMenuItem'><a href='#'>"+suggestions[i]+"</a></div>");
+		$(newnode).mousedown( function(){ 
+			  		e = window.event;
+			  		var elementId = (e.target || e.srcElement).id;
+					suggestion = ""+ $(this).text();
+					// alert(nodeId + " " + suggestion);
+					setNodeLabel( $("#"+nodeId), suggestion );
+					hideContextMenu(); 
+				} );
+ 	        $("#conLeft").append( newnode );
 	    }
 	}
 	
-	html+="";
-	
-	return html;
+	$("#conRight").empty();	
+	// do addleafbefore
+	newnode = $("<div class='conMenuItem'><a href='#'>XXXX</a></div>");
+			$(newnode).mousedown( function(){ 
+				  		e = window.event;
+				  		var elementId = (e.target || e.srcElement).id;
+						suggestion = ""+ $(this).text();
+						// alert(nodeId + " " + suggestion);
+						setNodeLabel( $("#"+nodeId), suggestion );
+						hideContextMenu(); 
+					} );
+		$("#conRight").append( newnode );
+
 }
 
 function addConMenu( label, suggestions ){

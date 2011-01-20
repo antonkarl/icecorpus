@@ -54,8 +54,36 @@ $(document).ready(function() {
 // menuon=true;
 
 
-function showContextMenu(selector){
-	$("#conMenu").addClass("shown");
+function showContextMenu(){
+	// alert("show");
+  		e = window.event;
+  		var elementId = (e.target || e.srcElement).id;	
+					
+		left = $("#"+elementId).offset().left+4;
+		toppos = $("#"+elementId).offset().top+17;
+		left = left + "px";
+		top = top + "px";
+		
+	$("#conLeft").empty();
+	loadContextMenu(elementId);
+	
+	// Make the columns equally high
+	$("#conLeft").height( "auto" );
+	$("#conRight").height( "auto" );	
+	if( $("#conLeft").height() < $("#conRight").height() ){		
+		$("#conLeft").height( $("#conRight").height() );
+	}	
+	else {
+		$("#conRight").height( $("#conLeft").height() );
+	}
+	
+	$("#conMenu").css("left",left);
+	$("#conMenu").css("top",toppos);
+	$("#conMenu").css("visibility","visible");
+}
+
+function hideContextMenu(){
+	$("#conMenu").css("visibility","hidden");	
 }
 
 	
@@ -187,30 +215,23 @@ function redo(){
 	}
 }
 
-function undo(){	
-
+function undo() {	
 	var prevstate = undostack.pop();
-//	alert("undo: "+prevstate);
 
-	if( !(prevstate == undefined) ){
-		// alert(prevstate);
+	if( !(prevstate == undefined) ) {		
 		currentstate=$("#editpane").html();
 		redostack.push(currentstate);
 
 		$("#editpane").empty();
 		$("#editpane").append(prevstate);
 		clearSelection();
-		$(".snode").mousedown(handleNodeClick);
-		// connectContextMenu( $(".snode") );
-	}
+		$(".snode").mousedown(handleNodeClick);		
+	} 
 }
 
 function save(){
-	// alert("saving");
-
 	var tosave = toLabeledBrackets($("#editpane"));
-	$.post("/doSave", {trees: tosave});
-	
+	$.post("/doSave", {trees: tosave});	
 }
 
 function assignEvents(){
@@ -244,6 +265,7 @@ function assignEvents(){
 	$("#butundo").mousedown(undo);
 	$("#butredo").mousedown(redo);
 	$("#editpane").mousedown(clearSelection);
+	$("#conMenu").mousedown(hideContextMenu);
 
 /*
 	$(".snode>.snode").mouseover(
@@ -343,9 +365,15 @@ function handleNodeClick(e){
 						e.stopPropagation();
 						moveNode(elementId);
 					}
+					else {
+						showContextMenu();
+					}
 				//					tokenRoot = getTokenRoot(elementId).attr("id");
 				//					allSNodes = $("#"+tokenRoot+" #"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
 				//					allSNodes.disableContextMenu();
+				}
+				else {
+					showContextMenu();
 				}
 				
 				
@@ -354,6 +382,7 @@ function handleNodeClick(e){
 			else {
 				//$(".snode").enableContextMenu();
 				// leftclick
+				hideContextMenu();
 				selectNode(elementId);
 			}
   		        // $("#conMenu").empty();
@@ -396,7 +425,7 @@ function clearSelection(){
 	startnode=null; endnode=null;
 	resetIds();
 	updateSelection();
- //   connectContextMenu( $(".snode") );
+    hideContextMenu();
 }
 
 function updateSelection(){
@@ -803,6 +832,7 @@ function pruneNode(){
 }
 
 function setNodeLabel(node,label){
+	stackTree();
 	node.contents().filter(function() {
   			return this.nodeType == 3;
 	}).first().replaceWith($.trim(label)+" ");

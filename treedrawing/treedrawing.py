@@ -88,8 +88,8 @@ class Treedraw(object):
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="stylesheet" type="text/css" href="css/treedrawing.css" type="text/css"></link>	
 	<script type= "application/javascript" src="scripts/jquery.js"/></script>		
-	<script src="scripts/jquery.contextmenu.js" type="text/javascript"></script>
 	<script type= "application/javascript" src="scripts/treedrawing.js"/></script>		
+	<script type= "application/javascript" src="scripts/treedrawing.contextMenu.js"/></script>		
 
 </head>
 <body oncontextmenu="return false;">
@@ -111,16 +111,20 @@ Editing: """+self.thefile+""" <br />
 <div id="editpane">"""+currentTree+"""</div>
 
 
-		<div id="conMenu">
-		<ul class="contextMenu">
-			
-			<li class="edit"><a href="#edit">IP-SUB</a></li>
-			<li class="cut"><a href="#cut">IP-INF</a></li>
-			<li class="copy"><a href="#copy">IP-SMC</a></li>
-			<li class="paste separator"><a href="#paste">-SPE</a></li>
-			<li class="delete"><a href="#delete">-PRN</a></li>
-			<li class="quit separator"><a href="#quit">-XXX</a></li>
-		</ul>
+		<div id="conMenu">		
+		  <div id="conLeft" class="conMenuColumn">			
+			<div class="conMenuItem"><a href="#edit">IP-SUB</a></div>
+			<div class="conMenuItem"><a href="#cut">IP-INF</a></div>
+			<div class="conMenuItem"><a href="#copy">IP-SMC</a></div>
+			<div class="conMenuItem"><a href="#paste">-SPE</a></div>
+			<div class="conMenuItem"><a href="#delete">-PRN</a></div>
+			<div class="conMenuItem"><a href="#quit">-XXX</a></div>
+ 		  </div>
+
+		  <div id="conRight" class="conMenuColumn">			
+			<div class="conMenuItem"><a href="#edit">XXX</a></div>
+			<div class="conMenuItem"><a href="#cut">XXX</a></div>
+ 		  </div>
 		</div>
 
 </body>

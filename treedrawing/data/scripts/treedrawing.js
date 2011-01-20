@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
     // floatmenu ready
-    connectContextMenu( $(".snode") );
+  //  connectContextMenu( $(".snode") );
 //   disableContextMenu( $(".snode") );
 	// Show menu when #myDiv is clicked
 
@@ -53,7 +53,13 @@ $(document).ready(function() {
 
 // menuon=true;
 
-function connectContextMenu( selector ){
+
+function showContextMenu(selector){
+	$("#conMenu").addClass("shown");
+}
+
+	
+	/*
 	$(function() {
 	  $( selector ).contextMenu('#conMenu', {
    	      // Randomly enable or disable each option
@@ -83,8 +89,7 @@ function connectContextMenu( selector ){
               }
 
 	  } );
-	} );
-}
+	} );*/
 
 /*
 function disableContextMenu( selector ){
@@ -319,32 +324,31 @@ function handleNodeClick(e){
 			if( e.button == 2 ){
 					// $("#"+elementId).enableContextMenu();
 				
-				if( startnode && !endnode ){
-
+				if (startnode && !endnode) {
+				
 					// alert( elementId + "  " + startnode.id );
 					//if( elementId == startnode.id  ){
 					//	alert( elementId + "  " + startnode.id );
 					//	$(elementId).enableContextMenu();
 					//	startnode=null;
-						// handleNodeClick(e);
+					// handleNodeClick(e);
 					//}
-
+					
 					// tokenRoot = getTokenRoot(elementId).attr("id");
 					// allSNodes = $("#"+tokenRoot+" #"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
 					// allSNodes.disableContextMenu();
-  				   //     $(".snode").disableContextMenu(); // VVV
-					if(startnode.id != elementId ){
+					//     $(".snode").disableContextMenu(); // VVV
+					if (startnode.id != elementId) {
 						// menuon=false;
 						e.stopPropagation();
-						moveNode( elementId ); }
-//					tokenRoot = getTokenRoot(elementId).attr("id");
-//					allSNodes = $("#"+tokenRoot+" #"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
-//					allSNodes.disableContextMenu();
-
-
-
-
+						moveNode(elementId);
+					}
+				//					tokenRoot = getTokenRoot(elementId).attr("id");
+				//					allSNodes = $("#"+tokenRoot+" #"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
+				//					allSNodes.disableContextMenu();
 				}
+				
+				
 	//	???		e.stopPropagation();
 			}
 			else {
@@ -392,7 +396,7 @@ function clearSelection(){
 	startnode=null; endnode=null;
 	resetIds();
 	updateSelection();
-    connectContextMenu( $(".snode") );
+ //   connectContextMenu( $(".snode") );
 }
 
 function updateSelection(){
@@ -487,7 +491,7 @@ function moveNode(targetParent){
 			if( currentText() != textbefore ){undo();redostack.pop();}
 		}
 	}
-	// clearSelection();
+	clearSelection();
 	menuon=true;
 }
 
@@ -726,7 +730,7 @@ function makeNode(label){
 	resetIds();
 
 	toselect.mousedown(handleNodeClick);
-	connectContextMenu( toselect );
+	// connectContextMenu( toselect );
 
 }
 

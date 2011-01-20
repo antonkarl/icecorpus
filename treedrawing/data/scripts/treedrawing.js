@@ -38,10 +38,12 @@ $(document).ready(function() {
 		}
     }
 
+   // setup context menu
+
 
     // floatmenu ready
-   connectContextMenu( $(".snode") );
-   // setup context menu
+    connectContextMenu( $(".snode") );
+//   disableContextMenu( $(".snode") );
 	// Show menu when #myDiv is clicked
 
 	//$(".snode").disableContextMenu();
@@ -49,6 +51,50 @@ $(document).ready(function() {
 
 });
 
+// menuon=true;
+
+function connectContextMenu( selector ){
+	$(function() {
+	  $( selector ).contextMenu('#conMenu', {
+   	      // Randomly enable or disable each option
+	      beforeShow: function() { 
+
+//		if( !menuon ){return false;}
+
+  		e = window.event;
+  		var elementId = (e.target || e.srcElement).id;
+
+		stuff = "mmm";
+		if( startnode ){ stuff=startnode.id;}
+
+		// alert(elementId + " " + stuff );
+
+		if( startnode ){
+			if( elementId == stuff){
+				return true;
+			}		
+			else {
+				return false;
+			}
+		}
+
+
+		return true;
+              }
+
+	  } );
+	} );
+}
+
+/*
+function disableContextMenu( selector ){
+	$(function() {
+	  $( selector ).contextMenu=null;
+	});
+	
+}
+*/
+/*
 function connectContextMenu(node){
 	node.contextMenu({
 		menu: 'conMenu'
@@ -72,6 +118,33 @@ function connectContextMenu(node){
 				// endnode=null;
 			 	// updateSelection();
 			}
+
+			if( action.startsWith("fixedleaf") ){
+
+
+				stackTree();
+				params=action.substr(10);
+
+				stuff = params.split("\:");
+				label = stuff[0];
+				word = stuff[1];
+				targetId = stuff[2];
+
+				// alert(word + " "+ label);
+
+				// alert(newlabel);
+ 				//  NP-SBJ:*con*
+
+				// stackTree();
+				makeLeaf(true,label,word,targetId,true);
+			
+				clearSelection();
+				// startnode=$("#"+nodeid);
+				// endnode=null;
+			 	// updateSelection();
+			}
+
+*/
 /*
 		alert(
 			'Action: ' + action + '\n\n' +
@@ -79,13 +152,11 @@ function connectContextMenu(node){
 			'X: ' + pos.x + '  Y: ' + pos.y + ' (relative to element)\n\n' + 
 			'X: ' + pos.docX + '  Y: ' + pos.docY+ ' (relative to document)'
 			); */
-	});
-}
+//	});
+// }
 
 /*
-function disableContextMenu(){
-	// XXX
-}
+
 */
 
 function addCommand( keycode, type, label ){
@@ -125,6 +196,7 @@ function undo(){
 		$("#editpane").append(prevstate);
 		clearSelection();
 		$(".snode").mousedown(handleNodeClick);
+		// connectContextMenu( $(".snode") );
 	}
 }
 
@@ -166,6 +238,7 @@ function assignEvents(){
 	$("#butsave").mousedown(save);
 	$("#butundo").mousedown(undo);
 	$("#butredo").mousedown(redo);
+	$("#editpane").mousedown(clearSelection);
 
 /*
 	$(".snode>.snode").mouseover(
@@ -238,10 +311,11 @@ function handleKeyDown(e){
 	}
 
 function handleNodeClick(e){
+			// menuon=true;
 	  		e = e || window.event;
 	  		var elementId = (e.target || e.srcElement).id;
 			// alert(e.button);
-				$(".snode").enableContextMenu();
+				// $(".snode").enableContextMenu();
 			if( e.button == 2 ){
 					// $("#"+elementId).enableContextMenu();
 				
@@ -258,9 +332,11 @@ function handleNodeClick(e){
 					// tokenRoot = getTokenRoot(elementId).attr("id");
 					// allSNodes = $("#"+tokenRoot+" #"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
 					// allSNodes.disableContextMenu();
-  				        $(".snode").disableContextMenu(); // VVV
-
-					moveNode( elementId ); 
+  				   //     $(".snode").disableContextMenu(); // VVV
+					if(startnode.id != elementId ){
+						// menuon=false;
+						e.stopPropagation();
+						moveNode( elementId ); }
 //					tokenRoot = getTokenRoot(elementId).attr("id");
 //					allSNodes = $("#"+tokenRoot+" #"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
 //					allSNodes.disableContextMenu();
@@ -276,7 +352,9 @@ function handleNodeClick(e){
 				// leftclick
 				selectNode(elementId);
 			}
-  		        $("#conMenu").html( getContextMenu( elementId ) );
+  		        // $("#conMenu").empty();
+			// $("#conMenu").html(getContextMenu( elementId ) );
+
 			e.stopPropagation();
 }
 
@@ -314,6 +392,7 @@ function clearSelection(){
 	startnode=null; endnode=null;
 	resetIds();
 	updateSelection();
+    connectContextMenu( $(".snode") );
 }
 
 function updateSelection(){
@@ -334,21 +413,13 @@ function updateSelection(){
 
 	//$("#conMenu").attr("style,","display:block");
 	if( startnode ){
-		//$("#conMenu").attr("style,","display:none");
 		$("#"+startnode.id).addClass('snodesel');
-//		$("#"+startnode.id).enableContextMenu();
-//		$(".snode").disableContextMenu();
-	}
-	else {
-		//$(".snode").enableContextMenu();
-
 	}
 
 	if( endnode ){
 		$("#"+endnode.id).addClass('snodesel');
-		// $("#"+endnode.id).enableContextMenu();
-//		$("#conMenu").html( getContextMenu( $("#"+endnode.id) ) );
 	}
+
 	
 }
 
@@ -416,12 +487,17 @@ function moveNode(targetParent){
 			if( currentText() != textbefore ){undo();redostack.pop();}
 		}
 	}
-	clearSelection();
+	// clearSelection();
+	menuon=true;
 }
 
 function trim( s ){
 	return s.replace(/^\s*/, "").replace(/\s*$/, "");
 }
+
+/*
+ *  Making leafs
+*/
 
 function leafBefore(){
 	makeLeaf(true);
@@ -431,13 +507,32 @@ function leafAfter(){
 	makeLeaf(false);
 }
 
-function makeLeaf(before){
+function makeLeaf(before,label,word,targetId,fixed){
 
-	if( startnode ){
+	if( !label ){ label="WADVP"; }
+	if( !word ){ word="0"; }
+	if( !targetId ){ targetId=startnode.id;}
+
+//	if( !targetId ){ targetId="" }
+
+	if( fixed ){
+
+		newleaf = $("<div class='snode'>"+ label+" <span class='wnode'>"+word+"</span></div>");
+		if( before ){
+			//alert(word + " x " + targetId );
+			newleaf.insertBefore( "#"+targetId );
+		}
+		else {
+			//alert(word + "y");
+			newleaf.insertAfter( "#"+targetId );
+		}
+	}
+	else if( startnode ){
   	        stackTree();
 
-		label="WADVP";
-		word="0";
+		// if( !fixed ){ fixed=false; }
+
+		// alert( label + " " + word );
 
 		if( endnode ){
 
@@ -463,40 +558,38 @@ function makeLeaf(before){
 		document.body.onkeydown = null;	
 		editor=$("<div id='leafeditor' class='snode'><input id='leafphrasebox' class='labeledit' type='text' value='"+label+"' /> <input id='leaftextbox' class='labeledit' type='text' value='"+word+"' /></div>")
 
-
-
-		if( before ){
-			editor.insertBefore(startnode);
-		}
-		else {
-			editor.insertAfter(startnode);
-		}
-
-		$("#leafphrasebox,#leaftextbox").keydown(function(event) {
-			if(event.keyCode == '13'){			   
-			   newphrase = $("#leafphrasebox").val().toUpperCase()+" ";
-			   newtext = $("#leaftextbox").val();
-
-  			   $("#leafeditor").replaceWith( "<div class='snode'>"+ newphrase+" <span class='wnode'>"+newtext+"</span></div>" );
-
-			   startnode=null; endnode=null;
-			   resetIds();
-			   updateSelection();
-			   document.body.onkeydown = handleKeyDown;	
+			if( before ){
+				editor.insertBefore(startnode);
+			}
+			else {
+				editor.insertAfter(startnode);
 			}
 
-		});
+			$("#leafphrasebox,#leaftextbox").keydown(function(event) {
+				if(event.keyCode == '13'){			   
+				   newphrase = $("#leafphrasebox").val().toUpperCase()+" ";
+				   newtext = $("#leaftextbox").val();
+
+	  			   $("#leafeditor").replaceWith( "<div class='snode'>"+ newphrase+" <span class='wnode'>"+newtext+"</span></div>" );
+
+				   startnode=null; endnode=null;
+				   resetIds();
+				   updateSelection();
+				   document.body.onkeydown = handleKeyDown;	
+				}
+
+			});
 
 		
-		setTimeout(function(){ $("#leafphrasebox").focus(); }, 10);
+			setTimeout(function(){ $("#leafphrasebox").focus(); }, 10);
 
-		// $("#leafphrasebox").val("xxx");
-		//startnode=null; endnode=null;
-		//resetIds();
-		//updateSelection();
-		//document.body.onkeydown = handleKeyDown;
-
-	}
+			// $("#leafphrasebox").val("xxx");
+			//startnode=null; endnode=null;
+			//resetIds();
+			//updateSelection();
+			//document.body.onkeydown = handleKeyDown;
+		
+	} 
 
 //		alert( oldtext );
 //		clearSelection();		
@@ -636,6 +729,7 @@ function makeNode(label){
 	connectContextMenu( toselect );
 
 }
+
 
 /*
 function traceBefore(){

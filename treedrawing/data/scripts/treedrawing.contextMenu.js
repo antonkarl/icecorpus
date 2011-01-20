@@ -26,6 +26,8 @@ for(i=0; i<wpGroup.length; i++){
    addConMenu(wpGroup[i],wpGroup);
 }
 
+// fixedLeaf(before,tag,label)
+
 function getContextMenu( nodeId ){
 
 
@@ -47,18 +49,20 @@ function getContextMenu( nodeId ){
 
 	// alert(nodelabel);
 
+	html+="<li class='paste'><a href='#fixedleaf:NP-SBJ:*con*:"+nodeId+"'>&lt; NP-SBJ *con*</a></li>";
+
 	suggestions=defaultsPhrases;
 	if( conmenus[nodelabel] != null ){
 		suggestions=conmenus[nodelabel].suggestions;
 	}
 
-
 	for( i=0; i<suggestions.length; i++){
 	    if( suggestions[i] != nodelabel ){
-	    	html+="<li class='edit'><a href='#setlabel:"+suggestions[i]+"'>"+suggestions[i]+"</a></li>"
+	    	html+="<li class='edit'><a href='#setlabel:"+suggestions[i]+"'>"+suggestions[i]+"</a></li>";
 	    }
 	}
 	
+	html+="";
 	
 	return html;
 }

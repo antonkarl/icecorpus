@@ -29,7 +29,7 @@ class Treedraw(object):
     def loadPsd( self, fileName ):
 	self.thefile = fileName
 
-	print("sdssssssssssssssssssssssssssssss")
+#	print("sdssssssssssssssssssssssssssssss")
 	f = open(fileName, 'r')
 	currentText = f.read()	
 	allchars = 'a-zA-Z0-9þæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\*\"\,\.\:$\-\{\}\_\<\>\/'
@@ -86,12 +86,11 @@ class Treedraw(object):
 <html>
 <head>  <title>Annotald</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link rel="stylesheet" type="text/css" href="css/treedrawing.css" type="text/css"></link>
-	<link rel="stylesheet" href="css/jquery.contextMenu.css" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="css/treedrawing.css" type="text/css"></link>	
 	<script type= "application/javascript" src="scripts/jquery.js"/></script>		
-	<script src="scripts/jquery.contextMenu.js" type="text/javascript"></script>
+	<script src="scripts/jquery.contextmenu.js" type="text/javascript"></script>
 	<script type= "application/javascript" src="scripts/treedrawing.js"/></script>		
-	<script type= "application/javascript" src="scripts/treedrawing.contextMenu.js"/></script>	
+
 </head>
 <body oncontextmenu="return false;">
 <div style="display:none"><span>Sel1: </span><span id="labsel1">null</span></div>
@@ -100,7 +99,7 @@ class Treedraw(object):
 <br />
 
 <div id="floatMenu">
-<div style="background-color: navy; color: white; font-weight: bold;">Annotald</div>
+<div style="background-color: #2E2E2E; color: white; font-weight: bold;">Annotald</div>
 
 Editing: """+self.thefile+""" <br />
 <input class="menubutton" type="button" value="Save" id="butsave"><br />
@@ -112,7 +111,9 @@ Editing: """+self.thefile+""" <br />
 <div id="editpane">"""+currentTree+"""</div>
 
 
-		<ul id="conMenu" class="contextMenu">
+		<div id="conMenu">
+		<ul class="contextMenu">
+			
 			<li class="edit"><a href="#edit">IP-SUB</a></li>
 			<li class="cut"><a href="#cut">IP-INF</a></li>
 			<li class="copy"><a href="#copy">IP-SMC</a></li>
@@ -120,6 +121,7 @@ Editing: """+self.thefile+""" <br />
 			<li class="delete"><a href="#delete">-PRN</a></li>
 			<li class="quit separator"><a href="#quit">-XXX</a></li>
 		</ul>
+		</div>
 
 </body>
 </html>"""

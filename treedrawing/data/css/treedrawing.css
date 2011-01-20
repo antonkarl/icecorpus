@@ -3,16 +3,19 @@ body {
 	font-size:12px;
 	margin: 0px;
 	padding: 0px;
+	background-color: #D2B48C;
 //        height:2000px;  
+//	width: 100%;
 }
 
 .snode {
 	margin-left:20px;
 	border:1px solid silver;
-	border-left: 3px solid darkorange;
+	border-left: 4px solid #4682B4;
 	background-color:#efefef;
 	padding: 2px;
 	cursor: pointer;
+	// -webkit-user-select: none;
 }
 
 .tnode {
@@ -28,7 +31,7 @@ body {
 }
 
 #sn0 {
-	background-color: silver;
+	background-color: #D2B48C;
 	border: 1px solid black;
 }
 
@@ -41,11 +44,11 @@ body {
 //	border-left: 3px solid navy;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
-	background-color: silver;
+	background-color: #D2B48C;
 }
 
 .snodesel {
-	background-color: orange;
+	background-color: #4682B4;
 }
 
 .menubutton {
@@ -55,11 +58,12 @@ body {
 #floatMenu {  
     position:absolute;  
     top:50px;  
-    left:600px;  
+    left:630px;  
     margin-left:5px;  
     width:200px;  
-   background: #efefef;
-   border: 1px solid silver;
+   background: #FEF6EA;
+   padding-bottom: 4px;
+   border: 1px solid #857259;
     text-align: center;
 }  
 
@@ -69,8 +73,10 @@ body {
    left:0px;
    margin:0px;
    padding: 0px;
+	padding-right:20px;
    width: 600px;
-//   border: 1px solid red;
+   border: 1px solid #857259;
+  background-color: #FEEDD5;
 }
 
 .labeledit {
@@ -80,4 +86,10 @@ body {
 	margin: 0px;
 	border: 0px;
 	width: 80px;
+}
+
+#conMenu {
+	background-color:white;
+	border: 1px solid black;
+	width: 130px;
 }

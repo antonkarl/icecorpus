@@ -619,6 +619,8 @@ function makeLeaf(before,label,word,targetId,fixed){
 				if(event.keyCode == '13'){			   
 				   newphrase = $("#leafphrasebox").val().toUpperCase()+" ";
 				   newtext = $("#leaftextbox").val();
+				   newtext = newtext.replace("<","&lt;");
+				   newtext = newtext.replace(">","&gt;");
 
 	  			   $("#leafeditor").replaceWith( "<div class='snode'>"+ newphrase+" <span class='wnode'>"+newtext+"</span></div>" );
 
@@ -803,8 +805,8 @@ function pruneNode(){
 
 		deltext = $("#"+startnode.id).children().first().text();
 
-		// if this is a leaf
-		if( deltext == "0" || deltext.charAt(0) == "*" || deltext.charAt(0) == "{" ){
+		// if this is a leaf, todo XXX fix
+		if( deltext == "0" || deltext.charAt(0) == "*" || deltext.charAt(0) == "{" || deltext.charAt(0) == "<" ){
 			// it is ok to delete leaf if is empty/trace
 			stackTree();
 			$("#"+startnode.id).remove();

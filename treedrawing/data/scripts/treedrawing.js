@@ -33,7 +33,7 @@ $(document).ready(function() {
 		text = $("#"+snodes[i].id).contents().filter(function() {
   			return this.nodeType == 3;
 		}).first().text();
-		if( trim(text).startsWith("IP-SUB") || trim(text).startsWith("IP-MAT") || trim(text).startsWith("IP-IMP") ){
+		if( trim(text).startsWith("IP-SUB") || trim(text).startsWith("IP-MAT") || trim(text).startsWith("IP-IMP") || trim(text).startsWith("IP-INF") ){
 			$("#"+snodes[i].id).addClass('ipnode');
 		}
     }

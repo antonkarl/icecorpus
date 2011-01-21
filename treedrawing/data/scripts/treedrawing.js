@@ -58,6 +58,12 @@ function showContextMenu(){
 	// alert("show");
   		e = window.event;
   		var elementId = (e.target || e.srcElement).id;	
+		
+		// alert( elementId );
+		if( elementId == "sn0" ){
+			clearSelection();
+			return;			
+		}
 					
 		left = $("#"+elementId).offset().left+4;
 		toppos = $("#"+elementId).offset().top+17;
@@ -392,7 +398,14 @@ function handleNodeClick(e){
 }
 
 function selectNode(nodeId){
+	// fix???
 	var node = document.getElementById(nodeId);
+	
+	if( nodeId == "sn0"){
+		clearSelection();
+		return;		
+	}
+	
 	if( node == startnode ){
 	     startnode=null;
 	     if(endnode){
@@ -550,6 +563,7 @@ function makeLeaf(before,label,word,targetId,fixed){
 
 	if( fixed ){
 
+  	    stackTree();
 		newleaf = $("<div class='snode'>"+ label+" <span class='wnode'>"+word+"</span></div>");
 		if( before ){
 			//alert(word + " x " + targetId );
@@ -559,6 +573,9 @@ function makeLeaf(before,label,word,targetId,fixed){
 			//alert(word + "y");
 			newleaf.insertAfter( "#"+targetId );
 		}
+				   startnode=null; endnode=null;
+				   resetIds();
+				   updateSelection();		
 	}
 	else if( startnode ){
   	        stackTree();

@@ -392,8 +392,8 @@ function handleNodeClick(e){
 				
 				if (e.ctrlKey) {
 					makeNode("XP");
-					displayRename();
-					e.preventDefault();
+				//	displayRename();
+				//	e.preventDefault();
 				}
 
 			}

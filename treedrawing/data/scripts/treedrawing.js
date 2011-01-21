@@ -675,7 +675,11 @@ function displayRename(){
   			return this.nodeType == 3;
 		}).first().replaceWith("<input id='renamebox' class='labeledit' type='text' />");	
 		$("#renamebox").keydown(function(event) {
-			if(event.keyCode == '13'){			   
+			if(event.keyCode == '32'){
+				$("#renamebox").val( $("#renamebox").val() );
+				event.preventDefault();
+			}
+			else if(event.keyCode == '13'){			   
 			   newtext = $("#renamebox").val().toUpperCase()+" ";
   			   $("#renamebox").replaceWith( newtext );
 			   if( newtext == oldtext ){ undo(); redostack.pop(); }

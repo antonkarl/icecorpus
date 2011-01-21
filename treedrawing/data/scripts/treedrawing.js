@@ -350,7 +350,7 @@ function handleNodeClick(e){
 			// alert(e.button);
 				// $(".snode").enableContextMenu();
 			if( e.button == 2 ){
-					// $("#"+elementId).enableContextMenu();
+					// rightclick
 				
 				if (startnode && !endnode) {
 				
@@ -385,11 +385,17 @@ function handleNodeClick(e){
 				
 	//	???		e.stopPropagation();
 			}
-			else {
-				//$(".snode").enableContextMenu();
+			else { 					
 				// leftclick
 				hideContextMenu();
 				selectNode(elementId);
+				
+				if (e.ctrlKey) {
+					makeNode("XP");
+					displayRename();
+					e.preventDefault();
+				}
+
 			}
   		        // $("#conMenu").empty();
 			// $("#conMenu").html(getContextMenu( elementId ) );

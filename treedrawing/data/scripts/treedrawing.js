@@ -622,6 +622,14 @@ function makeLeaf(before,label,word,targetId,fixed){
 			}
 
 			$("#leafphrasebox,#leaftextbox").keydown(function(event) {
+				
+				if(event.keyCode == '32'){
+														  	
+  					var elementId = (event.target || event.srcElement).id;
+					// alert( elementId );	
+					$("#"+elementId).val( $("#"+elementId).val() );
+					event.preventDefault();
+				}
 				if(event.keyCode == '13'){			   
 				   newphrase = $("#leafphrasebox").val().toUpperCase()+" ";
 				   newtext = $("#leaftextbox").val();

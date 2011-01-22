@@ -5,7 +5,6 @@ var undostack=new Array();
 var redostack=new Array();
 var commands=new Object();
 
-
 var name = "#floatMenu";  
 var menuYloc = null;  
 
@@ -368,8 +367,8 @@ function handleNodeClick(e){
 					//     $(".snode").disableContextMenu(); // VVV
 					if (startnode.id != elementId) {
 						// menuon=false;
-						e.stopPropagation();
-						moveNode(elementId);
+						e.stopPropagation();					
+						moveNode(elementId);						
 					}
 					else {
 						showContextMenu();
@@ -377,6 +376,10 @@ function handleNodeClick(e){
 				//					tokenRoot = getTokenRoot(elementId).attr("id");
 				//					allSNodes = $("#"+tokenRoot+" #"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
 				//					allSNodes.disableContextMenu();
+				}
+				else if (startnode && endnode){
+					   e.stopPropagation();					   
+					   moveNodes(elementId);
 				}
 				else {
 					showContextMenu();
@@ -514,11 +517,19 @@ function moveNode(targetParent){
 			stackTree();
 			$("#"+startnode.id).insertBefore( $("#"+targetParent).children().filter( $("#"+startnode.id).parents() ) );		
 			if( currentText() != textbefore ){undo();redostack.pop();}
+			else {				
+				   resetIds();
+				//   updateSelection();	
+			}
 		}
 		else if( startnode.id == lastchildId ){
 			stackTree();
  			$("#"+startnode.id).insertAfter( $("#"+targetParent).children().filter( $("#"+startnode.id).parents() ) );		
 			if( currentText() != textbefore ){undo();redostack.pop();}
+			else {				
+				   resetIds();
+				//   updateSelection();	
+			}
 		}
 		else {
 			// alert("cannot move from this position");
@@ -531,16 +542,142 @@ function moveNode(targetParent){
 				stackTree();
 				$("#"+startnode.id).appendTo("#"+targetParent);	
 				if( currentText() != textbefore ){undo();redostack.pop();}
+				else {				
+				   resetIds();
+				//   updateSelection();	
+				}
 			//}
 		}
 		else if( parseInt( startnode.id.substr(2) ) <  parseInt( targetParent.substr(2) ) ) {
 			stackTree();
 			$("#"+startnode.id).insertBefore( $("#"+targetParent).children().first() );	
 			if( currentText() != textbefore ){undo();redostack.pop();}
+			else {				
+				   resetIds();
+				//   updateSelection();	
+			}
+			
 		}
 	}
+
+	
 	clearSelection();
-	menuon=true;
+//	menuon=true;
+}
+
+function moveNodes(targetParent){
+		textbefore = currentText();
+	destination=$("#"+targetParent);
+	stackTree();
+
+		if( parseInt(startnode.id.substr(2)) > parseInt(endnode.id.substr(2)) ){
+			// reverse them if wrong order
+			temp = startnode;	
+			startnode = endnode;
+			endnode = temp;
+		} 
+
+		// check if they are really sisters XXXXXXXXXXXXXXX
+		if( $("#"+startnode.id).siblings().is("#"+endnode.id) ){
+			// then, collect startnode and its sister up until endnode
+			oldtext = currentText();
+			//stackTree();
+			$("#"+startnode.id).add($("#"+startnode.id).nextUntil("#"+endnode.id)).add("#"+endnode.id).wrapAll('<div xxx="newnode" class="snode">XP</div>');	
+			// undo if this messed up the text order
+			if( currentText() != oldtext ){	undo(); redostack.pop(); return; }
+		}
+		else {
+			return; // the are not sisters
+		}
+		
+	resetIds();
+	toselect = $(".snode[xxx=newnode]").first();	
+	// alert(toselect.attr("id"));
+
+	// BUG when making XP and then use context menu: todo XXX
+	clearSelection();
+	selectNode( toselect.attr("id") );
+	toselect.attr("xxx",null)
+	updateSelection();
+	resetIds();
+	//toselect.mousedown(handleNodeClick);
+
+	targetParent = destination.attr("id");		
+
+	if( ! isPossibleTarget(targetParent) ){
+		//alert("can't move under a tag node");
+		undo(); redostack.pop(); return;		
+	}
+	else if( $("#"+startnode.id).parent().children().length == 1 ){
+		 //alert("cant move an only child");
+		 undo(); redostack.pop(); return;
+	}
+	else if( $("#"+targetParent).parents().is( "#"+startnode.id ) ){ 
+		 //alert("can't move under one's own child");
+		 undo(); redostack.pop(); return;
+        } // move up if moving to a node that is already my parent	
+	else if( $("#"+startnode.id).parents().is( "#"+targetParent ) ){
+		// alert( startnode.id );
+		var firstchildId = $("#"+startnode.id).parent().children().first().closest("div").attr("id");
+		var lastchildId = $("#"+startnode.id).parent().children().last().closest("div").attr("id");
+		
+		if( startnode.id == firstchildId ){
+			//stackTree();
+			$("#"+startnode.id).insertBefore( $("#"+targetParent).children().filter( $("#"+startnode.id).parents() ) );	
+			//resetIds();	
+			//pruneNode();
+			
+			if( currentText() != textbefore ){undo();redostack.pop();return;}
+			else {				
+				   resetIds();
+				//   updateSelection();	
+			}
+		}
+		else if( startnode.id == lastchildId ){
+			//stackTree();
+ 			$("#"+startnode.id).insertAfter( $("#"+targetParent).children().filter( $("#"+startnode.id).parents() ) );		
+			if( currentText() != textbefore ){undo();redostack.pop();return;}
+			else {				
+				   resetIds();
+				//   updateSelection();	
+			}
+		}
+		else {
+			// alert("cannot move from this position");
+			undo(); redostack.pop(); return;
+		}
+	} // otherwise move under my sister
+	else {		
+//		if( parseInt( startnode.id.substr(2) ) >  parseInt( targetParent.substr(2) ) ){
+		if( parseInt( startnode.id.substr(2) ) > parseInt( targetParent.substr(2) ) ){
+			//if( $("#"+startnode.id).siblings().is("#"+startnode.id+"~.snode") ){
+				//stackTree();
+				$("#"+startnode.id).appendTo("#"+targetParent);	
+				if( currentText() != textbefore ){undo();redostack.pop();return;}
+				else {				
+				   resetIds();
+				//   updateSelection();	
+				}
+			//}
+		}
+		else if( parseInt( startnode.id.substr(2) ) <  parseInt( targetParent.substr(2) ) ) {
+			//stackTree();
+			$("#"+startnode.id).insertBefore( $("#"+targetParent).children().first() );	
+			if( currentText() != textbefore ){undo();redostack.pop();return;}
+			else {				
+				   resetIds();
+				//   updateSelection();	
+			}
+			
+		}
+	}
+	
+ 	toprune = $("#"+toselect.attr("id")+">*").first();
+	$("#"+startnode.id).replaceWith( $("#"+startnode.id+">*") );	
+
+		
+	clearSelection();	
+         
 }
 
 function trim( s ){
@@ -769,15 +906,15 @@ function makeNode(label){
 			endnode = temp;
 		} 
 
-		// check if they are really sisters
-		//if( $("#".startnode.id+"~.snode").is("#"+endnode.id) ){
-			// otherwise, collect startnode and its sister up until endnode
+		// check if they are really sisters XXXXXXXXXXXXXXX
+		if( $("#"+startnode.id).siblings().is("#"+endnode.id) ){
+			// then, collect startnode and its sister up until endnode
 			oldtext = currentText();
 			stackTree();
 			$("#"+startnode.id).add($("#"+startnode.id).nextUntil("#"+endnode.id)).add("#"+endnode.id).wrapAll('<div xxx="newnode" class="snode">'+label+'</div>');	
 			// undo if this messed up the text order
 			if( currentText() != oldtext ){	undo(); redostack.pop(); }
-		//}
+		}
 	}
 
 	startnode=null; endnode=null;

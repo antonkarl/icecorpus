@@ -32,7 +32,7 @@ $(document).ready(function() {
 		text = $("#"+snodes[i].id).contents().filter(function() {
   			return this.nodeType == 3;
 		}).first().text();
-		if( trim(text).startsWith("IP-SUB") || trim(text).startsWith("IP-MAT") || trim(text).startsWith("IP-IMP") || trim(text).startsWith("IP-INF") ){
+		if( isIpNode(text) ){
 			$("#"+snodes[i].id).addClass('ipnode');
 		}
     }
@@ -51,6 +51,11 @@ $(document).ready(function() {
 });
 
 // menuon=true;
+
+// checks if the given node label is an ip node in the gui coloring sense
+function isIpNode( text ){
+	return trim(text).startsWith("IP-SUB") || trim(text).startsWith("IP-MAT") || trim(text).startsWith("IP-IMP") || trim(text).startsWith("IP-INF")	
+}
 
 
 function showContextMenu(){
@@ -351,6 +356,7 @@ function handleNodeClick(e){
 				// $(".snode").enableContextMenu();
 			if( e.button == 2 ){
 					// rightclick
+				if(!elementId){return;} // stop this if clicking a trace, for now
 				
 				if (startnode && !endnode) {
 				
@@ -829,6 +835,13 @@ function displayRename(){
 			else if(event.keyCode == '13'){			   
 			   newtext = $("#renamebox").val().toUpperCase()+" ";
   			   $("#renamebox").replaceWith( newtext );
+			  if( isIpNode( $.trim(newtext) ) ){
+			    $("#"+startnode.id).addClass("ipnode");									
+			  }
+			  else {
+			  	$("#"+startnode.id).removeClass("ipnode");				
+			  }			   
+			   
 			   if( newtext == oldtext ){ undo(); redostack.pop(); }
 				startnode=null;
 				//endnode=null;
@@ -869,15 +882,38 @@ function setLabel(label){
 		if( label[i] == oldlabel ){
 		   if( i<label.length-1 ){
 		      textnode.replaceWith(label[i+1]+" ");
+			  
+			  if( isIpNode(label[i+1]) ){
+			    $("#"+startnode.id).addClass("ipnode");									
+			  }
+			  else {
+			  	$("#"+startnode.id).removeClass("ipnode");				
+			  }
+			  			  
 		      return;
 		   }
 		   else {
 		      textnode.replaceWith(label[0]+" ");
+			  
+			  if( isIpNode(label[0]) ){
+			    $("#"+startnode.id).addClass("ipnode");									
+			  }
+			  else {
+			  	$("#"+startnode.id).removeClass("ipnode");				
+			  }
+			  
 		      return;
 		   }		   
 		}
 	}
         textnode.replaceWith(label[0]+" ");
+			  if( isIpNode(label[0]) ){
+			    $("#"+startnode.id).addClass("ipnode");									
+			  }
+			  else {
+			  	$("#"+startnode.id).removeClass("ipnode");				
+			  }
+
 
 // 	textnode.replaceWith(label[0]+" ");
 //	clearSelection();
@@ -1014,6 +1050,13 @@ function setNodeLabel(node, label, noUndo){
 	node.contents().filter(function() {
   			return this.nodeType == 3;
 	}).first().replaceWith($.trim(label)+" ");
+	
+			  if( isIpNode( $.trim(label) ) ){
+			    node.addClass("ipnode");									
+			  }
+			  else {
+			  	node.removeClass("ipnode");				
+			  }			
 }
 
 function getLabel(node){
@@ -1192,8 +1235,11 @@ function coIndex(){
 
 function resetIds(){
 	var snodes = $(".snode"); // document.getElementsByClassName("snode");
-	for( i=0; i<snodes.length; i++ ){
-		snodes[i].id="sn"+i;
+	for (i = 0; i < snodes.length; i++) {
+		snodes[i].id = "sn" + i;			    
+	}
+}
+	
 		
 		
 //		$("#"+snodes[i].id).addClass('snodesel');
@@ -1209,10 +1255,10 @@ function resetIds(){
 //		snodes[i].="sn"+i;
 		//snodes[i].onmousedown=null;
                 //snodes[i].onmousedown=handleNodeClick;
-	}
+	
 
 	// assignEvents();
-}
+
 
 function wnodeString( node ){
 	thenode = node.clone();

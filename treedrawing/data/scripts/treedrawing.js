@@ -260,7 +260,8 @@ function assignEvents(){
 	addCommand(68,"prunenode"); // d
 	addCommand(90,"undo"); // z
 	addCommand(76,"rename"); // x
-	addCommand(188,"clearselection"); // <
+//	addCommand(188,"clearselection"); // <
+	addCommand(32,"clearselection"); // spacebar
 //	addCommand(78, "makenode","XP"); // n
         //78 n
 
@@ -444,6 +445,7 @@ function selectEndnode(node){
 */
 
 function clearSelection(){
+	window.event.preventDefault();
 	startnode=null; endnode=null;
 	resetIds();
 	updateSelection();
@@ -1005,8 +1007,10 @@ function pruneNode(){
 	}
 }
 
-function setNodeLabel(node,label){
-	stackTree();
+function setNodeLabel(node, label, noUndo){
+	if (!noUndo) {		
+		stackTree();
+	}
 	node.contents().filter(function() {
   			return this.nodeType == 3;
 	}).first().replaceWith($.trim(label)+" ");
@@ -1019,7 +1023,7 @@ function getLabel(node){
 }
 
 function appendExtension(node,extension){
-	setNodeLabel(node,getLabel(node)+"-"+extension);
+	setNodeLabel(node,getLabel(node)+"-"+extension,true);
 /*
 	node.contents().filter(function() {
   			return this.nodeType == 3;
@@ -1109,7 +1113,7 @@ function updateIndices( tokenRoot ){
  		nodes.each(function(index) {
 		      label=getLabel($(this)).substr(0,getLabel($(this)).length-1);
 		      label=label+ind;
-		      setNodeLabel( $(this), label );
+		      setNodeLabel( $(this), label, true );
 		});
 		ind++;		
 		// replaceIndex( tokenRoot, minindex, index ); XXX todo getbyindex
@@ -1134,13 +1138,14 @@ function maxIndex( tokenRoot ){
 }
 
 function removeIndex( node ){
-	setNodeLabel( $(node), getLabel( $(node)).substr(0, getLabel( $(node)).length-2 ) );
+	setNodeLabel( $(node), getLabel( $(node)).substr(0, getLabel( $(node)).length-2 ), true );	
 }
 
 function coIndex(){
 
 	if( startnode && !endnode ){
 		if( getIndex($(startnode)) > 0 ){
+			stackTree();
 			removeIndex(startnode);
 		}
 	}

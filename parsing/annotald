@@ -1,5 +1,6 @@
 #!/bin/sh
 # usage: ./annotald filename
 # example: ./annotald pislarsaga72.anton.psd
+# then browse to http://localhost:8080 in Google Chrome (does not work on other browsers!)
 # required package: python-cherrypy3
 python ../treedrawing/treedrawing.py $1

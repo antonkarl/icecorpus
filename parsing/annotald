@@ -1,0 +1,5 @@
+#!/bin/sh
+# usage: ./annotald filename
+# example: ./annotald pislarsaga72.anton.psd
+# required package: python-cherrypy3
+python ../treedrawing/treedrawing.py $1

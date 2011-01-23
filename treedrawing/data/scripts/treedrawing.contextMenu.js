@@ -202,6 +202,9 @@ else if (  /-[NADG]$/.test(nodelabel) ){
 	}
 }
 
+/*
+ * set case just on this one tag 
+ */
 function setCaseOnTag( nodeId, oldLabel, theCase ){
 	return function(){
 		stackTree();		
@@ -209,6 +212,9 @@ function setCaseOnTag( nodeId, oldLabel, theCase ){
 	}	
 }
 
+/*
+ * set case on all case elements that are daughters of this phrase node
+ */
 function doSetCase( nodeId, theCase ){
 	return function(){
 		stackTree();

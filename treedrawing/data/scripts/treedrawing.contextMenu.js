@@ -28,7 +28,13 @@ addConLeaf("&lt; (P 0)",true,"P","0");
 // alert( conleafs[0].label );
 
 	
-defaultsPhrases=["IP-SUB","IP-MAT","IP-MAT-PRN","IP-MAT-SPE","IP-INF","IP-IMP","CP-QUE","CP-QUE-SPE"];
+defaultsPhrases=["VBPI","VBPS","VBDI","VBDS","VAN","VBN","VB"];
+
+rootGroup=["IP-SUB","IP-MAT","IP-MAT-PRN","IP-MAT-SPE","IP-INF","IP-IMP","CP-QUE","CP-QUE-SPE","QTP","FRAG"];
+for(i=0; i<rootGroup.length; i++){
+   addConMenu(rootGroup[i],rootGroup);
+}
+
 
 npGroup=["NP-SBJ","NP-OB1","NP-OB2","NP-PRD","NP-POS","NP-PRN","NP","NP-MSR","NP-TMP","NP-ADV","NP-DIR","NP-ADT","NP-LFD","NP-SBJ-RSP","NP-OB1-RSP","QP"];
 for(i=0; i<npGroup.length; i++){
@@ -53,6 +59,11 @@ for(i=0; i<rpGroup.length; i++){
 wpGroup=["WADVP","WNP","WPP","WQP","WADJP"];
 for(i=0; i<wpGroup.length; i++){
    addConMenu(wpGroup[i],wpGroup);
+}
+
+cpGroup=["CP-THT","CP-THT-PRN","CP-ADV","CP-CMP"];
+for(i=0; i<cpGroup.length; i++){
+   addConMenu(cpGroup[i],cpGroup);
 }
 
 

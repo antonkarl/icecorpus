@@ -23,7 +23,7 @@ class Treedraw(object):
 	tosave = trees.strip()[1:-1]
 	f.write(tosave)
 	f.close()
-	os.system('java -classpath ../parsing/CS_Tony_oct19.jar csearch.CorpusSearch nothing.q '+self.thefile)
+	os.system('java -classpath ~/icecorpus/parsing/CS_Tony_oct19.jar csearch.CorpusSearch ~/icecorpus/treedrawing/nothing.q '+self.thefile)
 	os.system('mv '+self.thefile+'.out '+self.thefile)
 
     def loadPsd( self, fileName ):

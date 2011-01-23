@@ -264,7 +264,7 @@ function assignEvents(){
 	addCommand(87,"setlabel",["NP-SBJ","NP-OB1","NP-OB2","NP-PRD"]); // w
 	addCommand(68,"prunenode"); // d
 	addCommand(90,"undo"); // z
-	addCommand(76,"rename"); // x
+	addCommand(76,"rename"); // l
 //	addCommand(188,"clearselection"); // <
 	addCommand(32,"clearselection"); // spacebar
 //	addCommand(78, "makenode","XP"); // n

@@ -23,6 +23,11 @@ function addConLeaf(suggestion,before,label,word){
 addConLeaf("&lt; (NP-SBJ *con*)",true,"NP-SBJ","*con*");
 addConLeaf("&lt; (NP-SBJ *exp*)",true,"NP-SBJ","*exp*");
 addConLeaf("&lt; (NP-SBJ *arb*)",true,"NP-SBJ","*arb*");
+addConLeaf("&lt; (WADVP 0)",true,"WADVP","0");
+addConLeaf("&lt; (WNP 0)",true,"WNP","0");
+addConLeaf("&lt; (WQP 0)",true,"WQP","0");
+addConLeaf("&lt; (WADJP 0)",true,"WADJP","0");
+addConLeaf("&lt; (WPP 0)",true,"WPP","0");
 addConLeaf("&lt; (C 0)",true,"C","0");
 addConLeaf("&lt; (P 0)",true,"P","0");
 // alert( conleafs[0].label );

@@ -302,8 +302,11 @@ function updateMouseNode(node){
 function handleKeyDown(e){	
 
 		// alert(e.keyCode);
-
-		if( commands[e.keyCode] !=null ){
+		if( e.ctrlKey && e.keyCode == 83) {
+			save();
+			e.preventDefault();
+		}
+		else if( commands[e.keyCode] !=null ){
 			type = commands[e.keyCode]["type"];
 			label = commands[e.keyCode]["label"];
 			if( type=="makenode") {

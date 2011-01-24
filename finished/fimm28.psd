@@ -43,8 +43,8 @@
 	  (. .-.)))
 
 ( (IP-MAT (VBDI Þótti)
-	  (NP (NPR-D Friðrik)
-	      (NP-PRN (N-D hertoga)))
+	  (NP-SBJ (NPR-D Friðrik)
+		  (NP-PRN (N-D hertoga)))
 	  (NP-MSR-XXX (Q-N mikið))
 	  (PP (P fyrir)
 	      (IP-INF (TO að)
@@ -179,7 +179,7 @@
 		  (NP-PRN (N-D mági)
 			  (NP-POS (PRO-D sínum))))
 	  (PP (P á)
-	      (NP (PRO-D hverju) (N-D ári)))))
+	      (NP (Q-D hverju) (N-D ári)))))
 
 ( (IP-MAT (CONJ og)
 	  (VBDI hélst)
@@ -220,8 +220,8 @@
 	  (. .-.)))
 
 ( (IP-MAT (PP (P Af)
-	      (NP (NP (NPR-D Dathan)
-		      (NP-PRN (N-D jarlssyni)))))
+	      (NP (NPR-D Dathan)
+		  (NP-PRN (N-D jarlssyni))))
 	  (BEPI er)
 	  (IP-INF-SBJ-XXX (NP-OB1 (PRO-A það)
 				  (CP-THT-PRN *ICH*-1))

@@ -1,4 +1,3 @@
-
 ( (IP-MAT (ADVP-LOC (ADV Þar))
 	  (VBPI kemur)
 	  (ADVP-TMP (ADV enn))
@@ -582,10 +581,10 @@
 		  (VBN komnir)
 		  (CP-REL-SPE-1 (WNP-2 0)
 				(C er)
-				(IP-SUB (NP-SBJ *T*-2)
-					(PP (P með)
-					    (NP (PRO-D þér)))
-					(BEPI eru)))
+				(IP-SUB-SPE (NP-SBJ *T*-2)
+					    (PP (P með)
+						(NP (PRO-D þér)))
+					    (BEPI eru)))
 		  (. .-.)))
 
 ( (IP-MAT-SPE (ADVP-TMP (ADV Nú))
@@ -642,4 +641,3 @@
 								(NP *T*-1))))))
 		  (. .-.)
 		  (" ")))
-

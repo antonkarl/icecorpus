@@ -255,10 +255,10 @@ echo "missing-genitive-under-np-pos"
 $CS sanity_checks/missing-genitive-under-np-pos.q $tempfile
 mv -f $tempfile.out $tempfile
 
-echo ""
-echo "Verb iDoms not lemma ending with a"
-$CS sanity_checks/v-idoms-ur.q $tempfile
-mv -f $tempfile.out $tempfile
+#echo ""
+#echo "Verb iDoms not lemma ending with a"
+#$CS sanity_checks/v-idoms-ur.q $tempfile
+#mv -f $tempfile.out $tempfile
 
 echo ""
 echo "wrong order of PRN and SPE"

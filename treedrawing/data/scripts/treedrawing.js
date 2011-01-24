@@ -250,14 +250,14 @@ function assignEvents(){
 	addCommand(69,"setlabel",["CP-ADV","CP-CMP"]); //e
 	addCommand(88,"makenode","XP"); // x
 	addCommand(67,"coindex"); // c
-	addCommand(82,"setlabel",["CP-REL","CP-FRL","CP-CAR"]); // r
+	addCommand(82,"setlabel",["CP-REL","CP-FRL","CP-CAR","CP-CLF"]); // r
 	addCommand(83,"setlabel",["IP-SUB","IP-MAT","IP-IMP"]); // s
 	addCommand(86,"setlabel",["IP-SMC","IP-INF","IP-INF-PRP"]); // v
-	addCommand(84,"setlabel",["CP-THT","CP-THT-PRN","CP-QUE"]); // t
+	addCommand(84,"setlabel",["CP-THT","CP-THT-PRN","CP-DEG","CP-QUE"]); // t
 	addCommand(71,"setlabel",["ADJP","ADJP-SPR","NP-MSR","QP"]); // g
 	addCommand(70,"setlabel",["PP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR"]); // f
 	addCommand(49,"redo"); // 1
-	addCommand(50,"setlabel",["NP","NP-PRN","NP-POS"]); // 2
+	addCommand(50,"setlabel",["NP","NP-PRN","NP-POS","NP-COM"]); // 2
 //	addCommand(51,"makenode","NP","NP-PRD","NP-POS"); // 3
 //	addCommand(52,"redo"); // 4
 	addCommand(81,"setlabel",["CONJP","ALSO","FP"]); // q

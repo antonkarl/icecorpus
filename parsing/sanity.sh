@@ -33,10 +33,10 @@ echo "Missing subject"
 $CS sanity_checks/missing-subject-2.q $tempfile
 mv -f $tempfile.out $tempfile
 
-#echo ""
-#echo "Missing Finite Verb"
-#$CS sanity_checks/bad-finite-ip.q $tempfile
-#mv -f $tempfile.out $tempfile
+echo ""
+echo "Missing Finite Verb"
+$CS sanity_checks/bad-finite-ip.q $tempfile
+mv -f $tempfile.out $tempfile
 
 echo ""
 echo "Missing Finite Verb"
@@ -255,10 +255,10 @@ echo "missing-genitive-under-np-pos"
 $CS sanity_checks/missing-genitive-under-np-pos.q $tempfile
 mv -f $tempfile.out $tempfile
 
-echo ""
-echo "Verb iDoms not lemma ending with a"
-$CS sanity_checks/v-idoms-ur.q $tempfile
-mv -f $tempfile.out $tempfile
+#echo ""
+#echo "Verb iDoms not lemma ending with a"
+#$CS sanity_checks/v-idoms-ur.q $tempfile
+#mv -f $tempfile.out $tempfile
 
 echo ""
 echo "wrong order of PRN and SPE"

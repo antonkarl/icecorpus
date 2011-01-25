@@ -256,7 +256,7 @@ function assignEvents(){
 	addCommand(84,"setlabel",["CP-THT","CP-THT-PRN","CP-DEG","CP-QUE"]); // t
 	addCommand(71,"setlabel",["ADJP","ADJP-SPR","NP-MSR","QP"]); // g
 	addCommand(70,"setlabel",["PP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR"]); // f
-	addCommand(49,"redo"); // 1
+//	addCommand(49,"redo"); // 1
 	addCommand(50,"setlabel",["NP","NP-PRN","NP-POS","NP-COM"]); // 2
 //	addCommand(51,"makenode","NP","NP-PRD","NP-POS"); // 3
 //	addCommand(52,"redo"); // 4

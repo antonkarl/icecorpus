@@ -1246,7 +1246,10 @@ function getIndex( node ){
 	// alert( "eee"+ getLabel( node ) );
 	index=-1;
 	label=getLabel( node );
-	lastpart=parseInt( label.substr(label.lastIndexOf("-")+1) );
+	
+	lastindex=Math.max(label.lastIndexOf("-"),label.lastIndexOf("="));
+	lastpart=parseInt( label.substr(lastindex+1) );
+	
 	if( ! isNaN( parseInt(lastpart) ) ){
 		index = Math.max( lastpart, index );
 	}	

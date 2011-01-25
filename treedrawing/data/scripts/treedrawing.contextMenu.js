@@ -94,7 +94,9 @@ function isCasePhrase( nodeLabel ){
 
 function loadContextMenu( nodeId ){
 
-
+	nodeIndex = getIndex( $("#"+nodeId) );
+	indexSep="";
+	indexString="";
 /*
 			<li class="edit"><a href="#edit">IP-SUB</a></li>
 			<li class="cut"><a href="#cut">IP-INF</a></li>
@@ -108,6 +110,13 @@ function loadContextMenu( nodeId ){
 	nodelabel=trim(node.contents().filter(function() {
   			return this.nodeType == 3;
 		}).first().text());
+	
+	if( nodeIndex > -1 ){
+		lastindex=Math.max(nodelabel.lastIndexOf("-"),nodelabel.lastIndexOf("="));
+		indexSep = nodelabel.charAt(lastindex);
+		nodelabel = nodelabel.substr(0, getLabel( $(node)).length-2 );									
+		indexString = indexSep+""+nodeIndex;
+	}
 
 	//html=$("");
 
@@ -167,7 +176,7 @@ function loadContextMenu( nodeId ){
 		
 		for (i = 0; i < suggestions.length; i++) {
 			if (suggestions[i] != nodelabel) {
-				newnode = $("<div class='conMenuItem'><a href='#'>" + suggestions[i] + "</a></div>");
+				newnode = $("<div class='conMenuItem'><a href='#'>" + suggestions[i]+indexString+"</a></div>");
 				$(newnode).mousedown(function(){
 					e = window.event;
 					var elementId = (e.target || e.srcElement).id;

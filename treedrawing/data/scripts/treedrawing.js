@@ -707,14 +707,69 @@ function leafAfter(){
 	makeLeaf(false);
 }
 
-function makeLeaf(before,label,word,targetId,fixed){
+function makeLeaf(before, label, word, targetId, fixed){
 
-	if( !label ){ label="WADVP"; }
-	if( !word ){ word="0"; }
-	if( !targetId ){ targetId=startnode.id;}
+	if (!label) {
+		label = "WADVP";
+	}
+	if (!word) {
+		word = "0";
+	}
+	if (!targetId) {
+		targetId = startnode.id;
+	}
+	
+	startRoot = null;
+	endRoot = null;
+	
+	if (endnode) {
+		startRoot = getTokenRoot("#" + startnode.id).attr("id");
+		endRoot = getTokenRoot("#" + endnode.id).attr("id");
+		// alert(startRoot + " - " + endRoot );
 
+		stackTree();		
+		if (startRoot == endRoot) {
+		
+			word = "*ICH*";
+			label = getLabel($(endnode));
+			
+			if (label.startsWith("W")) {
+				word = "*T*";
+				label = label.substr(1);
+			}
+			toadd = maxIndex(startRoot) + 1;
+		//	alert(toadd);
+			word = word + "-" + toadd;
+			appendExtension($(endnode), toadd);
+		}
+		else { // abort if selecting from different tokens
+			undo(); redostack.pop(); return;
+		}
+	}
+	
+
+	newleaf = $("<div class='snode'>" + label + " <span class='wnode'>" + word + "</span></div>");
+	if (before) {
+		//alert(word + " x " + targetId );
+		newleaf.insertBefore("#" + targetId);
+	}
+	else {
+		//alert(word + "y");
+		newleaf.insertAfter("#" + targetId);
+	}
+	startnode = null;
+	endnode = null;		
+	resetIds();
+	
+	selectNode( $(newleaf).attr("id") );
+	updateSelection();
+	
+	
+}			   	
+//	makeLeaf(before, label, word, targetId, true);
+		
 //	if( !targetId ){ targetId="" }
-
+/*
 	if( fixed ){
 
   	    stackTree();
@@ -739,26 +794,17 @@ function makeLeaf(before,label,word,targetId,fixed){
 		// alert( label + " " + word );
 
 		if( endnode ){
+			
+*/
 
-	// if start and end are within the same token, do coindexing		
-			startRoot = getTokenRoot(startnode).attr("id");
-			endRoot = getTokenRoot(endnode).attr("id");
-			if( startRoot == endRoot ){			
-
-			word="*ICH*";
-			label=getLabel($(endnode));
-
-			if( label.startsWith("W") ){
-				word="*T*";
-				label=label.substr(1);
-			}								
-
-			toadd = maxIndex( $(startRoot).attr("id") ) + 1;			
-			word+="-"+toadd;
-			appendExtension($(endnode),toadd);
-			updateIndices();
-  		   }
-		}
+	// if start and end are within the same token, do coindexing
+				// alert( startnode.id );
+			
+		
+		
+		// $( "<div class='snode'>"+ label+" <span class='wnode'>"+word+"</span></div>" );
+		
+		/*
 		document.body.onkeydown = null;	
 		editor=$("<div id='leafeditor' class='snode'><input id='leafphrasebox' class='labeledit' type='text' value='"+label+"' /> <input id='leaftextbox' class='labeledit' type='text' value='"+word+"' /></div>")
 
@@ -796,74 +842,146 @@ function makeLeaf(before,label,word,targetId,fixed){
 
 		
 			setTimeout(function(){ $("#leafphrasebox").focus(); }, 10);
-
+*/
 			// $("#leafphrasebox").val("xxx");
 			//startnode=null; endnode=null;
 			//resetIds();
 			//updateSelection();
 			//document.body.onkeydown = handleKeyDown;
 		
-	} 
+//	} 
 
 //		alert( oldtext );
 //		clearSelection();		
 //		$("#renamebox").blur();
 //  		e = e || window.event;
 //		e.stopPropagate();
+//}
+
+function isNonWord(word){
+		if( word.startsWith("*") ){
+			return true;
+		}
+		if( word.startsWith("{") ){
+			return true;
+		}
+		if( word == "0" ){
+			return true;
+		}	
+		
+		return false;
 }
 
 function displayRename(){
-	if( startnode ){
+		
+	if( startnode && !endnode ){
 
-		// if rename attempted at two selected 
-		if( endnode ){
-			startnode=endnode;
-			endnode=null;
-			updateSelection();
+		if( $("#"+startnode.id+">.wnode").size() > 0 ){
+			// this is a terminal
+
+		    stackTree();
+			document.body.onkeydown = null;	
+			label = $("#"+startnode.id).contents().filter(function() {
+	  			return this.nodeType == 3;
+			}).first().text();
+			label = $.trim(label);
+			
+			word = $.trim( $("#"+startnode.id).children().first().text() );
+			
+			editor=$("<div id='leafeditor' class='snode'><input id='leafphrasebox' class='labeledit' type='text' value='"+label+"' /> <input id='leaftextbox' class='labeledit' type='text' value='"+word+"' /></div>")
+	
+				$("#"+startnode.id).replaceWith(editor);
+				// $("#leaftextbox").attr("value") );
+				if( ! isNonWord( word ) ){
+					$("#leaftextbox").attr("disabled",true);
+				}
+	
+				$("#leafphrasebox,#leaftextbox").keydown(function(event) {
+					
+				
+					if(event.keyCode == '9'){
+							// tab, do nothing								  	
+	  					var elementId = (event.target || event.srcElement).id;
+						// alert( elementId );	
+						// $("#"+elementId).val( $("#"+elementId).val() );
+						if ($("#leaftextbox").attr("disabled")) {					
+							event.preventDefault();
+						}
+					}				
+					if(event.keyCode == '32'){
+															  	
+	  					var elementId = (event.target || event.srcElement).id;
+						// alert( elementId );	
+						$("#"+elementId).val( $("#"+elementId).val() );
+						event.preventDefault();
+					}
+					if(event.keyCode == '13'){			   
+					   newphrase = $("#leafphrasebox").val().toUpperCase()+" ";
+					   newtext = $("#leaftextbox").val();
+					   newtext = newtext.replace("<","&lt;");
+					   newtext = newtext.replace(">","&gt;");
+	
+		  			   $("#leafeditor").replaceWith( "<div class='snode'>"+ newphrase+" <span class='wnode'>"+newtext+"</span></div>" );
+	
+					   startnode=null; endnode=null;
+					   resetIds();
+					   updateSelection();
+					   document.body.onkeydown = handleKeyDown;	
+					}
+	
+				});
+	
+			
+				setTimeout(function(){ $("#leafphrasebox").focus(); }, 10);
+		} 
+		else {
+			// this is not a terminal
+			stackTree();
+			document.body.onkeydown = null;	
+			label = $("#"+startnode.id).contents().filter(function() {
+	  			return this.nodeType == 3;
+			}).first().text();
+			label = $.trim(label);
+			// alert(label);
+			
+			editor=$("<input id='labelbox' class='labeledit' type='text' value='"+label+"' />");
+	
+				$("#"+startnode.id).contents().filter(function() {
+	  			return this.nodeType == 3;
+			}).first().replaceWith(editor);
+			
+				// $("#leaftextbox").attr("value") );
+			
+				$("#labelbox").keydown(function(event) {
+					
+				
+					if(event.keyCode == '9'){
+							// tab, do nothing								  	
+	  					var elementId = (event.target || event.srcElement).id;
+					}				
+					if(event.keyCode == '32'){
+															  	
+	  					var elementId = (event.target || event.srcElement).id;
+						// alert( elementId );	
+						$("#"+elementId).val( $("#"+elementId).val() );
+						event.preventDefault();
+					}
+					if(event.keyCode == '13'){			   
+					   newphrase = $("#labelbox").val().toUpperCase()+" ";
+				
+		  			   $("#labelbox").replaceWith(  newphrase );
+	
+					   startnode=null; endnode=null;
+					   resetIds();
+					   updateSelection();
+					   document.body.onkeydown = handleKeyDown;	
+					}
+	
+				});
+				setTimeout(function(){ $("#labelbox").focus(); }, 10);			
+			
+	
 		}
-
-		document.body.onkeydown = null;	
-		oldtext = $("#"+startnode.id).contents().filter(function() {
-  			return this.nodeType == 3;
-		}).first().text();
-		stackTree();
-		$("#"+startnode.id).contents().filter(function() {
-  			return this.nodeType == 3;
-		}).first().replaceWith("<input id='renamebox' class='labeledit' type='text' />");	
-		$("#renamebox").keydown(function(event) {
-			if(event.keyCode == '32'){
-				$("#renamebox").val( $("#renamebox").val() );
-				event.preventDefault();
-			}
-			else if(event.keyCode == '13'){			   
-			   newtext = $("#renamebox").val().toUpperCase()+" ";
-  			   $("#renamebox").replaceWith( newtext );
-			  if( isIpNode( $.trim(newtext) ) ){
-			    $("#"+startnode.id).addClass("ipnode");									
-			  }
-			  else {
-			  	$("#"+startnode.id).removeClass("ipnode");				
-			  }			   
-			   
-			   if( newtext == oldtext ){ undo(); redostack.pop(); }
-				startnode=null;
-				//endnode=null;
-				//resetIds();
-				updateSelection();
-			   	document.body.onkeydown = handleKeyDown;	
-			}
-		});
-//		alert( oldtext );
-//		clearSelection();		
-//		$("#renamebox").blur();
-//  		e = e || window.event;
-//		e.stopPropagate();
-
-
-		// setTimeout(function(){ $("#renamebox").focus(); }, 10);
-//		$("#renamebox").focus();
-		$("#renamebox").val( trim(oldtext) );		
-		$("#renamebox").select(); 
 
 	}
 }
@@ -1167,14 +1285,15 @@ function updateIndices( tokenRoot ){
 }
 
 function maxIndex( tokenRoot ){ 
-			allSNodes = $("#"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
-			 //temp="";
+			//alert( "tr: "+tokenRoot );
+			allSNodes = $("#"+tokenRoot+",#"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
+			 temp="";
 			index=0;
 			for( i=0; i<allSNodes.length; i++){
 				label=getLabel( $(allSNodes[i]) );
-				//lastpart=parseInt( label.substr(label.lastIndexOf("-")) );
+				lastpart=parseInt( label.substr(label.lastIndexOf("-")) );
 				 lastpart=label.substr(label.lastIndexOf("-")+1);
-			//	 temp+=" "+lastpart;
+				 temp+=" "+lastpart;
 				if( ! isNaN( parseInt(lastpart) ) ){
 					index = Math.max( lastpart, index );
 				}
@@ -1231,7 +1350,7 @@ function coIndex(){
 				appendExtension($(endnode),index);
 			}
 		}
-		updateIndices(startRoot);
+		// updateIndices(startRoot);
 	}
 }
 

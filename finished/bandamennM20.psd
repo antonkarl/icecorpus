@@ -1,4 +1,3 @@
-
 ( (IP-MAT (VBPI Siglir)
 	  (NP-SBJ (NPR-N Oddur))
 	  (ADVP-DIR (ADV vestur))
@@ -449,10 +448,9 @@
 		  (NP-POS (PRO-D sinni)))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ *con*)
-	  (NP-TMP (Q-A Alla) (D-A þessa) (N-A stund))
+( (IP-MAT (NP-TMP (Q-A Alla) (D-A þessa) (N-A stund))
 	  (VBPI spyrst)
-	  (NEG ekki)
+	  (NP-SBJ (Q-N ekki))
 	  (PP (P til)
 	      (NP (NPR-G Óspaks)))
 	  (. .-.)))
@@ -654,4 +652,3 @@
 							       (PP (P í)
 								   (NP *T*-3))))))))))
 	  (. .-.)))
-

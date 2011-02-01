@@ -41,16 +41,16 @@ for(i=0; i<rootGroup.length; i++){
    addConMenu(rootGroup[i],rootGroup);
 }
 
+adjpGroup=["ADJP","ADJX","NP-MSR","QP","NP","ADVP"];
+for(i=0; i<adjpGroup.length; i++){
+   addConMenu(adjpGroup[i],adjpGroup);
+}
 
 npGroup=["NP-SBJ","NP-OB1","NP-OB2","NP-PRD","NP-POS","NP-PRN","NP","NX","NP-MSR","NP-TMP","NP-ADV","NP-COM","NP-CMP","NP-DIR","NP-ADT","NP-LFD","NP-SBJ-RSP","NP-OB1-RSP","QP"];
 for(i=0; i<npGroup.length; i++){
    addConMenu(npGroup[i],npGroup);
 }
 
-adjpGroup=["ADJP","ADJX","NP-MSR","QP","NP","ADVP"];
-for(i=0; i<adjpGroup.length; i++){
-   addConMenu(adjpGroup[i],adjpGroup);
-}
 
 advpGroup=["PP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR","NP-MSR","NP-ADV","ADVP-LFD","PP-LFD","ADVP-RSP","ADVP-TMP-RSP"];
 for(i=0; i<advpGroup.length; i++){

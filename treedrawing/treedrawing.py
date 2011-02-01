@@ -32,7 +32,7 @@ class Treedraw(object):
 #	print("sdssssssssssssssssssssssssssssss")
 	f = open(fileName, 'r')
 	currentText = f.read()	
-	allchars = 'a-zA-Z0-9þæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\*\"\,\.\?\!\:$\-\{\}\_\<\>\/\&\;'
+	allchars = 'a-zA-Z0-9þæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\*\"\,\.\?\!\:$\+\-\{\}\_\<\>\/\&\;'
 	currentText = currentText.replace("<","&lt;");
 	currentText = currentText.replace(">","&gt;");
 	trees = currentText.split("\n\n")	

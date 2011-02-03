@@ -1,4 +1,3 @@
-
 ( (IP-MAT (BEDI Var)
 	  (NP-SBJ (NPR-N Þorsteinn))
 	  (ADVP-TMP (ADV þá))
@@ -296,10 +295,10 @@
 	  (CP-THT (C að)
 		  (IP-SUB (NP-SBJ (N-N hellir) (D-N þessi))
 			  (BEPI er)
-			  (ADJP-XXX (NUM-N hálfur)
-				    (ADJ-N fullur)
-				    (PP (P af)
-					(NP (N-D sauðataði))))))
+			  (NUMP (NUM-N hálfur))
+			  (ADJP (ADJ-N fullur)
+				(PP (P af)
+				    (NP (N-D sauðataði))))))
 	  (. .-.)))
 
 ( (IP-MAT (ADVP-TMP (ADV Þá))
@@ -831,4 +830,3 @@
 						      (TO að)
 						      (VB komast)))))
 	      (. .-.)))
-

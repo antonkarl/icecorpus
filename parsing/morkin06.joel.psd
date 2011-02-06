@@ -15,7 +15,7 @@
 	  (ADJP (ADJ-A satt))
 	  (. ,-,)))
 
-( (IP-MAT (CONJ og)
+( (IP-MAT-SPE (CONJ og)
 	  (MDPI skal)
 	  (ADVP (P að) (ADJ-D vísu))
 	  (VBPI hlýða)
@@ -147,7 +147,7 @@
 	      (NP (PRO-D þeim)))
 	  (. .-.)))
 
-( (IP-MAT (" ")
+( (IP-MAT-SPE (" ")
 	  (NP-SBJ (N-N Nú))
 	  (BEPI er)
 	  (ADVP (ADV þannig))
@@ -167,14 +167,14 @@
 	  (ADJP (ADJ-N vinsæll))
 	  (. ,-,)))
 
-( (IP-MAT (CONJ en)
+( (IP-MAT-SPE (CONJ en)
 	  (NP-SBJ (NP-POS (PRO-N vor))
 		  (N-N konungur))
 	  (BEPI er)
 	  (ADJP (NEG ekki) (ADJ-N vinsæll))
 	  (. ,-,)))
 
-( (IP-MAT (CONJ en)
+( (IP-MAT-SPE (CONJ en)
 	  (BEPI em)
 	  (NP-SBJ (PRO-N ég))
 	  (ADJP (ADJ-N fúsari))
@@ -306,7 +306,7 @@
 		  (N-A fé))
 	  (. .-.)))
 
-( (IP-MAT (VBPI Hyggið)
+( (IP-IMP-SPE (VBPI Hyggið)
 	  (TO að)
 	  (NP (PRO-A þá))
 	  (, ,-,)
@@ -329,13 +329,13 @@
 	  (IP-SUB (NP (NS-A strandhögg)))
 	  (. ,-,)))
 
-( (IP-MAT (CONJ og)
+( (IP-MAT-SPE (CONJ og)
 	  (BEPI er)
 	  (NP-SBJ (PRO-N það))
 	  (NP-PRD (ADJ-N lítil) (N-N frægð))
 	  (. ,-,)))
 
-( (IP-MAT (CONJ en)
+( (IP-MAT-SPE (CONJ en)
 	  (NP-SBJ (N-N hittan))
 	  (NEG ekki)
 	  (NP (N-A konung))
@@ -359,7 +359,7 @@
 	      (NP (PRO-D oss)))
 	  (. .-.)))
 
-( (IP-MAT (VBDI Kunnum)
+( (IP-MAT-SPE (VBDI Kunnum)
 	  (ADVP-TMP (ADV nú))
 	  (NP-OB1 (N-A þökk))
 	  (PP (P að)
@@ -375,7 +375,7 @@
 	  (IP-INF (TO að) (VB berjast))
 	  (. ,-,)))
 
-( (IP-MAT (CONJ en)
+( (IP-MAT-SPE (CONJ en)
 	  (IP-INF (VB leita))
 	  (NP-SBJ (N-N braut))
 	  (IP-INF (TO að) (VB sigla))
@@ -404,7 +404,7 @@
 	  (PP (ADV hingað) (P til))
 	  (. ,-,)))
 
-( (IP-MAT (CONJ en)
+( (IP-MAT-SPE (CONJ en)
 	  (IP-INF (VB berjast))
 	  (MDPI viljum)
 	  (NP-SBJ (PRO-N vér))
@@ -412,7 +412,7 @@
 	      (NP (PRO-D yður)))
 	  (. ,-,)))
 
-( (IP-MAT (CONJ og)
+( (IP-MAT-SPE (CONJ og)
 	  (MDPI vil)
 	  (NP-SBJ (PRO-N ég))
 	  (IP-INF (HV hafa))
@@ -421,7 +421,7 @@
 	  (PP (P í)
 	      (NP (N-D atlögu$) (D-D $nni)))))
 
-( (IP-MAT (CONJ en)
+( (IP-MAT-SPE (CONJ en)
 	  (NEG ekki)
 	  (PP (P í)
 	      (ADJP (ADJ-D tenglum)))
@@ -473,7 +473,7 @@
 	  (NP-SBJ (PRO-N hann))
 	  (. ;-;)))
 
-( (IP-MAT (" ")
+( (IP-MAT-SPE (" ")
 	  (NP (PRO-D mér))
 	  (VBDI þótti)
 	  (CP-ADV (C sem)
@@ -489,7 +489,7 @@
 		  (NP (N-D togaðim))))
 	  (. ,-,)))
 
-( (IP-MAT (CONJ og)
+( (IP-MAT-SPE (CONJ og)
 	  (VBDI dró)
 	  (NP-OB1 (PRO-A hann))
 	  (PP (P af)
@@ -522,7 +522,7 @@
 	  (PP (P um))
 	  (. .-.)))
 
-( (IP-MAT (" ")
+( (IP-MAT-SPE (" ")
 	  (IP-INF (BE Vera))
 	  (VBPI kann)
 	  (, ,-,)
@@ -541,7 +541,7 @@
 	  (VBPI ráða)
 	  (. ,-,)))
 
-( (IP-MAT (CONJ en)
+( (IP-MAT-SPE (CONJ en)
 	  (ADJP (ADJR-N vænna))
 	  (VBDS þætti)
 	  (NP (PRO-D mér))
@@ -554,7 +554,7 @@
 	  (. .-.)
 	  (" ")))
 
-( (IP-MAT (" ")
+( (IP-MAT-SPE (" ")
 	  (VBN Það)
 	  (VBPS þyki)
 	  (NP-OB1 (PRO-D mér))
@@ -570,7 +570,7 @@
 			  (BEPS sé)))
 	  (. ,-,)))
 
-( (IP-MAT (CONJ og)
+( (IP-MAT-SPE (CONJ og)
 	  (ADVP (ADV þannig))
 	  (BEPI er)
 	  (ADVP (ADVR betur))
@@ -647,7 +647,7 @@
 	  (, ,-,)
 	  (NP-SBJ (N-N dash))))
 
-( (IP-MAT (" ")
+( (IP-QUE-SPE (" ")
 	  (CONJ eða)
 	  (BEDS væri)
 	  (NP-SBJ (PRO-N þér))
@@ -683,7 +683,7 @@
 	  (NP (NS-A sakir))
 	  (. .-.)))
 
-( (IP-MAT (" ")
+( (IP-MAT-SPE (" ")
 	  (NP-SBJ (N-N Sé))
 	  (NP-SBJ (PRO-N ég))
 	  (ADVP-TMP (ADV nú))
@@ -700,13 +700,13 @@
 	  (NP-OB1 (NS-A atkvæði))
 	  (. ,-,)))
 
-( (IP-MAT (CONJ og)
+( (IP-MAT-SPE (CONJ og)
 	  (ADVP (ADV svo))
 	  (MDPI skal)
 	  (BE vera)
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (PRO-N Vér))
+( (IP-MAT-SPE (NP-SBJ (PRO-N Vér))
 	  (HVPI höfum)
 	  (NP-OB1 (NP (ADJP (ADV svo) (Q-A mikið))
 		      (N-A lið))
@@ -719,7 +719,7 @@
 	  (IP-INF (VB flýja))
 	  (. ,-,)))
 
-( (IP-MAT (ADVP (ADVR heldur))
+( (IP-MAT-SPE (ADVP (ADVR heldur))
 	  (MDPI skal)
 	  (ADVP-TMP (ADV nú))
 	  (IP-INF (VB liggja))

@@ -246,6 +246,10 @@ echo "Fix ÞAR TIL ER"
 $CS structure_queries/fix-thar-til.q $FILE
 mv -f $FILE.out $FILE
 
+echo ""
+echo "Fix ÁÐUR EN"
+$CS structure_queries/cp-cmp-aduren.q $FILE
+
 python3 "scripts/rm-lemmata.py" $FILE > $FILE.out
 mv -f $FILE.out $FILE
 

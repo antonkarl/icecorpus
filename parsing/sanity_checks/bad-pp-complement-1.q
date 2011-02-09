@@ -2,7 +2,6 @@ node: PP*
 
 copy_corpus: t
 
-query: (PP* iDoms !{1}\**|P|*+P|ADJP|ADVP|CP-*|FRAG|IP-*|INTJP|NEG|NP|NUMP|PP|QTP)
-//   AND (PP* iDoms !NP-RSP)
+query: (PP* iDoms P) AND (PP* idoms !{1}\**|*+P|ADJP|ADVP|CP-*|NEG|NP|PP) AND (PP idomstotal> 1)
 
 append_label{1}: -ZZZ-BAD_PP_COMPL

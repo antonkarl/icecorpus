@@ -1,3 +1,4 @@
+
 ( (IP-MAT (CONJ En)
 	  (ADVP-LOC (ADV þar))
 	  (BEDI var)
@@ -77,8 +78,8 @@
 
 ( (IP-MAT-SPE (" ")
 	      (NP-SBJ (PRO-N ek))
-	      (VBPS-ZZZ-PROBABLY_NOT_VB hefi)
-	      (VBN-ZZZ-PROBABLY_NOT_VB búið)
+	      (HVPI hefi)
+	      (VBN búið)
 	      (NP-OB1 (N-A ferð)
 		      (NP-POS (PRO-A mína)))
 	      (PP (P í)
@@ -387,7 +388,7 @@
 			(CP-DEG (C að)
 				(IP-SUB (NP-SBJ (PRO-D þeim))
 					(MDDS myndi)
-					(ADJP-ZZZ-BARE_ADJP (ADJ-N óslétt))
+					(ADVP (ADV óslétt))
 					(VB farast)))))
 	  (. ,-,)))
 
@@ -593,9 +594,9 @@
 	  (VBPI svarar)
 	  (, :-:)
 	  (" ")
-	  (IP-MAT-SPE (NP-PRD-ZZZ-BAD-NP-PRD (ADJR-D Meiri)
-					     (N-D von)
-					     (CP-THT-SPE *ICH*-1))
+	  (IP-MAT-SPE (NP-OB1 (ADJR-N Meiri)
+			      (N-N von)
+			      (CP-THT-SPE *ICH*-1))
 		      (VBPS þyki)
 		      (NP-SBJ (PRO-D mér))
 		      (, ,-,)
@@ -683,3 +684,4 @@
 	      (ADVP (ADV þó))
 	      (ADJP (ADJ-N mállausa))
 	      (. .-.)))
+

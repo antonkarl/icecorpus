@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP-SBJ (PRO-N Þeir)
 		  (NP-PRN (NS-N jarlar$) (D-N $nir)))
 	  (VBDI létu)
@@ -71,7 +72,7 @@
 		  (NP-PRN (N-N konungur))
 		  (PP (P með)
 		      (NP (NP-POS (PRO-A sína))
-			  (N-N fylking))))
+			  (N-A fylking))))
 	  (VBDI snaraði)
 	  (NP-OB1 (N-A atgöngu))))
 
@@ -614,7 +615,7 @@
 		  (VB ganga)
 		  (NP-SBJ (NUM-A tvo) (NS-A menn))
 		  (PP (P ór)
-		      (NP (Q-N hverri) (N-D sveit))))
+		      (NP (Q-D hverri) (N-D sveit))))
 	  (, ,-,)
 	  (ADVP (ADV þar)
 		(CP-REL (WADVP-1 0)
@@ -635,7 +636,7 @@
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (NPR-N Tósti)
-		  (NP-SBJ (N-N jarl)))
+		  (NP-PRN (N-N jarl)))
 	  (VBPI býr)
 	  (NP-OB1 (PRO-A sig))
 	  (PP (P til)
@@ -647,3 +648,4 @@
 	      (NP (NPR-D Haraldi)
 		  (NP-PRN (N-D konungi))))
 	  (. .-.)))
+

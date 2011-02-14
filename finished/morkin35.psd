@@ -3,7 +3,8 @@
 		      (IP-SUB (NP-SBJ (N-N konungur))
 			      (VBPI finnur)
 			      (CP-THT (C að)
-				      (IP-SUB (ADVP (ADV fast))
+				      (IP-SUB (NP-SBJ *exp*)
+					      (ADVP (ADV fast))
 					      (BEPI er)
 					      (PP (P að)
 						  (NP *ICH*-1))
@@ -714,3 +715,4 @@
 			  (VBDI tók)
 			  (NP-SBJ (N-A mæð$) (D-A $ina))))
 	  (. .-.)))
+

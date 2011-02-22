@@ -14,6 +14,16 @@ $CS sanity_checks/bad-double-nom.q $tempfile
 mv -f $tempfile.out $tempfile
 
 echo ""
+echo "Two objects with the same label"
+$CS sanity_checks/bad-double-obj1.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
+echo "Two objects with the same label"
+$CS sanity_checks/bad-double-obj2.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
 echo "Two finite verbs in the same IP"
 $CS sanity_checks/2finite.q $tempfile
 mv -f $tempfile.out $tempfile

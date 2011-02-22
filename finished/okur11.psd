@@ -1,3 +1,4 @@
+
 ( (IP-MAT-SPE (" ")
 	      (NP-SBJ (D-N Þetta))
 	      (, ,-,)
@@ -229,14 +230,14 @@
 					  (IP-SUB-1 (NP-SBJ (D-N þessir)
 							    (CP-REL (WNP-2 0)
 								    (C sem)
-								    (IP-SUB (NP *T*-2)
+								    (IP-SUB (NP-SBJ *T*-2)
 									    (VBPI kallist)
 									    (NP-PRD (FW pfecti) (FW annonar))))
 							    (, :-:)
 							    (NP-PRN (PRO-N þeir)
 								    (CP-REL (WNP-3 0)
 									    (C sem)
-									    (IP-SUB (NP *T*-3)
+									    (IP-SUB (NP-SBJ *T*-3)
 										    (VBPI setja)
 										    (PP (RP inn)
 											(P í)
@@ -659,3 +660,4 @@
 					      (NP (NP-POS (PRO-G hans))
 						  (NS-A ríki)))))))
 	  (. .-.)))
+

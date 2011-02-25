@@ -1,0 +1,21 @@
+cat magnus*.psd > 1675.magnus.bio-oth.psd
+
+to create IDs: ./reid.sh "1675.magnus.bio-oth.psd"
+
+then remove other files and add 1675.mag... etc.
+
+splitting file.txt: python3 scripts/splitfile.py bandamennM 35
+\n = new line
+replace ". " with ".\n"
+replace "\n\n" with "\n"
+replace ." with ."\n
+(MS:another_MS_used)
+(MS:0)
+(MS:poetry_omitted)
+(P:97)
+replace \t with [ekkert]
+rplace ( with (PR:S)
+replace ) with (PR:E)
+(MS:unclear)
+( > (PR:S)
+) > (PR:E)

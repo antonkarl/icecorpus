@@ -74,10 +74,10 @@ echo "Fix ADVP hvar direct questions"
 $CS structure_queries/fix-adv-hvar-direct.q $FILE
 mv -f $FILE.out $FILE
 
-echo ""
-echo "Add hvar trace"
-$CS structure_queries/add-hvar-trace.q $FILE
-mv -f $FILE.out $FILE
+#echo ""
+#echo "Add hvar trace"
+#$CS structure_queries/add-hvar-trace.q $FILE
+#mv -f $FILE.out $FILE
 
 echo ""
 echo "Add hvenaer trace"
@@ -202,6 +202,11 @@ mv -f $FILE.out $FILE
 echo ""
 echo "Fix er"
 $CS structure_queries/fix-er.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Fix svo segjandi"
+$CS structure_queries/fix-segjandi.q $FILE
 mv -f $FILE.out $FILE
 
 #These last four queries must run at the end of the sequence, and in the same relative order with extend-cp1.q and extend-ip1.q running before the other of the pair

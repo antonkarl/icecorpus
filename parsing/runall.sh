@@ -256,6 +256,11 @@ echo "Fix ÁÐUR EN"
 $CS structure_queries/cp-cmp-aduren.q $FILE
 mv -f $FILE.out $FILE
 
+echo ""
+echo "Fix IP-INF sister of a modal"
+$CS structure_queries/prune-ipinf.q $FILE
+mv -f $FILE.out $FILE
+
 python3 "scripts/rm-lemmata.py" $FILE > $FILE.out
 mv -f $FILE.out $FILE
 

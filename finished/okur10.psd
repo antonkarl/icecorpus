@@ -1,3 +1,4 @@
+
 ( (IP-MAT (CONJ En)
 	  (NP-LFD (WPRO-N hvör)
 		  (CP-FRL (WNP-1 0)
@@ -255,8 +256,7 @@
 			  (N-D bífalningu))))))
 
 ( (IP-IMP (CODE <paren>)
-	  (CP-ADV-LFD (C 0)
-		      (IP-SUB (MDPS vilji)
+	  (CP-ADV-LFD (IP-SUB (MDPS vilji)
 			      (NP-SBJ (PRO-D þér))
 			      (NP-OB1 (N-N ríkdómur))
 			      (RP til)))
@@ -556,3 +556,4 @@
 			      (NP-SBJ (PRO-N það))
 			      (BEPS sé))))
 	  (. .-.)))
+

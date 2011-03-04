@@ -1,3 +1,4 @@
+
 ( (IP-MAT (CONJ En)
 	  (NP-LFD (D-N sú)
 		  (N-N orða)
@@ -561,8 +562,7 @@
 					  (NP (ONE-A eitt) (N-A augnablik))))))
 	  (. .-.)))
 
-( (IP-MAT (CP-ADV-LFD (C 0)
-		      (IP-SUB (BEPS Sé)
+( (IP-MAT (CP-ADV-LFD (IP-SUB (BEPS Sé)
 			      (NP-SBJ (N-N hlátur))
 			      (PP (P um)
 				  (NP (N-A morgun$) (D-A $inn)))))
@@ -602,3 +602,4 @@
 						  (PP (P (CODE {á}))
 						      (NP (NP-POS (D-G þessara))))))))
 	  (. .-.)))
+

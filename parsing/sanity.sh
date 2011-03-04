@@ -74,8 +74,18 @@ $CS sanity_checks/missing-cp.q $tempfile
 mv -f $tempfile.out $tempfile
 
 echo ""
-echo "Add a Missing C automatically...I hope this works"
+echo "Add a Missing C automatically"
 $CS sanity_checks/add-c.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
+echo "Add a Missing C automatically"
+$CS sanity_checks/add-c2.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
+echo "Add a Missing C automatically"
+$CS sanity_checks/add-c3.q $tempfile
 mv -f $tempfile.out $tempfile
 
 echo ""

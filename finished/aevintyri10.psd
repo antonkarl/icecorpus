@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP-SBJ *con*)
 	  (VBPI Fara)
 	  (ADVP-TMP (ADV þá))
@@ -305,8 +306,7 @@
 										     (NP-SBJ (NPR-N Árón)))))))))))))
 
 ( (IP-MAT (CONJ og)
-	  (CP-ADV-LFD (C 0)
-		      (IP-SUB (NP-SBJ *pro*)
+	  (CP-ADV-LFD (IP-SUB (NP-SBJ *pro*)
 			      (VBDI lifði)
 			      (PP (P til)
 				  (NP (PRO-G þess)
@@ -1009,3 +1009,4 @@
 								       (NP (NP-POS (PRO-A sinn))
 									   (N-A dauða))))))))))
 	  (. .-.)))
+

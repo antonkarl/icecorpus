@@ -195,8 +195,7 @@
 	      (NP (Q-D öllu)))
 	  (. .-.)))
 
-( (IP-MAT (CP-ADV (C 0)
-		  (IP-SUB (NP-SBJ *exp*)
+( (IP-MAT (CP-ADV (IP-SUB (NP-SBJ *exp*)
 			  (BEPS Sé)
 			  (NP-PRD (N-N sólskin))))
 	  (RDPI verður)
@@ -216,8 +215,7 @@
 	  (. .-.)
 	  (" ")))
 
-( (IP-MAT (CP-ADV-LFD (C 0)
-		      (IP-SUB (NP-SBJ *exp*)
+( (IP-MAT (CP-ADV-LFD (IP-SUB (NP-SBJ *exp*)
 			      (BEPS Sé)
 			      (NP-PRD (N-N dögg))))
 	  (ADVP-TMP-RSP (ADV þá))
@@ -233,8 +231,7 @@
 	  (. .-.)
 	  (" ")))
 
-( (IP-MAT (CP-ADV-LFD (C 0)
-		      (IP-SUB (NP-SBJ *exp*)
+( (IP-MAT (CP-ADV-LFD (IP-SUB (NP-SBJ *exp*)
 			      (BEPS Sé)
 			      (NP-PRD (N-N vindur$) (D-N $inn))))
 	  (ADVP-TMP-RSP (ADV þá))

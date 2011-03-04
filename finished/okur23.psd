@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP-SBJ *pro*)
 	  (MDPI Vill)
 	  (CP-THT (CP-THT (C að)
@@ -364,8 +365,7 @@
 	  (NP-SBJ (PRO-N ég))
 	  (ADVP (ADV fullvel))
 	  (CP-THT (C að)
-		  (IP-SUB (CP-ADV-LFD (C 0)
-				      (IP-SUB (VBPS kunni)
+		  (IP-SUB (CP-ADV-LFD (IP-SUB (VBPS kunni)
 					      (NP-SBJ (D-N þessi) (NS-N blöð))
 					      (IP-INF (TO að)
 						      (VB koma)
@@ -470,3 +470,4 @@
 ( (FRAG (NP (NPR-N Gudmundus) (NPR-N Einarius))
 	(CODE MS:unclear)
 	(CODE MS:unclear)))
+

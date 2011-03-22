@@ -1,3 +1,4 @@
+
 ( (IP-IMP (VBI Leið)
 	  (NP-SBJ (PRO-N þú))
 	  (NEG eigi)
@@ -414,7 +415,8 @@
 				       (NP (NS-D meinum))))))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (D-A Þessa) (NS-A imbrudaga))
+( (IP-MAT (NP-SBJ *exp*)
+	  (NP-OB1 (D-A Þessa) (NS-A imbrudaga))
 	  (MDPI skal)
 	  (VB halda)
 	  (PP (PP (P of)
@@ -868,3 +870,4 @@
 						 (P til)
 						 (NP (N-G dauðadags))))))))
 	  (. .-.)))
+

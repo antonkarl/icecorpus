@@ -209,6 +209,11 @@ echo "Fix svo segjandi"
 $CS structure_queries/fix-segjandi.q $FILE
 mv -f $FILE.out $FILE
 
+echo ""
+echo "Add some structure to svo sem"
+$CS structure_queries/svosem.q $FILE
+mv -f $FILE.out $FILE
+
 #These last four queries must run at the end of the sequence, and in the same relative order with extend-cp1.q and extend-ip1.q running before the other of the pair
 
 echo ""

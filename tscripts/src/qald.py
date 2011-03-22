@@ -1,39 +1,46 @@
-from lepl import Delayed, Node, Space, Word, Regexp, Drop, DroppedSpace
+from lepl import Delayed, Node, Space, Regexp, Drop, DroppedSpace
 from operator import attrgetter
-
-class NumberedBracket:
-    def __init__(self):
-        self.node_type = 1
+import re
 
 class BracketParser:    
-
     def get_bracket_parser(self):
         phrase = Delayed()
         label = Regexp(r"[^ \t\n\r\(\)]+")
-        word = Word() > Node
-        terminal = Word() | ( Word() & Drop(Space()) & word )     
+        word = label > Node
+        #terminal = Word() | ( Word() & Drop(Space()) & word )     
+        terminal = label | ( label & Drop(Space()) & word )
         with DroppedSpace():
             phrase += Drop('(') & ( terminal | label & phrase[1:] | phrase[1:] ) & Drop(')') > Node
         return phrase
     
     def recurse_node( self, node, node_id, id_offset, node_list, parent_id, depth ):
-        output_node = NumberedBracket()                  
+        output_node = PhraseNode()                  
         current_start = node_id - id_offset
         output_node.start_bracket = current_start      
-        output_node.label = node[0]   
+        output_node.label = node[0]
+        if depth == 0:
+            output_node.label = ""   
         output_node.parent_id = parent_id
-        output_node.node_id = node_id     
+
+        node_id+=1        
+        output_node.node_id = node_id        
+        if len(node_list) > 0:     
+            output_node.node_id = max( node_list, key=attrgetter("node_id")).node_id + 1
+        
         output_node.depth = depth
+        output_node.node = node        
         depth+=1
+
+                
         if hasattr( node, "Node"):
-            for child in node.Node:
-                node_id+=1               
+            for child in node.Node:               
                 node_id=self.recurse_node(child,node_id,id_offset,node_list, output_node.node_id, depth)
+                #node_id+=1                                
         else:
             # this is a terminal 
-            output_node.node_type = 3
-        node_id+=1
-        output_node.end_bracket = node_id
+            output_node.node_type = 3    
+            
+        output_node.end_bracket = node_id 
         # parse lemma
         output_node.lemma=None
         if output_node.node_type == 3:
@@ -44,22 +51,61 @@ class BracketParser:
             
         node_list.append( output_node )
         #print( str(output_node.start_bracket) + "\t" + str(output_node.end_bracket) + "\t" + str(output_node.node_type) + "\t" + output_node.label  )
-        return node_id
+        return node_id +1
 
-    def parse(self, bracket_parse):        
+    def parse(self, bracket_parse, start_id=0):       
+        bracket_parse = bracket_parse.replace('\n',' '); 
         parser = self.get_bracket_parser()
         stuff = parser.parse( bracket_parse )[0]   
         #print(stuff)             
-        currentNode = stuff.Node[0]
+        currentNode = stuff #.Node[0]
         node_list = []
-        self.recurse_node( currentNode, 1, 0, node_list, -1, 0 )        
-        node_list = sorted(node_list, key=attrgetter('start_bracket'))
-        return node_list
+        self.recurse_node( currentNode, 0, 0, node_list, -1, 0 )        
+        node_list = sorted(node_list, key=attrgetter('start_bracket'))        
+        return PhraseTree(node_list)
 
-class PhraseNode:    
+class PhraseTree:
+    node_list = None
+    
+    def __init__(self, node_list):
+        self.node_list = node_list
+        
+    def max_id(self):
+        return max( self.node_list, key=attrgetter("node_id") ).node_id
+    
+    def to_brackets(self):
+        bracket_list = []
+        for node in self.node_list:
+            bracket_list.append(0)
+            bracket_list.append(0)
+                    
+        last_depth = 0        
+        
+        for node in self.node_list:
+            if node.depth == 0:
+                node.label = ""
+            if node.node_type == 3:
+                bracket_list[node.start_bracket] = ""+node.label+""
+                if node.lemma != None:
+                    bracket_list[node.start_bracket] += "-"+ node.lemma
+                bracket_list[node.end_bracket] = ""        
+            else:        
+                opening = ""
+                if node.depth < last_depth:
+                    opening = "\n"
+                    for i in range(0, node.depth):
+                        opening+="\t"
+                    opening += "  "
+                bracket_list[node.start_bracket] = opening + "("+str(node.label)+" " 
+                bracket_list[node.end_bracket] = ")"                
+            last_depth = node.depth
+                
+        return ''.join([label for label in bracket_list])
+          
+class PhraseNode:        
     def __init__(self):
         self.node_type = 1
-    
+
 class Corpus:
     trees = []
     filter = [] 
@@ -73,25 +119,65 @@ class Corpus:
                             
     def add_filter(self,filter):
         self.filter = self.filter & filter
-
-def stuff():
-    pass
     
 # some testing
-corpus = """( (IP-MAT (NP-SBJ (NPR-N Halldór-halldór))
+bracket_tree = """( (IP-MAT (NP-SBJ (NPR-N Halldór-halldór))
   (VBDI hét)
   (NP-PRD (NP (ONE-N einn) (ADJ-N ríkur) (N-N maður))
       (CONJP (CONJ og)
          (NP (N-N vinur)
              (NP-POS (NPR-G Haralds)
                  (NP-PRN (N-G konungs-konungur))))))
-  (. .-.) (ID 1275.MORKIN.NAR-HIS,.2)))"""
+  (. .-.) ) (ID 1275.MORKIN.NAR-HIS,.2) )"""
 
-parser = BracketParser()
-corpus = corpus.replace('\n',' ');
-node_list = parser.parse( corpus )
+fourtrees="""( (META (NP (ADJ-N XLIII.) (N-N KAPÍTULI))) (ID 1275.MORKIN.NAR-HIS,.1))
+
+( (IP-MAT (NP-SBJ (NPR-N Halldór))
+      (VBDI hét)
+      (NP-PRD (NP (ONE-N einn) (ADJ-N ríkur) (N-N maður))
+          (CONJP (CONJ og)
+             (NP (N-N vinur)
+                 (NP-POS (NPR-G Haralds)
+                     (NP-PRN (N-G konungs))))))
+      (. .-.)) (ID 1275.MORKIN.NAR-HIS,.2))
+
+( (IP-MAT (NP-SBJ (N-N Dóttir)
+          (NP-POS (PRO-G hans)))
+      (VBDI hét)
+      (NP-PRD (NPR-N Ingibjörg)
+          (, ,-,)
+          (NP-PRN (ADJP (ADJ-N vitur)
+                (CONJP *ICH*-1))
+              (N-N kona)
+              (CONJP-1 (CONJ og) (ADJ-N væn))))
+      (. ,-,)) (ID 1275.MORKIN.NAR-HIS,.3))
+
+( (IP-MAT (CONJ og)
+      (NP-SBJ *con*)
+      (BEDI var)
+      (ADVP-TMP (ADV enn))
+      (PP (P í)
+          (NP (N-D vináttu)))
+      (PP (P við)
+          (NP (N-A konung)))
+      (. ,-,)) (ID 1275.MORKIN.NAR-HIS,.4))"""
+
+# corpus = corpus.replace('\n',' ');
+# tree = parser.parse( bracket_tree,5 )
 #print(len(node_list))
 #print( "id\tstart\tend\ttype\tpar_id\tlabel" )
-for output_node in node_list:   
-    print( str(output_node.node_id) + "\t" + str(output_node.start_bracket) + "\t" + str(output_node.end_bracket) + "\t" + str(output_node.depth) + "\t" + str(output_node.node_type) + "\t" + str(output_node.parent_id) + "\t" + output_node.label + "\t" + str(output_node.lemma) )
-    
+
+
+thetrees = re.split("\n\n",fourtrees)
+parser = BracketParser()
+
+next_id=0
+for bracket_tree in thetrees:
+    tree = parser.parse(bracket_tree,next_id)
+    next_id=tree.max_id()+1    
+    for output_node in tree.node_list:       
+        print( str(output_node.node_id) + "\t" + str(output_node.start_bracket) + "\t" + str(output_node.end_bracket) + "\t" + str(output_node.depth) + "\t" + str(output_node.node_type) + "\t" + str(output_node.parent_id) + "\t" + str(output_node.label) + "\t" + str(output_node.lemma) )    
+
+
+# print( tree.to_brackets() )
+

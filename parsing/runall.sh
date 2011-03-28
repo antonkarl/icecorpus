@@ -25,6 +25,12 @@ $CS structure_queries/prune-pp.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""
+echo "Fix eður because I can't stand it any more"
+$CS structure_queries/ethur.q $FILE
+mv -f $FILE.out $FILE
+
+
+echo ""
 echo "Add NP-POS for pronouns"
 $CS structure_queries/add_np_pos.q $FILE
 mv -f $FILE.out $FILE

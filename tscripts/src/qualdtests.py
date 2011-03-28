@@ -1,6 +1,7 @@
 import unittest
 import re
 from qald import BracketParser
+from operator import attrgetter
 
 class ParsingBrackets(unittest.TestCase):
     bracket_tree = """( (IP-MAT (NP-SBJ (NPR-N Halldór-halldór))
@@ -11,6 +12,21 @@ class ParsingBrackets(unittest.TestCase):
              (NP-POS (NPR-G Haralds)
                  (NP-PRN (N-G konungs-konungur))))))
   (. .-.) ) (ID 1275.MORKIN.NAR-HIS,.2) )"""
+  
+    def testBracketNumbers(self):                          
+        """Bracket numbers should be well formed"""
+        parser = BracketParser()                
+        tree = parser.parse( self.bracket_tree )
+        
+        for bracket_node in tree.node_list:                        
+            assert bracket_node.start_bracket < bracket_node.end_bracket  
+            
+        """Make sure the length of the node list is consistent with the numbers of the start and end brackets"""
+        minbracket = min( tree.node_list, key=attrgetter("start_bracket") ).start_bracket
+        maxbracket = max( tree.node_list, key=attrgetter("end_bracket") ).end_bracket
+        assert len( tree.node_list ) == (maxbracket - minbracket + 1) / 2 
+        
+        
       
     def testParseAgainstNoOutput(self):                          
         """There should be some output from the parser"""

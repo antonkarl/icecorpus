@@ -53,11 +53,11 @@ class BracketParser:
                  
         # parse lemma
         output_node.lemma=None
-        if output_node.node_type == 3:
-            chunks = output_node.label.split("-") 
-            if len(chunks) == 2:
-                output_node.label = chunks[0]
-                output_node.lemma = chunks[1]
+        #if output_node.node_type == 3:
+        #    chunks = output_node.label.split("-") 
+        #    if len(chunks) == 2:
+        #        output_node.label = chunks[0]
+        #        output_node.lemma = chunks[1]
             
         node_list.append( output_node )
 
@@ -109,7 +109,7 @@ class BracketParser:
         #print(stuff)             
         currentNode = stuff #.Node[0]
         node_list = []
-        self.id_counter = -1
+        self.id_counter = start_id - 1
         self.bracket_counter = -1
         self.recurse_node( currentNode, node_list, -1, 0 )        
         node_list = sorted(node_list, key=attrgetter('start_bracket'))        
@@ -123,6 +123,14 @@ class PhraseTree:
         
     def max_id(self):
         return max( self.node_list, key=attrgetter("node_id") ).node_id
+    
+    def to_text(self):
+        text = ""
+        for bracket_node in self.node_list:
+            if bracket_node.node_type == 3:
+                text += bracket_node.label + " "
+                
+        return text.strip() 
     
     def to_brackets(self):
         bracket_list = []
@@ -164,6 +172,9 @@ class Corpus:
         if( trees ):
             self.trees = trees
             self.reset_filter()
+
+    def from_brackets(self,path):
+        pass
             
     def reset_filter(self):
         self.filter = [i for i in range( len(self.trees) )]
@@ -216,24 +227,23 @@ fourtrees="""( (META (NP (ADJ-N XLIII.) (N-N KAPÍTULI))) (ID 1275.MORKIN.NAR-HI
 # corpus = corpus.replace('\n',' ');
 # tree = parser.parse( bracket_tree,5 )
 #print(len(node_list))
-print( "id\tstart\tend\tdepth\ttype\tpar_id\tlabel\tlemma" )
+print( "\nid\tstart\tend\tdepth\ttype\tpar_id\tlabel\tlemma" )
 
 
 thetrees = re.split("\n\n",fourtrees)
 parser = BracketParser()
 
-#for bracket_tree in thetrees:
-#    tree = parser.parse(bracket_tree,next_id)
-#    next_id=tree.max_id()+1        
-#    for output_node in tree.node_list:               
-#        print( str(output_node.node_id) + "\t" + str(output_node.start_bracket) + "\t" + str(output_node.end_bracket) + "\t" + str(output_node.depth) + "\t" + str(output_node.node_type) + "\t" + str(output_node.parent_id) + "\t" + str(output_node.label) + "\t" + str(output_node.lemma) )    
+theid = 0
+for bracket_tree in thetrees:
+    tree = parser.parse(bracket_tree,theid)
+    theid=tree.max_id()+1        
+    for output_node in tree.node_list:               
+        print( str(output_node.node_id) + "\t" + str(output_node.start_bracket) + "\t" + str(output_node.end_bracket) + "\t" + str(output_node.depth) + "\t" + str(output_node.node_type) + "\t" + str(output_node.parent_id) + "\t" + str(output_node.label) + "\t" + str(output_node.lemma) )    
 
-tree = parser.parse( bracket_tree )
-for output_node in tree.node_list:               
-    print( str(output_node.node_id) + "\t" + str(output_node.start_bracket) + "\t" + str(output_node.end_bracket) + "\t" + str(output_node.depth) + "\t" + str(output_node.node_type) + "\t" + str(output_node.parent_id) + "\t" + str(output_node.label) + "\t" + str(output_node.lemma) )    
-
+#tree = parser.parse( bracket_tree )
+#for output_node in tree.node_list:               
+#    print( str(output_node.node_id) + "\t" + str(output_node.start_bracket) + "\t" + str(output_node.end_bracket) + "\t" + str(output_node.depth) + "\t" + str(output_node.node_type) + "\t" + str(output_node.parent_id) + "\t" + str(output_node.label) + "\t" + str(output_node.lemma) )    
 # print( tree.to_brackets() )
 
-
-print( tree.to_brackets() )
+print( tree.to_text() )
 

@@ -13,7 +13,56 @@ class BracketParser:
             phrase += Drop('(') & ( terminal | label & phrase[1:] | phrase[1:] ) & Drop(')') > Node
         return phrase
     
-    def recurse_node( self, node, node_id, id_offset, node_list, parent_id, depth ):
+    id_counter=-1
+    bracket_counter=-1    
+    
+    def next_bracket(self):
+        self.bracket_counter += 1
+        return self.bracket_counter
+    
+    def next_id(self):
+        self.id_counter += 1
+        return self.id_counter
+   
+    def recurse_node( self, node, node_list, parent_id, depth ):
+        output_node = PhraseNode()                  
+
+        output_node.label = node[0]
+        if depth == 0:
+            output_node.label = ""   
+        output_node.parent_id = parent_id
+    
+        output_node.start_bracket = self.next_bracket()        
+        output_node.node_id = self.next_id()
+        
+        output_node.depth = depth
+        output_node.node = node        
+        depth+=1
+                
+        if hasattr( node, "Node"):
+            for child in node.Node:               
+                #self.bracket_counter = self.recurse_node(child,node_list, output_node.node_id, depth)
+                self.recurse_node(child,node_list, output_node.node_id, depth)            
+            #self.bracket_counter-=1                                
+        else:
+            # this is a terminal 
+            output_node.node_type = 3  
+        
+        output_node.end_bracket = self.next_bracket()    
+            
+                 
+        # parse lemma
+        output_node.lemma=None
+        if output_node.node_type == 3:
+            chunks = output_node.label.split("-") 
+            if len(chunks) == 2:
+                output_node.label = chunks[0]
+                output_node.lemma = chunks[1]
+            
+        node_list.append( output_node )
+
+    
+    def recurse_node_old( self, node, node_id, id_offset, node_list, parent_id, depth ):
         output_node = PhraseNode()                  
         current_start = node_id - id_offset
         output_node.start_bracket = current_start      
@@ -60,7 +109,9 @@ class BracketParser:
         #print(stuff)             
         currentNode = stuff #.Node[0]
         node_list = []
-        self.recurse_node( currentNode, 0, 0, node_list, -1, 0 )        
+        self.id_counter = -1
+        self.bracket_counter = -1
+        self.recurse_node( currentNode, node_list, -1, 0 )        
         node_list = sorted(node_list, key=attrgetter('start_bracket'))        
         return PhraseTree(node_list)
 
@@ -159,25 +210,30 @@ fourtrees="""( (META (NP (ADJ-N XLIII.) (N-N KAPÍTULI))) (ID 1275.MORKIN.NAR-HI
       (PP (P í)
           (NP (N-D vináttu)))
       (PP (P við)
-          (NP (N-A konung)))
+          (NP (N-A konung-konungur)))
       (. ,-,)) (ID 1275.MORKIN.NAR-HIS,.4))"""
 
 # corpus = corpus.replace('\n',' ');
 # tree = parser.parse( bracket_tree,5 )
 #print(len(node_list))
-#print( "id\tstart\tend\ttype\tpar_id\tlabel" )
+print( "id\tstart\tend\tdepth\ttype\tpar_id\tlabel\tlemma" )
 
 
 thetrees = re.split("\n\n",fourtrees)
 parser = BracketParser()
 
-next_id=0
-for bracket_tree in thetrees:
-    tree = parser.parse(bracket_tree,next_id)
-    next_id=tree.max_id()+1    
-    for output_node in tree.node_list:       
-        print( str(output_node.node_id) + "\t" + str(output_node.start_bracket) + "\t" + str(output_node.end_bracket) + "\t" + str(output_node.depth) + "\t" + str(output_node.node_type) + "\t" + str(output_node.parent_id) + "\t" + str(output_node.label) + "\t" + str(output_node.lemma) )    
+#for bracket_tree in thetrees:
+#    tree = parser.parse(bracket_tree,next_id)
+#    next_id=tree.max_id()+1        
+#    for output_node in tree.node_list:               
+#        print( str(output_node.node_id) + "\t" + str(output_node.start_bracket) + "\t" + str(output_node.end_bracket) + "\t" + str(output_node.depth) + "\t" + str(output_node.node_type) + "\t" + str(output_node.parent_id) + "\t" + str(output_node.label) + "\t" + str(output_node.lemma) )    
 
+tree = parser.parse( bracket_tree )
+for output_node in tree.node_list:               
+    print( str(output_node.node_id) + "\t" + str(output_node.start_bracket) + "\t" + str(output_node.end_bracket) + "\t" + str(output_node.depth) + "\t" + str(output_node.node_type) + "\t" + str(output_node.parent_id) + "\t" + str(output_node.label) + "\t" + str(output_node.lemma) )    
 
 # print( tree.to_brackets() )
+
+
+print( tree.to_brackets() )
 

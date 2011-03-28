@@ -8,6 +8,7 @@ reps = {}
 reps['(CP (C og-og))']='(CONJ og-og)'
 reps['(CP (C en-en))']='(CONJ en-en)'
 reps['(CP (C eða-eða))']='(CONJ eða-eða)'
+reps['(CP (C eður-eður))']='(CONJ eður-eður)'
 reps['(CP (C ellegar-ellegar))']='(CONJ ellegar-ellegar)'
 reps['(CP (C heldur-heldur))']='(CONJ heldur-heldur)'
 reps['(CP (C enda-enda))']='(CONJ enda-enda)'

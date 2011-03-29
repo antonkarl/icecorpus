@@ -53,6 +53,13 @@ echo "Missing Finite Verb"
 $CS sanity_checks/bad-finite-ip2.q $tempfile
 mv -f $tempfile.out $tempfile
 
+#the following query should run before the SPE queries
+
+echo ""
+echo "Missing C in embedded CP-QUE"
+$CS sanity_checks/missing-c-cpque.q $tempfile
+mv -f $tempfile.out $tempfile
+
 echo ""
 echo "Add missing SPE"
 $CS sanity_checks/add-spe.q $tempfile

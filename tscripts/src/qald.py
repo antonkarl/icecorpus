@@ -163,6 +163,13 @@ class PhraseTree:
             last_depth = node.depth
                 
         return ''.join([label for label in bracket_list])
+        
+    def to_table(self):
+        table = ""
+        for output_node in self.node_list:               
+            table += str(output_node.node_id) + "\t" + str(output_node.start_bracket) + "\t" + str(output_node.end_bracket) + "\t" + str(output_node.depth) + "\t" + str(output_node.node_type) + "\t" + str(output_node.parent_id) + "\t" + str(output_node.label) + "\t" + str(output_node.lemma) + "\n"            
+        return table.strip()    
+
           
 class PhraseNode:        
     def __init__(self):
@@ -261,12 +268,14 @@ def read_trees( bracket_file_path ):
     parser = BracketParser()
     
     trees = []
+    next_id = 0
     for i in range(0,10):
-        bracket_tree = bracket_trees[i]
-        tree = parser.parse( bracket_tree )
+        bracket_tree = bracket_trees[i]        
+        tree = parser.parse( bracket_tree, next_id )
+        next_id = tree.max_id() + 1
         trees.append(tree)
         #print( len(trees) )
-        print( tree.to_text() ) 
+        print( tree.to_table() ) 
     return trees
 
 

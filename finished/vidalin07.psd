@@ -672,7 +672,7 @@
 		       (VAN haldinn)))
 	  (. ,-,)))
 
-( (IP-MAT (NP-SBJ (PRO-N hann))
+( (IP-MAT (NP-SBJ (PRO-A hann))
 	  (BEPI er)
 	  (ADVP (ADV nú))
 	  (NEG ekki)
@@ -707,9 +707,9 @@
 	  (. ,-,)))
 
 ( (IP-MAT (CONJ og)
-	  (NP-SBJ *con*)
+	  (NP-SBJ *con*-A)
 	  (BEPI er)
-	  (ADVP (ADV nú))
+	  (ADVP-TMP (ADV nú))
 	  (NEG ekki)
 	  (ADJP (CP-TMC (WNP-1 0)
 			(IP-INF (NP-OB1 *T*-1)

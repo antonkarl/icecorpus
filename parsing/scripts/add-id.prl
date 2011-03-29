@@ -11,8 +11,8 @@ $/ = "";
 $filename = shift(@ARGV);	# assign first arg to $filename
 $count = 0;
 
-($year, $name, $genre, $rest) = split(/\./, $filename); # get base of filename
-$name = "$year.$name.$genre";
+($year, $name, $genre,$subgenre,$rest) = split(/\./, $filename); # get base of filename
+$name = "$year.$name.$genre.$subgenre";
 
 ($NAME = $name) =~ tr/a-z/A-Z/; # capitalize it
 

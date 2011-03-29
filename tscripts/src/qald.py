@@ -53,11 +53,11 @@ class BracketParser:
                  
         # parse lemma
         output_node.lemma=None
-        #if output_node.node_type == 3:
-        #    chunks = output_node.label.split("-") 
-        #    if len(chunks) == 2:
-        #        output_node.label = chunks[0]
-        #        output_node.lemma = chunks[1]
+        if output_node.node_type == 3:
+            chunks = output_node.label.split("-") 
+            if len(chunks) == 2:                
+                output_node.label = chunks[0]
+                output_node.lemma = chunks[1]
             
         node_list.append( output_node )
 
@@ -128,7 +128,10 @@ class PhraseTree:
         text = ""
         for bracket_node in self.node_list:
             if bracket_node.node_type == 3:
-                text += bracket_node.label + " "
+                lstart = bracket_node.label[0] 
+                if not (lstart == "*" or lstart == "{" or lstart == "<" or lstart=="0"):                
+                    text += bracket_node.label + " "
+        text = text.replace("$ $", "")
                 
         return text.strip() 
     
@@ -160,6 +163,13 @@ class PhraseTree:
             last_depth = node.depth
                 
         return ''.join([label for label in bracket_list])
+        
+    def to_table(self):
+        table = ""
+        for output_node in self.node_list:               
+            table += str(output_node.node_id) + "\t" + str(output_node.start_bracket) + "\t" + str(output_node.end_bracket) + "\t" + str(output_node.depth) + "\t" + str(output_node.node_type) + "\t" + str(output_node.parent_id) + "\t" + str(output_node.label) + "\t" + str(output_node.lemma) + "\n"            
+        return table.strip()    
+
           
 class PhraseNode:        
     def __init__(self):
@@ -222,28 +232,53 @@ fourtrees="""( (META (NP (ADJ-N XLIII.) (N-N KAPÍTULI))) (ID 1275.MORKIN.NAR-HI
           (NP (N-D vináttu)))
       (PP (P við)
           (NP (N-A konung-konungur)))
-      (. ,-,)) (ID 1275.MORKIN.NAR-HIS,.4))"""
-
-# corpus = corpus.replace('\n',' ');
-# tree = parser.parse( bracket_tree,5 )
-#print(len(node_list))
-print( "\nid\tstart\tend\tdepth\ttype\tpar_id\tlabel\tlemma" )
+      (. ,-,)) (ID 1275.MORKIN.NAR.HIS,.4))"""
 
 
-thetrees = re.split("\n\n",fourtrees)
-parser = BracketParser()
+def run_test():
+    # corpus = corpus.replace('\n',' ');
+    # tree = parser.parse( bracket_tree,5 )
+    #print(len(node_list))
+    print( "\nid\tstart\tend\tdepth\ttype\tpar_id\tlabel\tlemma" )
+    thetrees = re.split("\n\n",fourtrees)
+    parser = BracketParser()
+    
+    theid = 0
+    for bracket_tree in thetrees:
+        tree = parser.parse(bracket_tree,theid)
+        theid=tree.max_id()+1        
+        for output_node in tree.node_list:               
+            print( str(output_node.node_id) + "\t" + str(output_node.start_bracket) + "\t" + str(output_node.end_bracket) + "\t" + str(output_node.depth) + "\t" + str(output_node.node_type) + "\t" + str(output_node.parent_id) + "\t" + str(output_node.label) + "\t" + str(output_node.lemma) )    
+    
+    #tree = parser.parse( bracket_tree )
+    #for output_node in tree.node_list:               
+    #    print( str(output_node.node_id) + "\t" + str(output_node.start_bracket) + "\t" + str(output_node.end_bracket) + "\t" + str(output_node.depth) + "\t" + str(output_node.node_type) + "\t" + str(output_node.parent_id) + "\t" + str(output_node.label) + "\t" + str(output_node.lemma) )    
+    # print( tree.to_brackets() )
+    
+    print( tree.to_text() )
 
-theid = 0
-for bracket_tree in thetrees:
-    tree = parser.parse(bracket_tree,theid)
-    theid=tree.max_id()+1        
-    for output_node in tree.node_list:               
-        print( str(output_node.node_id) + "\t" + str(output_node.start_bracket) + "\t" + str(output_node.end_bracket) + "\t" + str(output_node.depth) + "\t" + str(output_node.node_type) + "\t" + str(output_node.parent_id) + "\t" + str(output_node.label) + "\t" + str(output_node.lemma) )    
+def read_trees( bracket_file_path ):
+    input_file = open( bracket_file_path )
+    alltrees = input_file.read()
+    alltrees = re.sub("(/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/)|(//.*)","",alltrees)
+    alltrees = alltrees.strip()
+    bracket_trees = alltrees.split("\n\n")
+#    print( len(bracket_trees) )
+#    print( bracket_trees[0] )
+    parser = BracketParser()
+    
+    trees = []
+    next_id = 0
+    for i in range(0,10):
+        bracket_tree = bracket_trees[i]        
+        tree = parser.parse( bracket_tree, next_id )
+        next_id = tree.max_id() + 1
+        trees.append(tree)
+        #print( len(trees) )
+        print( tree.to_table() ) 
+    return trees
 
-#tree = parser.parse( bracket_tree )
-#for output_node in tree.node_list:               
-#    print( str(output_node.node_id) + "\t" + str(output_node.start_bracket) + "\t" + str(output_node.end_bracket) + "\t" + str(output_node.depth) + "\t" + str(output_node.node_type) + "\t" + str(output_node.parent_id) + "\t" + str(output_node.label) + "\t" + str(output_node.lemma) )    
-# print( tree.to_brackets() )
 
-print( tree.to_text() )
+trees = read_trees("1200.sturltest.nar.sag.psd")
+
 

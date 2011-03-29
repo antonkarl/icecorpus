@@ -1,3 +1,4 @@
+
 ( (IP-MAT (INTJ Ó)
 	  (NP-SBJ (NPR-N guð))
 	  (VBPI betri)
@@ -546,12 +547,12 @@
 						 (PP (P á)
 						     (PP (P meðan)
 							 (CP-ADV (C 0)
-								 (IP-SUB (NP-SBJ (PRO-N hann))
+								 (IP-SUB (NP-SBJ (PRO-A hann))
 									 (BEPI er)
-									 (ADJP-XXX (CP-TMC (WNP-2 0)
-											   (IP-INF (NP-OB1 *T*-2)
-												   (TO að)
-												   (VB finna)))))))))))))
+									 (ADJP (CP-TMC (WNP-2 0)
+										       (IP-INF (NP-OB1 *T*-2)
+											       (TO að)
+											       (VB finna)))))))))))))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (NP (D-N Hinir) (ADJ-N ágjörnu))
@@ -1254,3 +1255,4 @@
 									    (NP-OB2 (PRO-D honum))
 									    (VBDI eftirlét))))))))))))
 	  (. .-.)))
+

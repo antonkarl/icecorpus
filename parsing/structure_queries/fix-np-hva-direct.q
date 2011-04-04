@@ -5,5 +5,4 @@ query: (IP* idoms {1}NP*) AND (NP* idoms {2}PRO*) AND (PRO* idoms [Hh]va*|[Hh]ve
 
 replace_label{1}: WNP
 replace_label{2}: WPRO-N
-add_internal_node{1, 3}: CP-XXX
 add_internal_node{3, 3}: IP-SUB

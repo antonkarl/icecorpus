@@ -5,5 +5,4 @@ query: (IP* idoms {1}ADVP*) AND (ADVP* idoms {2}ADV*) AND (ADV* idoms [Hh]v*) AN
 
 replace_label{1}: WADVP
 replace_label{2}: WADV
-add_internal_node{1, 3}: CP-XXX
 add_internal_node{3, 3}: IP-SUB

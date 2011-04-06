@@ -61,7 +61,7 @@ def extract_text( infile_path, output_directory ):
                         #lemma = chunks[1]
                         word = chunks[0]    
                         
-                    word = word.replace("<dash/>","")
+                    word = word.replace("<dash/>","-")
                                                     
                     if not is_empty( word ) and tag != "ID" and tag!="CODE":                    
                         output += word + " "

@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+#
+#  ./dat2txt filepattern output_directory
+#  Example: ./dat2txt.py txt/
+#
 import glob
 import sys
 import os

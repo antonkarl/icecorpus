@@ -60,8 +60,10 @@ def extract_text( infile_path, output_directory ):
                     if len(chunks) == 2:
                         #lemma = chunks[1]
                         word = chunks[0]    
+                        
+                    word = word.replace("<dash/>","")
                                                     
-                    if not is_empty( word ) and tag != "ID":                    
+                    if not is_empty( word ) and tag != "ID" and tag!="CODE":                    
                         output += word + " "
             
         output = output.strip() + "\n"

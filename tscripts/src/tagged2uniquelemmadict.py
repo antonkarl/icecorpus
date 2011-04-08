@@ -53,11 +53,15 @@ lines = []
 output = ""
 for identity in lemmata:
     mappings = lemmata[identity]
+    
+    score = 0
+    bestmapping = "X"    
     for mapping in mappings.keys():
-        amb = "F"
-        if identity in ambiguous:
-            amb = "T"
-        lines.append( identity + "\t" + mapping + "\t" + str(mappings[mapping]) + "\n" ) 
+        if mappings[mapping] > score:
+            score = mappings[mapping]
+            bestmapping = mapping
+                    
+    lines.append( identity + "\t" + bestmapping + "\n" ) 
 
 lines = sorted( lines )
 print( len(lines ))

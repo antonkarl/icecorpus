@@ -6,40 +6,64 @@
 import glob
 import sys
 import os
+from operator import itemgetter
 
-def extract_lemmata( filename, lemmadict ):
+def extract_lemmata( filename, lemmadict, ambiguous ):
 #    print("extracting from " + filename)
     file = open( filename )
     lines = file.readlines()
     for line in lines:
         if len( line.split("\t") ) == 3:
             word, tag, lemma = line.split("\t")
-            identity = word + "_" + tag
-            if identity in lemmadict.keys():
-                mappings = lemmadict[identity]
-                if lemma in mappings:
-                    mappings[lemma] += 1
-                else:
-                    mappings[lemma] = 1               
-            else:
-                mappings = [{lemma: 1}]
-                lemmadict[identity] = mappings
+            word = word.lower()
+            lemma = lemma.strip()
+            
+            if lemma != "0":            
+                identity = word + "\t" + tag
+                if identity in lemmadict.keys():
+                    mappings = lemmadict[identity]
+                    if lemma in mappings:
+                        mappings[lemma] += 1
+                    else:
+                        ambiguous.add( identity )
+                        mappings[lemma] = 1               
+                else:                    
+                    mappings = {}
+                    mappings[lemma] = 1
+                    lemmadict[identity] = mappings
             
 # get input params
 file_matcher = sys.argv[1]  # like something/*.tagged
-output_directory = sys.argv[2]  # like data/
+output_file = sys.argv[2]  #
 
 # create lemmadict
 lemmata = {}
+ambiguous = set()
 
 # run the extractor on each file matched by file matcher
 allfiles = glob.glob( file_matcher )
 for file in allfiles:
     print( file )
-    extract_lemmata( file, lemmata )
+    extract_lemmata( file, lemmata, ambiguous )
+    print( "Lemma identities: "+ str(len(lemmata)) )
 
-for identity in lemmata.keys():
-    lemmata[identity]
+
+lines = []
+
+output = ""
+for identity in lemmata:
+    mappings = lemmata[identity]
+    for mapping in mappings.keys():
+        amb = "F"
+        if identity in ambiguous:
+            amb = "T"
+        lines.append( identity + "\t" + mapping + "\t" + str(mappings[mapping]) + "\n" ) 
+
+lines = sorted( lines )
+print( len(lines ))
+output = output.join(lines)
+
+open( output_file, "w" ).write( output )
 
 print( "done" )
 

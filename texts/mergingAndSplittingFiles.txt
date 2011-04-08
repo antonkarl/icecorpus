@@ -10,6 +10,7 @@ replace ". " with ".\n"
 replace "\n\n" with "\n"
 replace ." with ."\n
 replace [space]\n with \n
+replace \n[space] with \n
 (MS:another_MS_used)
 (MS:0)
 (MS:poetry_omitted)

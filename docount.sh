@@ -1,1 +1,1 @@
-./parsing/scripts/count.sh "finished/*.psd"
+./parsing/scripts/count.sh "parsing/*.psd"

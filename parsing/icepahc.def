@@ -1,0 +1,18 @@
+//April-11-2011
+//Joel C. Wallenberg and Einar Freyr Sigurðsson
+//This definition file is designed for use with the Icelandic Historical Parsed Corpus (IcePaHC), http://linguist.is/icelandic_treebank
+//Note that this file requires some small modifications in order to be used with English historical corpora, in particular having to do with which verbs can be considered auxiliary and due to the presence of nonfinite modals in Icelandic.
+
+
+finite_aux: *MDD*|MDP*|*HVP*|*HVD*|*BEP*|*BED*|*DOD*|*DOP*|RDP*|RDD*
+nonfin_aux: *HV|H*N*|*DO|D*N*|*BE|B*N*|RD|R*N*|MD
+nonfin_mainverb: *VB|V*N*|*DO|D*N*
+nonfin_verb:  *VB|V*N*|*HV|H*N*|*DO|D*N*|*BE|B*N*|RD|R*N*|MD
+finite_verb:  *MDD*|MDP*|*HVP*|*HVD*|*DOP*|*DOD*|*BEP*|*BED*|*VBP|*VBD*|RDP*|RDD*
+finite_mainverb: *VBP*|*VBD*|*DOP*|*DOD*
+passive: VAN*|DAN*|RAN*|MAN*|HAN*
+past_participle: VBN*|BEN*|DON*|RDN*|MDN*|HVN*
+any_np_head: N-*|NS-*|NPR-*|NPRS-*|NUM*|NEG*|Q*|ADJ*|*OTHER*|D*|WD*|V*|H*|B*
+heavy_const: *PP*|*ADJP*|CP*
+positive_np: !Q*|NEG*|NUM*|PRO*|\**
+object: NP-OB*

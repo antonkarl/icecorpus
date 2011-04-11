@@ -10,6 +10,7 @@ replace ". " with ".\n"
 replace "\n\n" with "\n"
 replace ." with ."\n
 replace [space]\n with \n
+replace \n[space] with \n
 (MS:another_MS_used)
 (MS:0)
 (MS:poetry_omitted)
@@ -20,3 +21,16 @@ replace ) with (PR:E)
 (MS:unclear)
 ( > (PR:S)
 ) > (PR:E)
+
+Concatinating .psd files
+cat georg*psd > 1525.georgius.nar-rel.psd
+git add 1525.georgius.nar-rel.psd
+git commit 1525.georgius.nar-rel.psd -m "1525.georgius added"
+git rm georg*psd
+git commit -am "removed georg.psd files"
+git mv parsing/1525.georgius.nar-rel.psd finished/
+git commit -am "1525.georgius moved to finished"
+
+Adding IDs to a file
+./reid.sh 1525.georgius.nar-rel.psd
+git commit 1525.georgius.nar-rel.psd -m "IDs added to georgius"

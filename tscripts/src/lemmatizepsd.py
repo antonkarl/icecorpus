@@ -65,7 +65,7 @@ def extract_text( infile_path, output_directory, unknowns ):
                 #print( matches )
                 for match in matches:
                     tag = match[0]
-                    word = match[1].lower()
+                    word = match[1]
                     lemma = "0"                                
                     chunks = word.split("-")
                     if len(chunks) == 2:

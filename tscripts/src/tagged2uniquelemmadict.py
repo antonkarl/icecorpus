@@ -16,7 +16,7 @@ def extract_lemmata( filename, lemmadict, ambiguous ):
         if len( line.split("\t") ) == 3:
             word, tag, lemma = line.split("\t")
             word = word.lower()
-            lemma = lemma.strip()
+            lemma = lemma.strip().lower()
             
             if lemma != "0":            
                 identity = word + "\t" + tag

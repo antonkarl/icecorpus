@@ -101,6 +101,16 @@ $CS sanity_checks/missing-c.q $tempfile
 mv -f $tempfile.out $tempfile
 
 echo ""
+echo "Add a missing P automatically"
+$CS sanity_checks/add-p.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
+echo "Missing P"
+$CS sanity_checks/missing-p.q $tempfile
+mv -f $tempfile.out $tempfile
+
+echo ""
 echo "Missing WXP"
 $CS sanity_checks/missing-wxp.q $tempfile
 mv -f $tempfile.out $tempfile

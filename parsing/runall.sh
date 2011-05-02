@@ -25,6 +25,26 @@ $CS structure_queries/prune-pp.q $FILE
 mv -f $FILE.out $FILE
 
 echo ""
+echo "Fix labels that should be SUCH"
+$CS structure_queries/label-such-n.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Fix labels that should be SUCH"
+$CS structure_queries/label-such-a.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Fix labels that should be SUCH"
+$CS structure_queries/label-such-d.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Fix labels that should be SUCH"
+$CS structure_queries/label-such-g.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
 echo "Fix eður because I can't stand it any more"
 $CS structure_queries/ethur.q $FILE
 mv -f $FILE.out $FILE

@@ -33,6 +33,8 @@ body {
 #sn0 {
 	background-color: #D2B48C;
 	border: 1px solid black;
+        margin-left: 40px;
+        margin-right: 40px;
 }
 
  #sn0 > .snode {
@@ -58,7 +60,7 @@ body {
 #floatMenu {  
     position:absolute;  
     top:50px;  
-    left:830px;  
+    left:0px;  
     margin-left:5px;  
     width:200px;  
    background: #FEF6EA;
@@ -70,11 +72,11 @@ body {
 #editpane{
    position: absolute;
     top:0px; 
-   left:0px;
+   left:210px;
    margin:0px;
    padding: 0px;
 	padding-right:20px;
-   width: 800px;
+//   width: 800px;
    border: 1px solid #857259;
   background-color: #FEEDD5;
 }

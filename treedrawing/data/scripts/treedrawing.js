@@ -16,7 +16,6 @@ $(document).ready(function() {
 	resetIds();
 	assignEvents(); 
 	$("#debugpane").empty();
-	// $("#debugpane").append( wnodeString($("#editpane")) );
 
     // make menu float
     menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")))  
@@ -86,112 +85,6 @@ function showContextMenu(){
 function hideContextMenu(){
 	$("#conMenu").css("visibility","hidden");	
 }
-
-	
-	/*
-	$(function() {
-	  $( selector ).contextMenu('#conMenu', {
-   	      // Randomly enable or disable each option
-	      beforeShow: function() { 
-
-//		if( !menuon ){return false;}
-
-  		e = window.event;
-  		var elementId = (e.target || e.srcElement).id;
-
-		stuff = "mmm";
-		if( startnode ){ stuff=startnode.id;}
-
-		// alert(elementId + " " + stuff );
-
-		if( startnode ){
-			if( elementId == stuff){
-				return true;
-			}		
-			else {
-				return false;
-			}
-		}
-
-
-		return true;
-              }
-
-	  } );
-	} );*/
-
-/*
-function disableContextMenu( selector ){
-	$(function() {
-	  $( selector ).contextMenu=null;
-	});
-	
-}
-*/
-/*
-function connectContextMenu(node){
-	node.contextMenu({
-		menu: 'conMenu'
-	},
-		function(action, el, pos) {
-
-			nodeid = $(el).attr('id');
-			if( action.startsWith("setlabel") ){
-				stackTree();
-				newlabel=action.substr(9);
-
-				// alert(newlabel);
-
-				// stackTree();
-				textnode = $(el).contents().filter(function() {
-			  			return this.nodeType == 3;
-					}).first().replaceWith(newlabel+" ");
-			
-				clearSelection();
-				// startnode=$("#"+nodeid);
-				// endnode=null;
-			 	// updateSelection();
-			}
-
-			if( action.startsWith("fixedleaf") ){
-
-
-				stackTree();
-				params=action.substr(10);
-
-				stuff = params.split("\:");
-				label = stuff[0];
-				word = stuff[1];
-				targetId = stuff[2];
-
-				// alert(word + " "+ label);
-
-				// alert(newlabel);
- 				//  NP-SBJ:*con*
-
-				// stackTree();
-				makeLeaf(true,label,word,targetId,true);
-			
-				clearSelection();
-				// startnode=$("#"+nodeid);
-				// endnode=null;
-			 	// updateSelection();
-			}
-
-*/
-/*
-		alert(
-			'Action: ' + action + '\n\n' +
-			'Element ID: ' + $(el).attr('id') + '\n\n' + 
-			'X: ' + pos.x + '  Y: ' + pos.y + ' (relative to element)\n\n' + 
-			'X: ' + pos.docX + '  Y: ' + pos.docY+ ' (relative to document)'
-			); */
-//	});
-// }
-
-/*
-
-*/
 
 function addCommand( keycode, type, label ){
 	commands[keycode]=new function(){
@@ -269,26 +162,8 @@ function assignEvents(){
 	$("#editpane").mousedown(clearSelection);
 	$("#conMenu").mousedown(hideContextMenu);
 
-/*
-	$(".snode>.snode").mouseover(
-	    function(e) {
-		    e.stopPropagation();
-		    updateMouseNode(this);
-		}
-	);
-*/
 }
 
-/*
-function updateMouseNode(node){	
-	if( mousenode ){
-		$(mousenode).css('color','black');
-	}
-	mousenode=node;
-	$(mousenode).css('color','red');
-	$(mousenode).children().css('color','black');
-}
-*/
 
 function handleKeyDown(e){	
 
@@ -354,18 +229,6 @@ function handleNodeClick(e){
 				
 				if (startnode && !endnode) {
 				
-					// alert( elementId + "  " + startnode.id );
-					//if( elementId == startnode.id  ){
-					//	alert( elementId + "  " + startnode.id );
-					//	$(elementId).enableContextMenu();
-					//	startnode=null;
-					// handleNodeClick(e);
-					//}
-					
-					// tokenRoot = getTokenRoot(elementId).attr("id");
-					// allSNodes = $("#"+tokenRoot+" #"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
-					// allSNodes.disableContextMenu();
-					//     $(".snode").disableContextMenu(); // VVV
 					if (startnode.id != elementId) {
 						// menuon=false;
 						e.stopPropagation();					
@@ -374,9 +237,6 @@ function handleNodeClick(e){
 					else {
 						showContextMenu();
 					}
-				//					tokenRoot = getTokenRoot(elementId).attr("id");
-				//					allSNodes = $("#"+tokenRoot+" #"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
-				//					allSNodes.disableContextMenu();
 				}
 				else if (startnode && endnode){
 					   e.stopPropagation();					   
@@ -401,9 +261,6 @@ function handleNodeClick(e){
 				}
 
 			}
-  		        // $("#conMenu").empty();
-			// $("#conMenu").html(getContextMenu( elementId ) );
-
 			e.stopPropagation();
 }
 
@@ -438,11 +295,6 @@ function selectNode(nodeId){
 	updateSelection();
 }
 
-/*
-function selectEndnode(node){
-	doSelectNode( document.getElementById(node) );
-}
-*/
 
 function clearSelection(){
 	window.event.preventDefault();
@@ -757,97 +609,6 @@ function makeLeaf(before, label, word, targetId, fixed){
 	
 	
 }			   	
-//	makeLeaf(before, label, word, targetId, true);
-		
-//	if( !targetId ){ targetId="" }
-/*
-	if( fixed ){
-
-  	    stackTree();
-		newleaf = $("<div class='snode'>"+ label+" <span class='wnode'>"+word+"</span></div>");
-		if( before ){
-			//alert(word + " x " + targetId );
-			newleaf.insertBefore( "#"+targetId );
-		}
-		else {
-			//alert(word + "y");
-			newleaf.insertAfter( "#"+targetId );
-		}
-				   startnode=null; endnode=null;
-				   resetIds();
-				   updateSelection();		
-	}
-	else if( startnode ){
-  	        stackTree();
-
-		// if( !fixed ){ fixed=false; }
-
-		// alert( label + " " + word );
-
-		if( endnode ){
-			
-*/
-
-	// if start and end are within the same token, do coindexing
-				// alert( startnode.id );
-			
-		
-		
-		// $( "<div class='snode'>"+ label+" <span class='wnode'>"+word+"</span></div>" );
-		
-		/*
-		document.body.onkeydown = null;	
-		editor=$("<div id='leafeditor' class='snode'><input id='leafphrasebox' class='labeledit' type='text' value='"+label+"' /> <input id='leaftextbox' class='labeledit' type='text' value='"+word+"' /></div>")
-
-			if( before ){
-				editor.insertBefore(startnode);
-			}
-			else {
-				editor.insertAfter(startnode);
-			}
-
-			$("#leafphrasebox,#leaftextbox").keydown(function(event) {
-				
-				if(event.keyCode == '32'){
-														  	
-  					var elementId = (event.target || event.srcElement).id;
-					// alert( elementId );	
-					$("#"+elementId).val( $("#"+elementId).val() );
-					event.preventDefault();
-				}
-				if(event.keyCode == '13'){			   
-				   newphrase = $("#leafphrasebox").val().toUpperCase()+" ";
-				   newtext = $("#leaftextbox").val();
-				   newtext = newtext.replace("<","&lt;");
-				   newtext = newtext.replace(">","&gt;");
-
-	  			   $("#leafeditor").replaceWith( "<div class='snode'>"+ newphrase+" <span class='wnode'>"+newtext+"</span></div>" );
-
-				   startnode=null; endnode=null;
-				   resetIds();
-				   updateSelection();
-				   document.body.onkeydown = handleKeyDown;	
-				}
-
-			});
-
-		
-			setTimeout(function(){ $("#leafphrasebox").focus(); }, 10);
-*/
-			// $("#leafphrasebox").val("xxx");
-			//startnode=null; endnode=null;
-			//resetIds();
-			//updateSelection();
-			//document.body.onkeydown = handleKeyDown;
-		
-//	} 
-
-//		alert( oldtext );
-//		clearSelection();		
-//		$("#renamebox").blur();
-//  		e = e || window.event;
-//		e.stopPropagate();
-//}
 
 function isNonWord(word){
 		if( word.startsWith("*") ){
@@ -1217,21 +978,6 @@ function minIndex( tokenRoot, offset ){
 			// alert(temp);
 			return index;	
 }
-
-/*
-function getNodesByIndex( tokenRoot, index ){
-		allSNodes = $("#"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
-		for( i=0; i<allSNodes.length; i++){
-			label=getLabel( $(allSNodes[i]) );
-			lastpart=parseInt( label.substr(label.lastIndexOf("-")+1) );
-			// lastpart=label.substr(label.lastIndexOf("-")+1);
-			// temp+=" "+lastpart;
-			if( ! isNaN( parseInt(lastpart) ) ){
-				index = Math.max( lastpart, index );
-			}
-		}	
-}
-*/
 
 function getIndex( node ){
 	// alert( "eee"+ getLabel( node ) );

@@ -49,6 +49,25 @@ echo "Fix eður because I can't stand it any more"
 $CS structure_queries/ethur.q $FILE
 mv -f $FILE.out $FILE
 
+echo ""
+echo "Fix labels that should be Q"
+$CS structure_queries/label-wpro-n.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Fix labels that should be Q"
+$CS structure_queries/label-wpro-a.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Fix labels that should be Q"
+$CS structure_queries/label-wpro-d.q $FILE
+mv -f $FILE.out $FILE
+
+echo ""
+echo "Fix labels that should be Q"
+$CS structure_queries/label-wpro-g.q $FILE
+mv -f $FILE.out $FILE
 
 echo ""
 echo "Add NP-POS for pronouns"

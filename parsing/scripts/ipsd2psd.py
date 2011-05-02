@@ -432,6 +432,9 @@ def final_replacements():
     # For some reason there is still a problem with SVO AÐ here, so fix it
     rep("\(PP \(P svo-svo\) \(CP-THT \(C að-að\)\)\)","(PP (P svo-svo) (CP-ADV (C að-að)))")
 
+    #áður, which should be ADVR not ADV
+    rep("\(ADV áður-áður\)","(ADVR áður-áður)")
+    
     # Fix (VAN Það-þa)
     currentText = re.sub("\(VAN ([Þþ]að)-þa\)", "(NP-SBJ (PRO-N \\1-það))",currentText)
 

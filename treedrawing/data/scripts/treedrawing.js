@@ -39,15 +39,6 @@ $(document).ready(function() {
 
    // setup context menu
 
-
-    // floatmenu ready
-  //  connectContextMenu( $(".snode") );
-//   disableContextMenu( $(".snode") );
-	// Show menu when #myDiv is clicked
-
-	//$(".snode").disableContextMenu();
-
-
 });
 
 // menuon=true;

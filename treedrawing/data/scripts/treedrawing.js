@@ -41,7 +41,6 @@ $(document).ready(function() {
 });
 
 // menuon=true;
-
 // checks if the given node label is an ip node in the gui coloring sense
 function isIpNode( text ){
 	return trim(text).startsWith("IP-SUB") || trim(text).startsWith("IP-MAT") || trim(text).startsWith("IP-IMP") || trim(text).startsWith("IP-INF")	
@@ -391,16 +390,26 @@ function moveNode(targetParent){
 	} // otherwise move under my sister
 	else {		
 //		if( parseInt( startnode.id.substr(2) ) >  parseInt( targetParent.substr(2) ) ){
+	    tokenMerge = isRootNode( node(startnode.id) );	    
+	    maxindex = maxIndex( getTokenRoot(node(targetParent) ).attr("id") );	     
+	    movednode = node(startnode.id);
+	    alert(maxindex);
+	    // ZZZZZZZZZZ
+	    // alert( getTokenRoot( node(targetParent) ).attr("id") );
+		//alert( getTokenRoot($("#"+startnode.id) ).attr("id") );
+			
 		if( parseInt( startnode.id.substr(2) ) > parseInt( targetParent.substr(2) ) ){
-			//if( $("#"+startnode.id).siblings().is("#"+startnode.id+"~.snode") ){
+
 				stackTree();
 				$("#"+startnode.id).appendTo("#"+targetParent);	
 				if( currentText() != textbefore ){undo();redostack.pop();}
-				else {				
+				else {
 				   resetIds();
-				//   updateSelection();	
+			       if( tokenMerge ){
+				   	   addToIndices( movednode, maxindex );
+				   }						    
+
 				}
-			//}
 		}
 		else if( parseInt( startnode.id.substr(2) ) <  parseInt( targetParent.substr(2) ) ) {
 			stackTree();
@@ -408,15 +417,27 @@ function moveNode(targetParent){
 			if( currentText() != textbefore ){undo();redostack.pop();}
 			else {				
 				   resetIds();
+				   if( tokenMerge ){
+				   	   addToIndices( movednode, maxindex );
+				   }						    					   		
+				   
 				//   updateSelection();	
 			}
 			
 		}
 	}
-
 	
 	clearSelection();
 //	menuon=true;
+}
+
+function isRootNode( node ){	
+	return node.filter("#sn0>.snode").size() > 0;	
+}
+
+// return jquery node based on annotald id
+function node(aid){
+	return $("#"+aid);
 }
 
 function moveNodes(targetParent){
@@ -948,6 +969,9 @@ function appendExtension(node,extension){
 }
 
 function getTokenRoot(node){
+	if( isRootNode(node) ){
+		return node;	
+	}
 	//	return $("#sn0>.snode").filter($("#"+node.id).parents($("#sn0>.snode")));
 	return $("#sn0>.snode").filter($(node).parents($("#sn0>.snode")));
 }
@@ -1001,6 +1025,7 @@ function getNodesByIndex(tokenRoot, ind){
 	return nodes;
 }
 
+/*
 function updateIndices( tokenRoot ){
 	ind=1;
 
@@ -1022,6 +1047,24 @@ function updateIndices( tokenRoot ){
 		ind++;		
 		// replaceIndex( tokenRoot, minindex, index ); XXX todo getbyindex
 	}
+}
+*/
+
+function addToIndices( tokenRoot, numberToAdd ){
+	var ind = 1;
+	maxindex = maxIndex(tokenRoot.attr("id"));
+	
+	while( ind <= maxindex ){
+		nodes = getNodesByIndex(tokenRoot.attr("id"), ind);
+ 		nodes.each(function(index) {
+		      label=getLabel($(this)).substr(0,getLabel($(this)).length-1);
+		      label=label+(ind+numberToAdd+100);
+		      setNodeLabel( $(this), label, true );
+		});
+		
+		ind++;
+	}
+			
 }
 
 function maxIndex( tokenRoot ){ 
@@ -1078,8 +1121,8 @@ function coIndex(){
 		}
 		else { // no indices here, so make them
 				
-			startRoot = getTokenRoot(startnode).attr("id");
-			endRoot = getTokenRoot(endnode).attr("id");
+			startRoot = getTokenRoot($(startnode)).attr("id");
+			endRoot = getTokenRoot($(endnode)).attr("id");
 			// alert( lowestIndex(startRoot) );
 		
 			// if start and end are within the same token, do coindexing		

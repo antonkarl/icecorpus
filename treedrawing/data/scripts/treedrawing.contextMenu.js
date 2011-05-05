@@ -24,6 +24,7 @@ addConLeaf("&lt; (NP-SBJ *con*)",true,"NP-SBJ","*con*");
 addConLeaf("&lt; (NP-SBJ *exp*)",true,"NP-SBJ","*exp*");
 addConLeaf("&lt; (NP-SBJ *arb*)",true,"NP-SBJ","*arb*");
 addConLeaf("&lt; (NP-SBJ *pro*)",true,"NP-SBJ","*pro*");
+addConLeaf("&lt; (TO *)",true,"TO","*");
 addConLeaf("&lt; (WADVP 0)",true,"WADVP","0");
 addConLeaf("&lt; (WNP 0)",true,"WNP","0");
 addConLeaf("&lt; (WQP 0)",true,"WQP","0");
@@ -34,7 +35,7 @@ addConLeaf("&lt; (P 0)",true,"P","0");
 // alert( conleafs[0].label );
 
 	
-defaultsPhrases=["VBPI","VBPS","VBDI","VBDS","VAN","VBN","VB"];
+defaultsPhrases=["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VBN","VB"];
 
 rootGroup=["IP-SUB","IP-MAT","IP-MAT-PRN","IP-MAT-SPE","IP-INF","IP-IMP","IP-IMP-SPE","CP-QUE","CP-QUE-SPE","QTP","FRAG"];
 for(i=0; i<rootGroup.length; i++){
@@ -46,7 +47,7 @@ for(i=0; i<adjpGroup.length; i++){
    addConMenu(adjpGroup[i],adjpGroup);
 }
 
-npGroup=["NP-SBJ","NP-OB1","NP-OB2","NP-PRD","NP-POS","NP-PRN","NP","NX","NP-MSR","NP-TMP","NP-ADV","NP-COM","NP-CMP","NP-DIR","NP-ADT","NP-LFD","NP-SBJ-RSP","NP-OB1-RSP","QP"];
+npGroup=["NP-SBJ","NP-OB1","NP-OB2","NP-PRD","NP-POS","NP-PRN","NP","NX","NP-MSR","NP-TMP","NP-ADV","NP-COM","NP-CMP","NP-DIR","NP-ADT","NP-VOC","NP-LFD","NP-SBJ-RSP","NP-OB1-RSP","QP"];
 for(i=0; i<npGroup.length; i++){
    addConMenu(npGroup[i],npGroup);
 }
@@ -57,7 +58,7 @@ for(i=0; i<advpGroup.length; i++){
    addConMenu(advpGroup[i],advpGroup);
 }
 
-verbGroup=["VBPI","VBPS","VBDI","VBDS","VAN","VBN","VB"];
+verbGroup=["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VBN","VB"];
 for(i=0; i<verbGroup.length; i++){
    addConMenu(verbGroup[i],verbGroup);
 }
@@ -237,7 +238,8 @@ else if( isCasePhrase(nodelabel) ){
 
 	// do addleafbefore
 	$("#conRight").append($("<div class='conMenuHeading'>Leaf before</div>"));
-	for (i = 0; i < conleafs.length; i++) {	    			
+	for (i = 0; i < conleafs.length; i++) {
+		stackTree();	    			
 		newnode = $("<div class='conMenuItem'><a href='#'>"+conleafs[i].suggestion+"</a></div>");
 		$(newnode).mousedown(doConLeaf(i,conleafs[i],nodeId));
 		$("#conRight").append(newnode);

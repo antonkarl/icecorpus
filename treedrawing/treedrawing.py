@@ -88,7 +88,10 @@ class Treedraw(object):
 <html>
 <head>  <title>Annotald</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link rel="stylesheet" type="text/css" href="css/treedrawing.css" type="text/css"></link>	
+        <link rel="stylesheet" type="text/css" href="css/treedrawing.css" type="text/css"></link>
+    <script type= "application/javascript"/>
+    
+    </script>
 	<script type= "application/javascript" src="scripts/jquery.js"/></script>		
 	<script type= "application/javascript" src="scripts/treedrawing.js"/></script>		
 	<script type= "application/javascript" src="scripts/treedrawing.contextMenu.js"/></script>		

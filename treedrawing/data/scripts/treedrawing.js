@@ -1,5 +1,7 @@
-startnode=null;
-endnode=null;
+var extensions=["-LFD","-RSP","-SPE","-PRN","-SBJ","-XXX","-ZZZ"];
+
+var startnode=null;
+var endnode=null;
 var mousenode=null;
 var undostack=new Array();
 var redostack=new Array();
@@ -10,6 +12,11 @@ var menuYloc = null;
 
 String.prototype.startsWith = function(str){
     return (this.substr(0,str.length) === str);
+}
+
+String.prototype.endsWith = function(str){
+	// alert(this.substr(this.length-str.length));	
+    return (this.substr(this.length-str.length) === str);
 }
 
 $(document).ready(function() {
@@ -155,7 +162,8 @@ function assignEvents(){
 //	addCommand(49,"redo"); // 1
 	addCommand(50,"setlabel",["NP","NP-PRN","NP-POS","NP-COM"]); // 2
 //	addCommand(51,"makenode","NP","NP-PRD","NP-POS"); // 3
-//	addCommand(52,"redo"); // 4
+	addCommand(52,"toggleextension","-PRN"); // 4
+    addCommand(53,"toggleextension","-SPE"); // 5
 	addCommand(81,"setlabel",["CONJP","ALSO","FP"]); // q
 	addCommand(87,"setlabel",["NP-SBJ","NP-OB1","NP-OB2","NP-PRD"]); // w
 	addCommand(68,"prunenode"); // d
@@ -195,6 +203,9 @@ function handleKeyDown(e){
 					makeNode(label);
 				}
 			}	
+			else if( type=="toggleextension"){				
+				toggleExtension(label);
+			}
 			else if (type=="undo"){
 				undo();
 			}
@@ -794,6 +805,87 @@ function changeJustLabel( oldlabel, newlabel ){
 	} 
 	// alert(label);
 	return newlabel;	
+}
+
+function toogleJustExtension( oldlabel, extension ){
+		//out = oldlabel;
+		index = parseIndex( oldlabel );
+		indextype="";
+		if( index > 0 ){
+			indextype=parseIndexType(oldlabel);
+		}
+		extendedlabel = parseLabel(oldlabel);
+		
+		currentextensions = new Array();
+	    textension = false;
+		for( i=extensions.length-1; i>-1; i--){
+			if( extension == extensions[i] ){
+				textension = true;
+			}
+			else {
+				textension = false;
+			}
+			
+			//alert( "'"+ extendedlabel+ "' '" +extensions[i] +"'"  );
+			//alert( extendedlabel.endsWith( extensions[i] )  )
+			if( extendedlabel.endsWith( extensions[i] ) ){
+				//alert("y");
+				
+				if( !textension ){																			
+					currentextensions.push( extensions[i] );
+				}			
+				extendedlabel = extendedlabel.substr(0,extendedlabel.length-extensions[i].length);
+				//alert(extendedlabel);				
+			}
+			else if (textension) {
+				currentextensions.push( extensions[i] );
+			}
+			
+			//alert( "'"+ extendedlabel+ "' '" +extensions[i] +"'"  );			
+		}
+		
+		out = extendedlabel;
+		count = currentextensions.length
+		for( i=0; i<count; i++){
+			out+=currentextensions.pop();
+		}
+		if( index > 0 ){
+			out+=indextype;
+			out+=index;
+		}
+				
+		return out; 		
+}
+
+function toggleExtension(extension){
+
+	// there has to be a startnode
+	if( !startnode ){
+		return;
+	} 
+
+    // there can't be an endnode
+	if( endnode ){
+		return;
+	} 
+
+	if( !isPossibleTarget(startnode.id) && !isEmpty(  wnodeString( $("#"+startnode.id) )  ) ){
+		return;	
+	}
+
+	
+	
+	textnode = $("#"+startnode.id).contents().filter(function() {
+  			return this.nodeType == 3;
+		}).first();
+	oldlabel=trim(textnode.text());
+	newlabel = 	 toogleJustExtension(oldlabel,extension);
+	textnode.replaceWith(newlabel+" ");
+	
+	
+
+	//alert( "XXX: "+ toogleJustExtension(oldlabel,"-SPE") );	
+	
 }
 
 function setLabel(label){

@@ -37,7 +37,7 @@ addConLeaf("&lt; (P 0)",true,"P","0");
 	
 defaultsPhrases=["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VBN","VB"];
 
-rootGroup=["IP-SUB","IP-MAT","IP-MAT-PRN","IP-MAT-SPE","IP-INF","IP-IMP","IP-IMP-SPE","CP-QUE","CP-QUE-SPE","QTP","FRAG"];
+rootGroup=["IP-SUB","IP-MAT","IP-INF","IP-IMP","CP-QUE","QTP","FRAG"];
 for(i=0; i<rootGroup.length; i++){
    addConMenu(rootGroup[i],rootGroup);
 }
@@ -47,13 +47,13 @@ for(i=0; i<adjpGroup.length; i++){
    addConMenu(adjpGroup[i],adjpGroup);
 }
 
-npGroup=["NP-SBJ","NP-OB1","NP-OB2","NP-PRD","NP-POS","NP-PRN","NP","NX","NP-MSR","NP-TMP","NP-ADV","NP-COM","NP-CMP","NP-DIR","NP-ADT","NP-VOC","NP-LFD","NP-SBJ-RSP","NP-OB1-RSP","QP"];
+npGroup=["NP-SBJ","NP-OB1","NP-OB2","NP-PRD","NP-POS","NP-PRN","NP","NX","NP-MSR","NP-TMP","NP-ADV","NP-COM","NP-CMP","NP-DIR","NP-ADT","NP-VOC","QP"];
 for(i=0; i<npGroup.length; i++){
    addConMenu(npGroup[i],npGroup);
 }
 
 
-advpGroup=["PP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR","NP-MSR","NP-ADV","ADVP-LFD","PP-LFD","ADVP-RSP","ADVP-TMP-RSP"];
+advpGroup=["PP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR","NP-MSR","NP-ADV"];
 for(i=0; i<advpGroup.length; i++){
    addConMenu(advpGroup[i],advpGroup);
 }
@@ -244,6 +244,29 @@ else if( isCasePhrase(nodelabel) ){
 		$(newnode).mousedown(doConLeaf(i,conleafs[i],nodeId));
 		$("#conRight").append(newnode);
 	}
+	
+	
+	$("#conRightest").empty();	
+	$("#conRightest").append($("<div class='conMenuHeading'>Toggle ext.</div>"));
+			
+	for( i=0; i<extensions.length; i++){	
+		// do the right side context menu					
+		newnode = $("<div class='conMenuItem'><a href='#'>"+extensions[i]+"</a></div>");
+		$(newnode).mousedown( doToggleExtension( nodeId, extensions[i] )  );		
+		$("#conRightest").append(newnode);	
+	}
+}
+
+function doToggleExtension( nodeId, extension ){
+	return function(){
+		stackTree();		
+		clearSelection();
+		selectNode(nodeId);		
+		//alert(nodeId + " " + extension);
+		toggleExtension(extension);
+		hideContextMenu();
+		clearSelection();
+	}	
 }
 
 /*

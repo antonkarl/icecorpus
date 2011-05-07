@@ -130,6 +130,11 @@ Editing: """+self.thefile+""" <br />
 			<div class="conMenuItem"><a href="#edit">XXX</a></div>
 			<div class="conMenuItem"><a href="#cut">XXX</a></div>
  		  </div>
+ 		  
+          <div id="conRightest" class="conMenuColumn">            
+            <div class="conMenuItem"><a href="#edit">XXX</a></div>
+            <div class="conMenuItem"><a href="#cut">XXX</a></div>
+           </div> 		  
 		</div>
 
 </body>

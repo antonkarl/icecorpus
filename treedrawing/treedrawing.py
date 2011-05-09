@@ -75,20 +75,24 @@ class Treedraw(object):
 		thetree=thetree+'<div class="snode">X<span class="wnode">'+word+'</span></div>'
 
 	thetree=thetree+"</div>"
-	return thetree
-	
+	return thetree	
+    
 
     @cherrypy.expose
     def index(self):
-	filename = sys.argv[1]
-	
-        currentTree=self.loadPsd( filename )  
-        #
+        if len(sys.argv)==2:
+            currentSettings = open( sys.path[0] + "/settings.js").read()
+            filename = sys.argv[1]
+            currentTree=self.loadPsd( filename )                
+        else:
+            print("Usage: annotald [settingsFile.js] file.psd")
+        
         return """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html>
 <head>  <title>Annotald</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link rel="stylesheet" type="text/css" href="css/treedrawing.css" type="text/css"></link>	
+        <link rel="stylesheet" type="text/css" href="css/treedrawing.css" type="text/css"></link>
+    <script type= "application/javascript"/>"""+ currentSettings + """    </script>
 	<script type= "application/javascript" src="scripts/jquery.js"/></script>		
 	<script type= "application/javascript" src="scripts/treedrawing.js"/></script>		
 	<script type= "application/javascript" src="scripts/treedrawing.contextMenu.js"/></script>		
@@ -101,7 +105,7 @@ class Treedraw(object):
 <br />
 
 <div id="floatMenu">
-<div style="background-color: #2E2E2E; color: white; font-weight: bold;">Annotald</div>
+<div style="background-color: #2E2E2E; color: white; font-weight: bold;">Annotald 0.2</div>
 
 Editing: """+self.thefile+""" <br />
 <input class="menubutton" type="button" value="Save" id="butsave"><br />
@@ -127,6 +131,11 @@ Editing: """+self.thefile+""" <br />
 			<div class="conMenuItem"><a href="#edit">XXX</a></div>
 			<div class="conMenuItem"><a href="#cut">XXX</a></div>
  		  </div>
+ 		  
+          <div id="conRightest" class="conMenuColumn">            
+            <div class="conMenuItem"><a href="#edit">XXX</a></div>
+            <div class="conMenuItem"><a href="#cut">XXX</a></div>
+           </div> 		  
 		</div>
 
 </body>

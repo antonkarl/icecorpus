@@ -919,7 +919,7 @@ function toggleExtension(extension){
 	}
 
 	
-	
+	stackTree();
 	textnode = $("#"+startnode.id).contents().filter(function() {
   			return this.nodeType == 3;
 		}).first();

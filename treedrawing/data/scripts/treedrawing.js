@@ -57,7 +57,15 @@ $(document).ready(function() {
 // menuon=true;
 // checks if the given node label is an ip node in the gui coloring sense
 function isIpNode( text ){	
-	return contains( ipnodes, trim(text) );		
+//	alert(ipnodes.length); 
+/*
+	for( i=0; i<ipnodes.length; i++){
+		if( ipnodes[i].startsWith(text) ){
+			return true;
+		}
+	}
+	*/	
+	return contains( ipnodes, parseLabel(text) );		
 }
 
 // returns true if array a contains object o
@@ -1218,6 +1226,7 @@ function parseLabel( label ){
 	
 	return label; 
 }
+
 
 function getIndex( node ){
 	// alert( "eee"+ getLabel( node ) );

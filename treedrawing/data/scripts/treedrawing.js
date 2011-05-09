@@ -866,12 +866,13 @@ function toogleJustExtension( oldlabel, extension ){
 }
 
 function parseExtensions( label ){
-			index = parseIndex( oldlabel );
+	//alert("'"+label+"'");
+			index = parseIndex( label );
 		indextype="";
 		if( index > 0 ){
-			indextype=parseIndexType(oldlabel);
+			indextype=parseIndexType(label);
 		}
-		extendedlabel = parseLabel(oldlabel);		
+		extendedlabel = parseLabel(label);		
 		currentextensions = new Array();
 
 		for( i=extensions.length-1; i>-1; i--){

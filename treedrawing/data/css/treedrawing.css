@@ -33,6 +33,8 @@ body {
 #sn0 {
 	background-color: #D2B48C;
 	border: 1px solid black;
+        margin-left: 75px;
+        margin-right: 25px;
 }
 
  #sn0 > .snode {
@@ -58,7 +60,7 @@ body {
 #floatMenu {  
     position:absolute;  
     top:50px;  
-    left:830px;  
+    left:0px;  
     margin-left:5px;  
     width:200px;  
    background: #FEF6EA;
@@ -70,11 +72,11 @@ body {
 #editpane{
    position: absolute;
     top:0px; 
-   left:0px;
+   left:210px;
    margin:0px;
    padding: 0px;
 	padding-right:20px;
-   width: 800px;
+//   width: 800px;
    border: 1px solid #857259;
   background-color: #FEEDD5;
 }
@@ -91,7 +93,7 @@ body {
 #conMenu {
 	background-color:white;
 	border: 1px solid black;
-	width: 230px;
+	width: 345px;
 	z-index: 999;
 	position: absolute;
 	top: 0px;
@@ -130,13 +132,19 @@ body {
 	display: block;
 }
 
-#conLeft {
+#conLeft, #conRight {
 	border-right:1px solid silver;
 }
 
 #conRight {
 	position:absolute;
 	left:115px;
+	top:0px;
+}
+
+#conRightest {
+	position:absolute;
+	left:230px;
 	top:0px;
 }
 

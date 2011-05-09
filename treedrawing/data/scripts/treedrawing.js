@@ -1,5 +1,5 @@
-startnode=null;
-endnode=null;
+var startnode=null;
+var endnode=null;
 var mousenode=null;
 var undostack=new Array();
 var redostack=new Array();
@@ -12,11 +12,23 @@ String.prototype.startsWith = function(str){
     return (this.substr(0,str.length) === str);
 }
 
+String.prototype.endsWith = function(str){
+	// alert(this.substr(this.length-str.length));	
+    return (this.substr(this.length-str.length) === str);
+}
+
+/**
+ * unique function by: Shamasis Bhattacharya
+ * http://www.shamasis.net/2009/09/fast-algorithm-to-find-unique-items-in-javascript-array/
+ */
+Array.prototype.unique = function() {   
+		var o = {}, i, l = this.length, r = [];    for(i=0; i<l;i+=1) o[this[i]] = this[i];    for(i in o) r.push(o[i]);    return r;
+};
+
 $(document).ready(function() {
 	resetIds();
 	assignEvents(); 
 	$("#debugpane").empty();
-	// $("#debugpane").append( wnodeString($("#editpane")) );
 
     // make menu float
     menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")))  
@@ -39,31 +51,45 @@ $(document).ready(function() {
 
    // setup context menu
 
-
-    // floatmenu ready
-  //  connectContextMenu( $(".snode") );
-//   disableContextMenu( $(".snode") );
-	// Show menu when #myDiv is clicked
-
-	//$(".snode").disableContextMenu();
-
-
 });
 
 // menuon=true;
-
 // checks if the given node label is an ip node in the gui coloring sense
-function isIpNode( text ){
-	return trim(text).startsWith("IP-SUB") || trim(text).startsWith("IP-MAT") || trim(text).startsWith("IP-IMP") || trim(text).startsWith("IP-INF")	
+function isIpNode( text ){	
+	return contains( ipnodes, trim(text) );		
+}
+
+// returns true if array a contains object o
+function contains(a, obj){
+  for(var i = 0; i < a.length; i++) {
+    if(a[i] === obj ){
+      return true;
+    }
+  }
+  return false;
 }
 
 
+function isEmpty( text ){
+	 if( text.startsWith("*") ){
+	    return true;
+	 }
+	 if( text.startsWith("{") ){
+	 	return true;	
+	 }
+	 if( text == 0 ){
+	 	return true;	
+	 }	 
+	 
+	 return false;
+}
+
 function showContextMenu(){
-	// alert("show");
+	
   		e = window.event;
   		var elementId = (e.target || e.srcElement).id;	
 		
-		// alert( elementId );
+
 		if( elementId == "sn0" ){
 			clearSelection();
 			return;			
@@ -95,112 +121,6 @@ function showContextMenu(){
 function hideContextMenu(){
 	$("#conMenu").css("visibility","hidden");	
 }
-
-	
-	/*
-	$(function() {
-	  $( selector ).contextMenu('#conMenu', {
-   	      // Randomly enable or disable each option
-	      beforeShow: function() { 
-
-//		if( !menuon ){return false;}
-
-  		e = window.event;
-  		var elementId = (e.target || e.srcElement).id;
-
-		stuff = "mmm";
-		if( startnode ){ stuff=startnode.id;}
-
-		// alert(elementId + " " + stuff );
-
-		if( startnode ){
-			if( elementId == stuff){
-				return true;
-			}		
-			else {
-				return false;
-			}
-		}
-
-
-		return true;
-              }
-
-	  } );
-	} );*/
-
-/*
-function disableContextMenu( selector ){
-	$(function() {
-	  $( selector ).contextMenu=null;
-	});
-	
-}
-*/
-/*
-function connectContextMenu(node){
-	node.contextMenu({
-		menu: 'conMenu'
-	},
-		function(action, el, pos) {
-
-			nodeid = $(el).attr('id');
-			if( action.startsWith("setlabel") ){
-				stackTree();
-				newlabel=action.substr(9);
-
-				// alert(newlabel);
-
-				// stackTree();
-				textnode = $(el).contents().filter(function() {
-			  			return this.nodeType == 3;
-					}).first().replaceWith(newlabel+" ");
-			
-				clearSelection();
-				// startnode=$("#"+nodeid);
-				// endnode=null;
-			 	// updateSelection();
-			}
-
-			if( action.startsWith("fixedleaf") ){
-
-
-				stackTree();
-				params=action.substr(10);
-
-				stuff = params.split("\:");
-				label = stuff[0];
-				word = stuff[1];
-				targetId = stuff[2];
-
-				// alert(word + " "+ label);
-
-				// alert(newlabel);
- 				//  NP-SBJ:*con*
-
-				// stackTree();
-				makeLeaf(true,label,word,targetId,true);
-			
-				clearSelection();
-				// startnode=$("#"+nodeid);
-				// endnode=null;
-			 	// updateSelection();
-			}
-
-*/
-/*
-		alert(
-			'Action: ' + action + '\n\n' +
-			'Element ID: ' + $(el).attr('id') + '\n\n' + 
-			'X: ' + pos.x + '  Y: ' + pos.y + ' (relative to element)\n\n' + 
-			'X: ' + pos.docX + '  Y: ' + pos.docY+ ' (relative to document)'
-			); */
-//	});
-// }
-
-/*
-
-*/
 
 function addCommand( keycode, type, label ){
 	commands[keycode]=new function(){
@@ -245,31 +165,8 @@ function save(){
 }
 
 function assignEvents(){
-	addCommand(65,"leafafter"); // a
-	addCommand(66,"leafbefore"); // b
-	addCommand(69,"setlabel",["CP-ADV","CP-CMP"]); //e
-	addCommand(88,"makenode","XP"); // x
-	addCommand(67,"coindex"); // c
-	addCommand(82,"setlabel",["CP-REL","CP-FRL","CP-CAR","CP-CLF"]); // r
-	addCommand(83,"setlabel",["IP-SUB","IP-MAT","IP-IMP"]); // s
-	addCommand(86,"setlabel",["IP-SMC","IP-INF","IP-INF-PRP"]); // v
-	addCommand(84,"setlabel",["CP-THT","CP-THT-PRN","CP-DEG","CP-QUE"]); // t
-	addCommand(71,"setlabel",["ADJP","ADJP-SPR","NP-MSR","QP"]); // g
-	addCommand(70,"setlabel",["PP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR"]); // f
-//	addCommand(49,"redo"); // 1
-	addCommand(50,"setlabel",["NP","NP-PRN","NP-POS","NP-COM"]); // 2
-//	addCommand(51,"makenode","NP","NP-PRD","NP-POS"); // 3
-//	addCommand(52,"redo"); // 4
-	addCommand(81,"setlabel",["CONJP","ALSO","FP"]); // q
-	addCommand(87,"setlabel",["NP-SBJ","NP-OB1","NP-OB2","NP-PRD"]); // w
-	addCommand(68,"prunenode"); // d
-	addCommand(90,"undo"); // z
-	addCommand(76,"rename"); // l
-//	addCommand(188,"clearselection"); // <
-	addCommand(32,"clearselection"); // spacebar
-//	addCommand(78, "makenode","XP"); // n
-        //78 n
-
+	// load custom commands from user settings file
+    customCommands();	
 	document.body.onkeydown = handleKeyDown;	
 	$(".snode").mousedown(handleNodeClick);
 	$("#butsave").mousedown(save);
@@ -278,26 +175,8 @@ function assignEvents(){
 	$("#editpane").mousedown(clearSelection);
 	$("#conMenu").mousedown(hideContextMenu);
 
-/*
-	$(".snode>.snode").mouseover(
-	    function(e) {
-		    e.stopPropagation();
-		    updateMouseNode(this);
-		}
-	);
-*/
 }
 
-/*
-function updateMouseNode(node){	
-	if( mousenode ){
-		$(mousenode).css('color','black');
-	}
-	mousenode=node;
-	$(mousenode).css('color','red');
-	$(mousenode).children().css('color','black');
-}
-*/
 
 function handleKeyDown(e){	
 
@@ -317,6 +196,9 @@ function handleKeyDown(e){
 					makeNode(label);
 				}
 			}	
+			else if( type=="toggleextension"){				
+				toggleExtension(label);
+			}
 			else if (type=="undo"){
 				undo();
 			}
@@ -363,18 +245,6 @@ function handleNodeClick(e){
 				
 				if (startnode && !endnode) {
 				
-					// alert( elementId + "  " + startnode.id );
-					//if( elementId == startnode.id  ){
-					//	alert( elementId + "  " + startnode.id );
-					//	$(elementId).enableContextMenu();
-					//	startnode=null;
-					// handleNodeClick(e);
-					//}
-					
-					// tokenRoot = getTokenRoot(elementId).attr("id");
-					// allSNodes = $("#"+tokenRoot+" #"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
-					// allSNodes.disableContextMenu();
-					//     $(".snode").disableContextMenu(); // VVV
 					if (startnode.id != elementId) {
 						// menuon=false;
 						e.stopPropagation();					
@@ -383,9 +253,6 @@ function handleNodeClick(e){
 					else {
 						showContextMenu();
 					}
-				//					tokenRoot = getTokenRoot(elementId).attr("id");
-				//					allSNodes = $("#"+tokenRoot+" #"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
-				//					allSNodes.disableContextMenu();
 				}
 				else if (startnode && endnode){
 					   e.stopPropagation();					   
@@ -410,9 +277,6 @@ function handleNodeClick(e){
 				}
 
 			}
-  		        // $("#conMenu").empty();
-			// $("#conMenu").html(getContextMenu( elementId ) );
-
 			e.stopPropagation();
 }
 
@@ -447,11 +311,6 @@ function selectNode(nodeId){
 	updateSelection();
 }
 
-/*
-function selectEndnode(node){
-	doSelectNode( document.getElementById(node) );
-}
-*/
 
 function clearSelection(){
 	window.event.preventDefault();
@@ -548,32 +407,64 @@ function moveNode(targetParent){
 	} // otherwise move under my sister
 	else {		
 //		if( parseInt( startnode.id.substr(2) ) >  parseInt( targetParent.substr(2) ) ){
+	    tokenMerge = isRootNode( node(startnode.id) );	    
+	    maxindex = maxIndex( getTokenRoot(node(targetParent) ).attr("id") );	     
+	    movednode = node(startnode.id);
+	    // alert(maxindex);
+	    // ZZZZZZZZZZ
+	    // alert( getTokenRoot( node(targetParent) ).attr("id") );
+		//alert( getTokenRoot($("#"+startnode.id) ).attr("id") );
+			
 		if( parseInt( startnode.id.substr(2) ) > parseInt( targetParent.substr(2) ) ){
-			//if( $("#"+startnode.id).siblings().is("#"+startnode.id+"~.snode") ){
+
 				stackTree();
-				$("#"+startnode.id).appendTo("#"+targetParent);	
-				if( currentText() != textbefore ){undo();redostack.pop();}
-				else {				
-				   resetIds();
-				//   updateSelection();	
+			       if( tokenMerge ){
+			       	   addToIndices( movednode, maxindex );
+			       	   $("#"+startnode.id).appendTo("#"+targetParent);			       	   				   	  
+				   	   resetIds();
+				   }						    
+				   else {
+				
+					$("#"+startnode.id).appendTo("#"+targetParent);
+				
+				
+					if( currentText() != textbefore ){undo();redostack.pop();}
+			      	else {
+				   		resetIds();
+				  	}				
 				}
-			//}
 		}
 		else if( parseInt( startnode.id.substr(2) ) <  parseInt( targetParent.substr(2) ) ) {
 			stackTree();
+				   if( tokenMerge ){
+				   	   addToIndices( movednode, maxindex );
+				   }						    					   		
+			
 			$("#"+startnode.id).insertBefore( $("#"+targetParent).children().first() );	
 			if( currentText() != textbefore ){undo();redostack.pop();}
 			else {				
 				   resetIds();
+				  // if( tokenMerge ){
+				  // 	   addToIndices( movednode, maxindex );
+				  // }						    					   		
+				   
 				//   updateSelection();	
 			}
 			
 		}
 	}
-
 	
 	clearSelection();
 //	menuon=true;
+}
+
+function isRootNode( node ){	
+	return node.filter("#sn0>.snode").size() > 0;	
+}
+
+// return jquery node based on annotald id
+function node(aid){
+	return $("#"+aid);
 }
 
 function moveNodes(targetParent){
@@ -637,8 +528,9 @@ function moveNodes(targetParent){
 			$("#"+startnode.id).insertBefore( $("#"+targetParent).children().filter( $("#"+startnode.id).parents() ) );	
 			//resetIds();	
 			//pruneNode();
-			
+						
 			if( currentText() != textbefore ){undo();redostack.pop();return;}
+			
 			else {				
 				   resetIds();
 				//   updateSelection();	
@@ -723,8 +615,8 @@ function makeLeaf(before, label, word, targetId, fixed){
 	endRoot = null;
 	
 	if (endnode) {
-		startRoot = getTokenRoot("#" + startnode.id).attr("id");
-		endRoot = getTokenRoot("#" + endnode.id).attr("id");
+		startRoot = getTokenRoot( $("#"+startnode.id) ).attr("id");
+		endRoot = getTokenRoot( $("#"+endnode.id) ).attr("id");
 		// alert(startRoot + " - " + endRoot );
 
 		stackTree();		
@@ -766,97 +658,6 @@ function makeLeaf(before, label, word, targetId, fixed){
 	
 	
 }			   	
-//	makeLeaf(before, label, word, targetId, true);
-		
-//	if( !targetId ){ targetId="" }
-/*
-	if( fixed ){
-
-  	    stackTree();
-		newleaf = $("<div class='snode'>"+ label+" <span class='wnode'>"+word+"</span></div>");
-		if( before ){
-			//alert(word + " x " + targetId );
-			newleaf.insertBefore( "#"+targetId );
-		}
-		else {
-			//alert(word + "y");
-			newleaf.insertAfter( "#"+targetId );
-		}
-				   startnode=null; endnode=null;
-				   resetIds();
-				   updateSelection();		
-	}
-	else if( startnode ){
-  	        stackTree();
-
-		// if( !fixed ){ fixed=false; }
-
-		// alert( label + " " + word );
-
-		if( endnode ){
-			
-*/
-
-	// if start and end are within the same token, do coindexing
-				// alert( startnode.id );
-			
-		
-		
-		// $( "<div class='snode'>"+ label+" <span class='wnode'>"+word+"</span></div>" );
-		
-		/*
-		document.body.onkeydown = null;	
-		editor=$("<div id='leafeditor' class='snode'><input id='leafphrasebox' class='labeledit' type='text' value='"+label+"' /> <input id='leaftextbox' class='labeledit' type='text' value='"+word+"' /></div>")
-
-			if( before ){
-				editor.insertBefore(startnode);
-			}
-			else {
-				editor.insertAfter(startnode);
-			}
-
-			$("#leafphrasebox,#leaftextbox").keydown(function(event) {
-				
-				if(event.keyCode == '32'){
-														  	
-  					var elementId = (event.target || event.srcElement).id;
-					// alert( elementId );	
-					$("#"+elementId).val( $("#"+elementId).val() );
-					event.preventDefault();
-				}
-				if(event.keyCode == '13'){			   
-				   newphrase = $("#leafphrasebox").val().toUpperCase()+" ";
-				   newtext = $("#leaftextbox").val();
-				   newtext = newtext.replace("<","&lt;");
-				   newtext = newtext.replace(">","&gt;");
-
-	  			   $("#leafeditor").replaceWith( "<div class='snode'>"+ newphrase+" <span class='wnode'>"+newtext+"</span></div>" );
-
-				   startnode=null; endnode=null;
-				   resetIds();
-				   updateSelection();
-				   document.body.onkeydown = handleKeyDown;	
-				}
-
-			});
-
-		
-			setTimeout(function(){ $("#leafphrasebox").focus(); }, 10);
-*/
-			// $("#leafphrasebox").val("xxx");
-			//startnode=null; endnode=null;
-			//resetIds();
-			//updateSelection();
-			//document.body.onkeydown = handleKeyDown;
-		
-//	} 
-
-//		alert( oldtext );
-//		clearSelection();		
-//		$("#renamebox").blur();
-//  		e = e || window.event;
-//		e.stopPropagate();
-//}
 
 function isNonWord(word){
 		if( word.startsWith("*") ){
@@ -921,7 +722,13 @@ function displayRename(){
 					   newtext = newtext.replace("<","&lt;");
 					   newtext = newtext.replace(">","&gt;");
 	
-		  			   $("#leafeditor").replaceWith( "<div class='snode'>"+ newphrase+" <span class='wnode'>"+newtext+"</span></div>" );
+		  			   $("#leafeditor").replaceWith( "<div id='theNewPhrase' class='snode'>"+ newphrase+" <span class='wnode'>"+newtext+"</span></div>" );
+						 if( isIpNode(newphrase) ){
+						    $("#theNewPhrase").addClass("ipnode");									
+						  }
+						  else {
+						  	$("#theNewPhrase").removeClass("ipnode");				
+						  }
 	
 					   startnode=null; endnode=null;
 					   resetIds();
@@ -971,6 +778,14 @@ function displayRename(){
 				
 		  			   $("#labelbox").replaceWith(  newphrase );
 	
+			  
+						  if( isIpNode(newphrase) ){
+						    $("#"+startnode.id).addClass("ipnode");									
+						  }
+						  else {
+						  	$("#"+startnode.id).removeClass("ipnode");				
+						  }
+	
 					   startnode=null; endnode=null;
 					   resetIds();
 					   updateSelection();
@@ -986,12 +801,107 @@ function displayRename(){
 	}
 }
 
+function changeJustLabel( oldlabel, newlabel ){
+	label = oldlabel;
+	index = parseIndex(oldlabel);
+	//alert(index);
+	if( index > 0 ){
+		label = parseLabel(oldlabel);
+		indextype = parseIndexType(oldlabel);
+		return newlabel+indextype+index;		
+	} 
+	// alert(label);
+	return newlabel;	
+}
+
+function toogleJustExtension( oldlabel, extension ){
+		//out = oldlabel;
+		index = parseIndex( oldlabel );
+		indextype="";
+		if( index > 0 ){
+			indextype=parseIndexType(oldlabel);
+		}
+		extendedlabel = parseLabel(oldlabel);
+		
+		currentextensions = new Array();
+	    textension = false;
+		for( i=extensions.length-1; i>-1; i--){
+			if( extension == extensions[i] ){
+				textension = true;
+			}
+			else {
+				textension = false;
+			}
+			
+			//alert( "'"+ extendedlabel+ "' '" +extensions[i] +"'"  );
+			//alert( extendedlabel.endsWith( extensions[i] )  )
+			if( extendedlabel.endsWith( extensions[i] ) ){
+				//alert("y");
+				
+				if( !textension ){																			
+					currentextensions.push( extensions[i] );
+				}			
+				extendedlabel = extendedlabel.substr(0,extendedlabel.length-extensions[i].length);
+				//alert(extendedlabel);				
+			}
+			else if (textension) {
+				currentextensions.push( extensions[i] );
+			}
+			
+			//alert( "'"+ extendedlabel+ "' '" +extensions[i] +"'"  );			
+		}
+		
+		out = extendedlabel;
+		count = currentextensions.length
+		for( i=0; i<count; i++){
+			out+=currentextensions.pop();
+		}
+		if( index > 0 ){
+			out+=indextype;
+			out+=index;
+		}
+				
+		return out; 		
+}
+
+function toggleExtension(extension){
+
+	// there has to be a startnode
+	if( !startnode ){
+		return;
+	} 
+
+    // there can't be an endnode
+	if( endnode ){
+		return;
+	} 
+
+	if( !isPossibleTarget(startnode.id) && !isEmpty(  wnodeString( $("#"+startnode.id) )  ) ){
+		return;	
+	}
+
+	
+	
+	textnode = $("#"+startnode.id).contents().filter(function() {
+  			return this.nodeType == 3;
+		}).first();
+	oldlabel=trim(textnode.text());
+	newlabel = 	 toogleJustExtension(oldlabel,extension);
+	textnode.replaceWith(newlabel+" ");
+	
+	
+
+	//alert( "XXX: "+ toogleJustExtension(oldlabel,"-SPE") );	
+	
+}
+
 function setLabel(label){
 //	if( startnode && endnode )
 
-	if( !isPossibleTarget(startnode.id) ){
+	if( !isPossibleTarget(startnode.id) && !isEmpty(  wnodeString( $("#"+startnode.id) )  ) ){
 		return;	
 	}
+	//alert( wnodeString( $("#"+startnode.id) ) );
 
 	stackTree();
 	textnode = $("#"+startnode.id).contents().filter(function() {
@@ -1000,9 +910,13 @@ function setLabel(label){
 	oldlabel=trim(textnode.text());
 //	newlabel=label[0];
 	for( i=0; i<label.length; i++ ){
-		if( label[i] == oldlabel ){
+		if( label[i] == parseLabel(oldlabel) ){						
 		   if( i<label.length-1 ){
-		      textnode.replaceWith(label[i+1]+" ");
+		   			   	  		   
+		   			   	  		   
+		   	  newlabel = changeJustLabel( oldlabel, label[i+1] )
+		   	 // alert("u"+newlabel);	   	  		   	  
+		      textnode.replaceWith(newlabel+" ");
 			  
 			  if( isIpNode(label[i+1]) ){
 			    $("#"+startnode.id).addClass("ipnode");									
@@ -1014,7 +928,12 @@ function setLabel(label){
 		      return;
 		   }
 		   else {
-		      textnode.replaceWith(label[0]+" ");
+		   	
+		   			   	  		   
+		   	  newlabel = changeJustLabel( oldlabel, label[0] )
+		  // 	  alert("d"+newlabel);	   	  		   	  
+		      textnode.replaceWith(newlabel+" ");		   	
+		      //textnode.replaceWith(label[0]+" ");
 			  
 			  if( isIpNode(label[0]) ){
 			    $("#"+startnode.id).addClass("ipnode");									
@@ -1027,7 +946,8 @@ function setLabel(label){
 		   }		   
 		}
 	}
-        textnode.replaceWith(label[0]+" ");
+	    newlabel = changeJustLabel(oldlabel,label[0] );
+        textnode.replaceWith(newlabel+" ");
 			  if( isIpNode(label[0]) ){
 			    $("#"+startnode.id).addClass("ipnode");									
 			  }
@@ -1186,8 +1106,10 @@ function getLabel(node){
 		}).first().text());
 }
 
-function appendExtension(node,extension){
-	setNodeLabel(node,getLabel(node)+"-"+extension,true);
+function appendExtension(node,extension,type){
+	if( !type ){ type="-";}
+	
+	setNodeLabel(node,getLabel(node)+type+extension,true);
 /*
 	node.contents().filter(function() {
   			return this.nodeType == 3;
@@ -1196,6 +1118,9 @@ function appendExtension(node,extension){
 }
 
 function getTokenRoot(node){
+	if( isRootNode(node) ){
+		return node;	
+	}
 	//	return $("#sn0>.snode").filter($("#"+node.id).parents($("#sn0>.snode")));
 	return $("#sn0>.snode").filter($(node).parents($("#sn0>.snode")));
 }
@@ -1227,34 +1152,57 @@ function minIndex( tokenRoot, offset ){
 			return index;	
 }
 
-/*
-function getNodesByIndex( tokenRoot, index ){
-		allSNodes = $("#"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
-		for( i=0; i<allSNodes.length; i++){
-			label=getLabel( $(allSNodes[i]) );
-			lastpart=parseInt( label.substr(label.lastIndexOf("-")+1) );
-			// lastpart=label.substr(label.lastIndexOf("-")+1);
-			// temp+=" "+lastpart;
-			if( ! isNaN( parseInt(lastpart) ) ){
-				index = Math.max( lastpart, index );
-			}
-		}	
-}
-*/
-
-function getIndex( node ){
-	// alert( "eee"+ getLabel( node ) );
+function parseIndex( label ){
 	index=-1;
-	label=getLabel( node );
-	
 	lastindex=Math.max(label.lastIndexOf("-"),label.lastIndexOf("="));
 	lastpart=parseInt( label.substr(lastindex+1) );
 	
 	if( ! isNaN( parseInt(lastpart) ) ){
 		index = Math.max( lastpart, index );
 	}	
+	if( index == 0){
+		return -1;
+	}
+	
 	return index;
 }
+
+function parseLabel( label ){
+	index=parseIndex(label);
+	
+	if( index > 0 ){
+		lastindex=Math.max(label.lastIndexOf("-"),label.lastIndexOf("=") );
+		
+		out = trim( ""+label.substr(0,lastindex) );
+		return out;						
+	}
+	
+	return label; 
+}
+
+function getIndex( node ){
+	// alert( "eee"+ getLabel( node ) );
+
+	label=getLabel( node );
+	return parseIndex( label );
+}
+
+function parseIndexType(label){
+	lastindex=Math.max(label.lastIndexOf("-"),label.lastIndexOf("="));
+	lastpart=label.charAt(lastindex);
+	return lastpart;	
+}
+
+function getIndexType( node ){
+	if( getIndex(node) < 0 ){
+		return -1;
+	}
+	
+	label=getLabel( node );
+	lastpart = parseIndexType(label);		
+	return lastpart;
+}
+
 
 function getNodesByIndex(tokenRoot, ind){	
 	nodes = $("#"+tokenRoot+" .snode,#"+tokenRoot+" .wnode").filter(function(index) {		
@@ -1264,6 +1212,7 @@ function getNodesByIndex(tokenRoot, ind){
 	return nodes;
 }
 
+/*
 function updateIndices( tokenRoot ){
 	ind=1;
 
@@ -1285,6 +1234,39 @@ function updateIndices( tokenRoot ){
 		ind++;		
 		// replaceIndex( tokenRoot, minindex, index ); XXX todo getbyindex
 	}
+}
+*/
+
+function addToIndices( tokenRoot, numberToAdd ){
+	
+	var ind = 1;
+	maxindex = maxIndex(tokenRoot.attr("id"));
+	
+	nodes = tokenRoot.find(".snode,.wnode").andSelf();
+	nodes.each( function(index) {
+		nindex = getIndex($(this));
+		if( nindex>0){
+		      label=getLabel($(this)).substr(0,getLabel($(this)).length-1);
+		      //alert(ind +" "+(ind+numberToAdd));
+		      label=label+(nindex+numberToAdd);
+		      setNodeLabel( $(this), label, true );			
+		}
+	});
+	
+	/*
+	while( ind <= maxindex ){
+		nodes = getNodesByIndex(tokenRoot.attr("id"), ind);
+ 		nodes.each(function(index) {
+		      label=getLabel($(this)).substr(0,getLabel($(this)).length-1);
+		      alert(ind +" "+(ind+numberToAdd));
+		      label=label+(ind+numberToAdd);
+		      setNodeLabel( $(this), label, true );
+		});
+		
+		ind++;
+	}
+	*/
+			
 }
 
 function maxIndex( tokenRoot ){ 
@@ -1324,10 +1306,29 @@ function coIndex(){
 
 			// and if it is the same index
 			if( getIndex($(startnode)) == getIndex($(endnode)) ){
-				// remove it
+				theIndex=getIndex($(startnode));				
+				types = ""+getIndexType($(startnode))+""+getIndexType($(endnode));
+											
+				//alert(types);				
+				// remove it								
 				stackTree();
-				removeIndex(startnode);
-				removeIndex(endnode);
+				
+				//alert(types);
+				
+				if( types == "=-"){								
+				  removeIndex(startnode);				
+				  removeIndex(endnode);
+				}
+				else if( types == "--" ){				
+				  removeIndex(endnode);			
+				  appendExtension( $(endnode), getIndex($(startnode)),"=" );
+				}
+				else if( types == "-=" ){
+				  removeIndex(startnode);
+				  removeIndex(endnode);			
+				  appendExtension( $(startnode), theIndex,"=" );				  
+				  appendExtension( $(endnode), theIndex,"-" );
+				} 
 			}
 
 		}
@@ -1341,8 +1342,8 @@ function coIndex(){
 		}
 		else { // no indices here, so make them
 				
-			startRoot = getTokenRoot(startnode).attr("id");
-			endRoot = getTokenRoot(endnode).attr("id");
+			startRoot = getTokenRoot($(startnode)).attr("id");
+			endRoot = getTokenRoot($(endnode)).attr("id");
 			// alert( lowestIndex(startRoot) );
 		
 			// if start and end are within the same token, do coindexing		
@@ -1389,9 +1390,10 @@ function wnodeString( node ){
 	thenode = node.clone();
 	wnodes = thenode.find(".wnode");
 	text="";
-	for( i=0; i<wnodes.length; i++){
-		text = text + wnodes[i].innerHTML + " ";
+	for( i=0; i<wnodes.length; i++){		
+		text = text + wnodes[i].innerHTML + " ";		
 	}
+	
 	return text;
 }
 

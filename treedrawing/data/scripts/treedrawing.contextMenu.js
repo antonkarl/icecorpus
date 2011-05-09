@@ -9,8 +9,6 @@ function addConMenu( label, suggestions ){
 
 
 function addConLeaf(suggestion,before,label,word){
-//	alert(label);
-	
 	conleaf=new Object();
 	conleaf.suggestion=suggestion;
 	conleaf.before=before;
@@ -19,65 +17,25 @@ function addConLeaf(suggestion,before,label,word){
 	
 	conleafs.push(conleaf);
 }
-//addConLeaf(suggestion,before,label,word);
-addConLeaf("&lt; (NP-SBJ *con*)",true,"NP-SBJ","*con*");
-addConLeaf("&lt; (NP-SBJ *exp*)",true,"NP-SBJ","*exp*");
-addConLeaf("&lt; (NP-SBJ *arb*)",true,"NP-SBJ","*arb*");
-addConLeaf("&lt; (NP-SBJ *pro*)",true,"NP-SBJ","*pro*");
-addConLeaf("&lt; (TO *)",true,"TO","*");
-addConLeaf("&lt; (WADVP 0)",true,"WADVP","0");
-addConLeaf("&lt; (WNP 0)",true,"WNP","0");
-addConLeaf("&lt; (WQP 0)",true,"WQP","0");
-addConLeaf("&lt; (WADJP 0)",true,"WADJP","0");
-addConLeaf("&lt; (WPP 0)",true,"WPP","0");
-addConLeaf("&lt; (C 0)",true,"C","0");
-addConLeaf("&lt; (P 0)",true,"P","0");
-// alert( conleafs[0].label );
+
+function addConMenuGroup( group ){
+   for(i=0; i<group.length; i++){
+      addConMenu(group[i],group);
+   }	
+}
+
+// Load the custom context menu groups from user settings file
+customConMenuGroups();
+
+function addConLeafBefore( phrase, terminal ){
+	addConLeaf("&lt; ("+phrase+" "+terminal+")",true,phrase,terminal);
+}
+
+// Load the custom context menu "leaf before" items
+customConLeafBefore(); 
 
 	
-defaultsPhrases=["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VBN","VB"];
-
-rootGroup=["IP-SUB","IP-MAT","IP-INF","IP-IMP","CP-QUE","QTP","FRAG"];
-for(i=0; i<rootGroup.length; i++){
-   addConMenu(rootGroup[i],rootGroup);
-}
-
-adjpGroup=["ADJP","ADJX","NP-MSR","QP","NP","ADVP"];
-for(i=0; i<adjpGroup.length; i++){
-   addConMenu(adjpGroup[i],adjpGroup);
-}
-
-npGroup=["NP-SBJ","NP-OB1","NP-OB2","NP-PRD","NP-POS","NP-PRN","NP","NX","NP-MSR","NP-TMP","NP-ADV","NP-COM","NP-CMP","NP-DIR","NP-ADT","NP-VOC","QP"];
-for(i=0; i<npGroup.length; i++){
-   addConMenu(npGroup[i],npGroup);
-}
-
-
-advpGroup=["PP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR","NP-MSR","NP-ADV"];
-for(i=0; i<advpGroup.length; i++){
-   addConMenu(advpGroup[i],advpGroup);
-}
-
-verbGroup=["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VBN","VB"];
-for(i=0; i<verbGroup.length; i++){
-   addConMenu(verbGroup[i],verbGroup);
-}
-
-rpGroup=["RP","P","ADV","ADVR","ADVS","ADJ","ADJR","ADJS","C","CONJ","ALSO"];
-for(i=0; i<rpGroup.length; i++){
-   addConMenu(rpGroup[i],rpGroup);
-}
-
-wpGroup=["WADVP","WNP","WPP","WQP","WADJP"];
-for(i=0; i<wpGroup.length; i++){
-   addConMenu(wpGroup[i],wpGroup);
-}
-
-cpGroup=["CP-THT","CP-THT-PRN","CP-ADV","CP-CMP"];
-for(i=0; i<cpGroup.length; i++){
-   addConMenu(cpGroup[i],cpGroup);
-}
-
+defaultsPhrases=defaultConMenuGroup;
 
 function isCasePhrase( nodeLabel ){
 	if( nodeLabel.startsWith("NP") ){
@@ -93,20 +51,53 @@ function isCasePhrase( nodeLabel ){
 	return false;
 }
 
+function getSuggestions( label ){
+		
+	var suggestions = new Array();		
+	var menuitems = defaultsPhrases;		
+	if( conmenus[label] != null ){
+		menuitems = conmenus[label].suggestions;
+	}
+	
+	for( i=0; i<menuitems.length; i++ ){
+		var menuitem = menuitems[i];
+		suggestions.push( menuitem );
+		
+		if( conmenus[menuitem] != null ){
+			var iitems = conmenus[menuitem].suggestions;
+			for( j=0; j<iitems.length; j++){
+				suggestions.push(iitems[j]);
+			}
+			
+		}				
+	}
+	
+	
+	
+	/*
+	for( i=0; i<suggestions.length; i++){
+			var suggestion = suggestions[i];
+			
+			if( conmenus[suggestion[i]] != null ){
+				moremenus = conmenus[suggestion[i]];
+				for( j=0; j<moremenus.length; j++ ){
+					suggestions
+				}				
+			}
+
+	}
+	*/
+	
+	return suggestions.unique();		
+}
+
+
 function loadContextMenu( nodeId ){
 
 	nodeIndex = getIndex( $("#"+nodeId) );
 	indexSep="";
 	indexString="";
-/*
-			<li class="edit"><a href="#edit">IP-SUB</a></li>
-			<li class="cut"><a href="#cut">IP-INF</a></li>
-			<li class="copy"><a href="#copy">IP-SMC</a></li>
-			<li class="paste separator"><a href="#paste">-SPE</a></li>
-			<li class="delete"><a href="#delete">-PRN</a></li>
-			<li class="quit separator"><a href="#quit">-XXX</a></li>
-*/
-	// XXX todo, wnode framkallar error on rightclick
+	
 	node = $("#"+nodeId).clone();
 	nodelabel=trim(node.contents().filter(function() {
   			return this.nodeType == 3;
@@ -119,17 +110,13 @@ function loadContextMenu( nodeId ){
 		indexString = indexSep+""+nodeIndex;
 	}
 
-	//html=$("");
-
-	// alert(nodelabel);
-
-//	html+="<div class='conMenuItem'><a href='#fixedleaf:NP-SBJ:*con*:"+nodeId+"'>&lt; NP-SBJ *con*</a></div>";
-
 	$("#conLeft").empty();	
 	$("#conLeft").append($("<div class='conMenuHeading'>Label</div>"));	
 	
-	if (/-[NADG]$/.test( nodelabel )) {
-		caseTags=["N","NS","NPR","NPRS","PRO","D","NUM","ADJ","ADJR","ADJS","Q","QR","QS"];		
+
+			
+	
+	if (/-[NADG]$/.test( nodelabel )) {				
 		//alert(nodelabel);		
 		
 		for (i = 0; i < caseTags.length; i++) {
@@ -143,7 +130,6 @@ function loadContextMenu( nodeId ){
 					e = window.event;
 					var elementId = (e.target || e.srcElement).id;
 					suggestion = "" + $(this).text();
-					// alert(nodeId + " " + suggestion);
 					setNodeLabel($("#" + nodeId), suggestion);
 					hideContextMenu();
 				});
@@ -170,11 +156,7 @@ function loadContextMenu( nodeId ){
 	}
 	else {
 	
-		suggestions = defaultsPhrases;
-		if (conmenus[nodelabel] != null) {
-			suggestions = conmenus[nodelabel].suggestions;
-		}
-		
+	suggestions = getSuggestions(nodelabel);
 		for (i = 0; i < suggestions.length; i++) {
 			if (suggestions[i] != nodelabel) {
 				newnode = $("<div class='conMenuItem'><a href='#'>" + suggestions[i]+indexString+"</a></div>");
@@ -189,52 +171,55 @@ function loadContextMenu( nodeId ){
 				$("#conLeft").append(newnode);
 			}
 		}
-	}
+		
+}
+	
 // do the right side context menu	
 	$("#conRight").empty();	
 	
-//alert("x"+nodelabel+"x");	
-
-if (  /-[NADG]$/.test(nodelabel) ){
-	// alert("x"+nodelabel+"x");
-	
-	    $("#conRight").append($("<div class='conMenuHeading'>Case</div>"));
-		
-		newnode = $("<div class='conMenuItem'><a href='#'>-N</a></div>");
-		$(newnode).mousedown(setCaseOnTag(nodeId,nodelabel,"N"));
-		$("#conRight").append(newnode);	
-	    
-		newnode = $("<div class='conMenuItem'><a href='#'>-A</a></div>");
-		$(newnode).mousedown(setCaseOnTag(nodeId,nodelabel,"A"));
-		$("#conRight").append(newnode);	
-		    	
-		newnode = $("<div class='conMenuItem'><a href='#'>-D</a></div>");
-		$(newnode).mousedown(setCaseOnTag(nodeId,nodelabel,"D"));
-		$("#conRight").append(newnode);	
-		
-		newnode = $("<div class='conMenuItem'><a href='#'>-G</a></div>");
-		$(newnode).mousedown(setCaseOnTag(nodeId,nodelabel,"G"));
-		$("#conRight").append(newnode);			
-}		
-else if( isCasePhrase(nodelabel) ){
-	    $("#conRight").append($("<div class='conMenuHeading'>Case</div>"));
-		
-		newnode = $("<div class='conMenuItem'><a href='#'>-N</a></div>");
-		$(newnode).mousedown(doSetCase(nodeId,"N"));
-		$("#conRight").append(newnode);	
-	    
-		newnode = $("<div class='conMenuItem'><a href='#'>-A</a></div>");
-		$(newnode).mousedown(doSetCase(nodeId,"A"));
-		$("#conRight").append(newnode);	
-		    	
-		newnode = $("<div class='conMenuItem'><a href='#'>-D</a></div>");
-		$(newnode).mousedown(doSetCase(nodeId,"D"));
-		$("#conRight").append(newnode);	
-		
-		newnode = $("<div class='conMenuItem'><a href='#'>-G</a></div>");
-		$(newnode).mousedown(doSetCase(nodeId,"G"));
-		$("#conRight").append(newnode);			
-}	
+// Set in user settings file
+if( displayCaseMenu ){
+			if (  /-[NADG]$/.test(nodelabel) ){
+				// alert("x"+nodelabel+"x");
+				
+				    $("#conRight").append($("<div class='conMenuHeading'>Case</div>"));
+					
+					newnode = $("<div class='conMenuItem'><a href='#'>-N</a></div>");
+					$(newnode).mousedown(setCaseOnTag(nodeId,nodelabel,"N"));
+					$("#conRight").append(newnode);	
+				    
+					newnode = $("<div class='conMenuItem'><a href='#'>-A</a></div>");
+					$(newnode).mousedown(setCaseOnTag(nodeId,nodelabel,"A"));
+					$("#conRight").append(newnode);	
+					    	
+					newnode = $("<div class='conMenuItem'><a href='#'>-D</a></div>");
+					$(newnode).mousedown(setCaseOnTag(nodeId,nodelabel,"D"));
+					$("#conRight").append(newnode);	
+					
+					newnode = $("<div class='conMenuItem'><a href='#'>-G</a></div>");
+					$(newnode).mousedown(setCaseOnTag(nodeId,nodelabel,"G"));
+					$("#conRight").append(newnode);			
+			}		
+			else if( isCasePhrase(nodelabel) ){
+				    $("#conRight").append($("<div class='conMenuHeading'>Case</div>"));
+					
+					newnode = $("<div class='conMenuItem'><a href='#'>-N</a></div>");
+					$(newnode).mousedown(doSetCase(nodeId,"N"));
+					$("#conRight").append(newnode);	
+				    
+					newnode = $("<div class='conMenuItem'><a href='#'>-A</a></div>");
+					$(newnode).mousedown(doSetCase(nodeId,"A"));
+					$("#conRight").append(newnode);	
+					    	
+					newnode = $("<div class='conMenuItem'><a href='#'>-D</a></div>");
+					$(newnode).mousedown(doSetCase(nodeId,"D"));
+					$("#conRight").append(newnode);	
+					
+					newnode = $("<div class='conMenuItem'><a href='#'>-G</a></div>");
+					$(newnode).mousedown(doSetCase(nodeId,"G"));
+					$("#conRight").append(newnode);			
+			}	
+}
 
 	// do addleafbefore
 	$("#conRight").append($("<div class='conMenuHeading'>Leaf before</div>"));
@@ -301,8 +286,7 @@ function doSetCase( nodeId, theCase ){
 		
 				
 	}
-//	
-//	setNodeLabel(nodeId,"sss",true);
+
 }
 
 
@@ -310,11 +294,6 @@ function doSetCase( nodeId, theCase ){
 
 function doConLeaf(idx,conleaf,nodeId){
 		return function(){
-			//e = window.event;
-			//var elementId = (e.target || e.srcElement).id;
-			// suggestion = "" + $(this).text();
-			 //alert(elementId);
-			//(before,label,word,targetId,fixed)
 			makeLeaf(conleaf.before, conleaf.label, conleaf.word, nodeId, true);
 			hideContextMenu();
 		}

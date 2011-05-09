@@ -1,5 +1,3 @@
-var extensions=["-LFD","-RSP","-SPE","-PRN","-SBJ","-XXX","-ZZZ"];
-
 var startnode=null;
 var endnode=null;
 var mousenode=null;
@@ -18,6 +16,14 @@ String.prototype.endsWith = function(str){
 	// alert(this.substr(this.length-str.length));	
     return (this.substr(this.length-str.length) === str);
 }
+
+/**
+ * unique function by: Shamasis Bhattacharya
+ * http://www.shamasis.net/2009/09/fast-algorithm-to-find-unique-items-in-javascript-array/
+ */
+Array.prototype.unique = function() {   
+		var o = {}, i, l = this.length, r = [];    for(i=0; i<l;i+=1) o[this[i]] = this[i];    for(i in o) r.push(o[i]);    return r;
+};
 
 $(document).ready(function() {
 	resetIds();
@@ -49,9 +55,20 @@ $(document).ready(function() {
 
 // menuon=true;
 // checks if the given node label is an ip node in the gui coloring sense
-function isIpNode( text ){
-	return trim(text).startsWith("IP-SUB") || trim(text).startsWith("IP-MAT") || trim(text).startsWith("IP-IMP") || trim(text).startsWith("IP-INF")	
+function isIpNode( text ){	
+	return contains( ipnodes, trim(text) );		
 }
+
+// returns true if array a contains object o
+function contains(a, obj){
+  for(var i = 0; i < a.length; i++) {
+    if(a[i] === obj ){
+      return true;
+    }
+  }
+  return false;
+}
+
 
 function isEmpty( text ){
 	 if( text.startsWith("*") ){
@@ -148,32 +165,8 @@ function save(){
 }
 
 function assignEvents(){
-	addCommand(65,"leafafter"); // a
-	addCommand(66,"leafbefore"); // b
-	addCommand(69,"setlabel",["CP-ADV","CP-CMP"]); //e
-	addCommand(88,"makenode","XP"); // x
-	addCommand(67,"coindex"); // c
-	addCommand(82,"setlabel",["CP-REL","CP-FRL","CP-CAR","CP-CLF"]); // r
-	addCommand(83,"setlabel",["IP-SUB","IP-MAT","IP-IMP"]); // s
-	addCommand(86,"setlabel",["IP-SMC","IP-INF","IP-INF-PRP"]); // v
-	addCommand(84,"setlabel",["CP-THT","CP-THT-PRN","CP-DEG","CP-QUE"]); // t
-	addCommand(71,"setlabel",["ADJP","ADJP-SPR","NP-MSR","QP"]); // g
-	addCommand(70,"setlabel",["PP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR"]); // f
-//	addCommand(49,"redo"); // 1
-	addCommand(50,"setlabel",["NP","NP-PRN","NP-POS","NP-COM"]); // 2
-//	addCommand(51,"makenode","NP","NP-PRD","NP-POS"); // 3
-	addCommand(52,"toggleextension","-PRN"); // 4
-    addCommand(53,"toggleextension","-SPE"); // 5
-	addCommand(81,"setlabel",["CONJP","ALSO","FP"]); // q
-	addCommand(87,"setlabel",["NP-SBJ","NP-OB1","NP-OB2","NP-PRD"]); // w
-	addCommand(68,"prunenode"); // d
-	addCommand(90,"undo"); // z
-	addCommand(76,"rename"); // l
-//	addCommand(188,"clearselection"); // <
-	addCommand(32,"clearselection"); // spacebar
-//	addCommand(78, "makenode","XP"); // n
-        //78 n
-
+	// load custom commands from user settings file
+    customCommands();	
 	document.body.onkeydown = handleKeyDown;	
 	$(".snode").mousedown(handleNodeClick);
 	$("#butsave").mousedown(save);
@@ -729,7 +722,13 @@ function displayRename(){
 					   newtext = newtext.replace("<","&lt;");
 					   newtext = newtext.replace(">","&gt;");
 	
-		  			   $("#leafeditor").replaceWith( "<div class='snode'>"+ newphrase+" <span class='wnode'>"+newtext+"</span></div>" );
+		  			   $("#leafeditor").replaceWith( "<div id='theNewPhrase' class='snode'>"+ newphrase+" <span class='wnode'>"+newtext+"</span></div>" );
+						 if( isIpNode(newphrase) ){
+						    $("#theNewPhrase").addClass("ipnode");									
+						  }
+						  else {
+						  	$("#theNewPhrase").removeClass("ipnode");				
+						  }
 	
 					   startnode=null; endnode=null;
 					   resetIds();
@@ -778,6 +777,14 @@ function displayRename(){
 					   newphrase = $("#labelbox").val().toUpperCase()+" ";
 				
 		  			   $("#labelbox").replaceWith(  newphrase );
+	
+			  
+						  if( isIpNode(newphrase) ){
+						    $("#"+startnode.id).addClass("ipnode");									
+						  }
+						  else {
+						  	$("#"+startnode.id).removeClass("ipnode");				
+						  }
 	
 					   startnode=null; endnode=null;
 					   resetIds();

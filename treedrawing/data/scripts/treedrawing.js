@@ -408,7 +408,7 @@ function moveNode(targetParent){
 	} // otherwise move under my sister
 	else {		
 //		if( parseInt( startnode.id.substr(2) ) >  parseInt( targetParent.substr(2) ) ){
-	    tokenMerge = isRootNode( node(startnode.id) );	    
+	    tokenMerge = isRootNode( $("#"+startnode.id) );	    
 	    maxindex = maxIndex( getTokenRoot(node(targetParent) ).attr("id") );	     
 	    movednode = node(startnode.id);
 	    // alert(maxindex);

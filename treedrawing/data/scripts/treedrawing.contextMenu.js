@@ -156,6 +156,7 @@ function loadContextMenu( nodeId ){
 	}
 	else {
 	
+	
 	suggestions = getSuggestions(nodelabel);
 		for (i = 0; i < suggestions.length; i++) {
 			if (suggestions[i] != nodelabel) {

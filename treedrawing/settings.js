@@ -51,6 +51,7 @@ function customCommands(){
 //	addCommand(78, "makenode","XP"); // n    
 }
 
+
 /*
  * Default phrase label suggestions in context menu 
  */

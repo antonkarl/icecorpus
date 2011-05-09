@@ -409,8 +409,8 @@ function moveNode(targetParent){
 	else {		
 //		if( parseInt( startnode.id.substr(2) ) >  parseInt( targetParent.substr(2) ) ){
 	    tokenMerge = isRootNode( $("#"+startnode.id) );	    
-	    maxindex = maxIndex( getTokenRoot(node(targetParent) ).attr("id") );	     
-	    movednode = node(startnode.id);
+	    maxindex = maxIndex( getTokenRoot($("#"+targetParent) ).attr("id") );	     
+	    movednode = $("#"+startnode.id);
 	    // alert(maxindex);
 	    // ZZZZZZZZZZ
 	    // alert( getTokenRoot( node(targetParent) ).attr("id") );
@@ -863,6 +863,43 @@ function toogleJustExtension( oldlabel, extension ){
 		}
 				
 		return out; 		
+}
+
+function parseExtensions( label ){
+			index = parseIndex( oldlabel );
+		indextype="";
+		if( index > 0 ){
+			indextype=parseIndexType(oldlabel);
+		}
+		extendedlabel = parseLabel(oldlabel);		
+		currentextensions = new Array();
+
+		for( i=extensions.length-1; i>-1; i--){
+			
+			//alert( "'"+ extendedlabel+ "' '" +extensions[i] +"'"  );
+			//alert( extendedlabel.endsWith( extensions[i] )  )
+			if( extendedlabel.endsWith( extensions[i] ) ){
+				//alert("y");
+																							
+				currentextensions.push( extensions[i] );
+			
+				extendedlabel = extendedlabel.substr(0,extendedlabel.length-extensions[i].length);
+				//alert(extendedlabel);				
+			}
+		}
+		
+		out = "";
+		count = currentextensions.length
+		for( i=0; i<count; i++){
+			out+=currentextensions.pop();
+		}
+		/*
+		if( index > 0 ){
+			out+=indextype;
+			out+=index;
+		}
+			*/	
+		return out; 
 }
 
 function toggleExtension(extension){

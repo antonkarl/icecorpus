@@ -52,21 +52,36 @@ function isCasePhrase( nodeLabel ){
 }
 
 function getSuggestions( label ){
+	
+	indstr="";
+	indtype="";
+	extensionstring="";
+	
+	if( parseIndex(label)>0 ){		
+	    indstr=parseIndex(label);
+	    indtype=parseIndexType(label);
+	 }
+	 extensionstring=parseExtensions(label);
+	 label = parseLabel(label).substr(0,label.length-extensionstring.length);	
+	
+	 //alert( extensionstring );
+	
+	// alert(extensionstring);
 		
 	var suggestions = new Array();		
 	var menuitems = defaultsPhrases;		
 	if( conmenus[label] != null ){
 		menuitems = conmenus[label].suggestions;
-	}
+	}		
 	
 	for( i=0; i<menuitems.length; i++ ){
 		var menuitem = menuitems[i];
-		suggestions.push( menuitem );
+		suggestions.push( menuitem + extensionstring + indtype + indstr );
 		
 		if( conmenus[menuitem] != null ){
 			var iitems = conmenus[menuitem].suggestions;
 			for( j=0; j<iitems.length; j++){
-				suggestions.push(iitems[j]);
+				suggestions.push(iitems[j]  + extensionstring + indtype + indstr );
 			}
 			
 		}				

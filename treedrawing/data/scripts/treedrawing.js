@@ -64,8 +64,10 @@ function isIpNode( text ){
 			return true;
 		}
 	}
-	*/	
-	return contains( ipnodes, parseLabel(text) );		
+	*/
+	return text.startsWith("IP-SUB") || text.startsWith("IP-MAT") || text.startsWith("IP-IMP") || text.startsWith("IP-INF");
+		
+//	return contains( ipnodes, parseLabel(text) );		
 }
 
 // returns true if array a contains object o

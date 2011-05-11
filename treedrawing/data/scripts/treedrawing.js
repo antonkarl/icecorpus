@@ -1204,6 +1204,10 @@ function minIndex( tokenRoot, offset ){
 function parseIndex( label ){
 	index=-1;
 	lastindex=Math.max(label.lastIndexOf("-"),label.lastIndexOf("="));
+	if( lastindex == -1 ){
+		return -1;
+	}
+	
 	lastpart=parseInt( label.substr(lastindex+1) );
 	
 	if( ! isNaN( parseInt(lastpart) ) ){
@@ -1290,40 +1294,30 @@ function updateIndices( tokenRoot ){
 function addToIndices( tokenRoot, numberToAdd ){
 	
 	var ind = 1;
+	
+	
 	maxindex = maxIndex(tokenRoot.attr("id"));
 	
 	nodes = tokenRoot.find(".snode,.wnode").andSelf();
 	nodes.each( function(index) {
 		nindex = getIndex($(this));
-		if( nindex>0){
+		if( nindex>0){			  
+			
 		      label=getLabel($(this)).substr(0,getLabel($(this)).length-1);
-		      //alert(ind +" "+(ind+numberToAdd));
 		      label=label+(nindex+numberToAdd);
 		      setNodeLabel( $(this), label, true );			
 		}
 	});
 	
-	/*
-	while( ind <= maxindex ){
-		nodes = getNodesByIndex(tokenRoot.attr("id"), ind);
- 		nodes.each(function(index) {
-		      label=getLabel($(this)).substr(0,getLabel($(this)).length-1);
-		      alert(ind +" "+(ind+numberToAdd));
-		      label=label+(ind+numberToAdd);
-		      setNodeLabel( $(this), label, true );
-		});
-		
-		ind++;
-	}
-	*/
-			
+				
 }
 
 function maxIndex( tokenRoot ){ 
 			//alert( "tr: "+tokenRoot );
 			allSNodes = $("#"+tokenRoot+",#"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
 			 temp="";
-			index=0;
+			ind=0;						
+			/*
 			for( i=0; i<allSNodes.length; i++){
 				label=getLabel( $(allSNodes[i]) );
 				lastpart=parseInt( label.substr(label.lastIndexOf("-")) );
@@ -1333,8 +1327,14 @@ function maxIndex( tokenRoot ){
 					index = Math.max( lastpart, index );
 				}
 			}
+			*/
+			for( i=0; i<allSNodes.length; i++){
+				label=getLabel( $(allSNodes[i]) );			
+				ind = Math.max( parseIndex(label), ind );			   
+			 }			
 			// alert(temp);
-			return index;
+			// alert(ind);
+			return ind;
 }
 
 function removeIndex( node ){
@@ -1350,6 +1350,14 @@ function coIndex(){
 		}
 	}
 	else if( startnode && endnode ){
+
+            // don't do anything if different token roots		
+			startRoot = getTokenRoot($(startnode)).attr("id");
+			endRoot = getTokenRoot($(endnode)).attr("id");
+			if( startRoot != endRoot ){			
+				return;
+			}
+		
 
 		// if both nodes already have an index
 		if( getIndex($(startnode)) > 0 && getIndex($(endnode)) > 0 ){

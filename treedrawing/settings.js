@@ -10,7 +10,7 @@ var caseTags=["N","NS","NPR","NPRS","PRO","D","NUM","ADJ","ADJR","ADJS","Q","QR"
 /* extensions are treated as not part of the label for various purposes, 
  * they are all binary, and they show up in the toggle extension menu  
  */
-var extensions=["-LFD","-RSP","-SPE","-PRN","-SBJ","-XXX","-ZZZ"];
+var extensions=["-SPE","-PRN","-SBJ","-LFD","-RSP","-XXX","-ZZZ"];
 
 /*
  * Phrase labels in this list (including the same ones with indices and

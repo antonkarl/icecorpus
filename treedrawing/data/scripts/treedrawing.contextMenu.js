@@ -61,8 +61,8 @@ function getSuggestions( label ){
 	    indstr=parseIndex(label);
 	    indtype=parseIndexType(label);
 	 }
-	 extensionstring=parseExtensions(label);
-	 label = parseLabel(label).substr(0,label.length-extensionstring.length);	
+	 extensionstring=""; //parseExtensions(label);
+	 label = parseLabel(label); //.substr(0,label.length-extensionstring.length);	
 	
 	 //alert( extensionstring );
 	

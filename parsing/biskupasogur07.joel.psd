@@ -1039,7 +1039,8 @@
 		  (CONJP (CONJ og)
 			 (NP (QS-N flestir) (NS-N yfirvaldsmenn))))
 	  (ADVP-TMP (ADV hér))
-	  (NP-OB1-ZZZ (ADJ-N mótdrægt))
+	  (NP-OB1 (ADJ-N mótdrægt))
+	  (CODE {COM:nonagreement})
 	  (. .-.)))
 
 ( (IP-MAT (BEDI Voru)

@@ -88,4 +88,6 @@ function customConLeafBefore(){
 	addConLeafBefore( "WPP", "0");
 	addConLeafBefore( "C", "0");
 	addConLeafBefore( "P", "0");
+	addConLeafBefore( "CODE", "*XXX*");	
+	addConLeafBefore( "CODE", "*TTT*");	
 }

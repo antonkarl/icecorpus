@@ -1373,9 +1373,11 @@ function coIndex(){
 				
 				//alert(types);
 				
-				if( types == "=-"){								
-				  removeIndex(startnode);				
-				  removeIndex(endnode);
+				if( types == "=-"){
+				  removeIndex(startnode);
+				  removeIndex(endnode);			
+				  appendExtension( $(startnode), theIndex,"=" );				  
+				  appendExtension( $(endnode), theIndex,"=" );																		
 				}
 				else if( types == "--" ){				
 				  removeIndex(endnode);			
@@ -1386,6 +1388,10 @@ function coIndex(){
 				  removeIndex(endnode);			
 				  appendExtension( $(startnode), theIndex,"=" );				  
 				  appendExtension( $(endnode), theIndex,"-" );
+				}				
+				else if( types == "==" ){
+				  removeIndex(startnode);				
+				  removeIndex(endnode);
 				} 
 			}
 

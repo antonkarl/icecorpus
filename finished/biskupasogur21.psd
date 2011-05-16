@@ -229,8 +229,7 @@
 			 (VAN kosinn)))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ *con*)
-	  (VBDI Stoðaði)
+( (IP-MAT (VBDI Stoðaði)
 	  (PP (ADVP (ADV þar))
 	      (P til))
 	  (ADJP-SPR (ADJS-N næst)
@@ -353,7 +352,7 @@
 ( (IP-MAT (CONJ og)
 	  (NP-SBJ (N-N höfuðsmaður$) (D-N $inn))
 	  (PP (P með)
-	      (NP-SBJ (Q-D nokkurri) (N-D misþóknan)))
+	      (NP (Q-D nokkurri) (N-D misþóknan)))
 	  (CODE *TTT*)
 	  (MDPS mátt)
 	  (VB heyra)

@@ -21,7 +21,7 @@ def treebank_tag( icenlp_tag ):
 
     # foreign words
     if icenlp_tag == "e":
-        return "FOREIGN"
+        return "FW"
 
     # injp
     if icenlp_tag == "au":

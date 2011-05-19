@@ -6,4 +6,4 @@ define: def/ICE.def
 
 query: ({1}CP-ADV* exists) AND (!IP*|PP*|$ROOT|CONJP*|CP-ADV* idoms CP-ADV*)
 
-append_label{1}: -ZZZ-BADCPADV-MAY-BE-REL
+add_leaf_before{1}: (CODE *ZZZ_BADCPADV_MAY_BE_REL*)

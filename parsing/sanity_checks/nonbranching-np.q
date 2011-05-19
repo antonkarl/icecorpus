@@ -10,4 +10,4 @@ query: (!NP-ADV* iDoms [2]NP)
    AND ([2]NP idoms !\*T*|\*ICH*)
    AND ([1]NP* idoms !OTHER*)
 
-append_label{1}: -ZZZ-NONBRANCH
+add_leaf_before{1}: (CODE *ZZZ_NONBRANCH*)

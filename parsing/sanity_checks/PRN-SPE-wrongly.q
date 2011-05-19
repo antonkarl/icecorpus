@@ -4,4 +4,4 @@ copy_corpus: t
 
 query: ({1}*PRN*SPE*|*SBJ*SPE* exists)
 
-append_label{1}: -ZZZ-SPE-PRN-OR-SPE-SBJ
+add_leaf_before{1}: (CODE *ZZZ_SPE_PRN_OR_SPE_SBJ*)

@@ -8,4 +8,4 @@ query: ({1}ADJP|QP iDomsOnly ADJ-*|ADJR-*|ADJS-*|VA*|Q*)
    AND (ADJP|QP precedes noun)
    AND (ADJP|QP hasSister noun)
 
-append_label{1}: -ZZZ-EXTRA_ADJP
+add_leaf_before{1}: (CODE *ZZZ_EXTRA_ADJP*)

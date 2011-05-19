@@ -4,4 +4,4 @@ node: IP*|FRAG|QTP
 
 query: ({1}CONJ|CONJ-* idomstotal> 1)
 
-append_label{1}: -ZZZ-CONJP
+add_leaf_before{1}: (CODE *ZZZ_CONJP*)

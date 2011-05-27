@@ -6,4 +6,4 @@ copy_corpus: t
 
 query: (IP-INF* iDoms {1}finiteVerb)
 
-append_label{1}: -ZZZ-SHOULD-BE-INF
+add_leaf_before{1}: (CODE *ZZZ_SHOULD_BE_INF*)

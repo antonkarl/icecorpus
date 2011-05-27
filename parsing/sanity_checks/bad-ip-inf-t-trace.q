@@ -7,4 +7,4 @@ query: (IP-INF* iDoms NP-OB*)
    AND (NP-OB* idoms {1}\*T\**)
    AND (NP* sameIndex \*T\**)
 
-append_label{1}: -ZZZ-WRONG_TRACE
+add_leaf_before{1}: (CODE *ZZZ_WRONG_TRACE*)

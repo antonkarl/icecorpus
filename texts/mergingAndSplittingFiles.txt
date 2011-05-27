@@ -11,16 +11,22 @@ replace "\n\n" with "\n"
 replace ." with ."\n
 replace [space]\n with \n
 replace \n[space] with \n
+replace ( with [space](PR:S#[space]
+replace ) with (PR:E)
+replace # with )
 (MS:another_MS_used)
 (MS:0)
 (MS:poetry_omitted)
 (P:97)
+<<<<<<< HEAD
 replace \t with [ekkert] <tab>
 rplace ( with (PR:S)
 replace ) with (PR:E)
+=======
+replace \t with [ekkert]
+>>>>>>> d2d089c274940aa19eaf4dcc08a576d56ce85e03
 (MS:unclear)
-( > (PR:S)
-) > (PR:E)
+check for "*" and "[" and "]"
 
 Concatinating .psd files
 cat georg*psd > 1525.georgius.nar-rel.psd

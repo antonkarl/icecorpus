@@ -6,4 +6,4 @@ query: (CP* iDoms W*)
    AND (CP* doms {1}\*ICH\**)
    AND (W* sameIndex \*ICH\**)
 
-append_label{1}: -ZZZ-WRONG_TRACE
+add_leaf_before{1}: (CODE *ZZZ_WRONG_TRACE*)

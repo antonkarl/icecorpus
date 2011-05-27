@@ -344,7 +344,7 @@ mv -f $tempfile.out $tempfile
 
 echo ""
 echo "Missing index2"
-$CS sanity_checks/missing-index-4.q $tempfile
+$CS sanity_checks/missing-index-4.q $tempfile 
 mv -f $tempfile.out $tempfile
 
 echo ""

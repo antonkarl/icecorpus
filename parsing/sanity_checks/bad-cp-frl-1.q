@@ -4,4 +4,4 @@ copy_corpus: t
 
 query: (!ADJP-SPR|ADVP*|NP*|CP-FRL*|CONJP idoms {1}CP-FRL*)
 
-append_label{1}: -ZZZ-NEEDS_DOMINATION
+add_leaf_before{1}: (CODE *ZZZ_NEEDS_DOMINATION*)

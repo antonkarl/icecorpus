@@ -21,7 +21,7 @@ def treebank_tag( icenlp_tag ):
 
     # foreign words
     if icenlp_tag == "e":
-        return "FOREIGN"
+        return "FW"
 
     # injp
     if icenlp_tag == "au":
@@ -272,7 +272,7 @@ def replace_special_verb_tags():
 
     # passive participle
     currentText = re.sub("\(VAN (["+allchars+"]+)\-hafa\)","(HAN \\1-hafa)", currentText)
-    currentText = re.sub("\(VAN (["+allchars+"]+)\-verða\)","(RAN \\1-verða)", currentText)
+    currentText = re.sub("\(VAN (["+allchars+"]+)\-verða\)","(RDN \\1-verða)", currentText)
     currentText = re.sub("\(VAN (["+allchars+"]+)\-(gera|gjöra)\)","(DAN \\1-gera)", currentText)
 
     # perfect participle

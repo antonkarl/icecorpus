@@ -20,4 +20,4 @@ AND (
 	    AND (P idoms til-til|auk-auk|austan-austan|án-án|handan-handan|innan-innan|meðal-meðal|milli-milli|millum-millum|neðan-neðan|norðan-norðan|ofan-ofan|sakir-sakir|sunnan-sunnan|sökum-sökum|utan-utan|vegna-vegna|vestan-vestan)) 
 )
 
-append_label{1}: -ZZZ-BAD-PP-CASE
+add_leaf_before{1}: (CODE *ZZZ_BAD_PP_CASE*)

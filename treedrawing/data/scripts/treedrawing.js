@@ -1,5 +1,3 @@
-var extensions=["-LFD","-RSP","-SPE","-PRN","-SBJ","-XXX","-ZZZ"];
-
 var startnode=null;
 var endnode=null;
 var mousenode=null;
@@ -18,6 +16,15 @@ String.prototype.endsWith = function(str){
 	// alert(this.substr(this.length-str.length));	
     return (this.substr(this.length-str.length) === str);
 }
+
+/**
+ * unique function by: Shamasis Bhattacharya
+ * http://www.shamasis.net/2009/09/fast-algorithm-to-find-unique-items-in-javascript-array/
+ */
+Array.prototype.unique = function() {   
+		var o = {}, i, l = this.length, r = [];    for(i=0; i<l;i+=1) o[this[i]] = this[i];    for(i in o) r.push(o[i]);    return r;
+};
+
 
 $(document).ready(function() {
 	resetIds();
@@ -49,9 +56,30 @@ $(document).ready(function() {
 
 // menuon=true;
 // checks if the given node label is an ip node in the gui coloring sense
-function isIpNode( text ){
-	return trim(text).startsWith("IP-SUB") || trim(text).startsWith("IP-MAT") || trim(text).startsWith("IP-IMP") || trim(text).startsWith("IP-INF")	
+function isIpNode( text ){	
+//	alert(ipnodes.length); 
+/*
+	for( i=0; i<ipnodes.length; i++){
+		if( ipnodes[i].startsWith(text) ){
+			return true;
+		}
+	}
+	*/
+	return text.startsWith("IP-SUB") || text.startsWith("IP-MAT") || text.startsWith("IP-IMP") || text.startsWith("IP-INF");
+		
+//	return contains( ipnodes, parseLabel(text) );		
 }
+
+// returns true if array a contains object o
+function contains(a, obj){
+  for(var i = 0; i < a.length; i++) {
+    if(a[i] === obj ){
+      return true;
+    }
+  }
+  return false;
+}
+
 
 function isEmpty( text ){
 	 if( text.startsWith("*") ){
@@ -148,32 +176,8 @@ function save(){
 }
 
 function assignEvents(){
-	addCommand(65,"leafafter"); // a
-	addCommand(66,"leafbefore"); // b
-	addCommand(69,"setlabel",["CP-ADV","CP-CMP"]); //e
-	addCommand(88,"makenode","XP"); // x
-	addCommand(67,"coindex"); // c
-	addCommand(82,"setlabel",["CP-REL","CP-FRL","CP-CAR","CP-CLF"]); // r
-	addCommand(83,"setlabel",["IP-SUB","IP-MAT","IP-IMP"]); // s
-	addCommand(86,"setlabel",["IP-SMC","IP-INF","IP-INF-PRP"]); // v
-	addCommand(84,"setlabel",["CP-THT","CP-THT-PRN","CP-DEG","CP-QUE"]); // t
-	addCommand(71,"setlabel",["ADJP","ADJP-SPR","NP-MSR","QP"]); // g
-	addCommand(70,"setlabel",["PP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR"]); // f
-//	addCommand(49,"redo"); // 1
-	addCommand(50,"setlabel",["NP","NP-PRN","NP-POS","NP-COM"]); // 2
-//	addCommand(51,"makenode","NP","NP-PRD","NP-POS"); // 3
-	addCommand(52,"toggleextension","-PRN"); // 4
-    addCommand(53,"toggleextension","-SPE"); // 5
-	addCommand(81,"setlabel",["CONJP","ALSO","FP"]); // q
-	addCommand(87,"setlabel",["NP-SBJ","NP-OB1","NP-OB2","NP-PRD"]); // w
-	addCommand(68,"prunenode"); // d
-	addCommand(90,"undo"); // z
-	addCommand(76,"rename"); // l
-//	addCommand(188,"clearselection"); // <
-	addCommand(32,"clearselection"); // spacebar
-//	addCommand(78, "makenode","XP"); // n
-        //78 n
-
+	// load custom commands from user settings file
+    customCommands();	
 	document.body.onkeydown = handleKeyDown;	
 	$(".snode").mousedown(handleNodeClick);
 	$("#butsave").mousedown(save);
@@ -414,9 +418,9 @@ function moveNode(targetParent){
 	} // otherwise move under my sister
 	else {		
 //		if( parseInt( startnode.id.substr(2) ) >  parseInt( targetParent.substr(2) ) ){
-	    tokenMerge = isRootNode( node(startnode.id) );	    
-	    maxindex = maxIndex( getTokenRoot(node(targetParent) ).attr("id") );	     
-	    movednode = node(startnode.id);
+	    tokenMerge = isRootNode( $("#"+startnode.id) );	    
+	    maxindex = maxIndex( getTokenRoot($("#"+targetParent) ).attr("id") );	     
+	    movednode = $("#"+startnode.id);
 	    // alert(maxindex);
 	    // ZZZZZZZZZZ
 	    // alert( getTokenRoot( node(targetParent) ).attr("id") );
@@ -729,7 +733,13 @@ function displayRename(){
 					   newtext = newtext.replace("<","&lt;");
 					   newtext = newtext.replace(">","&gt;");
 	
-		  			   $("#leafeditor").replaceWith( "<div class='snode'>"+ newphrase+" <span class='wnode'>"+newtext+"</span></div>" );
+		  			   $("#leafeditor").replaceWith( "<div id='theNewPhrase' class='snode'>"+ newphrase+" <span class='wnode'>"+newtext+"</span></div>" );
+						 if( isIpNode(newphrase) ){
+						    $("#theNewPhrase").addClass("ipnode");									
+						  }
+						  else {
+						  	$("#theNewPhrase").removeClass("ipnode");				
+						  }
 	
 					   startnode=null; endnode=null;
 					   resetIds();
@@ -778,6 +788,14 @@ function displayRename(){
 					   newphrase = $("#labelbox").val().toUpperCase()+" ";
 				
 		  			   $("#labelbox").replaceWith(  newphrase );
+	
+			  
+						  if( isIpNode(newphrase) ){
+						    $("#"+startnode.id).addClass("ipnode");									
+						  }
+						  else {
+						  	$("#"+startnode.id).removeClass("ipnode");				
+						  }
 	
 					   startnode=null; endnode=null;
 					   resetIds();
@@ -857,6 +875,44 @@ function toogleJustExtension( oldlabel, extension ){
 		return out; 		
 }
 
+function parseExtensions( label ){
+	//alert("'"+label+"'");
+			index = parseIndex( label );
+		indextype="";
+		if( index > 0 ){
+			indextype=parseIndexType(label);
+		}
+		extendedlabel = parseLabel(label);		
+		currentextensions = new Array();
+
+		for( i=extensions.length-1; i>-1; i--){
+			
+			//alert( "'"+ extendedlabel+ "' '" +extensions[i] +"'"  );
+			//alert( extendedlabel.endsWith( extensions[i] )  )
+			if( extendedlabel.endsWith( extensions[i] ) ){
+				//alert("y");
+																							
+				currentextensions.push( extensions[i] );
+			
+				extendedlabel = extendedlabel.substr(0,extendedlabel.length-extensions[i].length);
+				//alert(extendedlabel);				
+			}
+		}
+		
+		out = "";
+		count = currentextensions.length
+		for( i=0; i<count; i++){
+			out+=currentextensions.pop();
+		}
+		/*
+		if( index > 0 ){
+			out+=indextype;
+			out+=index;
+		}
+			*/	
+		return out; 
+}
+
 function toggleExtension(extension){
 
 	// there has to be a startnode
@@ -874,7 +930,7 @@ function toggleExtension(extension){
 	}
 
 	
-	
+	stackTree();
 	textnode = $("#"+startnode.id).contents().filter(function() {
   			return this.nodeType == 3;
 		}).first();
@@ -1148,6 +1204,10 @@ function minIndex( tokenRoot, offset ){
 function parseIndex( label ){
 	index=-1;
 	lastindex=Math.max(label.lastIndexOf("-"),label.lastIndexOf("="));
+	if( lastindex == -1 ){
+		return -1;
+	}
+	
 	lastpart=parseInt( label.substr(lastindex+1) );
 	
 	if( ! isNaN( parseInt(lastpart) ) ){
@@ -1172,6 +1232,7 @@ function parseLabel( label ){
 	
 	return label; 
 }
+
 
 function getIndex( node ){
 	// alert( "eee"+ getLabel( node ) );
@@ -1233,40 +1294,30 @@ function updateIndices( tokenRoot ){
 function addToIndices( tokenRoot, numberToAdd ){
 	
 	var ind = 1;
+	
+	
 	maxindex = maxIndex(tokenRoot.attr("id"));
 	
 	nodes = tokenRoot.find(".snode,.wnode").andSelf();
 	nodes.each( function(index) {
 		nindex = getIndex($(this));
-		if( nindex>0){
+		if( nindex>0){			  
+			
 		      label=getLabel($(this)).substr(0,getLabel($(this)).length-1);
-		      //alert(ind +" "+(ind+numberToAdd));
 		      label=label+(nindex+numberToAdd);
 		      setNodeLabel( $(this), label, true );			
 		}
 	});
 	
-	/*
-	while( ind <= maxindex ){
-		nodes = getNodesByIndex(tokenRoot.attr("id"), ind);
- 		nodes.each(function(index) {
-		      label=getLabel($(this)).substr(0,getLabel($(this)).length-1);
-		      alert(ind +" "+(ind+numberToAdd));
-		      label=label+(ind+numberToAdd);
-		      setNodeLabel( $(this), label, true );
-		});
-		
-		ind++;
-	}
-	*/
-			
+				
 }
 
 function maxIndex( tokenRoot ){ 
 			//alert( "tr: "+tokenRoot );
 			allSNodes = $("#"+tokenRoot+",#"+tokenRoot+" .snode,#"+tokenRoot+" .wnode");
 			 temp="";
-			index=0;
+			ind=0;						
+			/*
 			for( i=0; i<allSNodes.length; i++){
 				label=getLabel( $(allSNodes[i]) );
 				lastpart=parseInt( label.substr(label.lastIndexOf("-")) );
@@ -1276,8 +1327,14 @@ function maxIndex( tokenRoot ){
 					index = Math.max( lastpart, index );
 				}
 			}
+			*/
+			for( i=0; i<allSNodes.length; i++){
+				label=getLabel( $(allSNodes[i]) );			
+				ind = Math.max( parseIndex(label), ind );			   
+			 }			
 			// alert(temp);
-			return index;
+			// alert(ind);
+			return ind;
 }
 
 function removeIndex( node ){
@@ -1294,6 +1351,14 @@ function coIndex(){
 	}
 	else if( startnode && endnode ){
 
+            // don't do anything if different token roots		
+			startRoot = getTokenRoot($(startnode)).attr("id");
+			endRoot = getTokenRoot($(endnode)).attr("id");
+			if( startRoot != endRoot ){			
+				return;
+			}
+		
+
 		// if both nodes already have an index
 		if( getIndex($(startnode)) > 0 && getIndex($(endnode)) > 0 ){
 
@@ -1308,9 +1373,11 @@ function coIndex(){
 				
 				//alert(types);
 				
-				if( types == "=-"){								
-				  removeIndex(startnode);				
-				  removeIndex(endnode);
+				if( types == "=-"){
+				  removeIndex(startnode);
+				  removeIndex(endnode);			
+				  appendExtension( $(startnode), theIndex,"=" );				  
+				  appendExtension( $(endnode), theIndex,"=" );																		
 				}
 				else if( types == "--" ){				
 				  removeIndex(endnode);			
@@ -1321,6 +1388,10 @@ function coIndex(){
 				  removeIndex(endnode);			
 				  appendExtension( $(startnode), theIndex,"=" );				  
 				  appendExtension( $(endnode), theIndex,"-" );
+				}				
+				else if( types == "==" ){
+				  removeIndex(startnode);				
+				  removeIndex(endnode);
 				} 
 			}
 

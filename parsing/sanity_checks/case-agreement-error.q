@@ -10,4 +10,4 @@ query:       (({1}NP*|NX idomsmod NP-PRN *-N)
        OR ( (NP*|NX idomsmod NP-PRN *-D) 
              AND ( (NP*|NX idomsmod NP-PRN *-G) ) )
        
-append_label{1}: -ZZZ-CASE-AGREEMENT-ERROR
+add_leaf_before{1}: (CODE *ZZZ_CASE_AGREEMENT_ERROR*)

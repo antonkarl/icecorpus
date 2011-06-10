@@ -10,4 +10,4 @@ AND
 AND
 (CP-ADV* idoms !W*P*)
 
-append_label{1}: -ZZZ-MISS-FINITE-VERB
+add_leaf_before{1}: (CODE *ZZZ_MISS_FINITE_VERB*)

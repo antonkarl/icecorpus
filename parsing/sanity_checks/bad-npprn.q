@@ -9,4 +9,4 @@ query: (IP* iDoms {1}NP-PRN)
    AND (NP-SBJ* idoms !\**)
    AND (IP* iDomsMod V*|M*|R*|B* linkingVerb|*-þykja|*-gerast|*-blifa|*-blífa|*-heita)
 
-append_label{1}: -ZZZ-MAYBE-PRD
+add_leaf_before{1}: (CODE *ZZZ_MAYBE_PRD*)

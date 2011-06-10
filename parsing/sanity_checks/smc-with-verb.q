@@ -4,4 +4,4 @@ copy_corpus: t
 
 query: ({1}IP-SMC* idoms RD*|VB*|BE*|MD*|DO*|HV*)
 
-append_label{1}: -ZZZ-NOT_SMC
+add_leaf_before{1}: (CODE *ZZZ_NOT_SMC*)

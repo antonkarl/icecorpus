@@ -5,4 +5,4 @@ copy_corpus: t
 
 query: ({1}NP-TMP* idoms *-N)
 
-append_label{1}: -ZZZ-BAD-CASE
+add_leaf_before{1}: (CODE *ZZZ_BAD_CASE*)

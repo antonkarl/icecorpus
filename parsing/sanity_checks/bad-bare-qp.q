@@ -4,4 +4,4 @@ copy_corpus: t
 
 query: (IP*|RRC* iDoms {1}QP)
 
-append_label{1}: -ZZZ-BARE_QP
+add_leaf_before{1}: (CODE *ZZZ_BARE_QP*)

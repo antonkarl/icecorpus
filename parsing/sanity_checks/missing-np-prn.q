@@ -4,4 +4,4 @@ copy_corpus: t
 
 query: (!NP-PRN* idoms {1}PRO*) AND (PRO* idoms *-sjálfur)
 
-append_label{1}: -ZZZ-MISS_NPPRN
+add_leaf_before{1}: (CODE *ZZZ_MISS_NPPRN*)

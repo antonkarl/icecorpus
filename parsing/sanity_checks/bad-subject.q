@@ -4,4 +4,4 @@ copy_corpus: t
 
 query: (!IP* iDoms {1}*-SBJ*)
 
-append_label{1}: -ZZZ-BAD_SUBJ
+add_leaf_before{1}: (CODE *ZZZ_BAD_SUBJ*)

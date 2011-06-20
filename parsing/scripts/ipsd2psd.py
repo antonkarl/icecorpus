@@ -321,6 +321,8 @@ def final_replacements():
     rep("\(CP \(C né-né\)\)","(CONJ né-né)")
     # Quantifiers
     rep("\(PRO-([A-Z]) (["+allchars+"]+)-(allur|báðir|nokkur|enginn|sumur|fáeinir|fár|einhver|neinn|ýmis)\)","(Q-\\1 \\2-\\3)")
+    # Demonstratives
+    rep("\(PRO-([A-Z]) (["+allchars+"]+)-(hinn)\)","(D-\\1 \\2-\\3)")
 
     # WQ
     rep("\(PRO-([A-Z]) (["+allchars+"]+)-(hvor)\)","(Q-\\1 \\2-\\3)")

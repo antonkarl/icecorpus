@@ -62,7 +62,7 @@ var defaultConMenuGroup = ["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VBN","VB"];
  */
 function customConMenuGroups(){
 	addConMenuGroup( ["IP-SUB","IP-MAT","IP-INF","IP-IMP","CP-QUE","QTP","FRAG"] );
-	addConMenuGroup( ["ADJP","ADJX","NP-MSR","QP","NP","ADVP"] );
+	addConMenuGroup( ["ADJP","ADJX","NP-MSR","QP","NP","ADVP","IP-PPL"] );
 	addConMenuGroup( ["NP-SBJ","NP-OB1","NP-OB2","NP-PRD","NP-POS","NP-PRN","NP","NX","NP-MSR","NP-TMP","NP-ADV","NP-COM","NP-CMP","NP-DIR","NP-ADT","NP-VOC","QP"] );
 	addConMenuGroup( ["PP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR","NP-MSR","NP-ADV"] );
 	addConMenuGroup( ["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VBN","VB","HV"] );

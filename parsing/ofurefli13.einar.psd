@@ -1,4 +1,4 @@
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (, -)
 	  (ADVP-LOC (ADV Hér))
 	  (BEPI er)
 	  (NP-SBJ (Q-N enginn))
@@ -24,10 +24,10 @@
 	  (NP-PRD (NPR-N Þorvaldur) (NPR-N Gunnarsson))
 	  (. .-.)))
 
-( (IP-MAT (nhen —)
+( (IP-MAT (, -)
 	  (CONJ Og)
-	  (PRO-N eg)
-	  (NP-SBJ (NPR-N Ragnhildur) (NPR-N Þorgrímsdóttir))
+	  (NP-SBJ (PRO-N eg)
+		  (NP-PRN (NPR-N Ragnhildur) (NPR-N Þorgrímsdóttir)))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (PRO-N Hún))
@@ -47,8 +47,8 @@
 		  (NP (Q-N nokkur) (NS-N egg)))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —)
-		  (NP-POS (NPR-G Hefirðu)))
+( (IP-MAT (, -)
+	  (NP-POS (NPR-G Hefirðu))
 	  (NEG ekki)
 	  (NP-SBJ (N-N lyst))
 	  (VBPI á)
@@ -73,7 +73,7 @@
 	      (NP (N-A kistuna)))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (, -)
 	  (INTJP (INTJ Nei))
 	  (, ,-,)
 	  (NP-SBJ (PRO-N eg))
@@ -189,7 +189,7 @@
 	  (NP (N-A lambsandlit))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (, -)
 	  (MDPI Getur$)
 	  (NP-SBJ (PRO-N $ðu))
 	  (NEG ekki)
@@ -242,8 +242,8 @@
 	  (ADVP (ADV dálítið) (ADVR lengur))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
-	  (INTJP (INTJ Nú))
+( (IP-MAT (, -)
+	  (ADVP-TMP (ADV Nú))
 	  (VBDS ætti)
 	  (NP-SBJ (PRO-N eg))
 	  (IP-INF (TO að) (VB þvo))
@@ -254,8 +254,8 @@
 	  (NP-SBJ (NPR-N Ragnhildur))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhfn —))
-	  (VBPI Þvo)
+( (IP-MAT (, -)
+	  (IP-INF (VB Þvo))
 	  (NP-OB1 (PRO-D mér))
 	  (. ?-?)))
 
@@ -274,7 +274,7 @@
 	  (ADJP (Q-N mikil))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (, -)
 	  (INTJP (INTJ Já))
 	  (, ,-,)
 	  (NP-SBJ (PRO-N þú))
@@ -301,7 +301,7 @@
 	      (NP (N-D gang$) (D-D $inum)))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (, -)
 	  (CONJ En)
 	  (ADVP-LOC (ADV þar))
 	  (BEPI er)
@@ -339,8 +339,8 @@
 	      (NP (N-D loft$) (D-D $inu)))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —)
-		  (NP-POS (NPR-G Veiztu)))
+( (IP-MAT (, -)
+	  (NP (NPR-D Veiztu))
 	  (ADVP-TMP (ADV nú))
 	  (PP (P um)
 	      (NP (NP (Q-A nokkurn) (N-A svamp))
@@ -365,7 +365,7 @@
 	  (BEDI var)
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (, -)
 	  (ADVP-TMP (ADV Þá))
 	  (RDPI verð)
 	  (NP-SBJ (PRO-N eg))
@@ -380,9 +380,9 @@
 	  (NP-SBJ (NPR-N Ragnhildur))
 	  (. .-.)))
 
-( (IP-MAT (nhen —)
+( (IP-MAT (, -)
 	  (CONJ Og)
-	  (N-N þurka)
+	  (NP-POS (NS-G þurka))
 	  (PP (P með)
 	      (NP (N-D vasaklút$)
 		  (D-D $num)
@@ -412,7 +412,7 @@
 	  (PP (P að)
 	      (NP (ONE+Q-D einhverju-einhver) (ADJ-D miklu) (N-D leyti)))
 	  (PP (P undir))
-	  (VAN komin)
+	  (VBN komin)
 	  (. .-.)))
 
 ( (IP-MAT (PP (P Að)
@@ -492,7 +492,7 @@
 	  (NP-SBJ (PRO-N hún))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (, -)
 	  (ADVP-TMP (ADV Þá))
 	  (BEPI er)
 	  (IP-INF (TO að) (VB þurka))
@@ -504,9 +504,10 @@
 
 ( (IP-MAT (CONJ og)
 	  (VBDI ypti)
-	  (NP-OB1 (NS-D öxlum))
-	  (. .-.)
-	  (VBDI Veiztu)
+	  (NP-OB1 (NS-D öxlum)
+		  (CODE {COM:three_dots}))))
+
+( (IP-MAT (VBDI Veiztu)
 	  (PP (P um)
 	      (NP (Q-A nokkura) (N-A gólftusku)))
 	  (, ,-,)
@@ -566,9 +567,9 @@
 	  (RP upp)
 	  (CONJ og)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (, -)
 	  (VBDI vissi)
-	  (NP-OB1 (Q-A ekkert))
+	  (NP-SBJ (Q-N ekkert))
 	  (, ,-,)
 	  (WNP (WPRO-N hvað))
 	  (IP-SUB (NP-SBJ (PRO-N hún))
@@ -610,7 +611,7 @@
 	  (NP-SBJ (NS-N börn))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (, -)
 	  (WNP (WPRO-N Hvað))
 	  (IP-SUB (VBPI á)
 		  (NP-SBJ (PRO-N eg))
@@ -622,7 +623,7 @@
 	  (NP-SBJ (PRO-N hún))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (, -)
 	  (NP-SBJ (PRO-N Eg))
 	  (VBPI held)
 	  (VBPI snjallast)
@@ -648,9 +649,9 @@
 	  (ADVP (ADV tafarlaust))
 	  (. .-.)))
 
-( (IP-MAT (nhen —)
+( (IP-MAT (, -)
 	  (CONJ En)
-	  (D-N þetta)
+	  (NP-SBJ (D-N þetta))
 	  (PP (P á)
 	      (IP-INF (TO að) (VB brenna)))
 	  (, ,-,)
@@ -658,7 +659,7 @@
 	  (NP-SBJ (PRO-N hún))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (, -)
 	  (ADVP-TMP (ADV Þá))
 	  (VBPI brennum)
 	  (NP-SBJ (PRO-N við))
@@ -705,7 +706,7 @@
 	  (NP-OB1 (NS-D eldspýtu$) (D-D $num))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (, -)
 	  (VBPS Ætli)
 	  (NP-SBJ (Q-N engin) (N-N steinolía))
 	  (BEPS sé)

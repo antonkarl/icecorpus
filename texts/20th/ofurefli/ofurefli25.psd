@@ -1,4 +1,4 @@
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (CODE {COM:dash})
 	  (VBDI Spurðir$)
 	  (NP-SBJ (PRO-N $ðu))
 	  (NP-OB1 (PRO-A hann))
@@ -7,8 +7,9 @@
 	      (NP (Q-G hvers)))
 	  (. ?-?)))
 
-( (IP-MAT (NP-SBJ (nhen —)
-		  (NP-PRN (NPR-G Já.) (NPR-N Hann)))
+( (IP-MAT (NP-SBJ (CODE {COM:dash})
+		  (NPR-N Já.)
+		  (NP-PRN (NPR-N Hann)))
 	  (VBDI sagði)
 	  (, ,-,)
 	  (NP-SBJ (PRO-N það))
@@ -30,7 +31,7 @@
 ( (IP-MAT (NP-SBJ (N-N Prestur))
 	  (VBDI fór)
 	  (IP-INF (TO að) (VB lesa))
-	  (NP-OB1 (nheo —))
+	  (CODE {COM:dash})
 	  (PP (P um)
 	      (NP (D-A það) (N-A hneyksli)))
 	  (, ,-,)
@@ -116,7 +117,7 @@
 	  (IP-INF (VB stúlkurola))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (CODE {COM:dash})
 	  (ADJP (ADJ-N Sanngjarnt))
 	  (BEDS væri)
 	  (IP-INF (TO að) (VB taka))
@@ -242,7 +243,7 @@
 	      (NP (N-D dómkirkjuprest$) (D-D $inum)))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (CODE {COM:dash})
 	  (ADVP (ADV Vitanlega))
 	  (BEDS væri)
 	  (NP-SBJ (N-N vafamál))
@@ -294,7 +295,8 @@
 	      (NP (SUCH-A slíkt) (N-A athæfi)))
 	  (. .-.)))
 
-( (IP-MAT (NP-POS (nhen —) (PRO-G Annars))
+( (IP-MAT (CODE {COM:dash})
+	  (ADVP (ADV Annars))
 	  (MDDS gæti)
 	  (NEG ekki)
 	  (PP (P hjá))
@@ -335,7 +337,7 @@
 	  (NP-OB1 (NS-A áhrif))
 	  (PP (P á)
 	      (NP (PRO-A hann)))
-	  (NP (nheo —))
+	  (CODE {COM:dash})
 	  (CP-REL (WNP 0)
 		  (C sem)
 		  (IP-SUB (NEG ekki) (BEDS væri)))
@@ -369,12 +371,12 @@
 	      (NP (ONE+Q-D einhverri-einhver) (OTHER-D annarri)))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (CODE {COM:dash})
 	  (CONJ En)
 	  (ADVP (ADV væntanlega))
 	  (HVDS hefðu)
 	  (NP-SBJ (NS-N bæjarbúar))
-	  (NP-PRD (ADJ-N vakandi) (N-N auga))
+	  (NP-OB1 (ADJ-A vakandi) (N-A auga))
 	  (PP (P á)
 	      (NP (N-D presti)))
 	  (ADVP (ADV eftirleiðis))
@@ -475,7 +477,7 @@
 
 ( (IP-MAT (BEDI Var)
 	  (NP-SBJ (PRO-N hann))
-	  (VAN kominn)
+	  (VBN kominn)
 	  (ADVP-DIR (ADV hingað))
 	  (PP (P til)
 	      (NP (PRO-G þess))
@@ -577,7 +579,7 @@
 	  (NP-OB1 (PRO-D honum))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (CODE {COM:dash})
 	  (VBPI Haldið)
 	  (NP-SBJ (PRO-N þér))
 	  (, ,-,)
@@ -597,7 +599,7 @@
 	  (NP-OB1 (N-A málhvíld))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (CODE {COM:dash})
 	  (NP-SBJ (PRO-N Eg))
 	  (VBPI veit)
 	  (NEG ekki)
@@ -614,7 +616,7 @@
 	  (IP-SUB (NP-SBJ (NPR-N guð)))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (CODE {COM:dash})
 	  (VBPI Haldið)
 	  (NP-SBJ (PRO-N þér))
 	  (, ,-,)
@@ -634,7 +636,7 @@
 	  (NP-SBJ (NPR-N Grímsi))
 	  (. .-.)))
 
-( (IP-MAT (NP-OB1 (nheo —))
+( (IP-MAT (CODE {COM:dash})
 	  (VBPI Hefir)
 	  (NP-SBJ (Q-N enginn) (N-N læknir))
 	  (VBN komið)
@@ -642,7 +644,7 @@
 	      (NP (PRO-G þín)))
 	  (. ?-?)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (CODE {COM:dash})
 	  (INTJP (INTJ Nei))
 	  (. .-.)))
 

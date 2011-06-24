@@ -274,6 +274,7 @@ def replace_special_verb_tags():
     currentText = re.sub("\(VAN (["+allchars+"]+)\-hafa\)","(HAN \\1-hafa)", currentText)
     currentText = re.sub("\(VAN (["+allchars+"]+)\-verða\)","(RDN \\1-verða)", currentText)
     currentText = re.sub("\(VAN (["+allchars+"]+)\-(gera|gjöra)\)","(DAN \\1-gera)", currentText)
+    currentText = re.sub("\(VAN (["+allchars+"]+)\-(koma)\)","(VBN \\1-koma)", currentText)
 
     # perfect participle
     currentText = re.sub("\(VBN (["+allchars+"]+)\-vera\)","(BEN \\1-vera)", currentText)

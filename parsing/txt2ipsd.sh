@@ -1,5 +1,5 @@
 echo "Encoding special markup"
-python3 ./scripts/encodemarkup.py $1.txt $1.enc
+python3 ./scripts/encodemarkup.py $1.tok $1.enc
 
 echo "Tagging using IceTagger"
 cat $1.enc | java -classpath "../IceNLP/IceNLPCore.jar" is.iclt.icenlp.runner.RunIceTagger > $1.tagged

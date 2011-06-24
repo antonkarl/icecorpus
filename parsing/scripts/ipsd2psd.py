@@ -190,13 +190,14 @@ def load_lemmas():
 def convert_iceparser_functions():
     # Open syntactic function bracket
     rep("\{\*OBJAP* \[NP","(NP-OB1")
+    rep("\{\*OBJNOM* \[NP","(NP-OB1")
     rep("\{\*SUBJ* \[NP","(NP-SBJ")
     rep("\{\*OBJ* \[NP","(NP-OB1")
     rep("\{\*IOBJ* \[NP","(NP-OB2")
     rep("\{\*COMP* \[NP","(NP-PRD")
 
     # Close syntactic function bracket
-    rep("\*(SUBJ|OBJ|OBJAP|IOBJ|COMP)*\}","")
+    rep("\*(SUBJ|OBJ|OBJAP|IOBJ|COMP|OBJNOM)*\}","")
 
     # Throw away remaining opening brackets
     rep("\{\*(SUBJ|OBJ|IOBJ|COMP)","")

@@ -358,9 +358,10 @@
 	  (NEG ekki)
 	  (, ,-,)
 	  (VBDI sagði)
-	  (NP-SBJ (N-N prestefni))
-	  (. .-.)
-	  (NEG Ekki)
+	  (NP-SBJ (N-N prestefni)
+		  (CODE {COM:threedots}))))
+
+( (IP-MAT (NEG Ekki)
 	  (VBDS ætti)
 	  (NP-SBJ (PRO-N það))
 	  (PP (P í) (N-D raun) (CONJ og) (N-D veru))

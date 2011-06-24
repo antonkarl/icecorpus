@@ -373,9 +373,9 @@
 	  (ADJP (ADV þokkalega) (ADJ-N búin))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (CODE {COM:dash})
 	  (VBPI Eruð)
-	  (NP-PRD (PRO-N þér))
+	  (NP-SBJ (PRO-N þér))
 	  (NEG ekki)
 	  (NP-SBJ (N-N síra) (NPR-N Þorvaldur))
 	  (. ?-?)
@@ -394,7 +394,7 @@
 	  (NP (N-D sæti))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (CODE {COM:dash})
 	  (NP-SBJ (PRO-N Þér))
 	  (VBPI þekkið)
 	  (NP-OB1 (PRO-A mig))
@@ -413,7 +413,7 @@
 	  (NEG ekki)
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (CODE {COM:dash})
 	  (NP-SBJ (PRO-N Þér))
 	  (VBPI munið)
 	  (NEG ekki)
@@ -516,7 +516,7 @@
 		  (RDN orðið))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (CODE {COM:dash})
 	  (NP-SBJ (PRO-N Þér))
 	  (BEPI eruð)
 	  (ADVP (ADV þó))
@@ -527,7 +527,7 @@
 	  (NP-SBJ (PRO-N hann))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (CODE {COM:dash})
 	  (INTJP (INTJ Jú))
 	  (, ,-,)
 	  (NP-SBJ (PRO-N eg))
@@ -612,7 +612,7 @@
 	  (ADJP (ADJ-N magrar))
 	  (CONJ og)
 	  (NP-SBJ (NS-N hrukkur))
-	  (VAN komnar)
+	  (VBN komnar)
 	  (PP (P í)
 	      (NP (PRO-A þær)))
 	  (. .-.)))
@@ -696,7 +696,7 @@
 	  (NP-OB1 (Q-A engin) (NS-A börn))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (nhen —))
+( (IP-MAT (CODE {COM:dash})
 	  (INTJP (INTJ Jú))
 	  (, ,-,)
 	  (NP-SBJ (PRO-N eg))

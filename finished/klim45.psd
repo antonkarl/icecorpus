@@ -10,7 +10,7 @@
 	  (MDDI gat)
 	  (NP-SBJ (PRO-D mér))
 	  (NEG eigi)
-	  (VBDI leiðst)
+	  (VBN leiðst)
 	  (NP-OB1 (PRO-N það))
 	  (. .-.)))
 
@@ -108,6 +108,7 @@
 	  (NP-PRD (ADJ-N heilagur) (NS-N tímaspillir))
 	  (PP-1 (P en)
 		(CP-CMP (WNP-2 0)
+			(C 0)
 			(IP-SUB (NP-MSR *T*-2)
 				(NP-PRD (ADJ-N heilagir) (NS-N gjörningar)))))
 	  (. .-.)))
@@ -245,7 +246,7 @@
 						     (CONJP (CONJ og)
 							    (NX (NS-A limu))))
 					     (PP (P fyrir)
-						 (NP (NP-POS (N-D föðurland$) (D-G $ins))
+						 (NP (NP-POS (N-G föðurland$) (D-G $ins))
 						     (N-A velferð))))))))
 	  (. .-.)))
 

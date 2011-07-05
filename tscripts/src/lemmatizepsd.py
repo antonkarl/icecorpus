@@ -116,7 +116,7 @@ lines = lemmafile.readlines()
 for line in lines:
     if ( len( line.split("\t") ) == 3 ):
         word, tag, lemma = line.split("\t")
-        lemmata[ word+"_"+tag ] = lemma.strip()
+        lemmata[ word.lower()+"_"+tag ] = lemma.lower().strip()
 
 # start correcting lemmata
 unknowns = []

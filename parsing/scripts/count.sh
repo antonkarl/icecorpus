@@ -4,5 +4,5 @@ echo -e "Total XXXs: \c";
 grep "XXX" $1 | wc -l;
 echo "";
 echo "Words per file";
-python3 corpuswords2.py "$1";
+python3 corpuswords2.py "$1" "$2";
 

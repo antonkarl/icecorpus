@@ -3,6 +3,7 @@
 import sys
 import re
 import glob
+import os
 
 # Define RegEx patterns for Icelandic characters and sets of definite nouns
 allchars = 'a-zA-ZþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\.$'
@@ -25,6 +26,18 @@ def strip_sentence(theSentence):
 #    currentSentence = currentSentence.strip()
     return currentSentence.strip()
 
+def get_textname(year,text_id,fullgenre):
+    infoname = "info/" + year + "." + text_id + "." + fullgenre + ".info"
+    #print(infoname)
+    if os.path.exists(infoname):
+        lines = open(infoname,"r").readlines()
+        for line in lines:
+            chunks = line.split(":")
+            if chunks[0].strip() == "Textname":
+                return chunks[1].strip()
+    else:
+        return "NO TEXTNAME DEFINED IN INFO FILE! " + infoname +"\n "+ + open(infoname,"r").read()
+
 def count_file(filename):
     f = open(filename, 'r')
 
@@ -44,7 +57,17 @@ def count_file(filename):
             currentSentence=""
             displaySentence=""
     wordCount=wordCount-1
-    print(filename + ": " + str(wordCount) )
+
+    if sys.argv[2] == "-pretty":
+        chunks = filename.split("/")
+        mainpart = chunks[1]
+        chunks = mainpart.split(".")
+        year = chunks[0]
+        textid = chunks[1]
+        fullgenre = chunks[2]
+        print(year + ";*"+str(wordCount) + " words from " + get_textname(year, textid, fullgenre) + " ("+year+")")        
+    else:
+        print(filename + ": " + str(wordCount) + " pretty" )
     return wordCount
 # Start script
 # Load input file (ipsd)

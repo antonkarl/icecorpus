@@ -94,14 +94,14 @@
 		      (N-G dauða)))
 	  (. .-.)))
 
-( (IP-MAT (VBPI Legg)
+( (IP-IMP (VBPI Legg)
 	  (NP-SBJ (PRO-N þú))
 	  (RP niður)
 	  (NP-OB1 (NS-A vopn)
 		  (NP-POS (N-G ranglætis$) (D-G $ins)))
 	  (. ,-,)))
 
-( (IP-MAT (CONJ en)
+( (IP-IMP (CONJ en)
 	  (VBN íklæðst)
 	  (NP-OB1 (NS-D vopnum)
 		  (NP-POS (N-G réttlætis$) (D-G $ins)))
@@ -381,7 +381,7 @@
 	  (PP (P svo)
 	      (CP-ADV (C að)))
 	  (NP-SBJ (N-N ritning$) (D-N $in))
-	  (VBPI uppfyllist)
+	  (RP upp$) (VBPI $fyllist)
 	  (" ")
 	  (. .-.)))
 
@@ -419,7 +419,7 @@
 	  (ADJP (ADJ-D sjúka))))
 
 ( (IP-MAT (CONJ og)
-	  (NP-SBJ (N-N uppvakti))
+	  (NP-SBJ (RP upp$) (VBDI $vakti))
 	  (ADJP (ADJ-N liðna))
 	  (. .-.)))
 

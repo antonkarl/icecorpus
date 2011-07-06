@@ -58,7 +58,7 @@ def count_file(filename):
             displaySentence=""
     wordCount=wordCount-1
 
-    if len(sys.argv) > 2:
+    if False:
         chunks = filename.split("/")
         mainpart = chunks[1]
         chunks = mainpart.split(".")

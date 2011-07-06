@@ -58,7 +58,7 @@ def count_file(filename):
             displaySentence=""
     wordCount=wordCount-1
 
-    if sys.argv[2] == "-pretty":
+    if False:
         chunks = filename.split("/")
         mainpart = chunks[1]
         chunks = mainpart.split(".")
@@ -67,7 +67,7 @@ def count_file(filename):
         fullgenre = chunks[2]
         print(year + ";*"+str(wordCount) + " words from " + get_textname(year, textid, fullgenre) + " ("+year+")")        
     else:
-        print(filename + ": " + str(wordCount) + " pretty" )
+        print(filename + ": " + str(wordCount) )
     return wordCount
 # Start script
 # Load input file (ipsd)

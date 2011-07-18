@@ -13,9 +13,9 @@
 		      (NP (N-D skýrslu$)
 			  (D-D $nni)
 			  (PP (P eftir)
-			      (NP-POS (NPR-D Unu)
-				      (NPR-D Maríu)
-				      (NP-POS (NPR-G Páls)))))))
+			      (NP (NPR-D Unu)
+				  (NPR-D Maríu)
+				  (NP-POS (NPR-G Páls)))))))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (PRO-N Það))
@@ -189,7 +189,7 @@
 
 ( (IP-MAT (CONJ en)
 	  (NP-SBJ (N-N hringing)
-		  (NP-PRN (NPR-G Binna) (NPR-G Frank)))
+		  (NP-POS (NPR-G Binna) (NPR-G Frank)))
 	  (VBDI flögraði)
 	  (PP (P um)
 	      (NP (N-A heimil$) (D-A $ið)))
@@ -213,7 +213,7 @@
 		    (ADJP (ADJ-N einlæg)))
 	  (, ,-,)
 	  (CONJP (IP-MAT=1 (NP-SBJ (N-N hringing)
-				   (NP-PRN (NPR-G Palla) (NPR-G bleks)))
+				   (NP-POS (NPR-G Palla) (NPR-G bleks)))
 			   (NP-ADV (N-A hálfpart$) (D-A $inn))
 			   (ADJP (ADJ-N rám))))
 	  (CODE {COM:threedots})))
@@ -226,7 +226,7 @@
 		  (PRO-A sig)))
 	  (. .-.)))
 
-( (IP-MAT (WNP-1 (WD-N Hvaða) (N-N hringing))
+( (CP-QUE (WNP-1 (WD-N Hvaða) (N-N hringing))
 	  (IP-SUB (NP-PRD *T*-1)
 		  (BEPI ert)
 		  (NP-SBJ (PRO-N þú)))
@@ -402,9 +402,9 @@
 	      (NP (PRO-D sér)))
 	  (. :-:)))
 
-( (CP-QUE-SPE (IP-SUB (BEPI Er)
-		      (NP-SBJ (N-N drustdrust))
-		      (ADVP-LOC (ADV arna)))
+( (CP-QUE-SPE (IP-SUB-SPE (BEPI Er)
+			  (NP-SBJ (N-N drustdrust))
+			  (ADVP-LOC (ADV arna)))
 	      (. ?-?)))
 
 ( (QTP (CODE {COM:dash})

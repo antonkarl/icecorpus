@@ -90,6 +90,5 @@ function customConLeafBefore(){
 	addConLeafBefore( "P", "0");
 	addConLeafBefore( "CODE", "*XXX*");	
 	addConLeafBefore( "CODE", "*TTT*");
-	addConLeafBefore( "CODE", "*SSS*");
-	addConLeafBefore( "CODE", "*JJJ*");	
+	addConLeafBefore( "CODE", "*SSS*");	
 }

@@ -1,3 +1,4 @@
+
 ( (IP-MAT (PP (P Ef)
 	      (CP-ADV (C 0)))
 	  (IP-SUB (NP-SBJ (N-N hjól$) (D-N $ið))
@@ -45,11 +46,11 @@
 	  (PP (RP út)
 	      (PP (P fyrir)))
 	  (PP (P meðan)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (NP-SBJ (ADJ-N vinsæll) (N-N framhaldsþáttur))
-		  (BEDI var))
-	  (PP (P í)
-	      (NP (N-D sjónvarp$) (D-D $inu)))))
+	      (CP-ADV (C 0)
+		      (IP-SUB (NP-SBJ (ADJ-N vinsæll) (N-N framhaldsþáttur))
+			      (BEDI var)
+			      (PP (P í)
+				  (NP (N-D sjónvarp$) (D-D $inu))))))))
 
 ( (IP-MAT (CONJ og)
 	  (VBDI færði)

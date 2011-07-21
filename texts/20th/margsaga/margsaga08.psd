@@ -1,8 +1,12 @@
+
 ( (IP-MAT (ADVP (ADV Á))
-	  (CP-ADV (C meðan) (BEDI var) (VAN farið))
-	  (IP-INF (TO að) (VB glitta))
-	  (PP (P í)
-	      (NP (ADJ-A fjórðu) (N-A skoðun$) (D-A $ina)))))
+	  (PP (P meðan)
+	      (CP-ADV (C 0)
+		      (IP-SUB (BEDI var)
+			      (VAN farið)
+			      (IP-INF (TO að) (VB glitta))
+			      (PP (P í)
+				  (NP (ADJ-A fjórðu) (N-A skoðun$) (D-A $ina))))))))
 
 ( (IP-MAT (CONJ og)
 	  (NP-SBJ (N-N íbú$) (D-N $inn))
@@ -728,6 +732,7 @@
 	  (NP-OB2 (PRO-D ykkur))
 	  (NP (N-A líðan)
 	      (NP-POS (PRO-A mína)))
-	  (PP (P á) (ADV meðan))
+	  (PP (P á)
+	      (ADVP (ADV meðan)))
 	  (. .-.)))
 

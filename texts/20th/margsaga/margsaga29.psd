@@ -1,4 +1,3 @@
-
 ( (IP-MAT (NP-SBJ (PRO-N Ég))
 	  (VBDI renndi)
 	  (NP-OB1 (PRO-D mér))
@@ -11,11 +10,11 @@
 	  (ADVP-TMP (ADV síðan))
 	  (NP-SBJ (N-N skeið$) (D-N $ið))
 	  (RP niður)
-	  (NP-OB1 (NPR-A Hofsvallagötuna))
+	  (NP-OB1 (NPR-A Hofsvallagötu$) (D-A $na))
 	  (. ,-,)))
 
 ( (IP-MAT (VBDI prófaði)
-	  (NS-A gírana)
+	  (NP-OB1 (NS-A gíra$) (D-A $na))
 	  (, ,-,)
 	  (NP (NS-A bremsur$) (D-A $nar))
 	  (CONJ og)
@@ -694,7 +693,7 @@
 	  (IP-SUB (NP-SBJ (PRO-N þú))
 		  (MDPI vilt))
 	  (IP-INF (VB fá))
-	  (NP-OB1 (NS-A peningana) (PRO-A þína))
+	  (NP-OB1 (NS-A peninga$) (D-A $na) (PRO-A þína))
 	  (ADVP (ADV aftur))
 	  (. .-.)))
 
@@ -743,11 +742,11 @@
 	  (CP-THT (C að)
 		  (IP-SUB (NP-SBJ (PRO-N ég))))
 	  (VBPI sæki)
-	  (NP-OB1 (NS-A pappírana))
+	  (NP-OB1 (NS-A pappíra$) (D-A $na))
 	  (CONJ og)
 	  (NP (N-D kalli))
 	  (PP (P á)
-	      (NP (N-A lögregluna)))
+	      (NP (N-A lögreglu$) (D-A $na)))
 	  (. ,-,)))
 
 ( (IP-MAT (NP-SBJ (PRO-N ég))

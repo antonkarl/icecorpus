@@ -1,3 +1,4 @@
+
 ( (IP-MAT (ADVP (ADV Á))
 	  (PP (P meðan)
 	      (CP-ADV (C 0)
@@ -458,7 +459,7 @@
 			  (IP-SUB (MDDI vildi)
 				  (VB setjast)
 				  (PP (P í)
-				      (NP (NS-A sokkana) (PRO-A mína)))
+				      (NP (NS-A sokka$) (D-A $na) (PRO-A mína)))
 				  (, ,-,)
 				  (ADVP (NEG ekki) (ADVS síst))
 				  (PP (P ef)
@@ -556,7 +557,7 @@
 		  (MDDS gæti)
 		  (VBN fengið))
 	  (IP-INF (TO að) (VB skoða))
-	  (NP-OB1 (NS-A sokkana) (PRO-A mína))
+	  (NP-OB1 (NS-A sokka$) (D-A $na) (PRO-A mína))
 	  (. .-.)))
 
 ( (IP-MAT (VBDI Datt)
@@ -576,7 +577,7 @@
 	  (ADVP (ADV hreint))
 	  (NEG ekki)
 	  (PP (P á)
-	      (NP (N-A blikuna)))
+	      (NP (N-A bliku$) (D-A $na)))
 	  (. ,-,)))
 
 ( (IP-MAT (PP (C ef) (P til) (MDPI vill))
@@ -600,7 +601,7 @@
 	  (NP-SBJ (NPR-N Jón)
 		  (NP-PRN (N-N læknir)))
 	  (VBDI skoðaði)
-	  (NP-OB1 (NS-A sokkana))
+	  (NP-OB1 (NS-A sokka$) (D-A $na))
 	  (ADVP (ADV vel))
 	  (CONJ og)
 	  (ADVP (ADV vandlega))))
@@ -647,7 +648,7 @@
 
 ( (IP-MAT (NP-SBJ (PRO-N Hann))
 	  (VBDI lagði)
-	  (NP-OB1 (NS-A sokkana))
+	  (NP-OB1 (NS-A sokka$) (D-A $na))
 	  (PP (P á)
 	      (NP (N-A borð$) (D-A $ið)))
 	  (. ,-,)))

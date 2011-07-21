@@ -1,4 +1,3 @@
-
 ( (IP-MAT (NP-SBJ (PRO-N Ég))
 	  (VBDI hugsaði)
 	  (PP (P með)
@@ -376,7 +375,7 @@
 	  (PP (P til)
 	      (TO að)
 	      (IP-INF (VB spyrja)))
-	  (NP-OB1 (N-A stúlkuna))
+	  (NP-OB1 (N-A stúlku$) (D-A $na))
 	  (ADJP (ADJ-N nánar))
 	  (VBDS opnuðust)
 	  (NP-SBJ (NS-N dyr$) (D-N $nar))
@@ -639,7 +638,8 @@
 	      (CP-ADV (C 0)
 		      (IP-SUB (NP-SBJ (NPR-N Rósa))
 			      (, ,-,)
-			      (NP-SBJ (N-N ekkjan)
+			      (NP-SBJ (N-N ekkja$)
+				      (D-N $n)
 				      (NP-POS (PRO-G hans)))
 			      (, ,-,)
 			      (VBDI afhenti)

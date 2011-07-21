@@ -1,3 +1,4 @@
+
 ( (IP-MAT (CONJ En)
 	  (ADVP (ADV einmitt))
 	  (PP (P með)
@@ -625,7 +626,9 @@
 	  (ADJP (ADJ-N Spes))
 	  (VBDI skildi)
 	  (NP-OB1 (D-A þau) (NS-A viðbrögð))
-	  (PP (ADV aftur) (P á) (ADV móti))
+	  (PP (ADV aftur)
+	      (P á)
+	      (NP (N-D móti)))
 	  (CP-ADV (C sem)
 		  (IP-SUB (PP (P svo)
 			      (CP-ADV (C að)))

@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP-SBJ (NS-N Blóðsugur$) (D-N $nar))
 	  (NP (NS-A Kýr$) (D-A $nar))
 	  (BEDI voru)
@@ -687,9 +688,9 @@
 
 ( (IP-MAT (NP-SBJ (N-N Súgur$) (D-N $inn))
 	  (VBDI kom)
-	  (PP (P á))
-	  (NP (N-D móti)
-	      (NP (PRO-D okkur)))
+	  (PP (P á)
+	      (NP (N-D móti)
+		  (NP-COM (PRO-D okkur))))
 	  (PP (P í)
 	      (NP (NS-D dyru$) (D-D $num)))))
 

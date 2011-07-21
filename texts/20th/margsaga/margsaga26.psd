@@ -1,3 +1,4 @@
+
 ( (IP-MAT (PP (P Ef)
 	      (CP-ADV (C 0)))
 	  (IP-SUB (NP-SBJ (N-N hjól$) (D-N $ið))
@@ -529,7 +530,7 @@
 ( (IP-MAT (CONJ en)
 	  (ADVP (ADV auðvitað))
 	  (BEDI var)
-	  (NP-SBJ (ADJ-N raunverulega) (N-N ástæðan))
+	  (NP-SBJ (ADJ-N raunverulega) (N-N ástæða$) (D-N $n))
 	  (NP-PRD (D-N sú))
 	  (, ,-,)
 	  (CP-THT (C að)
@@ -623,7 +624,7 @@
 	      (NP (D-D þessu)))
 	  (VBDI virtust)
 	  (CONJ hvorki)
-	  (NP-SBJ (NP (N-N konan))
+	  (NP-SBJ (NP (N-N kona$) (D-N $n))
 		  (CONJ né)
 		  (NP (NS-N börn$) (D-N $in)))
 	  (HVPI hafa)
@@ -675,7 +676,8 @@
 
 ( (IP-MAT (NP-OB1 (N-N Kvöld) (ONE-A eitt))
 	  (VBDI spurði)
-	  (NP-SBJ (N-N konan)
+	  (NP-SBJ (N-N kona$)
+		  (D-N $n)
 		  (NP-POS (PRO-N mín)))
 	  (PP (P við)
 	      (NP (N-A matarborð$) (D-A $ið)))

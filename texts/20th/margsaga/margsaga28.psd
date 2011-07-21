@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP-SBJ (D-N Þessir) (NS-N hlutir))
 	  (BEPI eru)
 	  (ADJP (ADJ-N samtengdir))
@@ -409,7 +410,8 @@
 		  (NP-POS (N-G réttarkerfis$) (D-G $ins))))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (N-N Konan)
+( (IP-MAT (NP-SBJ (N-N Kona$)
+		  (D-N $n)
 		  (NP-POS (PRO-N mín)))
 	  (VBDI fór)
 	  (PP (P í)
@@ -471,7 +473,7 @@
 	  (INTJP (INTJ Já))
 	  (, ,-,)
 	  (VBDI svaraði)
-	  (NP-SBJ (N-N konan))
+	  (NP-SBJ (N-N kona$) (D-N $n))
 	  (, ,-,)
 	  (WADVP (WADV hvernig))
 	  (IP-SUB (VBDI vissir$))
@@ -549,7 +551,7 @@
 	  (NP-SBJ (NPR-N Gunnar) (NPR-N Björnsson))
 	  (, ,-,)
 	  (VBDI spurði)
-	  (NP-SBJ (N-N konan))
+	  (NP-SBJ (N-N kona$) (D-N $n))
 	  (. .-.)))
 
 ( (IP-MAT (BEPI Eru)
@@ -794,7 +796,8 @@
 			      (VBDI tók))))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (N-N Konan)
+( (IP-MAT (NP-SBJ (N-N Kona$)
+		  (D-N $n)
 		  (NP-POS (PRO-N mín)))
 	  (BEDI var)
 	  (IP-INF (TO að) (VB horfa))

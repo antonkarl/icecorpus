@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP-PRN (PRO-N Sjálf))
 	  (VBPI á)
 	  (NP-SBJ (PRO-N hún)
@@ -485,10 +486,10 @@
 			  (VBDI fékk)))
 	  (NP-PRN (PRO-N sjálfur))
 	  (PP (P þegar)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (NP-SBJ (PRO-N hann))
-		  (VBDI keypti))
-	  (NP-OB1 (PRO-A það))
+	      (CP-ADV (C 0)
+		      (IP-SUB (NP-SBJ (PRO-N hann))
+			      (VBDI keypti)
+			      (NP-OB1 (PRO-A það)))))
 	  (CODE {COM:threedots})))
 
 ( (IP-MAT (NP-SBJ (PRO-N Ég))

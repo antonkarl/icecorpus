@@ -1,4 +1,3 @@
-
 ( (IP-MAT (IP-INF (VB Sjá))
 	  (WADVP (WADV hve))
 	  (IP-SUB (NP-SBJ (D-N þessi)
@@ -460,12 +459,12 @@
 			  (VBDI fór)))
 	  (PP (P eftir))
 	  (PP (P þegar)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (NP-SBJ (PRO-N hann))
-		  (VBDI ragaði))
-	  (PP (P frá))
-	  (PP (P við)
-	      (NP (NS-A dyr$) (D-A $nar)))
+	      (CP-ADV (C 0)
+		      (IP-SUB (NP-SBJ (PRO-N hann))
+			      (VBDI ragaði)
+			      (PP (P frá))
+			      (PP (P við)
+				  (NP (NS-A dyr$) (D-A $nar))))))
 	  (. .-.)))
 
 ( (IP-MAT (ADVP-LOC (ADV Þar))

@@ -1,4 +1,3 @@
-
 ( (IP-MAT (ADVP (ADV Á))
 	  (PP (P meðan)
 	      (CP-ADV (C 0)
@@ -102,7 +101,7 @@
 	  (HVN haft)
 	  (NP-OB1 (PRO-A þær))
 	  (, ,-,)
-	  (ADVP (ADV jafnvel))
+	  (FP jafnvel)
 	  (VBN haldið)
 	  (NP-OB1 (PRO-D þeim))
 	  (RP fram)
@@ -336,7 +335,8 @@
 	  (. ,-,)))
 
 ( (IP-MAT (VBDI versnaði)
-	  (ADVP (ADV jafnvel) (ADVR heldur))
+	  (FP jafnvel)
+	  (ADVP (ADVR heldur))
 	  (. .-.)))
 
 ( (IP-MAT (VBDI Kom)

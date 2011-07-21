@@ -1,4 +1,3 @@
-
 ( (IP-MAT (CONJ En)
 	  (ADVP (ADV einmitt))
 	  (PP (P með)
@@ -507,11 +506,12 @@
 	  (. .-.)))
 
 ( (IP-MAT (CONJ En)
-	  (ADVP (ADV þó))
-	  (NP-SBJ (N-N áhugi)
-		  (NP-POS (NPR-G Finns)))
-	  (VBDI virtist)
-	  (ADJP (ADJ-N einlægur))
+	  (PP (P þó)
+	      (CP-ADV (C 0)
+		      (IP-SUB (NP-SBJ (N-N áhugi)
+				      (NP-POS (NPR-G Finns)))
+			      (VBDI virtist)
+			      (ADJP (ADJ-N einlægur)))))
 	  (VBDI stafaði)
 	  (NP-SBJ (PRO-N það))
 	  (ADVP (ADV auðvitað) (ADV einungis))

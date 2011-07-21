@@ -1,4 +1,3 @@
-
 ( (IP-MAT (NP-SBJ (PRO-N Ekkert))
 	  (PP (P við))
 	  (TO að)
@@ -509,11 +508,12 @@
 		  (IP-SUB (NP-SBJ (PRO-N ég))
 			  (RDDS yrði)))
 	  (IP-INF (TO að) (VB afsaka))
-	  (ADVP (ADV þó))
-	  (NP-SBJ (PRO-N hún))
-	  (BEDS væri)
-	  (PP (P á)
-	      (NP (NS-D hlaupum)))
+	  (PP (P þó)
+	      (CP-ADV (C 0)
+		      (IP-SUB (NP-SBJ (PRO-N hún))
+			      (BEDS væri)
+			      (PP (P á)
+				  (NP (NS-D hlaupum))))))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (PRO-N Eitthvert) (N-N klikkelsi))

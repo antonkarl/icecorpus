@@ -1,4 +1,3 @@
-
 ( (IP-MAT (CONJ Og)
 	  (ADVP (ADV þannig))
 	  (BEPI er)
@@ -321,11 +320,12 @@
 		  (NP-POS (N-G fólks))))
 	  (. .-.)))
 
-( (IP-MAT (ADVP (ADV Þó))
-	  (NP-SBJ (Q-N allt))
-	  (BEDS væri)
-	  (IP-INF (TO að) (RD verða))
-	  (ADJP (ADJ-N vitlaust))
+( (IP-MAT (PP (P Þó)
+	      (CP-ADV (C 0)
+		      (IP-SUB (NP-SBJ (Q-N allt))
+			      (BEDS væri)
+			      (IP-INF (TO að) (RD verða))
+			      (ADJP (ADJ-N vitlaust)))))
 	  (VBDI stóð)
 	  (NP-SBJ (NPR-N Finnur))
 	  (NP-OB1 (PRO-A sig))

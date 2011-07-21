@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP-SBJ (NS-N Blóðsugur$) (D-N $nar))
 	  (NP (NS-A Kýr$) (D-A $nar))
 	  (BEDI voru)
@@ -76,12 +77,12 @@
 	  (PP (P á))
 	  (PP (P 0)
 	      (NP (PRO-D því)
-		  (CP-THT-PRN (C að))))
-	  (NP-SBJ (D-N hinar))
-	  (BEDI voru)
-	  (NP-SBJ (Q-N allar))
-	  (VAN farnar)
-	  (PP (RP upp) (P úr))
+		  (CP-THT-PRN (C að)
+			      (IP-SUB (NP-SBJ (D-N hinar))
+				      (BEDI voru)
+				      (NP-SBJ (Q-N allar))
+				      (VAN farnar)
+				      (PP (RP upp) (P úr))))))
 	  (. .-.)))
 
 ( (IP-MAT (ADVP-TMP (ADV Þá))

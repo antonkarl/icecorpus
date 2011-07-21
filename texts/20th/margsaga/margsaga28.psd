@@ -1,4 +1,3 @@
-
 ( (IP-MAT (NP-SBJ (D-N Þessir) (NS-N hlutir))
 	  (BEPI eru)
 	  (ADJP (ADJ-N samtengdir))
@@ -443,11 +442,12 @@
 ( (IP-MAT (INTJP (INTJ Nei))
 	  (CODE {COM:threedots})))
 
-( (IP-MAT (ADVP (ADV Þó))
-	  (NP-SBJ (PRO-N ég))
-	  (BEDS væri)
-	  (NP (N-D skelfingu))
-	  (VAN lostinn)
+( (IP-MAT (PP (P Þó)
+	      (CP-ADV (C 0)
+		      (IP-SUB (NP-SBJ (PRO-N ég))
+			      (BEDS væri)
+			      (NP (N-D skelfingu))
+			      (VAN lostinn))))
 	  (VBDI rauk)
 	  (NP-SBJ (PRO-N ég))
 	  (RP til)))

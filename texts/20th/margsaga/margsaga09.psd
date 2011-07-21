@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP (PRO-D Því))
 	  (PP (P næst))
 	  (VBDI kallaði)
@@ -121,7 +122,8 @@
 	  (NP-SBJ (PRO-N hann))
 	  (ADJP (ADJ-D ólæknandi))
 	  (CONJ og)
-	  (ADJP (ADV stundum) (ADJ-A kvalafullan))
+	  (NP-TMP (NS-D stundum))
+	  (ADJP (ADJ-A kvalafullan))
 	  (, ,-,)
 	  (CONJ en)
 	  (ADVP (ADV þó))
@@ -363,7 +365,7 @@
 	  (. .-.)))
 
 ( (IP-MAT (CONJ Og)
-	  (ADVP (ADV stundum))
+	  (NP-TMP (NS-D stundum))
 	  (MDPI get)
 	  (NP-SBJ (PRO-N ég))
 	  (ADVP (ADV hreinlega))
@@ -708,7 +710,7 @@
 		  (C sem)
 		  (IP-SUB (NP-SBJ (PRO-N ég))
 			  (HVDI hafði)
-			  (ADVP (ADV stundum))
+			  (NP-TMP (NS-D stundum))
 			  (VBN séð)
 			  (PP (P í)
 			      (NP (N-D laug$) (D-D $inni)))

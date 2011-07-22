@@ -1,3 +1,4 @@
+
 ( (IP-MAT (CONJ En)
 	  (ADVP (ADV strax))
 	  (PP (P þegar)
@@ -541,7 +542,7 @@
 
 ( (IP-MAT (NP-SBJ (NPR-N Rósa))
 	  (VBDS fengi)
-	  (IP-INF (TO að) (VB uppfylla))
+	  (IP-INF (TO að) (RP upp$) (VB $fylla))
 	  (NP-OB1 (ADJS-A hinstu)
 		  (N-A ósk)
 		  (NP-POS (PRO-G hans)))))
@@ -621,7 +622,7 @@
 	  (VBDI eyddi)
 	  (NP-OB1 (N-D helg$) (D-D $inni))
 	  (PP (P í)
-	      (IP-INF (TO að) (VB útbúa)))
+	      (IP-INF (TO að) (RP út$) (VB $búa)))
 	  (ADVP (ADV þokkalega))
 	  (NP (NP-POS (NUM-G fimmtíu) (NS-G ljóða))
 	      (N-A bók))
@@ -664,7 +665,8 @@
 	  (. ,-,)))
 
 ( (IP-MAT (CONJ en)
-	  (VBDI útbjó)
+	  (RP út$)
+	  (VBDI $bjó)
 	  (NP-OB1 (ADJ-A örlítinn) (N-A eftirmála))
 	  (PP (P eftir)
 	      (NP (NPR-D Rósu)))

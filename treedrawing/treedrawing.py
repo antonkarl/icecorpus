@@ -18,7 +18,7 @@ class Treedraw(object):
 
     @cherrypy.expose
     def doSave(self, trees=None):
-	os.system('mv '+self.thefile+' bak.'+self.thefile)
+	os.system('mv '+self.thefile+' '+self.thefile+'.bak')
 	f = open(self.thefile,'w')
 	tosave = trees.strip()[1:-1]
 	f.write(tosave)

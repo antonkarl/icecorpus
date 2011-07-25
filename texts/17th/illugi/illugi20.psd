@@ -464,7 +464,8 @@
 	  (ADVP-TMP (ADV oft))
 	  (NP (N-D kyrrsævi))
 	  (CONJ og)
-	  (PP (P á) (ADV stundum))
+	  (PP (P á)
+	      (NP-TMP (NS-D stundum)))
 	  (NP-SBJ (N-N veður))
 	  (ADJP (ADJ-N hörð))
 	  (. .-.)))
@@ -749,4 +750,3 @@
 			  (BEPI er)
 			  (VAN ritað)))
 	  (. .-.)))
-

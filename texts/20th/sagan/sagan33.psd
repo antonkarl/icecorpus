@@ -292,7 +292,7 @@
 	      (NP (NS-A eftiráfærslur)))
 	  (. .-.)))
 
-( (IP-MAT (ADVP (ADV Stundum))
+( (IP-MAT (NP-TMP (NS-D Stundum))
 	  (VBDI ætlaði)
 	  (NP-SBJ (PRO-N ég))
 	  (IP-INF (TO að) (VB endurheimta))
@@ -354,7 +354,8 @@
 		  (D-A $ið)
 		  (NP-POS (PRO-A mitt)))
 	  (, ,-,)
-	  (ADVP (ADV stundum) (ADV ítrekað))
+	  (NP-TMP (NS-D stundum))
+	  (ADVP (ADV ítrekað))
 	  (ADVP (ADVR eins)
 		(PP (P og)))
 	  (NP-SBJ (PRO-N ég))
@@ -492,4 +493,3 @@
 	  (PP (P í)
 	      (NP (N-D samhengi)))
 	  (. .-.)))
-

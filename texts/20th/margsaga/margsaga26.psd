@@ -479,7 +479,7 @@
 ( (IP-MAT (NP-SBJ (PRO-N Ég))
 	  (BEDI var)
 	  (ADJP (ADJ-N búinn))
-	  (IP-INF (TO að) (VB ákveða))
+	  (IP-INF (TO að) (RP á$) (VB $kveða))
 	  (IP-INF (TO að) (VB fara))
 	  (NP-OB1 (PRO-D mér))
 	  (ADJP (ADJ-N hægt))
@@ -672,7 +672,7 @@
 	  (NP-SBJ (N-N ráðrúm))
 	  (PP (P til)
 	      (TO að)
-	      (IP-INF (VB upphugsa)))
+	      (IP-INF (RP upp$) (VB $hugsa)))
 	  (NP-OB1 (N-A hernaðarlist)
 		  (NP-POS (PRO-A mína)))
 	  (. .-.)))
@@ -741,3 +741,4 @@
 	  (NP (N-A kvenfólk))
 	  (ADVP (ADV yfirleitt))
 	  (. .-.)))
+

@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP-SBJ (PRO-N Ég))
 	  (VBDI hugsaði)
 	  (PP (P með)
@@ -234,7 +235,8 @@
 	  (ADJP (ADV svo) (ADJ-N einkennilegt))
 	  (CP-THT (C að)
 		  (IP-SUB (NP-SBJ (PRO-N ég))
-			  (VBDI ákvað)
+			  (RP á$)
+			  (VBDI $kvað)
 			  (IP-INF (TO að) (VB fara))
 			  (PP (RP inn)
 			      (P í)
@@ -352,7 +354,8 @@
 	  (NP-SBJ (PRO-N þær))
 	  (BEPI eru)
 	  (ADVP (ADV nú) (ADV víst))
-	  (VAN framleiddar)
+	  (RP fram$)
+	  (VAN $leiddar)
 	  (ADVP (ADV hérna))
 	  (PP (P þó)
 	      (CP-ADV (C 0)
@@ -643,7 +646,8 @@
 				      (D-N $n)
 				      (NP-POS (PRO-G hans)))
 			      (, ,-,)
-			      (VBDI afhenti)
+			      (RP af$)
+			      (VBDI $henti)
 			      (NP-OB2 (PRO-D mér))
 			      (NP-OB1 (NS-A kompur$) (D-A $nar)))))))
 
@@ -737,3 +741,4 @@
 	  (PP (P við))
 	  (NP-OB1 (NS-D kompu$) (D-D $num))
 	  (. .-.)))
+

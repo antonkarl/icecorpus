@@ -28,7 +28,7 @@
 	  (ADJP (ADJ-N góðglaður))
 	  (. .-.)))
 
-( (IP-MAT (ADVP (ADV Stundum))
+( (IP-MAT (NP-TMP (NS-D Stundum))
 	  (VBDI bauð)
 	  (NP-SBJ (PRO-N hann))
 	  (NP-OB1 (ADJS-D efnaðasta) (N-D bónda$) (D-D $num))
@@ -309,7 +309,8 @@
 	      (NP (QS-D mestu) (N-D stillingu)))))
 
 ( (IP-MAT (CONJ og)
-	  (ADVP (ADV bara) (ADV stundum))
+	  (ADVP (ADV bara))
+	  (NP-TMP (NS-D stundum))
 	  (VBN talað)
 	  (PP (P um)
 	      (NP (PRO-A hvað)))
@@ -626,4 +627,3 @@
 	  (PP (P á)
 	      (NP (N-A sveit$) (D-A $ina)))
 	  (. .-.)))
-

@@ -61,7 +61,8 @@
 
 ( (IP-MAT (NP-SBJ (PRO-N Hann))
 	  (VBDI reyndi)
-	  (PP (P á) (ADV stundum))
+	  (PP (P á)
+	      (NP-TMP (NS-D stundum)))
 	  (PP (P til)
 	      (TO að)
 	      (IP-INF (VB vingsa)))
@@ -93,7 +94,7 @@
 	  (" ")))
 
 ( (IP-MAT (CONJ Og)
-	  (ADVP (ADV stundum))
+	  (NP-TMP (NS-D stundum))
 	  (VBDI ráfaði)
 	  (NP-SBJ (PRO-N hann))
 	  (ADVP (ADV fram) (C og) (ADV aftur))
@@ -115,7 +116,7 @@
 	      (CP-ADV (C 0)))
 	  (IP-SUB (NP-SBJ (PRO-N hvað))
 		  (NP-SBJ (PRO-N hann))
-		  (ADVP (ADV stundum))
+		  (NP-TMP (NS-D stundum))
 		  (VBDI tautaði)
 		  (PP (P í)
 		      (NP (N-D sífellu)))
@@ -221,7 +222,7 @@
 	      (NP (N-A gólf$) (D-A $ið)))
 	  (. .-.)))
 
-( (IP-MAT (ADVP (ADV Stundum))
+( (IP-MAT (NP-TMP (NS-D Stundum))
 	  (VBDI staðnæmdist)
 	  (NP-SBJ (PRO-N hann))
 	  (PP (P á)
@@ -255,7 +256,7 @@
 	  (. ,-,)))
 
 ( (IP-MAT (CONJ en)
-	  (ADVP (ADV stundum))
+	  (NP-TMP (NS-D stundum))
 	  (BEDI var)
 	  (NP-SBJ (PRO-N hann))
 	  (IP-INF (TO að) (VB tauta))
@@ -337,7 +338,7 @@
 	  (. .-.)))
 
 ( (IP-MAT (CONJ En)
-	  (ADVP (ADV stundum))
+	  (NP-TMP (NS-D stundum))
 	  (BEDI var)
 	  (NP-SBJ (PRO-N hann))
 	  (ADVP (ADV þó))
@@ -664,4 +665,3 @@
 	  (NP-OB1 (N-A púðursykur))
 	  (. .-.)
 	  (" ")))
-

@@ -70,7 +70,7 @@
 	  (ADVP (ADV inn) (ADV náttúrlega))
 	  (. .-.)))
 
-( (IP-MAT (ADVP (ADV Annars))
+( (IP-MAT (NP-ADV (OTHER-G Annars))
 	  (HVPI hef)
 	  (NP-SBJ (PRO-N ég))
 	  (NP-OB1 (Q-A enga) (N-A ánægju))
@@ -567,7 +567,7 @@
 	  (. ,-,)))
 
 ( (IP-MAT (CONJ en)
-	  (ADVP (ADV annars))
+	  (NP-ADV (OTHER-G annars))
 	  (BEDI var)
 	  (NP-SBJ (PRO-N hún))
 	  (ADJP (ADJ-D miklu))
@@ -773,4 +773,3 @@
 	  (, ,-,)
 	  (VBI fáðér)
 	  (. .-.)))
-

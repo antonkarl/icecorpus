@@ -114,11 +114,11 @@
 	  (NP-SBJ (NUM-N þrjú) (NS-N egg))
 	  (. .-.)))
 
-( (IP-MAT (ADVP (ADV Á))
-	  (PP (P meðan)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (NP-SBJ (PRO-N þau))
-		  (VBDI snæddu))
+( (IP-MAT (PP (P Á)
+	      (PP (P meðan)
+		  (CP-ADV (C 0)
+			  (IP-SUB (NP-SBJ (PRO-N þau))
+				  (VBDI snæddu)))))
 	  (VBDI lagði)
 	  (NP-SBJ (PRO-N hann))
 	  (NP-OB1 (PRO-D þeim))
@@ -544,6 +544,3 @@
 	  (PP (P eftir)
 	      (NP (N-D tjaldstæði)))
 	  (. .-.)))
-
-( )
-

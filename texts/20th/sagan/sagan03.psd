@@ -209,11 +209,11 @@
 	      (NP (NPRS-D Heimsmálu$) (D-D $num)))
 	  (. .-.)))
 
-( (IP-MAT (ADVP (ADV Á))
-	  (PP (P meðan)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (NP-SBJ (PRO-N þeir))
-		  (VBDI töluðu))
+( (IP-MAT (PP (P Á)
+	      (PP (P meðan)
+		  (CP-ADV (C 0)
+			  (IP-SUB (NP-SBJ (PRO-N þeir))
+				  (VBDI töluðu)))))
 	  (VBDI bjó)
 	  (PP (P um)
 	      (NP (PRO-A sig)))
@@ -751,4 +751,3 @@
 	  (N-N búningur)
 	  (NP-POS (NPR-G Buffaló) (NPR-G Bills))
 	  (. .-.)))
-

@@ -358,7 +358,7 @@
 	  (BEDI var)
 	  (ADVP-TMP (ADV nú))
 	  (ADJP (ADV gjörsamlega) (ADJ-N búinn))
-	  (IP-INF (TO að) (VB umlykja))
+	  (IP-INF (TO að) (RP um$) (VB $lykja))
 	  (NP-OB1 (PRO-A mig))))
 
 ( (IP-MAT (CONJ og)
@@ -542,7 +542,7 @@
 	      (NP (N-D lögreglu$) (D-D $nni)))
 	  (PP (P til)
 	      (TO að)
-	      (IP-INF (VB tilkynna)))
+	      (IP-INF (RP til$) (VB $kynna)))
 	  (NP-OB1 (PRO-D mér))
 	  (CP-THT (C að) (VAN fundist) (HVDS hefði))
 	  (NP-SBJ (N-N hjól)
@@ -631,3 +631,4 @@
 	      (NP (N-A líf)
 		  (NP-POS (PRO-A mitt))))
 	  (. .-.)))
+

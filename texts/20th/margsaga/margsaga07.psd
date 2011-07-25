@@ -501,7 +501,8 @@
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (PRO-N Það))
-	  (VBDI ákvað)
+	  (RP á$)
+	  (VBDI $kvað)
 	  (IP-INF (TO að) (VB halda))
 	  (NP-OB1 (PRO-A sig))
 	  (PP (P við)
@@ -642,7 +643,8 @@
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (PRO-N Hann))
-	  (VBDI ákvað)
+	  (RP á$)
+	  (VBDI $kvað)
 	  (IP-INF (TO að) (VB skipta))
 	  (PP (P um)
 	      (NP (N-A skoðun)))
@@ -796,3 +798,4 @@
 	  (NP-SBJ (PRO-N þú))
 	  (ADVP-LOC (ADV hér))
 	  (. ?-?)))
+

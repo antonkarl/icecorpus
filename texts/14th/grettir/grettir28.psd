@@ -749,9 +749,11 @@
 	  (NP-SBJ (N-N gluggaþykkn))
 	  (. .-.)))
 
-( (IP-MAT (PP (ADV Hratt) (ADV stundum) (P fyrir))
+( (IP-MAT (ADVP (ADV Hratt))
+	  (NP-TMP (NS-D stundum))
+	  (PP (P fyrir))
 	  (CONJ en)
-	  (ADVP (ADV stundum))
+	  (NP-TMP (NS-D stundum))
 	  (VBDI dró)
 	  (PP (P frá))
 	  (. .-.)))
@@ -828,4 +830,3 @@
 	  (PP (ADV nálega) (P í))
 	  (PP (P milli) (N-G heims) (CONJ og) (N-G heljar))
 	  (. .-.)))
-

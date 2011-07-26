@@ -384,9 +384,11 @@
 	  (. !-!)
 	  (CODE </paren>)))
 
-( (IP-MAT (NP-SBJ (N-N Saumavél$)
-		  (D-N $in)
-		  (NP-PRN (NPR-N Skáld)))
+( (META (CODE <heading>)
+	(NP (N-N Saumavél$) (D-N $in))
+	(CODE </heading>)))
+
+( (IP-MAT (NP-SBJ (NPR-N Skáld))
 	  (VBDI kom)
 	  (IP-PPL (VAG gangandi))
 	  (PP (P eftir)

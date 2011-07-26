@@ -357,9 +357,10 @@
 	  (NP-SBJ (PRO-N eg))
 	  (NP (NS-A vopn))
 	  (VB bera)
-	  (NP (N-D móti)
-	      (NP (Q-D nokkurum)
-		  (NP-POS (PRO-G þeirra))))
+	  (PP (P 0)
+	      (NP (N-D móti)
+		  (NP (Q-D nokkurum)
+		      (NP-POS (PRO-G þeirra)))))
 	  (PP (P utan)
 	      (NP (NPR-G Tausa) (NPR-G Tagldarbróður)))
 	  (. .-.)))
@@ -726,4 +727,3 @@
 	  (ADVP (ADV enn))
 	  (. .-.)
 	  (" ")))
-

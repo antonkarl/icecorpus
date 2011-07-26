@@ -474,8 +474,9 @@
 	  (, ,-,)
 	  (" ")
 	  (ADVP (ADV þó))
-	  (NP (N-D móti)
-	      (NP (PRO-D oss)))
+	  (PP (P 0)
+	      (NP (N-D móti)
+		  (NP-COM (PRO-D oss))))
 	  (VBPS blási)
 	  (. .-.)))
 
@@ -821,4 +822,3 @@
 	  (IP-INF (RD verða))
 	  (. .-.)
 	  (" ")))
-

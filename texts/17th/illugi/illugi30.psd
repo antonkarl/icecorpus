@@ -90,9 +90,9 @@
 ( (IP-MAT (NP-SBJ (PRO-N Hann))
 	  (VBDI sótti)
 	  (RP fram)
-	  (NP (ADV á)
-	      (N-D móti)
-	      (NP (D-D þeim) (NS-D fóstbræðrum)))
+	  (PP (P á)
+	      (NP (N-D móti)
+		  (NP-COM (D-D þeim) (NS-D fóstbræðrum))))
 	  (CONJ og)
 	  (VBPI mætir)
 	  (NP-OB1 (NPR-D Ormi))
@@ -506,8 +506,9 @@
 
 ( (IP-MAT (NP-SBJ (N-N Konungur))
 	  (VBPI tekur)
-	  (NP (N-D móti)
-	      (NP (NPR-D Illuga)))
+	  (PP (P 0)
+	      (NP (N-D móti)
+		  (NP-COM (NPR-D Illuga))))
 	  (PP (P með)
 	      (NP (Q-D mikilli) (N-D blíðu)))))
 
@@ -847,4 +848,3 @@
 	  (ADJP (ADV þá) (ADJ-N vísu))
 	  (, :-:)
 	  (CODE {COM:twostars})))
-

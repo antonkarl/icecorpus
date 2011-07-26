@@ -70,8 +70,9 @@
 	  (. .-.)
 	  (ADJP (ADJ-N Illugi))
 	  (VBDI gekk)
-	  (NP (N-D móti)
-	      (NP (NPR-D Skrýmni)))
+	  (PP (P 0)
+	      (NP (N-D móti)
+		  (NP-COM (NPR-D Skrýmni))))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (PRO-N Hann))
@@ -651,4 +652,3 @@
 	  (PP (P úr)
 	      (NP (N-D sögu$) (D-D $nni)))
 	  (. .-.)))
-

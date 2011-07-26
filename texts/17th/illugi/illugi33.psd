@@ -87,9 +87,9 @@
 
 ( (IP-MAT (NP-SBJ (PRO-N Hann))
 	  (VBPI ræðst)
-	  (VBPI á)
-	  (NP (N-D móti)
-	      (NP (NPR-D Illuga)))
+	  (PP (P á)
+	      (NP (N-D móti)
+		  (NP-COM (NPR-D Illuga))))
 	  (. ,-,)))
 
 ( (IP-MAT (CONJ og)
@@ -192,18 +192,19 @@
 	  (IP-INF (VB leggja))
 	  (NP-OB1 (NP-POS (PRO-A mína))
 		  (N-A hreysti))
-	  (NP (N-D móti)
-	      (NP-POS (PRO-G hans))
-	      (ADJP (ADJ-N ofurhuga)))
+	  (PP (P 0)
+	      (NP (N-D móti)
+		  (NP-COM (PRO-G hans)
+			  (ADJP (ADJ-N ofurhuga)))))
 	  (, ,-,)
 	  (" ")
 	  (, -)))
 
 ( (IP-MAT (CONJ og)
 	  (VBPI snýr)
-	  (PP (P á))
-	  (NP (N-D móti)
-	      (NP (NPR-D Illuga)))
+	  (PP (P á)
+	      (NP (N-D móti)
+		  (NP-COM (NPR-D Illuga))))
 	  (. .-.)))
 
 ( (IP-MAT (VBPI Ganga)
@@ -498,4 +499,3 @@
 	  (NP-OB1 (N-D sögu))
 	  (NP (NPRS-G Illuga) (NPRS-A Tagldarbana))
 	  (. .-.)))
-

@@ -509,8 +509,9 @@
 
 ( (IP-MAT (CONJ og)
 	  (VBDI réðst)
-	  (NP (N-D móti)
-	      (NP (NPR-D Illuga)))
+	  (PP (P 0)
+	      (NP (N-D móti)
+		  (NP-COM (NPR-D Illuga))))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (PRO-N Þau))
@@ -700,9 +701,7 @@
 	  (PP (P nema)
 	      (CP-ADV (C 0)))
 	  (IP-SUB (PP (P með)
-		      (NP (PRO-D því))))
-	  (NP (ONE-D einu))
-	  (NP (N-D móti))
+		      (NP (PRO-D því) (ONE-D einu) (N-D móti))))
 	  (, ,-,)
 	  (CP-THT (C að)
 		  (IP-SUB (NP-SBJ (PRO-N hann))
@@ -834,4 +833,3 @@
 	  (ADVP-TMP (ADV þá))
 	  (NP-SBJ (Q-N allar) (PRO-N sínar) (NS-N nytjar))
 	  (. .-.)))
-

@@ -18,8 +18,8 @@
 	  (, ,-,)
 	  (CP-THT (C að)
 		  (IP-SUB (NP (N-D móti)
-			      (NP (PRO-D honum)))
-			  (VBDI reið)))
+			      (NP-COM (PRO-D honum)))))
+	  (VBDI reið)
 	  (NP-SBJ (NPR-N Gísli) (NPR-N Þorgautsson))
 	  (PP (P við)
 	      (NP (OTHER-A annan) (N-A mann)))
@@ -247,4 +247,3 @@
 	  (PP (P að)
 	      (NP (NPR-D Ballará)))
 	  (. .-.)))
-

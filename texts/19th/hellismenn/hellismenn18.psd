@@ -58,8 +58,9 @@
 	  (PP (P við)
 	      (NP (N-A ofurefli)))
 	  (, ,-,)
-	  (BEPI er)
-	  (ADVP (ADV móti))
+	  (C er)
+	  (PP (P 0)
+	      (NP (N-D móti)))
 	  (BEDS væri)
 	  (. ,-,)))
 
@@ -421,9 +422,9 @@
 	  (, ,-,)
 	  (CONJ og)
 	  (VBDI sneru)
-	  (PP (P á))
-	  (NP (N-D móti)
-	      (NP (PRO-D þeim)))
+	  (PP (P á)
+	      (NP (N-D móti)
+		  (NP-COM (PRO-D þeim))))
 	  (. .-.)))
 
 ( (IP-MAT (BEDI Var)
@@ -741,4 +742,3 @@
 	  (NP (CODE {COM:dash})
 	      (NPR-A Ketil))
 	  (. .-.)))
-

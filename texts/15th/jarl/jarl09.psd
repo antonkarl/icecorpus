@@ -300,9 +300,9 @@
 ( (IP-MAT (CONJ og)
 	  (VBDI þorði)
 	  (NP-SBJ (NS-N engi))
-	  (PP (P í))
-	  (NP (N-D móti)
-	      (NP (PRO-D honum)))
+	  (PP (P í)
+	      (NP (N-D móti)
+		  (NP-COM (PRO-D honum))))
 	  (IP-INF (TO að) (VB ríða))
 	  (. .-.)))
 
@@ -399,10 +399,10 @@
 
 ( (IP-MAT (ADVP-TMP (ADV Nú))
 	  (VBPI kemur)
-	  (PP (P í))
-	  (NP (N-D móti)
-	      (NP (NP (PRO-D honum))
-		  (NP (NPR-D Landres))))
+	  (PP (P í)
+	      (NP (N-D móti)
+		  (NP-COM (NP (PRO-D honum))
+			  (NP (NPR-D Landres)))))
 	  (BEPI er)
 	  (ADVP (ADVR fyrr))
 	  (BEDI var)
@@ -725,4 +725,3 @@
 	      (PP (P í)))
 	  (IP-INF (VB sjá))
 	  (. .-.)))
-

@@ -291,9 +291,9 @@
 
 ( (IP-MAT (CONJ og)
 	  (VBPI ríður)
-	  (PP (P í))
-	  (NP (N-D móti)
-	      (NP (PRO-D honum)))
+	  (PP (P í)
+	      (NP (N-D móti)
+		  (NP-COM (PRO-D honum))))
 	  (. ,-,)))
 
 ( (IP-MAT (CONJ og)
@@ -350,8 +350,8 @@
 
 ( (IP-MAT (FW Starcus)
 	  (VBDI hjó)
-	  (PP (P í))
-	  (NP (N-D móti))))
+	  (PP (P í)
+	      (NP (N-D móti)))))
 
 ( (IP-MAT (CONJ og)
 	  (VBDI klauf)
@@ -824,4 +824,3 @@
 	  (IP-SUB (ADJP (ADJ-N auðið))
 		  (RDPI verður))
 	  (. .-.)))
-

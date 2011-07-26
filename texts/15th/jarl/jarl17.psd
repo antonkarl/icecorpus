@@ -532,9 +532,9 @@
 ( (IP-MAT (VBDI Gekk)
 	  (NP-SBJ (NPR-N Austvestan)
 		  (NP-POS (NS-G glaðliga)))
-	  (PP (P í))
-	  (NP (N-D móti)
-	      (NP (PRO-D honum)))
+	  (PP (P í)
+	      (NP (N-D móti)
+		  (NP-COM (PRO-D honum))))
 	  (. .-.)))
 
 ( (IP-MAT (VBDI Sagði)
@@ -833,4 +833,3 @@
 	  (VBDI komu)
 	  (ADVP-LOC (ADV þar))
 	  (. .-.)))
-

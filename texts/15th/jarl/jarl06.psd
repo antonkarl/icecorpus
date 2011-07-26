@@ -238,10 +238,10 @@
 	  (NP-SBJ (PRO-N hann))
 	  (PP (P í) (ADV burtu))
 	  (CONJ og)
-	  (PP (P á))
-	  (NP (N-D móti)
-	      (NP (NP-POS (PRO-D sínum))
-		  (N-D höfðingja)))
+	  (PP (P á)
+	      (NP (N-D móti)
+		  (NP-COM (NP-POS (PRO-D sínum))
+			  (N-D höfðingja))))
 	  (. .-.)))
 
 ( (IP-MAT (NP (N-A Jarlmann))
@@ -674,4 +674,3 @@
 	  (PP (ADV nú) (P af))
 	  (NP-SBJ (N-N nótt$) (D-N $in))
 	  (. .-.)))
-

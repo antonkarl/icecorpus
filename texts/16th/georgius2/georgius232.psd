@@ -297,8 +297,9 @@
 	  (CONJ og)
 	  (IP-INF (VB stríða))
 	  (ADVP (ADV mannlega))
-	  (NP (N-D móti)
-	      (NP (PRO-D sínum) (NS-N óvinum.)))
+	  (PP (P 0)
+	      (NP (N-D móti)
+		  (NP-COM (PRO-D sínum) (NS-N óvinum.))))
 	  (CP-REL (WNP 0)
 		  (C Sem)
 		  (IP-SUB (NP (PRO-A hana))
@@ -578,4 +579,3 @@
 	  (NP-SBJ (PRO-N ég))
 	  (NP (N-A öngvu))
 	  (. .-.)))
-

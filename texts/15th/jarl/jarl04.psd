@@ -645,9 +645,9 @@
 	  (ADVP-TMP (ADV nú))
 	  (NP-SBJ (NS-N menn))
 	  (VBPI ríða)
-	  (PP (P í))
-	  (NP (N-D móti)
-	      (NP (PRO-D sér)))
+	  (PP (P í)
+	      (NP (N-D móti)
+		  (NP-COM (PRO-D sér))))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (PRO-N Þeir))
@@ -693,4 +693,3 @@
 	  (IP-INF (TO að) (VB fara))
 	  (" ")
 	  (. .-.)))
-

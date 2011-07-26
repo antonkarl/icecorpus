@@ -261,9 +261,9 @@
 	  (IP-SUB (NP-SBJ (PRO-N þér)))
 	  (VBPI vilið)
 	  (NP-OB1 (Q-A nokkuð))
-	  (PP (P í))
-	  (NP (N-D móti)
-	      (NP (PRO-D oss)))
+	  (PP (P í)
+	      (NP (N-D móti)
+		  (NP-COM (PRO-D oss))))
 	  (IP-INF (VB tauta))
 	  (" ")
 	  (. .-.)))
@@ -611,4 +611,3 @@
 	  (NP (NPR-A Roðgeir)
 	      (NP-PRN (N-A jarl)))
 	  (. .-.)))
-

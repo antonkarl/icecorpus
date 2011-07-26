@@ -263,10 +263,10 @@
 
 ( (IP-MAT (VBDI Gekk)
 	  (NP-SBJ (PRO-N hann))
-	  (PP (P í))
-	  (NP (N-D móti)
-	      (NP-POS (NP-POS (PRO-D sínum))
-		      (N-G fóstbróður)))
+	  (PP (P í)
+	      (NP (N-D móti)
+		  (NP-COM (NP-POS (PRO-D sínum))
+			  (N-G fóstbróður))))
 	  (PP (P með)
 	      (NP (ADJ-D allmikilli) (N-D gleði)))
 	  (. ,-,)))
@@ -333,9 +333,9 @@
 	  (VBDI drukku)
 	  (NP-OB1 (N-G fagnaðar))
 	  (NP (N-A öl))
-	  (PP (P í))
-	  (NP (N-D móti)
-	      (NP (N-D frú) (NPR-D Ríkilað)))
+	  (PP (P í)
+	      (NP (N-D móti)
+		  (NP-COM (N-D frú) (NPR-D Ríkilað))))
 	  (. .-.)))
 
 ( (IP-MAT (CONJ Og)
@@ -705,4 +705,3 @@
 	      (NP (PRO-D mér)))
 	  (" ")
 	  (. .-.)))
-

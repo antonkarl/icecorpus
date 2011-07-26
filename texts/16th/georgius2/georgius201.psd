@@ -323,9 +323,9 @@
 ( (IP-MAT (CONJ og)
 	  (VBDI stríddu)
 	  (ADVP-LOC (ADV þar))
-	  (PP (P á))
-	  (NP (N-D móti)
-	      (NP (NS-D heiðingjum)))
+	  (PP (P á)
+	      (NP (N-D móti)
+		  (NP-COM (NS-D heiðingjum))))
 	  (PP (P í)
 	      (NP (NUM-A 10) (NS-A ár)))
 	  (PP (P fyrir)
@@ -618,4 +618,3 @@
 	  (PP (P að)
 	      (NP (ADJ-D góðum) (NS-D hlutum)))
 	  (. .-.)))
-

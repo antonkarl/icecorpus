@@ -173,9 +173,9 @@
 	  (PP (P af)
 	      (NP (NPR-D Nasaret)))
 	  (VBPI sé)
-	  (PP (P á))
-	  (NP (N-D móti)
-	      (NP (PRO-D yður)))
+	  (PP (P á)
+	      (NP (N-D móti)
+		  (NP-COM (PRO-D yður))))
 	  (NP (Q-D öllum))
 	  (. .-.)))
 
@@ -622,4 +622,3 @@
 	  (PP (P með)
 	      (NP (ADJ-D stórri) (N-D hryggð)))
 	  (. .-.)))
-

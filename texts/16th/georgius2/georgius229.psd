@@ -81,12 +81,12 @@
 		      (N-D nafni))
 		  (CONJP (CONJ og)
 			 (NP (ADJ-D fullu) (N-D trausti)))))
-	  (PP (P á))
-	  (NP (N-D móti)
-	      (NP (D-D þessum)
-		  (ADJ-D ómilda)
-		  (N-D manni)
-		  (NP-POS (NPR-G Decíum))))
+	  (PP (P á)
+	      (NP (N-D móti)
+		  (NP-COM (D-D þessum)
+			  (ADJ-D ómilda)
+			  (N-D manni)
+			  (NP-POS (NPR-G Decíum)))))
 	  (. .-.)))
 
 ( (IP-MAT (DOI Gjör)
@@ -641,4 +641,3 @@
 	      (ADJP (ADJ-G fulls)))
 	  (VBPI þakka)
 	  (. .-.)))
-

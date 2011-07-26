@@ -14,7 +14,8 @@
 	  (. !-!)
 	  (VBDI kallaði)
 	  (NP-SBJ (NPR-N Bylgja))
-	  (PP (P á) (ADV móti))
+	  (PP (P á)
+	      (NP (N-D móti)))
 	  (. .-.)))
 
 ( (IP-MAT (ADVP (C Eða) (Q-D öllu) (ADVR heldur))
@@ -779,4 +780,3 @@
 ( (IP-MAT (VBDI blakaði)
 	  (NP-OB1 (N-D væng))
 	  (. .-.)))
-

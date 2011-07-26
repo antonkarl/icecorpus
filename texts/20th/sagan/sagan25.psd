@@ -63,7 +63,9 @@
 	  (ADJP (ADJ-N sárfættur) (CONJ og) (ADJ-N geispandi))
 	  (. .-.)))
 
-( (IP-MAT (PP (ADV Aftur) (P á) (ADV móti))
+( (IP-MAT (PP (ADV Aftur)
+	      (P á)
+	      (NP (N-D móti)))
 	  (BEDI var)
 	  (NP-SBJ (ONE-N einn) (N-N maður))
 	  (CP-REL (WNP 0)

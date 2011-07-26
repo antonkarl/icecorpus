@@ -404,9 +404,9 @@
 	      (CP-ADV (C 0)))
 	  (IP-SUB (NP-SBJ (PRO-N hún))
 		  (BEPS sé))
-	  (PP (P á))
-	  (NP (N-D móti)
-	      (NP (N-D fjölskyldu$) (D-D $nni)))
+	  (PP (P á)
+	      (NP (N-D móti)
+		  (NP-COM (N-D fjölskyldu$) (D-D $nni))))
 	  (CONJ og)
 	  (NP-SBJ (Q-N allt))
 	  (NP-SBJ (PRO-N það))
@@ -673,4 +673,3 @@
 	  (PP (P á)
 	      (NP (NS-A fætur)))
 	  (. .-.)))
-

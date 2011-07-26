@@ -649,7 +649,7 @@
 		  (NP-PRN (PRO-N sjálfur)))
 	  (. .-.)))
 
-( (IP-MAT (ADVP (ADV Annars))
+( (IP-MAT (NP-ADV (OTHER-G Annars))
 	  (BEDI var)
 	  (NP-SBJ (PRO-N hann))
 	  (ADJP (ADV ákaflega) (ADJ-N harður))
@@ -666,7 +666,7 @@
 	      (NP (PRO-D honum)))
 	  (PP (P ef)
 	      (CP-ADV (C 0)))
-	  (IP-SUB (ADVP (ADV annars))
+	  (IP-SUB (NP-ADV (OTHER-G annars))
 		  (BEDI var))
 	  (NP-SBJ (N-N úrkostur))
 	  (. ;-;)))

@@ -178,9 +178,9 @@
 		  (NS-A vitni))
 	  (NP-SBJ (PRO-N þeir))
 	  (VBPI segja)
-	  (PP (P í))
-	  (NP (N-D móti)
-	      (NP (PRO-D þér)))
+	  (PP (P í)
+	      (NP (N-D móti)
+		  (NP-COM (PRO-D þér))))
 	  (. ?-?)))
 
 ( (IP-MAT (CONJ Og)
@@ -637,4 +637,3 @@
 	  (NP-OB1 (PRO-G hans))
 	  (NP (N-A kross))
 	  (. .-.)))
-

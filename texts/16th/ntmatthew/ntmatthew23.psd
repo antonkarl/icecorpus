@@ -165,9 +165,9 @@
 	  (, ,-,)
 	  (VBDI mögluðu)
 	  (NP-SBJ (PRO-N þeir))
-	  (PP (P í))
-	  (NP (N-D móti)
-	      (NP (N-D húsföður$) (D-D $num)))))
+	  (PP (P í)
+	      (NP (N-D móti)
+		  (NP-COM (N-D húsföður$) (D-D $num))))))
 
 ( (IP-MAT (CONJ og)
 	  (VBDI sögðu)
@@ -765,4 +765,3 @@
 	  (NP-OB1 (PRO-D honum))
 	  (ADVP (ADV eftir))
 	  (. .-.)))
-

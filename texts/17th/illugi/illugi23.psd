@@ -276,8 +276,9 @@
 	  (PP (P með)
 	      (NP (N-A lið)
 		  (NP-POS (PRO-A sitt))))
-	  (NP-OB1 (N-D móti))
-	  (NP-SBJ (NPR-N Sörkvi))
+	  (PP (P 0)
+	      (NP (N-D móti)
+		  (NP-COM (NPR-N Sörkvi))))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (N-N Konungur))
@@ -792,7 +793,8 @@
 	  (ADJP (ADJ-N Illugi))
 	  (VBPI tekur)
 	  (NP-SBJ (N-N harðliga))
-	  (ADVP (ADV móti))
+	  (PP (P 0)
+	      (NP (N-D móti)))
 	  (. .-.)))
 
 ( (IP-MAT (NP (N-D Ari))
@@ -826,7 +828,9 @@
 
 ( (IP-MAT (NP-SBJ (PRO-N Hann))
 	  (VBPI tekur)
-	  (PP (ADV hart) (P á) (ADV móti))
+	  (PP (ADV hart)
+	      (P á)
+	      (NP (N-D móti)))
 	  (. .-.)))
 
 ( (IP-MAT (CONJ En)
@@ -860,4 +864,3 @@
 	  (. :-:)))
 
 ( (IP-MAT (CODE {COM:textomitted})))
-

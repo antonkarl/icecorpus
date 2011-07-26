@@ -685,9 +685,9 @@
 	  (ADJP (ADJ-N Illugi))
 	  (VBPI sækir)
 	  (PP (RP fram)
-	      (PP (P í)))
-	  (NP (N-D móti)
-	      (NP (NPR-D Hjaranda)))))
+	      (PP (P í)
+		  (NP (N-D móti)
+		      (NP-COM (NPR-D Hjaranda)))))))
 
 ( (IP-MAT (CONJ og)
 	  (VBDI átti)
@@ -817,4 +817,3 @@
 	  (PP (P af)
 	      (NP (NPR-D Illuga)))
 	  (. .-.)))
-

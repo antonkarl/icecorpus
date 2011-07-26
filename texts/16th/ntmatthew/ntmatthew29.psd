@@ -99,9 +99,9 @@
 	  (CONJ og)
 	  (VBDI gengu)
 	  (PP (RP út)
-	      (PP (P í)))
-	  (NP (N-D móti)
-	      (NP (N-D brúðguma$) (D-D $num)))
+	      (PP (P í)
+		  (NP (N-D móti)
+		      (NP-COM (N-D brúðguma$) (D-D $num)))))
 	  (. .-.)))
 
 ( (IP-MAT (CONJ En)
@@ -172,9 +172,9 @@
 ( (IP-MAT (VBPS gangi)
 	  (NP-SBJ (PRO-D þér))
 	  (PP (RP út)
-	      (PP (P í)))
-	  (NP (N-D móti)
-	      (NP (PRO-D honum)))
+	      (PP (P í)
+		  (NP (N-D móti)
+		      (NP-COM (PRO-D honum)))))
 	  (. .-.)))
 
 ( (IP-MAT (ADVP-TMP (ADV Þá))
@@ -762,4 +762,3 @@
 	  (CONJ og)
 	  (N-N tannagnístran)
 	  (. .-.)))
-

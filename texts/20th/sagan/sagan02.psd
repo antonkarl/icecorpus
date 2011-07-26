@@ -478,8 +478,7 @@
 	  (ADVP (ADV alltaf))
 	  (IP-INF (TO að) (VB þrýsta))
 	  (PP (P af)
-	      (NP (N-D alefli) (Q-N hvort)))
-	  (ADVP (ADV annars))
+	      (NP (N-D alefli) (Q-N hvort) (OTHER-G annars)))
 	  (NP (NS-A hendur))))
 
 ( (IP-MAT (CONJ og)
@@ -487,8 +486,7 @@
 	  (NP-OB1 (ADJ-D drukknum) (NS-D augum))
 	  (NP-SBJ (Q-N hvort))
 	  (VBPI á)
-	  (ADVP (ADV annars))
-	  (NP-OB1 (NS-A varir))
+	  (NP-OB1 (OTHER-G annars) (NS-A varir))
 	  (. ?-?)))
 
 ( (IP-MAT (VBPI Ert)
@@ -731,4 +729,3 @@
 	      (P í)
 	      (NP (N-D dulhyggju)))
 	  (. .-.)))
-

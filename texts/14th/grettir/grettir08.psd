@@ -465,9 +465,9 @@
 			  (VAN sagt)))
 	  (. .-.)))
 
-( (IP-MAT (PP (P Í))
-	  (NP (N-D móti)
-	      (NP (NS-D jólum)))
+( (IP-MAT (PP (P Í)
+	      (NP (N-D móti)
+		  (NP-COM (NS-D jólum))))
 	  (VBPI býst)
 	  (NP-SBJ (NPR-N Þorfinnur))
 	  (IP-INF (TO að) (VB fara))
@@ -778,4 +778,3 @@
 			  (NP-POS (PRO-G þeirra)))
 		  (VBDI hét))
 	  (. .-.)))
-

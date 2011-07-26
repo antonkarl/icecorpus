@@ -580,8 +580,10 @@
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (NS-N Pabbar))
-	  (PP (ADV aftur) (P á))
-	  (ADJP (ADJP (ADV móti) (ADJ-N skítugir))
+	  (PP (ADV aftur)
+	      (P á)
+	      (NP (N-D móti)))
+	  (ADJP (ADJP (ADJ-N skítugir))
 		(CONJ og)
 		(ADJ-N skeggjaðir))
 	  (VBDI komu)
@@ -666,4 +668,3 @@
 			  (VBDS stoppuðu)))
 	  (NP-OB1 (N-A blóðrás$) (D-A $ina))
 	  (. .-.)))
-

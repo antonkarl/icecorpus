@@ -6,9 +6,9 @@
 
 ( (IP-MAT (CONJ og)
 	  (VBPI gengur)
-	  (PP (P í))
-	  (NP (N-D móti)
-	      (NP (NPR-D Kórmaki)))
+	  (PP (P í)
+	      (NP (N-D móti)
+		  (NP-COM (NPR-D Kórmaki))))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (PRO-N Þeir))
@@ -131,9 +131,9 @@
 	  (ADVP-TMP (ADV þá))
 	  (NP-SBJ (N-N fagnaðaröl))
 	  (VAN drukkið)
-	  (PP (P í))
-	  (NP (N-D móti)
-	      (NP (PRO-D þeim)))
+	  (PP (P í)
+	      (NP (N-D móti)
+		  (NP-COM (PRO-D þeim))))
 	  (. .-.)))
 
 ( (IP-MAT (VBPI Segir)
@@ -452,9 +452,9 @@
 ( (IP-MAT (CONJ en)
 	  (NP-SBJ (OTHER-N aðrir))
 	  (VBDI báru)
-	  (NP (ADV á)
-	      (N-D móti)
-	      (NP (PRO-D því)))))
+	  (PP (P á)
+	      (NP (N-D móti)
+		  (NP-COM (PRO-D því))))))
 
 ( (IP-MAT (CONJ og)
 	  (VBDI kváðu)
@@ -758,4 +758,3 @@
 	  (NP-SBJ (N-N lið))
 	  (VAN harðfengt)
 	  (. .-.)))
-

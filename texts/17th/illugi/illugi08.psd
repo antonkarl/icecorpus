@@ -163,9 +163,9 @@
 
 ( (IP-MAT (CONJ og)
 	  (VBDI sótti)
-	  (NP (ADV á)
-	      (N-D móti)
-	      (NP (PRO-D honum)))
+	  (PP (P á)
+	      (NP (N-D móti)
+		  (NP-COM (PRO-D honum))))
 	  (PP (RP upp)
 	      (P á)
 	      (NP (N-A skip$)
@@ -574,4 +574,3 @@
 	      (NP (N-D fjárhlut)
 		  (NP-POS (PRO-G þeirra))))
 	  (. .-.)))
-

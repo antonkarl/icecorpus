@@ -527,9 +527,9 @@
 	  (VBDI kom)
 	  (NP-SBJ (N-N sveit)
 		  (NP-POS (NS-G manna)))
-	  (PP (P á))
-	  (NP (N-D móti)
-	      (NP (PRO-D þeim)))
+	  (PP (P á)
+	      (NP (N-D móti)
+		  (NP-COM (PRO-D þeim))))
 	  (. .-.)))
 
 ( (IP-MAT (BEDI Voru)
@@ -612,4 +612,3 @@
 	  (VB þurfa)
 	  (. .-.)
 	  (" ")))
-

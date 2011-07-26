@@ -478,9 +478,9 @@
 
 ( (IP-MAT (CONJ og)
 	  (VBPI sækir)
-	  (PP (P á))
-	  (NP (N-D móti)
-	      (NP (NPR-D Illuga)))
+	  (PP (P á)
+	      (NP (N-D móti)
+		  (NP-COM (NPR-D Illuga))))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (PRO-N Hann))
@@ -719,4 +719,3 @@
 	  (PP (P að)
 	      (NP (OTHER-D öðrum) (N-D kosti)))
 	  (. .-.)))
-

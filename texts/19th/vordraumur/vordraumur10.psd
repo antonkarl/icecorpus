@@ -71,7 +71,7 @@
 	  (PP (P í) (ADV gær))
 	  (. .-.)))
 
-( (IP-MAT (ADVP (ADV Annars))
+( (IP-MAT (NP-ADV (OTHER-G Annars))
 	  (HVDS hefði)
 	  (NP-SBJ (PRO-N ég))
 	  (VBN sagt)
@@ -761,7 +761,7 @@
 			  (NP-SBJ (Q-N hver))
 			  (CP-REL (WNP 0)
 				  (C sem)
-				  (IP-SUB (ADVP (ADV annars))
+				  (IP-SUB (NP-ADV (OTHER-G annars))
 					  (HVDS hefði)
 					  (RDN orðið))))
 		  (VAN kosinn))
@@ -835,4 +835,3 @@
 	  (NP (N-D miskunnsemi))
 	  (. .-.)
 	  (" ")))
-

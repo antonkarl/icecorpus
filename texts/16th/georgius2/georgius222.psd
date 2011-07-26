@@ -192,9 +192,9 @@
 	  (CP-ADV (C sem)
 		  (IP-SUB (NP-SBJ (N-N heimur$) (D-N $inn))
 			  (VBPI stríðir)
-			  (PP (P á))
-			  (NP (N-D móti)
-			      (NP (N-D þér.)))
+			  (PP (P á)
+			      (NP (N-D móti)
+				  (NP-COM (N-D þér.))))
 			  (NP (PRO-D því))
 			  (NP (QR-A meiri) (N-A dýrð))
 			  (CONJ og)
@@ -687,4 +687,3 @@
 	      (NP (PRO-G sín)))
 	  (VBDI talaði)
 	  (. .-.)))
-

@@ -231,8 +231,9 @@
 ( (IP-MAT (CONJ En)
 	  (PP (P á)
 	      (NP (D-D hinum) (ADJ-D fjórtánda) (N-D deg$) (D-D $inum)))
-	  (NP (N-D móti)
-	      (NP (N-D kveldi)))
+	  (PP (P 0)
+	      (NP (N-D móti)
+		  (NP-COM (N-D kveldi))))
 	  (VBDI komu)
 	  (NP-SBJ (PRO-N þeir))
 	  (PP (RP fram)
@@ -644,4 +645,3 @@
 		  (NP-POS (PRO-G hans)))
 	  (NP-PRD (N-N fólk))
 	  (. .-.)))
-

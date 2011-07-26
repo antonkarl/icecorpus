@@ -331,9 +331,9 @@
 		  (IP-INF (VB styrkja))
 		  (NP-OB1 (PRO-G hans))
 		  (NP-SBJ (NS-N bræður))
-		  (VBPI á)
-		  (NP (N-D móti)
-		      (NP (ADJ-D heiðnum) (NS-D þjóðum)))
+		  (PP (P á)
+		      (NP (N-D móti)
+			  (NP-COM (ADJ-D heiðnum) (NS-D þjóðum))))
 		  (VBPI nær)
 		  (CP-ADV (C sem)
 			  (IP-SUB (NP-SBJ (PRO-N þeir))
@@ -558,4 +558,3 @@
 		  (MDDI vildi))
 	  (IP-INF (VB mæla))
 	  (. .-.)))
-

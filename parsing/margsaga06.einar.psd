@@ -733,7 +733,9 @@
 	      (NP (Q-A nokkra) (N-A umhugsun)))
 	  (NP-OB1 (N-A nafn$)
 		  (D-A $ið)
-		  (NP-PRN (ADJ-N Ókvæða) (RP við)))))
+		  (NP-PRN (CODE {COM:name_of_the_book})
+			  (ADJ-N Ókvæða)
+			  (RP við)))))
 
 ( (IP-MAT (CONJ og)
 	  (NP-SBJ *con*)

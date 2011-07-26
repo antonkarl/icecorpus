@@ -80,9 +80,9 @@
 	  (, ,-,)
 	  (CP-REL (WNP 0)
 		  (C er)
-		  (IP-SUB (VBDI hét)))
-	  (NP-SBJ (NPR-N Þorsteinn))
-	  (ADJP (ADJ-N hvíti))
+		  (IP-SUB (VBDI hét)
+			  (NP-SBJ (NPR-N Þorsteinn))
+			  (ADJP (ADJ-N hvíti))))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (PRO-N Hann))
@@ -178,7 +178,7 @@
 	  (NEG eigi)
 	  (NP-OB1 (N-A meðalskömm))
 	  (, ,-,)
-	  (BEPI er)
+	  (C er)
 	  (ADJP (Q-N margir))
 	  (VBPI veitist)
 	  (PP (P að)
@@ -299,7 +299,7 @@
 	  (NP (PRO-A þá))
 	  (. .-.)))
 
-( (IP-MAT (VBPI Er)
+( (IP-MAT (BEPI Er)
 	  (NP-SBJ (PRO-N það))
 	  (NEG eigi)
 	  (IP-INF (TO að) (VB orðlengja))
@@ -499,3 +499,4 @@
 	  (NP-OB1 (N-D sögu))
 	  (NP (NPRS-G Illuga) (NPRS-A Tagldarbana))
 	  (. .-.)))
+

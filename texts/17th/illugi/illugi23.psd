@@ -70,7 +70,7 @@
 	  (ADVP-LOC (ADV hér))
 	  (NP (NPR-D Óblauðshaugur))
 	  (, ,-,)
-	  (BEPI er)
+	  (C er)
 	  (VAN sagt)
 	  (HVPI hefir)
 	  (BEN verið)
@@ -159,7 +159,7 @@
 	  (PP (P undir)
 	      (NP (PRO-A sig)))
 	  (, ,-,)
-	  (BEPI er)
+	  (C er)
 	  (NP (PRO-D honum))
 	  (VBDI fylgdu)
 	  (, ,-,)
@@ -854,8 +854,8 @@
 	  (CP-REL (WNP 0)
 		  (C sem)
 		  (IP-SUB (NP-SBJ (NPR-N Óblauður))
-			  (BEPI er)))
-	  (ADJP (ADJ-N fallinn))
+			  (BEPI er)
+			  (ADJP (ADJ-N fallinn))))
 	  (, ,-,)
 	  (VBPI kveður)
 	  (NP-SBJ (PRO-N hann))
@@ -864,3 +864,4 @@
 	  (. :-:)))
 
 ( (IP-MAT (CODE {COM:textomitted})))
+

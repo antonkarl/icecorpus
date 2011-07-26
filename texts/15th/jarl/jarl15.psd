@@ -614,7 +614,7 @@
 	  (ADVP (ADV þó))
 	  (NP-POS (NS-G hvortveggja))
 	  (PP (P með)
-	      (NP (ADJ-A miklu) (N-D móti)))
+	      (NP (ADJ-D miklu) (N-D móti)))
 	  (. .-.)))
 
 ( (IP-MAT (NEG Eigi)
@@ -661,9 +661,9 @@
 	  (VBPI stendur)
 	  (NP-SBJ (N-N kóngur))
 	  (PP (RP upp)
-	      (PP (P í)))
-	  (NP (N-D móti)
-	      (NP (PRO-D þeim)))
+	      (PP (P í)
+		  (NP (N-D móti)
+		      (NP-COM (PRO-D þeim)))))
 	  (. ,-,)))
 
 ( (IP-MAT (CONJ og)
@@ -823,4 +823,3 @@
 			  (BEDS væri)))
 	  (RP til)
 	  (. .-.)))
-

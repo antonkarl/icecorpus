@@ -1,9 +1,9 @@
 ( (IP-MAT (NP-SBJ (N-N Austvestan))
 	  (VBDI gekk)
 	  (PP (P í)
-	      (NP (N-D móti)))
-	  (NP-OB1 (N-G fóstbróður)
-		  (NP-POS (PRO-D sínum)))
+	      (NP (N-D móti)
+		  (NP-COM (N-G fóstbróður)
+			  (NP-POS (PRO-D sínum)))))
 	  (. ,-,)))
 
 ( (IP-MAT (CONJ og)
@@ -799,4 +799,3 @@
 	      (NP (NP-POS (N-G kóngs))
 		  (N-N höll)))
 	  (. .-.)))
-

@@ -456,9 +456,9 @@
 	      (NP (N-A brúð$) (D-A $ina)))
 	  (VBDI gekk)
 	  (NP-SBJ (N-N kóngur))
-	  (PP (P í))
-	  (NP (N-D móti)
-	      (NP (PRO-D þeim)))
+	  (PP (P í)
+	      (NP (N-D móti)
+		  (NP-COM (PRO-D þeim))))
 	  (. ,-,)))
 
 ( (IP-MAT (CONJ og)
@@ -742,4 +742,3 @@
 	  (ADJP (ADJ-A sögð))
 	  (BEI verið)
 	  (. .-.)))
-

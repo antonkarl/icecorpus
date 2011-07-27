@@ -153,7 +153,8 @@
 	  (NP-OB1 (N-D neðrigóm$) (D-D $num))
 	  (. .-.)))
 
-( (IP-MAT (VBDI Gerðu)
+( (IP-MAT (DOI Ger$)
+	  (NP-SBJ $ðu)
 	  (NP-OB1 (PRO-A það))
 	  (ADVP (ADV aftur))
 	  (NP-SBJ (N-N pabbi))
@@ -184,7 +185,7 @@
 		  (N-N mamma))
 	  (. .-.)))
 
-( (IP-MAT (VBPI Er$)
+( (IP-MAT (BEPI Er$)
 	  (NP-SBJ (PRO-N $tu))
 	  (IP-INF (TO að) (VB æsa))
 	  (PP (P fyrir)

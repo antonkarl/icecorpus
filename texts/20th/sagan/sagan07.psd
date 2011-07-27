@@ -559,9 +559,9 @@
 	  (PP (P úr)
 	      (NP (NS-D tönnu$) (D-D $num)))
 	  (PP (P þegar)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (NP-SBJ (NPR-N Erna)))
-	  (VBPI birtist)
+	      (CP-ADV (C 0)
+		      (IP-SUB (NP-SBJ (NPR-N Erna))
+			      (VBPI birtist))))
 	  (. .-.)))
 
 ( (IP-MAT (PP (P Með)
@@ -673,4 +673,3 @@
 	  (PP (P á)
 	      (NP (NS-A fætur)))
 	  (. .-.)))
-

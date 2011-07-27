@@ -146,11 +146,11 @@
 ( (IP-MAT (NP-SBJ (ADJP (ADV Svo) (ADJ-N hlægilegt))
 		  (N-N pabbi))
 	  (PP (P þegar)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (NP-SBJ (PRO-N þú)))
-	  (VBPI skýtur)
-	  (RP fram)
-	  (NP-OB1 (N-D neðrigóm$) (D-D $num))
+	      (CP-ADV (C 0)
+		      (IP-SUB (NP-SBJ (PRO-N þú))
+			      (VBPI skýtur)
+			      (RP fram)
+			      (NP-OB1 (N-D neðrigóm$) (D-D $num)))))
 	  (. .-.)))
 
 ( (IP-MAT (DOI Ger$)
@@ -684,4 +684,3 @@
 		  (IP-SUB (NP-SBJ (N-N heimur$) (D-N $inn))))
 	  (VBPI farist)
 	  (. .-.)))
-

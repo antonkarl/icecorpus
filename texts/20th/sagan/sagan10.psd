@@ -69,7 +69,7 @@
 	      (NP (NS-D fötum)))
 	  (. ,-,)))
 
-( (IP-MAT (NP-SBJ (N-N óhreinatauskarfan))
+( (IP-MAT (NP-SBJ (N-N óhreinatauskarfa$) (D-N $n))
 	  (NP-OB1 (N-D löngu))
 	  (ADJP (ADJ-N búin))
 	  (IP-INF (TO að) (VB éta))
@@ -193,7 +193,7 @@
 
 ( (IP-MAT (NP (N-D Hámarki))
 	  (PP (P nær)
-	      (NP (N-N óreiðan)))
+	      (NP (N-N óreiða$) (D-N $n)))
 	  (PP (P í)
 	      (NP (N-D hjónaherberg$) (D-D $inu)))
 	  (NP-OB1 (N-A hjónarúm$) (D-A $ið))
@@ -266,7 +266,7 @@
 	      (P á)
 	      (NP (N-D baði)))
 	  (HVPI hefur)
-	  (NP-SBJ (N-N tannkremstúpan))
+	  (NP-SBJ (N-N tannkremstúpa$) (D-N $n))
 	  (NEG ekki)
 	  (VBN farið)
 	  (ADVP (ADV varhluta))
@@ -428,7 +428,7 @@
 	  (VBPI stefnir)
 	  (PP (P ef)
 	      (CP-ADV (C 0)))
-	  (IP-SUB (NP (N-A aðgerðarleysinu)))
+	  (IP-SUB (NP (N-A aðgerðarleysi$) (D-D $nu)))
 	  (VBPI heldur)
 	  (ADVP (ADV áfram))
 	  (. .-.)))
@@ -761,3 +761,4 @@
 	  (PP (P í)
 	      (NP (N-A hún$) (D-A $inn)))
 	  (. .-.)))
+

@@ -14,7 +14,8 @@
 ( (IP-MAT (MDPI Getur$)
 	  (NP-SBJ (PRO-N $ðu))
 	  (VBN fundið)
-	  (NP-OB1 (N-A leikskólatöskuna)
+	  (NP-OB1 (N-A leikskólatösku$)
+		  (D-A $na)
 		  (NP-POS (PRO-A þína)))
 	  (. ?-?)))
 
@@ -39,7 +40,7 @@
 	      (P í)
 	      (NP (N-A eldhús)))
 	  (PP (P með)
-	      (NP (N-A leikskólatöskuna)))
+	      (NP (N-A leikskólatösku$) (D-A $na)))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (PRO-N Ég))
@@ -241,7 +242,7 @@
 	  (PP (P á)
 	      (NP (N-A agn$) (D-A $ið) (CODE </paren>)))))
 
-( (IP-MAT (NP-SBJ (N-N Sápan))
+( (IP-MAT (NP-SBJ (N-N Sápa$) (D-N $n))
 	  (MDDI gat)
 	  (NEG ekki)
 	  (NP-OB1 (OTHER-A annað))
@@ -290,7 +291,7 @@
 	  (IP-SUB (ADVP (ADV svo)))
 	  (. !-!)))
 
-( (IP-MAT (NP-SBJ (N-N Tannkremstúpan))
+( (IP-MAT (NP-SBJ (N-N Tannkremstúpa$) (D-N $n))
 	  (VBDI tók)
 	  (PP (P í)
 	      (NP (ADJ-A svipaðan) (N-A streng)))))
@@ -361,7 +362,7 @@
 
 ( (IP-MAT (ADVP-TMP (ADV Þá))
 	  (MDDI gat)
-	  (NP-SBJ (N-N klósettrúllan))
+	  (NP-SBJ (N-N klósettrúlla$) (D-N $n))
 	  (ADVP (ADV nú) (NEG ekki) (ADVR lengur))
 	  (NP-POS (NS-G orða))
 	  (VBN bundist)
@@ -570,7 +571,7 @@
 	  (PP (P á)
 	      (NP (N-A skíðasleða)))
 	  (PP (P með)
-	      (NP (N-A innkaupatuðruna)))
+	      (NP (N-A innkaupatuðru$) (D-A $na)))
 	  (PP (P í)
 	      (NP (N-D sæt$) (D-D $inu)))
 	  (PP (P fyrir)
@@ -768,3 +769,4 @@
 	  (NP (N-D verk$) (D-D $inu))
 	  (ADVP (ADV lítt))
 	  (. .-.)))
+

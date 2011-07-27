@@ -1,4 +1,4 @@
-( (IP-MAT (NP-SBJ (N-N Seremónían))
+( (IP-MAT (NP-SBJ (N-N Seremónía$) (D-N $n))
 	  (PP (P við)
 	      (IP-INF (TO að) (VB koma)))
 	  (NP-OB1 (PRO-D sér))
@@ -44,7 +44,7 @@
 	  (PP (P eftir)
 	      (CP-ADV (C 0))
 	      (C að))
-	  (IP-SUB (NP-SBJ (N-N sagan)))
+	  (IP-SUB (NP-SBJ (N-N saga$) (D-N $n)))
 	  (VBPS komi)
 	  (PP (P í)
 	      (NP (N-A haus$) (D-A $inn)))
@@ -53,7 +53,7 @@
 	  (. .-.)))
 
 ( (IP-MAT (BEPI Er)
-	  (NP-SBJ (N-N sagan))
+	  (NP-SBJ (N-N saga$) (D-N $n))
 	  (VBN komin)
 	  (. ?-?)))
 
@@ -223,7 +223,7 @@
 	  (. .-.)))
 
 ( (IP-MAT (CONJ Og)
-	  (NP-SBJ (N-N peran))
+	  (NP-SBJ (N-N pera$) (D-N $n))
 	  (VBDI skein)))
 
 ( (IP-MAT (CONJ og) (VBDI skein) (. .-.)))
@@ -261,7 +261,7 @@
 	  (. ,-,)))
 
 ( (IP-MAT (INTJP (INTJ já))
-	  (NP-SBJ (N-N kjarnorkan))
+	  (NP-SBJ (N-N kjarnorka$) (D-N $n))
 	  (MDPI getur)
 	  (BEN verið)
 	  (ADJP (ADJ-N góð))
@@ -271,7 +271,7 @@
 	  (BEPI er)
 	  (ADJP (ADJ-N hægt))
 	  (IP-INF (TO að) (VB nota))
-	  (NP-OB1 (N-A kjarnorkuna))
+	  (NP-OB1 (N-A kjarnorku$) (D-A $na))
 	  (ADVP (ADVR eins)
 		(PP (P og)))
 	  (NP (N-A eld$) (D-A $inn))
@@ -296,7 +296,7 @@
 ( (IP-MAT (CONJ En)
 	  (NP (NP-POS (N-G aumingja))
 	      (N-G veslings))
-	  (NP (N-N peran))
+	  (NP (N-N pera$) (D-N $n))
 	  (BEDI var)
 	  (ADJP (NEG ekki) (ADJ-N búin))
 	  (RP til)
@@ -310,3 +310,4 @@
 		      (C sem)
 		      (IP-SUB (VBDI titraði) (CONJ og) (VBDI glóði))))
 	  (. .-.)))
+

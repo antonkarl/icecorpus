@@ -55,7 +55,7 @@
 	      (NP (ADJS-A fyrsta) (N-A skipti)))
 	  (PP (P með))
 	  (" ")
-	  (NP (ADJ-A nýju) (N-A konuna))
+	  (NP (ADJ-A nýju) (N-A konu$) (D-A $na))
 	  (" ")
 	  (. .-.)))
 
@@ -388,7 +388,8 @@
 ( (IP-MAT (NP-SBJ (D-N Þetta))
 	  (BEPI er)
 	  (ADVP (ADV þó))
-	  (NP-PRD (N-N fjölskyldan)
+	  (NP-PRD (N-N fjölskylda$)
+		  (D-N $n)
 		  (NP-POS (PRO-G hennar)))
 	  (, ,-,)
 	  (NP-SBJ (PRO-N hún))
@@ -671,3 +672,4 @@
 	  (PP (P á)
 	      (NP (NS-A fætur)))
 	  (. .-.)))
+

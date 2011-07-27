@@ -53,7 +53,7 @@
 	      (NP (ADJ-A svefndrukkið) (N-A hús)))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (N-N Ljóstýran))
+( (IP-MAT (NP-SBJ (N-N Ljóstýra$) (D-N $n))
 	  (VBDI hlykkjaðist)
 	  (RP upp)
 	  (NP-OB1 (ADJ-A mjóa) (N-A stiga))))
@@ -234,7 +234,8 @@
 	  (ADJP (ADJ-N uppálagt))
 	  (IP-INF (TO að) (VB hringja))
 	  (PP (P í)
-	      (NP (N-A skrifstofuna)
+	      (NP (N-A skrifstofu$)
+		  (D-A $na)
 		  (CP-REL (WNP 0)
 			  (C sem)
 			  (IP-SUB (IP-SUB (BEDI var)
@@ -306,7 +307,8 @@
 
 ( (IP-MAT (VBPI Sér$)
 	  (NP-SBJ (PRO-N $ðu))
-	  (NP-OB1 (N-A stjörnuna)
+	  (NP-OB1 (N-A stjörnu$)
+		  (D-A $na)
 		  (CP-REL (WNP 0)
 			  (C sem)
 			  (IP-SUB (VBPI hreyfist))))
@@ -442,7 +444,7 @@
 
 ( (IP-MAT (ADVP-TMP (ADV Loks))
 	  (BEDI var)
-	  (NP-SBJ (ADJ-N kræklótta) (N-N konan))
+	  (NP-SBJ (ADJ-N kræklótta) (N-N kona$) (D-N $n))
 	  (ADJP (ONE-N ein))
 	  (ADVP (ADV eftir))
 	  (CONJ og)
@@ -480,7 +482,7 @@
 ( (IP-MAT (CONJ og)
 	  (ADVP-TMP (ADV nú))
 	  (VBDI notaði)
-	  (NP-SBJ (N-N rútan))
+	  (NP-SBJ (N-N rúta$) (D-N $n))
 	  (NP-OB1 (N-A torg$) (D-A $ið))
 	  (PP (P til)
 	      (TO að)
@@ -545,3 +547,4 @@
 	  (PP (P eftir)
 	      (NP (N-D tjaldstæði)))
 	  (. .-.)))
+

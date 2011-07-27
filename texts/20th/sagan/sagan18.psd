@@ -126,7 +126,7 @@
 	  (NP-OB1 (N-D katl$) (D-D $inum))
 	  (PP (P í) (N-A samband) (CONJ og) (N-A helli))
 	  (PP (P á)
-	      (NP (N-A könnuna)))
+	      (NP (N-A könnu$) (D-A $na)))
 	  (. .-.)))
 
 ( (IP-MAT (CP (P Til)
@@ -515,7 +515,8 @@
 ( (IP-MAT (NP-SBJ (PRO-N Það))
 	  (BEDI var)
 	  (NP-PRD (ADJP (ADV nú) (QR-N meiri))
-		  (N-N viðkoman))
+		  (N-N viðkoma$)
+		  (D-N $n))
 	  (NP-SBJ (N-N maður))
 	  (, ,-,)
 	  (NP-SBJ (Q-N hver) (ADJ-N einasta) (N-N kelling))
@@ -641,7 +642,7 @@
 	  (NP-SBJ (N-N maður))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (N-N Pillan))
+( (IP-MAT (NP-SBJ (N-N Pilla$) (D-N $n))
 	  (NEG ekki)
 	  (VBN komin)
 	  (, ,-,)
@@ -719,7 +720,7 @@
 	      (TO að)
 	      (IP-INF (VB líta)))
 	  (PP (P á)
-	      (NP (N-A klukkuna)))
+	      (NP (N-A klukku$) (D-A $na)))
 	  (NP-OB1 (N-D ögn))
 	  (ADJP (ADJ-N órólegur))
 	  (PP (RP út)
@@ -835,3 +836,4 @@
 	  (VBPI skortir)
 	  (NP-OB1 (Q-A báða) (N-A orð))
 	  (. .-.)))
+

@@ -85,7 +85,7 @@
 		  (NP-POS (PRO-G okkar)))
 	  (. ,-,)))
 
-( (IP-MAT (NP-SBJ (N-N konan))
+( (IP-MAT (NP-SBJ (N-N kona$) (D-N $n))
 	  (MDDI vildi)
 	  (VB selja)
 	  (NP-OB1 (PRO-A okkur))
@@ -259,7 +259,7 @@
 	  (ADVP (ADV næstum))
 	  (ADVP (ADVR eins)
 		(PP (P og)))
-	  (NP-SBJ (Q-N öll) (N-N tilveran))
+	  (NP-SBJ (Q-N öll) (N-N tilvera$) (D-N $n))
 	  (HVPS hafi)
 	  (VBN endurnýjast)
 	  (. .-.)))
@@ -704,3 +704,4 @@
 	  (VBDS segðu)
 	  (NP-OB1 (N-D sögu))
 	  (. .-.)))
+

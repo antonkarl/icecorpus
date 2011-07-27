@@ -357,7 +357,7 @@
 	      (NP (NS-D eldspýtustokkum)))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (N-N Margföldunartaflan))
+( (IP-MAT (NP-SBJ (N-N Margföldunartafla$) (D-N $n))
 	  (BEDI var)
 	  (ADVP (ADV þó) (ADV enn))
 	  (PP (P á)
@@ -541,7 +541,7 @@
 	      (NP (ADJ-A svimandi) (NS-A upphæðir)))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (N-N Gatan))
+( (IP-MAT (NP-SBJ (N-N Gata$) (D-N $n))
 	  (VBDI tók)
 	  (NP-SBJ (PRO-N við))
 	  (PP (P af)
@@ -558,7 +558,7 @@
 	  (CONJ en)
 	  (NP-SBJ (Q-N enginn))
 	  (PP (P í)
-	      (NP (NPR-D Uppheimana)))
+	      (NP (NPR-D Uppheima$) (D-A $na)))
 	  (, ,-,)
 	  (WNP (WPRO-N hvað))
 	  (IP-SUB (ADVP-TMP (ADV þá)))
@@ -569,7 +569,7 @@
 	  (VBDI klæddu)
 	  (NP-OB1 (PRO-A sig))
 	  (PP (P í)
-	      (NP (NS-A svefnpokana)))))
+	      (NP (NS-A svefnpoka$) (D-A $na)))))
 
 ( (IP-MAT (CONJ og)
 	  (VBDI hjúfruðu)
@@ -654,3 +654,4 @@
 	  (, ,-,)
 	  (NP-SBJ (N-N plís))
 	  (. .-.)))
+

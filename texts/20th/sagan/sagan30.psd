@@ -265,7 +265,7 @@
 	  (NP-SBJ (NPR-N Bylgja))
 	  (CP (ADV líkt)
 	      (C og)
-	      (NP-SBJ (N-N platan))
+	      (NP-SBJ (N-N plata$) (D-N $n))
 	      (HVDS hefði)
 	      (BEN verið))
 	  (VAN tekin)
@@ -422,7 +422,7 @@
 	  (VBDI hvarf)
 	  (PP (P á) (ADV brott))
 	  (PP (P með)
-	      (NP (NS-A passana)))
+	      (NP (NS-A passa$) (D-A $na)))
 	  (. .-.)))
 
 ( (IP-MAT (WNP (WPRO-N Hvað))
@@ -525,7 +525,7 @@
 	  (NP-OB1 (N-D trýn$) (D-D $inu))
 	  (PP (ADV ofan)
 	      (P í)
-	      (NP (ADJ-A þurra) (N-A drulluna)))
+	      (NP (ADJ-A þurra) (N-A drullu$) (D-A $na)))
 	  (. ,-,)))
 
 ( (IP-MAT (VBDI dæstu) (. ,-,)))
@@ -634,7 +634,7 @@
 			  (VBDI hröpuðu)))
 	  (PP (ADV ofan)
 	      (P í)
-	      (NP (N-A svínastíuna)))
+	      (NP (N-A svínastíu$) (D-A $na)))
 	  (CP-REL (ADV þar)
 		  (C sem)
 		  (IP-SUB (NP-SBJ (N-N afgangur$) (D-N $inn))
@@ -784,3 +784,4 @@
 ( (IP-MAT (VBDI blakaði)
 	  (NP-OB1 (N-D væng))
 	  (. .-.)))
+

@@ -301,7 +301,7 @@
 	  (" ")
 	  (CONJ og)
 	  (ADVP (ADV jafnvel))
-	  (NP-SBJ (N-N ryksugan))
+	  (NP-SBJ (N-N ryksuga$) (D-N $n))
 	  (VBPI dansar)
 	  (. .-.)))
 
@@ -318,7 +318,7 @@
 		      (C sem)
 		      (IP-SUB (VBPI drífur)
 			      (RP inn)
-			      (NP-OB1 (N-A snúruna)))))
+			      (NP-OB1 (N-A snúru$) (D-A $na)))))
 	  (, ,-,)
 	  (NP-SBJ (ADJ-N stillanlegur) (N-N kraftur))
 	  (PP (P eftir)
@@ -332,7 +332,7 @@
 		  (, ,-,)
 		  (NP (N-D tepp$) (D-D $inu))
 		  (, ,-,)
-		  (NP (NS-D gardínunum))
+		  (NP (NS-D gardínu$) (D-D $num))
 		  (CONJP (CONJ eða)
 			 (NP (NS-D stólu$) (D-D $num)))))
 	  (. .-.)))
@@ -565,7 +565,7 @@
 	  (PP (P frá)
 	      (NP (PRO-D sér)))
 	  (PP (P á)
-	      (NP (N-A kommóðuna)))))
+	      (NP (N-A kommóðu$) (D-A $na)))))
 
 ( (IP-MAT (CONJ og)
 	  (VBPI hraðar)
@@ -723,3 +723,4 @@
 		  (NP-POS (D-G hins) (NS-G byggingarsamþykkta))))
 	  (NP-POS (N-G heims))
 	  (. .-.)))
+

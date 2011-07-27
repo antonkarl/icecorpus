@@ -56,7 +56,7 @@
 ( (IP-MAT (CONJ og)
 	  (VBDI sentist)
 	  (RP niður)
-	  (NP-OB1 (NS-A stigana))
+	  (NP-OB1 (NS-A stiga$) (D-A $na))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (PRO-N Hann))
@@ -97,7 +97,7 @@
 ( (IP-MAT (NP-SBJ (N-N Leikur$) (D-N $inn))
 	  (VBDI barst)
 	  (RP niður)
-	  (NP-OB1 (N-A götuna))
+	  (NP-OB1 (N-A götu$) (D-A $na))
 	  (CP-REL (ADV þar)
 		  (C sem)
 		  (IP-SUB (NP-SBJ (N-N þverflautudeild)
@@ -139,7 +139,7 @@
 	  (PP (P á)
 	      (NP (N-A flótta)))
 	  (RP niður)
-	  (NP-OB1 (N-A götuna))
+	  (NP-OB1 (N-A götu$) (D-A $na))
 	  (, ,-,)
 	  (ADVP-TMP (ADV þá))
 	  (NP-SBJ (NPR-N Andri))
@@ -154,7 +154,7 @@
 ( (IP-MAT (NP-SBJ (N-N BÖLGE))
 	  (. !-!)
 	  (VBDI drundi)
-	  (NP-SBJ (N-N júdóstúlkan))
+	  (NP-SBJ (N-N júdóstúlka$) (D-N $n))
 	  (VBPI á)
 	  (PP (P eftir)
 	      (NP (PRO-D þeim)))
@@ -228,7 +228,7 @@
 	  (NP-SBJ (PRO-N Við))
 	  (VBDI fórum)
 	  (PP (P á)
-	      (NP (NPR-A Kastarholuna)))))
+	      (NP (NPR-A Kastarholu$) (D-A $na)))))
 
 ( (IP-MAT (CONJ og)
 	  (NP-SBJ (NPR-N Hringur))
@@ -361,7 +361,7 @@
 	  (NP-OB1 (N-A fúkkalykt$) (D-A $ina))
 	  (. ,-,)))
 
-( (IP-MAT (NP-SBJ (N-N búðarholan))
+( (IP-MAT (NP-SBJ (N-N búðarhola$) (D-N $n))
 	  (VBPI kviknar)
 	  (PP (P fyrir)
 	      (NP (NS-D hugskotssjónum)))
@@ -370,7 +370,7 @@
 	  (PP (P á))
 	  (PP (N-A bak)
 	      (P við)
-	      (NP (N-A kirkjuna)))
+	      (NP (N-A kirkju$) (D-A $na)))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (NS-N Borð$) (D-N $in))
@@ -585,7 +585,7 @@
 
 ( (IP-MAT (ADVP (ADV Þannig))
 	  (VBPI lætur)
-	  (NP-SBJ (N-N gleymskan))
+	  (NP-SBJ (N-N gleymska$) (D-N $n))
 	  (NP-OB1 (NS-A greipar))
 	  (IP-INF (VB sópa))
 	  (PP (P um)
@@ -658,3 +658,4 @@
 		  (IP-SUB (NP (PRO-D þeim))
 			  (VBPI nemur)))
 	  (. .-.)))
+

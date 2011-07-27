@@ -1,4 +1,5 @@
-( (IP-MAT (NP-SBJ (N-N Kommúnan))
+
+( (IP-MAT (NP-SBJ (N-N Kommúna$) (D-N $n))
 	  (VBDI fylltist)
 	  (ADVP (ADV óðum))
 	  (PP (P af)
@@ -21,7 +22,7 @@
 				      (NP (NS-D sessum)))))))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (ADJ-N Nýkomna) (N-N stelpan))
+( (IP-MAT (NP-SBJ (ADJ-N Nýkomna) (N-N stelpa$) (D-N $n))
 	  (VBPI velti)
 	  (NP-OB1 (NS-D vöngum))
 	  (PP (P yfir)
@@ -135,7 +136,7 @@
 ( (IP-MAT (CONJ og)
 	  (MDDI gat)
 	  (VBN rakið)
-	  (NP-OB1 (N-A jarðsöguna))
+	  (NP-OB1 (N-A jarðsögu$) (D-A $na))
 	  (PP (P í)
 	      (NP (ADJ-D fáum) (NS-D dráttum)))
 	  (CONJ og)
@@ -369,7 +370,7 @@
 				  (IP-INF (TO að) (VB sjá))
 				  (NP-OB1 (NS-A handrit$) (D-A $in)))))
 	  (CONJ en)
-	  (NP-SBJ (N-N fýlan))
+	  (NP-SBJ (N-N fýla$) (D-N $n))
 	  (VBDI draup)
 	  (PP (P af)
 	      (NP (N-D prófessor$) (D-D $num)))
@@ -411,7 +412,7 @@
 	  (FW fem)
 	  (, ,-,)
 	  (VBDI sagði)
-	  (NP-SBJ (N-N konan))
+	  (NP-SBJ (N-N kona$) (D-N $n))
 	  (ADJP (ADJ-N hneyksluð))
 	  (. .-.)))
 
@@ -436,7 +437,7 @@
 	  (VBDI mældu)
 	  (NP-OB1 (NP (N-A mann$) (D-A $inn))
 		  (CONJ og)
-		  (NP (N-A konuna)))
+		  (NP (N-A konu$) (D-A $na)))
 	  (RP út)
 	  (ADVP (ADVR eins)
 		(PP (P og)))
@@ -447,7 +448,7 @@
 	      (NP (OTHER-D annarri) (N-D plánetu)))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (N-N Konan))
+( (IP-MAT (NP-SBJ (N-N Kona$) (D-N $n))
 	  (BEDI var)
 	  (PP (P með) (N-A varalit) (CONJ og) (N-A veski))
 	  (. .-.)
@@ -744,3 +745,4 @@
 				  (CONJ en)
 				  (NP-SBJ (ADJ-N aðlaðandi) (N-N heimsmynd))))))
 	  (. .-.)))
+

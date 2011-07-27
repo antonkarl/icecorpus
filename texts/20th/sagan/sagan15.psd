@@ -393,7 +393,7 @@
 	  (VBPI gufa)
 	  (PP (RP upp)
 	      (P á)
-	      (NP (NS-A morgnana)))))
+	      (NP (NS-A morgna$) (D-A $na)))))
 
 ( (IP-MAT (CONJ og)
 	  (IP-INF (VB birtast))
@@ -445,7 +445,7 @@
 ( (IP-MAT (ADVP (ADV Svo))
 	  (PP (P þegar)
 	      (CP-ADV (C 0)
-		      (IP-SUB (NP-SBJ (N-N konan))
+		      (IP-SUB (NP-SBJ (N-N kona$) (D-N $n))
 			      (PP (P í)
 				  (NP (N-D Útvarp$) (D-D $inu)))
 			      (BEPI er)
@@ -463,7 +463,7 @@
 	  (IP-INF (VB fara))
 	  (PP (ADV aftur)
 	      (P í)
-	      (NP (N-A vinnuna)))
+	      (NP (N-A vinnu$) (D-A $na)))
 	  (PP (P með)
 	      (NP (NP (ADJ-A áfylltan) (N-A kaffibrúsa))
 		  (CONJP (CONJ og)
@@ -674,3 +674,4 @@
 					 (IP-SUB (VBDS stoppuðu)
 						 (NP-OB1 (N-A blóðrás$) (D-A $ina)))))))
 	  (. .-.)))
+

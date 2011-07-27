@@ -441,7 +441,8 @@
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (ADJ-N Íslenska)
-		  (N-N stelpan)
+		  (N-N stelpa$)
+		  (D-N $n)
 		  (CP-REL (WNP 0)
 			  (C sem)
 			  (IP-SUB (HVDI hafði)
@@ -605,7 +606,7 @@
 	  (" ")
 	  (, ,-,)
 	  (VBDI sagði)
-	  (NP-SBJ (ADJ-N sænska) (N-N stúlkan))
+	  (NP-SBJ (ADJ-N sænska) (N-N stúlka$) (D-N $n))
 	  (ADJP (ADJ-N áhyggjufull))
 	  (. .-.)))
 
@@ -639,7 +640,7 @@
 		  (D-D $num)
 		  (CP-REL (WNP 0)
 			  (C sem)
-			  (IP-SUB (NP-SBJ (N-N stúlkan))
+			  (IP-SUB (NP-SBJ (N-N stúlka$) (D-N $n))
 				  (HVDI hafði)
 				  (VBN komið)
 				  (PP (P með) (ADV heiman))
@@ -733,7 +734,7 @@
 	      (C og)
 	      (NP-SBJ (PRO-N hann))
 	      (VBDI strauk))
-	  (NP-OB1 (N-A fituna))
+	  (NP-OB1 (N-A fitu$) (D-A $na))
 	  (PP (P úr)
 	      (NP (NP (ADJ-D glansandi) (N-D yfirskeggi))
 		  (CONJ og)
@@ -758,3 +759,4 @@
 	  (N-N búningur)
 	  (NP-POS (NPR-G Buffaló) (NPR-G Bills))
 	  (. .-.)))
+

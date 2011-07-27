@@ -33,7 +33,7 @@
 ( (IP-MAT (WNP (WPRO-N Hvað))
 	  (IP-SUB (BEPI er))
 	  (IP-INF (TO að) (VB sjá))
-	  (NP-OB1 (NS-A vettlingana) (PRO-A þína))
+	  (NP-OB1 (NS-A vettlinga$) (D-A $na) (PRO-A þína))
 	  (NP-SBJ (NPR-N Erna) (PRO-N mín))
 	  (, ,-,)
 	  (VBPI segir)
@@ -70,7 +70,7 @@
 			  (BEPS sé)
 			  (NP-PRD (N-N vettvangskönnun))))
 	  (, ,-,)
-	  (NP-SBJ (N-N kjarnorkufjölskyldan))
+	  (NP-SBJ (N-N kjarnorkufjölskylda$) (D-N $n))
 	  (VAN staðin)
 	  (PP (P að)
 	      (NP (N-D verki)))
@@ -388,7 +388,7 @@
 ( (IP-MAT (NP-SBJ (NPR-N Mamma))
 	  (VBPI hellir)
 	  (PP (P í)
-	      (NP (NS-A bollana)))))
+	      (NP (NS-A bolla$) (D-A $na)))))
 
 ( (IP-MAT (CONJ og)
 	  (VBPI ítrekar)
@@ -583,7 +583,7 @@
 ( (IP-MAT (NP-SBJ (CODE <paren>) (NPR-N Keli))
 	  (VBPI hrasar)
 	  (PP (P um)
-	      (NP (N-A stofuna)))
+	      (NP (N-A stofu$) (D-A $na)))
 	  (PP (P með) (NS-A snúrur) (CONJ og) (NS-A klær) (CODE </paren>))
 	  (. .-.)))
 
@@ -729,3 +729,4 @@
 	  (, ,-,)
 	  (NP-SBJ (ADJ-G víprar) (N-N mamma))
 	  (. .-.)))
+

@@ -120,7 +120,7 @@
 	  (NEG ekki)
 	  (CP-THT (C að)
 		  (PP (P á)
-		      (NP (NS-A morgnana)))
+		      (NP (NS-A morgna$) (D-A $na)))
 		  (PP (P þegar)
 		      (CP-ADV (C 0)
 			      (IP-SUB (NP-SBJ (PRO-N ég))
@@ -186,7 +186,7 @@
 
 ( (IP-MAT (NP-SBJ (PRO-N Ég))
 	  (VBPI strýk)
-	  (NP-OB1 (N-A línuna))
+	  (NP-OB1 (N-A línu$) (D-A $na))
 	  (PP (P á)
 	      (NP (N-D háls$) (D-D $inum)))
 	  (ADVP (ADV alveg))
@@ -199,7 +199,7 @@
 ( (IP-MAT (CONJ og)
 	  (VBPS kyssi)
 	  (PP (P á)
-	      (NP (N-D skoruna)))
+	      (NP (N-D skoru$) (D-A $na)))
 	  (CP-REL (ADV þar)
 		  (C sem)
 		  (IP-SUB (NP-SBJ (N-N hár$) (D-N $ið))
@@ -220,7 +220,7 @@
 
 ( (IP-MAT (CONJ og) (VBPI förum) (RP inn) (. .-.)))
 
-( (IP-MAT (NP-SBJ (N-N Þulan))
+( (IP-MAT (NP-SBJ (N-N Þula$) (N-N $n))
 	  (VBPI endar)
 	  (NP-OB1 (NS-G dagskrána))
 	  (PP (P með)
@@ -334,7 +334,7 @@
 
 ( (IP-MAT (CP (ADV Eins)
 	      (C og)
-	      (NP-SBJ (N-N skáldsagan))
+	      (NP-SBJ (N-N skáldsaga$) (D-N $n))
 	      (BEPS sé)
 	      (NP-PRD (ADJP (ADJP (ADV svo) (ADJ-N hefðbundið))
 			    (CONJ og)
@@ -391,7 +391,7 @@
 		  (PP (P í) (N-D dagbók) (CONJ eða) (N-D greinarstúf))
 		  (, ,-,)
 		  (MDPI getur)
-		  (NP-SBJ (N-N útkoman))
+		  (NP-SBJ (N-N útkoma$) (N-N $n))
 		  (RDN orðið))
 	  (NP-SBJ (ADJ-N snaráfeng) (NS-N t.t.t))
 	  (. .-.)))
@@ -567,7 +567,8 @@
 	  (VBDI horfði)
 	  (PP (RP upp)
 	      (P í)
-	      (NP (N-A dagsbirtuna)
+	      (NP (N-A dagsbirtu$)
+		  (D-A $na)
 		  (CP-REL (WNP 0)
 			  (C sem)
 			  (IP-SUB (VBDI dróst)
@@ -681,3 +682,4 @@
 	  (CONJ og)
 	  (ADJP (ADJ-N örvæntingarfullt))
 	  (. .-.)))
+

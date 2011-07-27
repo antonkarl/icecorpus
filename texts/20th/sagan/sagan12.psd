@@ -51,7 +51,7 @@
 	  (VBPI segir)
 	  (NP-SBJ (PRO-N hann))
 	  (PP (P um)
-	      (NP (N-A vasatölvuna)))
+	      (NP (N-A vasatölvu$) (D-A $na)))
 	  (. .-.)))
 
 ( (IP-MAT (BEDS Væri)
@@ -77,7 +77,7 @@
 	  (ADVP (ADV jafnóðum))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (N-N Útsalan))
+( (IP-MAT (NP-SBJ (N-N Útsala$) (D-N $n))
 	  (VBPI hefst)
 	  (PP (P í)
 	      (NP (N-A dag)))
@@ -429,7 +429,7 @@
 	      (NP (NS-D sunnudögum)))
 	  (IP-INF (TO að) (VB skoða))
 	  (PP (P í)
-	      (NP (NS-A glerkassana)))
+	      (NP (NS-A glerkassa$) (D-A $na)))
 	  (CONJ og)
 	  (NP-SBJ (N-N pabbi)
 		  (NP-POS (PRO-G þeirra)))
@@ -560,7 +560,7 @@
 			      (VBPI klæði)
 			      (NP-OB1 (PRO-A hann))
 			      (PP (P í)
-				  (NP (NS-A sokkana))))))
+				  (NP (NS-A sokka$) (D-A $na))))))
 	  (, :-:)
 	  (WNP (WPRO-N hvað))
 	  (IP-SUB (NP-SBJ (PRO-N það))
@@ -569,7 +569,7 @@
 	  (IP-INF (TO að) (VB klæða))
 	  (NP-OB1 (PRO-A hann))
 	  (PP (P í)
-	      (NP (NS-A sokkana)))
+	      (NP (NS-A sokka$) (D-A $na)))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (NS-N Höfuð)
@@ -702,3 +702,4 @@
 	  (RDN orðinn)
 	  (NP-SBJ (NPR-N Supermann))
 	  (. .-.)))
+

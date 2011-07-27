@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP (ADJ-D Borgaralegu) (N-D þjóðskipulagi))
 	  (BEDI var)
 	  (VBN komið)
@@ -62,7 +63,7 @@
 		  (ADVP-DIR (ADV heim))
 		  (. ?-?)
 		  (VBDI spurði))
-	  (NP-SBJ (N-N konan))
+	  (NP-SBJ (N-N kona$) (D-N $n))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (N-N Blaðamaður$) (D-N $inn))
@@ -123,7 +124,7 @@
 				  (IP-INF (TO að) (VB reykja)))))
 	  (. ?-?)
 	  (VBDI sagði)
-	  (NP-SBJ (N-N konan))
+	  (NP-SBJ (N-N kona$) (D-N $n))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (N-N Vindill$) (D-N $inn))
@@ -360,7 +361,7 @@
 		      (IP-SUB (ADJP (ADJ-N búið))
 			      (BEPI er)
 			      (IP-INF (TO að) (VB framkvæma))
-			      (NP-OB1 (NPR-A Byltinguna)))))
+			      (NP-OB1 (NPR-A Byltingu$) (D-A $na)))))
 	  (VBPI býður)
 	  (NP-SBJ (N-N maður))
 	  (NEG ekki)
@@ -588,7 +589,7 @@
 				  (VBN yfirgefið))))
 	  (. .-.)))
 
-( (IP-MAT (NPR-N Stéttabaráttan)
+( (IP-MAT (NP-SBJ (NPR-N Stéttabarátta$) (D-N $n))
 	  (CONJ og)
 	  (NPR-N Neisti)
 	  (BEPI eru)
@@ -685,7 +686,7 @@
 		  (NP-POS (ADJ-G gamla) (N-G manns$) (D-G $ins)))
 	  (PP (P um))
 	  (CP-THT (C að)
-		  (IP-SUB (NP-SBJ (N-N stéttabaráttan))
+		  (IP-SUB (NP-SBJ (N-N stéttabarátta$) (D-N $n))
 			  (BEPS sé)
 			  (NP-PRD (N-N hreyfiafl)
 				  (NP-POS (N-G sögun$) (D-G $nar)))))
@@ -735,8 +736,9 @@
 			  (C sem)
 			  (IP-SUB (VBN leitt)
 				  (MDDS gætu)
-				  (NP-OB1 (N-A kenninguna))
+				  (NP-OB1 (N-A kenningu$) (D-A $na))
 				  (PP (RP út)
 				      (P í)
 				      (NP (N-D dulhyggju)))))))
 	  (. .-.)))
+

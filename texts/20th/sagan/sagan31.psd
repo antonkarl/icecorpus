@@ -22,7 +22,7 @@
 	  (VBDI kom)
 	  (PP (ADV aftur)
 	      (P með)
-	      (NP (NS-A passana)))))
+	      (NP (NS-A passa$) (D-A $na)))))
 
 ( (IP-MAT (CONJ og)
 	  (VBDI freistaði)
@@ -178,7 +178,7 @@
 
 ( (IP-MAT (VBDI krassaði)
 	  (PP (P yfir)
-	      (NP (N-A hænuna)))))
+	      (NP (N-A hænu$) (D-A $na)))))
 
 ( (IP-MAT (CONJ og)
 	  (VBDI undirstrikaði)
@@ -314,7 +314,7 @@
 				  (NP (ADJ-A sjóðandi) (N-A kaff$) (D-A $ið))))))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (NPR-N Súlan))
+( (IP-MAT (NP-SBJ (NPR-N Súla$) (D-N $n))
 	  (HVDI hafði)
 	  (NEG ekki)
 	  (VBN hækkað)
@@ -542,7 +542,7 @@
 ( (IP-MAT (PP (P Án)
 	      (NP (NPR-N Hans)))
 	  (RDPI verður)
-	  (NP-SBJ (N-N veislan))
+	  (NP-SBJ (N-N veisla$) (D-N $n))
 	  (ADJP (ADV bara) (ADJ-N svall))
 	  (CONJ og)
 	  (NP-SBJ (N-N heimska))
@@ -588,7 +588,7 @@
 	  (NP-SBJ (N-N listvakning)
 		  (NP-POS (N-G alþýðun$) (D-G $nar)))
 	  (, ,-,)
-	  (NP (NPR-A Ríkiskenninguna))
+	  (NP (NPR-A Ríkiskenningu$) (D-A $na))
 	  (CODE {COM:dash})
 	  (CONJ en)
 	  (NP-SBJ (PRO-N það))
@@ -635,7 +635,7 @@
 				  (ADJP (ADJ-N hversdagslegir))))))
 	  (, ,-,)
 	  (ADVP (as t.a.m.-t.a.m.))
-	  (NP (NPR-A Esjuna))
+	  (NP (NPR-A Esju$) (D-A $na))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (N-N Guðsríki))
@@ -728,3 +728,4 @@
 	      (IP-INF (VB heyra)))
 	  (NP-OB1 (N-A músik$) (D-A $ina))
 	  (. .-.)))
+

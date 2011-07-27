@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP-SBJ (NS-N Safnverðir))
 	  (PP (P með)
 	      (NP (N-D gamanyrði)))
@@ -64,7 +65,7 @@
 
 ( (IP-MAT (NP-SBJ (NS-N Einkunnarorð))
 	  (, :-:)
-	  (NP-SBJ (NPR-N Vinnan))
+	  (NP-SBJ (NPR-N Vinna$) (D-N $n))
 	  (DOPI gerir)
 	  (NP-OB1 (PRO-A yður))
 	  (ADJP (ADJ-N frjálsa))
@@ -91,7 +92,7 @@
 	      (NP (N-D keng)))
 	  (NP (D-D hinum) (ADJ-D megin))
 	  (PP (P við)
-	      (NP (N-A girðinguna)))
+	      (NP (N-A girðingu$) (D-A $na)))
 	  (, ,-,)
 	  (ADJP (ADJ-N sikksakkandi))
 	  (PP (ADV innan)
@@ -485,7 +486,7 @@
 	  (NP-POS (NPR-G Fra$) (D-G $ns))
 	  (VBDI talaði)
 	  (PP (P til)
-	      (NP (NS-G túristanna)))
+	      (NP (NS-G túrista$) (D-G $nna)))
 	  (PP (P í)
 	      (NP (NPR-D Assisi)))
 	  (. .-.)))
@@ -493,7 +494,7 @@
 ( (IP-MAT (PP (P Eftir)
 	      (NP (N-D skoðunarferð)))
 	  (PP (P um)
-	      (NP (NPR-A Péturskirkjuna)))
+	      (NP (NPR-A Péturskirkju$) (D-A $na)))
 	  (PP (P í)
 	      (NP (NPR-D Róm)))
 	  (VBDI tók)
@@ -632,3 +633,4 @@
 		  (NP-POS (PRO-D mínu))))
 	  (" ")
 	  (. .-.)))
+

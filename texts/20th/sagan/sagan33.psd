@@ -22,7 +22,7 @@
 	  (PP (P að)
 	      (NP (N-D bráð)))
 	  (, ,-,)
-	  (NP-SBJ (N-N uppistaðan))
+	  (NP-SBJ (N-N uppistaða$) (D-N $n))
 	  (BEPI er)
 	  (NP-PRD (N-N stundatafla)
 		  (NP-POS (N-G skóla$) (D-G $ns)))
@@ -370,7 +370,7 @@
 
 ( (IP-MAT (NP (NPR-N Guðmundur) (NPR-N Andri) (NPR-N Haraldsson) (NPR-N Guðmundur) (NPR-N Andri) (NPR-A Haraldsson) (NPR-N Guðmundur) (NPR-N Andri) (NPR-A Haraldsson))))
 
-( (IP-MAT (NP-SBJ (N-N Ástæðan))
+( (IP-MAT (NP-SBJ (N-N Ástæða$) (D-N $n))
 	  (PP (P fyrir))
 	  (PP (P 0)
 	      (NP (PRO-D því)
@@ -494,3 +494,4 @@
 	  (PP (P í)
 	      (NP (N-D samhengi)))
 	  (. .-.)))
+

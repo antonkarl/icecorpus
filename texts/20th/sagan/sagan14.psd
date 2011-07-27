@@ -41,12 +41,12 @@
 	  (ADJP (ADJ-N búin))
 	  (IP-INF (TO að) (VB rekja))
 	  (RP upp)
-	  (NP-OB1 (Q-A alla) (N-A trossuna))
+	  (NP-OB1 (Q-A alla) (N-A trossu$) (D-A $na))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (ADJ-N Fljúgandi) (N-N fart$) (D-N $in))
 	  (RP niður)
-	  (NP-OB1 (N-A brekkuna))
+	  (NP-OB1 (N-A brekku$) (D-A $na))
 	  (PP (P að)
 	      (NP (N-D leikskóla$) (D-D $num)))
 	  (CP-REL (ADV þar)
@@ -415,7 +415,7 @@
 	  (RDDI varð)
 	  (PP (P fyrir)
 	      (NP (N-D val$) (D-D $inu)))
-	  (NP-SBJ (N-N ljóðlínan))
+	  (NP-SBJ (N-N ljóðlína$) (D-N $n))
 	  (, :-:)
 	  (VBPI Sjá)
 	  (NP-SBJ (NS-N dagar))
@@ -426,7 +426,7 @@
 	  (VBDI reyndi)
 	  (NP-SBJ (PRO-N ég))
 	  (IP-INF (TO að) (VB slá))
-	  (NP-OB1 (N-A línuna))
+	  (NP-OB1 (N-A línu$) (D-A $na))
 	  (PP (P með)
 	      (NP (ADJ-D réttri) (N-D fingrasetningu)))))
 
@@ -697,3 +697,4 @@
 		      (IP-SUB (NP-SBJ (PRO-N ég))
 			      (VBDI leiðrétti))))
 	  (. .-.)))
+

@@ -24,7 +24,7 @@
 	  (ADVP-DIR (ADV heim))
 	  (. .-.)))
 
-( (IP-MAT (NP-SBJ (N-N Íbúðarbjallan))
+( (IP-MAT (NP-SBJ (N-N Íbúðarbjalla$) (D-N $n))
 	  (VBPI hringir)
 	  (. .-.)))
 
@@ -375,7 +375,7 @@
 	      (P undan)
 	      (NP (PRO-D mér)))
 	  (RP niður)
-	  (NP-OB1 (NS-A stigana))
+	  (NP-OB1 (NS-A stiga$) (D-A $na))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (ADJP (ADV Undarlega) (ADJ-N sjálfstæð))
@@ -425,7 +425,7 @@
 	  (PP (P með)
 	      (NP (PRO-D því)))
 	  (IP-INF (TO að) (VB taka))
-	  (NP-OB1 (N-A forystuna))
+	  (NP-OB1 (N-A forystu$) (D-A $na))
 	  (CONJ og)
 	  (IP-INF (VB æða))
 	  (PP (RP inn)
@@ -596,3 +596,4 @@
 			  (PP (P í)
 			      (NP (N-A líf)))))
 	  (. .-.)))
+

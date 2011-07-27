@@ -49,7 +49,7 @@
 	  (, ,-,)
 	  (VBPI flýtir)
 	  (NP-SBJ (N-N mamma))
-	  (VBPI sér)
+	  (PRO-D sér)
 	  (IP-INF (TO að) (VB leiðrétta))
 	  (. .-.)))
 
@@ -216,8 +216,8 @@
 	  (ADVP (ADV reglulega))
 	  (CP-THT (C að)
 		  (IP-SUB (NP-SBJ (Q-N allir))
-			  (BEPS séu)))
-	  (IP-INF (TO að) (VB borða))
+			  (BEPS séu)
+			  (IP-INF (TO að) (VB borða))))
 	  (CONJ og)
 	  (CP (P um) (N-A leið) (C og))
 	  (VBPI myndast)
@@ -726,4 +726,3 @@
 	  (, ,-,)
 	  (NP-SBJ (ADJ-G víprar) (N-N mamma))
 	  (. .-.)))
-

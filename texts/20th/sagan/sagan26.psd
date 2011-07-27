@@ -203,13 +203,13 @@
 	  (IP-INF (TO að) (VB klippa))
 	  (PP (ADV neðan)
 	      (P af)
-	      (NP (NS-D buxu$) (D-D $num)))
-	  (CP-REL (WNP 0)
+	      (NP (NS-D buxu$) (D-D $num)(CP-REL (WNP 0)
 		  (C sem)
-		  (IP-SUB (VBDI trosnuðu)))
-	  (PP (RP upp)
+		  (IP-SUB (VBDI trosnuðu)(PP (RP upp)
 	      (P á)
-	      (NP (NS-D læru$) (D-D $num)))
+	      (NP (NS-D læru$) (D-D $num)))))))
+	  
+	  
 	  (. .-.)))
 
 ( (IP-MAT (PP (P Til)
@@ -631,15 +631,15 @@
 	  (, ,-,)
 	  (NP-SBJ (PRO-N það))
 	  (BEDI var)
-	  (NP-SBJ (N-N bíómynd))
-	  (CP-REL (WNP 0)
+	  (NP-SBJ (N-N bíómynd)(CP-REL (WNP 0)
 		  (C sem)
 		  (IP-SUB (BEDI var)
 			  (ADVP (ADV svoleiðis))
-			  (CONJ eða)
-			  (BEDI var)
-			  (NP-SBJ (PRO-N það))
-			  (NP-PRD (N-N bók))))
+			  
+			  
+			  
+			  )))
+	  (CONJ eða)(BEDI var)(NP-SBJ (PRO-N það))(NP-PRD (N-N bók))
 	  (. ?-?)))
 
 ( (IP-MAT (NP-SBJ (NS-N Menn))
@@ -688,11 +688,11 @@
 	  (. .-.)))
 
 ( (IP-MAT (PP (P Eftir)
-	      (NP (D-D því)))
-	  (CP-REL (WNP 0)
+	      (NP (D-D því)(CP-REL (WNP 0)
 		  (C sem)
 		  (IP-SUB (NP-SBJ (N-N borg$) (D-N $in))
-			  (VBDI úthverfðist)))
+			  (VBDI úthverfðist)))))
+	  
 	  (RDDI varð)
 	  (NP-POS (ADJR-G fátæklegra) (N-G umhorfs))
 	  (. .-.)))
@@ -751,3 +751,4 @@
 	  (VAN runnin)
 	  (RP upp)
 	  (. .-.)))
+

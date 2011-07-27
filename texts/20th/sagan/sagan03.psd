@@ -152,10 +152,10 @@
 	      (P í)
 	      (NP (N-D loft$) (D-D $inu)))
 	  (PP (P þegar)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (NP-SBJ (PRO-N hún))
-		  (VBDI skellti))
-	  (NP-OB1 (N-D hurð$) (D-D $inni))
+	      (CP-ADV (C 0)
+		      (IP-SUB (NP-SBJ (PRO-N hún))
+			      (VBDI skellti)
+			      (NP-OB1 (N-D hurð$) (D-D $inni)))))
 	  (. .-.)))
 
 ( (IP-MAT (" ")
@@ -751,4 +751,3 @@
 	  (N-N búningur)
 	  (NP-POS (NPR-G Buffaló) (NPR-G Bills))
 	  (. .-.)))
-

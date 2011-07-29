@@ -222,7 +222,8 @@
 	      (NP (N-D skjalatösku)))
 	  (CP-REL (WNP 0)
 		  (C sem)
-		  (IP-SUB (VBDI ávarpaði)
+		  (IP-SUB (RP á$)
+			  (VBDI $varpaði)
 			  (NP-OB1 (PRO-A hann))
 			  (PP (P með)
 			      (NP (ADJ-D góðum) (N-D degi)))))
@@ -433,7 +434,8 @@
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (ADJ-N Hellulögð) (NS-N stræt$) (D-N $in))
-	  (VBDI útvörpuðu)
+	  (RP út$)
+	  (VBDI $vörpuðu)
 	  (NP-OB1 (N-D skónið)
 		  (NP-POS (NS-G alda$) (D-G $nna)))
 	  (. .-.)))
@@ -603,3 +605,4 @@
 	  (, -)
 	  (NP-SBJ (NPR-N Hversdagshöll$) (D-N $in))
 	  (. .-.)))
+

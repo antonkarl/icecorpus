@@ -588,9 +588,9 @@
 	      (NP (N-A hraun$) (D-A $ið)))
 	  (, ,-,)
 	  (PP (P meðan)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (NP-SBJ (PRO-N þeir))
-		  (VBDI börðust))
+	      (CP-ADV (C 0)
+		      (IP-SUB (NP-SBJ (PRO-N þeir))
+			      (VBDI börðust))))
 	  (, ,-,)
 	  (CONJ og)
 	  (VBDI sá)
@@ -764,4 +764,3 @@
 	  (VBDI týndist)
 	  (ADVP-LOC (ADV þar))
 	  (. .-.)))
-

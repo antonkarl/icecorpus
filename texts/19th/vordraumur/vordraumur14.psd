@@ -370,8 +370,11 @@
 	  (BEDS væru)
 	  (ADJP (ADJ-N stór))
 	  (, ,-,)
-	  (CP-ADV (C meðan) (VAN verið) (BEDI var))
-	  (IP-INF (TO að) (VB borða))
+	  (PP (P meðan)
+	      (CP-ADV (C 0)
+		      (IP-SUB (VAN verið)
+			      (BEDI var)
+			      (IP-INF (TO að) (VB borða)))))
 	  (. .-.)))
 
 ( (IP-MAT (CP-ADV (C Þegar) (VAN farið) (BEDI var))

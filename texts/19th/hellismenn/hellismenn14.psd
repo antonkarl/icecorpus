@@ -337,9 +337,8 @@
 	      (NP (N-A þing$) (D-A $ið)))
 	  (VBPI safnar)
 	  (NP-SBJ (NPR-N Sturla))
-	  (PP (P þegar)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (NP (NS-D mönnum)))
+	  (PP (P þegar))
+	  (NP (NS-D mönnum))
 	  (PP (P að)
 	      (NP (PRO-D sér)))))
 
@@ -486,8 +485,9 @@
 	  (CONJ og)
 	  (NP (NPR-D Hallkelsso$) (D-D $num))
 	  (, ,-,)
-	  (CP-ADV (C þótt)
-		  (IP-SUB (NEG eigi) (BEPS séu) (VAN nefndir)))
+	  (PP (P þótt)
+	      (CP-ADV (C 0)
+		      (IP-SUB (NEG eigi) (BEPS séu) (VAN nefndir))))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (NPR-N Hrólfur))
@@ -734,9 +734,8 @@
 
 ( (IP-MAT (HVDI Hafði)
 	  (NP-SBJ (PRO-N hann))
-	  (PP (P þegar)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (NP-POS (N-G bana)))
+	  (PP (P þegar))
+	  (IP-SMC (N-G bana))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (NPR-N Bjarni) (NPR-N Sturluson))

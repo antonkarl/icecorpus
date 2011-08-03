@@ -28,9 +28,8 @@
 
 ( (IP-MAT (CONJ og)
 	  (VBDI sendi)
-	  (PP (P þegar)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (NP (N-A mann)))
+	  (PP (P þegar))
+	  (NP (N-A mann))
 	  (PP (P á)
 	      (NP (NPR-D Breiðabólstað)))
 	  (PP (P til)
@@ -296,9 +295,8 @@
 
 ( (IP-MAT (CONJ og)
 	  (VBDI sló)
-	  (PP (P þegar)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (NP (N-A hring)))
+	  (PP (P þegar))
+	  (NP (N-A hring))
 	  (PP (P um)
 	      (NP (N-A bæ$) (D-A $inn)))
 	  (. .-.)))
@@ -632,10 +630,9 @@
 
 ( (IP-MAT (VBDI Hljóp)
 	  (NP-SBJ (NPR-N Tindur))
-	  (PP (P þegar)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (PP (P á)
-		      (NP (NS-A hæla))))
+	  (PP (P þegar))
+	  (PP (P á)
+	      (NP (NS-A hæla)))
 	  (NP (PRO-D honum))
 	  (. .-.)))
 
@@ -731,10 +728,9 @@
 
 ( (IP-MAT (NP-SBJ (N-N Tindur) (NPR-N Hallkelsson))
 	  (VBDI stökk)
-	  (PP (P þegar)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (PP (P eftir)
-		      (NP (NPR-D Bölverki))))))
+	  (PP (P þegar))
+	  (PP (P eftir)
+	      (NP (NPR-D Bölverki)))))
 
 ( (IP-MAT (CONJ og)
 	  (VBDI lagði)
@@ -774,4 +770,3 @@
 	  (PP (P í)
 	      (NP (NPR-D Kalmanstungu)))
 	  (. .-.)))
-

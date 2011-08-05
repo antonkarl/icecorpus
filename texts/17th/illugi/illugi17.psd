@@ -251,9 +251,9 @@
 	  (NP-OB1 (NS-A muni))
 	  (, ,-,)
 	  (PP (P þó)
-	      (CP-ADV (C að)))
-	  (NP (OTHER-N önnur) (NS-A vopn))
-	  (NP (N-D bili))
+	      (CP-ADV (C að)
+		      (IP-SUB (NP (OTHER-N önnur) (NS-A vopn))
+			      (NP (N-D bili)))))
 	  (. .-.)
 	  (" ")))
 
@@ -451,9 +451,8 @@
 
 ( (IP-MAT (CONJ og)
 	  (VBDI sótti)
-	  (PP (P þegar)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (ADJP (ADV svo) (ADJ-N hart)))
+	  (PP (P þegar))
+	  (ADJP (ADV svo) (ADJ-N hart))
 	  (PP (P að)
 	      (NP (NPR-D Illuga)))
 	  (, ,-,)
@@ -891,4 +890,3 @@
 	  (NP (Q-D öllum))
 	  (IP-INF (TO að) (VB aldurtila))
 	  (. .-.)))
-

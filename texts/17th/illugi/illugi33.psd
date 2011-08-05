@@ -9,10 +9,10 @@
 	  (NP-OB1 (N-A dreka$) (D-A $nn))
 	  (, ,-,)
 	  (CP-ADV (C meðan)
-		  (IP-SUB (NEG eigi)))
-	  (VBPI þynnist)
-	  (NP-SBJ (N-N mannafli)
-		  (NP-POS (PRO-G hans)))
+		  (IP-SUB (NEG eigi)
+			  (VBPI þynnist)
+			  (NP-SBJ (N-N mannafli)
+				  (NP-POS (PRO-G hans)))))
 	  (. .-.)))
 
 ( (IP-MAT (CONJ En)
@@ -499,4 +499,3 @@
 	  (NP-OB1 (N-D sögu))
 	  (NP (NPRS-G Illuga) (NPRS-A Tagldarbana))
 	  (. .-.)))
-

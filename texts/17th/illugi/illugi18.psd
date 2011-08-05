@@ -428,7 +428,8 @@
 	  (" ")))
 
 ( (IP-MAT (CONJ Og)
-	  (CP-ADV (C þegar) (VBDI tókst))
+	  (C þegar)
+	  (VBDI tókst)
 	  (NP-SBJ (N-N bardagi))
 	  (PP (P með)
 	      (NP (PRO-D þeim)))
@@ -618,7 +619,8 @@
 	  (ADVP-TMP (ADV þá))
 	  (, ,-,)
 	  (C er)
-	  (CP-ADV (C þegar) (VBDI stóðu))
+	  (C þegar)
+	  (VBDI stóðu)
 	  (ADVP (ADV eftir))
 	  (, ,-,)
 	  (C er)
@@ -705,4 +707,3 @@
 	  (CP-THT (C að) (VBPI Stefnir) (BEDS væri))
 	  (NP-SBJ (NPR-N Logason))
 	  (. .-.)))
-

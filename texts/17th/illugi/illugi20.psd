@@ -407,10 +407,10 @@
 	      (NP (D-D þessu)))
 	  (, ,-,)
 	  (PP (P meðan)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (NP-SBJ (PRO-N þeir)))
-	  (VBPI dvelja)
-	  (ADVP-LOC (ADV þar))
+	      (CP-ADV (C 0)
+		      (IP-SUB (NP-SBJ (PRO-N þeir))
+			      (VBPI dvelja)
+			      (ADVP-LOC (ADV þar)))))
 	  (. .-.)))
 
 ( (IP-MAT (VBDI Nokkuru)
@@ -750,4 +750,3 @@
 			  (BEPI er)
 			  (VAN ritað)))
 	  (. .-.)))
-

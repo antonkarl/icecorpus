@@ -33,7 +33,7 @@
 
 ( (IP-MAT (NP-SBJ (NPR-N Eiríkur))
 	  (VBDI kenndi)
-	  (NP-SBJ (PRO-N hann))
+	  (NP-OB1 (PRO-A hann))
 	  (ADVP-TMP (ADV þegar))
 	  (. ,-,)))
 
@@ -94,7 +94,8 @@
 	  (, ,-,)
 	  (PP (ADV þar)
 	      (P til)
-	      (CP-ADV (IP-SUB (NP-SBJ (PRO-N hann))
+	      (CP-ADV (C 0)
+		      (IP-SUB (NP-SBJ (PRO-N hann))
 			      (VBDI lést))))
 	  (. .-.)))
 
@@ -262,7 +263,8 @@
 			  (NP-POS (PRO-A sína))))
 	  (. .-.)))
 
-( (IP-MAT (PP (NP (PRO-D Því)))
+( (IP-MAT (PP (P 0)
+	      (NP (PRO-D Því)))
 	  (VBDI réðst)
 	  (NP-SBJ (PRO-N hann))
 	  (ADVP-DIR (ADV vestur))

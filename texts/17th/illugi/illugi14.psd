@@ -512,9 +512,9 @@
 	  (IP-INF (VB berjast))
 	  (, ,-,)
 	  (PP (P meðan)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (ADJP (ADJ-N auðið))
-		  (BEDS væri))
+	      (CP-ADV (C 0)
+		      (IP-SUB (ADJP (ADJ-N auðið))
+			      (BEDS væri))))
 	  (. .-.)
 	  (ADJP (ADJ-N Hjarandi))
 	  (VBPI segir)
@@ -698,4 +698,3 @@
 	      (NP (NPR-D Hlymreksför)))
 	  (, :-:)
 	  (CODE {COM:twostars})))
-

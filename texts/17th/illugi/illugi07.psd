@@ -111,12 +111,12 @@
 		  (NP-POS (PRO-A sitt))))
 	  (, ,-,)
 	  (PP (P þótt)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (ADJP (ADJ-N fáir))
-		  (BEDS væri))
-	  (ADVP-TMP (ADV þá))
-	  (NP-SBJ (NS-N skipverjar)
-		  (NP-POS (PRO-G hans)))
+	      (CP-ADV (C 0)
+		      (IP-SUB (ADJP (ADJ-N fáir))
+			      (BEDS væri)
+			      (ADVP-TMP (ADV þá))
+			      (NP-SBJ (NS-N skipverjar)
+				      (NP-POS (PRO-G hans))))))
 	  (. .-.)))
 
 ( (IP-MAT (VBDI Héldu)
@@ -812,4 +812,3 @@
 	      (NP (N-A vetur)))
 	  (. .-.)
 	  (" ")))
-

@@ -685,8 +685,8 @@
 			      (NP (NPR-A Fljótstungu)))))
 	  (VBDI þótti)
 	  (NP-SBJ (PRO-D þeim))
-	  (NP-OB1 (N-N mál))
-	  (IP-INF (TO að) (VB sofa))))
+	  (IP-SMC (NP-PRD (N-N mál))
+		  (IP-INF-SBJ (TO að) (VB sofa)))))
 
 ( (IP-MAT (CONJ og)
 	  (NP-SBJ *con*)

@@ -1,5 +1,5 @@
 CORPUSNAME="icepahc"
-VERSION="0.5"
+VERSION="0.9"
 DIRNAME=$CORPUSNAME"-v"$VERSION"/"
 TEMPFILE="temp.psd"
 rm -rf $DIRNAME
@@ -31,7 +31,7 @@ echo "Generate tagged versions from psd versions"
 
 echo 
 echo "Add README file to top of each psd file"
-for i in $(ls icepahc-v0.5/psd/*.psd);
+for i in $(ls icepahc-v0.9/psd/*.psd);
 do
 echo "/*" >> $TEMPFILE
 cat README >> $TEMPFILE

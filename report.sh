@@ -1,5 +1,5 @@
 CORPUSNAME="icepahc"
-VERSION="0.5"
+VERSION="0.9"
 DIRNAME=$CORPUSNAME"-v"$VERSION"/"
 
 # Generate report

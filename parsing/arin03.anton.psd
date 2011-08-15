@@ -333,7 +333,7 @@
 											(NP-POS (NPR-G Guðs))))))))))))
 	  (. ?-?)))
 
-( (CP-QUE (IP-SUB (VBPI Hefi)
+( (CP-QUE (IP-SUB (HVPI Hefi)
 		  (NP-SBJ (PRO-N ég))
 		  (VBN tamið)
 		  (NP-OB2 (PRO-D mér))
@@ -366,7 +366,7 @@
 			  (NP-POS (PRO-D mínum)))))
 	  (. ?-?)))
 
-( (CP-QUE (IP-SUB (VBPI Hefir)
+( (CP-QUE (IP-SUB (HVPI Hefir)
 		  (NP-SBJ (PRO-D mér))
 		  (VBN farið)
 		  (RP fram)
@@ -374,7 +374,7 @@
 		      (NP (N-D þolinmæði))))
 	  (. ?-?)))
 
-( (CP-QUE (IP-SUB (VBPI Hefi)
+( (CP-QUE (IP-SUB (HVPI Hefi)
 		  (NP-SBJ (PRO-N ég))
 		  (VBN látið)
 		  (IP-INF (NP-SBJ (NS-A þrautir)
@@ -388,7 +388,7 @@
 					(CONJP (ADJR-A þrautseigari))))))
 	  (. ?-?)))
 
-( (CP-QUE (IP-SUB (VBPI Hefi)
+( (CP-QUE (IP-SUB (HVPI Hefi)
 		  (NP-SBJ (PRO-N ég))
 		  (VBN lært)
 		  (IP-INF (IP-INF-1 (TO að)
@@ -582,7 +582,7 @@
 								    (IP-SUB (ADVP *T*-1)
 									    (BEDS væri)
 									    (NP-SBJ (PRO-N það))
-									    (NP-OB2 (N-N ævi)
+									    (NP-PRD (N-N ævi)
 										    (NP-POS (ONE+Q-G einhvers-einhver) (OTHER-G annars)))))))))))
 	  (, ,-,)
 	  (ADVP-TMP-RSP (ADV þá))

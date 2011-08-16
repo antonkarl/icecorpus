@@ -843,6 +843,7 @@
 			      (CONJP (IP-SUB (NP-SBJ *con*-D)
 					     (VBDI hundleiddist))))))
 	  (. .-.)))
+
 ( (FRAG (NP-SBJ (PRO-N Ekkert)
 		(CP-EOP (WNP-1 0)
 			(IP-INF (PP (P við)
@@ -1731,6 +1732,7 @@
 ( (IP-IMP-SPE (VBI fáð$)
 	      (NP-OB2 (PRO-D $ér))
 	      (. .-.)))
+
 ( (IP-MAT (CONJ Og)
 	  (ADVP-LOC (ADV þarna))
 	  (VBDI sat)
@@ -2610,6 +2612,7 @@
 	  (BEPI er)
 	  (NP-PRD (ADJ-N listrænn) (N-N prófarkamaður))
 	  (. .-.)))
+
 ( (FRAG (NP-PRD (D-N Hinn) (ADJ-N fullkomni) (N-N handverksmaður))
 	(PP (P á)
 	    (NP (D-D þessu) (N-D sérsviði)))))
@@ -3443,6 +3446,7 @@
 					(NP (N-D bráð)
 					    (NP-POS (PRO-D sinni))))))))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (PRO-N Ég))
 	  (VBDI hugsaði)
 	  (PP (P með)
@@ -4301,6 +4305,7 @@
 				  (PP (P við)
 				      (NP (NS-D kompu$) (D-D $num))))))
 	  (. .-.)))
+
 ( (IP-MAT (CONJ En)
 	  (ADVP-TMP (ADV strax))
 	  (PP (P þegar)
@@ -5131,6 +5136,7 @@
 									 (PP (P eftir)
 									     (NP (Q-A nokkurt) (N-A sálarstríð))))))))))
 	  (. .-.)))
+
 ( (IP-MAT (PP (P Á)
 	      (NP (ADJ-D tilskildum) (N-D tíma)))
 	  (VBDI kom)
@@ -6030,6 +6036,7 @@
 				   (NP (PRO-N þú))
 				   (ADVP-LOC (ADV hér))))))
 	  (. ?-?)))
+
 ( (IP-MAT (NP-SBJ *exp*)
 	  (PP (P Á)
 	      (PP (P meðan)))
@@ -6895,6 +6902,7 @@
 	  (PP (P á)
 	      (ADVP (ADV meðan)))
 	  (. .-.)))
+
 ( (IP-MAT (ADVP-TMP (NP (PRO-D Því))
 		    (ADVS næst))
 	  (VBDI kallaði)
@@ -7754,6 +7762,7 @@
 				  (BEN verið)
 				  (NP-PRD (ADJ-N ógleymanleg) (N-N stund)))))
 	  (. .-.)))
+
 ( (IP-MAT (CONJ En)
 	  (NP-SBJ *exp*)
 	  (ADVP (ADVR svo)
@@ -8593,6 +8602,7 @@
 													      (PP (P með)
 														  (NP (NS-D gróum))))))))))))))))
 	  (. .-.)))
+
 ( (IP-MAT (PP (P Fyrir)
 	      (ADVP (ADVR svo) (ADV sem))
 	      (NP (NUM-D fimmtán) (NS-D árum)))
@@ -9447,6 +9457,7 @@
 						      (NP-POS (PRO-A mín))))
 					      (VBPI koma)))))))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (PRO-N Ég)
 		  (NP-PRN *ICH*-1))
 	  (VBPI veit)
@@ -10308,6 +10319,7 @@
 			(PP (P í)
 			    (NP (N-D huga$) (D-D $num))))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (PRO-N Ég))
 	  (VBPI veit)
 	  (NEG ekki)
@@ -10440,8 +10452,9 @@
 								 (NP (D-D því)
 								     (CP-REL (WNP-4 0)
 									     (C sem)
-									     (IP-SUB (NP-MSR )
-										     (NP-SBJ *exp*)(NP-MSR (ADVR lengra))
+									     (IP-SUB (NP-MSR *T*-4)
+										     (NP-SBJ *exp*)
+										     (NP-MSR (ADVR lengra))
 										     (VBPI líður)
 										     (PP (P frá)
 											 (NP (N-D andláti)
@@ -11148,8 +11161,9 @@
 							    (NP-PRN (D-N það)
 								    (CP-REL (WNP-6 0)
 									    (C sem)
-									    (IP-SUB (NP-SBJ )
-										    (DODI gerði)(NP-OB1 (PRO-A hann))
+									    (IP-SUB (NP-SBJ *T*-6)
+										    (DODI gerði)
+										    (NP-OB1 (PRO-A hann))
 										    (PP (P að)
 											(NP (N-D höfundi)))))))))))
 	  (. .-.)))
@@ -11170,6 +11184,7 @@
        (NP-VOC (PRO-N þér)
 	       (NP-PRN (NS-N brunnmigar)))
        (. .-.)))
+
 ( (IP-MAT (ADVP-TMP (ADV Áður)
 		    (PP (P en)
 			(CP-CMP (WADVP-1 0)
@@ -12009,6 +12024,7 @@
 	  (PP (P í)
 	      (NP (NS-D lúku$) (D-D $num)))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (PRO-N Ég))
 	  (VBDI áttaði)
 	  (NP-OB1 (PRO-A mig))
@@ -12857,6 +12873,7 @@
 			   (RP af$)
 			   (VAN $greitt)))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (N-N Framganga)
 		  (NP-POS (NPR-G Skúla))
 		  (PP (P í)
@@ -13687,6 +13704,7 @@
 				      (N-D meðalmennskumarki))
 			      (VAN brennd))))
 	  (. .-.)))
+
 ( (CP-QUE-SPE (PP (P Fyrir)
 		  (ADVP (ADV nú)))
 	      (PP (P utan)
@@ -14489,6 +14507,7 @@
 								     (VBDI varðist)
 								     (ADVP (ADVR jafnan))))))))))
 	  (. .-.)))
+
 ( (META (CODE <heading>)
 	(PP (P Í)
 	    (NP (N-D kaffi)))
@@ -15338,6 +15357,7 @@
 	      (IP-INF (TO að)
 		      (VB (VB velja) (CONJ eða) (VB hafna))))
 	  (. .-.)))
+
 ( (IP-MAT (IP-MAT-1 (NP-SBJ (NS-N Blóðsugur$)
 			    (D-N $nar)
 			    (NP-PRN (NS-N Kýr$) (D-N $nar)))
@@ -16219,6 +16239,7 @@
 		  (NP-PRN (NPR-N Sinalco)))
 	  (VBN náð)
 	  (. .-.)))
+
 ( (IP-IMP (VBI Sjá)
 	  (CP-QUE (WADVP (WADV hve))
 		  (C 0)
@@ -17057,6 +17078,7 @@
 		  (VB handtaka)
 		  (NP-OB1 (N-A vörð$) (D-A $inn)))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (PRO-N Við))
 	  (VBDI mættum)
 	  (PP (P á)
@@ -17899,6 +17921,7 @@
 	      (PP (P með)
 		  (NP (NPR-A Tónskóla$) (D-A $nn)))
 	      (. .-.)))
+
 ( (IP-MAT-SPE (NP-SBJ (NPR-N Finnur))
 	      (HVDI hafði)
 	      (ADVP (NP-MSR (PRO-D því))
@@ -18728,6 +18751,7 @@
 										     (PP (P á)
 											 (NP (N-A blokkflautu))))))))))
 	      (. .-.)))
+
 ( (IP-MAT-SPE (CONJ En)
 	      (ADVP (ADV einmitt))
 	      (PP (P með)
@@ -19505,6 +19529,7 @@
 													 (TO að)
 													 (RD verða)))))))))
 	      (. .-.)))
+
 ( (IP-MAT-SPE (CONJ Og)
 	      (ADVP (ADV þannig))
 	      (BEPI er)
@@ -20366,6 +20391,7 @@
 		  (NP (N-A búshluta)
 		      (NP-POS (PRO-A sinn))))
 	      (. .-.)))
+
 ( (IP-MAT-SPE (NP-SBJ (PRO-D Mér))
 	      (VBPI sýnist)
 	      (IP-INF-SPE (NP-SBJ (N-N rekstur$)
@@ -21203,6 +21229,7 @@
 		  (VB óttast)
 		  (NP-OB1 (OTHER-A annað)))
 	  (. :-:)))
+
 ( (IP-MAT (PP (P Ef)
 	      (CP-ADV (C 0)
 		      (IP-SUB (NP-SBJ (N-N hjól$) (D-N $ið))
@@ -22059,6 +22086,7 @@
 				    (NP-SBJ (NS-N kvenfólk))
 				    (ADVP (ADV yfirleitt))))))
 	  (. .-.)))
+
 ( (IP-MAT (NP-PRN-1 (PRO-N Sjálf))
 	  (VBPI á)
 	  (NP-SBJ (PRO-N hún)
@@ -22966,6 +22994,7 @@
 		  (CONJP (CONJ og)
 			 (NP (N-A afturbrett$) (D-A $ið)))))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (D-N Þessir) (NS-N hlutir))
 	  (BEPI eru)
 	  (VAN samtengdir)
@@ -23885,6 +23914,7 @@
 	  (BEDI voru)
 	  (VBN sofnuð)
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (PRO-N Ég))
 	  (VBDI renndi)
 	  (NP-OB1 (PRO-D mér))
@@ -24822,3 +24852,4 @@
 	  (PP (P á)
 	      (NP (ADJ-D miðju) (N-D gólfi)))
 	  (. .-.)))
+

@@ -505,10 +505,7 @@
 			  (BEPI ert)))
 	  (. .-.)))
 
-( (IP-MAT (PP (P Þegar)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (ADVP (ADV jafn))
-		  (VBDI snart))
+( (IP-MAT (ADVP (ADV Þegar) (ADV jafn) (ADV snart))
 	  (NP-SBJ (N-A féngu) (Q-N allir))
 	  (IP-INF (TO að) (VB sjá))
 	  (BEPI er)

@@ -836,6 +836,7 @@
 							(NP-OB1 (ADJP (ADJ-A einfalda) (CONJ en) (ADJ-A aðlaðandi))
 								(N-A heimsmynd)))))))))
 	  (. .-.)))
+
 ( (IP-MAT-SPE (NP-SBJ (ADJ-D Borgaralegu) (N-D þjóðskipulagi))
 	      (BEDI var)
 	      (VAN komið)
@@ -1690,6 +1691,7 @@
 									       (PP (P í)
 										   (NP (N-A dulhyggju))))))))))
 	      (. .-.)))
+
 ( (IP-MAT (NP-SBJ (NPR-N Andri))
 	  (VBDI sagðist)
 	  (IP-INF (IP-INF-1 (MD vilja)
@@ -2555,6 +2557,7 @@
 						   (N-N búningur)
 						   (NP-POS (NPR-G (NPR21 Buffaló) (NPR22 Bills)))))))))
 	  (. .-.)))
+
 ( (FRAG (ADJP (ADJ-N Undarlegt))
 	(CP-QUE (WADVP-1 (WADV hvernig))
 		(C 0)
@@ -3240,6 +3243,7 @@
 													 (, -)
 													 (NP-PRN (NPR-N Hversdagshöll$) (D-N $in)))))))))))))))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (PRO-N Hann))
 	  (HVDI hafði)
 	  (ADVP-TMP (ADV aldrei))
@@ -4015,6 +4019,7 @@
 			  (PP (P á)
 			      (NP (PRO-A mig)))))
 	  (. ?-?)))
+
 ( (IP-MAT (NP-VOC (NPR-N bylgja))
 	  (, ,-,)
 	  (VBDI korraði)
@@ -4223,7 +4228,8 @@
 		(ADV iðulega)
 		(CP-REL (WADVP-3 0)
 			(C sem)
-			(IP-SUB (IP-SUB (ADVP-TMP )(NP-SBJ (NPR-N Bylgja) (CONJ og) (NPR-N Hringur))
+			(IP-SUB (IP-SUB (ADVP-TMP *T*-3)
+					(NP-SBJ (NPR-N Bylgja) (CONJ og) (NPR-N Hringur))
 					(RP út$)
 					(VBPI $mála)
 					(PP (P fyrir)
@@ -4231,9 +4237,10 @@
 					(NP-OB1 (Q-A eitthvað)
 						(CP-REL (WNP-4 0)
 							(C sem)
-							(IP-SUB (NP-SBJ )
+							(IP-SUB (NP-SBJ *T*-4)
 								(HVPI hefur)
-								(DON gerst)))))(CONJP (CONJ og)
+								(DON gerst)))))
+				(CONJP (CONJ og)
 				       (IP-SUB (NP-SBJ (PRO-N ég))
 					       (VBPI reyni)
 					       (IP-INF (TO að)
@@ -4241,7 +4248,8 @@
 						       (NP-OB1 (PRO-D því)
 							       (CP-REL (WADVP-5 (WADV hvað))
 								       (C 0)
-								       (IP-SUB (IP-SUB (NP-MSR )(NP-SBJ (PRO-N ég))
+								       (IP-SUB (IP-SUB (NP-MSR *T*-5)
+										       (NP-SBJ (PRO-N ég))
 										       (VBPI kem)
 										       (ADVP (ADV gersamlega))
 										       (PP (P af)
@@ -4249,9 +4257,10 @@
 									       (, ,-,)
 									       (CONJP (IP-SUB (NP-SBJ-6 *con*)
 											      (VBPI þykist)
-											      (IP-INF (NP-SBJ )
+											      (IP-INF (NP-SBJ *T*-6)
 												      (VB muna))))
-									       (, ,-,)(CONJP (IP-SUB (NP-SBJ *con*)
+									       (, ,-,)
+									       (CONJP (IP-SUB (NP-SBJ *con*)
 											      (VBPI læt)
 											      (IP-INF (NP-SBJ (PRO-A mig))
 												      (VB ráma)
@@ -4760,6 +4769,7 @@
 			  (NP-MSR (PRO-D þeim))
 			  (VBPI nemur)))
 	  (. .-.)))
+
 ( (IP-MAT (ADVP (ADV Bara))
 	  (NP-SBJ (PRO-N ég))
 	  (HVDS hefði)
@@ -5527,6 +5537,7 @@
 	  (PP (P á)
 	      (NP (NS-A fætur)))
 	  (. .-.)))
+
 ( (CP-QUE-SPE (IP-SUB-SPE (VBPI Þarft)
 			  (NP-SBJ (PRO-N þú))
 			  (IP-INF-SPE (TO að) (VB skreppa)))
@@ -5645,7 +5656,8 @@
 				 (PP (P og)
 				     (CP-CMP (WADVP-3 0)
 					     (C 0)
-					     (IP-SUB (ADVP )(NP-SBJ (N-N hrafnsvængur))))))))
+					     (IP-SUB (ADVP *T*-3)
+						     (NP-SBJ (N-N hrafnsvængur))))))))
 	  (, ,-,)
 	  (CONJP (IP-MAT=1 (VAN búið)
 			   (IP-INF (TO að)
@@ -6376,6 +6388,7 @@
 	      (IP-MAT-PRN (VBPI víprar)
 			  (NP-SBJ (N-N mamma)))
 	      (. .-.)))
+
 ( (IP-MAT (NP-SBJ (NS-N Börn$) (D-N $in))
 	  (VBPI safnast)
 	  (PP (P að)
@@ -7121,6 +7134,7 @@
 			      (PP (P á)
 				  (NP (NS-A fætur)))))))
 	  (. .-.)))
+
 ( (FRAG (NP (N-N Malið)
 	    (CODE *SSS*)
 	    (D-N $ið))
@@ -7956,6 +7970,7 @@
 					(PP (P í)
 					    (NP (N-A hún$) (D-A $inn)))))))
 	  (. .-.)))
+
 ( (IP-MAT-SPE (NP-VOC (NPR-N Manni))
 	      (NP-VOC (ADJR-N lygari))
 	      (, ,-,)
@@ -8659,6 +8674,7 @@
 				  (PP (P í)
 				      (NP (N-A líf)))))))
 	  (. .-.)))
+
 ( (IP-MAT-SPE (NP-TMP (ONE-D Einu$) (N-D $sinni))
 	      (BEDI var)
 	      (NP-SBJ (Q-N enginn)
@@ -9464,6 +9480,7 @@
 ( (FRAG (RDN orðinn)
 	(NP (NPR-N Supermann))
 	(. .-.)))
+
 ( (QTP (NP (NPR-N Supermann))
        (. ?-?)))
 
@@ -10300,6 +10317,7 @@
 	  (NP-SBJ (N-D verk$) (D-D $inu))
 	  (NP-MSR (Q-N lítt))
 	  (. .-.)))
+
 ( (CP-QUE-SPE (WNP-1 (WPRO-N Hver))
 	      (IP-SUB-SPE (NP-SBJ *T*-1)
 			  (VBPI á)
@@ -11130,6 +11148,7 @@
 			      (IP-SUB (NP-SBJ (PRO-N ég))
 				      (VBDI leiðrétti)))))
 	  (. .-.)))
+
 ( (IP-MAT (ADVP (ADV Samt))
 	  (VBPI dreymir)
 	  (NP-SBJ (PRO-A mig))
@@ -11516,8 +11535,9 @@
 	   (NP-PRN-ELAB (NPR-N Mamma)
 			(CP-REL-SPE (WNP-2 0)
 				    (C sem)
-				    (IP-SUB-SPE (IP-SUB-SPE (NP-SBJ )
-							    (VBPI tínir)(NP-OB1 (NS-A bein$) (D-A $in))
+				    (IP-SUB-SPE (IP-SUB-SPE (NP-SBJ *T*-2)
+							    (VBPI tínir)
+							    (NP-OB1 (NS-A bein$) (D-A $in))
 							    (PP (P úr)
 								(NP (N-D fisk$) (D-D $inum))))
 						(CONJP (CONJ og)
@@ -11918,6 +11938,7 @@
 	  (VBDS stoppuðu)
 	  (NP-OB1 (N-A blóðrás$) (D-A $ina))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ *con*)
 	  (VBDI Lögðust)
 	  (ADVP-TMP (ADV síðan))
@@ -12704,6 +12725,7 @@
 			      (IP-SUB (NP-SBJ (N-N heimur$) (D-N $inn))
 				      (VBPI farist))))
 	  (. .-.)))
+
 ( (CP-QUE (IP-SUB (NP-SBJ *exp*)
 		  (VBDI Leið)
 		  (PP (P yfir)
@@ -13521,6 +13543,7 @@
 	      (NP (NS-A mörk)
 		  (NP-POS (D-G hins) (ADJ-G byggingarsamþykkta) (N-G heims))))
 	  (. .-.)))
+
 ( (IP-MAT-SPE (NP-SBJ (N-N Bróðir)
 		      (NP-POS (PRO-N minn)))
 	      (MDPI getur)
@@ -14496,6 +14519,7 @@
 	  (Q-A báða)
 	  (NP-OB1 (NS-A orð))
 	  (. .-.)))
+
 ( (QTP (NP (NPR-N Sverrir) (NPR-N Hákon))
        (ADVP (ADV náttúrlega))
        (NP (N-N þingmaður))
@@ -15300,6 +15324,7 @@
 	  (VBDI komu)
 	  (NP-SBJ (OTHERS-N önnur) (NS-N hjón))
 	  (. .-.)))
+
 ( (IP-MAT (ADVP-TMP (ADV Strax))
 	  (NP-TMP (ADJS-A næsta) (N-A dag))
 	  (VBDI flýttum)
@@ -16099,6 +16124,7 @@
 	      (NP-SBJ (PRO-N $ðu))
 	      (NP-OB1 (N-A sögu))
 	      (. .-.)))
+
 ( (QTP (NP (N-N Seremónía$)
 	   (D-N $n)
 	   (PP (P við)
@@ -16449,6 +16475,7 @@
 						       (IP-SUB-SPE (NP-SBJ *T*-2)
 								   (VBDI (VBDI titraði) (CONJ og) (VBDI glóði))))))))
 	      (. .-.)))
+
 ( (INTJP (INTJ ææææææ) (INTJ óóóóó)))
 
 ( (IP-MAT-SPE (NP-TMP (ONE-A Einn) (ADJ-A góðan) (N-A veðurdag))
@@ -16808,6 +16835,7 @@
 			       (PP (P fyrir)
 				   (NP (NS-A börn)))))
        (. .-.)))
+
 ( (IP-IMP (VBDI Heyr$)
 	  (NP-SBJ (PRO-N $ðu))
 	  (CODE {COM:threedots})))
@@ -17588,6 +17616,7 @@
 		  (, ,-,)
 		  (ADVP (ADV hátt) (CONJ og) (ADV örvæntingarfullt)))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (PRO-N Ég))
 	  (VBDI læðist)
 	  (RP fram)
@@ -18323,6 +18352,7 @@
 				  (CONJP (CONJ og)
 					 (NP (N-A morgunkul$) (D-A $ið))))))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (NS-N Safnverðir))
 	  (PP (P með)
 	      (NP (N-D gamanyrði)))
@@ -18600,8 +18630,9 @@
 			(N-A ár)
 			(CP-REL (WNP-6 0)
 				(C sem)
-				(IP-SUB (NP-SBJ )
-					(RDPI verður)(ADJP (ADJ-N blessað) (CONJ og) (ADJ-N heilagt) (CONJ og) (ADJ-N eilíft))
+				(IP-SUB (NP-SBJ *T*-6)
+					(RDPI verður)
+					(ADJP (ADJ-N blessað) (CONJ og) (ADJ-N heilagt) (CONJ og) (ADJ-N eilíft))
 					(NP-MSR (ADVR svo)
 						(ADV lengi)
 						(CP-CMP (WADVP-7 0)
@@ -19035,6 +19066,7 @@
 		      (NP-POS (PRO-D mínu))))
 	      (" ")
 	      (. .-.)))
+
 ( (IP-MAT (NP-SBJ (N-N Nútím$) (D-N $inn))
 	  (BEDI var)
 	  (NP-PRD (N-N samband))
@@ -19848,6 +19880,7 @@
 	  (PP (P með)
 	      (NP (N-D tóbaki) (CONJ og) (NS-D árnaðaróskum)))
 	  (. .-.)))
+
 ( (IP-MAT (PP (P Í)
 	      (NP (N-A rauðabít$) (D-A $ið)))
 	  (NP-TMP (N-A morgun$) (D-A $inn) (ADV eftir))
@@ -20699,6 +20732,7 @@
 	  (VBN runnin)
 	  (RP upp)
 	  (. .-.)))
+
 ( (IP-MAT (IP-PPL (CODE *XXX*)
 		  (NP-SBJ (PRO-D Öllum))
 		  (VBN lokið))
@@ -21443,6 +21477,7 @@
 	  (. :-:)))
 
 ( (QTP (FW Khom) (FW with) (FW mí) (, ,-,) (FW plís) (. .-.)))
+
 ( (CP-QUE (IP-SUB (VBDI Ætlaði)
 		  (NP-SBJ (PRO-N hann))
 		  (IP-INF (TO að)
@@ -22062,6 +22097,7 @@
 		  (PP (P eftir)
 		      (NP (N-D tjaldstæði))))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (Q-N Hver) (N-N trjálundur$) (D-N $inn))
 	  (VBDI bauð)
 	  (NP-OB1 (PRO-A sig))
@@ -22198,6 +22234,7 @@
 	  (VBDI fluttu)
 	  (NP-OB1 (N-A skógarsynfóníu$) (D-A $na))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (NS-N Maurar))
 	  (VBDI streymdu)
 	  (PP (RP upp)
@@ -23006,6 +23043,7 @@
 	(PP (P í)
 	    (NP (N-A svörð$) (D-A $inn)))
 	(. .-.)))
+
 ( (CP-QUE-SPE (IP-SUB-SPE (BEPI Ert)
 			  (NP-SBJ (PRO-N þú))
 			  (NP-PRD (PRO-N þú)))
@@ -23883,3 +23921,4 @@
 	  (VBDI blakaði)
 	  (NP-OB1 (N-D væng))
 	  (. .-.)))
+

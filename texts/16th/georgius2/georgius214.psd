@@ -10,7 +10,9 @@
 			  (VAN sagt)))
 	  (. .-.)))
 
-( (IP-MAT (CP (ADV á) (C meðan) (VBDI kom))
+( (IP-MAT (PP (P á)
+	      (ADVP (ADV meðan)))
+	  (VBDI kom)
 	  (NP-SBJ (N-N engill)
 		  (NP-POS (NPR-G guðs)))
 	  (PP (RP inn)
@@ -376,9 +378,9 @@
 
 ( (IP-MAT (CONJ En)
 	  (PP (P þegar)
-	      (CP-ADV (C 0)))
-	  (IP-SUB (ADVP (ADV jafn))
-		  (VBDI snart))
+	      (CP-ADV (C 0)
+		      (IP-SUB (ADVP (ADV jafn))
+			      (VBDI snart))))
 	  (VBDI óx)
 	  (NP-SBJ (N-N súlan))
 	  (PP (RP út)
@@ -643,4 +645,3 @@
 	  (NP-SBJ (ADJ-N heilagur) (NPR-N Georgíus))))
 
 ( (IP-MAT (CONJ og) (VBN sest) (RP niður) (. .-.)))
-

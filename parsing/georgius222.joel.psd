@@ -798,8 +798,10 @@
 								      (, .-.)
 								      (ADVP-RSP (ADV þá))
 								      (HVPI hefur)
-								      (NP-OB2 (PRO-G yður))
-								      (NP-SBJ (N-N heiður) (CONJ og) (N-N æra))
+								      (NP-SBJ (NP-POS (PRO-N yður))
+									      (N-N heiður)
+									      (CONJ og)
+									      (N-N æra))
 								      (NP-OB1 (ONE-A einn) (ADJ-A stuttan) (N-A enda)))))))))
 	  (. .-.)))
 

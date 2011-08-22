@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP-SBJ (NPR-N Haraldur)
 		  (NP-PRN (D-N hinn) (ADJR-N hárfagri))
 		  (NP-PRN (N-N son)
@@ -833,6 +834,7 @@
 	  (PP (P um)
 	      (NP (N-A tíma)))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ *exp*)
 	  (ADVP (ADVR Svo)
 		(CP-DEG *ICH*-1))
@@ -1676,6 +1678,7 @@
 	      (NP (NS-G bræðra)
 		  (NP-POS (PRO-G sinna))))
 	  (. .-.)))
+
 ( (IP-MAT (CONJ En)
 	  (NP-SBJ (CODE *SSS*)
 		  (N-N veislan))
@@ -2540,6 +2543,7 @@
 	  (PP (P að)
 	      (NP (PRO-D sinni)))
 	  (. .-.)))
+
 ( (IP-MAT (VBDI Fór)
 	  (NP-SBJ (PRO-N hann))
 	  (ADVP-TMP (ADV nú))
@@ -3474,6 +3478,7 @@
 	  (PP (P í)
 	      (NP (NPR-D Hraunhöfn)))
 	  (. .-.)))
+
 ( (IP-MAT (VBDI Spurði)
 	  (NP-SBJ (N-N konungur) (CONJ og) (N-N jarl))
 	  (PP (P til)
@@ -4323,6 +4328,7 @@
 			(CONJP (CONJ og)
 			       (ADJX (ADJS-N fegurstur)))))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (PRO-N Hann))
 	  (HVDI hafði)
 	  (NP-OB1 (Q-A mikil) (NS-A mæti))
@@ -5190,6 +5196,7 @@
 		  (ADVP (ADV mjög) (ADV illa))
 		  (BE vera))
 	  (. .-.)))
+
 ( (IP-MAT (VBDI Liðu)
 	  (ADVP-TMP (ADV nú))
 	  (ADVP (ADVR svo)
@@ -5997,6 +6004,7 @@
 			  (PP (P að)
 			      (NP (NPR-D Fossi))))))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (PRO-N Þau)
 		  (NP-PRN (NS-N mæðgin))
 		  (Q-N öll)
@@ -6870,6 +6878,7 @@
 	  (NP-OB2 (PRO-A þá))
 	  (NP-OB1 (Q-G margs))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (PRO-N Þeir))
 	  (BEDI voru)
 	  (ALSO og)
@@ -7789,6 +7798,7 @@
 			  (PP (P frá)
 			      (NP (NPR-D Ingjaldshvoli)))))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (PRO-D Henni))
 	  (BEDI var)
 	  (VAN sagt)
@@ -8715,6 +8725,7 @@
 	  (DODI gerðu)
 	  (NP-SBJ (PRO-N þeir))
 	  (. .-.)))
+
 ( (IP-MAT (NP-OB1 (NP-POS (PRO-A Sína))
 		  (N-A öxi))
 	  (HVDI hafði)
@@ -9567,6 +9578,7 @@
 						(VB sigrast)
 						(MDDS mundi))))))
 	  (. .-.)))
+
 ( (IP-MAT (ADVP (ADV Þó))
 	  (VBDI þóttist)
 	  (NP-SBJ-1 (NPR-N Víglundur))
@@ -10110,7 +10122,8 @@
 				     (NS-A menn)
 				     (CP-REL (WNP-1 0)
 					     (C sem)
-					     (IP-SUB (NP-SBJ )(PP (P með)
+					     (IP-SUB (NP-SBJ *T*-1)
+						     (PP (P með)
 							 (NP (PRO-D þeim)))
 						     (HVDI höfðu)
 						     (VBN fallið))))))
@@ -10443,6 +10456,7 @@
 					 (RP á)
 					 (BEDI voru)))))
 	  (. .-.)))
+
 ( (IP-MAT (VBDI Reið)
 	  (NP-SBJ (PRO-N hann))
 	  (PP (P til)
@@ -11358,6 +11372,7 @@
 		    (TO að)
 		    (BE vera))
 	  (. .-.)))
+
 ( (IP-MAT (VBDI Gekk)
 	  (NP-SBJ (PRO-N hún))
 	  (ADVP-TMP (ADV þá))
@@ -11861,9 +11876,10 @@
 		      (NP-POS (PRO-G þeirra)
 			      (NP-PRN (NPR-G Ketilríðar) (CONJ og) (NPR-G Hólmkels))))
 		  (CONJP (CONJ og)
-			 (NP )
-			 (PRO-N það)(CP-THT-PRN )(ADVP (CODE *XXX*)
-			       (ADV með))
+			 (NP (PRO-N það)
+			     (CP-THT-PRN *ICH*-2)
+			     (ADVP (CODE *XXX*)
+				   (ADV með)))
 			 (CP-THT-PRN-2 (C að)
 				       (IP-SUB (NP-OB1 (D-A þetta) (N-A fé))
 					       (VBPI gefur)
@@ -12277,6 +12293,7 @@
 					 (BEDS væru)
 					 (NP-PRN-3 (D-N hinir) (ADJ-N ókunnu) (NS-N menn))))))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (NPR-N Sigurður))
 	  (VBDI mælti)
 	  (, :-:)
@@ -13126,6 +13143,7 @@
 		 (IP-MAT=1 (ADVP (ADV enn))
 			   (NP-OB1 (D-A þessa))))
 	  (, :-:)))
+
 ( (IP-MAT (NP-SBJ-1 *exp*)
 	  (ADVP (NP (PRO-D Því))
 		(ADVS næst))
@@ -14057,6 +14075,7 @@
 	  (VBDI kvað)
 	  (. :-:)
 	  (CODE {COM:poetry_omitted})))
+
 ( (IP-MAT (NP-SBJ (NPR-N Örn))
 	  (VBDI tefldi)
 	  (NP-OB1 (PRO-A það)
@@ -15067,3 +15086,4 @@
 	  (. .-.)))
 
 ( (INTJP (INTJ Amen) (. .-.)))
+

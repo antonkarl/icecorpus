@@ -9479,9 +9479,10 @@
 					     (, ,-,)
 					     (PP (ADVP (ADV utan-utan))
 						 (P til-til))))
-			      (CONJP (IP-SUB-XXX=1 (NP-SBJ (N-N veröld$-veröld) (D-N $in-hinn) (Q-N öll-allur))
-						   (PP (P í-í)
-						       (NP (ONE-D einum-einn) (N-D loga-logi))))))))
+			      (CONJP (IP-SUB=1 (CODE *XXX*)
+					       (NP-SBJ (N-N veröld$-veröld) (D-N $in-hinn) (Q-N öll-allur))
+					       (PP (P í-í)
+						   (NP (ONE-D einum-einn) (N-D loga-logi))))))))
 	  (. .-.))
   (ID 1630.GERHARD.REL-OTH,.459))
 
@@ -14798,3 +14799,4 @@
 
 ( (INTJP (INTJ Amen-amen) (. .-.))
   (ID 1630.GERHARD.REL-OTH,.701))
+

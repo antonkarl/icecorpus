@@ -1,4 +1,3 @@
-
 ( (IP-MAT (CODE <P_235>)
 	  (ADVP-LOC (ADV Hér-hér))
 	  (VBPI hefst-hefja)
@@ -6469,7 +6468,8 @@
 			  (IP-SUB-SPE (NP-SBJ (NPR-N Jakob-jakob))
 				      (VBDI heyrði-heyra)
 				      (CP-THT-SPE (C að-að)
-						  (IP-SUB-SPE (NP-SBJ-XXX-1 *exp*)
+						  (IP-SUB-SPE (CODE *XXX*)
+							      (NP-SBJ-1 *exp*)
 							      (NP-1 (N-N korn-korn))
 							      (BEDI var-vera)
 							      (PP (P á-á)

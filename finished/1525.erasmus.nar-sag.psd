@@ -1,3 +1,4 @@
+
 ( (QTP (CODE <heading>)
        (NP (ADJ-N 1.-fyrstur) (N-N kapítuli-kapítuli))
        (CODE </heading>))
@@ -5283,8 +5284,9 @@
 	    (BEDI voru-vera)
 	    (VAN farin-fara)
 	    (CONJP (CONJ og-og)
-		   (IP-MAT-PRN-XXX=1 (ADVP (ADV sundur-sundur))
-				     (VAN brotin-brjóta)))
+		   (IP-MAT-PRN=1 (CODE *XXX*)
+				 (ADVP (ADV sundur-sundur))
+				 (VAN brotin-brjóta)))
 	    (PP (P af-af)
 		(NP (NS-D volkum-volk)
 		    (NP-POS (D-G þess-sá)
@@ -5305,8 +5307,9 @@
 	      (NP-SBJ (PRO-N hann-hann))
 	      (VBN snúið-snúa)
 	      (NP-OB1 (Q-D öllu-allur) (D-D því-sá) (N-D fólki-fólk))
-	      (PP-XXX-HOWHIGH (P í-í)
-			      (NP (VAN-D greindum-greina) (N-D stað-staður)))
+	      (PP (CODE *XXX*-HOWHIGH)
+		  (P í-í)
+		  (NP (VAN-D greindum-greina) (N-D stað-staður)))
 	      (PP (P til-til)
 		  (NP (NP-POS (PRO-G sinnar-sinn))
 		      (N-G trúar-trú)))
@@ -9703,3 +9706,4 @@
 	  (INTJ Amen-amen)
 	  (. .-.))
   (ID 1525.ERASMUS.NAR-SAG,.462))
+

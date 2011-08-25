@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP-PRD (NPR-N Þorgrímur))
 	  (VBDI hét)
 	  (NP-SBJ (N-N maður))
@@ -905,6 +906,7 @@
 			  (RP að)
 			  (BE vera)))
 	  (. .-.)))
+
 ( (IP-MAT (CONJ En)
 	  (NP-SBJ (NPR-N Helgi))
 	  (VBDI svaraði)
@@ -1847,6 +1849,7 @@
 						  (ADVP-LOC (ADV hér))))))
 	      (. .-.)
 	      (" ")))
+
 ( (IP-MAT (ADVP-TMP (ADV Þá))
 	  (VBDI mælti)
 	  (NP-SBJ (NPR-N Þorbjörn))
@@ -2155,9 +2158,7 @@
 		  (VB fara)
 		  (PP (P að)
 		      (NP (PRO-D þeim)
-			  (NP-PRN (NPR-D Þorbjarnarso$)
-				  (CODE *SSS*)
-				  (NPR-D $num))))
+			  (NP-PRN (NPR-D Þorbjarnarsonum))))
 		  (PP (P með)
 		      (NP (NUM-A þrjá)
 			  (NS-A tigi)
@@ -2200,9 +2201,7 @@
 			  (RP fram)
 			  (PP (P hjá)
 			      (NP (PRO-D þeim)
-				  (NP-PRN (NPR-D Þorgrímsso$)
-					  (CODE *SSS*)
-					  (NPR-D $num))))))
+				  (NP-PRN (NPR-D Þorgrímssonum))))))
 	  (. .-.)))
 
 ( (IP-MAT (ADVP-TMP (ADV Þá))
@@ -2753,6 +2752,7 @@
 	      (IP-MAT-PRN (VBDI sagði)
 			  (NP-SBJ (NPR-N Þorbjörn)))
 	      (. .-.)))
+
 ( (IP-MAT (ADVP-TMP (ADV Síðan))
 	  (VBPI ríða)
 	  (NP-SBJ (PRO-N þeir)
@@ -3701,6 +3701,7 @@
 	  (RP út)
 	  (ADVP-TMP (ADV þegar))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (PRO-N Hann))
 	  (VBDI þekkti)
 	  (ADVP-TMP (ADV þegar))
@@ -4610,13 +4611,12 @@
 	  (ADVP-LOC (Q+ADV hvergi))
 	  (RP yfir)
 	  (. .-.)))
+
 ( (IP-MAT (ADVP-TMP (ADV Þá))
 	  (VBDI hljóp)
 	  (NP-SBJ (NPR-N Gunnar))
 	  (PP (P yfir)
-	      (NP (N-A gjána)
-		  (CODE *SSS*)
-		  (D-A $na)))))
+	      (NP (N-A gjá$) (D-A $na)))))
 
 ( (IP-MAT (CONJ en)
 	  (NP-SBJ (NS-N fylgdarmenn)
@@ -4762,9 +4762,7 @@
 			  (MDDS skyldi)
 			  (RP yfir)
 			  (VB komast)
-			  (NP-OB1 (N-A gjána)
-				  (CODE *SSS*)
-				  (D-A $na))
+			  (NP-OB1 (N-A gjá$) (D-A $na))
 			  (PP (P með)
 			      (NP (N-A byrði)
 				  (NP-POS (PRO-A sína))))))
@@ -5497,6 +5495,7 @@
 				      (BEDI var)
 				      (VAN slokknaður)))))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (NPR-N Gunnar))
 	  (VBDI stóð)
 	  (ADVP-TMP (ADV þá))
@@ -6464,6 +6463,7 @@
 	  (CONJP (IP-MAT=1 (Q-N allir)
 			   (ADJP (ADV vel) (ADJ-N vopnaðir))))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (PRO-N Þeir))
 	  (VBDI riðu)
 	  (PP (ADV þar)
@@ -6628,16 +6628,12 @@
 
 ( (IP-MAT (VBDI Leið)
 	  (RP af)
-	  (NP-SBJ (N-N veislan)
-		  (CODE *SSS*)
-		  (D-N $n))
+	  (NP-SBJ (N-N veisla$) (D-N $n))
 	  (. .-.)))
 
 ( (IP-MAT (CONJ En)
 	  (PP (P eftir)
-	      (NP (N-A veisluna)
-		  (CODE *SSS*)
-		  (D-A $na)))
+	      (NP (N-A veislu$) (D-A $na)))
 	  (VBDI bauð)
 	  (NP-SBJ (N-N jarl))
 	  (NP-OB2 (NPR-D Gunnari))
@@ -6651,9 +6647,7 @@
 		    (NP-OB1 (PRO-D því)))
 	  (CONJP (CONJ og)
 		 (IP-MAT=1 (ADVP-TMP (ADV þá))
-			   (NP-OB1 (N-A boðið)
-				   (CODE *SSS*)
-				   (D-A $ið))))
+			   (NP-OB1 (N-A boð$) (D-A $ið))))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (NPR-N Bárður))
@@ -6931,9 +6925,7 @@
 	  (CP-ADV (WADVP-1 0)
 		  (C sem)
 		  (IP-SUB (ADVP *T*-1)
-			  (NP-SBJ (N-N glíman)
-				  (CODE *SSS*)
-				  (D-N $n))
+			  (NP-SBJ (N-N glíma$) (D-N $n))
 			  (BEDI var)
 			  (VAN sett)))
 	  (. .-.)))
@@ -6964,9 +6956,7 @@
 				      (HVDI hafði)
 				      (VBN frétt)
 				      (CP-THT (C að)
-					      (IP-SUB (NP-SBJ (N-N glíman)
-							      (CODE *SSS*)
-							      (D-N $n))
+					      (IP-SUB (NP-SBJ (N-N glíma$) (D-N $n))
 						      (BEDI var)
 						      (VAN lögð)))))))))
 
@@ -7288,9 +7278,7 @@
 		      (IP-SUB (NP-SBJ (NS-N fætur)
 				      (NP-POS (NPR-G Gunnars)))
 			      (VBDI námu)
-			      (NP-OB1 (N-A helluna)
-				      (CODE *SSS*)
-				      (D-A $na)))))
+			      (NP-OB1 (N-A hellu$) (D-A $na)))))
 	  (. .-.)))
 
 ( (IP-MAT (ADVP-TMP (ADV Þá))
@@ -7321,9 +7309,7 @@
 	  (ADJP-SPR (ADJ-N öfugur))
 	  (PP (RP upp)
 	      (P yfir)
-	      (NP (N-A helluna)
-		  (CODE *SSS*)
-		  (D-A $na)))))
+	      (NP (N-A hellu$) (D-A $na)))))
 
 ( (IP-MAT (CONJ og)
 	  (PP (P í)
@@ -7416,6 +7402,7 @@
 				  (BEDI var)))
 		  (NP-POS (N-G vetrar$) (D-G $ins)))
 	  (. .-.)))
+
 ( (IP-MAT (VBDI Þótti)
 	  (NP-SBJ (NPR-N Gunnar))
 	  (IP-INF (VBN unnið)
@@ -7873,9 +7860,7 @@
 	      (" ")))
 
 ( (IP-MAT-SPE (" ")
-	      (NP-SBJ (D-A Þa$)
-		      (CODE *SSS*)
-		      (D-A $nn))
+	      (NP-SBJ (D-A Þann))
 	      (MDPI skal)
 	      (RP upp)
 	      (VB taka)
@@ -8334,6 +8319,7 @@
 	  (PP (P á)
 	      (NP (N-A veisluna)))
 	  (. .-.)))
+
 ( (IP-MAT (VBDI Tók)
 	  (NP-SBJ (N-A jarl$) (D-A $inn))
 	  (NP-OB1 (PRO-D honum))
@@ -8454,8 +8440,7 @@
 
 ( (IP-MAT (VBDI Leið)
 	  (RP af)
-	  (NP-SBJ (CODE *SSS*)
-		  (N-N veislan))))
+	  (NP-SBJ (N-N veisla$) (D-N $n))))
 
 ( (IP-MAT (CONJ og)
 	  (VBDI fór)
@@ -9244,6 +9229,7 @@
 			    (VBDI fékk)
 			    (NP-OB1 (N-A fæð) (Q-A mikla))))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (PRO-N Hann))
 	  (VBDI reið)
 	  (ADVP-TMP (ADV þá))
@@ -9876,3 +9862,4 @@
 	  (ADVP-LOC (ADV þar))
 	  (NP-SBJ (D-D þessari) (N-D sögu))
 	  (. .-.)))
+

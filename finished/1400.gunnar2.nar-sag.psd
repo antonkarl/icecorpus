@@ -1,3 +1,4 @@
+
 ( (IP-MAT (VBDI Ætluðu)
 	  (ADVP-TMP (ADV þá))
 	  (NP-SBJ (Q-N allir))
@@ -271,6 +272,7 @@
 	  (PP (P að)
 	      (NP (N-D bónda)))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (NPR-N Þorgrímur))
 	  (VBPI roðnar)
 	  (NP-MSR (ADV mjög))))
@@ -967,18 +969,15 @@
 				  (CP-REL (WNP-2 0)
 					  (C að)
 					  (IP-SUB (NP-TMP *T*-2)
-						  (NP-SBJ (N-N veislan)
-							  (CODE *SSS*)
-							  (D-N $n))
+						  (NP-SBJ (N-N veisla$) (D-N $n))
 						  (BEDI var)
 						  (RP á$)
-						  (CODE *SSS*)
-						  (VAN ákveðin)))))))
+						  (VAN $kveðin)))))))
 	  (VBDI bjó)
 	  (NP-SBJ (NPR-N Bárður))
 	  (NP-OB1 (PRO-A sig))
 	  (PP (P til)
-	      (NP (N-G veislun$) (D-G $nar)))
+	      (NP (N-G veislu$) (D-G $nnar)))
 	  (. .-.)))
 
 ( (IP-MAT (ADVP-TMP (ADV Þá))
@@ -1119,8 +1118,7 @@
 	      (NP (NPR-G Gunnars)))
 	  (, :-:)
 	  (" ")
-	  (CP-QUE-SPE (IP-SUB-SPE (BEPI Ertu)
-				  (CODE *SSS*)
+	  (CP-QUE-SPE (IP-SUB-SPE (BEPI Er$)
 				  (NP-SBJ (PRO-N $tu))
 				  (ADJP-SPR (ADJ-N gamall))
 				  (NP-PRD (D-N hinn) (ADJ-N frægi) (N-N riddari))))
@@ -1173,6 +1171,7 @@
 						 (NP (N-D velli))))))
 	      (. .-.)
 	      (" ")))
+
 ( (IP-MAT (ADVP-TMP (ADV Þá))
 	  (VBPI svarar)
 	  (NP-SBJ (NPR-N Gunnar))
@@ -2035,6 +2034,7 @@
 			  (VAN búnir)
 			  (NP-1 (N-D bardaga$) (D-D $num))))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (NPR-N Gunnar) (CONJ og) (NPR-N Helgi))
 	  (VBDI sögðu)
 	  (CP-THT (C að)
@@ -2877,6 +2877,7 @@
 	  (PP (P í)
 	      (NP (Q-D öllum) (NS-D Austfjörðum)))
 	  (. .-.)))
+
 ( (IP-MAT (NP-SBJ (NPR-N Þorgrímur)
 		  (NP-PRN (N-N bóndi)))
 	  (BEDI var)
@@ -3609,3 +3610,4 @@
 	  (PP (P af)
 	      (NP (NPR-D Keldunúps<dash/>Gunnari)))
 	  (. .-.)))
+

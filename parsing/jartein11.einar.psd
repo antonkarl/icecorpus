@@ -243,7 +243,7 @@
 			  (PP (P yfir)
 			      (NP (Q-A hvortki)))
 			  (VB komast)
-			  (MDPI mega)
+			  (MD mega)
 			  (ADVP (ADV fararskjótalaust))))
 	  (. .-.)))
 
@@ -696,10 +696,10 @@
 
 ( (QTP (CONJ En)
        (NP (D-N sá)
-	   (CP-REL (WNP-1 0)
-		   (C er)
-		   (IP-SUB (NP-SBJ *T*-1)
-			   (VBDI varp))))
+	   (CP-REL-SPE (WNP-1 0)
+		       (C er)
+		       (IP-SUB-SPE (NP-SBJ *T*-1)
+				   (VBDI varp))))
        (. ,-,)))
 
 ( (IP-MAT (ADVP-TMP (ADV þá))

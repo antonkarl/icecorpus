@@ -2294,7 +2294,7 @@
 			  (CONJP (NP (N-N smiður-smiður)))
 			  (, ,-,)
 			  (CONJP (CONJ og-og)
-				 (NP (NP-MSR (Q-N margt-margur-margur) (CONJ og-og) (Q-N margt-margur-margur))
+				 (NP (NP-MSR (Q-N margt-margur) (CONJ og-og) (Q-N margt-margur))
 				     (QR-A fleira-margur)))))
 	  (. .-.)) (ID 1907.LEYSING.NAR-FIC,.140))
 
@@ -3305,7 +3305,7 @@
 	      (" "-")
 	      (. .-.)) (ID 1907.LEYSING.NAR-FIC,.208))
 
-( (INTJP (" "-"-") (INTJ Sei<dash/>sei-seisei) (. !-!) (" "-"-")) (ID 1907.LEYSING.NAR-FIC,.209))
+( (INTJP (" "-") (INTJ Sei<dash/>sei-seisei) (. !-!) (" "-")) (ID 1907.LEYSING.NAR-FIC,.209))
 
 ( (QTP (" "-")
        (NP (NUM-N Hálfur-hálfur) (N-N farmur$-farmur) (D-N $inn-hinn))
@@ -3314,7 +3314,7 @@
        (. !-!)
        (" "-")) (ID 1907.LEYSING.NAR-FIC,.210))
 
-( (INTJP (" "-"-") (FP Nema-nema) (WPRO-A hvað-hver) (, -) (. !-!) (" "-"-")) (ID 1907.LEYSING.NAR-FIC,.211))
+( (INTJP (" "-") (FP Nema-nema) (WPRO-A hvað-hver) (, -) (. !-!) (" "-")) (ID 1907.LEYSING.NAR-FIC,.211))
 
 ( (QTP (" "-")
        (PP (P Til-til)
@@ -3326,7 +3326,7 @@
        (" "-")
        (. .-.)) (ID 1907.LEYSING.NAR-FIC,.212))
 
-( (INTJP (" "-"-") (WD-N Hver-hver) (N-N þremill$-þremill) (D-N $inn-hinn) (. !-!) (" "-"-")) (ID 1907.LEYSING.NAR-FIC,.213))
+( (INTJP (" "-") (WD-N Hver-hver) (N-N þremill$-þremill) (D-N $inn-hinn) (. !-!) (" "-")) (ID 1907.LEYSING.NAR-FIC,.213))
 
 ( (QTP (" "-")
        (CONJ Og-og)
@@ -15433,7 +15433,7 @@
 
 ( (IP-MAT (NP-SBJ (N-N Ólag$-ólag) (D-N $ið-hinn))
 	  (VBDI festi-festa)
-	  (NP-OB1 (ADJP (ADJR-A dýpri-djúpur-djúpur) (CONJ og-og) (ADJR-A dýpri-djúpur-djúpur))
+	  (NP-OB1 (ADJP (ADJR-A dýpri-djúpur) (CONJ og-og) (ADJR-A dýpri-djúpur))
 		  (NS-A rætur-rót))) (ID 1907.LEYSING.NAR-FIC,.1041))
 
 ( (IP-MAT (CONJ og-og)
@@ -17373,7 +17373,7 @@
 	  (, ,-,)
 	  (MDDS mundi-munu)
 	  (NP-SBJ (PRO-D þeim-það))
-	  (ADVP (ADV smátt-smátt-smátt) (CONJ og-og) (ADV smátt-smátt-smátt))
+	  (ADVP (ADV smátt-smátt) (CONJ og-og) (ADV smátt-smátt))
 	  (VB takast-taka)
 	  (IP-INF (IP-INF (TO að-að)
 			  (DO gera-gera)
@@ -19811,7 +19811,7 @@
 
 ( (IP-MAT (NP-SBJ (NS-N Augu$-auga) (D-N $n-hinn))
 	  (RDDI urðu-verða)
-	  (ADJP (ADJ-N myrk-myrk) (CONJ og-og-og) (ADJ-N kuldaleg-kuldalegur) (, ,-,) (ADJ-N tortryggin-tortrygginn) (CONJ og-og-og) (VAN rannsakandi-rannsakandi))
+	  (ADJP (ADJ-N myrk-myrk) (CONJ og-og) (ADJ-N kuldaleg-kuldalegur) (, ,-,) (ADJ-N tortryggin-tortrygginn) (CONJ og-og) (VAN rannsakandi-rannsakandi))
 	  (. .-.)) (ID 1907.LEYSING.NAR-FIC,.1346))
 
 ( (IP-MAT (NP-SBJ (PRO-N Það-það))
@@ -21473,7 +21473,7 @@
 		    (CP-CMP (WADVP-1 0)
 			    (C 0)
 			    (IP-SUB (ADVP *T*-1)
-				    (NP-SBJ (NUM-N tveir-tveir-tveir) (CONJ og-og) (NUM-N tveir-tveir-tveir))
+				    (NP-SBJ (NUM-N tveir-tveir) (CONJ og-og) (NUM-N tveir-tveir))
 				    (BEDI voru-vera)
 				    (NP-PRD (NUM-N fjórir-fjórir))))))
 	  (. .-.)) (ID 1907.LEYSING.NAR-FIC,.1453))
@@ -22495,3 +22495,4 @@
 						    (PP (P á-á)
 							(NP (ADJ-A ofurlítið-ofurlítill) (N-A glas-glas))))))
 	      (. .-.)))
+

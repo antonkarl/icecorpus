@@ -6637,14 +6637,14 @@
   (ID 1150.HOMILIUBOK.REL-SER,.284))
 
 ( (IP-IMP (CONJ og-og)
-	  (VBI verum-vera)
+	  (BEI verum-vera)
 	  (ADJP (ADJ-N friðsamir-friðsamur))
 	  (PP (P við-við)
 	      (NP (Q-A alla-allur)))
 	  (. ,-,))
   (ID 1150.HOMILIUBOK.REL-SER,.285))
 
-( (IP-IMP (VBI kostgæfum-kostgæfa)
+( (IP-IMP (VBPI kostgæfum-kostgæfa)
 	  (IP-INF (IP-INF-1 (TO að-að)
 			    (VB stöðva-stöðva)
 			    (NP-OB1 (PRO-A oss-ég)
@@ -6678,7 +6678,7 @@
   (ID 1150.HOMILIUBOK.REL-SER,.286))
 
 ( (IP-IMP (CONJ og-og)
-	  (VBI látum-láta)
+	  (VBPI látum-láta)
 	  (IP-INF (CONJ-1 hvorki-hvorki)
 		  (NP-OB1 (PRO-D oss-ég))
 		  (VB saurga-saurga)
@@ -8951,7 +8951,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.375))
 
-( (IP-IMP (VBI Elskum-elska)
+( (IP-IMP (VBPI Elskum-elska)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (ALSO og-og)
 	  (ADVP-TMP (ADV þá-þá))
@@ -8973,7 +8973,7 @@
   (ID 1150.HOMILIUBOK.REL-SER,.376))
 
 ( (IP-IMP (CONJ og-og)
-	  (VBI köllum-kalla)
+	  (VBPI köllum-kalla)
 	  (ADVP-TMP (ADV oft-oft))
 	  (PP (P á-á)
 	      (NP (PRO-A þá-hann)))
@@ -9008,7 +9008,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.377))
 
-( (IP-IMP (VBI Varðveitum-varðveita)
+( (IP-IMP (VBPI Varðveitum-varðveita)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (ADVP (ADV ástsamlega-ástsamlega))
 	  (NP-OB1 (NS-A kenningar-kenning)
@@ -9032,7 +9032,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.378))
 
-( (IP-IMP (VBI Kostgæfum-kostgæfa)
+( (IP-IMP (VBPI Kostgæfum-kostgæfa)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (IP-INF (TO að-að)
 		  (VB vita-vita)
@@ -9070,7 +9070,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.379))
 
-( (IP-IMP (VBI Lesum-lesa)
+( (IP-IMP (VBPI Lesum-lesa)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (NP-OB1 (NS-A nöfn-nafn)
 		  (NP-POS (PRO-G þeirra-hann))
@@ -9108,7 +9108,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.380))
 
-( (IP-IMP (VBI Göngum-ganga)
+( (IP-IMP (VBPI Göngum-ganga)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (PP (RP inn-inn)
 	      (P í-í)
@@ -9303,10 +9303,10 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.386))
 
-( (IP-IMP (VBI Sækjum-sækja)
+( (IP-IMP (VBPI Sækjum-sækja)
 	  (NP-OB1 (N-A traust-traust)
-		  (CONJP (CONJ og-og)
-			 (NX (N-A hald-hald)))
+		  (CONJ og-og)
+		  (N-A hald-hald)
 		  (NP-POS (PRO-G þeirra-það)))
 	  (, ,-,)
 	  (PP (P 0)
@@ -9326,7 +9326,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.387))
 
-( (IP-IMP (VBI Göfgum-göfga)
+( (IP-IMP (VBPI Göfgum-göfga)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (NP-OB1 (NP-POS (NPR-G Guðs-guð))
 		  (N-A postula-postuli))
@@ -11567,7 +11567,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.474))
 
-( (IP-IMP (VBI Látum-láta)
+( (IP-IMP (VBPI Látum-láta)
 	  (CODE *XXX*)
 	  (IP-INF (NP-SBJ (PRO-D oss-ég))
 		  (VB þykkja-þykkja)
@@ -12245,7 +12245,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.504))
 
-( (IP-IMP (IP-IMP-1 (VBI Biðjum-biðja)
+( (IP-IMP (IP-IMP-1 (VBPI Biðjum-biðja)
 		    (NP-OB2 (PRO-D oss-ég))
 		    (NP-OB1 (N-G varðveislu-varðveisla))
 		    (PP (P af-af)
@@ -12267,7 +12267,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.505))
 
-( (IP-IMP (VBI Biðjum-biðja)
+( (IP-IMP (VBPI Biðjum-biðja)
 	  (, ,-,)
 	  (CP-THT (C að-að)
 		  (IP-SUB (IP-SUB (ADVP-TMP (ADV þá-þá))
@@ -13568,10 +13568,10 @@
 				      (NP-POS (PRO-A sinn-sinn))))
 			      (, :-:)
 			      (" "-")
-			      (IP-IMP-SPE (IP-IMP-SPE (VBI Tæmist-tæma)
+			      (IP-IMP-SPE (IP-IMP-SPE (VBPI Tæmist-tæma)
 						      (NP-SBJ (PRO-N ér-þú)))
 					  (CONJP (CONJ og-og)
-						 (IP-IMP-SPE (VBI vitið-vita)
+						 (IP-IMP-SPE (VBPI vitið-vita)
 							     (, ,-,)
 							     (CP-THT-SPE (C að-að)
 									 (IP-SUB-SPE (NP-SBJ (PRO-N eg-ég))
@@ -13969,7 +13969,7 @@
 	      (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.574))
 
-( (IP-IMP-SPE (VBI Fögnum-fagna)
+( (IP-IMP-SPE (VBPI Fögnum-fagna)
 	      (NP-SBJ (PRO-N vér-ég)))
   (ID 1150.HOMILIUBOK.REL-SER,.575))
 
@@ -14046,7 +14046,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.579))
 
-( (IP-IMP (VBI Rennum-renna)
+( (IP-IMP (VBPI Rennum-renna)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (NP-OB1 (N-D hug-hugur)
 		  (NP-POS (PRO-D órum-vor)))
@@ -14066,7 +14066,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.580))
 
-( (IP-IMP (VBI Köstum-kasta)
+( (IP-IMP (VBPI Köstum-kasta)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (PP (P af-af)
 	      (NP (PRO-D oss-ég)))
@@ -14088,7 +14088,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.582))
 
-( (IP-IMP (VBI Rísum-rísa)
+( (IP-IMP (VBPI Rísum-rísa)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (RP upp-upp)
 	  (PP (P af-af)
@@ -24840,7 +24840,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1026))
 
-( (IP-IMP (VBI Kostum-kosta)
+( (IP-IMP (VBPI Kostum-kosta)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (, ,-,)
 	  (NP-VOC (ADJ-N góð-góður) (NS-N systkin-systkini))
@@ -26747,7 +26747,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1125))
 
-( (IP-IMP-SPE (VBI Hefjið-hefja)
+( (IP-IMP-SPE (VBPI Hefjið-hefja)
 	      (RP upp-upp)
 	      (ADVP-TMP (ADV nú-nú))
 	      (ADVP-TMP (ADV þá-þá))
@@ -27324,7 +27324,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1153))
 
-( (IP-IMP (VBI Fögnum-fagna)
+( (IP-IMP (VBPI Fögnum-fagna)
 	  (ADVP-TMP (ADV nú-nú))
 	  (ADVP-TMP (ADV þá-þá))
 	  (PP (P með-með)
@@ -27400,7 +27400,7 @@
 				    (VBPI lítum-líta)
 				    (NP-SBJ (PRO-N vér-ég)))))
 	  (, ,-,)
-	  (VBI munum-muna)
+	  (VBPI munum-muna)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (ADVP-TMP (ADV þá-þá))
 	  (, ,-,)
@@ -27420,7 +27420,7 @@
 			      (IP-INF (TO að-að) (VB misgera-misgera)))))
 	  (, ,-,)
 	  (ADVP-TMP (ADV þá-þá))
-	  (VBI látum-láta)
+	  (VBPI látum-láta)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (IP-INF (NP-SBJ (PRO-A það-það))
 		  (RP fyrir-fyrir)
@@ -27436,7 +27436,7 @@
   (ID 1150.HOMILIUBOK.REL-SER,.1159))
 
 ( (IP-IMP (CONJ og-og)
-	  (VBI glötum-glata)
+	  (VBPI glötum-glata)
 	  (NEG eigi-ekki)
 	  (NP-OB1 (N-D verði-verð)
 		  (NP-POS (N-G blóðs-blóð)
@@ -27444,7 +27444,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1160))
 
-( (IP-IMP (VBI Saurgum-saurga)
+( (IP-IMP (VBPI Saurgum-saurga)
 	  (NEG eigi-ekki)
 	  (NP-OB1 (N-A skraut-skraut)
 		  (NP-POS (N-G andar$-önd) (D-G $innar-hinn)))
@@ -27527,7 +27527,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1168))
 
-( (IP-IMP (VBI Heyrið-heyra)
+( (IP-IMP (VBPI Heyrið-heyra)
 	  (NP-SBJ (PRO-N ér-þú)
 		  (CP-REL *ICH*-1))
 	  (, ,-,)
@@ -27730,7 +27730,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1180))
 
-( (IP-IMP (VBI Varðveitið-varðveita)
+( (IP-IMP (VBPI Varðveitið-varðveita)
 	  (NP-SBJ (PRO-N ér-þú))
 	  (NP-OB1 (N-A ekkjudóm-ekkjudómur)
 		  (NP-POS (PRO-A yðvarn-yðar)))
@@ -27738,11 +27738,11 @@
   (ID 1150.HOMILIUBOK.REL-SER,.1181))
 
 ( (IP-IMP (BEI verið-vera)
-	  (ADJP (ADJ-N ómálgar-ómálgur)))
+	  (ADJP (ADJ-N ómálgar-ómálga)))
   (ID 1150.HOMILIUBOK.REL-SER,.1182))
 
 ( (IP-IMP (CONJ og-og)
-	  (VBI bíðið-bíða)
+	  (VBPI bíðið-bíða)
 	  (ADVP-TMP (ADV svo-svo))
 	  (NP-OB1 (NPR-G Drottins-drottinn))
 	  (, ,-,)
@@ -27810,7 +27810,7 @@
 	  (NEG eigi-ekki))
   (ID 1150.HOMILIUBOK.REL-SER,.1186))
 
-( (IP-IMP (CONJ og-og) (VBI sverjið-sverja) (NEG eigi-ekki))
+( (IP-IMP (CONJ og-og) (VBPI sverjið-sverja) (NEG eigi-ekki))
   (ID 1150.HOMILIUBOK.REL-SER,.1187))
 
 ( (IP-SUB (CONJ og-og)
@@ -27840,7 +27840,7 @@
   (ID 1150.HOMILIUBOK.REL-SER,.1190))
 
 ( (IP-IMP (CONJ og-og)
-	  (VBI grátið-gráta)
+	  (VBPI grátið-gráta)
 	  (ADVP (ADV víslega-víslega))
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1191))
@@ -28061,7 +28061,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1202))
 
-( (IP-IMP (VBI Hlýðið-hlýða)
+( (IP-IMP (VBPI Hlýðið-hlýða)
 	  (NP-SBJ (PRO-N ér-þú))
 	  (NP-OB1 (NS-D húsbúöndum-húsbúandi)
 		  (NP-POS (PRO-D yðrum-yðar))
@@ -28070,7 +28070,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1203))
 
-( (IP-MAT (VBI Vinnið-vinna)
+( (IP-IMP (VBPI Vinnið-vinna)
 	  (ADVP (ADVR svo-svo)
 		(CP-CMP *ICH*-1))
 	  (PP (P fyr-fyrir)
@@ -28088,7 +28088,7 @@
   (ID 1150.HOMILIUBOK.REL-SER,.1204))
 
 ( (IP-IMP (CONJ og-og)
-	  (VBI látið-láta)
+	  (VBPI látið-láta)
 	  (IP-INF (NP-SBJ (PRO-D yður-þú))
 		  (NP-MSR-1 (Q-D miklu-mikill))
 		  (VB þykja-þykja)
@@ -37433,7 +37433,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1695))
 
-( (IP-IMP (VBI Höldum-halda)
+( (IP-IMP (VBPI Höldum-halda)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (ALSO og-og)
 	  (ADVP-TMP (ADV þá-þá))
@@ -37457,7 +37457,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1696))
 
-( (IP-IMP (VBI Leggjum-leggja)
+( (IP-IMP (VBPI Leggjum-leggja)
 	  (RP niður-niður)
 	  (NP-OB1 (Q-A alla-allur)
 		  (N-A flærð-flærð)
@@ -37467,7 +37467,7 @@
   (ID 1150.HOMILIUBOK.REL-SER,.1697))
 
 ( (IP-IMP (CONJ og-og)
-	  (VBI mælum-mæla)
+	  (VBPI mælum-mæla)
 	  (NEG eigi-ekki)
 	  (ADVP-TMP (ADV þá-þá)
 		    (CP-REL *ICH*-1))
@@ -37497,13 +37497,13 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1698))
 
-( (IP-IMP (VBI Leggjum-leggja)
+( (IP-IMP (VBPI Leggjum-leggja)
 	  (RP niður-niður)
 	  (NP-OB1 (ADJ-A ranga-rangur) (N-A fégirni-fégirni)))
   (ID 1150.HOMILIUBOK.REL-SER,.1699))
 
 ( (IP-IMP (CONJ og-og)
-	  (VBI tökum-taka)
+	  (VBPI tökum-taka)
 	  (NP-OB1 (Q-A enga-enginn) (ADJ-A ranga-rangur) (N-A fégjöf-fégjöf))
 	  (PP (P til-til)
 	      (NP (PRO-G þess-það)
@@ -37539,7 +37539,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1700))
 
-( (IP-IMP (VBI Höfum-hafa)
+( (IP-IMP (HVPI Höfum-hafa)
 	  (PP (P til-til)
 	      (NP (PRO-G þess-það)))
 	  (NP-OB1 (NS-A ráð-ráð)
@@ -37612,7 +37612,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1704))
 
-( (IP-IMP (VBI Krossfestum-krossfesta)
+( (IP-IMP (VBPI Krossfestum-krossfesta)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (NP-OB1 (NS-A líkami-líkami)
 		  (NP-POS (PRO-A óra-vor))
@@ -37733,7 +37733,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1709))
 
-( (IP-IMP (VBI Höldum-halda)
+( (IP-IMP (VBPI Höldum-halda)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (PP (P í-í)
 	      (NP (NS-D hjörtum-hjarta)
@@ -37762,7 +37762,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1710))
 
-( (IP-IMP (VBI Hirtum-hirta)
+( (IP-IMP (VBPI Hirtum-hirta)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (NP-OB1 (PRO-A oss-ég))
 	  (PP (P frá-frá)
@@ -37828,7 +37828,7 @@
 	    (NP (N-D föstu-fasta))))
   (ID 1150.HOMILIUBOK.REL-SER,.1713))
 
-( (IP-IMP (VBI Biðjum-biðja)
+( (IP-IMP (VBPI Biðjum-biðja)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (, ,-,)
 	  (NP-VOC (ADJ-N góð-góður) (NS-N systkin-systkini))
@@ -37881,7 +37881,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1715))
 
-( (IP-IMP (VBI Biðjum-biðja)
+( (IP-IMP (VBPI Biðjum-biðja)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (PP (P fyr-fyrir)
 	      (NP (N-D páfa-páfi)
@@ -38969,11 +38969,11 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1760))
 
-( (IP-IMP-SPE (VBI Farið-fara))
+( (IP-IMP-SPE (VBPI Farið-fara))
   (ID 1150.HOMILIUBOK.REL-SER,.1761))
 
 ( (IP-IMP-SPE (CONJ og-og)
-	      (VBI segið-segja)
+	      (VBPI segið-segja)
 	      (NP-OB2 (NS-D bræðrum-bróðir)
 		      (NP-POS (PRO-D mínum-minn)))
 	      (, ,-,)
@@ -42181,7 +42181,7 @@
 													     (VB ræða-ræða))))))))))))))
 	  (, ,-,)
 	  (ADVP-TMP-RSP (ADV þá-þá))
-	  (VBI kostum-kosta)
+	  (VBPI kostum-kosta)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (, ,-,)
 	  (NP-VOC (ADJ-N góð-góður) (NS-N systkin-systkini))
@@ -42213,7 +42213,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1899))
 
-( (IP-IMP (VBI Leitum-leita)
+( (IP-IMP (VBPI Leitum-leita)
 	  (NP-OB1 (Q-G alls-allur))
 	  (PP (P við-við)
 	      (CP-THT *ICH*-3))
@@ -42273,7 +42273,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1900))
 
-( (IP-IMP (VBI Kostum-kosta)
+( (IP-IMP (VBPI Kostum-kosta)
 	  (IP-INF (TO að-að)
 		  (VB þjóna-þjóna)
 		  (NP-OB1 (NPR-D Guði-guð) (NPR-D Drottni-drottinn))
@@ -42303,7 +42303,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1901))
 
-( (IP-IMP (VBI Sjáum-sjá)
+( (IP-IMP (VBPI Sjáum-sjá)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (PP (P við-við)
 	      (IP-INF (TO að-að)
@@ -42321,7 +42321,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1902))
 
-( (IP-IMP (VBI Heftum-hefta)
+( (IP-IMP (VBPI Heftum-hefta)
 	  (NP-SBJ (PRO-N vér-ég))
 	  (NP-OB1 (PRO-A oss-ég))
 	  (PP (PP (P að-að)
@@ -42586,14 +42586,14 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1909))
 
-( (IP-IMP (VBI Fögnum-fagna)
+( (IP-IMP (VBPI Fögnum-fagna)
 	  (NP-OB1 (N-D góðlífi-góðlífi)
 		  (NP-POS (Q-G allra-allur) (NS-G manna-maður)))
 	  (. ,-,))
   (ID 1150.HOMILIUBOK.REL-SER,.1910))
 
 ( (IP-IMP (CONJ en-en)
-	  (VBI látum-láta)
+	  (VBPI látum-láta)
 	  (IP-INF (NP-SBJ (PRO-D oss-ég))
 		  (ADJP-1 (ADJ-A illt-illur))
 		  (VB þykja-þykja)
@@ -42608,7 +42608,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1911))
 
-( (IP-IMP (VBI Felum-fela)
+( (IP-IMP (VBPI Felum-fela)
 	  (NP-OB1 (PRO-A oss-ég))
 	  (PP (P í-í)
 	      (NP (N-D bænahaldi-bænahald)
@@ -42630,7 +42630,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1912))
 
-( (IP-IMP (VBI Biðjum-biðja)
+( (IP-IMP (VBPI Biðjum-biðja)
 	  (ADVP-TMP (ADV nú-nú))
 	  (NP-OB1 (PRO-G þess-það)
 		  (CP-THT-PRN *ICH*-1))

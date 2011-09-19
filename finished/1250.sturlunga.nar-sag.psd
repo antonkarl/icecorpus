@@ -1,3 +1,4 @@
+
 ( (IP-MAT (CODE COM:Chapter_271)
 	  (CODE <P_388>)
 	  (NP-SBJ (NPR-N Gissur-Gissur) (NPR-N Þorvaldsson-Þorvaldsson))
@@ -6517,8 +6518,9 @@
 ( (IP-MAT (DODI Gerðu-gera)
 	  (NP-SBJ (PRO-N þeir-hann))
 	  (ADVP-TMP (ADV þá-þá))
-	  (CODE *XXX*)
-	  (NP-OB1 (VAN ákveðið-ákveða))
+	  (NP-OB1 (CODE *XXX*-laga)
+		  (RP á$-á)
+		  (VAN $kveðið-kveða))
 	  (PP (P með-með)
 	      (NP (PRO-D sér-sig)))
 	  (ADVP-TMP (ADVR nær-nærri)

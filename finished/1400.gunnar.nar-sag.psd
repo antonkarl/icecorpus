@@ -2715,10 +2715,10 @@
   (ID 1400.GUNNAR.NAR-SAG,.228))
 
 ( (IP-MAT (VBDI Líkaði-líka)
-	  (NP-SBJ (NPR-D Jökli-jöklur))
+	  (NP-SBJ (NPR-D Jökli-jökull))
 	  (ADVP (ADV mjög-mjög) (ADV illa-illa))
 	  (PP (P við-við)
-	      (NP (NS-A Kol-kol))))
+	      (NP (NPR-A Kol-kolur))))
   (ID 1400.GUNNAR.NAR-SAG,.229))
 
 ( (IP-MAT (IP-MAT-1 (CONJ og-og)
@@ -5380,10 +5380,10 @@
 	  (. .-.))
   (ID 1400.GUNNAR.NAR-SAG,.463))
 
-( (IP-MAT (IP-MAT-1 (NP-SBJ (PRO-N Önnur-annar))
+( (IP-MAT (IP-MAT-1 (NP-SBJ (OTHER-N Önnur-annar))
 		    (VBDI nefndist-nefna)
 		    (ADVP-LOC (ADV þar-þar))
-		    (NP-PRD (NPR-N Fála-fáli)))
+		    (NP-PRD (NPR-N Fála-fála)))
 	  (CONJP (CONJ en-en)
 		 (IP-MAT=1 (NP-SBJ (OTHER-N önnur-annar))
 			   (NP-PRD (NPR-N Gála-gála))))
@@ -6312,7 +6312,7 @@
 		  (CP-REL (WNP-2 0)
 			  (C er-er)
 			  (IP-SUB (NP-SBJ *T*-2)
-				  (NP-PRD (NS-N Þrumur-þrumur))
+				  (NP-PRD (NPR-N Þrumur-þrumur))
 				  (VBDI hét-heita)))))
 	  (. .-.))
   (ID 1400.GUNNAR.NAR-SAG,.542))
@@ -8126,7 +8126,7 @@
 	  (. .-.))
   (ID 1400.GUNNAR.NAR-SAG,.694))
 
-( (IP-MAT (NP-TMP (Q-A Einhvern-einhver)
+( (IP-MAT (NP-TMP (ONE+Q-A Einhvern-einhver)
 		  (N-A tíma-tími)
 		  (CP-REL (WNP-1 0)
 			  (C sem-sem)
@@ -8309,7 +8309,7 @@
 
 ( (IP-MAT (NP-SBJ (NPR-N Gunnar-gunnar))
 	  (VBDI stóð-standa)
-	  (P upp-upp)
+	  (RP upp-upp)
 	  (ADVP-TMP (ADV skyndilega-skyndilega)))
   (ID 1400.GUNNAR.NAR-SAG,.712))
 
@@ -10259,7 +10259,8 @@
 			  (C sem-sem)
 			  (IP-SUB (NP-SBJ (NP *T*-1)
 					  (CP-REL *ICH*-2))
-				  (VAN ákveðinn-ákveða)
+				  (RP á$-á)
+				  (VAN $kveðinn-kveða)
 				  (BEDI var-vera)
 				  (CP-REL-2 (WNP-3 0)
 					    (C að-að)

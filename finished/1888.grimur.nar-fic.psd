@@ -5547,10 +5547,11 @@
 
 ( (IP-MAT-SPE (NP-SBJ (PRO-N það-það))
 	      (BEPI er-vera)
-	      (ADVP (ADV bara-bara))
+	      (FP bara-bara)
 	      (NP-PRD (NP-POS (PRO-N mín-minn))
 		      (N-N trú-trú)
-		      (CP-THT-SPE (C að-að)
+		      (CP-THT-SPE (CODE *XXX*-laga)
+				  (C að-að)
 				  (IP-SUB-SPE (NP-SBJ (N-N maður-maður))
 					      (VBPS fái-fá)
 					      (IP-SMC-SPE (NP-SBJ (Q-A allt-allur))
@@ -7289,7 +7290,7 @@
 
 ( (IP-MAT (NP-SBJ (PRO-N hann-hann))
 	  (VBDI fletti-fletta)
-	  (ADVP (ADV bara-bara))
+	  (FP bara-bara)
 	  (NP-OB1 (N-D spjald$-spjald) (D-D $inu-hinn))
 	  (RP við-við))
   (ID 1888.GRIMUR.NAR-FIC,.514))

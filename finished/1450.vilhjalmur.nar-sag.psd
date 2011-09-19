@@ -1,4 +1,3 @@
-
 ( (IP-MAT (CODE <P_3>)
 	  (NP-SBJ (N-N Saga-saga) (D-N þessi-þessi))
 	  (VBPI hefst-hefja)
@@ -6536,7 +6535,7 @@
   (ID 1450.VILHJALMUR.NAR-SAG,30.533))
 
 ( (IP-IMP-SPE (ADVP-TMP (ADV Nú-nú))
-	      (VBI segið-segja)
+	      (VBPI segið-segja)
 	      (CP-QUE-SPE (WNP-1 (WPRO-N hvað-hver))
 			  (C 0)
 			  (IP-SUB-SPE (NP-PRD *T*-1)
@@ -9016,7 +9015,7 @@
 					      (BEPI er-vera)
 					      (ADJP (ADJ-N saknæmt-saknæmur)))))
 	      (ADVP-RSP (ADV þá-þá))
-	      (VBI fáið-fá)
+	      (VBPI fáið-fá)
 	      (RP til-til)
 	      (NP-OB1 (NUM-A iij-þrír)
 		      (PP (P af-af)
@@ -18676,7 +18675,7 @@
   (ID 1450.VILHJALMUR.NAR-SAG,76.1528))
 
 ( (IP-IMP (CONJ og-og)
-	  (VBI látum-láta)
+	  (VBPI látum-láta)
 	  (IP-INF (NP-SBJ (PRO-A þá-hann))
 		  (ADVP-TMP (ADV nú-nú))
 		  (VB dveljast-dveljast)
@@ -18776,8 +18775,9 @@
 	      (NP (N-G kóngs-kóngur)))
 	  (, :-:)
 	  (" "-")
-	  (IP-IMP-SPE (VBI Látið-láta)
-		      (IP-INF-SPE (NP-SBJ (N-A hljóð-hljóð))
+	  (IP-IMP-SPE (VBPI Látið-láta)
+		      (IP-INF-SPE (NP-SBJ *arb*)
+				  (NP-OB1 (N-A hljóð-hljóð))
 				  (VBPI gefa-gefa)
 				  (PP (P meðan-meðan)
 				      (CP-ADV-SPE (C 0)
@@ -18978,7 +18978,7 @@
   (ID 1450.VILHJALMUR.NAR-SAG,77.1545))
 
 ( (IP-IMP-SPE (CONJ og-og)
-	      (VBI látið-láta)
+	      (VBPI látið-láta)
 	      (IP-INF-SPE (NP-SBJ (PRO-A oss-ég))
 			  (VB fá-fá)
 			  (NP-OB1 (N-A vissu-vissa)
@@ -18988,7 +18988,7 @@
   (ID 1450.VILHJALMUR.NAR-SAG,77.1546))
 
 ( (IP-IMP-SPE (CONJ og-og)
-	      (VBI takið-taka)
+	      (VBPI takið-taka)
 	      (NP-OB1 (D-A þau-sá)
 		      (ADJS-A bestu-góður)
 		      (NS-A ráð-ráð)
@@ -19153,7 +19153,7 @@
   (ID 1450.VILHJALMUR.NAR-SAG,78.1557))
 
 ( (IP-IMP-SPE (CONJ og-og)
-	      (RDI verðið-verða)
+	      (RDPI verðið-verða)
 	      (ADVP-DIR (ADV burt-burt))
 	      (ADVP (CP-CMP-SPE (WADVP-1 0)
 				(C sem-sem)
@@ -21041,7 +21041,7 @@
 	      (. .-.))
   (ID 1450.VILHJALMUR.NAR-SAG,85.1718))
 
-( (IP-IMP-SPE (VBI Klæðum-klæða)
+( (IP-IMP-SPE (VBPI Klæðum-klæða)
 	      (NP-OB1 (PRO-A oss-ég))
 	      (NP-ADT (NP-POS (PRO-D vorum-vor))
 		      (D-D hinum-hinn)
@@ -21050,7 +21050,7 @@
   (ID 1450.VILHJALMUR.NAR-SAG,85.1719))
 
 ( (IP-IMP-SPE (CONJ og-og)
-	      (VBI hugsum-hugsa)
+	      (VBPI hugsum-hugsa)
 	      (NP-OB1 (PRO-A það-það)
 		      (IP-INF-SPE-PRN (TO að-að)
 				      (VB selja-selja)
@@ -21075,16 +21075,16 @@
 	      (. .-.))
   (ID 1450.VILHJALMUR.NAR-SAG,85.1720))
 
-( (IP-IMP-SPE (VBI Flýjum-flýja) (CONJ hvorki-hvorki))
+( (IP-IMP-SPE (VBPI Flýjum-flýja) (CONJ hvorki-hvorki))
   (ID 1450.VILHJALMUR.NAR-SAG,85.1721))
 
 ( (IP-IMP-SPE (CONJ né-né)
 	      (NP-OB1 (N-G friðar-friður))
-	      (VBI beiðum-beiða)
+	      (VBPI beiðum-beiða)
 	      (. .-.))
   (ID 1450.VILHJALMUR.NAR-SAG,85.1722))
 
-( (IP-IMP-SPE (VBI Látum-láta)
+( (IP-IMP-SPE (VBPI Látum-láta)
 	      (IP-INF-SPE (NP-SBJ (NPR-A Arkistratus-arkistratus)
 				  (NP-PRN (N-A kóng-kóngur))
 				  (CONJP *ICH*-2))
@@ -24700,7 +24700,7 @@
   (ID 1450.VILHJALMUR.NAR-SAG,98.2016))
 
 ( (IP-IMP (CONJ og-og)
-	  (VBI látum-láta)
+	  (VBPI látum-láta)
 	  (IP-INF (NP-SBJ (PRO-A þá-hann))
 		  (ADVP-TMP (ADV nú-nú))
 		  (ADVP (ADV svo-svo))
@@ -24708,7 +24708,7 @@
   (ID 1450.VILHJALMUR.NAR-SAG,98.2017))
 
 ( (IP-IMP (CONJ en-en)
-	  (VBI víkjum-víkja)
+	  (VBPI víkjum-víkja)
 	  (NP-MSR (Q-A nokkuð-nokkur))
 	  (NP-OB1 (N-D sögu$-saga) (D-D $nni-hinn))
 	  (PP (P til-til)

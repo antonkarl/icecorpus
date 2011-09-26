@@ -1,13 +1,13 @@
-( (IP-MAT (NP-SBJ (ADJS-N Fyrsti) (N-N kapítuli))))
+( (IP-MAT (NP-SBJ (ADJ-N Fyrsti) (N-N kapítuli))))
 
 ( (IP-MAT (NP-SBJ (D-N Þessi))
 	  (BEPI er)
 	  (NP-PRD (N-N fæðingarbók))
 	  (NP (NPR-G Jesú)
-	      (NPR-D Kristi)
+	      (NPR-G Kristi)
 	      (, ,-,)
-	      (NP-POS (NP (N-G sonar))
-		      (NP (NPR-G Davíðs))))
+	      (NP-PRN (N-G sonar)
+		      (NP-POS (NPR-G Davíðs))))
 	  (, ,-,)
 	  (NP-POS (N-G sonar)
 		  (NP-PRN (NPR-G Abrahams)))
@@ -756,4 +756,3 @@
 	  (VBDI tilbáðu)
 	  (NP-OB1 (PRO-A hann))
 	  (. .-.)))
-

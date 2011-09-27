@@ -11246,10 +11246,10 @@
 		    (NP-OB1 (PRO-A mig-ég))
 		    (NEG ekki-ekki))
 	  (. .-.)
-	  (CONJP (IP-MAT=1 (ADVP (ADV Bara-bara))
+	  (CONJP (IP-MAT=1 (FP Bara-bara)
 			   (NEG ekki-ekki)
-			   (NP-OB1 (Q-A nokkurn-nokkur) (VAG-A skapaðan-skapa) (N-A hlut-hlutur))
-			   (. .-.))))
+			   (NP-OB1 (Q-A nokkurn-nokkur) (VAG-A skapaðan-skapa) (N-A hlut-hlutur))))
+	  (. .-.))
   (ID 2008.MAMMA.NAR-FIC,.753))
 
 ( (IP-MAT (NP-SBJ-1 (ES Það-það))
@@ -19552,7 +19552,7 @@
   (ID 2008.MAMMA.NAR-FIC,.1282))
 
 ( (QTP (CODE {COM:dash})
-       (ADVP (ADV Bara-bara))
+       (FP Bara-bara)
        (PP (RP upp-upp)
 	   (P á-á)
 	   (NP (PRO-A það-það)))

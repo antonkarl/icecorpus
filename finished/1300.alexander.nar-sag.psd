@@ -7315,14 +7315,14 @@
 	  (. ?-?))
   (ID 1300.ALEXANDER.NAR-SAG,.345))
 
-( (QTP (NP-PRD (Q-N Mikill-mikill) (N-N hégómi-hégómi))
+( (QTP (NP (Q-N Mikill-mikill) (N-N hégómi-hégómi))
        (, ,-,)
        (IP-MAT-PRN (VBPI segir-segja)
 		   (NP-SBJ (PRO-N hann-hann)))
        (, ,-,)
-       (IP-INF-SPE-SBJ (TO að-að)
-		       (VB trúa-trúa)
-		       (NP-OB1 (SUCH-D slíku-slíkur)))
+       (IP-INF-SPE (TO að-að)
+		   (VB trúa-trúa)
+		   (NP-OB1 (SUCH-D slíku-slíkur)))
        (. .-.))
   (ID 1300.ALEXANDER.NAR-SAG,.346))
 

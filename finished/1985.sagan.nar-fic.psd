@@ -7075,12 +7075,11 @@
 	  (. .-.))
   (ID 1985.SAGAN.NAR-FIC,.517))
 
-( (QTP (VBI HÆT$-hætta)
-       (NP-SBJ (PRO-N $TU-þú))
-       (CODE *XXX*-laga)
-       (. !-!)
-       (IP-MAT-PRN (VBPI öskrar-öskra)
-		   (NP-SBJ (N-N mamma-mamma))))
+( (IP-IMP-SPE (VBI HÆT$-hætta)
+	      (NP-SBJ (PRO-N $TU-þú))
+	      (, !-!)
+	      (IP-MAT-PRN (VBPI öskrar-öskra)
+			  (NP-SBJ (N-N mamma-mamma))))
   (ID 1985.SAGAN.NAR-FIC,.518))
 
 ( (IP-MAT (CONJ og-og)

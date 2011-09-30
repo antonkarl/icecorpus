@@ -10901,7 +10901,8 @@
 	      (. ;-;))
   (ID 1908.OFUREFLI.NAR-FIC,.810))
 
-( (IP-MAT-SPE (NP-SBJ (ES það-það))
+( (IP-MAT-SPE (NP-SBJ *exp*)
+	      (NP-OB1 (PRO-A það-það))
 	      (MDPI má-mega)
 	      (ADVP-TMP (ADV nú-nú))
 	      (VB segja-segja)
@@ -10909,7 +10910,7 @@
   (ID 1908.OFUREFLI.NAR-FIC,.811))
 
 ( (QTP (CONJ Og-og)
-       (NP-SBJ (PRO-N þér-þú))
+       (NP (PRO-N þér-þú))
        (VBN kominn-koma)
        (ADVP-DIR (ADV hingað-hingað))
        (, ,-,)
@@ -11493,7 +11494,7 @@
 	      (. .-.))
   (ID 1908.OFUREFLI.NAR-FIC,.851))
 
-( (QTP (NP-SBJ (NPR-N Skratt$-skratti) (D-N $inn-hinn))
+( (QTP (NP (NPR-N Skratt$-skratti) (D-N $inn-hinn))
        (ADJP-LOC (ADJ-N fjarri-fjarri)
 		 (NP (PRO-D mér-ég)))
        (. .-.))

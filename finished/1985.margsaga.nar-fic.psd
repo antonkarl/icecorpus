@@ -10780,7 +10780,7 @@
   (ID 1985.MARGSAGA.NAR-FIC,.707))
 
 ( (META (CODE <heading>)
-	(NP-SBJ (N-G Konu-kona))
+	(NP (N-G Konu-kona))
 	(VAN saknað-sakna)
 	(CODE </heading>))
   (ID 1985.MARGSAGA.NAR-FIC,.708))
@@ -14502,7 +14502,7 @@
 						       (NP-OB1 (N-A útrás-útrás))
 						       (PP (P fyrir-fyrir)
 							   (NP (D-A þann-sá)
-							       (NS-A frumleika-frumleiki)
+							       (N-A frumleika-frumleiki)
 							       (CP-REL-SPE (WNP-2 0)
 									   (C sem-sem)
 									   (IP-SUB-SPE (NP-SBJ *T*-2)
@@ -14513,8 +14513,8 @@
   (ID 1985.MARGSAGA.NAR-FIC,.915))
 
 ( (QTP (CONJ Og-og)
-       (NP-SBJ (Q-N allt-allur))
-       (PP (P í-í)
+       (PP (NP-MSR (Q-N allt-allur))
+	   (P í-í)
 	   (NP (N-D lagi-lag)))
        (PP (P með-með)
 	   (NP (PRO-A það-það)))
@@ -14791,7 +14791,8 @@
 	      (. ,-,))
   (ID 1985.MARGSAGA.NAR-FIC,.935))
 
-( (QTP (NP-SBJ (Q-N allir-allur))
+( (QTP (CODE *XXX*-laga-merge)
+       (NP-SBJ (Q-N allir-allur))
        (VAN dæmdir-dæma)
        (PP (P úr-úr)
 	   (NP (N-D leik-leikur)))

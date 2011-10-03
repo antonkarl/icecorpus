@@ -127,6 +127,11 @@ mv -f $tempfile.out $tempfile
 #$CS sanity_checks/bad-conj.q $tempfile
 #mv -f $tempfile.out $tempfile
 
+#echo ""
+#echo "Bad CONJ-2"
+#$CS sanity_checks/bad-conj-2.q $tempfile
+#mv -f $tempfile.out $tempfile
+
 echo ""
 echo "Branching CONJ"
 $CS sanity_checks/branching-conj.q $tempfile

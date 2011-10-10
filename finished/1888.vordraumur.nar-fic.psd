@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP-SBJ (ES Það-það))
 	  (VBDI fór-fara)
 	  (ADVP-TMP (ADV seint-seint))
@@ -9426,8 +9427,9 @@
 		    (NP-SBJ (PRO-N það-það))
 		    (ADVP (ADV þó-þó))
 		    (ADVP (ADV óbeinlínis-óbeinlínis)))
-	  (CONJP (CONJ og-og)
-		 (IP-MAT=1 (NP (P að-að)
+	  (CONJP (CODE *XXX*-laga)
+		 (CONJ og-og)
+		 (IP-MAT=1 (PP (P að-að)
 			       (NP (Q-D nokkru-nokkur) (N-D leyti-leyti)))
 			   (IP-INF (TO að-að)
 				   (VB þakka-þakka)

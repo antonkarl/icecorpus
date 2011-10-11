@@ -17848,9 +17848,10 @@
 	  (PP (P í-í)
 	      (NP (N-D austri-austur)))
 	  (, ,-,)
-	  (IP-PPL (NP-OB1 (QP (ADV svo-svo) (Q-D mörgum-margur))
-			  (NS-D dægrum-dægur))
-		  (VAN skiptir-skipta))
+	  (PP (P svo-svo)
+	      (CP-ADV (C 0)
+		      (IP-SUB (NP-SBJ (Q-D mörgum-margur) (NS-D dægrum-dægur))
+			      (VBPI skiptir-skipta))))
 	  (. .-.))
   (ID 1650.ILLUGI.NAR-SAG,.1347))
 

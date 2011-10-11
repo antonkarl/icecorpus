@@ -2036,7 +2036,7 @@
 											      (NP-3 (N-N kænska-kænska))
 											      (BEDS væri-vera)))
 								      (PP (P of-of)
-									  (NP (PRO-N það-það)
+									  (NP (PRO-A það-það)
 									      (CP-QUE-PRN-SPE (CP-QUE-SPE (WPP-4 (P til-til)
 														 (WNP (WD-G hverra-hver) (NS-G stafa-stafur)))
 													  (C 0)
@@ -2059,7 +2059,8 @@
 	      (NP-SBJ (D-N sú-sá) (N-N bók-bók))
 	      (NP-PRD (NP (OTHER-N önnur-annar) (Q-N öll-allur))
 		      (CONJP (CONJ og-og)
-			     (ADJP (Q-D miklu-mikill) (ADJR-A meiri-mikill)))))
+			     (ADJP (NP-MSR (Q-D miklu-mikill))
+				   (ADJR-N meiri-mikill)))))
   (ID 1150.FIRSTGRAMMAR.SCI-LIN,.83))
 
 ( (IP-MAT (CONJ og-og)

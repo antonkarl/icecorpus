@@ -3750,7 +3750,8 @@
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
 	  (VBDI taldi-telja)
-	  (PP (P ofan-ofan)
+	  (PP (CODE *XXX*-laga)
+	      (P ofan-ofan)
 	      (NP (D-A þessa-þessi) (N-A fyrirætlan-fyrirætlan))))
   (ID 1260.JOMSVIKINGAR.NAR-SAG,.253))
 
@@ -11807,8 +11808,8 @@
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *con*)
 	  (VBDI drápu-drepa)
-	  (PP (P úr-úr)
-	      (NP (N-A botn$-botn) (D-A $inn-hinn) (OTHER-A annan-annar))))
+	  (RPX úr-úr)
+	  (NP-OB1 (N-A botn$-botn) (D-A $inn-hinn) (OTHER-A annan-annar)))
   (ID 1260.JOMSVIKINGAR.NAR-SAG,.706))
 
 ( (IP-MAT (CONJ og-og)

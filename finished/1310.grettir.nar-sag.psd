@@ -6894,7 +6894,7 @@
 			  (NP-PRN (N-D bróður-bróðir)
 				  (NP-POS (PRO-D sínum-sinn))))))
 	  (PP (P til-til)
-	      (NP (N-D forsjá-forsjá) (CONJ og-og) (N-D ríkisstjórnar-ríkisstjórn)))
+	      (NP (N-G forsjá-forsjá) (CONJ og-og) (N-G ríkisstjórnar-ríkisstjórn)))
 	  (PP (P 0)
 	      (NP (PRO-D því-það)
 		  (CP-THT-PRN (C að-að)
@@ -8779,7 +8779,7 @@
 	  (" "-")
 	  (IP-IMP-SPE (VBPI Gangið-ganga)
 		      (PP (P til-til)
-			  (NP (NS-A sængur-sæng)))
+			  (NP (N-G sængur-sæng)))
 		      (, ,-,)
 		      (NP-VOC (NS-N konur-kona)))
 	  (, ,-,)
@@ -11757,8 +11757,8 @@
 
 ( (IP-MAT (NP-SBJ *con*)
 	  (VBPI krækir-krækja)
-	  (PP (P til-til)
-	      (NP (N-D hramm$-hrammur) (D-D $inum-hinn))))
+	  (RPX til-til)
+	  (NP-OB1 (N-D hramm$-hrammur) (D-D $inum-hinn)))
   (ID 1310.GRETTIR.NAR-SAG,.949))
 
 ( (IP-MAT (CONJ og-og)
@@ -18033,10 +18033,9 @@
   (ID 1310.GRETTIR.NAR-SAG,.1469))
 
 ( (IP-MAT (CONJ og-og)
-	  (NP-SBJ *con*)
 	  (VBDI gekk-ganga)
-	  (PP (P af-af)
-	      (NP (N-A yfirband$-yfirband) (D-A $ið-hinn)))
+	  (RP af-af)
+	  (NP-SBJ (N-N yfirband$-yfirband) (D-N $ið-hinn))
 	  (. .-.))
   (ID 1310.GRETTIR.NAR-SAG,.1470))
 

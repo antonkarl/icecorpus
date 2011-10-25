@@ -1,3 +1,4 @@
+
 ( (IP-MAT (CODE {COM:chapter1})
 	  (CODE <P_625>)
 	  (NP-PRD (NPR-N Ásbjörn-ásbjörn))
@@ -6509,7 +6510,8 @@
 	  (NP-TMP (D-A Það-það) (ADJ-A sama-samur) (N-A sumar-sumar))
 	  (VBDI kom-koma)
 	  (NP-SBJ (N-N skip-skip))
-	  (PP (P af-af) (N-D hafi-haf))
+	  (PP (P af-af)
+	      (NP (N-D hafi-haf)))
 	  (. .-.))
   (ID 1350.FINNBOGI.NAR-SAG,634.518))
 

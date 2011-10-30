@@ -1,18 +1,28 @@
-//7/8/2010
+//October 30 2011
 //This is the most recent file, and the other "pintzuk.def" files have errors in them, esp. lack of *AN and DO* forms; this one uses some scripts appearing
 //in the CS docs, written by Ann Taylor
 //This still excludes imperative forms.
 
 finite_aux: *MD*|*HVP*|*HVD*|*BEP*|*BED*|*AXD*|*AXP*|*DOD*|*DOP*|*RDP*|*RDD*
-nonfin_aux: *HV|H*N*|*DO|D*N*|*BE|B*N*|*AX|AXN*|*RD|R*N*
-nonfin_mainverb: *VB|V*N*
+nonfin_aux: *HV|H*N*|*DO|D*N*|*BE|B*N*|*AX|AXN*|*RD|R*N*|HAG*|DAG*|BAG*|RAG*
+nonfin_mainverb: *VB|V*N*|VAG*
 rpnonfin: RP+*VB|RP+V*N*|RP+*HV|RP+H*N*|RP+*DO|RP+D*N*|RP+*BE|RP+B*N*|RP+*AX|RP+AXN*
 finite_mainverb: *VBP*|*VBD*
 heavy_const: *PP*|*ADJP*|CP*
-nonfin_verb:  *VB|V*N*|*HV|H*N*|*DO|D*N*|*BE|B*N*|*AX|AXN*|*RD|R*N*
+nonfin_verb:  *VB|V*N*|*HV|H*N*|*DO|D*N*|*BE|B*N*|*AX|AXN*|*RD|R*N*|HAG*|DAG*|BAG*|RAG*|VAG*
 finite_verb:  *MD*|*HVP*|*HVD*|*DOP*|*DOD*|*BEP*|*BED*|*VBP|*VBD*|*AXD*|*AXP*|*RDP*|*RDD*
 any_nominal: N|N$|NS|NS$|NR|NR$|NRS|NRS$|NPR|NPR$|NPRS|NPRS$|NUM*|NEG*|Q*|ADJ*|*OTHER*|D|WD|V*|H*|B*
 pos_np: !Q*|NEG*|NUM*|PRO*|\**
+adjunct: ADVP*|PP*|ELSE|ALSO|Q*|NP-TMP|NP-MSR|NP-ADV|IP-PPL|IP-PPL-SPE|IP-PPL-ABS*|CP-ADV*|IP-INF*PRP*|IP-ABS*
+
+finite_aux_ice: *MDD*|MDP*|*HVP*|*HVD*|*BEP*|*BED*|*DOD*|*DOP*|RDP*|RDD*
+nonfin_aux_ice: *HV|H*N*|*DO|D*N*|*BE|B*N*|RD|R*N*|MD|DAG*|HAG*|BAG*
+nonfin_mainverb_ice: *VB|V*N*|*DO|D*N*|VAG*|DAG*|RAG*
+nonfin_verb_ice:  *VB|V*N*|*HV|H*N*|*DO|D*N*|*BE|B*N*|RD|R*N*|MD|VAG*|DAG*|RAG*|HAG*|BAG*
+finite_verb_ice:  *MDD*|MDP*|*HVP*|*HVD*|*DOP*|*DOD*|*BEP*|*BED*|*VBP|*VBD*|RDP*|RDD*
+finite_mainverb_ice: *VBP*|*VBD*|*DOP*|*DOD*
+nongap_ipsub: IP-SUB|IP-SUB-SPE|IP-SUB-1|IP-SUB-2|IP-SUB-3|IP-SUB-4|IP-SUB-5|IP-SUB-6|IP-SUB-7|IP-SUB-8|IP-SUB-9|IP-SUB-SPE-1|IP-SUB-SPE-2|IP-SUB-SPE-3|IP-SUB-SPE-4|IP-SUB-SPE-5|IP-SUB-SPE-6|IP-SUB-SPE-7|IP-SUB-SPE-8|IP-SUB-SPE-9
+
 yid_finite_verb: *0
 yid_nonfin_verb: MD1|AUX1|VB1|MD2|AUX2|VB2|MD3|AUX3|VB3|VB-PASS*
 yid_nonfin_verb2: AUX1|VB1|MD2|AUX2|VB2|MD3|AUX3|VB3|VB-PASS*

@@ -1,4 +1,3 @@
-
 ( (IP-MAT (NP-SBJ-1 (ES Það-það))
 	  (BEPI er-vera)
 	  (NP-PRD (N-N upphaf-upphaf)
@@ -1124,6 +1123,7 @@
 	  (VBDI jókst-auka)
 	  (NP-SBJ (N-N harmur-harmur)
 		  (NP-POS (PRO-G þeirra-hann)))
+	  (CODE *XXX*-laga)
 	  (PP (P á-á)
 	      (PP (P milli-milli)))
 	  (NP-MSR (QR-N meir-mikill) (CONJ og-og) (QR-N meir-mikill))
@@ -1150,7 +1150,7 @@
 	  (NP-SBJ *con*)
 	  (VBDI kvaddi-kveðja)
 	  (NP-OB1 (PRO-A hana-hún))
-	  (ADJP-SPR (ADV mjög-mjög) (ADJ-A harmþrunginn-harmþrunginn))
+	  (ADJP-SPR (ADV mjög-mjög) (ADJ-N harmþrunginn-harmþrunginn))
 	  (. ;-;))
   (ID 1675.MODARS.NAR-FIC,.85))
 
@@ -1205,8 +1205,8 @@
 		 (IP-MAT=1 (NEG ekki-ekki)
 			   (PP (ADV þaðan-þaðan)
 			       (P í-í)
-			       (ADVP (ADV frá-frá)))
-			   (. .-.))))
+			       (ADVP (ADV frá-frá)))))
+	  (. .-.))
   (ID 1675.MODARS.NAR-FIC,.91))
 
 ( (IP-MAT (NP-SBJ *exp*)

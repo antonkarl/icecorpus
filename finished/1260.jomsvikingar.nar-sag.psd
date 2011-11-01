@@ -1,4 +1,3 @@
-
 ( (META (CODE <heading>)
 	(NP (ADJ-N 1.-fyrstur) (N-N kafli-kafli))
 	(CODE </heading>))
@@ -19157,6 +19156,7 @@
 ( (IP-MAT (NP-SBJ-1 (ES Það-það))
 	  (BEPI er-vera)
 	  (ADVP-TMP (ADV nú-nú))
+	  (CODE *XXX*-laga)
 	  (RPX í-í)
 	  (RP frá-frá)
 	  (VAN sagt-segja)
@@ -19178,10 +19178,10 @@
 	(NP-MSR (Q lítt-lítt))
 	(VAN vandað-vanda)
 	(, ,-,)
-	(NP-SBJ (Q+NUM *ICH*-1)
-		(NP (NS-N skip$-skip) (D-N $in-hinn))
-		(CONJP (CONJ og-og)
-		       (NP (N-N liðið-lið) (D-N $ið-hinn))))
+	(NP (Q+NUM *ICH*-1)
+	    (NP (NS-N skip$-skip) (D-N $in-hinn))
+	    (CONJP (CONJ og-og)
+		   (NP (N-N lið$-lið) (D-N $ið-hinn))))
 	(. .-.))
   (ID 1260.JOMSVIKINGAR.NAR-SAG,.1148))
 

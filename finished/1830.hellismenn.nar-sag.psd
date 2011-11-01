@@ -12561,7 +12561,8 @@
 
 ( (IP-MAT (NP-SBJ *con*)
 	  (VBDI lést-láta)
-	  (IP-INF (IP-INF-1 (VBN fengið-fá)
+	  (IP-INF (IP-INF-1 (NP-SBJ *arb*)
+			    (VBN fengið-fá)
 			    (HV hafa-hafa)
 			    (NP-OB1 (ADJ-A ærinn-ærinn) (N-A mannskaða-mannskaði)))
 		  (, ,-,)
@@ -12571,7 +12572,7 @@
   (ID 1830.HELLISMENN.NAR-SAG,.957))
 
 ( (FRAG (CONJ en-en)
-	(NP-SBJ (Q-N margir-margur))
+	(NP (Q-N margir-margur))
 	(ADJP (ADJ-N sárir-sár))
 	(. .-.))
   (ID 1830.HELLISMENN.NAR-SAG,.958))
@@ -16155,7 +16156,8 @@
 	  (. ,-,))
   (ID 1830.HELLISMENN.NAR-SAG,.1230))
 
-( (IP-MAT (CODE {COM:dash})
+( (IP-MAT (CODE *XXX*-merge)
+	  (CODE {COM:dash})
 	  (NP-SBJ-1 *exp*)
 	  (VBPI heitir-heita)
 	  (ADVP-LOC (ADV þar-þar))
@@ -16165,7 +16167,8 @@
 	  (, ,-,))
   (ID 1830.HELLISMENN.NAR-SAG,.1231))
 
-( (FRAG (CODE {COM:dash})
+( (FRAG (CODE *XXX*-merge)
+	(CODE {COM:dash})
 	(CONJ en-en)
 	(NP-SBJ (NPR-N Ásgeir-ásgeir))
 	(PP (P við-við)

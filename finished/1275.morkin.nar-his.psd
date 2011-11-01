@@ -11244,7 +11244,7 @@
   (ID 1275.MORKIN.NAR-HIS,.802))
 
 ( (FRAG (CONJ og-og)
-	(NP-SBJ (D-N þetta-þessi) (N-N mál-mál))
+	(NP (D-N þetta-þessi) (N-N mál-mál))
 	(VAN borið-bera)
 	(RP upp-upp)
 	(PP (P fyrir-fyrir)
@@ -29813,7 +29813,7 @@
 
 ( (FRAG (CONJ en-en)
 	(VAN lokið-ljúka)
-	(NP-SBJ (N-D sólarhita$-sólarhiti) (D-D $num-hinn))
+	(NP (N-D sólarhita$-sólarhiti) (D-D $num-hinn))
 	(. ,-,))
   (ID 1275.MORKIN.NAR-HIS,.2168))
 
@@ -29821,8 +29821,9 @@
 	  (NP-SBJ (PRO-N hann-hann))
 	  (BEDI var-vera)
 	  (PP (P í-í)
-	      (NP (N-D skyrtu-skyrta) (ONE-D einni-einn)))
-	  (VAN klæða-klæða))
+	      (NP (N-D skyrtu-skyrta)
+		  (NP-PRN (FP-D einni-einn)
+			  (NP-POS (NS-G klæða-klæði))))))
   (ID 1275.MORKIN.NAR-HIS,.2169))
 
 ( (IP-MAT (CONJ og-og)

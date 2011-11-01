@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP-SBJ (NPR-N Eyrarkaupstaður-eyrarkaupstaður))
 	  (VBDI lá-liggja)
 	  (ADVP (ADV fallega-fallega))
@@ -697,12 +698,14 @@
 	  (NP-SBJ (PRO-N hann-hann))
 	  (IP-SMC (NP-SBJ (PRO-A sig-sig))
 		  (ADVP (ADV þó-þó))
-		  (NP-PRD (ONE-A einna-einn) (QS-A minnst-minni)))
+		  (NP-PRD (ONE-A einna-einn)
+			  (QS-A minnst-minni)
+			  (CODE *XXX*-laga)))
 	  (. ,-,))
   (ID 1888.GRIMUR.NAR-FIC,.51))
 
 ( (FRAG (CONJ og-og)
-	(NP-SBJ (PRO-N það-það))
+	(NP (PRO-N það-það))
 	(PP (P af-af)
 	    (NP (ADJP (ADJ-D góðum-góður) (CONJ og-og) (ADJ-D gildum-gildur))
 		(NS-D ástæðum-ástæða)))
@@ -718,7 +721,8 @@
 						      (C 0)
 						      (IP-SUB (NP-MSR *T*-1)
 							      (IP-PPL (ADVP (ADV svo-svo))
-								      (VAG skrifandi-skrifa))))))))))
+								      (VAG skrifandi-skrifa)
+								      (CODE *XXX*-laga))))))))))
 	(. .-.))
   (ID 1888.GRIMUR.NAR-FIC,.52))
 

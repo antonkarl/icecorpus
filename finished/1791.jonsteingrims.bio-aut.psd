@@ -1,4 +1,3 @@
-
 ( (CODE (CODE <heading>)
 	(NP (N-N KAP.-kapítuli) (NUM-N XXI.-xxi.))
 	(CODE </heading>))
@@ -26776,13 +26775,13 @@
 			  (NP-TMP (D-A hið-hinn) (ADJS-A snarasta-snar))))
 	  (PP (P 0)
 	      (NP (PRO-D því-það)
-		  (CP-THT-PRN (C 0-2)
-			      (IP-SUB (NP-SBJ *exp*)
-				      (ADVP-1 (ADV þar-þar))
+		  (CP-THT-PRN (C 0)
+			      (IP-SUB (NP-SBJ-1 *exp*)
+				      (ADVP-2 (ADV þar-þar))
 				      (VBPS liggi-liggja)
-				      (NP-2 (Q-N mikið-mikill))
+				      (NP-1 (Q-N mikið-mikill))
 				      (PP (P á-á)
-					  (ADVP *ICH*-1))))))
+					  (ADVP *ICH*-2))))))
 	  (. .-.))
   (ID 1791.JONSTEINGRIMS.BIO-AUT,158.1512))
 

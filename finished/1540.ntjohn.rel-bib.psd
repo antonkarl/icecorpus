@@ -9819,7 +9819,7 @@
 	  (NP-SBJ *con*)
 	  (VBDI páraði-pára)
 	  (PP (P með-með)
-	      (NP (N-D fingrinum-fingur)))
+	      (NP (N-D fingri$-fingur) (D-D $num-hinn)))
 	  (PP (P á-á)
 	      (NP (N-A jörð$-jörð) (D-A $ina-hinn)))
 	  (. .-.))
@@ -9827,8 +9827,7 @@
 
 ( (IP-MAT (CODE VS:VIII_7J)
 	  (CONJ Og-og)
-	  (CP-ADV-LFD (CODE *XXX*)
-		      (C sem-sem)
+	  (CP-ADV-LFD (C sem-sem)
 		      (IP-SUB (NP-SBJ (PRO-N þeir-hann))
 			      (CODE *XXX*)
 			      (VBDI létu-láta)

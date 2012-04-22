@@ -1,3 +1,4 @@
+
 ( (IP-MAT (IP-MAT-1 (NP-SBJ (D-N Hin-hinn) (ADJ-N sæla-sæll) (NPR-N Marta-marta))
 		    (BEDI var-vera)
 		    (ADJP (ADJ-N göfug-göfugur))
@@ -2207,7 +2208,7 @@
 		  (NP-PRN (D-N sú-sá)
 			  (CP-REL (WNP-1 0)
 				  (C er-er)
-				  (IP-SUB (NP-SBJ (N-N drottinn-drottinn))
+				  (IP-SUB (NP-SBJ (NPR-N drottinn-drottinn))
 					  (VBDI rak-reka)
 					  (PP (P frá-frá)
 					      (NP *T*-1))
@@ -2291,8 +2292,8 @@
 					      (IP-SUB (NP-SBJ (N-N maður-maður))
 						      (VBPI vinnur-vinna)
 						      (NEG eigi-ekki)
-						      (NP-OB1 (ADJ-A vinnandi-vinnandi) (NS-A hluti-hlutur))
-						      (, ,-,)))))
+						      (NP-OB1 (ADJ-A vinnandi-vinnandi) (NS-A hluti-hlutur))))))
+			  (, ,-,)
 			  (CONJP (CONJ en-en)
 				 (IP-SUB (NP-SBJ (FW peccatum-peccatum))
 					 (BEPI er-vera)
@@ -17667,7 +17668,7 @@
 	  (. .-.))
   (ID 1350.MARTA.REL-SAG,.885))
 
-( (IP-MAT (NP-SBJ (D-N Hinn-hinn) (ADJ-N píndi-píndur) (N-N maður-maður))
+( (IP-MAT (NP-SBJ (D-N Hinn-hinn) (VAN píndi-pína) (N-N maður-maður))
 	  (VBDI hét-heita)
 	  (ADVP-TMP (ADV þá-þá))
 	  (PP (P með-með)

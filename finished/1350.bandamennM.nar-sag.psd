@@ -5858,10 +5858,10 @@
 
 ( (IP-MAT-SPE (CONJ og-og)
 	      (NP-SBJ *con*)
-	      (VBDI vildir-vilja)
-	      (IP-INF-SPE (NP-OB1 (Q-A engan-enginn) (N-A mann-maður))
-			  (TO að-að)
-			  (VB spyrja-spyrja))
+	      (MDDI vildir-vilja)
+	      (NP-OB1 (Q-A engan-enginn) (N-A mann-maður))
+	      (RP að-að)
+	      (VB spyrja-spyrja)
 	      (. .-.))
   (ID 1350.BANDAMENNM.NAR-SAG,.488))
 
@@ -7136,9 +7136,9 @@
   (ID 1350.BANDAMENNM.NAR-SAG,.577))
 
 ( (IP-MAT-SPE (CONJ og-og)
+	      (NP-SBJ *pro*)
 	      (BEPI er-vera)
-	      (NP-SBJ (N-N maður-maður))
-	      (NP-PRD (D-N hinn-hinn) (ADJS-N glæpamannlegasti-glæpamannlegur))
+	      (NP-SBJ (N-N maður-maður) (D-N hinn-hinn) (ADJS-N glæpamannlegasti-glæpamannlegur))
 	      (. .-.)
 	      (" "-"))
   (ID 1350.BANDAMENNM.NAR-SAG,.578))

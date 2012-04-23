@@ -1,4 +1,3 @@
-
 ( (IP-MAT (PP (P Á-á)
 	      (NP (ADJ-D austanverðu-austanverður) (NPR-D Íslandi-ísland)))
 	  (VBPI liggur-liggja)
@@ -4695,9 +4694,10 @@
 	  (PP (P á-á)
 	      (PP (P meðan-meðan)
 		  (CP-ADV (C 0)
-			  (IP-SUB (BAN verið-vera)
+			  (IP-SUB (NP-SBJ *exp*)
+				  (BAN verið-vera)
 				  (BEDI var-vera)
-				  (IP-INF-SBJ (TO að-að) (VB draga-draga))))))
+				  (IP-INF (TO að-að) (VB draga-draga))))))
 	  (. ,-,))
   (ID 1850.PILTUR.NAR-FIC,.319))
 

@@ -2546,8 +2546,8 @@
 				    (NP-SBJ (N-N samviska$-samviska) (D-N $n-hinn))
 				    (RP yfir$-yfir)
 				    (VBPI $bevísar-bevísa)
-				    (NP-OB2 (N-D manni-maður))
-				    (NP-OB1 (N-A sök$-söki) (D-A $ina-hinn))
+				    (NP-OB2 (MAN-D manni-maður))
+				    (NP-OB1 (N-A sök$-sök) (D-A $ina-hinn))
 				    (, ,-,)
 				    (CP-CAR (WNP-5 (WD-N hver-hver) (NS-N teikn-teikn))
 					    (C 0)
@@ -7929,6 +7929,7 @@
   (ID 1659.PISLARSAGA.BIO-AUT,.241))
 
 ( (IP-MAT (CONJ og-og)
+	  (NP-SBJ *con*)
 	  (RP af$-af)
 	  (VBDI $salaði-sala)
 	  (NP-OB2 (PRO-A sig-sig))

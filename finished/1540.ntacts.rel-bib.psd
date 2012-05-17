@@ -15324,10 +15324,9 @@
 			  (VBDS segði-segja)
 			  (NP-OB2 (PRO-D þeim-það))
 			  (NP-OB1 (D-A þessi-þessi) (NS-A orð-orð))
-			  (PP (CODE *XXX*)
-			      (RP á-á)
-			      (P eftir-eftir)
-			      (NP (VAN-D komanda-koma) (NPR-D þvottdegi-þvottdagur)))))
+			  (PP (P á-á)
+			      (PP (P eftir-eftir)
+				  (NP (VAG komanda-koma) (NPR-D þvottdegi-þvottdagur))))))
 	  (. .-.))
   (ID 1540.NTACTS.REL-BIB,266.866))
 
@@ -15359,7 +15358,7 @@
 ( (IP-MAT (CONJ Og-og)
 	  (NP-SBJ (PRO-N þeir-hann))
 	  (VBDI sögðu-segja)
-	  (NP-OB1 (PRO-D þeim-það)))
+	  (NP-OB2 (PRO-D þeim-hann)))
   (ID 1540.NTACTS.REL-BIB,266.868))
 
 ( (IP-MAT (CONJ og-og)
@@ -15528,7 +15527,6 @@
   (ID 1540.NTACTS.REL-BIB,266.876))
 
 ( (IP-MAT (CONJ og-og)
-	  (CODE *XXX*)
 	  (NP-SBJ (ADVR svo-svo)
 		  (Q-N margir-margur)
 		  (CP-CMP *ICH*-1))

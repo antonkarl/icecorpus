@@ -1,4 +1,3 @@
-
 ( (IP-MAT (NP-TMP (ADJS-A Fyrsta-fyrstur)
 		  (N-A vetur$-vetur)
 		  (D-A $inn-hinn)
@@ -5097,8 +5096,9 @@
   (ID 2008.OFSI.NAR-SAG,.227))
 
 ( (CP-QUE-SPE (" "-")
-	      (IP-SUB-SPE (NP-SBJ (N-N Hefur-hefur) (ONE+Q-N eitthvað-einhver))
-			  (DOPI gerst-gera))
+	      (IP-SUB-SPE (HVPI Hefur-hafa)
+			  (NP-SBJ (ONE+Q-N eitthvað-einhver))
+			  (VBN gerst-gerast))
 	      (, ?-?)
 	      (" "-")
 	      (IP-MAT-PRN (VBPI spyr-spyrja)
@@ -5125,7 +5125,7 @@
 
 ( (IP-MAT (ADVP (ADV enda-enda))
 	  (HVDS hefði-hafa)
-	  (NP-OB1 (PRO-N ég-ég)
+	  (NP-SBJ (PRO-N ég-ég)
 		  (NP-PRN (PRO-N sjálf-sjálfur)))
 	  (MDN getað-geta)
 	  (VBN svarað-svara)

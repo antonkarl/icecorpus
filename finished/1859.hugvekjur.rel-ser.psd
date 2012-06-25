@@ -1,3 +1,4 @@
+
 ( (META (CODE <heading>)
 	(NP (ADJ-N 1.-fyrstur) (N-N hugvekja-hugvekja))
 	(CODE </heading>)
@@ -13113,9 +13114,10 @@
 	  (PP (P í-í)
 	      (NP (NP-POS (PRO-D þínu-þinn))
 		  (N-D nafni-nafn)))
-	  (. .-.)
-	  (INTJ Amen-amen)
 	  (. .-.))
+  (ID 1859.HUGVEKJUR.REL-SER,.631))
+
+( (INTJP (INTJ Amen-amen) (. .-.))
   (ID 1859.HUGVEKJUR.REL-SER,.631))
 
 ( (QTP (META (ADJ-N 12.-tólfti) (N-N hugvekja-hugvekja))
@@ -14373,10 +14375,9 @@
 				      (IP-INF (TO að-að)
 					      (VB sjá-sjá)
 					      (NP-OB1 (PRO-A þig-þú))
-					      (PP (NP-1 (N-D augliti-auglit))
-						  (P til-til)
-						  (NP (N-G auglitis-auglit)
-						      (NP-COM *ICH*-1)))
+					      (NP-ADV (NP (N-D augliti-auglit))
+						      (PP (P til-til)
+							  (NP (N-G auglitis-auglit))))
 					      (PP (P á-á)
 						  (NP (NP-POS (N-G sælun$-sæla) (D-G $nar-hinn))
 						      (N-D landi-land)
@@ -14403,9 +14404,11 @@
 											      (BEPI er-vera)
 											      (NP-PRD (N-N réttlæti-réttlæti) (, ,-,) (N-N friður-friður) (CONJ og-og) (N-N fögnuður-fögnuður))
 											      (PP (P í-í)
-												  (NP (ADJ-D heilögum-heilögur) (N-D anda.-anda))))))))))))))))
-	  (INTJ Amen-amen)
+												  (NP (ADJ-D heilögum-heilagur) (N-D anda-andi))))))))))))))))
 	  (. .-.))
+  (ID 1859.HUGVEKJUR.REL-SER,.702))
+
+( (INTJP (INTJ Amen-amen) (. .-.))
   (ID 1859.HUGVEKJUR.REL-SER,.702))
 
 ( (QTP (META (NP (ADJ-N 13.-þrettándi) (N-N hugvekja-hugvekja)))
@@ -15887,9 +15890,10 @@
 	  (NP-OB2 (N-A föður$-faðir) (D-A $inn-hinn))
 	  (PP (P fyrir-fyrir)
 	      (NP (PRO-D mér-ég)))
-	  (. !-!)
-	  (INTJ Amen-amen)
-	  (. .-.))
+	  (. !-!))
+  (ID 1859.HUGVEKJUR.REL-SER,.774))
+
+( (INTJP (INTJ Amen-amen) (. .-.))
   (ID 1859.HUGVEKJUR.REL-SER,.774))
 
 ( (META (NP (ADJ-N 14.-14.) (N-N hugvekja-hugvekja))
@@ -17097,7 +17101,7 @@
 	  (. .-.))
   (ID 1859.HUGVEKJUR.REL-SER,.822))
 
-( (IP-IMP (VBPI Gef-gefa)
+( (IP-IMP (VBI Gef-gefa)
 	  (NP-SBJ (PRO-N þú-þú))
 	  (NP-OB2 (PRO-D oss-ég))
 	  (, ,-,)

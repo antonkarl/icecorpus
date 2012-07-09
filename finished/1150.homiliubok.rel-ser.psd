@@ -16564,7 +16564,8 @@
 ( (CP-QUE (WNP-1 (D-N Hvað-hver) (N-N bæn-bæn))
 	  (IP-SUB (NP-PRD *T*-1)
 		  (BEPI er-vera)
-		  (NP-SBJ (PRO-N það-það) (, ,-,))
+		  (NP-SBJ (PRO-N það-það))
+		  (, ,-,)
 		  (CP-ADV (C er-er)
 			  (IP-SUB (NP-SBJ (PRO-N vér-ég))
 				  (VBPI biðjum-biðja)
@@ -16574,10 +16575,9 @@
 					  (IP-SUB (NP-SBJ (N-N nafn-nafn)
 							  (NP-POS (PRO-G hans-hann)))
 						  (MDPS skuli-skulu)
-						  (VB helgast-helga)))))))
+						  (VB helgast-helga))))))
+	  (. ?-?))
   (ID 1150.HOMILIUBOK.REL-SER,.691))
-
-( (. ?-?))
 
 ( (IP-MAT (ADVP-TMP (ADV Ávallt-ávallt))
 	  (BEPI er-vera)

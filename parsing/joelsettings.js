@@ -1,3 +1,5 @@
+//Joel Wallenberg's modifications of:
+
 // Copyright (c) 2011, 2012 Anton Karl Ingason, Aaron Ecay
 
 // This file is part of the Annotald program for annotating
@@ -38,7 +40,7 @@ var caseTags = ["N","NS","NPR","NPRS",
                 "ADJ","ADJR","ADJS",
                 "Q","QR","QS"];
 var casePhrases = ["NP","QP","ADJP"];
-var caseMarkers = ["N", "A", "D", "$"];
+var caseMarkers = ["N", "A", "D", "G"];
 /*
  * Which labels are barriers to recursive case assignment.
  */
@@ -130,7 +132,7 @@ function customCommands() {
     // addCommand({ keycode: 123 } , setLabel, { NP: ["NP-SBJ", "NP-OB1", "NP-OB2"],
     //                                           PP: ["PP-SBJ", "PP-OB1", "PP-OB2"]});
 }
-
+    addCommand({ keycode: 83, ctrl: true }, save);
 
 /*
  * Default phrase label suggestions in context menu
@@ -148,11 +150,19 @@ function customConMenuGroups() {
                       "NP","NX","NP-MSR","NP-TMP","NP-ADV","NP-COM","NP-CMP",
                       "NP-DIR","NP-ADT","NP-VOC","QP"] );
     addConMenuGroup( ["PP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR","NP-MSR","NP-ADV"] );
-    addConMenuGroup( ["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VBN","VB","HV"] );
-    addConMenuGroup( ["HVPI","HVPS","HVDI","HVDS","HVI","HV"] );
+    //joel modified:
+    addConMenuGroup( ["HVPI","HVPS","HVDI","HVDS","HVI","HV","HVN","HAN"] );
+    addConMenuGroup( ["BEPI","BEPS","BEDI","BEDS","BEI","BE","BEN"] );
+    addConMenuGroup( ["RDPI","RDPS","RDDI","RDDS","RDI","RD","RDN"] );
+    addConMenuGroup( ["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VBN","VB","HV","BE","RD","MD","MDDI","MDPI"] );
+    //joel modified above
+
     addConMenuGroup( ["RP","P","ADV","ADVR","ADVS","ADJ","ADJR","ADJS","C","CONJ","ALSO"] );
     addConMenuGroup( ["WADVP","WNP","WPP","WQP","WADJP"] );
     addConMenuGroup( ["CP-THT","CP-QUE","CP-REL","CP-DEG","CP-ADV","CP-CMP"] );
+    
+//joel modified:
+    addConMenuGroup( ["N","NS","NPR","NPRS","PRO","EX","MAN","OTHER","OTHERS","N-N","NS-N","NPR-N","NPRS-N","PRO-N","OTHER-N","OTHERS-N","N-A","NS-A","NPR-A","NPRS-A","PRO-A","OTHER-A","OTHERS-A","N-D","NS-D","NPR-D","NPRS-D","PRO-D","OTHER-D","OTHERS-D","N-G","NS-G","NPR-G","NPRS-G","PRO-G","OTHER-G","OTHERS-G"] );
 }
 
 /*

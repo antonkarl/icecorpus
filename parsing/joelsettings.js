@@ -32,7 +32,7 @@ var logDetail = true;
  * which phrasal categories case pertains to (though they themselves are not
  * marked)
  */
-var displayCaseMenu = false; // This feature is inoperative, pending modularization
+var displayCaseMenu = true; // This feature is inoperative, pending modularization
 var caseTags = ["N","NS","NPR","NPRS",
                 "PRO","D","NUM",
                 "ADJ","ADJR","ADJS",

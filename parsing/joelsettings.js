@@ -137,7 +137,7 @@ function customCommands() {
 /*
  * Default phrase label suggestions in context menu
  */
-var defaultConMenuGroup = ["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VBN","VB"];
+var defaultConMenuGroup = ["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VBN","VB","N","ADJ"];
 
 /*
  * Phrase labels that are suggested in context menu when one of the other ones

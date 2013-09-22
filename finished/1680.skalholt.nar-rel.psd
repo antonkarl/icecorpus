@@ -8685,9 +8685,8 @@
 	  (. ;-;))
   (ID 1680.SKALHOLT.NAR-REL,.604))
 
-( (NP-SBJ *exp*))
-
-( (IP-MAT (BEDI var-vera)
+( (IP-MAT (NP-SBJ *exp*)
+	  (BEDI var-vera)
 	  (VAN sent-senda)
 	  (ADVP (ADV strax-strax))
 	  (PP (P eftir-eftir)

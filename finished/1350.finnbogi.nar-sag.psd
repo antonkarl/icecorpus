@@ -1,3 +1,4 @@
+
 ( (IP-MAT (CODE {COM:chapter1})
 	  (CODE <P_625>)
 	  (NP-PRD (NPR-N Ásbjörn-ásbjörn))
@@ -121,8 +122,8 @@
 			 (NX (NS-A endemi-endemi))))
 	  (CP-ADV (WADVP-1 0)
 		  (C sem-sem)
-		  (IP-SUB-ZZZ (ADVP *T*-1)
-			      (NP-SBJ (Q-N margur-margur) (OTHER-N annar-annar) (ADJ-N gildur-gildur) (N-N maður-maður))))
+		  (IP-SUB (ADVP *T*-1)
+			  (NP-SBJ (Q-N margur-margur) (OTHER-N annar-annar) (ADJ-N gildur-gildur) (N-N maður-maður))))
 	  (. .-.))
   (ID 1350.FINNBOGI.NAR-SAG,625.12))
 
@@ -3275,11 +3276,11 @@
 			      (NP-POS (PRO-N mitt-minn)))
 		      (NP-VOC (NPR-N Syrpa-syrpa))
 		      (CP-THT-SPE-1 (C að-að)
-				    (IP-SUB-ZZZ-MISS-SPE (NP-SBJ (NPR-N Urðarköttur-urðarköttur))
-							 (BEPS sé-vera)
-							 (NEG ekki-ekki)
-							 (NP-PRD (NP-POS (PRO-G ykkar-þú))
-								 (N-N son-sonur)))))
+				    (IP-SUB-SPE (NP-SBJ (NPR-N Urðarköttur-urðarköttur))
+						(BEPS sé-vera)
+						(NEG ekki-ekki)
+						(NP-PRD (NP-POS (PRO-G ykkar-þú))
+							(N-N son-sonur)))))
 	  (. .-.))
   (ID 1350.FINNBOGI.NAR-SAG,629.256))
 

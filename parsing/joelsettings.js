@@ -151,6 +151,7 @@ function customConMenuGroups() {
                       "NP-DIR","NP-ADT","NP-VOC","QP"] );
     addConMenuGroup( ["PP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR","NP-MSR","NP-ADV"] );
     //joel modified:
+    addConMenuGroup( ["ADJ","ADJR","ADJS","N","NS","VAN"] );
     addConMenuGroup( ["HVPI","HVPS","HVDI","HVDS","HVI","HV","HVN","HAN"] );
     addConMenuGroup( ["BEPI","BEPS","BEDI","BEDS","BEI","BE","BEN"] );
     addConMenuGroup( ["RDPI","RDPS","RDDI","RDDS","RDI","RD","RDN"] );
@@ -162,7 +163,7 @@ function customConMenuGroups() {
     addConMenuGroup( ["CP-THT","CP-QUE","CP-REL","CP-DEG","CP-ADV","CP-CMP"] );
     
 //joel modified:
-    addConMenuGroup( ["N","NS","NPR","NPRS","PRO","EX","MAN","OTHER","OTHERS","N-N","NS-N","NPR-N","NPRS-N","PRO-N","OTHER-N","OTHERS-N","N-A","NS-A","NPR-A","NPRS-A","PRO-A","OTHER-A","OTHERS-A","N-D","NS-D","NPR-D","NPRS-D","PRO-D","OTHER-D","OTHERS-D","N-G","NS-G","NPR-G","NPRS-G","PRO-G","OTHER-G","OTHERS-G"] );
+    addConMenuGroup( ["N","NS","NPR","NPRS","PRO","EX","MAN","OTHER","OTHERS"] );
 }
 
 /*

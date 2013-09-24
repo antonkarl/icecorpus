@@ -38,7 +38,7 @@ var displayCaseMenu = true; // This feature is inoperative, pending modularizati
 var caseTags = ["N","NS","NPR","NPRS",
                 "PRO","D","NUM",
                 "ADJ","ADJR","ADJS",
-                "Q","QR","QS"];
+                "Q","QR","QS","WPRO","WD"];
 var casePhrases = ["NP","QP","ADJP"];
 var caseMarkers = ["N", "A", "D", "G"];
 /*
@@ -147,9 +147,9 @@ function customConMenuGroups() {
     addConMenuGroup( ["IP-SUB","IP-MAT","IP-INF","IP-IMP","CP-QUE","QTP","FRAG"] );
     addConMenuGroup( ["ADJP","ADJX","NP-MSR","QP","NP","ADVP","IP-PPL"] );
     addConMenuGroup( ["NP-SBJ","NP-OB1","NP-OB2","NP-PRD","NP-POS","NP-PRN",
-                      "NP","NX","NP-MSR","NP-TMP","NP-ADV","NP-COM","NP-CMP",
+                      "NP","NX","WNP","NP-MSR","NP-TMP","NP-ADV","NP-COM","NP-CMP",
                       "NP-DIR","NP-ADT","NP-VOC","QP"] );
-    addConMenuGroup( ["PP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR","NP-MSR","NP-ADV"] );
+    addConMenuGroup( ["PP","WPP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR","NP-MSR","NP-ADV"] );
     //joel modified:
     addConMenuGroup( ["ADJ","ADJR","ADJS","N","NS","VAN"] );
     addConMenuGroup( ["HVPI","HVPS","HVDI","HVDS","HVI","HV","HVN","HAN"] );
@@ -158,12 +158,13 @@ function customConMenuGroups() {
     addConMenuGroup( ["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VBN","VB","HV","BE","RD","MD","MDDI","MDPI"] );
     //joel modified above
 
-    addConMenuGroup( ["RP","P","ADV","ADVR","ADVS","ADJ","ADJR","ADJS","C","CONJ","ALSO"] );
+    addConMenuGroup( ["RP","P","ADV","ADVR","ADVS","C","CONJ","ALSO","BEPI"] );
     addConMenuGroup( ["WADVP","WNP","WPP","WQP","WADJP"] );
     addConMenuGroup( ["CP-THT","CP-QUE","CP-REL","CP-DEG","CP-ADV","CP-CMP"] );
     
 //joel modified:
-    addConMenuGroup( ["N","NS","NPR","NPRS","PRO","EX","MAN","OTHER","OTHERS"] );
+    addConMenuGroup( ["N","NS","NPR","NPRS","PRO","EX","MAN","OTHER","OTHERS","WPRO"] );
+    addConMenuGroup( ["Q","QR","QS","N","PRO","WPRO","WD"] );
 }
 
 /*
@@ -172,6 +173,7 @@ function customConMenuGroups() {
 function customConLeafBefore() {
     addConLeafBefore("NP-SBJ" , "*con*"     );
     addConLeafBefore("NP-SBJ" , "*pro*"     );
+    addConLeafBefore("WNP"      , "0"         );
     addConLeafBefore("C"      , "0"         );
     addConLeafBefore("CODE"   , "{COM:XXX}" );
 }

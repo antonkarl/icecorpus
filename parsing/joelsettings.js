@@ -75,7 +75,7 @@ var leaf_extensions   = [];
  * extensions) get a different background color so that the annotator can
  * see the "floor" of the current clause
  */
-var ipnodes = ["IP-SUB","IP-MAT","IP-IMP","IP-INF","IP-PPL","RRC"];
+var ipnodes = ["IP-SUB","IP-MAT","IP-IMP","IP-INF","IP-PPL","RRC","IP-SMC"];
 
 // Types of comments.
 // Comments are nodes of the form (CODE {XXX:words_words_words})
@@ -144,7 +144,7 @@ var defaultConMenuGroup = ["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VBN","VB","N
  * is set
  */
 function customConMenuGroups() {
-    addConMenuGroup( ["IP-SUB","IP-MAT","IP-INF","IP-IMP","CP-QUE","QTP","FRAG"] );
+    addConMenuGroup( ["IP-SUB","IP-MAT","IP-INF","IP-IMP","IP-SMC","CP-QUE","QTP","FRAG"] );
     addConMenuGroup( ["ADJP","ADJX","NP-MSR","QP","NP","ADVP","IP-PPL"] );
     addConMenuGroup( ["NP-SBJ","NP-OB1","NP-OB2","NP-PRD","NP-POS","NP-PRN",
                       "NP","NX","WNP","NP-MSR","NP-TMP","NP-ADV","NP-COM","NP-CMP",
@@ -164,7 +164,7 @@ function customConMenuGroups() {
     
 //joel modified:
     addConMenuGroup( ["N","NS","NPR","NPRS","PRO","EX","MAN","OTHER","OTHERS","WPRO"] );
-    addConMenuGroup( ["Q","QR","QS","N","PRO","WPRO","WD"] );
+    addConMenuGroup( ["Q","QR","QS","PRO","WPRO","WD"] );
 }
 
 /*

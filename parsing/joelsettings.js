@@ -99,7 +99,7 @@ function customCommands() {
     addCommand({ keycode: 82 }, setLabel, ["CP-REL","CP-FRL","CP-CAR",
                                            "CP-CLF"]); // r
     addCommand({ keycode: 83 }, setLabel, ["IP-SUB","IP-MAT","IP-IMP"]); // s
-    addCommand({ keycode: 86 }, setLabel, ["IP-SMC","IP-INF",
+    addCommand({ keycode: 86 }, setLabel, ["IP-SMC","IP-PPL","IP-INF",
                                            "IP-INF-PRP"]); // v
     addCommand({ keycode: 84 }, setLabel, ["CP-THT","CP-THT-PRN","CP-DEG",
                                            "CP-QUE"]); // t
@@ -137,15 +137,15 @@ function customCommands() {
 /*
  * Default phrase label suggestions in context menu
  */
-var defaultConMenuGroup = ["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VBN","VB","N","ADJ"];
+var defaultConMenuGroup = ["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VAG","VBN","VB","N","ADJ"];
 
 /*
  * Phrase labels that are suggested in context menu when one of the other ones
  * is set
  */
 function customConMenuGroups() {
-    addConMenuGroup( ["IP-SUB","IP-MAT","IP-INF","IP-IMP","IP-SMC","CP-QUE","QTP","FRAG"] );
-    addConMenuGroup( ["ADJP","ADJX","NP-MSR","QP","NP","ADVP","IP-PPL"] );
+    addConMenuGroup( ["IP-SUB","IP-MAT","IP-INF","IP-IMP","IP-SMC","IP-PPL","RRC","CP-QUE","QTP","FRAG"] );
+    addConMenuGroup( ["ADJP","ADJX","NP-MSR","QP","NP","ADVP"] );
     addConMenuGroup( ["NP-SBJ","NP-OB1","NP-OB2","NP-PRD","NP-POS","NP-PRN",
                       "NP","NX","WNP","NP-MSR","NP-TMP","NP-ADV","NP-COM","NP-CMP",
                       "NP-DIR","NP-ADT","NP-VOC","QP"] );
@@ -155,7 +155,7 @@ function customConMenuGroups() {
     addConMenuGroup( ["HVPI","HVPS","HVDI","HVDS","HVI","HV","HVN","HAN"] );
     addConMenuGroup( ["BEPI","BEPS","BEDI","BEDS","BEI","BE","BEN"] );
     addConMenuGroup( ["RDPI","RDPS","RDDI","RDDS","RDI","RD","RDN"] );
-    addConMenuGroup( ["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VBN","VB","HV","BE","RD","MD","MDDI","MDPI"] );
+    addConMenuGroup( ["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VAG","VBN","VB","HV","BE","RD","MD","MDDI","MDPI"] );
     //joel modified above
 
     addConMenuGroup( ["RP","P","ADV","ADVR","ADVS","C","CONJ","ALSO","BEPI"] );
@@ -174,6 +174,7 @@ function customConLeafBefore() {
     addConLeafBefore("NP-SBJ" , "*con*"     );
     addConLeafBefore("NP-SBJ" , "*pro*"     );
     addConLeafBefore("WNP"      , "0"         );
+    addConLeafBefore("WADVP"      , "0"         );
     addConLeafBefore("C"      , "0"         );
     addConLeafBefore("CODE"   , "{COM:XXX}" );
 }

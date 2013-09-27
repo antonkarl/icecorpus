@@ -38,7 +38,7 @@ var displayCaseMenu = true; // This feature is inoperative, pending modularizati
 var caseTags = ["N","NS","NPR","NPRS",
                 "PRO","D","NUM",
                 "ADJ","ADJR","ADJS",
-                "Q","QR","QS","WPRO","WD"];
+                "Q","QR","QS","WPRO","WD","VAN"];
 var casePhrases = ["NP","QP","ADJP"];
 var caseMarkers = ["N", "A", "D", "G"];
 /*
@@ -151,7 +151,7 @@ function customConMenuGroups() {
                       "NP-DIR","NP-ADT","NP-VOC","QP"] );
     addConMenuGroup( ["PP","WPP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR","NP-MSR","NP-ADV"] );
     //joel modified:
-    addConMenuGroup( ["ADJ","ADJR","ADJS","N","NS","VAN"] );
+    addConMenuGroup( ["ADJ","ADJR","ADJS","N","NS","VAN","ADV"] );
     addConMenuGroup( ["HVPI","HVPS","HVDI","HVDS","HVI","HV","HVN","HAN"] );
     addConMenuGroup( ["BEPI","BEPS","BEDI","BEDS","BEI","BE","BEN"] );
     addConMenuGroup( ["RDPI","RDPS","RDDI","RDDS","RDI","RD","RDN"] );
@@ -165,6 +165,7 @@ function customConMenuGroups() {
 //joel modified:
     addConMenuGroup( ["N","NS","NPR","NPRS","PRO","EX","MAN","OTHER","OTHERS","WPRO"] );
     addConMenuGroup( ["Q","QR","QS","PRO","WPRO","WD"] );
+    addConMenuGroup( [".",","] );
 }
 
 /*
@@ -173,6 +174,8 @@ function customConMenuGroups() {
 function customConLeafBefore() {
     addConLeafBefore("NP-SBJ" , "*con*"     );
     addConLeafBefore("NP-SBJ" , "*pro*"     );
+    addConLeafBefore("NP-SBJ" , "*arb*"     );
+    addConLeafBefore("NP-SBJ" , "*exp*"     );
     addConLeafBefore("WNP"      , "0"         );
     addConLeafBefore("WADVP"      , "0"         );
     addConLeafBefore("C"      , "0"         );

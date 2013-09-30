@@ -151,7 +151,7 @@ function customConMenuGroups() {
                       "NP-DIR","NP-ADT","NP-VOC","QP"] );
     addConMenuGroup( ["PP","WPP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR","NP-MSR","NP-ADV"] );
     //joel modified:
-    addConMenuGroup( ["ADJ","ADJR","ADJS","N","NS","VAN","ADV"] );
+    addConMenuGroup( ["ADJ","ADJR","ADJS","N","NS","VAN","ADV","Q"] );
     addConMenuGroup( ["HVPI","HVPS","HVDI","HVDS","HVI","HV","HVN","HAN"] );
     addConMenuGroup( ["BEPI","BEPS","BEDI","BEDS","BEI","BE","BEN"] );
     addConMenuGroup( ["RDPI","RDPS","RDDI","RDDS","RDI","RD","RDN"] );

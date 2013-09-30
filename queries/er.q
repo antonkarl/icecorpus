@@ -1,2 +1,2 @@
 node: $ROOT
-query: [Ee]r exists
+query: Er$|Er|Ertu|Eru exists

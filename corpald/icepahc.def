@@ -1,8 +1,13 @@
-//7/8/2010
+//9 October 2013 -- updated by Einar
+//Contains LB* for Faroese blíva
 //This is the most recent file, and the other "pintzuk.def" files have errors in them, esp. lack of *AN and DO* forms; this one uses some scripts appearing
 //in the CS docs, written by Ann Taylor
 //This still excludes imperative forms.
 
+passive: VAN|BAN|DAN|RAN|MAN|HAN
+passiveCase: VAN*|BAN*|DAN*|RAN*|MAN*|HAN*
+pastParticipleCase: VBN*|BEN*|DON*|RDN*|MDN*|HVN*
+dat_sick: *-kvíða|*-hlakka|*-bresta|*-dreyma|*-fýsa|*-gruna|*-hungra|*-iðra|*-kala|*-kitla|*-langa|*-lengja|*-lysta|*-minna|*-óra|*-skorta|*-sundla|*-svima|*-svíða|*-syfja|*-ugga|*-undra|*-vanta|*-verkja|*-þrjóta|*-þyrsta
 finite_aux_old: *MD*|*HVP*|*HVD*|*BEP*|*BED*|*AXD*|*AXP*|*DOD*|*DOP*|*RDP*|*RDD*
 finite_aux: *MDD*|MDP*|*HVP*|*HVD*|*BEP*|*BED*|*AXD*|*AXP*|*DOD*|*DOP*|RDP*|RDD*
 nonfin_aux_old: *HV|H*N*|*DO|D*N*|*BE|B*N*|*AX|AXN*|*RD|R*N*
@@ -12,9 +17,9 @@ rpnonfin: RP+*VB|RP+V*N*|RP+*HV|RP+H*N*|RP+*DO|RP+D*N*|RP+*BE|RP+B*N*|RP+*AX|RP+
 finite_mainverb: *VBP*|*VBD*
 heavy_const: *PP*|*ADJP*|CP*
 nonfin_verb_old:  *VB|V*N*|*HV|H*N*|*DO|D*N*|*BE|B*N*|*AX|AXN*|*RD|R*N*
-nonfin_verb:  *VB|V*N*|*HV|H*N*|*DO|D*N*|*BE|B*N*|*AX|AXN*|RD|R*N*|MD
+nonfin_verb:  *VB|V*N*|*HV|H*N*|*DO|D*N*|*BE|B*N*|*AX|AXN*|RD|R*N*|MD|L*N*
 finite_verb_old:  *MD*|*HVP*|*HVD*|*DOP*|*DOD*|*BEP*|*BED*|*VBP|*VBD*|*AXD*|*AXP*|*RDP*|*RDD*
-finite_verb:  *MDD*|MDP*|*HVP*|*HVD*|*DOP*|*DOD*|*BEP*|*BED*|*VBP|*VBD*|*AXD*|*AXP*|RDP*|RDD*
+finite_verb:  *MDD*|MDP*|*HVP*|*HVD*|*DOP*|*DOD*|*BEP*|*BED*|*VBP*|*VBD*|*AXD*|*AXP*|*RDP*|*RDD*|*LBP*|*LBD*
 any_nominal: N|N$|NS|NS$|NR|NR$|NRS|NRS$|NPR|NPR$|NPRS|NPRS$|NUM*|NEG*|Q*|ADJ*|*OTHER*|D|WD|V*|H*|B*
 pos_np: !Q*|NEG*|NUM*|PRO*|\**
 yid_finite_verb: *0
@@ -30,6 +35,7 @@ yid_nonsbj: NP-ACC*|NP-OB*|NP-DAT*|NP-GEN*|NP-DTV*|NP|CP*|IP*|ADJP*|QTP*|PP*|ADV
 yid_cp_sub: CP|CP-A*|CP-C*|CP-D*|CP-E*|CP-F*|CP-R*|CP-T*|CP-V*|CP-QUE|CP-QUE-ADV
 yid_comp: WH*|C|x|CONJ
 
+expletive: \*exp*|ES|EX
 //in the yiddish corpus, all matrix questions and subordinate clauses are
 //immediately dominated by "CP", so searching for subordinate clauses must
 //include all CP tags *except* CP-QUE-MAT, i.e. matrix questions.

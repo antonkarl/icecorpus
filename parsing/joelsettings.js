@@ -151,20 +151,21 @@ function customConMenuGroups() {
                       "NP-DIR","NP-ADT","NP-VOC","QP"] );
     addConMenuGroup( ["PP","WPP","ADVP","ADVP-TMP","ADVP-LOC","ADVP-DIR","NP-MSR","NP-ADV"] );
     //joel modified:
-    addConMenuGroup( ["ADJ","ADJR","ADJS","N","NS","VAN","ADV","Q"] );
+    addConMenuGroup( ["ADJ","ADJR","ADJS","N","NS","VAN","VAG","ADV","Q"] );
     addConMenuGroup( ["HVPI","HVPS","HVDI","HVDS","HVI","HV","HVN","HAN"] );
     addConMenuGroup( ["BEPI","BEPS","BEDI","BEDS","BEI","BE","BEN"] );
+    addConMenuGroup( ["DOPI","DOPS","DODI","DODS","DOI","DO","DON"] );
     addConMenuGroup( ["RDPI","RDPS","RDDI","RDDS","RDI","RD","RDN"] );
-    addConMenuGroup( ["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VAG","VBN","VB","HV","BE","RD","MD","MDDI","MDPI"] );
+    addConMenuGroup( ["VBPI","VBPS","VBDI","VBDS","VBI","VAN","VAG","VBN","VB","DO","HV","BE","RD","MD","MDDI","MDPI"] );
     //joel modified above
 
-    addConMenuGroup( ["RP","P","ADV","ADVR","ADVS","C","CONJ","ALSO","BEPI"] );
+    addConMenuGroup( ["RP","P","TO","ADV","ADVR","ADVS","C","CONJ","ALSO","BEPI"] );
     addConMenuGroup( ["WADVP","WNP","WPP","WQP","WADJP"] );
     addConMenuGroup( ["CP-THT","CP-QUE","CP-REL","CP-DEG","CP-ADV","CP-CMP"] );
     
 //joel modified:
     addConMenuGroup( ["N","NS","NPR","NPRS","PRO","EX","MAN","OTHER","OTHERS","WPRO"] );
-    addConMenuGroup( ["Q","QR","QS","PRO","WPRO","WD","N"] );
+    addConMenuGroup( ["Q","QR","QS","PRO","WPRO","WD"] );
     addConMenuGroup( [".",","] );
 }
 

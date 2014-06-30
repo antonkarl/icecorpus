@@ -66,8 +66,8 @@ var testValidLeafLabel   = undefined;
  * clausal nodes (IP and CP), and those that apply to non-leaf, non-clause
  * nodes.
  */
-var extensions        = ["SBJ","RSP","LFD","PRN","SPE","XXX","BY"];
-var clause_extensions = ["RSP","LFD","SBJ","PRN","SPE","XXX"];
+var extensions        = ["SBJ","RSP","LFD","SPE","PRN","XXX","BY"];
+var clause_extensions = ["RSP","LFD","SPE","SBJ","PRN","XXX"];
 var leaf_extensions   = [];
 
 /*
@@ -164,8 +164,8 @@ function customConMenuGroups() {
     addConMenuGroup( ["CP-THT","CP-QUE","CP-REL","CP-DEG","CP-ADV","CP-CMP"] );
     
 //joel modified:
-    addConMenuGroup( ["N","NS","NPR","NPRS","PRO","EX","MAN","OTHER","OTHERS","WPRO"] );
-    addConMenuGroup( ["Q","QR","QS","PRO","WPRO","WD"] );
+    addConMenuGroup( ["N","NS","NPR","NPRS","PRO","D","EX","MAN","OTHER","OTHERS","WPRO"] );
+    addConMenuGroup( ["Q","QR","QS","PRO","WPRO","WD","D"] );
     addConMenuGroup( [".",","] );
 }
 

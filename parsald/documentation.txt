@@ -1,0 +1,8 @@
+simpleicepahc4.psd is the same as simpleicepahc3.psd but with (TOP at the beginning of each root clause
+
+simpleicepahc5.psd changed "$) (DET $" to ""
+ - in simpleicepahc4.psd there are 29,028 instances of (DET $
+ - in simpleicepahc5.psd there are 2519 instances of "(DET $"
+
+simpleicepahc6.psd changed (with regular expressions) "\$\)\n\s+\(DET \$" to ""
+ - in simpleicepahc6.psd there are 55 instances of "(DET $"

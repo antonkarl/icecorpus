@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP-1 (N-N Fögnuður-fögnuður))
 	  (RDPI verður-verða)
 	  (NP-SBJ (NP-POS (D-G þessa-þessi) (N-G heims-heimur))
@@ -5739,12 +5740,12 @@
 
 ( (IP-MAT (HVDI Hafði-hafa)
 	  (NP-SBJ (NPR-N Heródes-heródes))
-	  (VBN vélta-vélta)
-	  (IP-PPL-OB1 (NP-SBJ (N-A konu-kona)
-			      (NP-POS (N-G bróður-bróðir)
-				      (NP-POS (PRO-G síns-sinn))))
-		      (PP (P frá-frá)
-			  (NP (PRO-D honum-hann))))
+	  (IP-SMC (VAN-A vélta-véla)
+		  (NP-SBJ (N-A konu-kona)
+			  (NP-POS (N-G bróður-bróðir)
+				  (NP-POS (PRO-G síns-sinn))))
+		  (PP (P frá-frá)
+		      (NP (PRO-D honum-hann))))
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.238))
 

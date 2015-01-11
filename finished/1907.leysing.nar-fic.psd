@@ -1,3 +1,4 @@
+
 ( (META (NP (ADJ-N 1-1) (, .-.) (N-N kafli-kafli)))
   (ID 1907.LEYSING.NAR-FIC,.1))
 
@@ -20445,7 +20446,8 @@
 	  (NP-SBJ *con*)
 	  (VBDI fékk-fá)
 	  (IP-SMC (NP-SBJ (N-A vinnu$-vinna) (D-A $na-hinn))
-		  (ADJP (ADV vel-vel) (ADJ-A borgaða-borgaður)))
+		  (ADVP (ADV vel-vel))
+		  (VAN-A borgaða-borga))
 	  (. .-.))
   (ID 1907.LEYSING.NAR-FIC,.1292))
 
@@ -22068,7 +22070,7 @@
 							  (IP-SUB (NP-SBJ *con*)
 								  (VBDI fékk-fá)
 								  (IP-SMC (NP-SBJ *pro*)
-									  (VBN lánað-lána))
+									  (VAN lánað-lána))
 								  (PP (RP út-út)
 								      (P á-á)
 								      (NP (ADJ-A væntanlega-væntanlegur) (N-A vinnu-vinna)))

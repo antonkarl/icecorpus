@@ -1,3 +1,4 @@
+
 ( (META (CODE <heading>)
 	(NP (ONE-N I-einn))
 	(CODE </heading>))
@@ -8032,9 +8033,9 @@
 ( (IP-MAT-SPE (CONJ enda-enda)
 	      (VBDI fékk-fá)
 	      (NP-SBJ (N-N klár$-klár) (D-N $inn-hinn))
-	      (IP-PPL-SPE-OB1 (NP-SBJ (N-A sprett$-sprettur) (D-A $inn-hinn))
-			      (ADVP (ADV vel-vel))
-			      (VAN-A borgaðan-borga))
+	      (IP-SMC-SPE (NP-SBJ (N-A sprett$-sprettur) (D-A $inn-hinn))
+			  (ADVP (ADV vel-vel))
+			  (VAN-A borgaðan-borga))
 	      (, ,-,)
 	      (PP (P fyrst-fyrst)
 		  (CP-ADV-SPE (C 0)

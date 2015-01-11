@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP-PRD (NPR-N Grímur-grímur))
 	  (VBDI hét-heita)
 	  (NP-SBJ (ONE-N einn-einn)
@@ -7206,7 +7207,7 @@
 		  (CP-REL (WNP-1 0)
 			  (C er-er)
 			  (IP-SUB (NP-SBJ *T*-1)
-				  (NP-OB1 (N-A sleggjuna-sleggja))
+				  (NP-OB1 (N-A sleggju$-sleggja) (D-A $na-hinn))
 				  (HVDI hafði-hafa)
 				  (RP niður-niður)
 				  (VBN fellt-fella))))
@@ -8780,10 +8781,10 @@
 		  (IP-SUB (ADVP *T*-2)
 			  (NP-SBJ (PRO-N hún-hún))
 			  (HVDI hafði-hafa)
-			  (NP-OB1 (N-A svein$-sveinn) (D-A $inn-hinn))
-			  (PP (P á-á)
-			      (NP (N-D braut-braut)))
-			  (VBN rekinn-reka))))
+			  (IP-SMC (NP-SBJ (N-A svein$-sveinn) (D-A $inn-hinn))
+				  (PP (P á-á)
+				      (NP (N-D braut-braut)))
+				  (VAN-A rekinn-reka)))))
   (ID 1210.JARTEIN.REL-SAG,.570))
 
 ( (IP-MAT (CONJ og-og)

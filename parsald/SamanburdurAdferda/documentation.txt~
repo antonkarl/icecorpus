@@ -1,0 +1,97 @@
+simpleicepahc4.psd is the same as simpleicepahc3.psd but with "(TOP" at the beginning of each root clause
+
+simpleicepahc5.psd (same as simpleicepahc4.psd) changed "$) (DET $" to ""
+ - in simpleicepahc4.psd there are 29,028 instances of (DET $
+ - in simpleicepahc5.psd there are 2519 instances of "(DET $"
+
+simpleicepahc6.psd changed (with regular expressions) "\$\)\n\s+\(DET \$" to ""
+ - in simpleicepahc6.psd there are 55 instances of "(DET $"
+
+simpleicepahc4a.psd is the same as simpleicepahc3.psd but with the change "$) (DET $" to "" (note that it does not add "(TOP" at the beginning of each root clause!)
+
+simpleicepahc5a.psd (same as simpleicepahc4a.psd) changed "\$\)\n\s+\(DET \$" to ""
+
+simpleicepahc7.psd is the same as simpleicepahc6.psd but with no "TOPTOP" strings, only "TOP" (there were only 2 such instances, both in Firstgrammar)
+
+simpleicepahc7selectedtexts.psd is based on simpleicepahc7.psd but with every other text deleted, found in simpleicepahc7deletedtexts.psd. In both files, every new text starts with "[TEXTITEXTI..." string to show where a new text starts.
+
+simpleicepahc7selectedtextswithouttextitexti.psd is based on simpleicepahc7selectedtexts.psd but without all occurences of [TEXTITEXTI...
+
+The deleted texts are: 1150.firstgrammar, 1210.jartein, 1250.sturlunga, 1260.jomsvikingar, 1275.morkin, 1310.grettir, 1350.bandamennM, 1350.marta, 1400.gunnar2, 1450.bandamenn, 1450.judit, 1475.aevintyri, 1525.erasmus, 1540.ntacts, 1593.eintal, 1628.olafuregils, 1650.illugi, 1661.indiafari, 1675.magnus, 1680.skalholt, 1725.biskupasogur, 1790.fimmbraedra, 1830.hellismenn, 1850.piltur, 1861.orrusta, 1883.voggur, 1888.vordraumur, 1907.leysing, 1920.arin, 1985.sagan, 2008.ofsi
+
+The selected texts are: 1150.homiliubok, 1210.thorlakur, 1250.thetubrot, 1270.gragas, 1300.alexander, 1325.arni, 1350.finnbogi, 1400.gunnar, 1400.viglundur, 1450.ectorssaga, 1450.vilhjalmur, 1480.jarlmann, 1525.georgius, 1540.ntjohn, 1611.okur, 1630.gerhard, 1659.pislarsaga, 1675.armann, 1675.modars, 1720.vidalin, 1745.klim, 1791.jonsteingrims, 1835.jonasedli, 1859.hugvekjur, 1882.torfhildur, 1888.grimur, 1902.fossar, 1908.ofurefli, 1985.margsaga, 2008.mamma
+
+To learn grammar (ice) from the selected texts:
+-cp BerkeleyParser-1.7.jar edu.berkeley.nlp.PCFGLA.GrammarTrainer -path simpleicepahc7selectedtextswithouttextitexti.psd -out ice.gr -treebank SINGLEFILE
+
+Word count in deleted texts (taken from github July 11, 2015):
+finished/1150.firstgrammar.sci-lin.psd: 4440
+finished/1210.jartein.rel-sag.psd: 10296
+finished/1250.sturlunga.nar-sag.psd: 22811
+finished/1260.jomsvikingar.nar-sag.psd: 21151
+finished/1275.morkin.nar-his.psd: 25071
+finished/1310.grettir.nar-sag.psd: 20571
+finished/1350.bandamennM.nar-sag.psd: 13625
+finished/1350.marta.rel-sag.psd: 17249
+finished/1400.gunnar2.nar-sag.psd: 3172
+finished/1450.bandamenn.nar-sag.psd: 11568
+finished/1450.judit.rel-bib.psd: 6575
+finished/1475.aevintyri.nar-rel.psd: 18088
+finished/1525.erasmus.nar-sag.psd: 8620
+finished/1540.ntacts.rel-bib.psd: 16519
+finished/1593.eintal.rel-oth.psd: 23352
+finished/1628.olafuregils.bio-tra.psd: 17247
+finished/1650.illugi.nar-sag.psd: 20941
+finished/1661.indiafari.bio-tra.psd: 23048
+finished/1675.magnus.bio-oth.psd: 3236
+finished/1680.skalholt.nar-rel.psd: 10307
+finished/1725.biskupasogur.nar-rel.psd: 22319
+finished/1790.fimmbraedra.nar-sag.psd: 18874
+finished/1830.hellismenn.nar-sag.psd: 15000
+finished/1850.piltur.nar-fic.psd: 17881
+finished/1861.orrusta.nar-fic.psd: 20350
+finished/1883.voggur.nar-fic.psd: 1950
+finished/1888.vordraumur.nar-fic.psd: 10773
+finished/1907.leysing.nar-fic.psd: 20634
+finished/1920.arin.rel-ser.psd: 21265
+finished/1985.sagan.nar-fic.psd: 21006
+finished/2008.ofsi.nar-sag.psd: 21177
+Total word count: 489116
+
+Word count in selected texts (taken from github July 11, 2015):
+finished/1150.homiliubok.rel-ser.psd: 40944
+finished/1210.thorlakur.rel-sag.psd: 10892
+finished/1250.thetubrot.nar-sag.psd: 3470
+finished/1270.gragas.law-law.psd: 6215
+finished/1300.alexander.nar-sag.psd: 23383
+finished/1325.arni.nar-sag.psd: 20010
+finished/1350.finnbogi.nar-sag.psd: 23046
+finished/1400.gunnar.nar-sag.psd: 8776
+finished/1400.viglundur.nar-sag.psd: 13460
+finished/1450.ectorssaga.nar-sag.psd: 21090
+finished/1450.vilhjalmur.nar-sag.psd: 23144
+finished/1480.jarlmann.nar-sag.psd: 14485
+finished/1525.georgius.nar-rel.psd: 20118
+finished/1540.ntjohn.rel-bib.psd: 20892
+finished/1611.okur.rel-oth.psd: 15498
+finished/1630.gerhard.rel-oth.psd: 12702
+finished/1659.pislarsaga.bio-aut.psd: 9862
+finished/1675.armann.nar-fic.psd: 11243
+finished/1675.modars.nar-fic.psd: 3868
+finished/1720.vidalin.rel-ser.psd: 23087
+finished/1745.klim.nar-fic.psd: 22088
+finished/1791.jonsteingrims.bio-aut.psd: 22378
+finished/1835.jonasedli.sci-nat.psd: 3278
+finished/1859.hugvekjur.rel-ser.psd: 20538
+finished/1882.torfhildur.nar-fic.psd: 27370
+finished/1888.grimur.nar-fic.psd: 7254
+finished/1902.fossar.nar-fic.psd: 20673
+finished/1908.ofurefli.nar-fic.psd: 20283
+finished/1985.margsaga.nar-fic.psd: 22315
+finished/2008.mamma.nar-fic.psd: 21977
+Total word count: 514339
+
+The deleted texts (simpleicepahc7deletedtexts) have 36907 tokens/trees (TOP phrases).
+The selected texts (simpleicepahc7selectedtexts) have 36106 tokens/trees (TOP phrases)
+
+Started learning grammar of simpleicepahc7selectedtextswithouttextitexti.psd at 6pm (Icelandic time), July 11, 2015

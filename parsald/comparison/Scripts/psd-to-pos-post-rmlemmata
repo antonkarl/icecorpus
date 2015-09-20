@@ -1,0 +1,27 @@
+
+#!/bin/tcsh
+
+# assumes re-formatted file to ensure no line breaks between pos tag and word
+
+# USAGE: psd-to-pos {file(s)}
+
+
+
+for file in $*
+
+do
+
+        BASE=`basename $file .psd`
+
+	cat $BASE.psd |
+	grep -v '0/C' |
+	grep -v '0/P' |
+	grep -v '\{COM' |
+	grep -v '\{' |
+	grep -v '\<heading' |
+	grep -v '\<\/heading' |
+	grep -v 'CODE' |
+	grep -v '\{COM' |
+	./restore-blanklines-post > $BASE.pos
+
+done

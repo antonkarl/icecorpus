@@ -1,0 +1,33 @@
+import sys
+import re
+import glob
+
+allchars = 'a-zA-Z0-9þæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\*\"\,\.\;\:$\{\}\_\<\>\/'
+
+f = open(sys.argv[1], 'r')
+text = f.read()
+
+#modal = "skulu|munu|mega|vilja|geta"
+
+#def rep( before, after ):
+#	global currentText 
+#	currentText = re.sub( before, after, currentText )
+
+#def make_tag_word_pars():
+    # Make tag+word parentheses
+#    global currentText
+#    text = re.sub("\(  (["+allchars+"0-9\_\-—]+) (["+allchars+"0-9\_\-]+) \)","(\\2 \\1)",text)
+ #   while re.search("\)[ ]{1,2}(["+allchars+"0-9\_\-—]+) (["+allchars+"0-9\_\-]+)", currentText):
+#            currentText = re.sub("\)[ ]{1,2}(["+allchars+"0-9\_\-—]+) (["+allchars+"0-9\_\-]+)",") (\\2 \\1)",currentText)
+#    text = re.sub("\((["+allchars+"\-0-9]+) (["+allchars+"0-9\_\-—]+) (["+allchars+"0-9\_\-]+)","(\\1 (\\3 \\2)",text)
+
+#def make_tag_word_pars():
+    # Make tag+word parentheses
+#    global currentText
+#    currentText = re.sub("\((["+allchars+"\-0-9]+) (["+allchars+"0-9\_\-—]+) (["+allchars+"0-9\_\-]+)","(\\1 (\\3 \\2)",currentText)
+#    while re.search("\)[ ]{1,2}(["+allchars+"0-9\_\-—]+) (["+allchars+"0-9\_\-]+)", currentText):
+#            currentText = re.sub("\)[ ]{1,2}(["+allchars+"0-9\_\-—]+) (["+allchars+"0-9\_\-]+)",") (\\2 \\1)",currentText)
+
+text = re.sub("(\(  )(["+allchars+"\-0-9]+) (["+allchars+"\-0-9]+)","\\1 \\3 \\2",text)
+
+print(text)

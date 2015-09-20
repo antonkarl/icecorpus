@@ -1,0 +1,40 @@
+
+#!/bin/tcsh
+
+# assumes re-formatted file to ensure no line breaks between pos tag and word
+
+# USAGE: psd-to-pos {file(s)}
+
+
+
+for file in $*
+
+do
+
+        BASE=`basename $file .psd`
+
+	cat $BASE.psd |
+	./save-blanklines |
+	./make-tag-word-pairs |
+	grep ')' |			# get tag-word pairs
+	grep -v '\*T\*' |		# omit traces and empty categories
+	grep -v '\*ICH\*' |
+	grep -v '\*arb\*' |
+	grep -v '\*con\*' |
+	grep -v '\*pro\*' |
+	grep -v '\*exp\*' | #added in the project "Vélræn þáttun"
+	grep -v '\*XXX\*' | #added in the project "Vélræn þáttun"
+	grep -v 'ID 1' | #added in the project "Vélræn þáttun"
+	grep -v 'ID 2' | #added in the project "Vélræn þáttun"
+	grep -v '\*proimp\*' |
+	grep -v ' \*-[0-9]' |
+	grep -v ' \*[0-9]' | #added in the project "Vélræn þáttun"
+	grep -v ' \*)' |
+	grep -v '(BREAK 0)' |
+	grep -v '(CONJS 0)' |
+	grep -v '(W[^ ]* 0)' |
+	grep -v '([A-Z]*X 0)' |
+	./change-tag-format |
+	./restore-blanklines > $BASE.pos
+
+done

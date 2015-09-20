@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+use strict; use warnings;
+
+# part of psd-to-pos
+
+$/=""; 	  # enable paragraphs and multiline patterns
+
+while (<>) {  
+
+      s/\n/ /g;
+      s/  /\n/g;
+
+      print;
+
+}

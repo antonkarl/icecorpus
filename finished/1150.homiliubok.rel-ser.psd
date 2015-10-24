@@ -1,3 +1,4 @@
+
 ( (IP-MAT (NP-1 (N-N Fögnuður-fögnuður))
 	  (RDPI verður-verða)
 	  (NP-SBJ (NP-POS (D-G þessa-þessi) (N-G heims-heimur))
@@ -44078,10 +44079,11 @@
 				      (, ,-,)
 				      (CP-REL-2 (WNP-3 0)
 						(C er-er)
-						(IP-SUB (NP-SBJ (N-A munn-munnur)
-								(NP-POS-RSP-3 (PRO-A sinn-sinn)))
+						(IP-SUB (NP-SBJ *T*-3)
+							(NP-OB2 (N-A munn-munnur)
+								(NP-POS (PRO-A sinn-sinn)))
 							(VBPI fyllir-fylla)
-							(NP-OB1 (N-N sauryrða-sauryrða))))))))
+							(NP-OB1 (NS-G sauryrða-sauryrði))))))))
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1985))
 

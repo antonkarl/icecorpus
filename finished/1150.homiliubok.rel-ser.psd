@@ -24679,8 +24679,7 @@
 
 ( (IP-MAT (IP-MAT-1 (NP-SBJ (OTHERS-N Önnur-annar))
 		    (BEDI vóru-vera)
-		    (RP inn-inn)
-		    (PP (P í-í)
+		    (PP (RP inn-inn) (P í-í)
 			(NP (N-A borg$-borg) (D-A $ina-hinn))))
 	  (, ,-,)
 	  (CONJP (CONJ en-en)
@@ -24690,7 +24689,7 @@
 	  (. .-.))
   (ID 1150.HOMILIUBOK.REL-SER,.1020))
 
-( (IP-MAT (ADVP-TMP (NPR-N Hús-hús) (D-N þetta-þessi))
+( (IP-MAT (NP-SBJ (N-N Hús-hús) (D-N þetta-þessi))
 	  (VBPI merkir-merkja)
 	  (NP-OB1 (N-A kristni-kristni)
 		  (NP-POS (Q-G allra-allur) (ADJ-G kristinna-kristinn) (NS-G manna-maður))

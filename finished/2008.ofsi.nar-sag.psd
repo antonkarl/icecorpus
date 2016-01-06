@@ -11475,7 +11475,7 @@
 	  (. .-.))
   (ID 2008.OFSI.NAR-SAG,.528))
 
-( (IP-MAT (VBPI Er-vera)
+( (IP-MAT (BEPI Er-vera)
 	  (NP-SBJ (PRO-N hann-hann))
 	  (ADVP (ADV þó-þó))
 	  (NP-PRD (ADJ-N sannkallað-sannkallaður) (N-N heljarmenni-heljarmenni))
@@ -12770,8 +12770,8 @@
   (ID 2008.OFSI.NAR-SAG,.602))
 
 ( (IP-IMP-SPE (" "-")
-	      (NP-SBJ *con*)
-	      (VBDI Vertu-vera)
+	      (BEI Ver$-vera)
+	      (NP-SBJ (PRO-N $tu-þú))
 	      (NEG ekki-ekki)
 	      (PP (P að-að)
 		  (NP (D-D þessu-þessi) (N-D voli-vol)))
@@ -12783,7 +12783,7 @@
   (ID 2008.OFSI.NAR-SAG,.603))
 
 ( (IP-IMP-SPE (" "-")
-	      (VBDI reyn$-reyna)
+	      (VBI reyn$-reyna)
 	      (NP-SBJ (PRO-N $du-þú))
 	      (IP-INF-SPE (TO að-að)
 			  (VB standa-standa)

@@ -1,0 +1,2817 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Mon Oct 10 19:32:00 BST 2016
+
+command file:     foo2.q
+output file:      foo2.out
+
+definition file:  verbtopic.def
+node:   IP*
+query:   IP*  idoms  [1]NP-OB* 
+   AND  IP*  idoms  [2]NP-OB* 
+   AND  [1]NP-OB*  idoms  [3]*-A 
+   AND  [2]NP-OB*  idoms  [4]*-A   
+*/
+/*
+HEADER:
+source file:  1150.firstgrammar.sci-lin.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1150.firstgrammar.sci-lin.psd	0/0/182
+*/
+/*
+HEADER:
+source file:  1150.homiliubok.rel-ser.psd
+*/
+
+/~*
+En-en sú-sá þjónasta-þjónusta önnur-annar er-vera oss-ég boðin-bjóða við-við
+Guð-guð á-á helgum-helgur tíðum-tíð ,-, að-að vér-ég skulum-skulu hans-hann
+erindi-erindi reka-reka við-við yður-þú og-og kynna-kynna yður-þú
+miskunn-miskunn þá-sá alla-allur ,-, er-er hann-hann hefir-hafa oss-ég
+veitt-veita í-í burð-burður sínum-sinn og-og hérvist-hérvist sinni-sinn og-og
+písl-písl og-og upprisu-upprisa af-af dauða-dauði og-og þeirri-sá
+skipun-skipun margfaldri-margfaldur ,-, er-er þeim-sá jarteinum-jarteinn
+fylgdi-fylgja .-.
+(1150.HOMILIUBOK.REL-SER,.5)
+*~/
+/*
+63 IP-SUB=2:  63 IP-SUB=2, 66 NP-OB2, 69 NP-OB1, 67 PRO-A, 70 N-A
+63 IP-SUB=2:  63 IP-SUB=2, 66 NP-OB2, 69 NP-OB1, 67 PRO-A, 72 D-A
+63 IP-SUB=2:  63 IP-SUB=2, 66 NP-OB2, 69 NP-OB1, 67 PRO-A, 74 Q-A
+63 IP-SUB=2:  63 IP-SUB=2, 69 NP-OB1, 66 NP-OB2, 70 N-A, 67 PRO-A
+63 IP-SUB=2:  63 IP-SUB=2, 69 NP-OB1, 66 NP-OB2, 72 D-A, 67 PRO-A
+63 IP-SUB=2:  63 IP-SUB=2, 69 NP-OB1, 66 NP-OB2, 74 Q-A, 67 PRO-A
+*/
+( (IP-SUB=2 (VB kynna-kynna)
+	    (NP-OB2 (PRO-A yður-þú))
+	    (NP-OB1 (N-A miskunn-miskunn)
+		    (D-A þá-sá)
+		    (Q-A alla-allur)
+		    (, ,-,)
+		    (CP-REL (WNP-3 0)
+			    (C er-er)
+			    (IP-SUB RMV:*T*-3_hann-hann_hefir-hafa...))))
+  (ID 1150.HOMILIUBOK.REL-SER,.5)) 
+
+
+/~*
+ættim-eiga vér-ég og-og að-að kynna-kynna yður-þú boðorð-boðorð hans-hann ,-,
+hve-hve hann-hann vill-vilja ,-, að-að vér-ég skipim-skipa voru-okkar
+athæfi-athæfi þess-sá er-er vér-ég megim-mega þá-sá farsælu-farsæla nýta-nýta
+oss-ég ,-, er-er Kristur-kristur sjálfur-sjálfur hefir-hafa oss-ég til-til
+boðið-bjóða .-.
+(1150.HOMILIUBOK.REL-SER,.6)
+*~/
+/*
+9 IP-INF:  9 IP-INF, 14 NP-OB2, 17 NP-OB1, 15 PRO-A, 18 NS-A
+9 IP-INF:  9 IP-INF, 17 NP-OB1, 14 NP-OB2, 18 NS-A, 15 PRO-A
+63 IP-SUB:  63 IP-SUB, 69 NP-OB1, 80 NP-OB2, 72 D-A, 81 PRO-A
+63 IP-SUB:  63 IP-SUB, 69 NP-OB1, 80 NP-OB2, 74 N-A, 81 PRO-A
+63 IP-SUB:  63 IP-SUB, 80 NP-OB2, 69 NP-OB1, 81 PRO-A, 72 D-A
+63 IP-SUB:  63 IP-SUB, 80 NP-OB2, 69 NP-OB1, 81 PRO-A, 74 N-A
+*/
+( (IP-INF (TO að-að)
+	  (VB kynna-kynna)
+	  (NP-OB2 (PRO-A yður-þú))
+	  (NP-OB1 (NS-A boðorð-boðorð)
+		  (NP-POS (PRO-G hans-hann))
+		  (, ,-,)
+		  (ADVP-PRN (CP-FRL (WADVP-1 (WADV hve-hve))
+				    (C 0)
+				    (IP-SUB RMV:hann-hann_vill-vilja_,-,...)))
+		  (CP-REL (WNP-2 (D-G þess-sá))
+			  (C er-er)
+			  (IP-SUB RMV:vér-ég_megim-mega_*T*-2...))))
+  (ID 1150.HOMILIUBOK.REL-SER,.6)) 
+
+( (IP-SUB (NP-SBJ (PRO-N vér-ég))
+	  (MDPS megim-mega)
+	  (NP-OB1 (NP-POS *T*-2)
+		  (D-A þá-sá)
+		  (N-A farsælu-farsæla)
+		  (CP-REL *ICH*-3))
+	  (VB nýta-nýta)
+	  (NP-OB2 (PRO-A oss-ég))
+	  (, ,-,)
+	  (CP-REL-3 (WNP-4 0)
+		    (C er-er)
+		    (IP-SUB RMV:*T*-4_Kristur-kristur_sjálfur-sjálfur...)))
+  (ID 1150.HOMILIUBOK.REL-SER,.6)) 
+
+
+/~*
+En-en mangi-manngi má-mega grafa-grafa undir-undir syndum-synd sínum-sinn ,-,
+nema-nema hann-hann sé-vera Jóhannes-jóhannes ,-, það-það er-vera ,-, að-að
+hann-hann eigni-eigna Guðs-guð miskunn-miskunn allt-allur það-það ,-, er-er
+hann-hann má-mega gott-góður gera-gera ,-, sicut-sicut Páll-páll mælti-mæla
+:-: "-" Miskunn-miskunnn Guðs-guð em-vera eg-ég ,-, það-það er-vera eg-ég
+em-vera .-. "-"
+(1150.HOMILIUBOK.REL-SER,.337)
+*~/
+/*
+50 IP-SUB:  50 IP-SUB, 56 NP-OB2, 62 NP-OB1, 60 N-A, 63 Q-A
+50 IP-SUB:  50 IP-SUB, 56 NP-OB2, 62 NP-OB1, 60 N-A, 65 PRO-A
+50 IP-SUB:  50 IP-SUB, 62 NP-OB1, 56 NP-OB2, 63 Q-A, 60 N-A
+50 IP-SUB:  50 IP-SUB, 62 NP-OB1, 56 NP-OB2, 65 PRO-A, 60 N-A
+*/
+( (IP-SUB (NP-SBJ (PRO-N hann-hann))
+	  (VBPS eigni-eigna)
+	  (NP-OB2 (NP-POS (NPR-G Guðs-guð))
+		  (N-A miskunn-miskunn))
+	  (NP-OB1 (Q-A allt-allur)
+		  (PRO-A það-það)
+		  (, ,-,)
+		  (CP-REL (WNP-1 0)
+			  (C er-er)
+			  (IP-SUB RMV:hann-hann_má-mega_*-1...)))
+	  (, ,-,)
+	  (ADVP (FW sicut-sicut)
+		(CP-CMP (WADVP-2 0)
+			(C 0)
+			(IP-SUB RMV:*T*-2_Páll-páll_mælti-mæla...))))
+  (ID 1150.HOMILIUBOK.REL-SER,.337)) 
+
+
+/~*
+Upprisa-upprisa Drottins-drottinn af-af dauða-dauði veitir-veita oss-ég
+tvenna-tvenn upprisu-upprisa .-. Aðra-annar þá-sá ,-, er-er vér-ég rísum-rísa
+upp-upp af-af andar-önd dauða-dauði ,-, það-það er-vera frá-frá syndum-synd
+,-, en-en aðra-annar þá-sá ,-, er-er vér-ég skulum-skulu upp-upp rísa-rísa á-á
+dómsdegi-dómsdagur með-með önd-önd og-og líkam-líkami að-að loknum-ljúka
+öllum-allur heims-heimur meinum-mein .-.
+(1150.HOMILIUBOK.REL-SER,.554)
+*~/
+/*
+2 IP-MAT-1:  2 IP-MAT-1, 17 NP-OB2, 20 NP-OB1, 18 PRO-A, 21 NUM-A
+2 IP-MAT-1:  2 IP-MAT-1, 17 NP-OB2, 20 NP-OB1, 18 PRO-A, 23 N-A
+2 IP-MAT-1:  2 IP-MAT-1, 20 NP-OB1, 17 NP-OB2, 21 NUM-A, 18 PRO-A
+2 IP-MAT-1:  2 IP-MAT-1, 20 NP-OB1, 17 NP-OB2, 23 N-A, 18 PRO-A
+*/
+( (IP-MAT-1 (NP-SBJ (N-N Upprisa-upprisa)
+		    (NP-POS (NPR-G Drottins-drottinn))
+		    (PP (P af-af)
+			(NP (N-D dauða-dauði))))
+	    (VBPI veitir-veita)
+	    (NP-OB2 (PRO-A oss-ég))
+	    (NP-OB1 (NUM-A tvenna-tvenn) (N-A upprisu-upprisa)))
+  (ID 1150.HOMILIUBOK.REL-SER,.554)) 
+
+
+/~*
+En-en þann-sá fögnuð-fögnuður veiti-veita oss-ég sjálfur-sjálfur sá-sá ,-,
+er-er oss-ég skóp-skapa og-og leysti-leysa ,-, Dominus-dominus noster-noster
+,-, Iesus-iesus Christus-christus ,-, sá-sá er-er með-með feður-faðir og-og
+helgum-helgur anda-andi lifir-lifa og-og ríkir-ríkja of-of allar-allur
+aldir-öld .-.
+(1150.HOMILIUBOK.REL-SER,.584)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 4 NP-OB1, 11 NP-OB2, 5 D-A, 12 PRO-A
+1 IP-MAT:  1 IP-MAT, 4 NP-OB1, 11 NP-OB2, 7 N-A, 12 PRO-A
+1 IP-MAT:  1 IP-MAT, 11 NP-OB2, 4 NP-OB1, 12 PRO-A, 5 D-A
+1 IP-MAT:  1 IP-MAT, 11 NP-OB2, 4 NP-OB1, 12 PRO-A, 7 N-A
+*/
+( (IP-MAT (CONJ En-en)
+	  (NP-OB1 (D-A þann-sá) (N-A fögnuð-fögnuður))
+	  (VBPS veiti-veita)
+	  (NP-OB2 (PRO-A oss-ég))
+	  (NP-SBJ (NP-PRN (PRO-N sjálfur-sjálfur))
+		  (D-N sá-sá)
+		  (, ,-,)
+		  (CP-REL (WNP-1 0)
+			  (C er-er)
+			  (IP-SUB RMV:*T*-1_oss-ég_skóp-skapa...))
+		  (, ,-,)
+		  (NP-PRN (FW Dominus-dominus)
+			  (FW noster-noster)
+			  (, ,-,)
+			  (NP-PRN (FW Iesus-iesus) (FW Christus-christus)))
+		  (, ,-,)
+		  (NP-PRN (D-N sá-sá)
+			  (CP-REL (WNP-2 0)
+				  (C er-er)
+				  (IP-SUB RMV:*T*-2_með-með_feður-faðir...))))
+	  (. .-.))
+  (ID 1150.HOMILIUBOK.REL-SER,.584)) 
+
+
+/~*
+Á-á hverri-hver tíð-tíð þessa-þessi fjögurra-fjórir bauð-bjóða hann-hann
+lýð-lýður sínum-sinn þriggja-þrír daga-dagur föstu-fasta .-.
+(1150.HOMILIUBOK.REL-SER,.765)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 20 NP-OB2, 27 NP-OB1, 21 N-A, 33 N-A
+1 IP-MAT:  1 IP-MAT, 27 NP-OB1, 20 NP-OB2, 33 N-A, 21 N-A
+*/
+( (IP-MAT (PP (P Á-á)
+	      (NP (Q-D hverri-hver)
+		  (N-D tíð-tíð)
+		  (NP-POS (D-G þessa-þessi) (NUM-G fjögurra-fjórir))))
+	  (VBDI bauð-bjóða)
+	  (NP-SBJ (PRO-N hann-hann))
+	  (NP-OB2 (N-A lýð-lýður)
+		  (NP-POS (NP-POS (PRO-D sínum-sinn))))
+	  (NP-OB1 (NP-POS (NUM-G þriggja-þrír) (NS-G daga-dagur))
+		  (N-A föstu-fasta))
+	  (. .-.))
+  (ID 1150.HOMILIUBOK.REL-SER,.765)) 
+
+
+/~*
+Nú-nú skulum-skulu vér-ég biðja-biðja almáttkan-almáttugur Guð-guð ,-, að-að
+hann-hann fyr$-fyr $gefi-gefa oss-ég sakar-saka og-og syndir-synd og-og
+veiti-veita oss-ég eilífa-eilífur miskunn-miskunn með-með sér-sig að-að
+vera-vera ,-, þar-þar er-er hann-hann er-vera sæll-sæll sjálfur-sjálfur í-í
+,-, með-með allri-allur himinríkis-himinríki dýrð-dýrð .-.
+(1150.HOMILIUBOK.REL-SER,.965)
+*~/
+/*
+44 IP-SUB:  44 IP-SUB, 49 NP-OB2, 52 NP-OB1, 50 PRO-A, 53 ADJ-A
+44 IP-SUB:  44 IP-SUB, 49 NP-OB2, 52 NP-OB1, 50 PRO-A, 55 N-A
+44 IP-SUB:  44 IP-SUB, 52 NP-OB1, 49 NP-OB2, 53 ADJ-A, 50 PRO-A
+44 IP-SUB:  44 IP-SUB, 52 NP-OB1, 49 NP-OB2, 55 N-A, 50 PRO-A
+*/
+( (IP-SUB (NP-SBJ *con*)
+	  (VBPS veiti-veita)
+	  (NP-OB2 (PRO-A oss-ég))
+	  (NP-OB1 (ADJ-A eilífa-eilífur) (N-A miskunn-miskunn))
+	  (IP-INF-PRP RMV:með-með_sér-sig_að-að...))
+  (ID 1150.HOMILIUBOK.REL-SER,.965)) 
+
+
+/~*
+Og-og þaðra-þaðra mun-munu Kristur-kristur sýna-sýna oss-ég alla-allur
+dýrð-dýrð sína-sinn ,-, sá-sá er-er með-með föður-faðir og-og helgum-helgur
+anda-andi lifir-lifa og-og ríkir-ríkja ,-, Guð-guð of-of allar-allur aldir-öld
+.-.
+(1150.HOMILIUBOK.REL-SER,.1062)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 18 NP-OB2, 21 NP-OB1, 19 PRO-A, 22 Q-A
+1 IP-MAT:  1 IP-MAT, 18 NP-OB2, 21 NP-OB1, 19 PRO-A, 24 N-A
+1 IP-MAT:  1 IP-MAT, 21 NP-OB1, 18 NP-OB2, 22 Q-A, 19 PRO-A
+1 IP-MAT:  1 IP-MAT, 21 NP-OB1, 18 NP-OB2, 24 N-A, 19 PRO-A
+*/
+( (IP-MAT (CONJ Og-og)
+	  (CODE *XXX*)
+	  (ADVP-DIR (ADV þaðra-þaðra))
+	  (MDPI mun-munu)
+	  (NP-SBJ (NPR-N Kristur-kristur)
+		  (NP-PRN *ICH*-1))
+	  (VB sýna-sýna)
+	  (NP-OB2 (PRO-A oss-ég))
+	  (NP-OB1 (Q-A alla-allur)
+		  (N-A dýrð-dýrð)
+		  (NP-POS (PRO-A sína-sinn)))
+	  (, ,-,)
+	  (NP-PRN-1 (D-N sá-sá)
+		    (CP-REL (WNP-2 0)
+			    (C er-er)
+			    (IP-SUB RMV:*T*-2_með-með_föður-faðir...)))
+	  (. .-.))
+  (ID 1150.HOMILIUBOK.REL-SER,.1062)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1150.homiliubok.rel-ser.psd	9/8/2108
+*/
+/*
+HEADER:
+source file:  1210.jartein.rel-sag.psd
+*/
+
+/~*
+Þá-þá laust-ljósta hún-hún hann-hann annað-annar högg-högg í-í svima-svimi .-.
+(1210.JARTEIN.REL-SAG,.73)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 10 NP-OB2, 13 NP-OB1, 11 PRO-A, 14 OTHER-A
+1 IP-MAT:  1 IP-MAT, 10 NP-OB2, 13 NP-OB1, 11 PRO-A, 16 N-A
+1 IP-MAT:  1 IP-MAT, 13 NP-OB1, 10 NP-OB2, 14 OTHER-A, 11 PRO-A
+1 IP-MAT:  1 IP-MAT, 13 NP-OB1, 10 NP-OB2, 16 N-A, 11 PRO-A
+*/
+( (IP-MAT (ADVP-TMP (ADV Þá-þá))
+	  (VBDI laust-ljósta)
+	  (NP-SBJ (PRO-N hún-hún))
+	  (NP-OB2 (PRO-A hann-hann))
+	  (NP-OB1 (OTHER-A annað-annar) (N-A högg-högg))
+	  (PP (P í-í)
+	      (NP (N-D svima-svimi)))
+	  (. .-.))
+  (ID 1210.JARTEIN.REL-SAG,.73)) 
+
+
+/~*
+En-en er-er hinn-hinn fátæki-fátækur maður-maður fann-finna það-það og-og
+skildi-skilja að-að svo-svo máttigur-máttugur kraftur-kraftur var-vera
+kominn-koma til-til fulltingis-fulltingi við-við hann-hann að-að selur$-selur
+$inn-hinn mátti-mega eigi-ekki eðli-eðli sínu-sinn halda-halda ,-, þá-þá
+laust-ljósta hann-hann sel$-sel $inn-hinn í-í svima-svimi hið-hinn
+fyrsta-fyrstur högg-högg
+(1210.JARTEIN.REL-SAG,.328)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 90 NP-OB2, 101 NP-OB1, 91 N-A, 102 D-A
+1 IP-MAT:  1 IP-MAT, 90 NP-OB2, 101 NP-OB1, 91 N-A, 104 ADJ-A
+1 IP-MAT:  1 IP-MAT, 90 NP-OB2, 101 NP-OB1, 91 N-A, 106 N-A
+1 IP-MAT:  1 IP-MAT, 90 NP-OB2, 101 NP-OB1, 93 D-A, 102 D-A
+1 IP-MAT:  1 IP-MAT, 90 NP-OB2, 101 NP-OB1, 93 D-A, 104 ADJ-A
+1 IP-MAT:  1 IP-MAT, 90 NP-OB2, 101 NP-OB1, 93 D-A, 106 N-A
+1 IP-MAT:  1 IP-MAT, 101 NP-OB1, 90 NP-OB2, 102 D-A, 91 N-A
+1 IP-MAT:  1 IP-MAT, 101 NP-OB1, 90 NP-OB2, 102 D-A, 93 D-A
+1 IP-MAT:  1 IP-MAT, 101 NP-OB1, 90 NP-OB2, 104 ADJ-A, 91 N-A
+1 IP-MAT:  1 IP-MAT, 101 NP-OB1, 90 NP-OB2, 104 ADJ-A, 93 D-A
+1 IP-MAT:  1 IP-MAT, 101 NP-OB1, 90 NP-OB2, 106 N-A, 91 N-A
+1 IP-MAT:  1 IP-MAT, 101 NP-OB1, 90 NP-OB2, 106 N-A, 93 D-A
+*/
+( (IP-MAT (CONJ En-en)
+	  (CP-ADV-LFD (C er-er)
+		      (IP-SUB RMV:hinn-hinn_fátæki-fátækur_maður-maður...))
+	  (, ,-,)
+	  (ADVP-TMP-RSP (ADV þá-þá))
+	  (VBDI laust-ljósta)
+	  (NP-SBJ (PRO-N hann-hann))
+	  (NP-OB2 (N-A sel$-sel) (D-A $inn-hinn))
+	  (PP (P í-í)
+	      (NP (N-A svima-svimi)))
+	  (NP-OB1 (D-A hið-hinn) (ADJ-A fyrsta-fyrstur) (N-A högg-högg)))
+  (ID 1210.JARTEIN.REL-SAG,.328)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1210.jartein.rel-sag.psd	2/2/822
+*/
+/*
+HEADER:
+source file:  1210.thorlakur.rel-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1210.thorlakur.rel-sag.psd	0/0/540
+*/
+/*
+HEADER:
+source file:  1250.sturlunga.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1250.sturlunga.nar-sag.psd	0/0/2225
+*/
+/*
+HEADER:
+source file:  1250.thetubrot.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1250.thetubrot.nar-sag.psd	0/0/246
+*/
+/*
+HEADER:
+source file:  1260.jomsvikingar.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1260.jomsvikingar.nar-sag.psd	0/0/1532
+*/
+/*
+HEADER:
+source file:  1270.gragas.law-law.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1270.gragas.law-law.psd	0/0/346
+*/
+/*
+HEADER:
+source file:  1275.morkin.nar-his.psd
+*/
+
+/~*
+og-og mun-munu ég-ég segja-segja yður-þú leið-leið þangað-þangað ,-, því-það
+að-að ég-ég var-vera þar-þar áður-áður fyrir-fyrir litlu-lítill .-. "-"
+(1275.MORKIN.NAR-HIS,.956)
+*~/
+/*
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 11 NP-OB2, 14 NP-OB1, 12 PRO-A, 15 N-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 14 NP-OB1, 11 NP-OB2, 15 N-A, 12 PRO-A
+*/
+( (IP-MAT-SPE (CONJ og-og)
+	      (MDPI mun-munu)
+	      (NP-SBJ (PRO-N ég-ég))
+	      (VB segja-segja)
+	      (NP-OB2 (PRO-A yður-þú))
+	      (NP-OB1 (N-A leið-leið) (ADV þangað-þangað))
+	      (, ,-,)
+	      (PP (P 0)
+		  (NP (PRO-D því-það)
+		      (CP-THT-SPE-PRN (C að-að)
+				      (IP-SUB-SPE RMV:ég-ég_var-vera_þar-þar...))))
+	      (. .-.)
+	      (" "-"))
+  (ID 1275.MORKIN.NAR-HIS,.956)) 
+
+
+/~*
+og-og hjó-höggva Hall-hallur banahögg-banahögg ,-, því-það að-að hann-hann
+stóst-standast eigi-ekki er-er hrósað-hrósa væri-vera víg$-víg $inu-hinn
+Koðráns-koðrán .-.
+(1275.MORKIN.NAR-HIS,.1001)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 8 NP-OB2, 11 NP-OB1, 9 NPR-A, 12 N-A
+1 IP-MAT:  1 IP-MAT, 11 NP-OB1, 8 NP-OB2, 12 N-A, 9 NPR-A
+*/
+( (IP-MAT (CONJ og-og)
+	  (NP-SBJ *con*)
+	  (VBDI hjó-höggva)
+	  (NP-OB2 (NPR-A Hall-hallur))
+	  (NP-OB1 (N-A banahögg-banahögg))
+	  (, ,-,)
+	  (PP (P 0)
+	      (NP (PRO-D því-það)
+		  (CP-THT-PRN (C að-að)
+			      (IP-SUB RMV:hann-hann_stóst-standast_eigi-ekki...))))
+	  (. .-.))
+  (ID 1275.MORKIN.NAR-HIS,.1001)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1275.morkin.nar-his.psd	2/2/2190
+*/
+/*
+HEADER:
+source file:  1300.alexander.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1300.alexander.nar-sag.psd	0/0/1383
+*/
+/*
+HEADER:
+source file:  1310.grettir.nar-sag.psd
+*/
+
+/~*
+Grettir-grettir hjó-höggva hann-hann banahögg-banahögg
+(1310.GRETTIR.NAR-SAG,.1198)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 7 NP-OB2, 10 NP-OB1, 8 PRO-A, 11 NS-A
+1 IP-MAT:  1 IP-MAT, 10 NP-OB1, 7 NP-OB2, 11 NS-A, 8 PRO-A
+*/
+( (IP-MAT (NP-SBJ (NPR-N Grettir-grettir))
+	  (VBDI hjó-höggva)
+	  (NP-OB2 (PRO-A hann-hann))
+	  (NP-OB1 (NS-A banahögg-banahögg)))
+  (ID 1310.GRETTIR.NAR-SAG,.1198)) 
+
+
+/~*
+Þeir-hann urðu-verða óðir-óður mjög-mjög við-við það-það svo-svo að-að
+Gunnar-gunnar hjó-höggva húskarl-húskarl Atla-atli banahögg-banahögg .-.
+(1310.GRETTIR.NAR-SAG,.1667)
+*~/
+/*
+24 IP-SUB:  24 IP-SUB, 30 NP-OB2, 36 NP-OB1, 31 N-A, 37 N-A
+24 IP-SUB:  24 IP-SUB, 36 NP-OB1, 30 NP-OB2, 37 N-A, 31 N-A
+*/
+( (IP-SUB (NP-SBJ (NPR-N Gunnar-gunnar))
+	  (VBDI hjó-höggva)
+	  (NP-OB2 (N-A húskarl-húskarl)
+		  (NP-POS (NPR-G Atla-atli)))
+	  (NP-OB1 (N-A banahögg-banahögg)))
+  (ID 1310.GRETTIR.NAR-SAG,.1667)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1310.grettir.nar-sag.psd	2/2/2057
+*/
+/*
+HEADER:
+source file:  1325.arni.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1325.arni.nar-sag.psd	0/0/1125
+*/
+/*
+HEADER:
+source file:  1350.bandamennM.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1350.bandamennM.nar-sag.psd	0/0/1223
+*/
+/*
+HEADER:
+source file:  1350.finnbogi.nar-sag.psd
+*/
+
+/~*
+og-og sagði-segja Ragnhildi-ragnhildur þessi-þessi tíðindi-tíðindi .-.
+(1350.FINNBOGI.NAR-SAG,651.1491)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 8 NP-OB2, 11 NP-OB1, 9 NPR-A, 12 D-A
+1 IP-MAT:  1 IP-MAT, 8 NP-OB2, 11 NP-OB1, 9 NPR-A, 14 NS-A
+1 IP-MAT:  1 IP-MAT, 11 NP-OB1, 8 NP-OB2, 12 D-A, 9 NPR-A
+1 IP-MAT:  1 IP-MAT, 11 NP-OB1, 8 NP-OB2, 14 NS-A, 9 NPR-A
+*/
+( (IP-MAT (CONJ og-og)
+	  (NP-SBJ *con*)
+	  (VBDI sagði-segja)
+	  (NP-OB2 (NPR-A Ragnhildi-ragnhildur))
+	  (NP-OB1 (D-A þessi-þessi) (NS-A tíðindi-tíðindi))
+	  (. .-.))
+  (ID 1350.FINNBOGI.NAR-SAG,651.1491)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1350.finnbogi.nar-sag.psd	1/1/2342
+*/
+/*
+HEADER:
+source file:  1350.marta.rel-sag.psd
+*/
+
+/~*
+og-og gerði-gera guði-guð þakkir-þökk .-.
+(1350.MARTA.REL-SAG,.658)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 8 NP-OB2, 11 NP-OB1, 9 NS-A, 12 NS-A
+1 IP-MAT:  1 IP-MAT, 11 NP-OB1, 8 NP-OB2, 12 NS-A, 9 NS-A
+*/
+( (IP-MAT (CONJ og-og)
+	  (NP-SBJ *con*)
+	  (DODI gerði-gera)
+	  (NP-OB2 (NS-A guði-guð))
+	  (NP-OB1 (NS-A þakkir-þökk))
+	  (. .-.))
+  (ID 1350.MARTA.REL-SAG,.658)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1350.marta.rel-sag.psd	1/1/977
+*/
+/*
+HEADER:
+source file:  1400.gunnar.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1400.gunnar.nar-sag.psd	0/0/935
+*/
+/*
+HEADER:
+source file:  1400.gunnar2.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1400.gunnar2.nar-sag.psd	0/0/340
+*/
+/*
+HEADER:
+source file:  1400.viglundur.nar-sag.psd
+*/
+
+/~*
+Vil-vilja eg-ég sýna-sýna yður-þú alla-allur eigu-eiga mína-minn úti-úti og-og
+inni-inni ,-, akra-akur og-og aldingarða-aldingarður .-. "-"
+(1400.VIGLUNDUR.NAR-SAG,.99)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 9 NP-OB2, 12 NP-OB1, 10 PRO-A, 13 Q-A
+1 IP-MAT:  1 IP-MAT, 9 NP-OB2, 12 NP-OB1, 10 PRO-A, 15 N-A
+1 IP-MAT:  1 IP-MAT, 12 NP-OB1, 9 NP-OB2, 13 Q-A, 10 PRO-A
+1 IP-MAT:  1 IP-MAT, 12 NP-OB1, 9 NP-OB2, 15 N-A, 10 PRO-A
+*/
+( (IP-MAT (MDPI Vil-vilja)
+	  (NP-SBJ (PRO-N eg-ég))
+	  (VB sýna-sýna)
+	  (NP-OB2 (PRO-A yður-þú))
+	  (NP-OB1 (Q-A alla-allur)
+		  (N-A eigu-eiga)
+		  (NP-POS (PRO-A mína-minn))
+		  (NP-PRN *ICH*-1))
+	  (ADVP-LOC (ADV úti-úti) (CONJ og-og) (ADV inni-inni))
+	  (, ,-,)
+	  (NP-PRN-1 (NS-A akra-akur) (CONJ og-og) (NS-A aldingarða-aldingarður))
+	  (. .-.)
+	  (" "-"))
+  (ID 1400.VIGLUNDUR.NAR-SAG,.99)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1400.viglundur.nar-sag.psd	1/1/1290
+*/
+/*
+HEADER:
+source file:  1450.bandamenn.nar-sag.psd
+*/
+
+/~*
+En-en verða-verða má-mega svo-svo að-að undir-undir þig-þú komi-koma mál$-mál
+$ið-hinn og-og hefðum-hafa vér-ég frændur-frændi það-það að-að ráði-ráð að-að
+taka-taka þann-sá kost$-kostur $inn-hinn að-að selja-selja yður-þú
+sjálfdæmi-sjálfdæmi
+(1450.BANDAMENN.NAR-SAG,40.755)
+*~/
+/*
+68 IP-INF-SPE-PRN:  68 IP-INF-SPE-PRN, 73 NP-OB2, 76 NP-OB1, 74 PRO-A, 77 N-A
+68 IP-INF-SPE-PRN:  68 IP-INF-SPE-PRN, 76 NP-OB1, 73 NP-OB2, 77 N-A, 74 PRO-A
+*/
+( (IP-INF-SPE-PRN (TO að-að)
+		  (VB selja-selja)
+		  (NP-OB2 (PRO-A yður-þú))
+		  (NP-OB1 (N-A sjálfdæmi-sjálfdæmi)))
+  (ID 1450.BANDAMENN.NAR-SAG,40.755)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1450.bandamenn.nar-sag.psd	1/1/1034
+*/
+/*
+HEADER:
+source file:  1450.ectorssaga.nar-sag.psd
+*/
+
+/~*
+Hann-hann mælti-mæla "-" þú-þú drengur-drengur "-" segir-segja hann-hann "-"
+ger-gera annað-annar hvort-hvort fá-fá oss-ég hest-hestur þinn-þinn og-og
+vopn-vopn .-.
+(1450.ECTORSSAGA.NAR-SAG,.718)
+*~/
+/*
+30 IP-INF-SPE:  30 IP-INF-SPE, 38 NP-OB2, 41 NP-OB1, 39 PRO-A, 44 N-A
+30 IP-INF-SPE:  30 IP-INF-SPE, 41 NP-OB1, 38 NP-OB2, 44 N-A, 39 PRO-A
+*/
+( (IP-INF-SPE (CONJ-1 (OTHER annað-annar) (WPRO hvort-hvort))
+	      (VB fá-fá)
+	      (NP-OB2 (PRO-A oss-ég))
+	      (NP-OB1 (CONJ *ICH*-1)
+		      (N-A hest-hestur)
+		      (NP-POS (PRO-A þinn-þinn))
+		      (CONJP (CONJ og-og)
+			     (NX (N-N vopn-vopn)))))
+  (ID 1450.ECTORSSAGA.NAR-SAG,.718)) 
+
+
+/~*
+og-og þakkaði-þakka bónda-bóndi sinn-sinn greiða-greiði
+(1450.ECTORSSAGA.NAR-SAG,.785)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 8 NP-OB2, 14 NP-OB1, 9 N-A, 15 N-A
+1 IP-MAT:  1 IP-MAT, 14 NP-OB1, 8 NP-OB2, 15 N-A, 9 N-A
+*/
+( (IP-MAT (CONJ og-og)
+	  (NP-SBJ *con*)
+	  (VBDI þakkaði-þakka)
+	  (NP-OB2 (N-A bónda-bóndi)
+		  (NP-POS (PRO-A sinn-sinn)))
+	  (NP-OB1 (N-A greiða-greiði)))
+  (ID 1450.ECTORSSAGA.NAR-SAG,.785)) 
+
+
+/~*
+Segja-segja nú-nú kóngs-kóngur syni-sonur tilkomu-tilkoma riddara$-riddari
+$ns-hinn .-.
+(1450.ECTORSSAGA.NAR-SAG,.1395)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 9 NP-OB2, 15 NP-OB1, 13 N-A, 16 N-A
+1 IP-MAT:  1 IP-MAT, 15 NP-OB1, 9 NP-OB2, 16 N-A, 13 N-A
+*/
+( (IP-MAT (NP-SBJ *con*)
+	  (VBPI Segja-segja)
+	  (ADVP-TMP (ADV nú-nú))
+	  (NP-OB2 (NP-POS (N-G kóngs-kóngur))
+		  (N-A syni-sonur))
+	  (NP-OB1 (N-A tilkomu-tilkoma)
+		  (NP-POS (N-G riddara$-riddari) (D-G $ns-hinn)))
+	  (. .-.))
+  (ID 1450.ECTORSSAGA.NAR-SAG,.1395)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1450.ectorssaga.nar-sag.psd	3/3/1950
+*/
+/*
+HEADER:
+source file:  1450.judit.rel-bib.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1450.judit.rel-bib.psd	0/0/491
+*/
+/*
+HEADER:
+source file:  1450.vilhjalmur.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1450.vilhjalmur.nar-sag.psd	0/0/2414
+*/
+/*
+HEADER:
+source file:  1475.aevintyri.nar-rel.psd
+*/
+
+/~*
+og-og sagði-segja svo-svo sínum-sinn föður-faðir það-það ,-, að-að
+klerkur$-klerkur $inn-hinn elskaði-elska hana-hún .-.
+(1475.AEVINTYRI.NAR-REL,.195)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 11 NP-OB2, 17 NP-OB1, 15 N-A, 18 PRO-A
+1 IP-MAT:  1 IP-MAT, 17 NP-OB1, 11 NP-OB2, 18 PRO-A, 15 N-A
+*/
+( (IP-MAT (CONJ og-og)
+	  (NP-SBJ *con*)
+	  (VBDI sagði-segja)
+	  (ADVP-TMP (ADV svo-svo))
+	  (NP-OB2 (NP-POS (PRO-D sínum-sinn))
+		  (N-A föður-faðir))
+	  (NP-OB1 (PRO-A það-það)
+		  (, ,-,)
+		  (CP-THT-PRN (C að-að)
+			      (IP-SUB RMV:klerkur$-klerkur_$inn-hinn_elskaði-elska...)))
+	  (. .-.))
+  (ID 1475.AEVINTYRI.NAR-REL,.195)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1475.aevintyri.nar-rel.psd	1/1/1201
+*/
+/*
+HEADER:
+source file:  1480.jarlmann.nar-sag.psd
+*/
+
+/~*
+Og-og mát$-mega $tu-þú segja-segja það-það kóngs-kóngur syni-sonur að-að
+eigi-ekki færi-fara eg-ég honum-hann mína-minn dóttur-dóttir og-og eigi-ekki
+mína-minn kórónu-kóróna .-.
+(1480.JARLMANN.NAR-SAG,.315)
+*~/
+/*
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 11 NP-OB1, 16 NP-OB2, 12 PRO-A, 20 NS-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 16 NP-OB2, 11 NP-OB1, 20 NS-A, 12 PRO-A
+*/
+( (IP-MAT-SPE (CONJ Og-og)
+	      (MDDI mát$-mega)
+	      (NP-SBJ (PRO-N $tu-þú))
+	      (VB segja-segja)
+	      (NP-OB1 (PRO-A það-það)
+		      (CP-THT-SPE-PRN *ICH*-1))
+	      (NP-OB2 (NP-POS (N-G kóngs-kóngur))
+		      (NS-A syni-sonur))
+	      (CP-THT-SPE-PRN-1 (C að-að)
+				(IP-SUB-SPE RMV:eigi-ekki_færi-fara_eg-ég...))
+	      (. .-.))
+  (ID 1480.JARLMANN.NAR-SAG,.315)) 
+
+
+/~*
+Vill-vilja hann-hann yður-þú tvo-tveir kosti-kostur gjöra-gera .-. Annað-annar
+hvort-hvort að-að þér-þú kastið-kasta kristni-kristni eður-eður gangið-ganga
+á-á hans-hann vald-vald ,-,
+(1480.JARLMANN.NAR-SAG,.450)
+*~/
+/*
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 7 NP-OB2, 10 NP-OB1, 8 PRO-A, 11 NUM-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 7 NP-OB2, 10 NP-OB1, 8 PRO-A, 13 NS-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 10 NP-OB1, 7 NP-OB2, 11 NUM-A, 8 PRO-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 10 NP-OB1, 7 NP-OB2, 13 NS-A, 8 PRO-A
+*/
+( (IP-MAT-SPE (MDPI Vill-vilja)
+	      (NP-SBJ (PRO-N hann-hann))
+	      (NP-OB2 (PRO-A yður-þú))
+	      (NP-OB1 (NUM-A tvo-tveir)
+		      (NS-A kosti-kostur)
+		      (CP-THT-SPE-PRN *ICH*-1))
+	      (DO gjöra-gera)
+	      (, .-.)
+	      (CP-THT-SPE-PRN-1 (NP-ADV-2 (OTHER-A Annað-annar) (WPRO-A hvort-hvort))
+				(C að-að)
+				(IP-SUB-SPE RMV:*ICH*-2_þér-þú_kastið-kasta...))
+	      (. ,-,))
+  (ID 1480.JARLMANN.NAR-SAG,.450)) 
+
+
+/~*
+"-" nú-nú er-vera á-á yðru-yðar valdi-vald góðir-góður drengir-drengur
+komið-koma líf-líf vort-vor allra-allur ,-, því-það að-að eg-ég vil-vilja
+yður-þú kunnigt-kunnigur gjöra-gera ráðagjörð-ráðagjörð mína-minn .-.
+(1480.JARLMANN.NAR-SAG,.735)
+*~/
+/*
+44 IP-SUB-SPE:  44 IP-SUB-SPE, 50 NP-OB2, 58 NP-OB1, 51 PRO-A, 59 N-A
+44 IP-SUB-SPE:  44 IP-SUB-SPE, 58 NP-OB1, 50 NP-OB2, 59 N-A, 51 PRO-A
+*/
+( (IP-SUB-SPE (NP-SBJ (PRO-N eg-ég))
+	      (MDPI vil-vilja)
+	      (NP-OB2 (PRO-A yður-þú))
+	      (ADJP-SPR (ADJ-A kunnigt-kunnigur))
+	      (DO gjöra-gera)
+	      (NP-OB1 (N-A ráðagjörð-ráðagjörð)
+		      (NP-POS (PRO-A mína-minn))))
+  (ID 1480.JARLMANN.NAR-SAG,.735)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1480.jarlmann.nar-sag.psd	3/3/1282
+*/
+/*
+HEADER:
+source file:  1525.erasmus.nar-sag.psd
+*/
+
+/~*
+Þú-þú hefur-hafa nú-nú og-og sýnt-sýna opinberlega-opinberlega þína-þinn
+miskunn-miskunn þínum-þinn fátækum-fátækur og-og óverðugum-óverðugur
+þénara-þénari og-og leyst-leysa hann-hann úr-úr fanglelsi-fanglelsi og-og
+pínu-pína ,-, svo-svo sem-sem þú-þú leystir-leysa þrjá-þrír sveina-sveinur
+úr-úr glóanda-glóa ofni-ofnur af-af valdi-vald Nabagodosor-nabagodosor
+konungs-konungur .-. Og-og Daníel-daníel spámann-spámaður þinn-þinn af-af
+leónagröf$-leónagröf $inni-hinn og-og fæddir-fæða hann-hann með-með þinni-þinn
+miskunn-miskunn ,-, er-er þú-þú sendir-senda honum-hann fæðu-fæða með-með
+Abbakúk-abbakúk spámanni-spámaður .-.
+(1525.ERASMUS.NAR-SAG,.148)
+*~/
+/*
+2 IP-MAT-SPE-1:  2 IP-MAT-SPE-1, 18 NP-OB1, 24 NP-OB2, 22 N-A, 35 N-A
+2 IP-MAT-SPE-1:  2 IP-MAT-SPE-1, 24 NP-OB2, 18 NP-OB1, 35 N-A, 22 N-A
+*/
+( (IP-MAT-SPE-1 (NP-SBJ (PRO-N Þú-þú))
+		(HVPI hefur-hafa)
+		(ADVP-TMP (ADV nú-nú))
+		(ALSO og-og)
+		(VBN sýnt-sýna)
+		(ADVP (ADV opinberlega-opinberlega))
+		(NP-OB1 (NP-POS (PRO-A þína-þinn))
+			(N-A miskunn-miskunn))
+		(NP-OB2 (NP-POS (PRO-D þínum-þinn))
+			(ADJP (ADJ-D fátækum-fátækur) (CONJ og-og) (ADJ-D óverðugum-óverðugur))
+			(N-A þénara-þénari)))
+  (ID 1525.ERASMUS.NAR-SAG,.148)) 
+
+
+/~*
+og-og skipaði-skipa að-að slá-slá hann-hann pústur-pústur .-.
+(1525.ERASMUS.NAR-SAG,.254)
+*~/
+/*
+8 IP-INF:  8 IP-INF, 13 NP-OB2, 16 NP-OB1, 14 PRO-A, 17 N-A
+8 IP-INF:  8 IP-INF, 16 NP-OB1, 13 NP-OB2, 17 N-A, 14 PRO-A
+*/
+( (IP-INF (TO að-að)
+	  (VB slá-slá)
+	  (NP-OB2 (PRO-A hann-hann))
+	  (NP-OB1 (N-A pústur-pústur)))
+  (ID 1525.ERASMUS.NAR-SAG,.254)) 
+
+
+/~*
+og-og sagðist-segja það-það eina-einn lært-læra hafa-hafa lýð$-lýður $inn-hinn
+að-að rétt-réttur væri-vera en-en rangt-rangur ekki-ekki .-.
+(1525.ERASMUS.NAR-SAG,.333)
+*~/
+/*
+8 IP-INF:  8 IP-INF, 9 NP-OB1, 20 NP-OB2, 10 PRO-A, 21 N-A
+8 IP-INF:  8 IP-INF, 9 NP-OB1, 20 NP-OB2, 10 PRO-A, 23 D-A
+8 IP-INF:  8 IP-INF, 9 NP-OB1, 20 NP-OB2, 12 ONE-A, 21 N-A
+8 IP-INF:  8 IP-INF, 9 NP-OB1, 20 NP-OB2, 12 ONE-A, 23 D-A
+8 IP-INF:  8 IP-INF, 20 NP-OB2, 9 NP-OB1, 21 N-A, 10 PRO-A
+8 IP-INF:  8 IP-INF, 20 NP-OB2, 9 NP-OB1, 21 N-A, 12 ONE-A
+8 IP-INF:  8 IP-INF, 20 NP-OB2, 9 NP-OB1, 23 D-A, 10 PRO-A
+8 IP-INF:  8 IP-INF, 20 NP-OB2, 9 NP-OB1, 23 D-A, 12 ONE-A
+*/
+( (IP-INF (NP-OB1 (PRO-A það-það)
+		  (ONE-A eina-einn)
+		  (CP-THT-PRN *ICH*-1))
+	  (VBN lært-læra)
+	  (HV hafa-hafa)
+	  (NP-OB2 (N-A lýð$-lýður) (D-A $inn-hinn))
+	  (CP-THT-PRN-1 (C að-að)
+			(IP-SUB-2 RMV:*ICH*-1_rétt-réttur_væri-vera...)
+			(CONJP (CONJ en-en)
+			       (IP-SUB=2 RMV:rangt-rangur_ekki-ekki...))))
+  (ID 1525.ERASMUS.NAR-SAG,.333)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1525.erasmus.nar-sag.psd	3/3/462
+*/
+/*
+HEADER:
+source file:  1525.georgius.nar-rel.psd
+*/
+
+/~*
+Einn-einn sinni-sinn sem-sem oftar-oft er-er þeir-sá bræður$-bróðir $nir-hinn
+voru-vera á-á eintali-eintal sín-sig á-á milli-milli Theodórus-theodórus og-og
+Demetríus-demetríus .-. Þá-þá sagði-segja Theodórus-theodórus .-. Minn-minn
+kæri-kær bróðir-bróðir Demetríus-demetríus .-. Tekur-taka þú-þú ekki-ekki
+nokkuð-nokkur mark-mark á-á því-það hversu-hversu að-að bróðir-bróðir okkar-ég
+Georgíus-georgíus er-vera mjög-mjög vaxandi-vaxa í-í góðum-góður dygðum-dygð
+og-og hraustum-hraustur manndómi-manndómur svo-svo að-að hann-hann
+gengur-ganga mjög-mjög langt-langt fram-fram yfir-yfir okkur-ég í-í
+mörgum-margur hlutum-hlutur og-og gjörir-gera þó-þó allan-allur tíð-tíð
+okkur-ég til-til það-það hið-hinn besta-góður en-en upp$-upp $hefur-hefja
+sig-sig ekki-ekki að-að heldur-heldur eður-eða þykist-þykja nokkrum-nokkur
+mun-munur að-að meiri-mikill vera-vera fyrir-fyrir það-það nema-nema
+heldur-heldur vill-vilja hann-hann ávallt-ávallt sýnast-sýna öllum-allur
+bræðrum-bróðir minni-lítill í-í hverri-hver grein-grein .-.
+(1525.GEORGIUS.NAR-REL,.33)
+*~/
+/*
+180 IP-SUB-SPE:  180 IP-SUB-SPE, 193 NP-OB2, 198 NP-OB1, 194 PRO-A, 199 PRO-A
+180 IP-SUB-SPE:  180 IP-SUB-SPE, 198 NP-OB1, 193 NP-OB2, 199 PRO-A, 194 PRO-A
+*/
+( (IP-SUB-SPE (NP-SBJ *con*)
+	      (DOPI gjörir-gera)
+	      (ADVP (ADV þó-þó))
+	      (NP-MSR (Q-A allan-allur) (N-A tíð-tíð))
+	      (NP-OB2 (PRO-A okkur-ég))
+	      (RP til-til)
+	      (NP-OB1 (PRO-A það-það)
+		      (NP-PRN (D-A hið-hinn) (ADJS-A besta-góður))))
+  (ID 1525.GEORGIUS.NAR-REL,.33)) 
+
+
+/~*
+Ef-ef þú-þú vildir-vilja svo-svo vel-vel gjöra-gera og-og gefa-gefa mínum-minn
+guði-guð Appolló-appolló þenna-þessi heiður-heiður .-. Eg-ég skyldi-skulu
+fyrir-fyrir gefa-gefa þér-þú í-í stað$-staður $inn-hinn mikla-mikill æru-æra
+og-og virðingu-virðing svo-svo að-að þú-þú skyldir-skulu öngvan-enginn
+herra-herra þurfa-þurfa að-að óttast-ótta ,-,
+(1525.GEORGIUS.NAR-REL,.639)
+*~/
+/*
+25 IP-SUB-SPE=1:  25 IP-SUB-SPE=1, 28 NP-OB2, 37 NP-OB1, 32 NS-A, 38 D-A
+25 IP-SUB-SPE=1:  25 IP-SUB-SPE=1, 28 NP-OB2, 37 NP-OB1, 32 NS-A, 40 N-A
+25 IP-SUB-SPE=1:  25 IP-SUB-SPE=1, 37 NP-OB1, 28 NP-OB2, 38 D-A, 32 NS-A
+25 IP-SUB-SPE=1:  25 IP-SUB-SPE=1, 37 NP-OB1, 28 NP-OB2, 40 N-A, 32 NS-A
+*/
+( (IP-SUB-SPE=1 (VB gefa-gefa)
+		(NP-OB2 (NP-POS (PRO-D mínum-minn))
+			(NS-A guði-guð)
+			(NP-PRN (NPR-D Appolló-appolló)))
+		(NP-OB1 (D-A þenna-þessi) (N-A heiður-heiður)))
+  (ID 1525.GEORGIUS.NAR-REL,.639)) 
+
+
+/~*
+en-en þegar-þegar að-að sanktus-sanktus Georgíus-georgíus skildi-skilja
+hennar-hún orð-orð og-og glögglega-glögglega vissi-vita hver-hver til-til
+sín-sig talaði-tala .-. Þá-þá bað-biðja hann-hann keisara$-keisari $nn-hinn
+leyfi$-leyfi $ð-hinn .-. að-að sú-sá kvinna$-kvinna $n-hinn er-er hann-hann
+heyrði-heyra til-til .-. mætti-mega ganga-ganga nær-nær .-.
+(1525.GEORGIUS.NAR-REL,.789)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 63 NP-OB2, 68 NP-OB1, 64 N-A, 69 N-A
+1 IP-MAT:  1 IP-MAT, 63 NP-OB2, 68 NP-OB1, 64 N-A, 71 D-A
+1 IP-MAT:  1 IP-MAT, 63 NP-OB2, 68 NP-OB1, 66 D-A, 69 N-A
+1 IP-MAT:  1 IP-MAT, 63 NP-OB2, 68 NP-OB1, 66 D-A, 71 D-A
+1 IP-MAT:  1 IP-MAT, 68 NP-OB1, 63 NP-OB2, 69 N-A, 64 N-A
+1 IP-MAT:  1 IP-MAT, 68 NP-OB1, 63 NP-OB2, 69 N-A, 66 D-A
+1 IP-MAT:  1 IP-MAT, 68 NP-OB1, 63 NP-OB2, 71 D-A, 64 N-A
+1 IP-MAT:  1 IP-MAT, 68 NP-OB1, 63 NP-OB2, 71 D-A, 66 D-A
+*/
+( (IP-MAT (CONJ en-en)
+	  (PP-LFD (P þegar-þegar)
+		  (CP-ADV (C að-að)
+			  (IP-SUB RMV:sanktus-sanktus_Georgíus-georgíus_skildi-skilja...)))
+	  (, .-.)
+	  (ADVP-TMP-RSP (ADV Þá-þá))
+	  (VBDI bað-biðja)
+	  (NP-SBJ (PRO-N hann-hann))
+	  (NP-OB2 (N-A keisara$-keisari) (D-A $nn-hinn))
+	  (NP-OB1 (N-A leyfi$-leyfi)
+		  (D-A $ð-hinn)
+		  (, .-.)
+		  (CP-THT (C að-að)
+			  (IP-SUB RMV:sú-sá_kvinna$-kvinna_$n-hinn...)))
+	  (. .-.))
+  (ID 1525.GEORGIUS.NAR-REL,.789)) 
+
+
+/~*
+Hvað-hvað nær-nærri sem-sem þeir-hann biðja-biðja þig-þú og-og það-það er-er
+þeir-hann biðja-biðja það-það veitir-veita guð-guð þeim-það fyrir-fyrir
+þína-þinn skuld-skuld .-.
+(1525.GEORGIUS.NAR-REL,.1010)
+*~/
+/*
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 41 NP-OB1-RSP, 46 NP-OB1, 42 PRO-A, 47 NPR-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 46 NP-OB1, 41 NP-OB1-RSP, 47 NPR-A, 42 PRO-A
+*/
+( (IP-MAT-SPE (CP-QUE-SPE-LFD (CP-QUE-SPE (WNP-1 (ADVR Hvað-hvað) (ADVR nær-nærri))
+					  (C sem-sem)
+					  (IP-SUB-SPE RMV:*T*-1_þeir-hann_biðja-biðja...))
+			      (CONJP (CONJ og-og)
+				     (NP (PRO-N það-það)
+					 (CP-REL-SPE (WNP-2 0)
+						     (C er-er)
+						     (IP-SUB-SPE RMV:*T*-2_þeir-hann_biðja-biðja...)))))
+	      (NP-OB1-RSP (PRO-A það-það))
+	      (VBPI veitir-veita)
+	      (NP-OB1 (NPR-A guð-guð))
+	      (NP-OB2 (PRO-D þeim-það))
+	      (PP (P fyrir-fyrir)
+		  (NP (NP-POS (PRO-A þína-þinn))
+		      (N-A skuld-skuld)))
+	      (. .-.))
+  (ID 1525.GEORGIUS.NAR-REL,.1010)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1525.georgius.nar-rel.psd	4/4/1060
+*/
+/*
+HEADER:
+source file:  1540.ntacts.rel-bib.psd
+*/
+
+/~*
+Og-og þeir-hann nokkrir-nokkur ,-, sem-sem ofan-ofan komu-koma af-af
+Júdea-júdea ,-, lærðu-læra bræður$-bróðir $na-hinn það-það ,-, nema-nema ef-ef
+þeir-hann léti-láta um$-um $skera-skera sig-sig eftir-eftir siðvenju-siðvenja
+Moyses-móses ,-, - þá-þá kunni-kunna þér-þú ekki-ekki að-að hjálpast-hjálpa
+.-.
+(1540.NTACTS.REL-BIB,268.932)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 36 NP-OB2, 41 NP-OB1, 37 NS-A, 42 PRO-A
+1 IP-MAT:  1 IP-MAT, 36 NP-OB2, 41 NP-OB1, 39 D-A, 42 PRO-A
+1 IP-MAT:  1 IP-MAT, 41 NP-OB1, 36 NP-OB2, 42 PRO-A, 37 NS-A
+1 IP-MAT:  1 IP-MAT, 41 NP-OB1, 36 NP-OB2, 42 PRO-A, 39 D-A
+*/
+( (IP-MAT (CODE VS:XV_1P)
+	  (CONJ Og-og)
+	  (NP-SBJ (PRO-N þeir-hann)
+		  (Q-N nokkrir-nokkur)
+		  (, ,-,)
+		  (CP-REL (WNP-1 0)
+			  (C sem-sem)
+			  (IP-SUB RMV:*T*-1_ofan-ofan_komu-koma...)))
+	  (, ,-,)
+	  (VBDI lærðu-læra)
+	  (NP-OB2 (NS-A bræður$-bróðir) (D-A $na-hinn))
+	  (NP-OB1 (PRO-A það-það)
+		  (, ,-,)
+		  (CP-THT-PRN (C 0)
+			      (IP-SUB RMV:nema-nema_ef-ef_0...)))
+	  (. .-.))
+  (ID 1540.NTACTS.REL-BIB,268.932)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1540.ntacts.rel-bib.psd	1/1/1183
+*/
+/*
+HEADER:
+source file:  1540.ntjohn.rel-bib.psd
+*/
+
+/~*
+Gaf-gefa Moyses-móses yður-þú eigi-ekki lög-lög þó-þó enginn-enginn yðar-þú
+haldi-halda lög$-lög $in-hinn ?-?
+(1540.NTJOHN.REL-BIB,200.530)
+*~/
+/*
+4 IP-SUB-SPE:  4 IP-SUB-SPE, 10 NP-OB2, 15 NP-OB1, 11 PRO-A, 16 NS-A
+4 IP-SUB-SPE:  4 IP-SUB-SPE, 15 NP-OB1, 10 NP-OB2, 16 NS-A, 11 PRO-A
+*/
+( (IP-SUB-SPE (VBDI Gaf-gefa)
+	      (NP-SBJ (NPR-N Moyses-móses))
+	      (NP-OB2 (PRO-A yður-þú))
+	      (NEG eigi-ekki)
+	      (NP-OB1 (NS-A lög-lög))
+	      (PP (P þó-þó)
+		  (CP-ADV-SPE (C 0)
+			      (IP-SUB-SPE RMV:enginn-enginn_yðar-þú_haldi-halda...))))
+  (ID 1540.NTJOHN.REL-BIB,200.530)) 
+
+
+/~*
+Moyses-móses gaf-gefa yður-þú því-það umskurðarskírn-umskurðarskírn ,-,
+(1540.NTJOHN.REL-BIB,200.538)
+*~/
+/*
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 9 NP-OB2, 18 NP-OB1, 10 PRO-A, 19 N-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 18 NP-OB1, 9 NP-OB2, 19 N-A, 10 PRO-A
+*/
+( (IP-MAT-SPE (CODE VS:VII_22J)
+	      (NP-SBJ (NPR-N Moyses-móses))
+	      (VBDI gaf-gefa)
+	      (NP-OB2 (PRO-A yður-þú))
+	      (PP (P 0)
+		  (NP (PRO-D því-það)))
+	      (NP-OB1 (N-A umskurðarskírn-umskurðarskírn))
+	      (. ,-,))
+  (ID 1540.NTJOHN.REL-BIB,200.538)) 
+
+
+/~*
+En-en huggari$-huggari $nn-hinn ,-, hinn-hinn heilagi-heilagur andi-andi ,-,
+þann-sá er-er minn-minn faðir-faðir mun-munu senda-senda yður-þú í-í mínu-minn
+nafni-nafn ,-, hann-hann sjálfur-sjálfur mun-munu læra-læra yður-þú alla-allur
+hluti-hlutur og-og á$-á $minna-minna yður-þú á-á allt-allur það-það hvað-hver
+eg-ég sagða-segja yður-þú .-.
+(1540.NTJOHN.REL-BIB,219.1203)
+*~/
+/*
+6 IP-MAT-SPE-1:  6 IP-MAT-SPE-1, 70 NP-OB2, 73 NP-OB1, 71 PRO-A, 74 Q-A
+6 IP-MAT-SPE-1:  6 IP-MAT-SPE-1, 70 NP-OB2, 73 NP-OB1, 71 PRO-A, 76 NS-A
+6 IP-MAT-SPE-1:  6 IP-MAT-SPE-1, 73 NP-OB1, 70 NP-OB2, 74 Q-A, 71 PRO-A
+6 IP-MAT-SPE-1:  6 IP-MAT-SPE-1, 73 NP-OB1, 70 NP-OB2, 76 NS-A, 71 PRO-A
+*/
+( (IP-MAT-SPE-1 (NP-LFD (N-N huggari$-huggari)
+			(D-N $nn-hinn)
+			(, ,-,)
+			(NP-PRN (D-N hinn-hinn)
+				(ADJ-N heilagi-heilagur)
+				(NPR-N andi-andi)
+				(, ,-,)
+				(CODE *XXX*)
+				(NP-PRN (D-A þann-sá)
+					(CP-REL-SPE (WNP-2 0)
+						    (C er-er)
+						    (IP-SUB-SPE RMV:*T*-2_minn-minn_faðir-faðir...)))))
+		(, ,-,)
+		(NP-SBJ-RSP (PRO-N hann-hann)
+			    (NP-PRN (PRO-N sjálfur-sjálfur)))
+		(MDPI mun-munu)
+		(VB læra-læra)
+		(NP-OB2 (PRO-A yður-þú))
+		(NP-OB1 (Q-A alla-allur) (NS-A hluti-hlutur)))
+  (ID 1540.NTJOHN.REL-BIB,219.1203)) 
+
+
+/~*
+Og-og nú-nú sagði-segja eg-ég yður-þú það-það fyrr-fyrr en-en það-það sker-ske
+svo-svo að-að þér-þú trúið-trúa þá-þá það-það er-vera skeð-ske .-.
+(1540.NTJOHN.REL-BIB,219.1212)
+*~/
+/*
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 14 NP-OB2, 17 NP-OB1, 15 PRO-A, 18 PRO-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 17 NP-OB1, 14 NP-OB2, 18 PRO-A, 15 PRO-A
+*/
+( (IP-MAT-SPE (CODE VS:XIV_29J)
+	      (CONJ Og-og)
+	      (ADVP-TMP (ADV nú-nú))
+	      (VBDI sagði-segja)
+	      (NP-SBJ (PRO-N eg-ég))
+	      (NP-OB2 (PRO-A yður-þú))
+	      (NP-OB1 (PRO-A það-það))
+	      (CODE *XXX*)
+	      (ADVP-TMP (ADVR fyrr-fyrr)
+			(PP (P en-en)
+			    (CP-CMP-SPE (WADVP-1 0)
+					(C 0)
+					(IP-SUB-SPE RMV:*T*-1_það-það_sker-ske...))))
+	      (PP (P svo-svo)
+		  (CP-ADV-SPE (C að-að)
+			      (IP-SUB-SPE RMV:þér-þú_trúið-trúa_þá-þá...)))
+	      (. .-.))
+  (ID 1540.NTJOHN.REL-BIB,219.1212)) 
+
+
+/~*
+En-en eg-ég segi-segja yður-þú þó-þó sannleik$-sannleikur $inn-hinn að-að
+það-það batar-bata yður-þú að-að eg-ég fari-fara héðan-héðan því-það að-að
+ef-ef eg-ég fer-fara eigi-ekki héðan-héðan ,-, þá-þá kemur-koma eigi-ekki
+huggar$-huggar $inn-hinn til-til yðar-þú .-.
+(1540.NTJOHN.REL-BIB,222.1277)
+*~/
+/*
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 11 NP-OB2, 17 NP-OB1, 12 PRO-A, 18 N-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 11 NP-OB2, 17 NP-OB1, 12 PRO-A, 20 D-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 17 NP-OB1, 11 NP-OB2, 18 N-A, 12 PRO-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 17 NP-OB1, 11 NP-OB2, 20 D-A, 12 PRO-A
+*/
+( (IP-MAT-SPE (CODE VS:XVI_7J)
+	      (CONJ En-en)
+	      (NP-SBJ (PRO-N eg-ég))
+	      (VBPI segi-segja)
+	      (NP-OB2 (PRO-A yður-þú))
+	      (ADVP (ADV þó-þó))
+	      (NP-OB1 (N-A sannleik$-sannleikur)
+		      (D-A $inn-hinn)
+		      (CP-THT-SPE-PRN (C að-að)
+				      (IP-SUB-SPE RMV:það-það_batar-bata_yður-þú...)))
+	      (. .-.))
+  (ID 1540.NTJOHN.REL-BIB,222.1277)) 
+
+
+/~*
+Sannlega-sannlega ,-, sannlega-sannlega segi-segja eg-ég yður-þú :-:
+Hvers-hver þér-þú biðjið-biðja föður$-faðir $inn-hinn í-í mínu-minn nafni-nafn
+,-, það-það mun-munu hann-hann gefa-gefa yður-þú .-.
+(1540.NTJOHN.REL-BIB,223.1309)
+*~/
+/*
+19 IP-MAT-SPE:  19 IP-MAT-SPE, 51 NP-OB1-RSP, 61 NP-OB2, 52 PRO-A, 62 PRO-A
+19 IP-MAT-SPE:  19 IP-MAT-SPE, 61 NP-OB2, 51 NP-OB1-RSP, 62 PRO-A, 52 PRO-A
+*/
+( (IP-MAT-SPE (NP-LFD (CP-FRL-SPE (WNP-1 (WPRO-G Hvers-hver))
+				  (C 0)
+				  (IP-SUB-SPE RMV:*T*-1_þér-þú_biðjið-biðja...)))
+	      (NP-OB1-RSP (PRO-A það-það))
+	      (MDPI mun-munu)
+	      (NP-SBJ (PRO-N hann-hann))
+	      (VB gefa-gefa)
+	      (NP-OB2 (PRO-A yður-þú)))
+  (ID 1540.NTJOHN.REL-BIB,223.1309)) 
+
+
+/~*
+En-en það-það er-vera yðar-yðar siðvenja-siðvenja að-að eg-ég gefi-gefa
+yður-þú einn-einn lausan-laus á-á páskum-páskar .-.
+(1540.NTJOHN.REL-BIB,227.1461)
+*~/
+/*
+20 IP-SUB-SPE:  20 IP-SUB-SPE, 26 NP-OB2, 29 NP-OB1, 27 PRO-A, 30 ONE-A
+20 IP-SUB-SPE:  20 IP-SUB-SPE, 29 NP-OB1, 26 NP-OB2, 30 ONE-A, 27 PRO-A
+*/
+( (IP-SUB-SPE (NP-SBJ (PRO-N eg-ég))
+	      (VBPS gefi-gefa)
+	      (NP-OB2 (PRO-A yður-þú))
+	      (NP-OB1 (ONE-A einn-einn))
+	      (ADJP-SPR (ADJ-A lausan-laus))
+	      (PP (P á-á)
+		  (NP (NPRS-D páskum-páskar))))
+  (ID 1540.NTJOHN.REL-BIB,227.1461)) 
+
+
+/~*
+Vilji-vilja þér-þú að-að eg-ég gefi-gefa yður-þú nú-nú lausan-laus
+sjálfan-sjálfur Gyðingakonung$-gyðingakonungur $inn-hinn ?-?
+(1540.NTJOHN.REL-BIB,227.1462)
+*~/
+/*
+10 IP-SUB-SPE:  10 IP-SUB-SPE, 16 NP-OB2, 25 NP-OB1, 17 PRO-A, 29 NPR-A
+10 IP-SUB-SPE:  10 IP-SUB-SPE, 16 NP-OB2, 25 NP-OB1, 17 PRO-A, 31 D-A
+10 IP-SUB-SPE:  10 IP-SUB-SPE, 25 NP-OB1, 16 NP-OB2, 29 NPR-A, 17 PRO-A
+10 IP-SUB-SPE:  10 IP-SUB-SPE, 25 NP-OB1, 16 NP-OB2, 31 D-A, 17 PRO-A
+*/
+( (IP-SUB-SPE (NP-SBJ (PRO-N eg-ég))
+	      (VBPS gefi-gefa)
+	      (NP-OB2 (PRO-A yður-þú))
+	      (ADVP-TMP (ADV nú-nú))
+	      (ADJP-SPR (ADJ-A lausan-laus))
+	      (NP-OB1 (NP-PRN (PRO-A sjálfan-sjálfur))
+		      (NPR-A Gyðingakonung$-gyðingakonungur)
+		      (D-A $inn-hinn)))
+  (ID 1540.NTJOHN.REL-BIB,227.1462)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1540.ntjohn.rel-bib.psd	8/8/1685
+*/
+/*
+HEADER:
+source file:  1593.eintal.rel-oth.psd
+*/
+
+/~*
+Eitt-einn eftirdæmi-eftirdæmi hef-hafa eg-ég gefið-gefa yður-þú ,-, að-að
+þér-þú gjörið-gera svo-svo sem-sem eg-ég hefi-hafa yður-þú gjört-gera .-.
+(1593.EINTAL.REL-OTH,.722)
+*~/
+/*
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 2 NP-OB1, 14 NP-OB2, 3 ONE-A, 15 PRO-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 2 NP-OB1, 14 NP-OB2, 5 N-A, 15 PRO-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 14 NP-OB2, 2 NP-OB1, 15 PRO-A, 3 ONE-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 14 NP-OB2, 2 NP-OB1, 15 PRO-A, 5 N-A
+*/
+( (IP-MAT-SPE (NP-OB1 (ONE-A Eitt-einn) (N-A eftirdæmi-eftirdæmi))
+	      (HVPI hef-hafa)
+	      (NP-SBJ (PRO-N eg-ég))
+	      (VBN gefið-gefa)
+	      (NP-OB2 (PRO-A yður-þú))
+	      (, ,-,)
+	      (CP-ADV-SPE (C að-að)
+			  (IP-SUB-SPE RMV:þér-þú_gjörið-gera_svo-svo...))
+	      (. .-.))
+  (ID 1593.EINTAL.REL-OTH,.722)) 
+
+
+/~*
+Nú-nú segi-segja eg-ég yður-þú það-það fyrir-fyrir ,-, áður-áður en-en það-það
+skeður-ske ,-, svo-svo að-að þá-þá það-það er-vera skeð-ske að-að þér-þú þá-þá
+trúið-trúa að-að eg-ég sé-vera sá-sá sami-samur .-.
+(1593.EINTAL.REL-OTH,.728)
+*~/
+/*
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 10 NP-OB2, 13 NP-OB1, 11 PRO-A, 14 PRO-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 13 NP-OB1, 10 NP-OB2, 14 PRO-A, 11 PRO-A
+*/
+( (IP-MAT-SPE (ADVP-TMP (ADV Nú-nú))
+	      (VBPI segi-segja)
+	      (NP-SBJ (PRO-N eg-ég))
+	      (NP-OB2 (PRO-A yður-þú))
+	      (NP-OB1 (PRO-A það-það))
+	      (RP fyrir-fyrir)
+	      (, ,-,)
+	      (ADVP-TMP (ADVR áður-áður)
+			(PP (P en-en)
+			    (CP-CMP-SPE (WADVP-1 0)
+					(C 0)
+					(IP-SUB-SPE RMV:*T*-1_það-það_skeður-ske...))))
+	      (, ,-,)
+	      (PP (P svo-svo)
+		  (CP-ADV-SPE (C að-að)
+			      (CP-ADV-SPE (ADVP-LFD-2 (ADV þá-þá)
+						      (CP-REL-SPE (WADVP-3 0)
+								  (C 0)
+								  (IP-SUB-SPE RMV:*T*-3_það-það_er-vera...)))
+					  (C að-að)
+					  (IP-SUB-SPE RMV:*ICH*-2_þér-þú_þá-þá...))))
+	      (. .-.))
+  (ID 1593.EINTAL.REL-OTH,.728)) 
+
+
+/~*
+Og-og eg-ég mun-munu biðja-biðja föður$-faðir $inn-hinn að-að hann-hann
+gefi-gefa yður-þú annan-annar huggara-huggari ,-, þann-sá
+sannleiksanda-sannleiksandi hvörn-hver heimur$-heimur $inn-hinn fær-fá
+ekki-ekki með$-með $tekið-taka ,-, því-það hann-hann sér-sjá hann-hann
+eigi-ekki og-og þekkir-þekkja hann-hann eigi-ekki .-.
+(1593.EINTAL.REL-OTH,.1047)
+*~/
+/*
+19 IP-SUB:  19 IP-SUB, 25 NP-OB2, 28 NP-OB1, 26 PRO-A, 29 OTHER-A
+19 IP-SUB:  19 IP-SUB, 25 NP-OB2, 28 NP-OB1, 26 PRO-A, 31 N-A
+19 IP-SUB:  19 IP-SUB, 28 NP-OB1, 25 NP-OB2, 29 OTHER-A, 26 PRO-A
+19 IP-SUB:  19 IP-SUB, 28 NP-OB1, 25 NP-OB2, 31 N-A, 26 PRO-A
+*/
+( (IP-SUB (NP-SBJ (PRO-N hann-hann))
+	  (VBPS gefi-gefa)
+	  (NP-OB2 (PRO-A yður-þú))
+	  (NP-OB1 (OTHER-A annan-annar)
+		  (N-A huggara-huggari)
+		  (, ,-,)
+		  (NP-PRN (D-A þann-sá)
+			  (NS-A sannleiksanda-sannleiksandi)
+			  (CP-REL (WNP-1 (WPRO-A hvörn-hver))
+				  (C 0)
+				  (IP-SUB RMV:*T*-1_heimur$-heimur_$inn-hinn...)))))
+  (ID 1593.EINTAL.REL-OTH,.1047)) 
+
+
+/~*
+og-og legg-leggja í-í minni-minn ,-, mín-minn sál-sál ,-, hvörnin-hvernig
+þinn-þinn lausnari-lausnari að-að kvöldmáltíð$-kvöldmáltíð $inni-hinn
+endaðri-enda gjörir-gera þakkir-þökk og-og lof-lof segir-segja sínum-sinn
+himneska-himneskur föður-faðir .-.
+(1593.EINTAL.REL-OTH,.1333)
+*~/
+/*
+57 IP-SUB:  57 IP-SUB, 62 NP-OB1, 67 NP-OB2, 63 N-A, 71 ADJ-A
+57 IP-SUB:  57 IP-SUB, 62 NP-OB1, 67 NP-OB2, 63 N-A, 73 N-A
+57 IP-SUB:  57 IP-SUB, 67 NP-OB2, 62 NP-OB1, 71 ADJ-A, 63 N-A
+57 IP-SUB:  57 IP-SUB, 67 NP-OB2, 62 NP-OB1, 73 N-A, 63 N-A
+*/
+( (IP-SUB (ADVP *T*-1)
+	  (NP-SBJ *con*)
+	  (NP-OB1 (N-A lof-lof))
+	  (VBPI segir-segja)
+	  (NP-OB2 (NP-POS (PRO-D sínum-sinn))
+		  (ADJ-A himneska-himneskur)
+		  (N-A föður-faðir)))
+  (ID 1593.EINTAL.REL-OTH,.1333)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1593.eintal.rel-oth.psd	4/4/1553
+*/
+/*
+HEADER:
+source file:  1611.okur.rel-oth.psd
+*/
+
+/~*
+En-en þegar-þegar hann-hann raknar-rakna við-við og-og skal-skulu
+betala-betala bæði-bæði höfuðstól-höfuðstóll og-og rentu$-renta $na-hinn þá-þá
+fyrsta-fyrst finnur-finna hann-hann að-að þvílík-þvílíkur lofun-lofun
+vill-vilja sig-sig kosta-kosta margan-margur og-og mæðusaman-mæðusamur
+blóðsveita-blóðsveiti og-og er-vera fyrir-fyrir konu-kona og-og börn-barn
+eitt-einn banvænlegt-banvænlegur eitur-eitur í-í sínum-sinn handafla-handafl
+.-.
+(1611.OKUR.REL-OTH,19.173)
+*~/
+/*
+58 IP-SUB:  58 IP-SUB, 66 NP-OB2, 71 NP-OB1, 67 PRO-A, 79 N-A
+58 IP-SUB:  58 IP-SUB, 71 NP-OB1, 66 NP-OB2, 79 N-A, 67 PRO-A
+*/
+( (IP-SUB (NP-SBJ (SUCH-N þvílík-þvílíkur) (N-N lofun-lofun))
+	  (MDPI vill-vilja)
+	  (NP-OB2 (PRO-A sig-sig))
+	  (VB kosta-kosta)
+	  (NP-OB1 (ADJP (Q-A margan-margur) (CONJ og-og) (ADJ-A mæðusaman-mæðusamur))
+		  (N-A blóðsveita-blóðsveiti)))
+  (ID 1611.OKUR.REL-OTH,19.173)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1611.okur.rel-oth.psd	1/1/629
+*/
+/*
+HEADER:
+source file:  1628.olafuregils.bio-tra.psd
+*/
+
+/~*
+Og-og hann-hann forærði-foræra mig-ég dal-dalur .-.
+(1628.OLAFUREGILS.BIO-TRA,.787)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 9 NP-OB2, 12 NP-OB1, 10 PRO-A, 13 N-A
+1 IP-MAT:  1 IP-MAT, 12 NP-OB1, 9 NP-OB2, 13 N-A, 10 PRO-A
+*/
+( (IP-MAT (CONJ Og-og)
+	  (NP-SBJ (PRO-N hann-hann))
+	  (VBDI forærði-foræra)
+	  (NP-OB2 (PRO-A mig-ég))
+	  (NP-OB1 (N-A dal-dalur))
+	  (. .-.))
+  (ID 1628.OLAFUREGILS.BIO-TRA,.787)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1628.olafuregils.bio-tra.psd	1/1/906
+*/
+/*
+HEADER:
+source file:  1630.gerhard.rel-oth.psd
+*/
+
+/~*
+en-en samt-samt skal-skulu ég-ég ekki-ekki vera-vera sekur-sekur í-í þeirri-sá
+hræðilegustu-hræðilegur synd-synd og-og illgjörð-illgjörð að-að ég-ég
+væni-væna þig-þú lygi-lygi eður-eður vilji-vilja þér-þú ei-ei trúa-trúa ,-,
+hvör-hver eð-eð vottar-votta bæði-bæði með-með orðum-orð og-og verkum-verk ,-,
+já-já ,-, og-og einninn-einnig með-með þínum-þinn dýra-dýr eiði-eiður ,-,
+að-að fyllileg-fyllilegur bót-bót og-og bítalingur-bítalingur sé-vera
+kominn-koma fyrir-fyrir mínar-minn syndir-synd .-.
+(1630.GERHARD.REL-OTH,.354)
+*~/
+/*
+41 IP-SUB:  41 IP-SUB, 47 NP-OB2, 50 NP-OB1, 48 PRO-A, 51 N-A
+41 IP-SUB:  41 IP-SUB, 50 NP-OB1, 47 NP-OB2, 51 N-A, 48 PRO-A
+*/
+( (IP-SUB (NP-SBJ (PRO-N ég-ég))
+	  (VBPS væni-væna)
+	  (NP-OB2 (PRO-A þig-þú))
+	  (NP-OB1 (N-A lygi-lygi)))
+  (ID 1630.GERHARD.REL-OTH,.354)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1630.gerhard.rel-oth.psd	1/1/701
+*/
+/*
+HEADER:
+source file:  1650.illugi.nar-sag.psd
+*/
+
+/~*
+og-og hjó-höggva hann-hann banahögg-banahögg .-.
+(1650.ILLUGI.NAR-SAG,.229)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 8 NP-OB2, 11 NP-OB1, 9 PRO-A, 12 N-A
+1 IP-MAT:  1 IP-MAT, 11 NP-OB1, 8 NP-OB2, 12 N-A, 9 PRO-A
+*/
+( (IP-MAT (CONJ og-og)
+	  (NP-SBJ *con*)
+	  (VBDI hjó-höggva)
+	  (NP-OB2 (PRO-A hann-hann))
+	  (NP-OB1 (N-A banahögg-banahögg))
+	  (. .-.))
+  (ID 1650.ILLUGI.NAR-SAG,.229)) 
+
+
+/~*
+og-og hjó-höggva hvern-hver að-að öðrum-annar banahögg-banahögg ,-, er-er
+þeir-hann koma-koma út-út úr-úr hell$-hellir $inum-hinn .-.
+(1650.ILLUGI.NAR-SAG,.385)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 8 NP-OB2, 17 NP-OB1, 9 Q-A, 18 N-A
+1 IP-MAT:  1 IP-MAT, 17 NP-OB1, 8 NP-OB2, 18 N-A, 9 Q-A
+*/
+( (IP-MAT (CONJ og-og)
+	  (NP-SBJ *con*)
+	  (VBDI hjó-höggva)
+	  (NP-OB2 (Q-A hvern-hver)
+		  (PP (P að-að)
+		      (NP (OTHER-D öðrum-annar))))
+	  (NP-OB1 (N-A banahögg-banahögg))
+	  (, ,-,)
+	  (CP-ADV (C er-er)
+		  (IP-SUB RMV:þeir-hann_koma-koma_út-út...))
+	  (. .-.))
+  (ID 1650.ILLUGI.NAR-SAG,.385)) 
+
+
+/~*
+og-og hjó-höggva hann-hann banahögg-banahögg .-.
+(1650.ILLUGI.NAR-SAG,.1857)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 8 NP-OB2, 11 NP-OB1, 9 PRO-A, 12 NS-A
+1 IP-MAT:  1 IP-MAT, 11 NP-OB1, 8 NP-OB2, 12 NS-A, 9 PRO-A
+*/
+( (IP-MAT (CONJ og-og)
+	  (NP-SBJ *con*)
+	  (VBDI hjó-höggva)
+	  (NP-OB2 (PRO-A hann-hann))
+	  (NP-OB1 (NS-A banahögg-banahögg))
+	  (. .-.))
+  (ID 1650.ILLUGI.NAR-SAG,.1857)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1650.illugi.nar-sag.psd	3/3/1929
+*/
+/*
+HEADER:
+source file:  1659.pislarsaga.bio-aut.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1659.pislarsaga.bio-aut.psd	0/0/324
+*/
+/*
+HEADER:
+source file:  1661.indiafari.bio-tra.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1661.indiafari.bio-tra.psd	0/0/1388
+*/
+/*
+HEADER:
+source file:  1675.armann.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1675.armann.nar-fic.psd	0/0/1018
+*/
+/*
+HEADER:
+source file:  1675.magnus.bio-oth.psd
+*/
+
+/~*
+Biskup-biskup forærti-foræra klerk-klerkur góðan-góður hest-hestur og-og
+silfurstaup-silfurstaup ,-,
+(1675.MAGNUS.BIO-OTH,.58)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 7 NP-OB2, 10 NP-OB1, 8 N-A, 11 ADJ-A
+1 IP-MAT:  1 IP-MAT, 7 NP-OB2, 10 NP-OB1, 8 N-A, 13 N-A
+1 IP-MAT:  1 IP-MAT, 10 NP-OB1, 7 NP-OB2, 11 ADJ-A, 8 N-A
+1 IP-MAT:  1 IP-MAT, 10 NP-OB1, 7 NP-OB2, 13 N-A, 8 N-A
+*/
+( (IP-MAT (NP-SBJ (N-N Biskup-biskup))
+	  (VBDI forærti-foræra)
+	  (NP-OB2 (N-A klerk-klerkur))
+	  (NP-OB1 (ADJ-A góðan-góður)
+		  (N-A hest-hestur)
+		  (CONJP (CONJ og-og)
+			 (NX (NS-A silfurstaup-silfurstaup))))
+	  (. ,-,))
+  (ID 1675.MAGNUS.BIO-OTH,.58)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1675.magnus.bio-oth.psd	1/1/204
+*/
+/*
+HEADER:
+source file:  1675.modars.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1675.modars.nar-fic.psd	0/0/373
+*/
+/*
+HEADER:
+source file:  1680.skalholt.nar-rel.psd
+*/
+
+/~*
+og-og laust-ljósta þá-hann í-í höfuð$-höfuð $ið-hinn eitt-einn högg-högg
+hvern-hver ,-,
+(1680.SKALHOLT.NAR-REL,.406)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 8 NP-OB2, 19 NP-OB1, 9 PRO-A, 20 ONE-A
+1 IP-MAT:  1 IP-MAT, 8 NP-OB2, 19 NP-OB1, 9 PRO-A, 22 N-A
+1 IP-MAT:  1 IP-MAT, 19 NP-OB1, 8 NP-OB2, 20 ONE-A, 9 PRO-A
+1 IP-MAT:  1 IP-MAT, 19 NP-OB1, 8 NP-OB2, 22 N-A, 9 PRO-A
+*/
+( (IP-MAT (CONJ og-og)
+	  (NP-SBJ *con*)
+	  (VBDI laust-ljósta)
+	  (NP-OB2 (PRO-A þá-hann))
+	  (PP (P í-í)
+	      (NP (N-A höfuð$-höfuð) (D-A $ið-hinn)))
+	  (NP-OB1 (ONE-A eitt-einn) (N-A högg-högg))
+	  (Q-A hvern-hver)
+	  (. ,-,))
+  (ID 1680.SKALHOLT.NAR-REL,.406)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1680.skalholt.nar-rel.psd	1/1/869
+*/
+/*
+HEADER:
+source file:  1720.vidalin.rel-ser.psd
+*/
+
+/~*
+Hafi-hafa eg-ég sagt-segja yður-þú jarðneska-jarðneskur hluti-hlutur ,-, og-og
+þér-þú trúið-trúa ekki-ekki ,-, hvernig-hvernig munuð-munu þér-þú þá-þá
+trúa-trúa ,-, ef-ef eg-ég segði-segja yður-þú himneska-himneskur hluti-hlutur
+?-?
+(1720.VIDALIN.REL-SER,.25)
+*~/
+/*
+4 IP-SUB-SPE:  4 IP-SUB-SPE, 12 NP-OB2, 15 NP-OB1, 13 PRO-A, 16 ADJ-A
+4 IP-SUB-SPE:  4 IP-SUB-SPE, 12 NP-OB2, 15 NP-OB1, 13 PRO-A, 18 NS-A
+4 IP-SUB-SPE:  4 IP-SUB-SPE, 15 NP-OB1, 12 NP-OB2, 16 ADJ-A, 13 PRO-A
+4 IP-SUB-SPE:  4 IP-SUB-SPE, 15 NP-OB1, 12 NP-OB2, 18 NS-A, 13 PRO-A
+59 IP-SUB-SPE:  59 IP-SUB-SPE, 65 NP-OB2, 68 NP-OB1, 66 PRO-A, 69 ADJ-A
+59 IP-SUB-SPE:  59 IP-SUB-SPE, 65 NP-OB2, 68 NP-OB1, 66 PRO-A, 71 NS-A
+59 IP-SUB-SPE:  59 IP-SUB-SPE, 68 NP-OB1, 65 NP-OB2, 69 ADJ-A, 66 PRO-A
+59 IP-SUB-SPE:  59 IP-SUB-SPE, 68 NP-OB1, 65 NP-OB2, 71 NS-A, 66 PRO-A
+*/
+( (IP-SUB-SPE (HVPS Hafi-hafa)
+	      (NP-SBJ (PRO-N eg-ég))
+	      (VBN sagt-segja)
+	      (NP-OB2 (PRO-A yður-þú))
+	      (NP-OB1 (ADJ-A jarðneska-jarðneskur) (NS-A hluti-hlutur)))
+  (ID 1720.VIDALIN.REL-SER,.25)) 
+
+( (IP-SUB-SPE (NP-SBJ (PRO-N eg-ég))
+	      (VBDS segði-segja)
+	      (NP-OB2 (PRO-A yður-þú))
+	      (NP-OB1 (ADJ-A himneska-himneskur) (NS-A hluti-hlutur)))
+  (ID 1720.VIDALIN.REL-SER,.25)) 
+
+
+/~*
+Það-það bið-biðja eg-ég þá-hann að-að hugleiða-hugleiða sem-sem
+jafnvel-jafnvel hata-hata sína-sinn sálusorgara-sálusorgari fyrir-fyrir
+heilsusamlegar-heilsusamlegur kenningar-kenning ,-,
+(1720.VIDALIN.REL-SER,.63)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-OB1, 12 NP-OB2, 3 PRO-A, 13 PRO-A
+1 IP-MAT:  1 IP-MAT, 12 NP-OB2, 2 NP-OB1, 13 PRO-A, 3 PRO-A
+*/
+( (IP-MAT (NP-OB1 (PRO-A Það-það)
+		  (IP-INF-PRN RMV:*ICH*-1...))
+	  (VBPI bið-biðja)
+	  (NP-SBJ (PRO-N eg-ég))
+	  (NP-OB2 (PRO-A þá-hann))
+	  (IP-INF-PRN-1 RMV:að-að_hugleiða-hugleiða_0...)
+	  (. ,-,))
+  (ID 1720.VIDALIN.REL-SER,.63)) 
+
+
+/~*
+Er-vera það-það ekki-ekki þá-þá að-að fæðast-fæða að-að nýju-nýr að-að
+heilagur-heilagur andi-andi í-í skírn$-skírn $inni-hinn upp$-upp $lífir-lifa
+hugskot$-hugskot $ið-hinn ,-, endurskapar-endurskap vilja$-vilji $nn-hinn ,-,
+og-og gefur-gefa oss-ég nýjar-nýr andlegar-andlegur gáfur-gáfa ,-, að-að
+vér-ég fáum-fá séð-sjá guðs-guð ríki-ríki ,-, þekkt-þekkja það-það í-í
+trú$-trú $nni-hinn ,-, samsinnt-samsinna því-það er-er um-um það-það
+talað-tala verður-verða ,-, að-að vér-ég leitum-leita þess-það ,-,
+langar-langa eftir-eftir því-það ,-, og-og öðlumst-öðlast það-það um-um
+síðir-síð ,-, hvað-hver ómögulegt-ómögulegur er-vera holdi-hold og-og
+blóði-blóð ,-, svo-svo sem-sem postul$-postuli $inn-hinn vottar-votta ,-,
+1.-fyrstur Kór.-kór. 15-15 .-.
+(1720.VIDALIN.REL-SER,.126)
+*~/
+/*
+70 IP-SUB:  70 IP-SUB, 75 NP-OB2, 78 NP-OB1, 76 PRO-A, 79 ADJ-A
+70 IP-SUB:  70 IP-SUB, 75 NP-OB2, 78 NP-OB1, 76 PRO-A, 81 ADJ-A
+70 IP-SUB:  70 IP-SUB, 75 NP-OB2, 78 NP-OB1, 76 PRO-A, 83 NS-A
+70 IP-SUB:  70 IP-SUB, 78 NP-OB1, 75 NP-OB2, 79 ADJ-A, 76 PRO-A
+70 IP-SUB:  70 IP-SUB, 78 NP-OB1, 75 NP-OB2, 81 ADJ-A, 76 PRO-A
+70 IP-SUB:  70 IP-SUB, 78 NP-OB1, 75 NP-OB2, 83 NS-A, 76 PRO-A
+*/
+( (IP-SUB (NP-SBJ *con*)
+	  (VBPI gefur-gefa)
+	  (NP-OB2 (PRO-A oss-ég))
+	  (NP-OB1 (ADJ-A nýjar-nýr) (ADJ-A andlegar-andlegur) (NS-A gáfur-gáfa)))
+  (ID 1720.VIDALIN.REL-SER,.126)) 
+
+
+/~*
+því-það trúum-trúa vér-ég að-að þú-þú ert-vera ,-, drottinn-drottinn minn-minn
+,-, að-að sigruðum-sigra dauða-dauði ,-, djöfli-djöfull og-og helvíti-helvíti
+yfir-yfir alla-allur himna-himinn hafinn-hefja í-í þína-þinn dýrð-dýrð til-til
+að-að búa-búa oss-ég þar-þar vist-vist í-í þíns-þinn föðurs-faðir húsi-hús .-.
+(1720.VIDALIN.REL-SER,.286)
+*~/
+/*
+74 IP-INF-PRP:  74 IP-INF-PRP, 79 NP-OB2, 85 NP-OB1, 80 PRO-A, 86 N-A
+74 IP-INF-PRP:  74 IP-INF-PRP, 85 NP-OB1, 79 NP-OB2, 86 N-A, 80 PRO-A
+*/
+( (IP-INF-PRP (TO að-að)
+	      (VB búa-búa)
+	      (NP-OB2 (PRO-A oss-ég))
+	      (ADVP-LOC (ADV þar-þar))
+	      (NP-OB1 (N-A vist-vist))
+	      (PP (P í-í)
+		  (NP (NP-POS (NP-POS (PRO-G þíns-þinn))
+			      (N-G föðurs-faðir))
+		      (N-D húsi-hús))))
+  (ID 1720.VIDALIN.REL-SER,.286)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1720.vidalin.rel-ser.psd	5/4/1112
+*/
+/*
+HEADER:
+source file:  1725.biskupasogur.nar-rel.psd
+*/
+
+/~*
+Þó-þó vildu-vilja sumir-sumur af-af erfingjum-erfingi herra-herra
+Guðbrands-guðbrandur rugla-rugla þessu-þessi eftir-eftir hans-hann dauða-dauði
+.-. eigna-eigna sér-sig prentsmiðju$-prentsmiðja $na-hinn eða-eða að-að
+minnsta-lítill kosti-kostur hennar-hún brúkun-brúkun ,-, hvar-hvar fyrir-fyrir
+herra-herra Þorlákur-þorlákur á-á hans-hann embættisárum-embættisár
+leitaði-leita lögþingismanna-lögþingismaður ráða-ráð ,-,
+(1725.BISKUPASOGUR.NAR-REL,.194)
+*~/
+/*
+39 IP-MAT=1:  39 IP-MAT=1, 42 NP-OB2, 45 NP-OB1, 43 PRO-A, 46 N-A
+39 IP-MAT=1:  39 IP-MAT=1, 42 NP-OB2, 45 NP-OB1, 43 PRO-A, 48 D-A
+39 IP-MAT=1:  39 IP-MAT=1, 45 NP-OB1, 42 NP-OB2, 46 N-A, 43 PRO-A
+39 IP-MAT=1:  39 IP-MAT=1, 45 NP-OB1, 42 NP-OB2, 48 D-A, 43 PRO-A
+*/
+( (IP-MAT=1 (VB eigna-eigna)
+	    (NP-OB2 (PRO-A sér-sig))
+	    (NP-OB1 (N-A prentsmiðju$-prentsmiðja) (D-A $na-hinn))
+	    (CODE *XXX*)
+	    (IP-MAT-PRN=1 RMV:eða-eða_að-að_minnsta-lítill...)
+	    (, ,-,)
+	    (CP-CAR (WPP-2 (WADVP (WADV hvar-hvar))
+			   (P fyrir-fyrir))
+		    (C 0)
+		    (IP-SUB RMV:*T*-2_herra-herra_Þorlákur-þorlákur...)))
+  (ID 1725.BISKUPASOGUR.NAR-REL,.194)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1725.biskupasogur.nar-rel.psd	1/1/1105
+*/
+/*
+HEADER:
+source file:  1745.klim.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1745.klim.nar-fic.psd	0/0/874
+*/
+/*
+HEADER:
+source file:  1790.fimmbraedra.nar-sag.psd
+*/
+
+/~*
+og-og hjó-höggva þann-sá mann-maður banahögg-banahögg er-er hann-hann
+hafði-hafa særðan-særa .-.
+(1790.FIMMBRAEDRA.NAR-SAG,.473)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 8 NP-OB2, 15 NP-OB1, 9 D-A, 16 N-A
+1 IP-MAT:  1 IP-MAT, 8 NP-OB2, 15 NP-OB1, 11 N-A, 16 N-A
+1 IP-MAT:  1 IP-MAT, 15 NP-OB1, 8 NP-OB2, 16 N-A, 9 D-A
+1 IP-MAT:  1 IP-MAT, 15 NP-OB1, 8 NP-OB2, 16 N-A, 11 N-A
+*/
+( (IP-MAT (CONJ og-og)
+	  (NP-SBJ *con*)
+	  (VBDI hjó-höggva)
+	  (NP-OB2 (D-A þann-sá)
+		  (N-A mann-maður)
+		  (CP-REL *ICH*-1))
+	  (NP-OB1 (N-A banahögg-banahögg))
+	  (CP-REL-1 (WNP-2 0)
+		    (C er-er)
+		    (IP-SUB RMV:hann-hann_hafði-hafa_*T*-2...))
+	  (. .-.))
+  (ID 1790.FIMMBRAEDRA.NAR-SAG,.473)) 
+
+
+/~*
+Vér-vér skulum-skulu því-það taka-taka oss-ég reiðdýr-reiðdýr svo-svo
+ferð-ferð vor-vor verði-verða greiðari-greiður .-. "-"
+(1790.FIMMBRAEDRA.NAR-SAG,.672)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 15 NP-OB2, 18 NP-OB1, 16 PRO-A, 19 NS-A
+1 IP-MAT:  1 IP-MAT, 18 NP-OB1, 15 NP-OB2, 19 NS-A, 16 PRO-A
+*/
+( (IP-MAT (NP-SBJ (PRO-N Vér-vér))
+	  (MDPI skulum-skulu)
+	  (PP (P 0)
+	      (NP (PRO-D því-það)))
+	  (VB taka-taka)
+	  (NP-OB2 (PRO-A oss-ég))
+	  (NP-OB1 (NS-A reiðdýr-reiðdýr))
+	  (PP (P svo-svo)
+	      (CP-ADV (C 0)
+		      (IP-SUB RMV:ferð-ferð_vor-vor_verði-verða...)))
+	  (. .-.)
+	  (" "-"))
+  (ID 1790.FIMMBRAEDRA.NAR-SAG,.672)) 
+
+
+/~*
+og-og gef-gefa eg-ég yður-þú undir-undir eins-eins hertogadæmi-hertogadæmi
+yfir-yfir öllu-allur Kúrlandi-kúrland .-. "-"
+(1790.FIMMBRAEDRA.NAR-SAG,.1271)
+*~/
+/*
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 9 NP-OB2, 18 NP-OB1, 10 PRO-A, 19 N-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 18 NP-OB1, 9 NP-OB2, 19 N-A, 10 PRO-A
+*/
+( (IP-MAT-SPE (CONJ og-og)
+	      (VBPI gef-gefa)
+	      (NP-SBJ (PRO-N eg-ég))
+	      (NP-OB2 (PRO-A yður-þú))
+	      (PP (P undir-undir)
+		  (NP (ADJ-D eins-eins)))
+	      (NP-OB1 (N-A hertogadæmi-hertogadæmi))
+	      (PP (P yfir-yfir)
+		  (NP (Q-D öllu-allur) (NPR-D Kúrlandi-kúrland)))
+	      (. .-.)
+	      (" "-"))
+  (ID 1790.FIMMBRAEDRA.NAR-SAG,.1271)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1790.fimmbraedra.nar-sag.psd	3/3/1602
+*/
+/*
+HEADER:
+source file:  1791.jonsteingrims.bio-aut.psd
+*/
+
+/~*
+Þó-þó grófu-grafa um-um sig-sig allt-allur of-of mjög-mjög í-í hjarta-hjarta
+mínu-minn áður-áður áminnst-álítill ummæli-ummæli mín-minn og-og annarra-annar
+að-að skeð-ske hefði-hafa getað-geta hann-hann hefði-hafa um-um kvöld$-kvöld
+$ið-hinn eitthvað-einhver harðhnjakað-harðhnjaka hönum-hann ,-, sem-sem
+hann-hann hefði-hafa til-til dauða-dauði leitt-leiða ,-, hvar-hvar um-um eg-ég
+vildi-vilja þó-þó ekkert-enginn spyrja-spyrja hann-hann .-.
+(1791.JONSTEINGRIMS.BIO-AUT,104.120)
+*~/
+/*
+114 IP-SUB:  114 IP-SUB, 125 NP-OB1, 130 NP-OB2, 126 Q-A, 131 PRO-A
+114 IP-SUB:  114 IP-SUB, 130 NP-OB2, 125 NP-OB1, 131 PRO-A, 126 Q-A
+*/
+( (IP-SUB (PP *T*-2)
+	  (NP-SBJ (PRO-N eg-ég))
+	  (MDDI vildi-vilja)
+	  (ADVP (ADV þó-þó))
+	  (NP-OB1 (Q-A ekkert-enginn))
+	  (VB spyrja-spyrja)
+	  (NP-OB2 (PRO-A hann-hann)))
+  (ID 1791.JONSTEINGRIMS.BIO-AUT,104.120)) 
+
+
+/~*
+Hann-hann gaf-gefa oss-ég út-út stefnudaga-stefnudagur .-.
+(1791.JONSTEINGRIMS.BIO-AUT,105.134)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 7 NP-OB2, 12 NP-OB1, 8 PRO-A, 13 NS-A
+1 IP-MAT:  1 IP-MAT, 12 NP-OB1, 7 NP-OB2, 13 NS-A, 8 PRO-A
+*/
+( (IP-MAT (NP-SBJ (PRO-N Hann-hann))
+	  (VBDI gaf-gefa)
+	  (NP-OB2 (PRO-A oss-ég))
+	  (RP út-út)
+	  (NP-OB1 (NS-A stefnudaga-stefnudagur))
+	  (. .-.))
+  (ID 1791.JONSTEINGRIMS.BIO-AUT,105.134)) 
+
+
+/~*
+Hvor-hvor bar-bera af-af sér-sig þar-þar til-til sýslumaður-sýslumaður
+leyfir-leyfa oss-ég kirkju$-kirkja $na-hinn og-og sendir-senda oss-ég
+lykil$-lykill $inn-hinn .-.
+(1791.JONSTEINGRIMS.BIO-AUT,123.613)
+*~/
+/*
+39 IP-SUB:  39 IP-SUB, 44 NP-OB2, 47 NP-OB1, 45 PRO-A, 48 N-A
+39 IP-SUB:  39 IP-SUB, 44 NP-OB2, 47 NP-OB1, 45 PRO-A, 50 D-A
+39 IP-SUB:  39 IP-SUB, 47 NP-OB1, 44 NP-OB2, 48 N-A, 45 PRO-A
+39 IP-SUB:  39 IP-SUB, 47 NP-OB1, 44 NP-OB2, 50 D-A, 45 PRO-A
+*/
+( (IP-SUB (NP-SBJ *con*)
+	  (VBPI sendir-senda)
+	  (NP-OB2 (PRO-A oss-ég))
+	  (NP-OB1 (N-A lykil$-lykill) (D-A $inn-hinn)))
+  (ID 1791.JONSTEINGRIMS.BIO-AUT,123.613)) 
+
+
+/~*
+og-og sagði-segja bróður-bróðir mínum-minn minn-minn þanka-þanki um-um það-það
+sem-sem og-og síðar-síðar fram-fram kom-koma .-.
+(1791.JONSTEINGRIMS.BIO-AUT,124.644)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 8 NP-OB2, 14 NP-OB1, 9 N-A, 18 NS-A
+1 IP-MAT:  1 IP-MAT, 14 NP-OB1, 8 NP-OB2, 18 NS-A, 9 N-A
+*/
+( (IP-MAT (CONJ og-og)
+	  (NP-SBJ *con*)
+	  (VBDI sagði-segja)
+	  (NP-OB2 (N-A bróður-bróðir)
+		  (NP-POS (PRO-D mínum-minn)))
+	  (NP-OB1 (NP-POS (PRO-A minn-minn))
+		  (NS-A þanka-þanki))
+	  (PP (P um-um)
+	      (NP (PRO-A það-það)))
+	  (CP-CAR (WNP-1 0)
+		  (C sem-sem)
+		  (IP-SUB RMV:*T*-1_og-og_síðar-síðar...))
+	  (. .-.))
+  (ID 1791.JONSTEINGRIMS.BIO-AUT,124.644)) 
+
+
+/~*
+og-og kostaði-kosta mig-ég þá-þá ferð-ferð og-og fyrirhöfn-fyrirhöfn 80-80
+dali-dalur slétta-sléttur .-.
+(1791.JONSTEINGRIMS.BIO-AUT,129.823)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 6 NP-OB2, 22 NP-OB1, 7 PRO-A, 23 NUM-A
+1 IP-MAT:  1 IP-MAT, 6 NP-OB2, 22 NP-OB1, 7 PRO-A, 25 NS-A
+1 IP-MAT:  1 IP-MAT, 6 NP-OB2, 22 NP-OB1, 7 PRO-A, 27 ADJ-A
+1 IP-MAT:  1 IP-MAT, 22 NP-OB1, 6 NP-OB2, 23 NUM-A, 7 PRO-A
+1 IP-MAT:  1 IP-MAT, 22 NP-OB1, 6 NP-OB2, 25 NS-A, 7 PRO-A
+1 IP-MAT:  1 IP-MAT, 22 NP-OB1, 6 NP-OB2, 27 ADJ-A, 7 PRO-A
+*/
+( (IP-MAT (CONJ og-og)
+	  (VBDI kostaði-kosta)
+	  (NP-OB2 (PRO-A mig-ég))
+	  (CODE *XXX*)
+	  (NP-SBJ (D-N þá-þá)
+		  (N-N ferð-ferð)
+		  (CONJP (CONJ og-og)
+			 (NX (N-A fyrirhöfn-fyrirhöfn))))
+	  (NP-OB1 (NUM-A 80-80) (NS-A dali-dalur) (ADJ-A slétta-sléttur))
+	  (. .-.))
+  (ID 1791.JONSTEINGRIMS.BIO-AUT,129.823)) 
+
+
+/~*
+Er-vera það-það ei-ei að-að orðlengja-orðlengja að-að guð-guð gaf-gefa oss-ég
+þar-þar af-af enum-einn besta-góður fiski-fiskur og-og flyðri-flyðra 60-60
+fiska-fiskur hlut-hlutur á-á þessum-þessi tveimur-tveir dögum-dagur .-.
+(1791.JONSTEINGRIMS.BIO-AUT,156.1454)
+*~/
+/*
+17 IP-SUB:  17 IP-SUB, 23 NP-OB2, 45 NP-OB1, 24 PRO-A, 51 N-A
+17 IP-SUB:  17 IP-SUB, 45 NP-OB1, 23 NP-OB2, 51 N-A, 24 PRO-A
+*/
+( (IP-SUB (NP-SBJ (NPR-N guð-guð))
+	  (VBDI gaf-gefa)
+	  (NP-OB2 (PRO-A oss-ég))
+	  (ADVP-LOC (ADV þar-þar))
+	  (PP (P af-af)
+	      (NP (ONE-D enum-einn)
+		  (ADJS-D besta-góður)
+		  (N-D fiski-fiskur)
+		  (CONJP (CONJ og-og)
+			 (NX (N-D flyðri-flyðra)))))
+	  (NP-OB1 (NP-POS (NUM-G 60-60) (NS-G fiska-fiskur))
+		  (N-A hlut-hlutur))
+	  (PP (P á-á)
+	      (NP (D-D þessum-þessi) (NUM-D tveimur-tveir) (NS-D dögum-dagur))))
+  (ID 1791.JONSTEINGRIMS.BIO-AUT,156.1454)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1791.jonsteingrims.bio-aut.psd	6/6/1518
+*/
+/*
+HEADER:
+source file:  1830.hellismenn.nar-sag.psd
+*/
+
+/~*
+og-og hjó-höggva hann-hann banahögg-banahögg
+(1830.HELLISMENN.NAR-SAG,.223)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 8 NP-OB2, 11 NP-OB1, 9 PRO-A, 12 N-A
+1 IP-MAT:  1 IP-MAT, 11 NP-OB1, 8 NP-OB2, 12 N-A, 9 PRO-A
+*/
+( (IP-MAT (CONJ og-og)
+	  (NP-SBJ *con*)
+	  (VBDI hjó-höggva)
+	  (NP-OB2 (PRO-A hann-hann))
+	  (NP-OB1 (N-A banahögg-banahögg)))
+  (ID 1830.HELLISMENN.NAR-SAG,.223)) 
+
+
+/~*
+og-og leið-líða eigi-ekki langt-langt ,-, áður-áður hann-hann hjó-höggva
+Þórarin-þórarin banahögg-banahögg .-.
+(1830.HELLISMENN.NAR-SAG,.794)
+*~/
+/*
+23 IP-SUB:  23 IP-SUB, 31 NP-OB2, 34 NP-OB1, 32 NPR-A, 35 N-A
+23 IP-SUB:  23 IP-SUB, 34 NP-OB1, 31 NP-OB2, 35 N-A, 32 NPR-A
+*/
+( (IP-SUB (ADVP-TMP *T*-2)
+	  (NP-SBJ (PRO-N hann-hann))
+	  (VBDI hjó-höggva)
+	  (NP-OB2 (NPR-A Þórarin-þórarin))
+	  (NP-OB1 (N-A banahögg-banahögg)))
+  (ID 1830.HELLISMENN.NAR-SAG,.794)) 
+
+
+/~*
+Tindur-tindur Hallkelsson-hallkelsson hjó-höggva Örn-örn Austmann-austmaður
+banahögg-banahögg .-.
+(1830.HELLISMENN.NAR-SAG,.1210)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 9 NP-OB2, 14 NP-OB1, 10 NPR-A, 15 N-A
+1 IP-MAT:  1 IP-MAT, 9 NP-OB2, 14 NP-OB1, 12 NPR-A, 15 N-A
+1 IP-MAT:  1 IP-MAT, 14 NP-OB1, 9 NP-OB2, 15 N-A, 10 NPR-A
+1 IP-MAT:  1 IP-MAT, 14 NP-OB1, 9 NP-OB2, 15 N-A, 12 NPR-A
+*/
+( (IP-MAT (NP-SBJ (NPR-N Tindur-tindur) (NPR-N Hallkelsson-hallkelsson))
+	  (VBDI hjó-höggva)
+	  (NP-OB2 (NPR-A Örn-örn) (NPR-A Austmann-austmaður))
+	  (NP-OB1 (N-A banahögg-banahögg))
+	  (. .-.))
+  (ID 1830.HELLISMENN.NAR-SAG,.1210)) 
+
+
+/~*
+og-og hjó-höggva Ref-refur banahögg-banahögg
+(1830.HELLISMENN.NAR-SAG,.1366)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 8 NP-OB2, 11 NP-OB1, 9 NPR-A, 12 N-A
+1 IP-MAT:  1 IP-MAT, 11 NP-OB1, 8 NP-OB2, 12 N-A, 9 NPR-A
+*/
+( (IP-MAT (CONJ og-og)
+	  (NP-SBJ *con*)
+	  (VBDI hjó-höggva)
+	  (NP-OB2 (NPR-A Ref-refur))
+	  (NP-OB1 (N-A banahögg-banahögg)))
+  (ID 1830.HELLISMENN.NAR-SAG,.1366)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1830.hellismenn.nar-sag.psd	4/4/1411
+*/
+/*
+HEADER:
+source file:  1835.jonasedli.sci-nat.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1835.jonasedli.sci-nat.psd	0/0/163
+*/
+/*
+HEADER:
+source file:  1850.piltur.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1850.piltur.nar-fic.psd	0/0/1440
+*/
+/*
+HEADER:
+source file:  1859.hugvekjur.rel-ser.psd
+*/
+
+/~*
+og-og kyssir-kyssa hann-hann svikakoss$-svikakoss $inn-hinn ,-, eins-eins
+og-og hann-hann hafði-hafa undir$-undir $lagt-leggja við-við óvini-óvinur
+hans-hann .-.
+(1859.HUGVEKJUR.REL-SER,.319)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 8 NP-OB2, 11 NP-OB1, 9 PRO-A, 12 N-A
+1 IP-MAT:  1 IP-MAT, 8 NP-OB2, 11 NP-OB1, 9 PRO-A, 14 D-A
+1 IP-MAT:  1 IP-MAT, 11 NP-OB1, 8 NP-OB2, 12 N-A, 9 PRO-A
+1 IP-MAT:  1 IP-MAT, 11 NP-OB1, 8 NP-OB2, 14 D-A, 9 PRO-A
+*/
+( (IP-MAT (CONJ og-og)
+	  (NP-SBJ *con*)
+	  (VBPI kyssir-kyssa)
+	  (NP-OB2 (PRO-A hann-hann))
+	  (NP-OB1 (N-A svikakoss$-svikakoss) (D-A $inn-hinn))
+	  (, ,-,)
+	  (ADVP (ADVR eins-eins)
+		(PP (P og-og)
+		    (CP-CMP (WADVP-1 0)
+			    (C 0)
+			    (IP-SUB RMV:*T*-1_hann-hann_hafði-hafa...))))
+	  (. .-.))
+  (ID 1859.HUGVEKJUR.REL-SER,.319)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1859.hugvekjur.rel-ser.psd	1/1/1110
+*/
+/*
+HEADER:
+source file:  1861.orrusta.nar-fic.psd
+*/
+
+/~*
+þann-sá hval-hvalur hafði-hafa Dufferin-dufferin drepið-drepa og-og gefið-gefa
+Napóleoni-napóleon haus$-haus $inn-hinn ;-;
+(1861.ORRUSTA.NAR-FIC,.1090)
+*~/
+/*
+18 IP-MAT=1:  18 IP-MAT=1, 21 NP-OB2, 24 NP-OB1, 22 NPR-A, 25 N-A
+18 IP-MAT=1:  18 IP-MAT=1, 21 NP-OB2, 24 NP-OB1, 22 NPR-A, 27 D-A
+18 IP-MAT=1:  18 IP-MAT=1, 24 NP-OB1, 21 NP-OB2, 25 N-A, 22 NPR-A
+18 IP-MAT=1:  18 IP-MAT=1, 24 NP-OB1, 21 NP-OB2, 27 D-A, 22 NPR-A
+*/
+( (IP-MAT=1 (VBN gefið-gefa)
+	    (NP-OB2 (NPR-A Napóleoni-napóleon))
+	    (NP-OB1 (N-A haus$-haus) (D-A $inn-hinn))
+	    (. ;-;))
+  (ID 1861.ORRUSTA.NAR-FIC,.1090)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1861.orrusta.nar-fic.psd	1/1/1804
+*/
+/*
+HEADER:
+source file:  1882.torfhildur.nar-fic.psd
+*/
+
+/~*
+Fylgdarmaður$-fylgdarmaður $inn-hinn sendi-senda Halldóru-halldóra
+húsfreyju-húsfreyja inn-inn bréf-bréf það-sá ,-, er-er Þórður-þórður
+prestur-prestur skrifaði-skrifa henni-hún með-með systur-systir sinni-sinn ,-,
+(1882.TORFHILDUR.NAR-FIC,.401)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 9 NP-OB1, 19 NP-OB1, 10 NPR-A, 20 N-A
+1 IP-MAT:  1 IP-MAT, 9 NP-OB1, 19 NP-OB1, 10 NPR-A, 22 D-A
+1 IP-MAT:  1 IP-MAT, 19 NP-OB1, 9 NP-OB1, 20 N-A, 10 NPR-A
+1 IP-MAT:  1 IP-MAT, 19 NP-OB1, 9 NP-OB1, 22 D-A, 10 NPR-A
+*/
+( (IP-MAT (NP-SBJ (N-N Fylgdarmaður$-fylgdarmaður) (D-N $inn-hinn))
+	  (VBDI sendi-senda)
+	  (NP-OB1 (NPR-A Halldóru-halldóra)
+		  (NP-PRN (N-A húsfreyju-húsfreyja)))
+	  (CODE *TTT*)
+	  (RP inn-inn)
+	  (NP-OB1 (N-A bréf-bréf)
+		  (D-A það-sá)
+		  (, ,-,)
+		  (CP-REL (WNP-1 0)
+			  (C er-er)
+			  (IP-SUB RMV:*T*-1_Þórður-þórður_prestur-prestur...)))
+	  (. ,-,))
+  (ID 1882.TORFHILDUR.NAR-FIC,.401)) 
+
+
+/~*
+Er-vera ekki-ekki aumkunarverður-aumkunarverður
+sjálfbyrgingsskapur-sjálfbyrgingsskapur að-að rísa-rísa öndverðir-öndverður
+gegn-gegn hendi-hönd forsjónar$-forsjón $innar-hinn ,-, er-er vill-vilja
+rétta-rétta oss-ég góðar-góður gjafir-gjöf og-og segja-segja :-: Fyrst-fyrr
+ég-ég ekki-ekki fékk-fá það-það ,-, sem-sem ég-ég vill-vilja ,-, vil-vilja
+ég-ég ekki-ekki það-sá ,-, sem-sem þú-þú vilt-vilja gefa-gefa mér-ég .-. "-"
+(1882.TORFHILDUR.NAR-FIC,.550)
+*~/
+/*
+38 IP-SUB-SPE:  38 IP-SUB-SPE, 45 NP-OB2, 48 NP-OB1, 46 PRO-A, 49 ADJ-A
+38 IP-SUB-SPE:  38 IP-SUB-SPE, 45 NP-OB2, 48 NP-OB1, 46 PRO-A, 51 NS-A
+38 IP-SUB-SPE:  38 IP-SUB-SPE, 48 NP-OB1, 45 NP-OB2, 49 ADJ-A, 46 PRO-A
+38 IP-SUB-SPE:  38 IP-SUB-SPE, 48 NP-OB1, 45 NP-OB2, 51 NS-A, 46 PRO-A
+*/
+( (IP-SUB-SPE (NP-SBJ *T*-1)
+	      (MDPI vill-vilja)
+	      (VB rétta-rétta)
+	      (NP-OB2 (PRO-A oss-ég))
+	      (NP-OB1 (ADJ-A góðar-góður) (NS-A gjafir-gjöf)))
+  (ID 1882.TORFHILDUR.NAR-FIC,.550)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1882.torfhildur.nar-fic.psd	2/2/2000
+*/
+/*
+HEADER:
+source file:  1883.voggur.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1883.voggur.nar-fic.psd	0/0/130
+*/
+/*
+HEADER:
+source file:  1888.grimur.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1888.grimur.nar-fic.psd	0/0/625
+*/
+/*
+HEADER:
+source file:  1888.vordraumur.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1888.vordraumur.nar-fic.psd	0/0/759
+*/
+/*
+HEADER:
+source file:  1902.fossar.nar-fic.psd
+*/
+
+/~*
+það-það vildi-vilja hún-hún ekki-ekki biðja-biðja Brand-brand að-að gefa-gefa
+eða-eða veita-veita sér-sig af-af náð-náð .-.
+(1902.FOSSAR.NAR-FIC,.175)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-OB1, 14 NP-OB2, 3 PRO-A, 15 NPR-A
+1 IP-MAT:  1 IP-MAT, 14 NP-OB2, 2 NP-OB1, 15 NPR-A, 3 PRO-A
+*/
+( (IP-MAT (NP-OB1 (PRO-A það-það))
+	  (MDDI vildi-vilja)
+	  (NP-SBJ (PRO-N hún-hún))
+	  (NEG ekki-ekki)
+	  (VB biðja-biðja)
+	  (NP-OB2 (NPR-A Brand-brand))
+	  (IP-INF RMV:að-að_gefa-gefa_eða-eða...)
+	  (. .-.))
+  (ID 1902.FOSSAR.NAR-FIC,.175)) 
+
+
+/~*
+fáum-fá okkur-ég messu-messa - ;-;
+(1902.FOSSAR.NAR-FIC,.514)
+*~/
+/*
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 6 NP-OB2, 9 NP-OB1, 7 PRO-A, 10 N-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 9 NP-OB1, 6 NP-OB2, 10 N-A, 7 PRO-A
+*/
+( (IP-MAT-SPE (NP-SBJ *con*)
+	      (VBPI fáum-fá)
+	      (NP-OB2 (PRO-A okkur-ég))
+	      (NP-OB1 (N-A messu-messa))
+	      (, -)
+	      (. ;-;))
+  (ID 1902.FOSSAR.NAR-FIC,.514)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1902.fossar.nar-fic.psd	2/2/1659
+*/
+/*
+HEADER:
+source file:  1907.leysing.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1907.leysing.nar-fic.psd	0/0/1521
+*/
+/*
+HEADER:
+source file:  1908.ofurefli.nar-fic.psd
+*/
+
+/~*
+Og-og eg-ég reyni-reyna að-að út$-út $vega-vega yður-þú eitthvert-einhver
+hentugra-hentugur ílát-ílát handa-handa honum-hann til-til þess-það að-að
+hrækja-hrækja í-í .-.
+(1908.OFUREFLI.NAR-FIC,.822)
+*~/
+/*
+9 IP-INF-SPE:  9 IP-INF-SPE, 16 NP-OB2, 19 NP-OB1, 17 PRO-A, 20 ONE+Q-A
+9 IP-INF-SPE:  9 IP-INF-SPE, 16 NP-OB2, 19 NP-OB1, 17 PRO-A, 22 ADJR-A
+9 IP-INF-SPE:  9 IP-INF-SPE, 16 NP-OB2, 19 NP-OB1, 17 PRO-A, 24 N-A
+9 IP-INF-SPE:  9 IP-INF-SPE, 19 NP-OB1, 16 NP-OB2, 20 ONE+Q-A, 17 PRO-A
+9 IP-INF-SPE:  9 IP-INF-SPE, 19 NP-OB1, 16 NP-OB2, 22 ADJR-A, 17 PRO-A
+9 IP-INF-SPE:  9 IP-INF-SPE, 19 NP-OB1, 16 NP-OB2, 24 N-A, 17 PRO-A
+*/
+( (IP-INF-SPE (TO að-að)
+	      (RP út$-út)
+	      (VB $vega-vega)
+	      (NP-OB2 (PRO-A yður-þú))
+	      (NP-OB1 (ONE+Q-A eitthvert-einhver)
+		      (ADJR-A hentugra-hentugur)
+		      (N-A ílát-ílát)
+		      (PP *ICH*-1))
+	      (PP (P handa-handa)
+		  (NP (PRO-D honum-hann)))
+	      (PP-1 (P til-til)
+		    (NP (PRO-G þess-það)
+			(CP-EOP-SPE-PRN (WNP-2 0)
+					(IP-INF-SPE RMV:að-að_hrækja-hrækja_í-í...)))))
+  (ID 1908.OFUREFLI.NAR-FIC,.822)) 
+
+
+/~*
+En-en ef-ef prestur-prestur færi-fara að-að álpast-álpasta út-út í-í að-að
+segja-segja okkur-ég eitthvað-eitthvað ,-, sem-sem okkur-ég væri-vera
+ógeðfelt-ógeðfeldur ,-, eða-eða við-ég gætum-geta ekki-ekki skilið-skilja
+(1908.OFUREFLI.NAR-FIC,.1012)
+*~/
+/*
+27 IP-INF-SPE:  27 IP-INF-SPE, 32 NP-OB2, 35 NP-OB1, 33 PRO-A, 36 Q-A
+27 IP-INF-SPE:  27 IP-INF-SPE, 35 NP-OB1, 32 NP-OB2, 36 Q-A, 33 PRO-A
+*/
+( (IP-INF-SPE (TO að-að)
+	      (VB segja-segja)
+	      (NP-OB2 (PRO-A okkur-ég))
+	      (NP-OB1 (Q-A eitthvað-eitthvað)
+		      (, ,-,)
+		      (CP-REL-SPE (WNP-1 0)
+				  (C sem-sem)
+				  (IP-SUB-SPE RMV:okkur-ég_væri-vera_*T*-1...))))
+  (ID 1908.OFUREFLI.NAR-FIC,.1012)) 
+
+
+/~*
+Eg-ég segi-segja yður-þú satt-sannur ,-, að-að kæmi-koma nú-nú einhver-einhver
+annar-annar inn-inn þótt-þótt ekki-ekki væri-vera nema-nema konan-kona
+mín-minn þá-þá þegði-þegja eg-ég .-.
+(1908.OFUREFLI.NAR-FIC,.1037)
+*~/
+/*
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 7 NP-OB2, 10 NP-OB1, 8 PRO-A, 11 ADJ-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 10 NP-OB1, 7 NP-OB2, 11 ADJ-A, 8 PRO-A
+*/
+( (IP-MAT-SPE (NP-SBJ (PRO-N Eg-ég))
+	      (VBPI segi-segja)
+	      (NP-OB2 (PRO-A yður-þú))
+	      (NP-OB1 (ADJ-A satt-sannur)
+		      (, ,-,)
+		      (CP-THT-SPE-PRN (C að-að)
+				      (IP-SUB-SPE RMV:kæmi-koma_nú-nú_einhver-einhver...)))
+	      (. .-.))
+  (ID 1908.OFUREFLI.NAR-FIC,.1037)) 
+
+
+/~*
+Þér-þú munið-muna ekki-ekki ,-, þegar-þegar þér-þú fóruð-fara með-með mér-ég
+upp-upp í-í kvíalaut$-kvíalaut $ina-hinn og-og eg-ég sagði-segja yður-þú
+sögu$-saga $na-hinn af-af tröllkarl$-tröllkarl $inum-hinn ,-, sem-sem
+hylti-hylja til-til sín-sig kongsdóttur$-kongsdóttur $ina-hinn ?-?
+(1908.OFUREFLI.NAR-FIC,.1540)
+*~/
+/*
+45 IP-SUB-SPE:  45 IP-SUB-SPE, 51 NP-OB2, 54 NP-OB1, 52 PRO-A, 55 N-A
+45 IP-SUB-SPE:  45 IP-SUB-SPE, 51 NP-OB2, 54 NP-OB1, 52 PRO-A, 57 D-A
+45 IP-SUB-SPE:  45 IP-SUB-SPE, 54 NP-OB1, 51 NP-OB2, 55 N-A, 52 PRO-A
+45 IP-SUB-SPE:  45 IP-SUB-SPE, 54 NP-OB1, 51 NP-OB2, 57 D-A, 52 PRO-A
+*/
+( (IP-SUB-SPE (NP-SBJ (PRO-N eg-ég))
+	      (VBDI sagði-segja)
+	      (NP-OB2 (PRO-A yður-þú))
+	      (NP-OB1 (N-A sögu$-saga)
+		      (D-A $na-hinn)
+		      (PP (P af-af)
+			  (NP (N-D tröllkarl$-tröllkarl)
+			      (D-D $inum-hinn)
+			      (, ,-,)
+			      (CP-REL-SPE (WNP-1 0)
+					  (C sem-sem)
+					  (IP-SUB-SPE RMV:*T*-1_hylti-hylja_til-til...))))))
+  (ID 1908.OFUREFLI.NAR-FIC,.1540)) 
+
+
+/~*
+Eg-ég segi-segja yður-þú satt-sannur ,-, síra-síra Þorvaldur-þorvaldur ,-,
+(1908.OFUREFLI.NAR-FIC,.1655)
+*~/
+/*
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 9 NP-OB2, 12 NP-OB1, 10 PRO-A, 13 ADJ-A
+1 IP-MAT-SPE:  1 IP-MAT-SPE, 12 NP-OB1, 9 NP-OB2, 13 ADJ-A, 10 PRO-A
+*/
+( (IP-MAT-SPE (CODE {COM:dash})
+	      (NP-SBJ (PRO-N Eg-ég))
+	      (VBPI segi-segja)
+	      (NP-OB2 (PRO-A yður-þú))
+	      (NP-OB1 (ADJ-A satt-sannur))
+	      (, ,-,)
+	      (NP-VOC (NPR-N síra-síra) (NPR-N Þorvaldur-þorvaldur))
+	      (. ,-,))
+  (ID 1908.OFUREFLI.NAR-FIC,.1655)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1908.ofurefli.nar-fic.psd	5/5/1743
+*/
+/*
+HEADER:
+source file:  1920.arin.rel-ser.psd
+*/
+
+/~*
+Hann-hann mundi-munu sýna-sýna oss-ég aðra-annar hlið-hlið á-á þeim-sá
+atburðum-atburður ,-, er-er oss-ég sýndust-sýnast þyngstir-þungur og-og
+sorglegastir-sorglegur ;-; því-það að-að hann-hann mundi-munu svo-svo að-að
+segja-segja snúa-snúa þeim-það við-við fyrir-fyrir sjón-sjón vorri-vor :-:
+láta-láta oss-ég sjá-sjá þá-sá hlið$-hlið $ina-hinn á-á þeim-sá ,-, sem-sem
+veit-vita að-að eilífð$-eilífð $inni-hinn ,-,
+(1920.ARIN.REL-SER,.128)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 9 NP-OB2, 12 NP-OB1, 10 PRO-A, 13 OTHER-A
+1 IP-MAT:  1 IP-MAT, 9 NP-OB2, 12 NP-OB1, 10 PRO-A, 15 N-A
+1 IP-MAT:  1 IP-MAT, 12 NP-OB1, 9 NP-OB2, 13 OTHER-A, 10 PRO-A
+1 IP-MAT:  1 IP-MAT, 12 NP-OB1, 9 NP-OB2, 15 N-A, 10 PRO-A
+*/
+( (IP-MAT (NP-SBJ (PRO-N Hann-hann))
+	  (MDDS mundi-munu)
+	  (VB sýna-sýna)
+	  (NP-OB2 (PRO-A oss-ég))
+	  (NP-OB1 (OTHER-A aðra-annar) (N-A hlið-hlið))
+	  (PP (P á-á)
+	      (NP (D-D þeim-sá)
+		  (NS-D atburðum-atburður)
+		  (, ,-,)
+		  (CP-REL (WNP-1 0)
+			  (C er-er)
+			  (IP-SUB RMV:oss-ég_sýndust-sýnast_*T*-1...))))
+	  (. ;-;)
+	  (PP (P 0)
+	      (NP (PRO-D því-það)
+		  (CP-THT-PRN (C að-að)
+			      (IP-SUB RMV:hann-hann_mundi-munu_svo-svo...))))
+	  (. ,-,))
+  (ID 1920.ARIN.REL-SER,.128)) 
+
+
+/~*
+og-og móðir-móðir hans-hann sagði-segja við-við hann-hann :-: Barn-barn ,-,
+hví-hví gerður$-gera $ðu-þú okkur-ég þetta-þessi ?-?
+(1920.ARIN.REL-SER,.198)
+*~/
+/*
+29 IP-SUB-SPE:  29 IP-SUB-SPE, 37 NP-OB2, 40 NP-OB1, 38 PRO-A, 41 D-A
+29 IP-SUB-SPE:  29 IP-SUB-SPE, 40 NP-OB1, 37 NP-OB2, 41 D-A, 38 PRO-A
+*/
+( (IP-SUB-SPE (ADVP *T*-1)
+	      (DOPI gerður$-gera)
+	      (NP-SBJ (PRO-N $ðu-þú))
+	      (NP-OB2 (PRO-A okkur-ég))
+	      (NP-OB1 (D-A þetta-þessi)))
+  (ID 1920.ARIN.REL-SER,.198)) 
+
+
+/~*
+og-og ef-ef þær-hún færa-færa oss-ég fregnir-fregn um-um
+mikilsverðar-mikilsverður nýjungar-nýjung eða-eða gefa-gefa oss-ég
+bendingar-bendingur um-um ,-, hvar-hvar vér-ég fáum-fá best-vel bætt-bæta
+úr-úr þörfum-þörf vorum-vor ,-, þá-þá gefum-gefa vér-ég þeim-það gaum-gaumur
+(1920.ARIN.REL-SER,.450)
+*~/
+/*
+11 IP-SUB:  11 IP-SUB, 17 NP-OB2, 20 NP-OB1, 18 PRO-A, 21 NS-A
+11 IP-SUB:  11 IP-SUB, 20 NP-OB1, 17 NP-OB2, 21 NS-A, 18 PRO-A
+*/
+( (IP-SUB (NP-SBJ (PRO-N þær-hún))
+	  (VBPI færa-færa)
+	  (NP-OB2 (PRO-A oss-ég))
+	  (NP-OB1 (NS-A fregnir-fregn))
+	  (PP (P um-um)
+	      (NP (ADJ-A mikilsverðar-mikilsverður) (NS-A nýjungar-nýjung))))
+  (ID 1920.ARIN.REL-SER,.450)) 
+
+
+/~*
+Ég-ég efa-efa það-það ,-, að-að nokkur-nokkur maður-maður geti-geta gefið-gefa
+oss-ég rétta-réttur lýsing-lýsing á-á guðdómi-guðdómur hans-hann .-.
+(1920.ARIN.REL-SER,.806)
+*~/
+/*
+15 IP-SUB:  15 IP-SUB, 25 NP-OB2, 28 NP-OB1, 26 PRO-A, 29 ADJ-A
+15 IP-SUB:  15 IP-SUB, 25 NP-OB2, 28 NP-OB1, 26 PRO-A, 31 N-A
+15 IP-SUB:  15 IP-SUB, 28 NP-OB1, 25 NP-OB2, 29 ADJ-A, 26 PRO-A
+15 IP-SUB:  15 IP-SUB, 28 NP-OB1, 25 NP-OB2, 31 N-A, 26 PRO-A
+*/
+( (IP-SUB (NP-SBJ (Q-N nokkur-nokkur) (N-N maður-maður))
+	  (MDPS geti-geta)
+	  (VBN gefið-gefa)
+	  (NP-OB2 (PRO-A oss-ég))
+	  (NP-OB1 (ADJ-A rétta-réttur) (N-A lýsing-lýsing))
+	  (PP (P á-á)
+	      (NP (NPR-D guðdómi-guðdómur)
+		  (NP-POS (PRO-G hans-hann)))))
+  (ID 1920.ARIN.REL-SER,.806)) 
+
+
+/~*
+Hugsið-hugsa yður-þú þá-sá móður-móðir standandi-standa yfir-yfir lík$-lík
+$inu-hinn .-.
+(1920.ARIN.REL-SER,.1015)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 4 NP-OB2, 7 NP-OB1, 5 PRO-A, 8 D-A
+1 IP-MAT:  1 IP-MAT, 4 NP-OB2, 7 NP-OB1, 5 PRO-A, 10 N-A
+1 IP-MAT:  1 IP-MAT, 7 NP-OB1, 4 NP-OB2, 8 D-A, 5 PRO-A
+1 IP-MAT:  1 IP-MAT, 7 NP-OB1, 4 NP-OB2, 10 N-A, 5 PRO-A
+*/
+( (IP-MAT (VBPI Hugsið-hugsa)
+	  (NP-OB2 (PRO-A yður-þú))
+	  (NP-OB1 (D-A þá-sá) (N-A móður-móðir))
+	  (IP-PPL RMV:standandi-standa_yfir-yfir_lík$-lík...)
+	  (. .-.))
+  (ID 1920.ARIN.REL-SER,.1015)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1920.arin.rel-ser.psd	5/5/1149
+*/
+/*
+HEADER:
+source file:  1985.margsaga.nar-fic.psd
+*/
+
+/~*
+en-en Óskar-óskar hafði-hafa einmitt-einmitt oft-oft sagt-segja okkur-ég
+skemmtilegar-skemmtilegur sögur-saga af-af ferðum-ferð sínum-sinn
+þangað-þangað .-.
+(1985.MARGSAGA.NAR-FIC,.629)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 17 NP-OB2, 20 NP-OB1, 18 PRO-A, 21 ADJ-A
+1 IP-MAT:  1 IP-MAT, 17 NP-OB2, 20 NP-OB1, 18 PRO-A, 23 NS-A
+1 IP-MAT:  1 IP-MAT, 20 NP-OB1, 17 NP-OB2, 21 ADJ-A, 18 PRO-A
+1 IP-MAT:  1 IP-MAT, 20 NP-OB1, 17 NP-OB2, 23 NS-A, 18 PRO-A
+*/
+( (IP-MAT (CONJ en-en)
+	  (NP-SBJ (NPR-N Óskar-óskar))
+	  (HVDI hafði-hafa)
+	  (ADVP (ADV einmitt-einmitt))
+	  (ADVP-TMP (ADV oft-oft))
+	  (VBN sagt-segja)
+	  (NP-OB2 (PRO-A okkur-ég))
+	  (NP-OB1 (ADJ-A skemmtilegar-skemmtilegur) (NS-A sögur-saga))
+	  (PP (P af-af)
+	      (NP (NS-D ferðum-ferð)
+		  (NP-POS (PRO-D sínum-sinn))))
+	  (ADVP-DIR (ADV þangað-þangað))
+	  (. .-.))
+  (ID 1985.MARGSAGA.NAR-FIC,.629)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1985.margsaga.nar-fic.psd	1/1/1705
+*/
+/*
+HEADER:
+source file:  1985.sagan.nar-fic.psd
+*/
+
+/~*
+Við-ég styttum-stytta okkur-ég leið-leið í-í gegn-gegn um-um
+Letigarð$-letigarður $inn-hinn .-.
+(1985.SAGAN.NAR-FIC,.815)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 7 NP-OB2, 10 NP-OB1, 8 PRO-A, 11 N-A
+1 IP-MAT:  1 IP-MAT, 10 NP-OB1, 7 NP-OB2, 11 N-A, 8 PRO-A
+*/
+( (IP-MAT (NP-SBJ (PRO-N Við-ég))
+	  (VBDI styttum-stytta)
+	  (NP-OB2 (PRO-A okkur-ég))
+	  (NP-OB1 (N-A leið-leið))
+	  (PP (P í-í)
+	      (PP (P gegn-gegn)
+		  (PP (P um-um)
+		      (NP (NPR-A Letigarð$-letigarður) (D-A $inn-hinn)))))
+	  (. .-.))
+  (ID 1985.SAGAN.NAR-FIC,.815)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1985.sagan.nar-fic.psd	1/1/2008
+*/
+/*
+HEADER:
+source file:  2008.mamma.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  2008.mamma.nar-fic.psd	0/0/1845
+*/
+/*
+HEADER:
+source file:  2008.ofsi.nar-sag.psd
+*/
+
+/~*
+en-en samt-samt gera-gera margir-margur sem-sem ég-ég hef-hafa heyrt-heyra
+til-til fullmikið-fullmikill úr-úr stórlyndi-stórlyndi hans-hann í-í minn-minn
+garð-garður ,-, og-og reyndar-reyndar okkar-ég Hrafns-hrafn Oddssonar-oddsson
+beggja-báðir ,-, að-að gefa-gefa okkur-ég bróðurdætur-bróðurdóttir sínar-sinn
+;-;
+(2008.OFSI.NAR-SAG,.151)
+*~/
+/*
+76 IP-INF-3:  76 IP-INF-3, 81 NP-OB2, 84 NP-OB1, 82 PRO-A, 85 NS-A
+76 IP-INF-3:  76 IP-INF-3, 84 NP-OB1, 81 NP-OB2, 85 NS-A, 82 PRO-A
+*/
+( (IP-INF-3 (TO að-að)
+	    (VB gefa-gefa)
+	    (NP-OB2 (PRO-A okkur-ég))
+	    (NP-OB1 (NS-A bróðurdætur-bróðurdóttir)
+		    (NP-POS (PRO-A sínar-sinn))))
+  (ID 2008.OFSI.NAR-SAG,.151)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  2008.ofsi.nar-sag.psd	1/1/1210
+*/
+/*
+HEADER:
+source file:  ntmatthew01.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  ntmatthew01.psd	0/0/77
+*/
+/*
+HEADER:
+source file:  ntmatthew02.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  ntmatthew02.psd	0/0/46
+*/
+/*
+HEADER:
+source file:  ntmatthew03.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  ntmatthew03.psd	0/0/51
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  1150.firstgrammar.sci-lin.psd	0/0/182
+  1150.homiliubok.rel-ser.psd	9/8/2108
+  1210.jartein.rel-sag.psd	2/2/822
+  1210.thorlakur.rel-sag.psd	0/0/540
+  1250.sturlunga.nar-sag.psd	0/0/2225
+  1250.thetubrot.nar-sag.psd	0/0/246
+  1260.jomsvikingar.nar-sag.psd	0/0/1532
+  1270.gragas.law-law.psd	0/0/346
+  1275.morkin.nar-his.psd	2/2/2190
+  1300.alexander.nar-sag.psd	0/0/1383
+  1310.grettir.nar-sag.psd	2/2/2057
+  1325.arni.nar-sag.psd	0/0/1125
+  1350.bandamennM.nar-sag.psd	0/0/1223
+  1350.finnbogi.nar-sag.psd	1/1/2342
+  1350.marta.rel-sag.psd	1/1/977
+  1400.gunnar.nar-sag.psd	0/0/935
+  1400.gunnar2.nar-sag.psd	0/0/340
+  1400.viglundur.nar-sag.psd	1/1/1290
+  1450.bandamenn.nar-sag.psd	1/1/1034
+  1450.ectorssaga.nar-sag.psd	3/3/1950
+  1450.judit.rel-bib.psd	0/0/491
+  1450.vilhjalmur.nar-sag.psd	0/0/2414
+  1475.aevintyri.nar-rel.psd	1/1/1201
+  1480.jarlmann.nar-sag.psd	3/3/1282
+  1525.erasmus.nar-sag.psd	3/3/462
+  1525.georgius.nar-rel.psd	4/4/1060
+  1540.ntacts.rel-bib.psd	1/1/1183
+  1540.ntjohn.rel-bib.psd	8/8/1685
+  1593.eintal.rel-oth.psd	4/4/1553
+  1611.okur.rel-oth.psd	1/1/629
+  1628.olafuregils.bio-tra.psd	1/1/906
+  1630.gerhard.rel-oth.psd	1/1/701
+  1650.illugi.nar-sag.psd	3/3/1929
+  1659.pislarsaga.bio-aut.psd	0/0/324
+  1661.indiafari.bio-tra.psd	0/0/1388
+  1675.armann.nar-fic.psd	0/0/1018
+  1675.magnus.bio-oth.psd	1/1/204
+  1675.modars.nar-fic.psd	0/0/373
+  1680.skalholt.nar-rel.psd	1/1/869
+  1720.vidalin.rel-ser.psd	5/4/1112
+  1725.biskupasogur.nar-rel.psd	1/1/1105
+  1745.klim.nar-fic.psd	0/0/874
+  1790.fimmbraedra.nar-sag.psd	3/3/1602
+  1791.jonsteingrims.bio-aut.psd	6/6/1518
+  1830.hellismenn.nar-sag.psd	4/4/1411
+  1835.jonasedli.sci-nat.psd	0/0/163
+  1850.piltur.nar-fic.psd	0/0/1440
+  1859.hugvekjur.rel-ser.psd	1/1/1110
+  1861.orrusta.nar-fic.psd	1/1/1804
+  1882.torfhildur.nar-fic.psd	2/2/2000
+  1883.voggur.nar-fic.psd	0/0/130
+  1888.grimur.nar-fic.psd	0/0/625
+  1888.vordraumur.nar-fic.psd	0/0/759
+  1902.fossar.nar-fic.psd	2/2/1659
+  1907.leysing.nar-fic.psd	0/0/1521
+  1908.ofurefli.nar-fic.psd	5/5/1743
+  1920.arin.rel-ser.psd	5/5/1149
+  1985.margsaga.nar-fic.psd	1/1/1705
+  1985.sagan.nar-fic.psd	1/1/2008
+  2008.mamma.nar-fic.psd	0/0/1845
+  2008.ofsi.nar-sag.psd	1/1/1210
+  ntmatthew01.psd	0/0/77
+  ntmatthew02.psd	0/0/46
+  ntmatthew03.psd	0/0/51
+whole search, hits/tokens/total
+		92/90/73186
+*/

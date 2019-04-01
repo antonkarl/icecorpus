@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>
+          <title type="main">Hagstofa Íslands</title>
+        </title>
+        <respStmt>
+          <resp xml:lang="is">Söfnun og úrvinnsla texta</resp>
+          <resp xml:lang="en">Collection and processing of text</resp>
+          <name xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</name>
+          <name xml:lang="en">The Arni Magnusson Institute for Icelandic Studies</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <p xml:lang="is">Íslensk risamálheild</p>
+        <p xml:lang="en">Tagged Icelandic Gigaword Corpus</p>
+      </editionStmt>
+      <publicationStmt>
+        <distributor xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</distributor>
+        <distributor xml:lang="en">The Arni Magnusson Institute for Icelandic Studies</distributor>
+        <address>
+          <addrLine xml:lang="is">Árnagarður við Suðurgötu, 107 Reykjavík, Íslandi</addrLine>
+          <addrLine xml:lang="en">Árnagarður Suðurgata, 107 Reykjavik, Iceland</addrLine>
+          <addrLine>
+            <email>arnastofnun@arnastofnun.is</email>
+          </addrLine>
+        </address>
+        <idno type="risam">G-33-4677138</idno>
+        <availability>
+          <p xml:lang="is">Þessi texti er til notkunar í málrannsóknum og máltækniverkefnum um allan heim með sérstöku leyfi, sjá rmh2Hdr.xml</p>
+          <p xml:lang="en">This text is available for use in language research and language technology projects world wide with a special license, see rmh2Hdr.xml</p>
+        </availability>
+        <date>2018-03-10</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <analytic>
+            <title>
+              <title type="main">Hagstofa Íslands</title>
+            </title>
+            <author>Helgi Hrafn Gunnarsson</author>
+            <date>2013-9-11</date>
+          </analytic>
+          <monogr>
+            <title>althingi.is</title>
+            <imprint>
+              <publisher>Alþingi</publisher>
+            </imprint>
+            <biblScope>
+              <ref>http://althingi.is/altext/raeda/142/rad20130911T172427.html</ref>
+            </biblScope>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Sjá lýsingu á verkefninu í rmh2Hdr.xml.</p>
+        <p>See description of project in rmh2Hdr.xml.</p>
+      </projectDesc>
+      <tagsDecl>
+        <namespace name="http://www.tei-c.org/ns/1.0">
+          <tagUsage gi="text" occurs="1"/>
+          <tagUsage gi="body" occurs="1"/>
+          <tagUsage gi="div1" occurs="1"/>
+          <tagUsage gi="p" occurs="3"/>
+          <tagUsage gi="s" occurs="5"/>
+          <tagUsage gi="w" occurs="98"/>
+          <tagUsage gi="c" occurs="8"/>
+        </namespace>
+      </tagsDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div1>
+        <p n="1">
+          <s n="1">
+            <w lemma="virðulegur" type="lkenvf">Virðulegi</w>
+            <w lemma="forseti" type="nken">forseti</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="2">
+            <w lemma="ég" type="fp1en">Ég</w>
+            <w lemma="verða" type="sfg1en">verð</w>
+            <w lemma="að" type="cn">að</w>
+            <w lemma="viðurkenna" type="sng">viðurkenna</w>
+            <w lemma="að" type="c">að</w>
+            <w lemma="ég" type="fp1en">ég</w>
+            <w lemma="hafa" type="sfg1en">hef</w>
+            <w lemma="ekki" type="aa">ekki</w>
+            <w lemma="vera" type="ssg">verið</w>
+            <w lemma="að" type="cn">að</w>
+            <w lemma="pæla" type="sng">pæla</w>
+            <w lemma="mjög" type="aa">mjög</w>
+            <w lemma="mikið" type="aa">mikið</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="það" type="fpheþ">því</w>
+            <w lemma="nákvæmlega" type="aa">nákvæmlega</w>
+            <w lemma="hvernig" type="aa">hvernig</w>
+            <w lemma="háttvirtur" type="lkensf">háttvirtur</w>
+            <w lemma="framsóknarflokkur" type="nken">Framsóknarflokkur</w>
+            <w lemma="og" type="c">og</w>
+            <w lemma="stjórnarflokkur" type="nkfng">stjórnarflokkarnir</w>
+            <w lemma="almennt" type="aa">almennt</w>
+            <w lemma="ætla" type="sng">ætla</w>
+            <w lemma="að" type="cn">að</w>
+            <w lemma="uppfylla" type="sng">uppfylla</w>
+            <w lemma="kosningaloforð" type="nhfo">kosningaloforð</w>
+            <w lemma="sinn" type="fehfo">sín</w>
+            <c type="punctuation">.</c>
+          </s>
+        </p>
+        <p n="2">
+          <s n="1">
+            <w lemma="það" type="fphen">Það</w>
+            <w lemma="hafa" type="sfg3en">hefur</w>
+            <w lemma="liggja" type="ssg">legið</w>
+            <w lemma="fyrir" type="aþ">fyrir</w>
+            <w lemma="nefnd" type="nveþg">nefndinni</w>
+            <w lemma="síðan" type="aa">síðan</w>
+            <w lemma="ég" type="fp1fn">við</w>
+            <w lemma="taka" type="sfg1fþ">tókum</w>
+            <w lemma="aftur" type="aa">aftur</w>
+            <w lemma="til" type="ae">til</w>
+            <w lemma="starf" type="nhfe">starfa</w>
+            <w lemma="í" type="ao">í</w>
+            <w lemma="haust" type="nheo">haust</w>
+            <w lemma="að" type="c">að</w>
+            <w lemma="þessi" type="favfn">þessar</w>
+            <w lemma="upplýsing" type="nvfn">upplýsingar</w>
+            <w lemma="verða" type="svg3fþ">yrðu</w>
+            <w lemma="ekki" type="aa">ekki</w>
+            <w lemma="nota" type="sþgvfn">notaðar</w>
+            <w lemma="til" type="ae">til</w>
+            <w lemma="það" type="fphee">þess</w>
+            <w lemma="að" type="cn">að</w>
+            <w lemma="taka" type="sng">taka</w>
+            <w lemma="ákvörðun" type="nvfo">ákvarðanir</w>
+            <w lemma="heldur" type="c">heldur</w>
+            <w lemma="til" type="ae">til</w>
+            <w lemma="það" type="fphee">þess</w>
+            <w lemma="að" type="cn">að</w>
+            <w lemma="mæla" type="sng">mæla</w>
+            <w lemma="áhrif" type="nhfog">áhrifin</w>
+            <w lemma="af" type="aþ">af</w>
+            <w lemma="ákvörðun" type="nvfþg">ákvörðununum</w>
+            <c type="punctuation">.</c>
+          </s>
+        </p>
+        <p n="3">
+          <s n="1">
+            <w lemma="hver" type="fshen">Hvað</w>
+            <w lemma="varða" type="sfg3en">varðar</w>
+            <w lemma="desember" type="nkeo">desember</w>
+            <w lemma="vera" type="sfg3en">er</w>
+            <w lemma="sá" type="faven">sú</w>
+            <w lemma="tímasetning" type="nven">tímasetning</w>
+            <w lemma="nýr" type="lvensf">ný</w>
+            <w lemma="fyrir" type="aþ">fyrir</w>
+            <w lemma="ég" type="fp1eþ">mér</w>
+            <c type="punctuation">,</c>
+            <w lemma="ég" type="fp1en">ég</w>
+            <w lemma="heyra" type="sfg1eþ">heyrði</w>
+            <w lemma="af" type="aþ">af</w>
+            <w lemma="hún" type="fpveþ">henni</w>
+            <w lemma="halda" type="sfg1en">held</w>
+            <w lemma="ég" type="fp1en">ég</w>
+            <w lemma="fyrir" type="aþ">fyrir</w>
+            <w lemma="tveir" type="tfkfþ">tveim</w>
+            <c type="punctuation">,</c>
+            <w lemma="þrír" type="tfkfþ">þremur</w>
+            <w lemma="dagur" type="nkfþ">dögum</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="2">
+            <w lemma="ég" type="fp1en">Ég</w>
+            <w lemma="geta" type="sfg1en">get</w>
+            <w lemma="bara" type="aa">bara</w>
+            <w lemma="segja" type="ssg">sagt</w>
+            <w lemma="að" type="c">að</w>
+            <w lemma="það" type="fphen">það</w>
+            <w lemma="koma" type="sfg3en">kemur</w>
+            <w lemma="ég" type="fp1eþ">mér</w>
+            <w lemma="ekki" type="aa">ekki</w>
+            <w lemma="sérstaklega" type="aa">sérstaklega</w>
+            <w lemma="á" type="ao">á</w>
+            <w lemma="óvar" type="lheosf">óvart</w>
+            <c type="punctuation">,</c>
+            <w lemma="með" type="aþ">með</w>
+            <w lemma="fullur" type="lveþsf">fullri</w>
+            <w lemma="virðing" type="nveþ">virðingu</w>
+            <w lemma="fyrir" type="aþ">fyrir</w>
+            <w lemma="hæstvirtur" type="lkeþsf">hæstvirtum</w>
+            <w lemma="framsóknarflokkur" type="nkeþ">Framsóknarflokki</w>
+            <c type="punctuation">.</c>
+          </s>
+        </p>
+      </div1>
+    </body>
+  </text>
+</TEI>

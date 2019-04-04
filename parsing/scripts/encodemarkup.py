@@ -9,6 +9,7 @@ allchars = 'a-zA-ZþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\.$'
 f = open(sys.argv[1], 'r')
 # linelist = f.readlines()
 output = f.read()
+f.close()
 
 output = re.sub("\(P:([0-9]+)\)", "99xP_\\1x66", output)
 

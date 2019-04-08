@@ -21,7 +21,7 @@ class Treedraw(object):
 	os.system('mv '+self.thefile+' '+self.thefile+'.bak')
 	f = open(self.thefile,'w')
 	tosave = trees.strip()[1:-1]
-	f.write(tosave)
+	f.write(tosave.encode("utf8"))
 	f.close()
 	os.system('java -classpath ~/icecorpus/parsing/CS_Tony_oct19.jar csearch.CorpusSearch ~/icecorpus/treedrawing/nothing.q '+self.thefile)
 	os.system('mv '+self.thefile+'.out '+self.thefile)

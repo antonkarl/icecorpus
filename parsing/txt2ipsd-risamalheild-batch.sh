@@ -17,5 +17,5 @@ do
     ./txt2ipsd-risamalheild.sh ${f%.lemmatized} # call using filename with extension .lemmatized removed
     
     # convert from .ipsd to .psd
-    ./runall.sh ${f%.lemmatized}.ipsd ${f%.lemmatized}.psd
+    ./runall-risamalheild.sh ${f%.lemmatized}.ipsd ${f%.lemmatized}.psd
 done

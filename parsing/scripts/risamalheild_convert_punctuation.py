@@ -15,8 +15,9 @@ output = f.read()
 f.close()
 
 # encodes opening and closing parentheses as "(PR:S)" and "(PR:E)", respectively
-output = re.sub("\(", "(PR:S)", output)
+output = re.sub("\(", "(PR:Sxxxclosingparxxx", output)
 output = re.sub("\)", "(PR:E)", output)
+output = re.sub("xxxclosingparxxx", ")", output)
 
 # encodes - (HYPHEN-MINUS) – (EN DASH) and — (EM DASH) as "(COM:dash)"
 output = re.sub("[-–—]", "(COM:dash)", output)

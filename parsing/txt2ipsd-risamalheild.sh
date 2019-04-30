@@ -32,14 +32,14 @@ echo "Converting troublesome punctuation to markup"
 python3 ./scripts/risamalheild_convert_punctuation.py $1.lemmatized $1.lemmatized
 # reinstate - (HYPHEN-MINUS) in tags only (second field in .lemmatized file)
 awk '/ / {gsub("\\(COM:dash\\)", "-", $2); print $0} !/ / {print $0}' $1.lemmatized > $1.lemmatizedx
-echo "Tagging dash as comma (,)"
-sed 's/ - / , /g' $1.lemmatizedx > $1.lemmatizedxx
+#echo "Tagging dash as comma (,)"
+#sed 's/ - / , /g' $1.lemmatizedx > $1.lemmatizedxx
 
 echo "Encoding special markup"
 python3 ./scripts/encodemarkup.py $1.lemmatizedxx $1.lemmatizedxxx
 
-echo "Replacing troublesome tags (x, v) with adverb tag"
-sed 's/ [xv] / , /g' $1.lemmatizedxxx > $1.lemmatized
+echo "Replacing troublesome tags (x, v, -) with adverb tag"
+sed -E 's/ ([xv-]|99[A-Za-z0-9_-]+66) / aa /g' $1.lemmatizedxxx > $1.lemmatized
 
 # Generate .tagged file from .lemmatized file
 awk '/ / {print $1 " " $2} !/ / {print $0}' $1.lemmatized > $1.taggedx # file where line breaks need fixing

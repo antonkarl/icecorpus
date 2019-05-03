@@ -36,10 +36,10 @@ awk '/ / {gsub("\\(COM:dash\\)", "-", $2); print $0} !/ / {print $0}' $1.lemmati
 #sed 's/ - / , /g' $1.lemmatizedx > $1.lemmatizedxx
 
 echo "Encoding special markup"
-python3 ./scripts/encodemarkup.py $1.lemmatizedxx $1.lemmatizedxxx
+python3 ./scripts/encodemarkup.py $1.lemmatizedx $1.lemmatizedxxx
 
-echo "Replacing troublesome tags (x, v, -) with adverb tag"
-sed -E 's/ ([xv-]|99[A-Za-z0-9_-]+66) / aa /g' $1.lemmatizedxxx > $1.lemmatized
+echo "Replacing troublesome tags (e, x, v, -) with adverb tag"
+sed -E 's/ ([exv-]|99[A-Za-z0-9_-]+66) / aa /g' $1.lemmatizedxxx > $1.lemmatized
 
 # Generate .tagged file from .lemmatized file
 awk '/ / {print $1 " " $2} !/ / {print $0}' $1.lemmatized > $1.taggedx # file where line breaks need fixing

@@ -4,6 +4,7 @@
 ( (IP-MAT (NP-SBJ (PRO-N Ég-ég))
 	  (MDPI vil-vilja)
 	  (VB þakka-þakka)
+	  (ADVP (ADV hæstv-hæstv))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (N-N menntamálaráðherra-menntamálaráðherra))
@@ -34,7 +35,8 @@
 
 ( (IP-MAT (NP (PRO-D Mér-ég))
 	  (VBPI sýnist-sýna)
-	  (CP-THT (C að-að))
+	  (CP-THT (C að-að)
+		  (IP-SUB (ADVP (ADV hæstv-hæstv))))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (N-N menntamálaráðherra-menntamálaráðherra))
@@ -68,6 +70,7 @@
 			  (VBPI fæ-fá)
 			  (VBN skilið-skilja)))
 	  (VBPI telur-telja)
+	  (ADVP (ADV hæstv-hæstv))
 	  (. .-.)))
 
 ( (IP-MAT (NP-SBJ (N-N menntamálaráðherra-menntamálaráðherra))

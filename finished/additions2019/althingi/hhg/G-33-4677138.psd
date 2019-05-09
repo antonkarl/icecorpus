@@ -65,10 +65,9 @@
 									 (NP (NS-D ákvörðunu$-ákvörðun) (D-D $num-hinn))))))))))
 	  (. .-.)))
 
-( (IP-MAT (ADVP (CP-FRL (WADVP-1 (WADV Hvað-hvað))
+( (IP-MAT (NP-ADV (CP-FRL (WNP-1 (WPRO-N Hvað-hver))
 			(C 0)
-			(IP-SUB (ADVP *T*-1)
-				(NP-SBJ *exp*)
+			(IP-SUB (NP-SBJ *T*-1)
 				(VBPI varðar-varða)
 				(NP-OB1 (N-A desember-desember)))))
 	  (BEPI er-vera)

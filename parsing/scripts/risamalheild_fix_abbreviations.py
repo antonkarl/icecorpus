@@ -35,10 +35,10 @@ f.close()
 
 # replaces each abbreviation when followed by .
 for x in abbr:
-    output = re.sub("\n"+x+" ["+tagchars+"]+ "+x+"\n\\. \\. \\.", "\n"+x+". as "+abbr[x], output)
+    output = re.sub("^"+x+" ["+tagchars+"]+ "+x+"\n\\. \\. \\.", x+". as "+abbr[x], output, flags=re.MULTILINE)
     # also look for abbreviations with initial capital (as at the start of sentences)
     xCap = x.capitalize()
-    output = re.sub("\n"+xCap+" ["+tagchars+"]+ "+x+"\n\\. \\. \\.", "\n"+xCap+". as "+abbr[x], output)
+    output = re.sub("^"+xCap+" ["+tagchars+"]+ ("+x+"|"+xCap+")\n\\. \\. \\.", xCap+". as "+abbr[x], output, flags=re.MULTILINE)
 
 # Write result to output file
 f = open(sys.argv[2], 'w')

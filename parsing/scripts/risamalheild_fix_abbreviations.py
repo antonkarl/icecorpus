@@ -35,9 +35,9 @@ f.close()
 
 # replaces each abbreviation when followed by .
 for x in abbr:
-    output = re.sub("^"+x+" ["+tagchars+"]+ "+x+"\n\\. \\. \\.", x+". as "+abbr[x], output, flags=re.MULTILINE)
-    # also look for abbreviations with initial capital (as at the start of sentences)
     xCap = x.capitalize()
+    output = re.sub("^"+x+" ["+tagchars+"]+ ("+x+"|"+xCap+")\n\\. \\. \\.", x+". as "+abbr[x], output, flags=re.MULTILINE)
+    # also look for abbreviations with initial capital (as at the start of sentences)
     output = re.sub("^"+xCap+" ["+tagchars+"]+ ("+x+"|"+xCap+")\n\\. \\. \\.", xCap+". as "+abbr[x], output, flags=re.MULTILINE)
 
 # Write result to output file

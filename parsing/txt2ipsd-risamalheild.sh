@@ -60,11 +60,14 @@ echo "Parsing using IceParser"
 cat $1.tagged | java -classpath "../IceNLP/IceNLPCore.jar" is.iclt.icenlp.runner.RunIceParser -f -l > $1.ipsdx
 
 echo "Converting IceParser's ipsd output to labeled bracketing"
-# Assumes .ipsd input and .psd output
+# Assumes .ipsdx input and .ipsd output
 python3 ./scripts/ipsd2psd.py $1
 
 echo "Decoding special markup"
 python ./scripts/decodemarkup.py $1.ipsd $1.ipsd
+
+echo "Making final adjustments"
+python ./scripts/risamalheild_final_adjustments.py $1.ipsd $1.ipsd
 
 echo "Removing temporary files"
 #rm $1.enc

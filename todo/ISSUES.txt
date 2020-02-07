@@ -51,10 +51,12 @@
     lítið eitt, neitt, eitthvað, ekkert) and questions of NP-MSR vs.
     ADVP, also with nógu, miklu, löngu; also related issue with langt,
     skammt, hátt, lágt; also N/ADV cases such as ósköp; other words that
-    may be quantifiers, such as umtalsvert
+    may be quantifiers, such as umtalsvert; consider also (WXP hvað)
 
 12. Problems with heldur and enda (how to attach the IP starting with
     these words); consider also heldur within non-IP constituents
+    SOLVED: put CONJP around second constituent, but still mark heldur
+    and enda as ADV in ADVP and place the ADVP within the second constituent.
 
 13. Negation and other things that look like IP constituents that seem
     to be within NP/ADJP/ADVP/PP, etc., often related to consideration of
@@ -72,14 +74,19 @@
     with some sort of unit of measurement as head, e.g. [núll prósent]
     virðisaukaskattur; might sometimes rather be the head of the outer
     phrase (eitt stykki tölvu); also with phrases with a NUM that is
-    originally a noun, (e.g. tvö þúsund krónur).
+    originally a noun, (e.g. tvö þúsund krónur). Perhaps this structure
+    actually applies to all instances of hundrað/þúsund/milljón that have
+    previously been analyzed as NUM? Compare also with issue 11, in particular
+    noun intensifiers such as ósköp. 
 
-17. Subclauses starting with þegar actually always have a gap (NP-TMP),
+17. Subclauses starting with þegar and síðan actually always have a gap (NP-TMP),
     so it is inappropriate to parse them as PP with CP-ADV without a gap.
     They should have exactly the same structure as þar sem clauses.
+    Compare with the synonymous “þá er…”. Subclauses starting with meðan and uns are
+    the same. Look at þar til…, þangað til… as well.
 
 18. How to treat follow-up questions with only one constituent corresponding
-    to the WXP in the previous question.
+    to the WXP in the previous question (but not itself a WXP).
 
 19. Treatment of finite (independent) sentences in headline/telegraph style,
     where the verb BE or similar is omitted, similarly to IP-SMC.
@@ -100,3 +107,16 @@
 
 24. Sentence-initial topic that has no relation to the verb. Should this be
     marked specially, or should it be its own FRAG?
+
+25. Incomplete questions (e.g. of the form “Hvað ef …” or “Hvað með …”).
+
+26. Should ADVP saman be marked somehow as a secondary predicate, e.g. þau gerðu þetta saman.
+
+27. Should we differentiate between (W)D (or WQ?) and (W)PRO for hver?
+
+28. What to do with multiword proper names, e.g. Samband íslenskra sveitarfélaga? Consider
+    also long titles; ought they really be part of the proper name, e.g. 
+    “hv. þingmanni og formanni atvinnuveganefndar, Jóni Gunnarssyni”
+    
+29. Should we separate instance count (oft, margoft, sjaldan, alltaf, tvisvar etc.)
+    from temporal adverbs (nú, etc.)?

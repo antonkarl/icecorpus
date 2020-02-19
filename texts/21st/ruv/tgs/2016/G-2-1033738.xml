@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>
+          <title type="main">Haukur Helgi og Helena best</title>
+        </title>
+        <respStmt>
+          <resp xml:lang="is">Söfnun og úrvinnsla texta</resp>
+          <resp xml:lang="en">Collection and processing of text</resp>
+          <name xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</name>
+          <name xml:lang="en">The Arni Magnusson Institute for Icelandic Studies</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <p xml:lang="is">Íslensk risamálheild (2018)</p>
+        <p xml:lang="en">Tagged Icelandic Gigaword Corpus (2018)</p>
+      </editionStmt>
+      <publicationStmt>
+        <distributor xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</distributor>
+        <distributor xml:lang="en">The Arni Magnusson Institute for Icelandic Studies</distributor>
+        <address>
+          <addrLine xml:lang="is">Árnagarður við Suðurgötu, 107 Reykjavík, Íslandi</addrLine>
+          <addrLine xml:lang="en">Árnagarður Suðurgata, 107 Reykjavik, Iceland</addrLine>
+          <addrLine>
+            <email>arnastofnun@arnastofnun.is</email>
+          </addrLine>
+        </address>
+        <idno type="risam">G-2-1033738</idno>
+        <availability>
+          <p xml:lang="is">Þessi texti er til notkunar í málrannsóknum og máltækniverkefnum um allan heim með sérstöku leyfi, sjá rmh2Hdr.xml</p>
+          <p xml:lang="en">This text is available for use in language research and language technology projects world wide with a special license, see rmh2Hdr.xml</p>
+        </availability>
+        <date>2020-01-07</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <analytic>
+            <title>
+              <title type="main">Haukur Helgi og Helena best</title>
+            </title>
+            <author>Þorkell Gunnar Sigurbjörnsson</author>
+            <date>2016-5-6</date>
+          </analytic>
+          <monogr>
+            <title>ruv.is</title>
+            <imprint>
+              <publisher>Ríkisútvarpið</publisher>
+            </imprint>
+            <biblScope>
+              <ref>http://ruv.is/node/1031703</ref>
+            </biblScope>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Sjá lýsingu á verkefninu í rmh2Hdr.xml.</p>
+        <p>See description of project in rmh2Hdr.xml.</p>
+      </projectDesc>
+      <tagsDecl>
+        <namespace name="http://www.tei-c.org/ns/1.0">
+          <tagUsage gi="text" occurs="1"/>
+          <tagUsage gi="body" occurs="1"/>
+          <tagUsage gi="div1" occurs="1"/>
+          <tagUsage gi="p" occurs="17"/>
+          <tagUsage gi="s" occurs="42"/>
+          <tagUsage gi="w" occurs="195"/>
+          <tagUsage gi="c" occurs="29"/>
+        </namespace>
+      </tagsDecl>
+    </encodingDesc>
+    <profileDesc>
+     <textClass>
+      <keywords scheme="#RMH">
+       <list>
+        <item>Körfubolti</item>
+       </list>
+      </keywords>
+     </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div1>
+        <p n="1">
+          <s n="1">
+            <w lemma="Haukur" type="nken-s">Haukur</w>
+            <w lemma="Helgi" type="nken-s">Helgi</w>
+            <w lemma="Pálsson" type="nken-s">Pálsson</w>
+            <c type="punctuation">,</c>
+            <w lemma="Njarðvík" type="nven-s">Njarðvík</w>
+            <w lemma="og" type="c">og</w>
+            <w lemma="Helena" type="nven-s">Helena</w>
+            <w lemma="Sverrisdóttir" type="nven-s">Sverrisdóttir</w>
+            <c type="punctuation">,</c>
+            <w lemma="Haukur" type="nkfþ-s">Haukum</w>
+            <w lemma="vera" type="sfg3fþ">voru</w>
+            <w lemma="í" type="ao">í</w>
+            <w lemma="dagur" type="nkeo">dag</w>
+            <w lemma="útnefna" type="sþghfn">útnefnd</w>
+            <w lemma="góður" type="lkfeve">bestu</w>
+            <w lemma="leikmei" type="nkeng">leikmeinn</w>
+            <w lemma="Dominos-deildir" type="nkfe-s">Dominos-deilda</w>
+            <w lemma="karl" type="nkfe">karla</w>
+            <w lemma="og" type="c">og</w>
+            <w lemma="kona" type="nvfe">kvenna</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="körfubolti" type="nkeþ">körfubolta</w>
+            <w lemma="fyrir" type="ao">fyrir</w>
+            <w lemma="leiktíð" type="nveog">leiktíðina</w>
+            <w lemma="2015" type="ta">2015</w>
+            <c type="punctuation">-</c>
+            <w lemma="2016" type="ta">2016</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="2">
+            <w lemma="val" type="nheng">Valið</w>
+            <w lemma="vera" type="sfg3eþ">var</w>
+            <w lemma="kunngjöra" type="sþghen">kunngjört</w>
+            <w lemma="á" type="aþ">á</w>
+            <w lemma="lokahóf" type="nheþ">lokahófi</w>
+            <w lemma="KKÍ" type="nxee-s">KKÍ</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="Ægisgarður" type="nkeþ-s">Ægisgarði</w>
+            <w lemma="nú" type="aa">nú</w>
+            <w lemma="síðdegi" type="nhee">síðdegis</w>
+            <c type="punctuation">.</c>
+          </s>
+        </p>
+        <p n="2">
+          <s n="1">
+            <w lemma="þjálfari" type="nkfn">Þjálfarar</w>
+            <w lemma="Íslandsmeistari" type="nkfegs">Íslandsmeistaranna</w>
+            <w lemma="vera" type="sfg3fþ">voru</w>
+            <w lemma="svo" type="aa">svo</w>
+            <w lemma="velja" type="sþgkfn">valdir</w>
+            <w lemma="góður" type="lkfnve">bestu</w>
+            <w lemma="þjálfari" type="nkfng">þjálfararnir</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="2">
+            <w lemma="Finnur" type="nken-s">Finnur</w>
+            <w lemma="Freyr" type="nken-s">Freyr</w>
+            <w lemma="Stefánsson" type="nken-s">Stefánsson</w>
+            <w lemma="þjálfari" type="nken">þjálfari</w>
+            <w lemma="karlalið" type="nhee">karlaliðs</w>
+            <w lemma="KR" type="as">KR</w>
+            <w lemma="og" type="c">og</w>
+            <w lemma="Ingi" type="nken-s">Ingi</w>
+            <w lemma="Þór" type="nken-s">Þór</w>
+            <w lemma="Steinþórsson" type="nken-s">Steinþórsson</w>
+            <w lemma="þjálfari" type="nken">þjálfari</w>
+            <w lemma="Snæfell" type="nhee-s">Snæfells</w>
+            <c type="punctuation">.</c>
+          </s>
+        </p>
+        <p n="3">
+          <s n="1">
+            <w lemma="úrvalsl" type="nheng">Úrvalslið</w>
+            <w lemma="Dominos-deild" type="nvee-s">Dominos-deildar</w>
+            <w lemma="kona" type="nvfe">kvenna</w>
+          </s>
+          <s n="2">
+            <w lemma="Gunnhildur" type="nven-s">Gunnhildur</w>
+            <w lemma="Gunnarsdóttir" type="nven-s">Gunnarsdóttir</w>
+            <c type="punctuation">,</c>
+            <w lemma="Snæfell" type="nhen-s">Snæfell</w>
+          </s>
+          <s n="3">
+            <w lemma="Guðbjörg" type="nven-s">Guðbjörg</w>
+            <w lemma="Sverrisdóttir" type="nven-s">Sverrisdóttir</w>
+            <c type="punctuation">,</c>
+            <w lemma="Valur" type="nken-s">Valur</w>
+          </s>
+          <s n="4">
+            <w lemma="Helena" type="nven-s">Helena</w>
+            <w lemma="Sverrisdóttir" type="nven-s">Sverrisdóttir</w>
+            <c type="punctuation">,</c>
+            <w lemma="Haukur" type="nkfn-s">Haukar</w>
+          </s>
+          <s n="5">
+            <w lemma="Sigrún" type="nven-s">Sigrún</w>
+            <w lemma="Ámundadóttir" type="nven-s">Ámundadóttir</w>
+            <c type="punctuation">,</c>
+            <w lemma="Grindavík" type="nveþ-s">Grindavík</w>
+          </s>
+          <s n="6">
+            <w lemma="Bryndís" type="nven-s">Bryndís</w>
+            <w lemma="Guðmundsdóttir" type="nven-s">Guðmundsdóttir</w>
+            <c type="punctuation">,</c>
+            <w lemma="Snæfell" type="nhen-s">Snæfell</w>
+          </s>
+        </p>
+        <p n="4">
+          <s n="1">
+            <w lemma="besta" type="sfg3eþ">Besti</w>
+            <w lemma="leikmaður" type="nken">leikmaður</w>
+            <w lemma="Dominos-deild" type="nvee-s">Dominos-deildar</w>
+            <w lemma="kona" type="nvfe">kvenna</w>
+          </s>
+          <s n="2">
+            <w lemma="Helena" type="nven-s">Helena</w>
+            <w lemma="Sverrisdóttir" type="nven-s">Sverrisdóttir</w>
+            <c type="punctuation">,</c>
+            <w lemma="Haukur" type="nkfn-s">Haukar</w>
+          </s>
+        </p>
+        <p n="5">
+          <s n="1">
+            <w lemma="góður" type="lkenve">Besti</w>
+            <w lemma="þjálfari" type="nken">þjálfari</w>
+            <w lemma="Dominos-deild" type="nvee-s">Dominos-deildar</w>
+            <w lemma="kona" type="nvfe">kvenna</w>
+          </s>
+          <s n="2">
+            <w lemma="Ingi" type="nken-s">Ingi</w>
+            <w lemma="Þór" type="nken-s">Þór</w>
+            <w lemma="Steinþórsson" type="nken-s">Steinþórsson</w>
+            <c type="punctuation">,</c>
+            <w lemma="Snæfell" type="nhen-s">Snæfell</w>
+          </s>
+        </p>
+        <p n="6">
+          <s n="1">
+            <w lemma="besta" type="sfg3eþ">Besti</w>
+            <w lemma="ungur" type="lkenvf">ungi</w>
+            <w lemma="leikmaður" type="nken">leikmaður</w>
+            <w lemma="Dominos-deild" type="nvee-s">Dominos-deildar</w>
+            <w lemma="kona" type="nvfe">kvenna</w>
+          </s>
+          <s n="2">
+            <w lemma="Thelma" type="nven-s">Thelma</w>
+            <w lemma="Dís" type="nven-s">Dís</w>
+            <w lemma="Ágústsdóttir" type="nven-s">Ágústsdóttir</w>
+            <c type="punctuation">,</c>
+            <w lemma="Keflavík" type="nveþ-s">Keflavík</w>
+          </s>
+        </p>
+        <p n="7">
+          <s n="1">
+            <w lemma="besta" type="svg3en">Besti</w>
+            <w lemma="varnarmaður" type="nken">varnarmaður</w>
+            <w lemma="Dominos-deild" type="nvee-s">Dominos-deildar</w>
+            <w lemma="kona" type="nvfe">kvenna</w>
+          </s>
+          <s n="2">
+            <w lemma="Gunnhildur" type="nven-s">Gunnhildur</w>
+            <w lemma="Gunnarsdóttir" type="nven-s">Gunnarsdóttir</w>
+            <c type="punctuation">,</c>
+            <w lemma="Snæfell" type="nhen-s">Snæfell</w>
+          </s>
+        </p>
+        <p n="8">
+          <s n="1">
+            <w lemma="besti" type="nken">Besti</w>
+            <w lemma="erlendur" type="lkenvf">erlendi</w>
+            <w lemma="leikmaður" type="nken">leikmaður</w>
+            <w lemma="Dominos-deild" type="nvee-s">Dominos-deildar</w>
+            <w lemma="kona" type="nvfe">kvenna</w>
+          </s>
+          <s n="2">
+            <w lemma="Haiden" type="e">Haiden</w>
+            <w lemma="Palmer" type="e">Palmer</w>
+            <c type="punctuation">,</c>
+            <w lemma="Snæfell" type="nhen-s">Snæfell</w>
+          </s>
+        </p>
+        <p n="9">
+          <s n="1">
+            <w lemma="prúður" type="lkenve">Prúðasti</w>
+            <w lemma="leikmaður" type="nken">leikmaður</w>
+            <w lemma="Dominos-deild" type="nvee-s">Dominos-deildar</w>
+            <w lemma="kona" type="nvfe">kvenna</w>
+          </s>
+          <s n="2">
+            <w lemma="Berglind" type="nven-s">Berglind</w>
+            <w lemma="Gunnarsdóttir" type="nven-s">Gunnarsdóttir</w>
+            <c type="punctuation">,</c>
+            <w lemma="Snæfell" type="nhen-s">Snæfell</w>
+          </s>
+        </p>
+        <p n="10">
+          <s n="1">
+            <w lemma="úrvalsl" type="nheng">Úrvalslið</w>
+            <w lemma="Dominos-deild" type="nvee-s">Dominos-deildar</w>
+            <w lemma="karl" type="nkfe">karla</w>
+          </s>
+          <s n="2">
+            <w lemma="Pavel" type="e">Pavel</w>
+            <w lemma="Ermolinskij" type="nxen-s">Ermolinskij</w>
+            <c type="punctuation">,</c>
+            <w lemma="KR" type="as">KR</w>
+          </s>
+          <s n="3">
+            <w lemma="Kári" type="nken-s">Kári</w>
+            <w lemma="Jónsson" type="nken-s">Jónsson</w>
+            <c type="punctuation">,</c>
+            <w lemma="Haukur" type="nkfn-s">Haukar</w>
+          </s>
+          <s n="4">
+            <w lemma="Haukur" type="nken-s">Haukur</w>
+            <w lemma="Helgi" type="nken-s">Helgi</w>
+            <w lemma="Pálsson" type="nken-s">Pálsson</w>
+            <c type="punctuation">,</c>
+            <w lemma="Njarðvík" type="nven-s">Njarðvík</w>
+          </s>
+          <s n="5">
+            <w lemma="Helgi" type="nken-s">Helgi</w>
+            <w lemma="Már" type="nken-s">Már</w>
+            <w lemma="Magnússon" type="nken-s">Magnússon</w>
+            <c type="punctuation">,</c>
+            <w lemma="KR" type="as">KR</w>
+          </s>
+          <s n="6">
+            <w lemma="Ragnar" type="nken-s">Ragnar</w>
+            <w lemma="Nathanaelsson" type="nken-s">Nathanaelsson</w>
+            <c type="punctuation">,</c>
+            <w lemma="Þór" type="nken-s">Þór</w>
+            <w lemma="Þ." type="as">Þ.</w>
+          </s>
+        </p>
+        <p n="11">
+          <s n="1">
+            <w lemma="góður" type="lkenve">Besti</w>
+            <w lemma="leikmaður" type="nken">leikmaður</w>
+            <w lemma="Dominos-deild" type="nvee-s">Dominos-deildar</w>
+            <w lemma="karl" type="nkfe">karla</w>
+          </s>
+          <s n="2">
+            <w lemma="Haukur" type="nken-s">Haukur</w>
+            <w lemma="Helgi" type="nken-s">Helgi</w>
+            <w lemma="Pálsson" type="nken-s">Pálsson</w>
+            <c type="punctuation">,</c>
+            <w lemma="Njarðvík" type="nven-s">Njarðvík</w>
+          </s>
+        </p>
+        <p n="12">
+          <s n="1">
+            <w lemma="besta" type="sfg3eþ">Besti</w>
+            <w lemma="þjálfari" type="nken">þjálfari</w>
+            <w lemma="Dominos-deild" type="nvee-s">Dominos-deildar</w>
+            <w lemma="karl" type="nkfe">karla</w>
+          </s>
+          <s n="2">
+            <w lemma="Finnur" type="nken-s">Finnur</w>
+            <w lemma="Freyr" type="nken-s">Freyr</w>
+            <w lemma="Stefánsson" type="nken-s">Stefánsson</w>
+            <c type="punctuation">,</c>
+            <w lemma="KR" type="as">KR</w>
+          </s>
+        </p>
+        <p n="13">
+          <s n="1">
+            <w lemma="besta" type="sfg3eþ">Besti</w>
+            <w lemma="ungur" type="lkenvf">ungi</w>
+            <w lemma="leikmaður" type="nken">leikmaður</w>
+            <w lemma="Dominos-deild" type="nvee-s">Dominos-deildar</w>
+            <w lemma="karl" type="nkfe">karla</w>
+          </s>
+          <s n="2">
+            <w lemma="Kári" type="nken-s">Kári</w>
+            <w lemma="Jónsson" type="nken-s">Jónsson</w>
+            <c type="punctuation">,</c>
+            <w lemma="Haukur" type="nkfn-s">Haukar</w>
+          </s>
+        </p>
+        <p n="14">
+          <s n="1">
+            <w lemma="besta" type="sfg3eþ">Besti</w>
+            <w lemma="varnarmaður" type="nken">varnarmaður</w>
+            <w lemma="Dominos-deild" type="nvee-s">Dominos-deildar</w>
+            <w lemma="karl" type="nkfe">karla</w>
+          </s>
+          <s n="2">
+            <w lemma="Darri" type="nken-s">Darri</w>
+            <w lemma="Hilmarsson" type="nken-s">Hilmarsson</w>
+            <c type="punctuation">,</c>
+            <w lemma="KR" type="as">KR</w>
+          </s>
+        </p>
+        <p n="15">
+          <s n="1">
+            <w lemma="besta" type="sfg3eþ">Besti</w>
+            <w lemma="erlendur" type="lkenvf">erlendi</w>
+            <w lemma="leikmaður" type="nken">leikmaður</w>
+            <w lemma="Dominos-deild" type="nvee-s">Dominos-deildar</w>
+            <w lemma="karl" type="nkfe">karla</w>
+          </s>
+          <s n="2">
+            <w lemma="Michael" type="e">Michael</w>
+            <w lemma="Craion" type="e">Craion</w>
+            <c type="punctuation">,</c>
+            <w lemma="KR" type="as">KR</w>
+          </s>
+        </p>
+        <p n="16">
+          <s n="1">
+            <w lemma="prúður" type="lkenve">Prúðasti</w>
+            <w lemma="leikmaður" type="nken">leikmaður</w>
+            <w lemma="Dominos-deild" type="nvee-s">Dominos-deildar</w>
+            <w lemma="karl" type="nkfe">karla</w>
+          </s>
+          <s n="2">
+            <w lemma="Michael" type="e">Michael</w>
+            <w lemma="Craion" type="e">Craion</w>
+            <c type="punctuation">,</c>
+            <w lemma="KR" type="as">KR</w>
+          </s>
+        </p>
+        <p n="17">
+          <s n="1">
+            <w lemma="góður" type="lkenve">Besti</w>
+            <w lemma="dómari" type="nkeng">dómarinn</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="Domino-s" type="e">Domino-s</w>
+            <w lemma="deild" type="nvfþ">deildum</w>
+            <w lemma="karl" type="nkfe">karla</w>
+            <w lemma="og" type="c">og</w>
+            <w lemma="kona" type="nvfe">kvenna</w>
+          </s>
+          <s n="2">
+            <w lemma="Sigmundur" type="nken-s">Sigmundur</w>
+            <w lemma="Már" type="nken-s">Már</w>
+            <w lemma="Herbertsson" type="nken-s">Herbertsson</w>
+          </s>
+        </p>
+      </div1>
+    </body>
+  </text>
+</TEI>

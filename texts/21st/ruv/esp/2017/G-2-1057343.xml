@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>
+          <title type="main">Dagur Dan til Ghent</title>
+        </title>
+        <respStmt>
+          <resp xml:lang="is">Söfnun og úrvinnsla texta</resp>
+          <resp xml:lang="en">Collection and processing of text</resp>
+          <name xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</name>
+          <name xml:lang="en">The Arni Magnusson Institute for Icelandic Studies</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <p xml:lang="is">Íslensk risamálheild (2018)</p>
+        <p xml:lang="en">Tagged Icelandic Gigaword Corpus (2018)</p>
+      </editionStmt>
+      <publicationStmt>
+        <distributor xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</distributor>
+        <distributor xml:lang="en">The Arni Magnusson Institute for Icelandic Studies</distributor>
+        <address>
+          <addrLine xml:lang="is">Árnagarður við Suðurgötu, 107 Reykjavík, Íslandi</addrLine>
+          <addrLine xml:lang="en">Árnagarður Suðurgata, 107 Reykjavik, Iceland</addrLine>
+          <addrLine>
+            <email>arnastofnun@arnastofnun.is</email>
+          </addrLine>
+        </address>
+        <idno type="risam">G-2-1057343</idno>
+        <availability>
+          <p xml:lang="is">Þessi texti er til notkunar í málrannsóknum og máltækniverkefnum um allan heim með sérstöku leyfi, sjá rmh2Hdr.xml</p>
+          <p xml:lang="en">This text is available for use in language research and language technology projects world wide with a special license, see rmh2Hdr.xml</p>
+        </availability>
+        <date>2020-01-07</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <analytic>
+            <title>
+              <title type="main">Dagur Dan til Ghent</title>
+            </title>
+            <author>Edda Sif Pálsdóttir</author>
+            <date>2017-1-5</date>
+          </analytic>
+          <monogr>
+            <title>ruv.is</title>
+            <imprint>
+              <publisher>Ríkisútvarpið</publisher>
+            </imprint>
+            <biblScope>
+              <ref>http://ruv.is/node/1105874</ref>
+            </biblScope>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Sjá lýsingu á verkefninu í rmh2Hdr.xml.</p>
+        <p>See description of project in rmh2Hdr.xml.</p>
+      </projectDesc>
+      <tagsDecl>
+        <namespace name="http://www.tei-c.org/ns/1.0">
+          <tagUsage gi="text" occurs="1"/>
+          <tagUsage gi="body" occurs="1"/>
+          <tagUsage gi="div1" occurs="1"/>
+          <tagUsage gi="p" occurs="3"/>
+          <tagUsage gi="s" occurs="7"/>
+          <tagUsage gi="w" occurs="74"/>
+          <tagUsage gi="c" occurs="12"/>
+        </namespace>
+      </tagsDecl>
+    </encodingDesc>
+    <profileDesc>
+     <textClass>
+      <keywords scheme="#RMH">
+       <list>
+        <item>Fótbolti</item>
+       </list>
+      </keywords>
+     </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div1>
+        <p n="1">
+          <s n="1">
+            <w lemma="hinn" type="faken">Hinn</w>
+            <w lemma="sextán" type="tfhfe">sextán</w>
+            <w lemma="ár" type="nhfe">ára</w>
+            <w lemma="gamall" type="lkenvf">gamli</w>
+            <w lemma="Dagur" type="nken-s">Dagur</w>
+            <w lemma="Dan" type="e">Dan</w>
+            <w lemma="Þórhallsson" type="nken-s">Þórhallsson</w>
+            <w lemma="hafa" type="sfg3en">hefur</w>
+            <w lemma="skrifa" type="ssg">skrifað</w>
+            <w lemma="undir" type="ao">undir</w>
+            <w lemma="tveir" type="tfhfe">tveggja</w>
+            <w lemma="og" type="c">og</w>
+            <w lemma="hálfur" type="lheesf">hálfs</w>
+            <w lemma="ár" type="nhee">árs</w>
+            <w lemma="samningur" type="nkeo">samning</w>
+            <w lemma="við" type="ao">við</w>
+            <w lemma="belgískur" type="lheovf">belgíska</w>
+            <w lemma="knattspyrnulið" type="nheog">knattspyrnuliðið</w>
+            <w lemma="K.A.A" type="as">K.A.A</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="2">
+            <w lemma="Gent" type="e">Gent</w>
+            <w lemma="sem" type="ct">sem</w>
+            <w lemma="spila" type="sfg3en">spilar</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="efri" type="lveþve">efstu</w>
+            <w lemma="deild" type="nveþ">deild</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="3">
+            <w lemma="Dagur" type="nken-s">Dagur</w>
+            <w lemma="spila" type="sfg3eþ">spilaði</w>
+            <w lemma="sinn" type="fekfo">sína</w>
+            <w lemma="fyrstur" type="lkfove">fyrstu</w>
+            <w lemma="leikur" type="nkfo">leiki</w>
+            <w lemma="með" type="aþ">með</w>
+            <w lemma="meistaraflokkur" type="nkeþ">meistaraflokki</w>
+            <w lemma="síðari" type="lheove">síðasta</w>
+            <w lemma="sumar" type="nheo">sumar</w>
+            <w lemma="þegar" type="c">þegar</w>
+            <w lemma="hann" type="fpken">hann</w>
+            <w lemma="koma" type="sfg3eþ">kom</w>
+            <w lemma="við" type="ao">við</w>
+            <w lemma="saga" type="nveo">sögu</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="sex" type="tfkfþ">sex</w>
+            <w lemma="leikur" type="nkfþ">leikjum</w>
+            <w lemma="með" type="aþ">með</w>
+            <w lemma="Haukur" type="nkfþ-s">Haukum</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="fyrstur" type="lveþve">fyrstu</w>
+            <w lemma="deild" type="nveþ">deild</w>
+            <c type="punctuation">.</c>
+          </s>
+        </p>
+        <p n="2">
+          <s n="1">
+            <w lemma="Dagur" type="nken-s">Dagur</w>
+            <w lemma="Dan" type="e">Dan</w>
+            <w lemma="Thorhallsson" type="e">Thorhallsson</w>
+            <c type="punctuation">(</c>
+            <w lemma="2000" type="ta">2000</w>
+            <c type="punctuation">)</c>
+            <w lemma="from" type="e">from</w>
+            <w lemma="Haukar" type="e">Haukar</w>
+            <w lemma="has" type="e">has</w>
+            <w lemma="signed" type="e">signed</w>
+            <w lemma="a" type="e">a</w>
+            <w lemma="2" type="ta">2</w>
+            <w lemma="1/2" type="ta">1/2</w>
+            <w lemma="year" type="e">year</w>
+            <w lemma="contract" type="e">contract</w>
+            <w lemma="with" type="e">with</w>
+            <w lemma="KAA" type="e">KAA</w>
+            <w lemma="Gent" type="e">Gent</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="2">
+            <w lemma="Congrats" type="e">Congrats</w>
+            <c type="punctuation">!</c>
+          </s>
+          <s n="3">
+            <w lemma="#TeamTotalFootball" type="e">#TeamTotalFootball</w>
+            <w lemma="pic.twitter.com" type="v">pic.twitter.com</w>
+            <c type="punctuation">/</c>
+            <w lemma="GnmqZowOj" type="e">GnmqZowOj</w>
+            <w lemma="3" type="ta">3</w>
+          </s>
+        </p>
+        <p n="3">
+          <s n="1">
+            <c type="punctuation">-</c>
+            <w lemma="Total" type="e">Total</w>
+            <w lemma="Football" type="e">Football</w>
+            <c type="punctuation">(</c>
+            <w lemma="@totalfl" type="nhen">@totalfl</w>
+            <c type="punctuation">)</c>
+            <w lemma="January" type="e">January</w>
+            <w lemma="4" type="ta">4</w>
+            <c type="punctuation">,</c>
+            <w lemma="2017" type="ta">2017</w>
+          </s>
+        </p>
+      </div1>
+    </body>
+  </text>
+</TEI>

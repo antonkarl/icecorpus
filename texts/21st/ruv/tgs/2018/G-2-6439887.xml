@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>
+          <title type="main">Þrjú Íslandsmet í skotfimi</title>
+        </title>
+        <respStmt>
+          <resp xml:lang="is">Söfnun og úrvinnsla texta</resp>
+          <resp xml:lang="en">Collection and processing of text</resp>
+          <name xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</name>
+          <name xml:lang="en">The Arni Magnusson Institute for Icelandic Studies</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <p xml:lang="is">Íslensk risamálheild (2018)</p>
+        <p xml:lang="en">Tagged Icelandic Gigaword Corpus (2018)</p>
+      </editionStmt>
+      <publicationStmt>
+        <distributor xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</distributor>
+        <distributor xml:lang="en">The Arni Magnusson Institute for Icelandic Studies</distributor>
+        <address>
+          <addrLine xml:lang="is">Árnagarður við Suðurgötu, 107 Reykjavík, Íslandi</addrLine>
+          <addrLine xml:lang="en">Árnagarður Suðurgata, 107 Reykjavik, Iceland</addrLine>
+          <addrLine>
+            <email>arnastofnun@arnastofnun.is</email>
+          </addrLine>
+        </address>
+        <idno type="risam">G-2-6439887</idno>
+        <availability>
+          <p xml:lang="is">Þessi texti er til notkunar í málrannsóknum og máltækniverkefnum um allan heim með sérstöku leyfi, sjá rmh2Hdr.xml</p>
+          <p xml:lang="en">This text is available for use in language research and language technology projects world wide with a special license, see rmh2Hdr.xml</p>
+        </availability>
+        <date>2020-01-07</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <analytic>
+            <title>
+              <title type="main">Þrjú Íslandsmet í skotfimi</title>
+            </title>
+            <author>Þorkell Gunnar Sigurbjörnsson</author>
+            <date>2018-4-22</date>
+          </analytic>
+          <monogr>
+            <title>ruv.is</title>
+            <imprint>
+              <publisher>Ríkisútvarpið</publisher>
+            </imprint>
+            <biblScope>
+              <ref>http://ruv.is/node/1264139</ref>
+            </biblScope>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Sjá lýsingu á verkefninu í rmh2Hdr.xml.</p>
+        <p>See description of project in rmh2Hdr.xml.</p>
+      </projectDesc>
+      <tagsDecl>
+        <namespace name="http://www.tei-c.org/ns/1.0">
+          <tagUsage gi="text" occurs="1"/>
+          <tagUsage gi="body" occurs="1"/>
+          <tagUsage gi="div1" occurs="1"/>
+          <tagUsage gi="p" occurs="3"/>
+          <tagUsage gi="s" occurs="7"/>
+          <tagUsage gi="w" occurs="102"/>
+          <tagUsage gi="c" occurs="8"/>
+        </namespace>
+      </tagsDecl>
+    </encodingDesc>
+    <profileDesc>
+     <textClass>
+      <keywords scheme="#RMH">
+       <list>
+        <item>Íþróttir</item>
+       </list>
+      </keywords>
+     </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div1>
+        <p n="1">
+          <s n="1">
+            <w lemma="þrír" type="tfhfn">Þrjú</w>
+            <w lemma="íslandsmet" type="nhfn">Íslandsmet</w>
+            <w lemma="falla" type="sfg3fþ">féllu</w>
+            <w lemma="þegar" type="c">þegar</w>
+            <w lemma="Reykjavíkurmót" type="nhengs">Reykjavíkurmótið</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="skotfimi" type="nveþ">skotfimi</w>
+            <w lemma="vera" type="sfg3eþ">var</w>
+            <w lemma="halda" type="sþghen">haldið</w>
+            <w lemma="hjá" type="aþ">hjá</w>
+            <w lemma="Skotfélag" type="nheþ-s">Skotfélagi</w>
+            <w lemma="Reykjavík" type="nvee-s">Reykjavíkur</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="Egilshöll" type="nveþ-s">Egilshöll</w>
+            <w lemma="í" type="aa">í</w>
+            <w lemma="gær" type="aa">gær</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="2">
+            <w lemma="Íris" type="nven-s">Íris</w>
+            <w lemma="Eva" type="nven-s">Eva</w>
+            <w lemma="Einarsdóttir" type="nven-s">Einarsdóttir</w>
+            <w lemma="setja" type="sfg3eþ">setti</w>
+            <w lemma="met" type="nheo">met</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="loftriffill" type="nkeþ">loftriffli</w>
+            <w lemma="kona" type="nvfe">kvenna</w>
+            <w lemma="þegar" type="c">þegar</w>
+            <w lemma="hún" type="fpven">hún</w>
+            <w lemma="skjóta" type="sfg3eþ">skaut</w>
+            <w lemma="605,4" type="tp">605,4</w>
+            <w lemma="stig" type="nhfo">stig</w>
+            <w lemma="og" type="c">og</w>
+            <w lemma="verða" type="sfg3eþ">varð</w>
+            <w lemma="um" type="ao">um</w>
+            <w lemma="leið" type="nveo">leið</w>
+            <w lemma="Reykjavíkurmeistari" type="nken-s">Reykjavíkurmeistari</w>
+            <c type="punctuation">.</c>
+          </s>
+        </p>
+        <p n="2">
+          <s n="1">
+            <w lemma="Magnús" type="nken-s">Magnús</w>
+            <w lemma="Guðjón" type="nken-s">Guðjón</w>
+            <w lemma="Jensson" type="nken-s">Jensson</w>
+            <w lemma="bæta" type="sfg3eþ">bætti</w>
+            <w lemma="Íslandsmet" type="nheogs">Íslandsmetið</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="loftriffill" type="nkeþ">loftriffli</w>
+            <w lemma="unglingur" type="nkfe">unglinga</w>
+            <w lemma="þegar" type="c">þegar</w>
+            <w lemma="hann" type="fpken">hann</w>
+            <w lemma="skjóta" type="sfg3eþ">skaut</w>
+            <w lemma="568,1" type="ta">568,1</w>
+            <w lemma="stig" type="nhfo">stig</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="2">
+            <w lemma="þá" type="aa">Þá</w>
+            <w lemma="setja" type="sfg3fþ">settu</w>
+            <w lemma="Íris" type="nven-s">Íris</w>
+            <w lemma="Eva" type="nven-s">Eva</w>
+            <w lemma="Einarsdóttir" type="nven-s">Einarsdóttir</w>
+            <c type="punctuation">,</c>
+            <w lemma="Jórunn" type="nven-s">Jórunn</w>
+            <w lemma="Harðardóttir" type="nven-s">Harðardóttir</w>
+            <w lemma="og" type="c">og</w>
+            <w lemma="Viktoría" type="nven-s">Viktoría</w>
+            <w lemma="Erla" type="nven-s">Erla</w>
+            <w lemma="Bjarnadóttir" type="nven-s">Bjarnadóttir</w>
+            <w lemma="nýr" type="lheosf">nýtt</w>
+            <w lemma="Íslandsmet" type="nhen-s">Íslandsmet</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="liðakeppni" type="nveþ">liðakeppni</w>
+            <w lemma="með" type="aþ">með</w>
+            <w lemma="loftriffill" type="nkeþ">loftriffli</w>
+            <w lemma="með" type="ao">með</w>
+            <w lemma="samtals" type="aa">samtals</w>
+            <w lemma="1748,2" type="ta">1748,2</w>
+            <w lemma="stig" type="nhfo">stig</w>
+            <c type="punctuation">.</c>
+          </s>
+        </p>
+        <p n="3">
+          <s n="1">
+            <w lemma="Guðmundur" type="nken-s">Guðmundur</w>
+            <w lemma="Helgi" type="nken-s">Helgi</w>
+            <w lemma="Christensen" type="e">Christensen</w>
+            <w lemma="verða" type="sfg3eþ">varð</w>
+            <w lemma="Reykjavíkurmeistari" type="nken-s">Reykjavíkurmeistari</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="karlaflokkur" type="nkeþ">karlaflokki</w>
+            <w lemma="með" type="ao">með</w>
+            <w lemma="loftriffill" type="nkeo">loftriffil</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="2">
+            <w lemma="hann" type="fpken">Hann</w>
+            <w lemma="skjóta" type="sfg3eþ">skaut</w>
+            <w lemma="586,9" type="ta">586,9</w>
+            <w lemma="stig" type="nhfo">stig</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="3">
+            <w lemma="í" type="aþ">Í</w>
+            <w lemma="lofskammbyssa" type="nveþ">lofskammbyssu</w>
+            <w lemma="karl" type="nkfe">karla</w>
+            <w lemma="verða" type="sfg3eþ">varð</w>
+            <w lemma="Ásgeir" type="nken-s">Ásgeir</w>
+            <w lemma="Sigurgeirsson" type="nken-s">Sigurgeirsson</w>
+            <w lemma="Reykjavíkurmeistari" type="nken-s">Reykjavíkurmeistari</w>
+            <w lemma="með" type="ao">með</w>
+            <w lemma="582" type="ta">582</w>
+            <w lemma="stig" type="nhfo">stig</w>
+            <w lemma="og" type="c">og</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="kvennaflokkur" type="nkeþ">kvennaflokki</w>
+            <w lemma="með" type="aþ">með</w>
+            <w lemma="lofskammbyssa" type="nveþ">lofskammbyssu</w>
+            <w lemma="vinna" type="sfg3eþ">vann</w>
+            <w lemma="Jórunn" type="nven-s">Jórunn</w>
+            <w lemma="Harðardóttir" type="nven-s">Harðardóttir</w>
+            <w lemma="með" type="ao">með</w>
+            <w lemma="533" type="ta">533</w>
+            <w lemma="stig" type="nhfo">stig</w>
+            <c type="punctuation">.</c>
+          </s>
+        </p>
+      </div1>
+    </body>
+  </text>
+</TEI>

@@ -32,7 +32,7 @@ class Treedraw(object):
 #	print("sdssssssssssssssssssssssssssssss")
 	f = open(fileName, 'r')
 	currentText = f.read()	
-	allchars = 'a-zA-Z0-9þæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\*\"\,\.\?\!\:$\+\-\{\}\_\<\>\/\&\;'
+	allchars = 'a-zA-Z0-9þæðöÞÆÐÖáéýúíóÁÉÝÚÍÓćĺŕśźĆĹŔŚŹäëïüÿÄËÏÜŸâîôûÂÎÔÛãñõÃÑÕàèìòùÀÈÌÒÙçÇģĢķĶņŅşŞţŢłŁđĐăĂğĞąęįǫųĄĘĮǪŲœŒďěčňšťžĎĚČŇŠŽāēīōūĀĒĪŌŪűŰßżŻİı„“”¿¡¢£¥©®\*\"\,\.\?\!\:$\+\-\{\}\_\<\>\/\&\;'
 	currentText = currentText.replace("<","&lt;");
 	currentText = currentText.replace(">","&gt;");
 	trees = currentText.split("\n\n")	
@@ -53,7 +53,7 @@ class Treedraw(object):
     def loadPsdOld( self, fileName ):
 	f = open("torf06.psd", 'r')
 	currentText = f.read()	
-	allchars = '0-9a-zA-ZþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓ\"\,\.$\-\=\*'
+	allchars = '0-9a-zA-ZþæðöÞÆÐÖáéýúíóÁÉÝÚÍÓćĺŕśźĆĹŔŚŹäëïüÿÄËÏÜŸâîôûÂÎÔÛãñõÃÑÕàèìòùÀÈÌÒÙçÇģĢķĶņŅşŞţŢłŁđĐăĂğĞąęįǫųĄĘĮǪŲœŒďěčňšťžĎĚČŇŠŽāēīōūĀĒĪŌŪűŰßżŻİı„“”¿¡¢£¥©®\"\,\.$\-\=\*'
 	trees = currentText.split("\n\n")
 	tree0 = trees[0].strip()
 	tree0 = re.sub('^\(','',tree0)

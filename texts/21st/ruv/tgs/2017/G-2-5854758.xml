@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>
+          <title type="main">Koemann svarar um komu Gylfa</title>
+        </title>
+        <respStmt>
+          <resp xml:lang="is">Söfnun og úrvinnsla texta</resp>
+          <resp xml:lang="en">Collection and processing of text</resp>
+          <name xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</name>
+          <name xml:lang="en">The Arni Magnusson Institute for Icelandic Studies</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <p xml:lang="is">Íslensk risamálheild (2018)</p>
+        <p xml:lang="en">Tagged Icelandic Gigaword Corpus (2018)</p>
+      </editionStmt>
+      <publicationStmt>
+        <distributor xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</distributor>
+        <distributor xml:lang="en">The Arni Magnusson Institute for Icelandic Studies</distributor>
+        <address>
+          <addrLine xml:lang="is">Árnagarður við Suðurgötu, 107 Reykjavík, Íslandi</addrLine>
+          <addrLine xml:lang="en">Árnagarður Suðurgata, 107 Reykjavik, Iceland</addrLine>
+          <addrLine>
+            <email>arnastofnun@arnastofnun.is</email>
+          </addrLine>
+        </address>
+        <idno type="risam">G-2-5854758</idno>
+        <availability>
+          <p xml:lang="is">Þessi texti er til notkunar í málrannsóknum og máltækniverkefnum um allan heim með sérstöku leyfi, sjá rmh2Hdr.xml</p>
+          <p xml:lang="en">This text is available for use in language research and language technology projects world wide with a special license, see rmh2Hdr.xml</p>
+        </availability>
+        <date>2020-01-07</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <analytic>
+            <title>
+              <title type="main">Koemann svarar um komu Gylfa</title>
+            </title>
+            <author>Þorkell Gunnar Sigurbjörnsson</author>
+            <date>2017-8-16</date>
+          </analytic>
+          <monogr>
+            <title>ruv.is</title>
+            <imprint>
+              <publisher>Ríkisútvarpið</publisher>
+            </imprint>
+            <biblScope>
+              <ref>http://ruv.is/node/1174773</ref>
+            </biblScope>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Sjá lýsingu á verkefninu í rmh2Hdr.xml.</p>
+        <p>See description of project in rmh2Hdr.xml.</p>
+      </projectDesc>
+      <tagsDecl>
+        <namespace name="http://www.tei-c.org/ns/1.0">
+          <tagUsage gi="text" occurs="1"/>
+          <tagUsage gi="body" occurs="1"/>
+          <tagUsage gi="div1" occurs="1"/>
+          <tagUsage gi="p" occurs="1"/>
+          <tagUsage gi="s" occurs="3"/>
+          <tagUsage gi="w" occurs="36"/>
+          <tagUsage gi="c" occurs="3"/>
+        </namespace>
+      </tagsDecl>
+    </encodingDesc>
+    <profileDesc>
+     <textClass>
+      <keywords scheme="#RMH">
+       <list>
+        <item>Gylfi Þór Sigurðsson</item>
+       </list>
+      </keywords>
+     </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div1>
+        <p n="1">
+          <s n="1">
+            <w lemma="Ronald" type="e">Ronald</w>
+            <w lemma="Koeman" type="e">Koeman</w>
+            <w lemma="knattspyrnustjóri" type="nken">knattspyrnustjóri</w>
+            <w lemma="Everton" type="e">Everton</w>
+            <w lemma="sitja" type="sfg3en">situr</w>
+            <w lemma="fyrir" type="aþ">fyrir</w>
+            <w lemma="svar" type="nhfþ">svörum</w>
+            <w lemma="á" type="aþ">á</w>
+            <w lemma="fréttamannafundur" type="nkeþ">fréttamannafundi</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="Liverpool" type="e">Liverpool</w>
+            <w lemma="vegna" type="ae">vegna</w>
+            <w lemma="leikur" type="nkee">leiks</w>
+            <w lemma="Everton" type="e">Everton</w>
+            <w lemma="og" type="c">og</w>
+            <w lemma="hadjukva" type="sfg3eþ">Hadjuk</w>
+            <w lemma="Split" type="e">Split</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="forkeppni" type="nveþ">forkeppni</w>
+            <w lemma="Evrópudeild" type="nveegs">Evrópudeildarinnar</w>
+            <w lemma="annar" type="foheo">annað</w>
+            <w lemma="kvöld" type="nheo">kvöld</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="2">
+            <w lemma="fundur" type="nkeng">Fundurinn</w>
+            <w lemma="hefja" type="sfm3en">hefst</w>
+            <w lemma="kl." type="as">kl.</w>
+            <w lemma="13:00" type="ta">13:00</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="3">
+            <w lemma="fyrstur" type="lvfnve">Fyrstu</w>
+            <w lemma="spurning" type="nvfn">spurningar</w>
+            <w lemma="fundur" type="nkeeg">fundarins</w>
+            <w lemma="snúa" type="sfm3fþ">snérust</w>
+            <w lemma="allur" type="fovfn">allar</w>
+            <w lemma="um" type="ao">um</w>
+            <w lemma="koma" type="nveo">komu</w>
+            <w lemma="Gylfi" type="nkee-s">Gylfa</w>
+            <w lemma="Þór" type="nkee-s">Þórs</w>
+            <w lemma="Sigurðsson" type="nkee-s">Sigurðssonar</w>
+            <c type="punctuation">.</c>
+          </s>
+        </p>
+      </div1>
+    </body>
+  </text>
+</TEI>

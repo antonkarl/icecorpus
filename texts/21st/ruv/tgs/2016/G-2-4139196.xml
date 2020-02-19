@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>
+          <title type="main">Prevc setti met í Slóveníu</title>
+        </title>
+        <respStmt>
+          <resp xml:lang="is">Söfnun og úrvinnsla texta</resp>
+          <resp xml:lang="en">Collection and processing of text</resp>
+          <name xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</name>
+          <name xml:lang="en">The Arni Magnusson Institute for Icelandic Studies</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <p xml:lang="is">Íslensk risamálheild (2018)</p>
+        <p xml:lang="en">Tagged Icelandic Gigaword Corpus (2018)</p>
+      </editionStmt>
+      <publicationStmt>
+        <distributor xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</distributor>
+        <distributor xml:lang="en">The Arni Magnusson Institute for Icelandic Studies</distributor>
+        <address>
+          <addrLine xml:lang="is">Árnagarður við Suðurgötu, 107 Reykjavík, Íslandi</addrLine>
+          <addrLine xml:lang="en">Árnagarður Suðurgata, 107 Reykjavik, Iceland</addrLine>
+          <addrLine>
+            <email>arnastofnun@arnastofnun.is</email>
+          </addrLine>
+        </address>
+        <idno type="risam">G-2-4139196</idno>
+        <availability>
+          <p xml:lang="is">Þessi texti er til notkunar í málrannsóknum og máltækniverkefnum um allan heim með sérstöku leyfi, sjá rmh2Hdr.xml</p>
+          <p xml:lang="en">This text is available for use in language research and language technology projects world wide with a special license, see rmh2Hdr.xml</p>
+        </availability>
+        <date>2020-01-07</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <analytic>
+            <title>
+              <title type="main">Prevc setti met í Slóveníu</title>
+            </title>
+            <author>Þorkell Gunnar Sigurbjörnsson</author>
+            <date>2016-3-17</date>
+          </analytic>
+          <monogr>
+            <title>ruv.is</title>
+            <imprint>
+              <publisher>Ríkisútvarpið</publisher>
+            </imprint>
+            <biblScope>
+              <ref>http://ruv.is/node/1003371</ref>
+            </biblScope>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Sjá lýsingu á verkefninu í rmh2Hdr.xml.</p>
+        <p>See description of project in rmh2Hdr.xml.</p>
+      </projectDesc>
+      <tagsDecl>
+        <namespace name="http://www.tei-c.org/ns/1.0">
+          <tagUsage gi="text" occurs="1"/>
+          <tagUsage gi="body" occurs="1"/>
+          <tagUsage gi="div1" occurs="1"/>
+          <tagUsage gi="p" occurs="4"/>
+          <tagUsage gi="s" occurs="5"/>
+          <tagUsage gi="w" occurs="79"/>
+          <tagUsage gi="c" occurs="9"/>
+        </namespace>
+      </tagsDecl>
+    </encodingDesc>
+    <profileDesc>
+     <textClass>
+      <keywords scheme="#RMH">
+       <list>
+        <item>Íþróttir</item>
+       </list>
+      </keywords>
+     </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div1>
+        <p n="1">
+          <s n="1">
+            <w lemma="slóvenskur" type="lkenvf">Slóvenski</w>
+            <w lemma="skíðastökkvari" type="nkeng">skíðastökkvarinn</w>
+            <w lemma="Peter" type="e">Peter</w>
+            <w lemma="Prevc" type="e">Prevc</w>
+            <w lemma="brjóta" type="sfg3eþ">braut</w>
+            <w lemma="í" type="ao">í</w>
+            <w lemma="dagur" type="nkeo">dag</w>
+            <w lemma="blað" type="nheo">blað</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="saga" type="nveþ">sögu</w>
+            <w lemma="heimsbikar" type="nkeeg">heimsbikarsins</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="skíðastökk" type="nheþ">skíðastökki</w>
+            <w lemma="þegar" type="c">þegar</w>
+            <w lemma="hann" type="fpken">hann</w>
+            <w lemma="vinna" type="sfg3eþ">vann</w>
+            <w lemma="fjórtándi" type="lheovf">fjórtánda</w>
+            <w lemma="heimsbikarmót" type="nheog">heimsbikarmótið</w>
+            <w lemma="í" type="ao">í</w>
+            <w lemma="vetur" type="nkeo">vetur</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="2">
+            <w lemma="þessi" type="fakeþ">Þessum</w>
+            <w lemma="áfangi" type="nkeþ">áfanga</w>
+            <w lemma="ná" type="sfg3eþ">náði</w>
+            <w lemma="Slóveni" type="nkengs">Slóveninn</w>
+            <w lemma="á" type="aþ">á</w>
+            <w lemma="þriðji" type="lheþvf">þriðja</w>
+            <w lemma="síðari" type="lheþve">síðasta</w>
+            <w lemma="mót" type="nheþ">móti</w>
+            <w lemma="vetur" type="nkeeg">vetrarins</w>
+            <w lemma="sem" type="ct">sem</w>
+            <w lemma="halda" type="sþghen">haldið</w>
+            <w lemma="vera" type="sfg3eþ">var</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="bær" type="nkeþg">bænum</w>
+            <w lemma="Planica" type="e">Planica</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="heimaland" type="nheþ">heimalandi</w>
+            <w lemma="hann" type="fpkee">hans</w>
+            <c type="punctuation">.</c>
+          </s>
+        </p>
+        <p n="2">
+          <s n="1">
+            <w lemma="Prevc" type="e">Prevc</w>
+            <w lemma="slá" type="sfg3eþ">sló</w>
+            <w lemma="þar" type="aa">þar</w>
+            <w lemma="með" type="ao">með</w>
+            <w lemma="met" type="nheo">met</w>
+            <w lemma="Austurríkismaður" type="nkeegs">Austurríkismannsins</w>
+            <w lemma="Gregor" type="nkee-s">Gregors</w>
+            <w lemma="Schlierenzauer" type="e">Schlierenzauer</w>
+            <c type="punctuation">,</c>
+            <w lemma="sem" type="ct">sem</w>
+            <w lemma="vinna" type="sfg3eþ">vann</w>
+            <w lemma="þrettán" type="tfhfo">þrettán</w>
+            <w lemma="heimsbikarmót" type="nhfo">heimsbikarmót</w>
+            <w lemma="vetur" type="nkeog">veturinn</w>
+            <w lemma="2008" type="ta">2008</w>
+            <w lemma="til" type="ae">til</w>
+            <w lemma="2009" type="ta">2009</w>
+            <c type="punctuation">.</c>
+          </s>
+        </p>
+        <p n="3">
+          <s n="1">
+            <w lemma="Peter" type="e">Peter</w>
+            <w lemma="Prevc" type="e">Prevc</w>
+            <w lemma="abbatte" type="e">abbatte</w>
+            <w lemma="nuovi" type="e">nuovi</w>
+            <w lemma="record" type="e">record</w>
+            <w lemma="vincendo" type="e">vincendo</w>
+            <w lemma="la" type="e">la</w>
+            <w lemma="prima" type="e">prima</w>
+            <w lemma="gara" type="nven">gara</w>
+            <w lemma="di" type="e">di</w>
+            <w lemma="Planica" type="e">Planica</w>
+            <w lemma="#skijumping" type="e">#skijumping</w>
+            <w lemma="#nordicski" type="e">#nordicski</w>
+            <w lemma="…" type="e">…</w>
+            <w lemma="https://t.co/y3EgRnZG1x" type="e">https://t.co/y3EgRnZG1x</w>
+            <w lemma="pic.twitter.com" type="v">pic.twitter.com</w>
+            <c type="punctuation">/</c>
+            <w lemma="Op" type="e">Op</w>
+            <w lemma="6" type="ta">6</w>
+            <w lemma="aDZOUre" type="e">aDZOUre</w>
+          </s>
+        </p>
+        <p n="4">
+          <s n="1">
+            <c type="punctuation">-</c>
+            <w lemma="neveitalia" type="nven">NEVEITALIA</w>
+            <w lemma="®" type="x">®</w>
+            <c type="punctuation">(</c>
+            <w lemma="@neveitalia" type="e">@neveitalia</w>
+            <c type="punctuation">)</c>
+            <w lemma="March" type="e">March</w>
+            <w lemma="17" type="ta">17</w>
+            <c type="punctuation">,</c>
+            <w lemma="2016" type="ta">2016</w>
+          </s>
+        </p>
+      </div1>
+    </body>
+  </text>
+</TEI>

@@ -84,6 +84,8 @@
     They should have exactly the same structure as þar sem clauses.
     Compare with the synonymous “þá er…”. Subclauses starting with meðan and uns are
     the same. Look at þar til…, þangað til… as well.
+    Sometimes þegar að, meðan að, etc. Consider also eftir að, which has an obligatory
+    C að, but is perhaps otherwise similar.
 
 18. How to treat follow-up questions with only one constituent corresponding
     to the WXP in the previous question (but not itself a WXP).
@@ -109,6 +111,7 @@
     marked specially, or should it be its own FRAG?
 
 25. Incomplete questions (e.g. of the form “Hvað ef …” or “Hvað með …”).
+    SOLVED: Use FRAG instead of IP-SUB.
 
 26. Should ADVP saman be marked somehow as a secondary predicate, e.g. þau gerðu þetta saman.
 
@@ -120,3 +123,27 @@
     
 29. Should we separate instance count (oft, margoft, sjaldan, alltaf, tvisvar etc.)
     from temporal adverbs (nú, etc.)?
+    
+30. CP-DEG should likely be used in various additional circumstances: sometimes with SÁ,
+    with FYRST (fyrst þú komst, etc.)
+    
+31. Titles as shared premodifiers, e.g. hv. þm. (plural) Ólína Þorvarðardóttir og
+    Mörður Árnason
+    
+32. Phrasal compounds, e.g. 1–0 sigur.
+    Proposed solution: tag the phrase used as the left component of a compound according
+    to its inner structure/parts of speech and add the extra label -CPD: NP-CPD,
+    ADVP-CPD, IP-IMP-CPD, etc., e.g. (NP (NP-CPD 1–0) (N-N sigur))
+    This method should normally not be used if the left part is only a single word, e.g.
+    “PGA meistaramótið”, in which case the modifier is merged with the noun head using N21
+    and N22 encapsulated in a non-leaf N.
+    Should NP-POS that are really part of a kind of compound noun be tagged NP-POS-CPD?
+    e.g. (NP-POS-CPD iðnaðar- og landbúnaðar$) ($ráðherra), or even nested in
+    (NP (NP-POS-CPD (NP-POS-CPD dóms- og kirkju$) (N-G $mála$)) (N-N $ráðherra))
+    
+    „final four“ fyrirkomulag??
+    
+33. Locative or origin/affiliation designations in the dative case: Leiknir Fáskrúðsfirði.
+    Proposed solution: Tag as NP-LOC.
+    
+    

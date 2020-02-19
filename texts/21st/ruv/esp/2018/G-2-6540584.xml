@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>
+          <title type="main">Aron Einar áfram hjá Cardiff</title>
+        </title>
+        <respStmt>
+          <resp xml:lang="is">Söfnun og úrvinnsla texta</resp>
+          <resp xml:lang="en">Collection and processing of text</resp>
+          <name xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</name>
+          <name xml:lang="en">The Arni Magnusson Institute for Icelandic Studies</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <p xml:lang="is">Íslensk risamálheild (2018)</p>
+        <p xml:lang="en">Tagged Icelandic Gigaword Corpus (2018)</p>
+      </editionStmt>
+      <publicationStmt>
+        <distributor xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</distributor>
+        <distributor xml:lang="en">The Arni Magnusson Institute for Icelandic Studies</distributor>
+        <address>
+          <addrLine xml:lang="is">Árnagarður við Suðurgötu, 107 Reykjavík, Íslandi</addrLine>
+          <addrLine xml:lang="en">Árnagarður Suðurgata, 107 Reykjavik, Iceland</addrLine>
+          <addrLine>
+            <email>arnastofnun@arnastofnun.is</email>
+          </addrLine>
+        </address>
+        <idno type="risam">G-2-6540584</idno>
+        <availability>
+          <p xml:lang="is">Þessi texti er til notkunar í málrannsóknum og máltækniverkefnum um allan heim með sérstöku leyfi, sjá rmh2Hdr.xml</p>
+          <p xml:lang="en">This text is available for use in language research and language technology projects world wide with a special license, see rmh2Hdr.xml</p>
+        </availability>
+        <date>2020-01-07</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <analytic>
+            <title>
+              <title type="main">Aron Einar áfram hjá Cardiff</title>
+            </title>
+            <author>Edda Sif Pálsdóttir</author>
+            <date>2018-7-9</date>
+          </analytic>
+          <monogr>
+            <title>ruv.is</title>
+            <imprint>
+              <publisher>Ríkisútvarpið</publisher>
+            </imprint>
+            <biblScope>
+              <ref>http://ruv.is/node/1291663</ref>
+            </biblScope>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Sjá lýsingu á verkefninu í rmh2Hdr.xml.</p>
+        <p>See description of project in rmh2Hdr.xml.</p>
+      </projectDesc>
+      <tagsDecl>
+        <namespace name="http://www.tei-c.org/ns/1.0">
+          <tagUsage gi="text" occurs="1"/>
+          <tagUsage gi="body" occurs="1"/>
+          <tagUsage gi="div1" occurs="1"/>
+          <tagUsage gi="p" occurs="1"/>
+          <tagUsage gi="s" occurs="3"/>
+          <tagUsage gi="w" occurs="45"/>
+          <tagUsage gi="c" occurs="5"/>
+        </namespace>
+      </tagsDecl>
+    </encodingDesc>
+    <profileDesc>
+     <textClass>
+      <keywords scheme="#RMH">
+       <list>
+        <item>Fótbolti</item>
+       </list>
+      </keywords>
+     </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div1>
+        <p n="1">
+          <s n="1">
+            <w lemma="Aron" type="nken-s">Aron</w>
+            <w lemma="Einar" type="nken-s">Einar</w>
+            <w lemma="Gunnarsson" type="nken-s">Gunnarsson</w>
+            <c type="punctuation">,</c>
+            <w lemma="landsliðsfyrirliði" type="nken">landsliðsfyrirliði</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="fótbolti" type="nkeþ">fótbolta</w>
+            <c type="punctuation">,</c>
+            <w lemma="verða" type="sfg3en">verður</w>
+            <w lemma="áfram" type="aa">áfram</w>
+            <w lemma="hjá" type="aþ">hjá</w>
+            <w lemma="velskur" type="lheþvf">velska</w>
+            <w lemma="félag" type="nheþg">félaginu</w>
+            <w lemma="Cardiff" type="e">Cardiff</w>
+            <w lemma="City" type="e">City</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="2">
+            <w lemma="þar" type="aa">Þar</w>
+            <w lemma="hafa" type="sfg3en">hefur</w>
+            <w lemma="hann" type="fpken">hann</w>
+            <w lemma="spila" type="ssg">spilað</w>
+            <w lemma="frá" type="aþ">frá</w>
+            <w lemma="2011" type="ta">2011</w>
+            <w lemma="en" type="c">en</w>
+            <w lemma="samningur" type="nken">samningur</w>
+            <w lemma="hann" type="fpkee">hans</w>
+            <w lemma="renna" type="sfg3eþ">rann</w>
+            <w lemma="út" type="aa">út</w>
+            <w lemma="nú" type="aa">nú</w>
+            <w lemma="um" type="ao">um</w>
+            <w lemma="mánaðamót" type="nhfog">mánaðamótin</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="3">
+            <w lemma="í" type="ao">Í</w>
+            <w lemma="dagur" type="nkeo">dag</w>
+            <w lemma="vera" type="sfg3eþ">var</w>
+            <w lemma="svo" type="aa">svo</w>
+            <w lemma="staðfesta" type="sþghen">staðfest</w>
+            <w lemma="á" type="aþ">á</w>
+            <w lemma="heimasíða" type="nveþ">heimasíðu</w>
+            <w lemma="félag" type="nheeg">félagsins</w>
+            <w lemma="að" type="c">að</w>
+            <w lemma="Aron" type="nken-s">Aron</w>
+            <w lemma="hafa" type="svg3eþ">hefði</w>
+            <w lemma="skrifa" type="ssg">skrifað</w>
+            <w lemma="undir" type="ao">undir</w>
+            <w lemma="nýr" type="lkeosf">nýjan</w>
+            <w lemma="samningur" type="nkeo">samning</w>
+            <w lemma="til" type="ae">til</w>
+            <w lemma="einn" type="tfhee">eins</w>
+            <w lemma="ár" type="nhee">árs</w>
+            <c type="punctuation">.</c>
+          </s>
+        </p>
+      </div1>
+    </body>
+  </text>
+</TEI>

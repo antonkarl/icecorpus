@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>
+          <title type="main">EM í 25 m laug - Úrslitasund Hrafnhildar</title>
+        </title>
+        <respStmt>
+          <resp xml:lang="is">Söfnun og úrvinnsla texta</resp>
+          <resp xml:lang="en">Collection and processing of text</resp>
+          <name xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</name>
+          <name xml:lang="en">The Arni Magnusson Institute for Icelandic Studies</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <p xml:lang="is">Íslensk risamálheild (2018)</p>
+        <p xml:lang="en">Tagged Icelandic Gigaword Corpus (2018)</p>
+      </editionStmt>
+      <publicationStmt>
+        <distributor xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</distributor>
+        <distributor xml:lang="en">The Arni Magnusson Institute for Icelandic Studies</distributor>
+        <address>
+          <addrLine xml:lang="is">Árnagarður við Suðurgötu, 107 Reykjavík, Íslandi</addrLine>
+          <addrLine xml:lang="en">Árnagarður Suðurgata, 107 Reykjavik, Iceland</addrLine>
+          <addrLine>
+            <email>arnastofnun@arnastofnun.is</email>
+          </addrLine>
+        </address>
+        <idno type="risam">G-2-6294269</idno>
+        <availability>
+          <p xml:lang="is">Þessi texti er til notkunar í málrannsóknum og máltækniverkefnum um allan heim með sérstöku leyfi, sjá rmh2Hdr.xml</p>
+          <p xml:lang="en">This text is available for use in language research and language technology projects world wide with a special license, see rmh2Hdr.xml</p>
+        </availability>
+        <date>2020-01-07</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <analytic>
+            <title>
+              <title type="main">EM í 25 m laug - Úrslitasund Hrafnhildar</title>
+            </title>
+            <author>Þorkell Gunnar Sigurbjörnsson</author>
+            <date>2017-12-13</date>
+          </analytic>
+          <monogr>
+            <title>ruv.is</title>
+            <imprint>
+              <publisher>Ríkisútvarpið</publisher>
+            </imprint>
+            <biblScope>
+              <ref>http://ruv.is/node/1219069</ref>
+            </biblScope>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Sjá lýsingu á verkefninu í rmh2Hdr.xml.</p>
+        <p>See description of project in rmh2Hdr.xml.</p>
+      </projectDesc>
+      <tagsDecl>
+        <namespace name="http://www.tei-c.org/ns/1.0">
+          <tagUsage gi="text" occurs="1"/>
+          <tagUsage gi="body" occurs="1"/>
+          <tagUsage gi="div1" occurs="1"/>
+          <tagUsage gi="p" occurs="2"/>
+          <tagUsage gi="s" occurs="6"/>
+          <tagUsage gi="w" occurs="67"/>
+          <tagUsage gi="c" occurs="6"/>
+        </namespace>
+      </tagsDecl>
+    </encodingDesc>
+    <profileDesc>
+     <textClass>
+      <keywords scheme="#RMH">
+       <list>
+        <item>Sund</item>
+       </list>
+      </keywords>
+     </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div1>
+        <p n="1">
+          <s n="1">
+            <w lemma="evrópumót" type="nheng">Evrópumótið</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="sund" type="nheþ">sundi</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="25" type="ta">25</w>
+            <w lemma="m" type="as">m</w>
+            <w lemma="laug" type="as">laug</w>
+            <w lemma="hefja" type="sfm3eþ">hófst</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="Kaupmannahöfn" type="nveþ-s">Kaupmannahöfn</w>
+            <w lemma="í" type="ao">í</w>
+            <w lemma="morgunn" type="nkeo">morgun</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="2">
+            <w lemma="RÚV" type="as">RÚV</w>
+            <w lemma="sýna" type="sfg3en">sýnir</w>
+            <w lemma="beint" type="aa">beint</w>
+            <w lemma="frá" type="aþ">frá</w>
+            <w lemma="úrslitahlutur" type="nkfþ">úrslitahlutum</w>
+            <w lemma="mót" type="nheeg">mótsins</w>
+            <w lemma="allur" type="fokfo">alla</w>
+            <w lemma="keppnisdagur" type="nkfog">keppnisdagana</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="3">
+            <w lemma="útsending" type="nveng">Útsendingin</w>
+            <w lemma="í" type="ao">í</w>
+            <w lemma="dagur" type="nkeo">dag</w>
+            <w lemma="hefja" type="sfm3eþ">hófst</w>
+            <w lemma="kl." type="as">kl.</w>
+            <w lemma="15:55" type="ta">15:55</w>
+            <w lemma="á" type="aþ">á</w>
+            <w lemma="RÚV" type="as">RÚV</w>
+            <w lemma="og" type="c">og</w>
+            <w lemma="mega" type="sfg3en">má</w>
+            <w lemma="sjá" type="sng">sjá</w>
+            <w lemma="hún" type="fpveo">hana</w>
+            <w lemma="hér" type="aa">hér</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="spilari" type="nkeþg">spilaranum</w>
+            <w lemma="fyrir" type="aa">fyrir</w>
+            <w lemma="ofan" type="aa">ofan</w>
+            <c type="punctuation">.</c>
+          </s>
+        </p>
+        <p n="2">
+          <s n="1">
+            <w lemma="einn" type="tfken">Einn</w>
+            <w lemma="Íslendingur" type="nken-s">Íslendingur</w>
+            <w lemma="vera" type="sfg3en">er</w>
+            <w lemma="meðal" type="ae">meðal</w>
+            <w lemma="keppandi" type="nkfe">keppenda</w>
+            <w lemma="seinn" type="lkeovm">seinni</w>
+            <w lemma="partur" type="nkeog">partinn</w>
+            <w lemma="í" type="ao">í</w>
+            <w lemma="dagur" type="nkeo">dag</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="2">
+            <w lemma="það" type="fphen">Það</w>
+            <w lemma="vera" type="sfg3en">er</w>
+            <w lemma="Hrafnhildur" type="nven-s">Hrafnhildur</w>
+            <w lemma="Lúthersdóttir" type="nven-s">Lúthersdóttir</w>
+            <w lemma="sem" type="ct">sem</w>
+            <w lemma="synda" type="sfg3en">syndir</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="undanúrslit" type="nhfþ">undanúrslitum</w>
+            <w lemma="50" type="ta">50</w>
+            <w lemma="m" type="as">m</w>
+            <w lemma="bringusund" type="nheeg">bringusundsins</w>
+            <w lemma="kl." type="as">kl.</w>
+            <w lemma="16:08" type="ta">16:08</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="3">
+            <w lemma="koma" type="sfm3en">Komist</w>
+            <w lemma="hún" type="fpven">hún</w>
+            <w lemma="í" type="ao">í</w>
+            <w lemma="úrslit" type="nhfo">úrslit</w>
+            <w lemma="vera" type="sfg3fn">eru</w>
+            <w lemma="úrslit" type="nhfng">úrslitin</w>
+            <w lemma="kl." type="as">kl.</w>
+            <w lemma="17:13" type="ta">17:13</w>
+            <c type="punctuation">.</c>
+          </s>
+        </p>
+      </div1>
+    </body>
+  </text>
+</TEI>

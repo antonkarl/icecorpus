@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>
+          <title type="main">Ólafía lék fyrsta hring á einu höggi yfir pari</title>
+        </title>
+        <respStmt>
+          <resp xml:lang="is">Söfnun og úrvinnsla texta</resp>
+          <resp xml:lang="en">Collection and processing of text</resp>
+          <name xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</name>
+          <name xml:lang="en">The Arni Magnusson Institute for Icelandic Studies</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <p xml:lang="is">Íslensk risamálheild (2018)</p>
+        <p xml:lang="en">Tagged Icelandic Gigaword Corpus (2018)</p>
+      </editionStmt>
+      <publicationStmt>
+        <distributor xml:lang="is">Stofnun Árna Magnússonar í íslenskum fræðum</distributor>
+        <distributor xml:lang="en">The Arni Magnusson Institute for Icelandic Studies</distributor>
+        <address>
+          <addrLine xml:lang="is">Árnagarður við Suðurgötu, 107 Reykjavík, Íslandi</addrLine>
+          <addrLine xml:lang="en">Árnagarður Suðurgata, 107 Reykjavik, Iceland</addrLine>
+          <addrLine>
+            <email>arnastofnun@arnastofnun.is</email>
+          </addrLine>
+        </address>
+        <idno type="risam">G-2-6590762</idno>
+        <availability>
+          <p xml:lang="is">Þessi texti er til notkunar í málrannsóknum og máltækniverkefnum um allan heim með sérstöku leyfi, sjá rmh2Hdr.xml</p>
+          <p xml:lang="en">This text is available for use in language research and language technology projects world wide with a special license, see rmh2Hdr.xml</p>
+        </availability>
+        <date>2020-01-07</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <analytic>
+            <title>
+              <title type="main">Ólafía lék fyrsta hring á einu höggi yfir pari</title>
+            </title>
+            <author>Þorkell Gunnar Sigurbjörnsson</author>
+            <date>2018-9-20</date>
+          </analytic>
+          <monogr>
+            <title>ruv.is</title>
+            <imprint>
+              <publisher>Ríkisútvarpið</publisher>
+            </imprint>
+            <biblScope>
+              <ref>http://ruv.is/node/1314093</ref>
+            </biblScope>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Sjá lýsingu á verkefninu í rmh2Hdr.xml.</p>
+        <p>See description of project in rmh2Hdr.xml.</p>
+      </projectDesc>
+      <tagsDecl>
+        <namespace name="http://www.tei-c.org/ns/1.0">
+          <tagUsage gi="text" occurs="1"/>
+          <tagUsage gi="body" occurs="1"/>
+          <tagUsage gi="div1" occurs="1"/>
+          <tagUsage gi="p" occurs="2"/>
+          <tagUsage gi="s" occurs="4"/>
+          <tagUsage gi="w" occurs="78"/>
+          <tagUsage gi="c" occurs="6"/>
+        </namespace>
+      </tagsDecl>
+    </encodingDesc>
+    <profileDesc>
+     <textClass>
+      <keywords scheme="#RMH">
+       <list>
+        <item>Golf</item>
+       </list>
+      </keywords>
+     </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div1>
+        <p n="1">
+          <s n="1">
+            <w lemma="Ólafía" type="nven-s">Ólafía</w>
+            <w lemma="Þórunn" type="nven-s">Þórunn</w>
+            <w lemma="Kristinsdóttir" type="nven-s">Kristinsdóttir</w>
+            <w lemma="leika" type="sfg3eþ">lék</w>
+            <w lemma="fyrstur" type="lkeove">fyrsta</w>
+            <w lemma="hringur" type="nkeo">hring</w>
+            <w lemma="Erstelli" type="nkee-s">Erstella</w>
+            <w lemma="Damm" type="nkee-s">Damm</w>
+            <w lemma="mót" type="nheeg">mótsins</w>
+            <w lemma="á" type="aþ">á</w>
+            <w lemma="Evrópumótaröð" type="nveþ-s">Evrópumótaröð</w>
+            <w lemma="kona" type="nvfe">kvenna</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="golf" type="nheþ">golfi</w>
+            <w lemma="í" type="ao">í</w>
+            <w lemma="dagur" type="nkeo">dag</w>
+            <w lemma="á" type="aþ">á</w>
+            <w lemma="einn" type="tfheþ">einu</w>
+            <w lemma="högg" type="nheþ">höggi</w>
+            <w lemma="yfir" type="aþ">yfir</w>
+            <w lemma="par" type="nheþ">pari</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="2">
+            <w lemma="mót" type="nheng">Mótið</w>
+            <w lemma="vera" type="sfg3en">er</w>
+            <w lemma="halda" type="sþghen">haldið</w>
+            <w lemma="í" type="aþ">í</w>
+            <w lemma="Sitges" type="e">Sitges</w>
+            <c type="punctuation">,</c>
+            <w lemma="skammt" type="aa">skammt</w>
+            <w lemma="frá" type="aþ">frá</w>
+            <w lemma="Barcelona" type="e">Barcelona</w>
+            <w lemma="á" type="aþ">á</w>
+            <w lemma="Spánn" type="nkeþ-s">Spáni</w>
+            <c type="punctuation">.</c>
+          </s>
+        </p>
+        <p n="2">
+          <s n="1">
+            <w lemma="Ólafía" type="nven-s">Ólafía</w>
+            <w lemma="fá" type="sfg3eþ">fékk</w>
+            <w lemma="þrír" type="tfkfo">þrjá</w>
+            <w lemma="skollur" type="nkfo">skolla</w>
+            <w lemma="og" type="c">og</w>
+            <w lemma="tveir" type="tfkfo">tvo</w>
+            <w lemma="fugl" type="nkfo">fugla</w>
+            <w lemma="á" type="aþ">á</w>
+            <w lemma="hringur" type="nkeþg">hringnum</w>
+            <c type="punctuation">,</c>
+            <w lemma="þar" type="aa">þar</w>
+            <w lemma="af" type="aþ">af</w>
+            <w lemma="skolli" type="nkeþ">skolla</w>
+            <w lemma="á" type="aþ">á</w>
+            <w lemma="átjándi" type="lveþvf">átjándu</w>
+            <w lemma="og" type="c">og</w>
+            <w lemma="síðari" type="lveeve">síðustu</w>
+            <w lemma="hola" type="nvee">holu</w>
+            <w lemma="völlur" type="nkeeg">vallarins</w>
+            <c type="punctuation">.</c>
+          </s>
+          <s n="2">
+            <w lemma="um" type="ao">Um</w>
+            <w lemma="sá" type="faheo">það</w>
+            <w lemma="bil" type="nheo">bil</w>
+            <w lemma="helmingur" type="nken">helmingur</w>
+            <w lemma="kylfingur" type="nkfe">kylfinga</w>
+            <w lemma="koma" type="sfm3en">kemst</w>
+            <w lemma="í" type="aa">í</w>
+            <w lemma="gegnum" type="ao">gegnum</w>
+            <w lemma="niðurskurður" type="nkeo">niðurskurð</w>
+            <w lemma="mót" type="nheeg">mótsins</w>
+            <w lemma="og" type="c">og</w>
+            <w lemma="ráða" type="sfm3en">ræðst</w>
+            <w lemma="það" type="fphen">það</w>
+            <w lemma="að" type="aþ">að</w>
+            <w lemma="lokinn" type="lkeþsf">loknum</w>
+            <w lemma="annar" type="fokeþ">öðrum</w>
+            <w lemma="hringur" type="nkeþ">hring</w>
+            <w lemma="á" type="ao">á</w>
+            <w lemma="morgunn" type="nkeo">morgun</w>
+            <w lemma="hvort" type="c">hvort</w>
+            <w lemma="Ólafía" type="nven-s">Ólafía</w>
+            <w lemma="fá" type="svg3en">fái</w>
+            <w lemma="að" type="cn">að</w>
+            <w lemma="leika" type="sng">leika</w>
+            <w lemma="síðari" type="lkfove">síðustu</w>
+            <w lemma="tveir" type="tfkfo">tvo</w>
+            <w lemma="hringur" type="nkfog">hringina</w>
+            <w lemma="á" type="aþ">á</w>
+            <w lemma="mót" type="nheþg">mótinu</w>
+            <c type="punctuation">.</c>
+          </s>
+        </p>
+      </div1>
+    </body>
+  </text>
+</TEI>

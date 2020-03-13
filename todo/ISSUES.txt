@@ -25,7 +25,7 @@
    e.g. fram í
 
 6. Participle (not in larger NP/ADJP) describing result or state vs.
-   current action; VAN/VBN/VAG vs. ADJ (single ADJ in its own ADJP)
+   current action; VAN/VBN/VAG vs. ADJ (single ADJ in its own ADJP or IP-PPL)
 
 7. Treatment of nema
 
@@ -36,6 +36,8 @@
    Guðmundi.“
 
 9. Rethink CP-EOP and CP-TMC
+   One particularly difficult example:
+   … til mikils að vinna að við reynum …
 
 10. How to treat uninflected right adjuncts (especially numbers or
     letters) in NPs, e.g. years, hours of the clock, chapter, page
@@ -45,7 +47,7 @@
     the only word in the NP, e.g. (NP 2013); consider case marking
     in NPs such as (NP árinu 2003) – one might be tempted to consider
     2003 an NP-PRN, but is it really dative (tvö þúsund og *þrjú*)?
-    Example in corpus also e.g. (PP frá 1973), (NP ársins 2013).
+    Examples in corpus also e.g. (PP frá 1973), (NP ársins 2013).
 
 11. Quantifier vs. adverb (mikið, lítið, svolítið, dálítið, nokkuð,
     lítið eitt, neitt, eitthvað, ekkert) and questions of NP-MSR vs.
@@ -78,6 +80,7 @@
     actually applies to all instances of hundrað/þúsund/milljón that have
     previously been analyzed as NUM? Compare also with issue 11, in particular
     noun intensifiers such as ósköp. 
+    SOLVED: Use NP-CPD (except for number nouns, e.g. þúsund, for now)
 
 17. Subclauses starting with þegar and síðan actually always have a gap (NP-TMP),
     so it is inappropriate to parse them as PP with CP-ADV without a gap.
@@ -92,6 +95,7 @@
 
 19. Treatment of finite (independent) sentences in headline/telegraph style,
     where the verb BE or similar is omitted, similarly to IP-SMC.
+    SOLVED: Analyse as IP-ABS.
 
 20. Right node raising: the right sentence/constituent seems rather to be
     the dominant one, with a gap in the left one; it would be nice to indicate
@@ -125,7 +129,7 @@
     from temporal adverbs (nú, etc.)?
     
 30. CP-DEG should likely be used in various additional circumstances: sometimes with SÁ,
-    with FYRST (fyrst þú komst, etc.)
+    with FYRST (fyrst þú komst, etc.), definitely with SVO, etc.
     
 31. Titles as shared premodifiers, e.g. hv. þm. (plural) Ólína Þorvarðardóttir og
     Mörður Árnason
@@ -145,5 +149,17 @@
     
 33. Locative or origin/affiliation designations in the dative case: Leiknir Fáskrúðsfirði.
     Proposed solution: Tag as NP-LOC.
+    
+34. Complex adverbial/prepositional phrases (often temporal or locative), e.g.
+    “nú rétt fyrir hádegi”, “hér á Alþingi”, “nú í dag”, “strax í dag”, “fyrr í dag”,
+    “einmitt í dag”, “fyrir hádegi í dag”
+    
+35. CP-ADV with sem should be CP-CMP, e.g. “að hleypa Samfylkingunni og Vinstri grænum
+    að, fyrst [sem minnihlutastjórn]”
+    
+36. Þangað til [þú komst], þar til …, need to be fixed. They should have (ADVP þangað/þar)
+    as prepositional complement moved to spec-PP with the CP after the P head moved out of
+    ADVP. That CP should probably be a CP-REL and needs to have a ADVP-TMP trace.
+    Compare also þar til í mars with frá því í mars
     
     

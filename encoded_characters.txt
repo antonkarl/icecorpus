@@ -7,5 +7,8 @@ As XML tag:
 %	<percent/>
 
 Separated from adjacent word as CODE:
-(	(CODE PR:S)
-)	(CODE PR:E)
+(	(CODE PR:S) or (CODE <paren>)
+)	(CODE PR:E) or (CODE </paren>)
+
+Occasionally left combined with the preceding word (number or letter):
+)       <closeparen/>

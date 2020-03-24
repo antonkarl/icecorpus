@@ -90,7 +90,7 @@
 
 ( (NP (N-N Karlaflokkur-karlaflokkur) (. :-:)))
 
-( (FRAG (ADJP (ADJ-N 1.-fyrstur))
+( (FRAG (LS (ADJ-N 1.-fyrstur))
 	(NP (NPR-N Birgir-birgir)
 	    (NPR-N Leifur-leifur)
 	    (NPR-N Hafþórsson-hafþórsson)
@@ -100,7 +100,7 @@
 	(NP (NUM-N 98-98))
 	(CODE </paren>)))
 
-( (FRAG (ADJP (ADJ-N 2.-annar))
+( (FRAG (LS (ADJ-N 2.-annar))
 	(NP (NPR-N Gísli-gísli)
 	    (NPR-N Sveinbergsson-sveinbergsson)
 	    (, ,-,)
@@ -109,7 +109,7 @@
 	(NP (NUM-N 69-69))
 	(CODE </paren>)))
 
-( (FRAG (ADJP (ADJ-N 3.-þriðji))
+( (FRAG (LS (ADJ-N 3.-þriðji))
 	(NP (NPR-N Axel-axel)
 	    (NPR-N Bóasson-bóasson)
 	    (, ,-,)
@@ -118,7 +118,7 @@
 	(NP (NUM-N 50-fimmtíu))
 	(CODE </paren>)))
 
-( (FRAG (ADJP (ADJ-N 4.-fjórði))
+( (FRAG (LS (ADJ-N 4.-fjórði))
 	(NP (NPR-N Andri-andri)
 	    (NPR-N Þór-þór)
 	    (NPR-N Björnsson-björnsson)
@@ -128,7 +128,7 @@
 	(NP (NUM-N 41-41))
 	(CODE </paren>)))
 
-( (FRAG (ADJP (ADJ-N 5-fimmti))
+( (FRAG (LS (ADJ-N 5-fimmti))
 	(NP (NPR-N Þórður-þórður)
 	    (NPR-N Rafn-rafn)
 	    (NPR-N Gissurarson-gissurarson)
@@ -140,8 +140,7 @@
 
 ( (NP (N-N Kvennaflokkur-kvennaflokkur) (. :-:)))
 
-( (FRAG (CODE *XXX*LS?)
-	(ADJP (ADJ-N 1.-fyrstur))
+( (FRAG (LS (ADJ-N 1.-fyrstur))
 	(NP (NPR-N Ólafía-ólafía)
 	    (NPR-N Þórunn-þórunn)
 	    (NPR-N Kristinsdóttir-kristinsdóttir)
@@ -151,7 +150,7 @@
 	(NP (NUM-N 107-107))
 	(CODE </paren>)))
 
-( (FRAG (ADJP (ADJ-N 2.-annar))
+( (FRAG (LS (ADJ-N 2.-annar))
 	(NP-SBJ (NPR-N Guðrún-guðrún)
 		(NPR-N Brá-brá)
 		(NPR-N Björgvinsdóttir-björgvinsdóttir)
@@ -161,7 +160,7 @@
 	(NP (NUM-N 87-87))
 	(CODE </paren>)))
 
-( (FRAG (ADJP (NUM-N 3.-þriðji))
+( (FRAG (LS (NUM-N 3.-þriðji))
 	(NP-SBJ (NPR-N Valdís-valdís)
 		(NPR-N Þóra-þóra)
 		(NPR-N Jensdóttir-jensdóttir)
@@ -171,7 +170,7 @@
 	(NP (NUM-N 67-67))
 	(CODE </paren>)))
 
-( (FRAG (ADJP (NUM-N 4.-fjórði))
+( (FRAG (LS (NUM-N 4.-fjórði))
 	(NP (NPR-N Signý-signý)
 	    (NPR-N Arnórsdóttir-arnórsdóttir)
 	    (, ,-,)
@@ -181,7 +180,7 @@
 	(NP (NUM-N 47-47))
 	(CODE </paren>)))
 
-( (FRAG (ADJP (NUM-N 5.-fimmti))
+( (FRAG (LS (NUM-N 5.-fimmti))
 	(NP (NPR-N Sunna-sunna)
 	    (NPR-N Víðisdóttir-víðisdóttir)
 	    (, ,-,)

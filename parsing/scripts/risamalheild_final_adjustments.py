@@ -45,6 +45,7 @@ output = output.replace("(as umr.-umr.)", "(N-N umr.-umræða)")
 output = output.replace("(as mgr.-mgr.)", "(N-N mgr.-málsgrein)")
 output = output.replace("(as nr.-nr.)", "(N-N nr.-númer)")
 output = output.replace("(as km-km)", "(NS-N km-kílómetri)")
+output = output.replace("(as m-m)", "(NS-N m-metri)")
 output = output.replace("(as kl.-kl.)", "(N-N kl.$-klukka) (D-N $-hinn)")
 
 # fix cardinals

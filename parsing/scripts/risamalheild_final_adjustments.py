@@ -49,6 +49,7 @@ output = output.replace("(as m-m)", "(NS-N m-metri)")
 output = output.replace("(as kl.-kl.)", "(N-N kl.$-klukka) (D-N $-hinn)")
 
 # fix cardinals
+output = re.sub(r"\(NUM-([A-Z0-9-]+) 0-0\)", r"(ONE-\1 0-núll)", output)
 output = re.sub(r"\(NUM-([A-Z0-9-]+) 1-1\)", r"(ONE-\1 1-einn)", output)
 output = re.sub(r"\(NUM-([A-Z0-9-]+) 2-2\)", r"(NUM-\1 2-tveir)", output)
 output = re.sub(r"\(NUM-([A-Z0-9-]+) 3-3\)", r"(NUM-\1 3-þrír)", output)

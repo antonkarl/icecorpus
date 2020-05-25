@@ -25,8 +25,7 @@
 
 ( (IP-MAT (NP-SBJ (PRO-N þeir-hann))
 	  (VBDI komust-koma)
-	  (CODE *XXX*)
-	  (NP-TMP (NUM-D átta-átta) (NS-D sinnum-sinn))
+	  (NP-ADV (NUM-D átta-átta) (NS-D sinnum-sinn))
 	  (PP (P í-í)
 	      (NP (NS-A úrslit-úrslit)))))
 
@@ -130,7 +129,8 @@
 	      (NP (N-G sundheims$-sundheim) (D-G $ins-hinn)))
 	  (. .-.)))
 
-( (IP-MAT (CODE *XXX*)
+( (IP-MAT (CODE {COM:Perhaps_some_kind_of_tough_movement_structure})
+	  (CODE {COM:Unclear;_perhaps_NP-MSR})
 	  (ADJP (ADJS-N Skemmst-skammur))
 	  (BEPI er-vera)
 	  (IP-INF-SBJ (TO að-að)

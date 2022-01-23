@@ -17768,9 +17768,9 @@
 
 ( (IP-MAT (NP-SBJ (NPR-N Gissur-gissur))
 	  (BEPI er-vera)
-	  (NP-PRD (NP (ADJ-N greindur-greina) (N-N maður-maður))
+	  (NP-PRD (NP (ADJ-N greindur-greindur) (N-N maður-maður))
 		  (CONJP (CONJ og-og)
-			 (ADJP (ADJ-N málsnjall-málsnjallur))))
+			 (ADJP (ADJ-N málsnjall-málsnjall))))
 	  (ADVP (ADVR eins-eins)
 		(PP (P og-og)
 		    (CP-CMP (WADVP-1 0)
@@ -17813,7 +17813,7 @@
 
 ( (IP-MAT (CONJ eða-eða)
 	  (NP-SBJ *con*)
-	  (VBPI óttast-ótta))
+	  (VBPI óttast-óttast))
   (ID 2008.OFSI.NAR-SAG,.866))
 
 ( (IP-MAT (CONJ og-og)
@@ -17832,10 +17832,9 @@
 		  (IP-INF-PRN (TO að-að)
 			      (VB fara-fara)
 			      (, ;-;)
-			      (PP (NP-1 (PRO-D sér-sig))
+			      (PP (ADV sér-sér)
 				  (P í-í)
-				  (NP (N-D lagi-lag)
-				      (NP-COM *ICH*-1)))
+				  (NP (N-D lagi-lag)))
 			      (ADVP-LOC (ADV þar-þar) (ADV sunnanlands-sunnanlands))))))
   (ID 2008.OFSI.NAR-SAG,.868))
 
@@ -18089,7 +18088,7 @@
 					      (NP (N-D brjósti-brjóst)
 						  (NP-POS (NPR-G Þorgils-þorgils) (ADJ-G skarða-skarða))))
 					  (PP (P yfir-yfir)
-					      (NP (N-A fálæti-fálæti)
+					      (NP (N-D fálæti-fálæti)
 						  (NP-POS (NS-G bænda-bóndi))
 						  (CONJP (CONJ eða-eða)
 							 (NP-MSR (FP jafnvel-jafnvel) (ADJR-D hreinni-hreinn) (N-D fyrirlitningu-fyrirlitning)))
@@ -18167,7 +18166,7 @@
 
 ( (IP-MAT (CONJ og-og)
 	  (NP-SBJ *exp*)
-	  (NP-OB1 (ADJ-D beinum-beinn) (NS-D orðum-orð))
+	  (NP-ADT (ADJ-D beinum-beinn) (NS-D orðum-orð))
 	  (MDPI má-mega)
 	  (VB tala-tala)
 	  (PP (P um-um)
@@ -18296,7 +18295,7 @@
 					     (DO gera-gera)
 					     (IP-SMC (NP-SBJ (NS-A landsmenn-landsmaður))
 						     (ADJP (NP (PRO-D yður-þú))
-							   (ADJ-N auðsveipa-auðsveipur)))))))
+							   (ADJ-A auðsveipa-auðsveipur)))))))
 	  (. ;-;))
   (ID 2008.OFSI.NAR-SAG,.890))
 
@@ -18346,7 +18345,7 @@
 				  (BE vera-vera)
 				  (PP (P á-á)
 				      (NP (NS-D rökum-rök)))
-				  (VAN reist-reia))))
+				  (VAN reist-reisa))))
 	  (. .-.))
   (ID 2008.OFSI.NAR-SAG,.892))
 
@@ -18646,7 +18645,7 @@
 			  (NP-SBJ (PRO-N ég-ég))
 			  (VBN átt-eiga)
 			  (ADJP-1 (ADVR svo-svo)
-				  (ADJ-N smátt-smátt)
+				  (ADJ-A smátt-smár)
 				  (CP-DEG (C að-að)
 					  (IP-SUB (NP-SBJ (PRO-N hann-hann))
 						  (BEDS væri-vera)

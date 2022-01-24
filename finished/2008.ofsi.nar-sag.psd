@@ -23370,8 +23370,9 @@
 	  (, ,-,)
 	  (PP (P á-á)
 	      (NP (ONE+Q-D einhverju-einhver) (N-D stórbýl$-stórbýli) (D-D $inu-hinn) (ADV þar-þar)))
-	  (CODE {COM:dash})
-	  (ADVP-LOC-RSP (ADV þar-þar))
+	  (CODE {COM:dash})))
+
+( (IP-MAT (ADVP-LOC-RSP (ADV þar-þar))
 	  (BEPI er-vera)
 	  (NP-SBJ (NP-POS (PRO-G okkar-ég)
 			  (CP-REL *ICH*-1))
@@ -23384,7 +23385,7 @@
 				    (VBPI $heyrum-heyra)
 				    (NP-OB1 (NPR-D Sturlungaflokk$-sturlungaflokkur) (D-D $num-hinn)))))
 	  (. .-.))
-  (ID 2008.OFSI.NAR-SAG,.1152))
+	  (ID 2008.OFSI.NAR-SAG,.1152))
 
 ( (IP-MAT (NP-SBJ (NPR-N Gissur-gissur))
 	  (VBDI sagði-segja))

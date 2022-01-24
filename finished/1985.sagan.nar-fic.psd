@@ -1,6 +1,6 @@
 ( (IP-MAT (NP-SBJ (N-N Kommúna$-kommúna) (D-N $n-hinn))
 	  (VBDI fylltist-fylla)
-	  (NP-ADT (ADJ-D óðum-óður))
+	  (ADVP-TMP (ADV óðum-óðum))
 	  (PP (P af-af)
 	      (NP (N-D fólki-fólk)))
 	  (. ,-,))
@@ -75,8 +75,7 @@
 	(. .-.))
   (ID 1985.SAGAN.NAR-FIC,.5))
 
-( (QTP (ADVP (ADV Svo-svo))
-       (VAN fríkað-fríka)
+( (QTP (ADJP (ADVR Svo-svo) (VAN fríkað-fríka))
        (IP-INF-SPE (TO að-að)
 		   (VB hanga-hanga)
 		   (PP (P í-í)
@@ -95,7 +94,7 @@
   (ID 1985.SAGAN.NAR-FIC,.7))
 
 ( (IP-MAT (CONJ og-og)
-	  (NP-SBJ *con*)
+	  (NP-SBJ *pro*)
 	  (VBDI benti-benda)
 	  (PP (P á-á)
 	      (NP (N-A gagnauga$-gagnauga) (D-A $ð-hinn)))
@@ -121,8 +120,7 @@
 			  (NP-SBJ (PRO-N þú-þú))
 			  (, ?-?)
 			  (IP-MAT-PRN (VBDI spurði-spyrja)
-				      (NP-SBJ (NPR-N Anna-anna))
-				      (ADJP-SPR (ADJ-N nýkomna-nýkominn))))
+				      (NP-SBJ (NPR-N Anna-anna) (ADJ-N nýkomna-nýkominn))))
 	      (. .-.))
   (ID 1985.SAGAN.NAR-FIC,.10))
 

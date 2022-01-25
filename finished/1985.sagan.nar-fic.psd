@@ -746,7 +746,7 @@
 
 ( (IP-MAT (NP-SBJ (PRO-N Ég-ég))
 	  (VBDS þyrfti-þurfa)
-	  (NP-OB1 (ADJ-A heilt-heill) (N-A kvöld-kvöld))
+	  (NP-TMP (ADJ-A heilt-heill) (N-A kvöld-kvöld))
 	  (IP-INF-PRP (IP-INF (TO að-að)
 			      (VB ráða-ráða)
 			      (NP-OB1 (N-D útvarp$-útvarp) (D-D $inu-hinn)))
@@ -760,7 +760,7 @@
 	  (. .-.))
   (ID 1985.SAGAN.NAR-FIC,.52))
 
-( (IP-MAT-SPE (NP-SBJ (N-N Útvarpsráð-útvarpsráð))
+( (IP-MAT-SPE (NP-SBJ (NPR-N Útvarpsráð-útvarpsráð))
 	      (MDDS myndi-munu)
 	      (ADVP-TMP (ADV aldrei-aldrei))
 	      (VB samþykkja-samþykkja)
@@ -934,7 +934,7 @@
 					      (PP (P þegar-þegar)
 						  (CP-ADV-SPE (C 0)
 							      (IP-SUB-SPE (NP-SBJ (N-D kapítalisma$-kapítalismi) (D-D $num-hinn))
-									  (VBPI vegnar-vega)
+									  (VBPI vegnar-vegna)
 									  (ADVP (ADV vel-vel))))))))
 	      (. .-.))
   (ID 1985.SAGAN.NAR-FIC,.66))
@@ -957,7 +957,7 @@
 ( (IP-MAT-SPE (CONJ og-og)
 	      (NP-SBJ (N-N lúðrasveit$-lúðrasveit) (D-N $in-hinn))
 	      (VBPI spilar-spila)
-	      (NP-OB1 (NS-A hergöngulög-hergöngulög))
+	      (NP-OB1 (NS-A hergöngulög-hergöngulag))
 	      (. .-.))
   (ID 1985.SAGAN.NAR-FIC,.68))
 
@@ -999,7 +999,7 @@
 	  (VBDI sagði-segja)
 	  (ADJP-SPR (ADJ-N sáttfús-sáttfús))
 	  (CP-THT (C að-að)
-		  (IP-SUB (NP-OB1 (ADVR svona-svona) (N-D jakka-jakki))
+		  (IP-SUB (NP-OB1 (ADVR svona-svona) (N-A jakka-jakki))
 			  (HVDS hefði-hafa)
 			  (NP-SBJ (FW Davy-davy) (FW Crockett-crockett))
 			  (VBN átt-eiga)))
@@ -1108,7 +1108,7 @@
 		  (ADJP (NP-MSR (ADJ-A full-fullur))
 			(ADJ-N strembið-strembinn)))
 	  (PP (P á-á)
-	      (NP (ADJ-D fastandi-fastandi) (N-D maga-magi))))
+	      (NP (ADJ-A fastandi-fastandi) (N-A maga-magi))))
   (ID 1985.SAGAN.NAR-FIC,.77))
 
 ( (IP-MAT (CONJ og-og)

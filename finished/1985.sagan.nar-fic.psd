@@ -1,10 +1,17 @@
+( (META (CODE <heading>)
+	(NUMP (NUM-N I-i))
+	(CODE </heading>)))
+
+( (META (CODE <heading>)
+	(NUMP (NUM-N 1-einn))
+	(CODE </heading>)))
+
 ( (IP-MAT (NP-SBJ (N-N Kommúna$-kommúna) (D-N $n-hinn))
 	  (VBDI fylltist-fylla)
 	  (ADVP-TMP (ADV óðum-óðum))
 	  (PP (P af-af)
 	      (NP (N-D fólki-fólk)))
-	  (. ,-,))
-  (ID 1985.SAGAN.NAR-FIC,.1))
+	  (. ,-,)))
 
 ( (IP-MAT (NP-SBJ (NS-N umræðuefn$-umræðuefni) (D-N $in-hinn))
 	  (VBDI flögruðu-flögra)
@@ -40,7 +47,7 @@
 							  (NP-OB1 (PRO-A sig-sig))
 							  (RP inn-inn)
 							  (PP (P í-í)
-							      (NP (NPR-A Mystík-mystík)))
+							      (NP (N-A Mystík-mystík)))
 							  (PP (P í-í)
 							      (NP (NPR-D Háskóla$-háskóli) (D-D $num-hinn))))
 						  (, ,-,)
@@ -48,7 +55,7 @@
 								 (VB taka-taka)
 								 (NP-OB1 (NS-A próf-próf))
 								 (PP (P í-í)
-								     (NP (NPR-D Tarot-tarot) (CONJ og-og) (NPR-D Stjörnuspeki-stjörnuspeki))))))))))
+								     (NP (N-D Tarot-tarot) (CONJ og-og) (N-D Stjörnuspeki-stjörnuspeki))))))))))
 	  (. .-.))
   (ID 1985.SAGAN.NAR-FIC,.3))
 
@@ -2108,6 +2115,10 @@
 	  (. .-.))
   (ID 1985.SAGAN.NAR-FIC,.141))
 
+( (META (CODE <heading>)
+	(NUMP (NUM-N 2-tveir))
+	(CODE </heading>)))
+
 ( (IP-MAT (NP-SBJ (PRO-N Hann-hann))
 	  (HVDI hafði-hafa)
 	  (ADVP-TMP (ADV aldrei-aldrei))
@@ -3462,10 +3473,14 @@
 												     (NP (N-A ljós-ljós)))
 												 (VBDI kom-koma)
 												 (NP-SBJ (N-N höll-höll)
-													 (, -)
+													 (CODE {COM:dash})
 													 (NP-PRN (NPR-N Hversdagshöll$-hversdagshöll) (D-N $in-hinn)))))))))))))))
 	  (. .-.))
   (ID 1985.SAGAN.NAR-FIC,.234))
+
+( (META (CODE <heading>)
+	(NUMP (NUM-N 3-þrír))
+	(CODE </heading>)))
 
 ( (IP-MAT (NP-SBJ (PRO-N Hann-hann))
 	  (HVDI hafði-hafa)
@@ -4502,9 +4517,12 @@
 
 ( (META (CODE <heading>)
 	(NUMP (NUM-N II-ii))
-	(NP (N-N ÓMINNI-óminni))
 	(CODE </heading>))
   (ID 1985.SAGAN.NAR-FIC,.312))
+
+( (META (CODE <heading>)
+	(NP (N-N ÓMINNI-óminni))
+	(CODE </heading>)))
 
 ( (IP-MAT (NP-SBJ-1 (ES Það-það))
 	  (BEPI er-vera)
@@ -4959,8 +4977,11 @@
 	  (. .-.))
   (ID 1985.SAGAN.NAR-FIC,.348))
 
-( (CP-QUE (NP-VOC (FW Monsieur-monsieur) (, ,-,) (FW vous-vous) (FW désirez-désirez))
-	  (. ?-?)
+( (FRAG (FRENCH (FW Monsieur-monsieur) (, ,-,) (FW vous-vous) (FW désirez-désirez))
+	(. ?-?))
+  (ID 1985.SAGAN.NAR-FIC,.349))
+
+( (CP-QUE (CODE <translation_from_french>)
 	  (CODE <paren>)
 	  (WNP-1 (WPRO-N Hvað-hver))
 	  (IP-SUB (NP-SBJ *T*-1)
@@ -4970,8 +4991,8 @@
 		      (NP (NS-D höndum-hönd)
 			  (NP-COM *ICH*-2))))
 	  (. ?-?)
-	  (CODE </paren>))
-  (ID 1985.SAGAN.NAR-FIC,.349))
+	  (CODE </paren>)
+	  (CODE </translation_from_french>)))
 
 ( (QTP (NP (NP (N-N Lykt$-lykt) (D-N $in-hinn))
 	   (, ,-,)

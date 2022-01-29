@@ -4977,8 +4977,8 @@
 	  (. .-.))
   (ID 1985.SAGAN.NAR-FIC,.348))
 
-( (FRAG (FRENCH (FW Monsieur-monsieur) (, ,-,) (FW vous-vous) (FW désirez-désirez))
-	(. ?-?))
+( (QTP (FRENCH (FW Monsieur-monsieur) (, ,-,) (FW vous-vous) (FW désirez-désirez))
+       (. ?-?))
   (ID 1985.SAGAN.NAR-FIC,.349))
 
 ( (CP-QUE (CODE <translation_from_french>)
@@ -5012,7 +5012,7 @@
 	  (. :-:))
   (ID 1985.SAGAN.NAR-FIC,.351))
 
-( (QTP (NP (FW Monsieur-monsieur) (FW vous-vous) (FW désirez-désirez))
+( (QTP (FRENCH (FW Monsieur-monsieur) (FW vous-vous) (FW désirez-désirez))
        (. ?-?))
   (ID 1985.SAGAN.NAR-FIC,.352))
 
@@ -5079,7 +5079,7 @@
 						  (C sem-sem)
 						  (IP-SUB (NP-SBJ *T*-1)
 							  (BEPI er-vera)
-							  (ADJP (ADJ-N glatað-glata)))))))))
+							  (VAN glatað-glata))))))))
 	  (HVPI hef-hafa)
 	  (NP-SBJ (PRO-N ég-ég))
 	  (VBN reynt-reyna)
@@ -5158,7 +5158,7 @@
 ( (QTP (NP (NS-N Orð$-orð) (D-N $in-hinn))
        (ADVP (ADV auðvitað-auðvitað))
        (ADVP-TMP (ADV alltaf-alltaf))
-       (NP (PRO-N þau-það) (ADJ-N sömu-samur)))
+       (NP (D-N þau-það) (ADJ-N sömu-samur)))
   (ID 1985.SAGAN.NAR-FIC,.362))
 
 ( (IP-MAT (CONJ og-og)
@@ -5250,13 +5250,13 @@
 	  (. :-:))
   (ID 1985.SAGAN.NAR-FIC,.369))
 
-( (IP-MAT-SPE-PRN (" "-")
-		  (ADVP (ADV eftir-eftir))
-		  (BEPI er-vera)
-		  (NP-SBJ (PRO-N ég-ég))
-		  (VAN skilin-skilja)
-		  (" "-")
-		  (. .-.))
+( (IP-MAT-SPE (" "-")
+	      (ADVP (ADV eftir-eftir))
+	      (BEPI er-vera)
+	      (NP-SBJ (PRO-N ég-ég))
+	      (VAN skilin-skilja)
+	      (" "-")
+	      (. .-.))
   (ID 1985.SAGAN.NAR-FIC,.370))
 
 ( (FRAG (NP (N-N Heimsókn-heimsókn)
@@ -5302,7 +5302,7 @@
 
 ( (IP-MAT (NP-SBJ (PRO-N ég-ég))
 	  (VBPI meina-meina)
-	  (PP (P (CODE {p}))
+	  (PP (P (CODE {á}))
 	      (NP (D-D þessu-þessi) (ADJ-D upphaflega-upphaflegur)))
 	  (PP (P úr-úr)
 	      (NP (PRO-D því-það)
@@ -5338,8 +5338,7 @@
 	  (. .-.))
   (ID 1985.SAGAN.NAR-FIC,.376))
 
-( (IP-MAT (NP-SBJ (NPR-D Gamla-gamli)
-		  (NP-PRN (N-D mann$-maður) (D-D $inum-hinn)))
+( (IP-MAT (NP-SBJ (ADJ-D Gamla-gamall) (N-D mann$-maður) (D-D $inum-hinn))
 	  (VBDI þótti-þykja)
 	  (NP-OB1 (PRO-N það-það))
 	  (PP (P fyrir-fyrir)

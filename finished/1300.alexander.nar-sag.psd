@@ -1,4 +1,3 @@
-
 ( (IP-MAT (NP-PRD (NPR-N Darius-darius))
 	  (HVPI hefir-hafa)
 	  (NP-SBJ (N-N konungur-konungur)
@@ -22960,11 +22959,12 @@
 	  (, ,-,)
 	  (CP-QUE-1 (WADVP (WADV hvernug-hvernig))
 		    (C að-að)
-		    (IP-SUB (HVPS hafi-hafa)
+		    (IP-SUB (NP-SBJ *exp*)
+			    (HVPS hafi-hafa)
 			    (VBN borist-bera)
-			    (RP um-um)
-			    (NP-SBJ (N-N líflát-líflát)
-				    (NP-POS (N-G drottningar-drottning)))))
+			    (PP (P um-um)
+				(NP (N-A líflát-líflát)
+				    (NP-POS (N-G drottningar-drottning))))))
 	  (. .-.))
   (ID 1300.ALEXANDER.NAR-SAG,.1182))
 

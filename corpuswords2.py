@@ -1,4 +1,4 @@
-# usage: python3 corpuswords2.py "finished/*.psd"
+#usage: python3 corpuswords2.py "finished/*.psd"
 
 import sys
 import re

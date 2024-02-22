@@ -31,7 +31,10 @@ echo "Generate tagged versions from psd versions"
 
 echo 
 echo "Add README file to top of each psd file"
-for i in $(ls icepahc-v0.9/psd/*.psd);
+#for i in $(ls icepahc-v0.9/psd/*.psd);
+#for i in $(ls icepahc-v2024.03/psd/*.psd);
+PSDPATTERN="$DIRNAME/psd/*.psd"
+for i in $(ls ${PSDPATTERN});
 do
 echo "/*" >> $TEMPFILE
 cat README >> $TEMPFILE

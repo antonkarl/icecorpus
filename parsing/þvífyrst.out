@@ -1,0 +1,1040 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Thu Feb 22 09:47:51 GMT 2024
+
+command file:     foo.q
+output file:      foo.out
+
+node:   IP*
+query:   IP*  doms  P 
+   AND  P  idoms  [Ff]yrst* 
+   AND  IP*  doms  [þÞ]ví* 
+*/
+/*
+HEADER:
+source file:  1150.firstgrammar.sci-lin.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1150.firstgrammar.sci-lin.psd	0/0/183
+*/
+/*
+HEADER:
+source file:  1150.homiliubok.rel-ser.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1150.homiliubok.rel-ser.psd	0/0/2108
+*/
+/*
+HEADER:
+source file:  1210.jartein.rel-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1210.jartein.rel-sag.psd	0/0/823
+*/
+/*
+HEADER:
+source file:  1210.thorlakur.rel-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1210.thorlakur.rel-sag.psd	0/0/540
+*/
+/*
+HEADER:
+source file:  1250.sturlunga.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1250.sturlunga.nar-sag.psd	0/0/2225
+*/
+/*
+HEADER:
+source file:  1250.thetubrot.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1250.thetubrot.nar-sag.psd	0/0/246
+*/
+/*
+HEADER:
+source file:  1260.jomsvikingar.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1260.jomsvikingar.nar-sag.psd	0/0/1532
+*/
+/*
+HEADER:
+source file:  1270.gragas.law-law.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1270.gragas.law-law.psd	0/0/346
+*/
+/*
+HEADER:
+source file:  1275.morkin.nar-his.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1275.morkin.nar-his.psd	0/0/2190
+*/
+/*
+HEADER:
+source file:  1300.alexander.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1300.alexander.nar-sag.psd	0/0/1383
+*/
+/*
+HEADER:
+source file:  1310.grettir.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1310.grettir.nar-sag.psd	0/0/2057
+*/
+/*
+HEADER:
+source file:  1325.arni.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1325.arni.nar-sag.psd	0/0/1125
+*/
+/*
+HEADER:
+source file:  1350.bandamennM.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1350.bandamennM.nar-sag.psd	0/0/1223
+*/
+/*
+HEADER:
+source file:  1350.finnbogi.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1350.finnbogi.nar-sag.psd	0/0/2342
+*/
+/*
+HEADER:
+source file:  1350.marta.rel-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1350.marta.rel-sag.psd	0/0/977
+*/
+/*
+HEADER:
+source file:  1400.gunnar2.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1400.gunnar2.nar-sag.psd	0/0/340
+*/
+/*
+HEADER:
+source file:  1400.gunnar.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1400.gunnar.nar-sag.psd	0/0/935
+*/
+/*
+HEADER:
+source file:  1400.viglundur.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1400.viglundur.nar-sag.psd	0/0/1290
+*/
+/*
+HEADER:
+source file:  1450.bandamenn.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1450.bandamenn.nar-sag.psd	0/0/1034
+*/
+/*
+HEADER:
+source file:  1450.ectorssaga.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1450.ectorssaga.nar-sag.psd	0/0/1950
+*/
+/*
+HEADER:
+source file:  1450.judit.rel-bib.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1450.judit.rel-bib.psd	0/0/491
+*/
+/*
+HEADER:
+source file:  1450.vilhjalmur.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1450.vilhjalmur.nar-sag.psd	0/0/2414
+*/
+/*
+HEADER:
+source file:  1475.aevintyri.nar-rel.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1475.aevintyri.nar-rel.psd	0/0/1201
+*/
+/*
+HEADER:
+source file:  1480.jarlmann.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1480.jarlmann.nar-sag.psd	0/0/1282
+*/
+/*
+HEADER:
+source file:  1525.erasmus.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1525.erasmus.nar-sag.psd	0/0/462
+*/
+/*
+HEADER:
+source file:  1525.georgius.nar-rel.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1525.georgius.nar-rel.psd	0/0/1062
+*/
+/*
+HEADER:
+source file:  1540.ntacts.rel-bib.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1540.ntacts.rel-bib.psd	0/0/1183
+*/
+/*
+HEADER:
+source file:  1540.ntjohn.rel-bib.psd
+*/
+
+/~*
+En-en sá-sá sem-sem heilbrigður-heilbrigður var-vera vorðinn-verða vissi-vita
+eigi-ekki hver-hver hann-hann var-vera því-það að-að Jesús-jesús hafði-hafa
+vikið-víkja sér-sig afvega-afvegur fyrst-fyrr að-að svo-svo mikill-mikill
+mannfjöldi-mannfjöldi var-vera í-í þeim-sá stað-staður .-.
+(1540.NTJOHN.REL-BIB,193.337)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 66 P, 67 fyrst-fyrr, 47 því-það
+*/
+( (IP-MAT (CODE VS:V_13J)
+	  (CONJ En-en)
+	  (NP-SBJ (D-N sá-sá)
+		  (CP-REL (WNP-1 0)
+			  (C sem-sem)
+			  (IP-SUB RMV:*T*-1_heilbrigður-heilbrigður_var-vera...)))
+	  (VBDI vissi-vita)
+	  (NEG eigi-ekki)
+	  (CP-QUE (WNP-2 (WPRO hver-hver))
+		  (C 0)
+		  (IP-SUB RMV:*T*-2_hann-hann_var-vera...))
+	  (PP (P 0)
+	      (NP (N-D því-það)
+		  (CP-THT-PRN (C að-að)
+			      (IP-SUB RMV:Jesús-jesús_hafði-hafa_vikið-víkja...))))
+	  (. .-.))
+  (ID 1540.NTJOHN.REL-BIB,193.337)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1540.ntjohn.rel-bib.psd	1/1/1685
+*/
+/*
+HEADER:
+source file:  1593.eintal.rel-oth.psd
+*/
+
+/~*
+og-og sjá-sjá til-til þú-þú gangir-ganga í-í fótspor-fótspor þíns-þinn
+herra-herra .-. Því-það svo-svo sem-sem herra$-herra $nn-hinn Kristur-kristur
+sína-sinn pínu-pína vissi-vita fyrir-fyrir og-og sagði-segja það-það
+sínum-sinn postulum-postuli ,-, en-en gaf-gefa sig-sig samt-samt
+viljuglega-viljuglega þar-þar til-til ,-, svo-svo og-og ,-, mín-minn sál-sál
+,-, fyrst-fyrst þú-þú veist-vita það-það að-að Guðs-guð börn-barn
+hljóta-hljóta í-í gegnum-gegnum kross-kross og-og mótgang-mótgangur ,-, og-og
+að-að lyktum-lykta í-í gegnum-gegnum dauða$-dauði $nn-hinn ,-, inn-inn í-í
+Guðs-guð ríki-ríki að-að ganga-ganga ,-, þá-þá lát-láta þig-þú ei-ei
+furða-furða nær-nær þér-þú drottinn-drottinn sinn-sinn kross-kross á-á
+herðar-herðar leggur-leggja ,-, því-það það-það er-vera enginn-enginn nýr-nýr
+tilburður-tilburður .-.
+(1593.EINTAL.REL-OTH,.266)
+*~/
+/*
+38 IP-IMP:  38 IP-IMP, 131 P, 132 fyrst-fyrst, 261 því-það
+1 IP-IMP:  1 IP-IMP, 131 P, 132 fyrst-fyrst, 36 Því-það
+1 IP-IMP:  1 IP-IMP, 131 P, 132 fyrst-fyrst, 261 því-það
+*/
+( (IP-IMP (CONJ og-og)
+	  (VBI sjá-sjá)
+	  (RP til-til)
+	  (CP-THT (C 0)
+		  (IP-SUB RMV:þú-þú_gangir-ganga_í-í...))
+	  (, .-.)
+	  (PP (P 0)
+	      (NP (PRO-D Því-það)
+		  (CP-THT-PRN (IP-IMP RMV:svo-svo_0_sem-sem...))))
+	  (. .-.))
+  (ID 1593.EINTAL.REL-OTH,.266)) 
+
+( (IP-IMP (ADVP-LFD (ADVR svo-svo)
+		    (CP-CMP (WADVP-1 0)
+			    (C sem-sem)
+			    (IP-SUB RMV:*T*-1_herra$-herra_$nn-hinn...)))
+	  (, ,-,)
+	  (ADVP-RSP (ADV svo-svo))
+	  (ALSO og-og)
+	  (, ,-,)
+	  (NP-VOC (NP-POS (PRO-N mín-minn))
+		  (N-N sál-sál))
+	  (, ,-,)
+	  (PP-LFD (P fyrst-fyrst)
+		  (CP-ADV (C 0)
+			  (IP-SUB RMV:þú-þú_veist-vita_það-það...)))
+	  (, ,-,)
+	  (ADVP-RSP (ADV þá-þá))
+	  (VBI lát-láta)
+	  (IP-INF RMV:þig-þú_ei-ei_furða-furða...))
+  (ID 1593.EINTAL.REL-OTH,.266)) 
+
+
+/~*
+Lát$-láta $tu-þú ,-, drottinn-drottinn ,-, mína-minn sál-sál einnin-einnig
+játa-játa og-og viðurkenna-viðurkenna allt-allur hvað-hver þú-þú hefur-hafa
+gjört-gera við-við mig-ég svo-svo að-að eg-ég þjóni-þjóna þínu-þinn nafni-nafn
+með-með þökk-þökk og-og lofgjörð-lofgjörð svo-svo þér-þú líki-líka .-. Því-það
+fyrst-fyrst María-maría var-vera svo-svo þakklát-þakklátur fyrir-fyrir
+sinn-sinn bróður-bróðir Lazarum-lazarua ,-, hvörn-hver þú-þú af-af þeim-sá
+stundlega-stundlegur dauða-dauði upp-upp vakið-vekja hafðir-hafa ,-, hvað-hver
+framar-framar ætti-eiga eg-ég að-að þakka-þakka þér-þú ,-, minn-minn
+lausnari-lausnari ,-, hvörn-hver þú-þú hefur-hafa af-af þeim-sá eilífa-eilífur
+dauða-dauði frelsað-frelsa og-og gefið-gefa og-og skenkt-skenkja það-sá
+eilífa-eilífur líf-líf og-og réttlæti-réttlæti .-.
+(1593.EINTAL.REL-OTH,.314)
+*~/
+/*
+1 IP-IMP:  1 IP-IMP, 104 P, 105 fyrst-fyrst, 101 Því-það
+*/
+( (IP-IMP (VBI Lát$-láta)
+	  (NP-SBJ (PRO-N $tu-þú))
+	  (, ,-,)
+	  (NP-VOC (NPR-N drottinn-drottinn))
+	  (, ,-,)
+	  (IP-INF RMV:mína-minn_sál-sál_einnin-einnig...)
+	  (, .-.)
+	  (PP (P 0)
+	      (NP (PRO-D Því-það)
+		  (CP-QUE-PRN (PP (P fyrst-fyrst)
+				  (CP-ADV (C 0)
+					  (IP-SUB RMV:María-maría_var-vera_svo-svo...)))
+			      (, ,-,)
+			      (WNP-3 (WNP-MSR (WPRO-A hvað-hver))
+				     (ADVR framar-framar))
+			      (IP-SUB RMV:*T*-3_ætti-eiga_eg-ég...))))
+	  (. .-.))
+  (ID 1593.EINTAL.REL-OTH,.314)) 
+
+
+/~*
+Minn-minn herra-herra Jesú-jesús ,-, þín-þinn kvöldmáltíð-kvöldmáltíð er-vera
+mér-ég og-og einn-einn óbrigðanlegur-óbrigðanlegur pantur-pantur minnar-minn
+upprisu-upprísa á-á dómsdegi-dómsdagur .-. Því-það að-að fyrst-fyrst þú-þú
+fæðir-fæða mig-ég með-með þínu-þinn heilaga-heilagur holdi-hold og-og
+blóði-blóð ,-, og-og mig-ég þér-þú svo-svo samtengir-samtengja ,-, þá-þá
+mun$-munu $tu-þú ekki-ekki yfir$-yfir $gefa-gefa mitt-minn hold-hold í-í
+dauða$-dauði $num-hinn því-það það-það er-vera einn-einn þinn-þinn limur-limur
+(1593.EINTAL.REL-OTH,.651)
+*~/
+/*
+59 IP-SUB:  59 IP-SUB, 61 P, 62 fyrst-fyrst, 149 því-það
+1 IP-MAT:  1 IP-MAT, 61 P, 62 fyrst-fyrst, 55 Því-það
+1 IP-MAT:  1 IP-MAT, 61 P, 62 fyrst-fyrst, 149 því-það
+*/
+( (IP-MAT (NP-VOC (NP-POS (PRO-N Minn-minn))
+		  (NPR-N herra-herra)
+		  (NP-POS (NPR-G Jesú-jesús)))
+	  (, ,-,)
+	  (NP-1 (NP-POS (PRO-N þín-þinn))
+		(N-N kvöldmáltíð-kvöldmáltíð))
+	  (BEPI er-vera)
+	  (NP-SBJ (PRO-D mér-ég))
+	  (ALSO og-og)
+	  (IP-SMC RMV:*ICH*-1_einn-einn_óbrigðanlegur-óbrigðanlegur...)
+	  (, .-.)
+	  (PP (P 0)
+	      (NP (PRO-D Því-það)
+		  (CP-THT-PRN (C að-að)
+			      (IP-SUB RMV:fyrst-fyrst_0_þú-þú...))))
+	  (CODE </paren>))
+  (ID 1593.EINTAL.REL-OTH,.651)) 
+
+( (IP-SUB (PP-LFD (P fyrst-fyrst)
+		  (CP-ADV (C 0)
+			  (IP-SUB RMV:þú-þú_fæðir-fæða_mig-ég...)))
+	  (, ,-,)
+	  (ADVP-RSP (ADV þá-þá))
+	  (MDDI mun$-munu)
+	  (NP-SBJ (PRO-N $tu-þú))
+	  (NEG ekki-ekki)
+	  (RP yfir$-yfir)
+	  (VB $gefa-gefa)
+	  (NP-OB1 (NP-POS (PRO-N mitt-minn))
+		  (N-A hold-hold))
+	  (PP (P í-í)
+	      (NP (N-D dauða$-dauði) (D-D $num-hinn)))
+	  (CODE <paren>)
+	  (PP (P 0)
+	      (NP (PRO-D því-það)
+		  (CP-THT-PRN (C 0)
+			      (IP-SUB RMV:það-það_er-vera_einn-einn...)))))
+  (ID 1593.EINTAL.REL-OTH,.651)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1593.eintal.rel-oth.psd	5/3/1553
+*/
+/*
+HEADER:
+source file:  1611.okur.rel-oth.psd
+*/
+
+/~*
+Fyrst-fyrst þeir-hann sem-sem það-sá alhuga-alhuga elska-elska þykjast-þykja
+,-, bæði-bæði hressing-hressing fá-fá og-og betri-góður burði-burður af-af
+því-það ,-, en-en hann-hann nökkurn-nokkur tíma-tími firrum-firrum haft-hafa
+hafi-hafa ,-, svo-svo veikir-veikur þykjast-þykja heilbrigði-heilbrigði fá-fá
+,-, hungraðir-hungraður saðning-saðning ,-, ungir-ungur hreysti-hreysti ,-,
+ellimóðir-ellimóður ungdóm-ungdómur .-.
+(1611.OKUR.REL-OTH,17.153)
+*~/
+/*
+2 IP-MAT-1:  2 IP-MAT-1, 4 P, 5 Fyrst-fyrst, 56 því-það
+1 IP-MAT:  1 IP-MAT, 4 P, 5 Fyrst-fyrst, 56 því-það
+*/
+( (IP-MAT (IP-MAT-1 RMV:Fyrst-fyrst_0_þeir-hann...)
+	  (, ,-,)
+	  (CONJP (IP-MAT=1 RMV:hungraðir-hungraður_saðning-saðning...))
+	  (, ,-,)
+	  (CONJP (IP-MAT=1 RMV:ungir-ungur_hreysti-hreysti...))
+	  (, ,-,)
+	  (CONJP (IP-MAT=1 RMV:ellimóðir-ellimóður_ungdóm-ungdómur...))
+	  (. .-.))
+  (ID 1611.OKUR.REL-OTH,17.153)) 
+
+( (IP-MAT-1 (PP-LFD (P Fyrst-fyrst)
+		    (CP-ADV (C 0)
+			    (IP-SUB RMV:þeir-hann_0_sem-sem...)))
+	    (, ,-,)
+	    (ADVP-RSP (ADV svo-svo))
+	    (NP-SBJ (ADJ-N veikir-veikur))
+	    (VBPI þykjast-þykja)
+	    (IP-INF RMV:heilbrigði-heilbrigði_fá-fá...))
+  (ID 1611.OKUR.REL-OTH,17.153)) 
+
+
+/~*
+En-en hvör-hver þörf-þörf er-vera á-á því-það að-að nefna-nefna fleiri-margur
+menn-maður til-til sögun$-sögun $nar-hinn en-en nú-nú eru-vera nefndir-nefna
+sem-sem þessa-þessi synd-synd hatað-hata hafa-hafa ,-, fyrst-fyrst guð-guð
+sjálfur-sjálfur hatar-hata hana-hún fyrir-fyrir spámanns$-spámaður $ins-hinn
+munn-munnur ,-, segjandi-segja :-: "-" Skyldi-skulu ekki-ekki mín-minn
+sála-sála hefna-hefna sín-sig á-á soddan-soddan fólki-fólk sem-sem þetta-þessi
+fólk-fólk er-vera .-. "-"
+(1611.OKUR.REL-OTH,23.236)
+*~/
+/*
+11 IP-SUB:  11 IP-SUB, 82 P, 83 fyrst-fyrst, 21 því-það
+*/
+( (IP-SUB (NP-SBJ *T*-1)
+	  (BEPI er-vera)
+	  (PP (P á-á)
+	      (NP (PRO-D því-það)
+		  (IP-INF-PRN RMV:að-að_nefna-nefna_fleiri-margur...)))
+	  (, ,-,)
+	  (PP (P fyrst-fyrst)
+	      (CP-ADV (C 0)
+		      (IP-SUB RMV:guð-guð_sjálfur-sjálfur_hatar-hata...))))
+  (ID 1611.OKUR.REL-OTH,23.236)) 
+
+
+/~*
+En-en af-af því-það hann-hann þurfti-þurfa ekki-ekki lengur-lengi það-það
+að-að efa-efa og-og fornam-fornema að-að ekki-ekki var-vera annað-annar
+fyrir-fyrir dyrum-dyr en-en dauð$-dauði $inn-hinn ,-, þá-þá talaði-tala
+hann-hann í-í annað-annar sinn-sinn til-til sinnar-sinn sálar-sál ,-,
+segjandi-segja :-: "-" Fyrst-fyrst ég-ég hlýt-hljóta við-við þig-þú að-að
+skilja-skilja ,-, þá-þá af$-af $hendi-henda ég-ég þig-þú djöfl$-djöflur
+$inum-hinn ,-, að-að þú-þú með-með hönum-hann til-til eilífra-eilífur
+kvala-kvöl farir-fara "-" ,-,
+(1611.OKUR.REL-OTH,28.322)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 106 P, 107 Fyrst-fyrst, 9 því-það
+*/
+( (IP-MAT (CONJ En-en)
+	  (PP-LFD (P af-af)
+		  (NP (PRO-D því-það)
+		      (CP-THT-PRN (C 0)
+				  (IP-SUB RMV:hann-hann_þurfti-þurfa_ekki-ekki...))))
+	  (, ,-,)
+	  (ADVP-TMP-RSP (ADV þá-þá))
+	  (VBDI talaði-tala)
+	  (NP-SBJ (PRO-N hann-hann))
+	  (PP (P í-í)
+	      (NP (ADJ-A annað-annar) (N-A sinn-sinn)))
+	  (PP (P til-til)
+	      (NP (NP-POS (PRO-G sinnar-sinn))
+		  (N-G sálar-sál)))
+	  (, ,-,)
+	  (IP-PPL RMV:segjandi-segja_:-:_"-"...)
+	  (" "-")
+	  (. ,-,))
+  (ID 1611.OKUR.REL-OTH,28.322)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1611.okur.rel-oth.psd	4/3/629
+*/
+/*
+HEADER:
+source file:  1628.olafuregils.bio-tra.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1628.olafuregils.bio-tra.psd	0/0/906
+*/
+/*
+HEADER:
+source file:  1630.gerhard.rel-oth.psd
+*/
+
+/~*
+Ég-ég finn-finna ekkert-enginn skjól-skjól né-né hæli-hæli hér-hér á-á
+jörðu$-jörð $nni-hinn ,-, því-það ekki-ekki er-vera von-von neinnrar-neinn
+vináttu-vinátta né-né skjóls-skjól hjá-hjá skepnu$-skepna $num-hinn það-það
+fyrst-fyrst að-að skepna$-skepna $nna-hinn herra-herra og-og drottinn-drottinn
+er-vera af-af mér-ég styggður-styggja og-og móðgaður-móðga .-.
+(1630.GERHARD.REL-OTH,.29)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 72 P, 73 fyrst-fyrst, 35 því-það
+*/
+( (IP-MAT (NP-SBJ (PRO-N Ég-ég))
+	  (VBPI finn-finna)
+	  (NP-OB1 (Q-A ekkert-enginn)
+		  (N-A skjól-skjól)
+		  (CONJP (CONJ né-né)
+			 (NX (N-A hæli-hæli))))
+	  (PP (ADV hér-hér)
+	      (P á-á)
+	      (NP (N-D jörðu$-jörð) (D-D $nni-hinn)))
+	  (, ,-,)
+	  (PP (P 0)
+	      (NP (PRO-D því-það)
+		  (CP-THT-PRN (C 0)
+			      (IP-SUB RMV:ekki-ekki_er-vera_von-von...))))
+	  (. .-.))
+  (ID 1630.GERHARD.REL-OTH,.29)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1630.gerhard.rel-oth.psd	1/1/701
+*/
+/*
+HEADER:
+source file:  1650.illugi.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1650.illugi.nar-sag.psd	0/0/1929
+*/
+/*
+HEADER:
+source file:  1659.pislarsaga.bio-aut.psd
+*/
+
+/~*
+Og-og af-af því-það ég-ég sá-sjá dóms$-dómur $ins-hinn ályktun-ályktun og-og
+málslok$-málslok $in-hinn ,-, sem-sem ég-ég vissi-vita ég-ég mundi-munu
+ekki-ekki fá-fá neina-neinn leiðrétting-leiðrétting á-á ,-, þá-þá
+krafðist-krefja ég-ég þar-þar af-af sýslumanni-sýslumaður Magnúsi-magnús ,-,
+að-að fyrst-fyrr soddan-soddan blöð-blað sem-sem birt-birta og-og lesin-lesa
+voru-vera fyrir-fyrir dómi-dómur á-á því-sá þingi-þing hefði-hafa
+fundist-finna hjá-hjá þeirra-sá manna-maður sambýlingi-sambýlingur að-að þá-þá
+væri-vera leitað-leita og-og rannsakað-rannsaka um-um hinna-hinn
+búshluti-búshlutur ,-, hvort-hvort ekki-ekki fyndust-finna hjá-hjá þeim-það
+sem-sem soddan-soddan líkindi-líkindi upp$-upp $á-á hæfðu-hæfa einnin-einnig
+nokkuð-nokkur þeirra-það merkja-merki og-og menja-menjar ,-, hvað-hver ég-ég
+að-að fyrri-fyrri fundum-fundur talaði-tala við-við Magnús-magnús ,-,
+(1659.PISLARSAGA.BIO-AUT,.291)
+*~/
+/*
+97 IP-SUB:  97 IP-SUB, 99 P, 100 fyrst-fyrr, 138 því-sá
+1 IP-MAT:  1 IP-MAT, 99 P, 100 fyrst-fyrr, 9 því-það
+1 IP-MAT:  1 IP-MAT, 99 P, 100 fyrst-fyrr, 138 því-sá
+*/
+( (IP-MAT (CONJ Og-og)
+	  (PP-LFD (P af-af)
+		  (NP (PRO-D því-það)
+		      (CP-THT-PRN (C 0)
+				  (IP-SUB RMV:ég-ég_sá-sjá_dóms$-dómur...))))
+	  (, ,-,)
+	  (ADVP-RSP (ADV þá-þá))
+	  (VBDI krafðist-krefja)
+	  (NP-SBJ (PRO-N ég-ég))
+	  (ADVP-LOC (ADV þar-þar))
+	  (PP (P af-af)
+	      (NP (NPR-D sýslumanni-sýslumaður) (NPR-D Magnúsi-magnús)))
+	  (, ,-,)
+	  (CP-THT (C að-að)
+		  (IP-SUB RMV:fyrst-fyrr_0_soddan-soddan...))
+	  (. ,-,))
+  (ID 1659.PISLARSAGA.BIO-AUT,.291)) 
+
+( (IP-SUB (PP-LFD (P fyrst-fyrr)
+		  (CP-ADV (C 0)
+			  (IP-SUB RMV:soddan-soddan_blöð-blað_0...)))
+	  (NP-SBJ *exp*)
+	  (C að-að)
+	  (ADVP-TMP-RSP (ADV þá-þá))
+	  (BEDS væri-vera)
+	  (VAN (VAN leitað-leita) (CONJ og-og) (VAN rannsakað-rannsaka))
+	  (PP (P um-um)
+	      (NP (NP-POS (D-G hinna-hinn))
+		  (NS-A búshluti-búshlutur)))
+	  (, ,-,)
+	  (CP-QUE-ADV (WQ hvort-hvort)
+		      (C 0)
+		      (IP-SUB RMV:ekki-ekki_fyndust-finna_hjá-hjá...))
+	  (, ,-,)
+	  (CP-CAR (WNP-4 (WPRO-A hvað-hver))
+		  (C 0)
+		  (IP-SUB RMV:*T*-4_ég-ég_að-að...)))
+  (ID 1659.PISLARSAGA.BIO-AUT,.291)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1659.pislarsaga.bio-aut.psd	2/1/324
+*/
+/*
+HEADER:
+source file:  1661.indiafari.bio-tra.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1661.indiafari.bio-tra.psd	0/0/1388
+*/
+/*
+HEADER:
+source file:  1675.armann.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1675.armann.nar-fic.psd	0/0/1018
+*/
+/*
+HEADER:
+source file:  1675.magnus.bio-oth.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1675.magnus.bio-oth.psd	0/0/204
+*/
+/*
+HEADER:
+source file:  1675.modars.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1675.modars.nar-fic.psd	0/0/373
+*/
+/*
+HEADER:
+source file:  1680.skalholt.nar-rel.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1680.skalholt.nar-rel.psd	0/0/869
+*/
+/*
+HEADER:
+source file:  1720.vidalin.rel-ser.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1720.vidalin.rel-ser.psd	0/0/1112
+*/
+/*
+HEADER:
+source file:  1725.biskupasogur.nar-rel.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1725.biskupasogur.nar-rel.psd	0/0/1105
+*/
+/*
+HEADER:
+source file:  1745.klim.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1745.klim.nar-fic.psd	0/0/874
+*/
+/*
+HEADER:
+source file:  1790.fimmbraedra.nar-sag.psd
+*/
+
+/~*
+og-og mælti-mæla :-: "-" Fyrst-fyrst eg-ég má-mega tala-tala frítt-frítt í-í
+yðar-þú leyfi-leyfi verð-verða eg-ég það-það að-að játa-játa að-að þau-sá
+trúarbrögð-trúarbrögð sem-sem hinn-hinn gamli-gamall Sóróaster-sóróaster
+stiftaði-stifta í-í Persía-persía virðast-virðast mér-ég best-góður ,-,
+því-það þó-þó eg-ég trúi-trúa að-að það-það sé-vera til-til einn-einn guð-guð
+sem-sem skapað-skapa hafi-hafa alla-allur hluti-hlutur ,-, finnst-finnast
+mér-ég eg-ég geti-geta svo-svo best-góður dýrkað-dýrka hann-hann að-að eg-ég
+hafi-hafa einhverja-einhver ímynd-ímynd hans-hann ,-,
+(1790.FIMMBRAEDRA.NAR-SAG,.24)
+*~/
+/*
+12 IP-MAT-SPE:  12 IP-MAT-SPE, 14 P, 15 Fyrst-fyrst, 104 því-það
+1 IP-MAT:  1 IP-MAT, 14 P, 15 Fyrst-fyrst, 104 því-það
+*/
+( (IP-MAT (CONJ og-og)
+	  (NP-SBJ *con*)
+	  (VBDI mælti-mæla)
+	  (, :-:)
+	  (" "-")
+	  (IP-MAT-SPE RMV:Fyrst-fyrst_0_eg-ég...))
+  (ID 1790.FIMMBRAEDRA.NAR-SAG,.24)) 
+
+( (IP-MAT-SPE (PP (P Fyrst-fyrst)
+		  (CP-ADV-SPE (C 0)
+			      (IP-SUB-SPE RMV:eg-ég_má-mega_tala-tala...)))
+	      (RDPI verð-verða)
+	      (NP-SBJ (PRO-N eg-ég))
+	      (IP-INF-SPE RMV:það-það_*ICH*-1_að-að...)
+	      (. ,-,))
+  (ID 1790.FIMMBRAEDRA.NAR-SAG,.24)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1790.fimmbraedra.nar-sag.psd	2/1/1602
+*/
+/*
+HEADER:
+source file:  1791.jonsteingrims.bio-aut.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1791.jonsteingrims.bio-aut.psd	0/0/1518
+*/
+/*
+HEADER:
+source file:  1830.hellismenn.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1830.hellismenn.nar-sag.psd	0/0/1411
+*/
+/*
+HEADER:
+source file:  1835.jonasedli.sci-nat.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1835.jonasedli.sci-nat.psd	0/0/161
+*/
+/*
+HEADER:
+source file:  1850.piltur.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1850.piltur.nar-fic.psd	0/0/1440
+*/
+/*
+HEADER:
+source file:  1859.hugvekjur.rel-ser.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1859.hugvekjur.rel-ser.psd	0/0/1110
+*/
+/*
+HEADER:
+source file:  1861.orrusta.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1861.orrusta.nar-fic.psd	0/0/1804
+*/
+/*
+HEADER:
+source file:  1882.torfhildur.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1882.torfhildur.nar-fic.psd	0/0/2000
+*/
+/*
+HEADER:
+source file:  1883.voggur.nar-fic.psd
+*/
+
+/~*
+Hún-hún bætti-bæta því-það við-við ,-, að-að til-til þess-það hefði-hafa
+aldrei-aldrei komið-koma ,-, fyrst-fyrst peningar$-peningur $nir-hinn
+hefðu-hafa fundizt-finna hjá-hjá Hans-hans .-.
+(1883.VOGGUR.NAR-FIC,.115)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 38 P, 39 fyrst-fyrst, 9 því-það
+*/
+( (IP-MAT (NP-SBJ (PRO-N Hún-hún))
+	  (VBDI bætti-bæta)
+	  (NP-OB1 (PRO-D því-það)
+		  (CP-THT-PRN *ICH*-1))
+	  (RP við-við)
+	  (, ,-,)
+	  (CP-THT-PRN-1 (C að-að)
+			(IP-SUB RMV:*exp*_til-til_þess-það...))
+	  (. .-.))
+  (ID 1883.VOGGUR.NAR-FIC,.115)) 
+
+/*
+FOOTER
+  source file, hits/tokens/total
+  1883.voggur.nar-fic.psd	1/1/130
+*/
+/*
+HEADER:
+source file:  1888.grimur.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1888.grimur.nar-fic.psd	0/0/625
+*/
+/*
+HEADER:
+source file:  1888.vordraumur.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1888.vordraumur.nar-fic.psd	0/0/759
+*/
+/*
+HEADER:
+source file:  1902.fossar.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1902.fossar.nar-fic.psd	0/0/1659
+*/
+/*
+HEADER:
+source file:  1907.leysing.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1907.leysing.nar-fic.psd	0/0/1521
+*/
+/*
+HEADER:
+source file:  1908.ofurefli.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1908.ofurefli.nar-fic.psd	0/0/1743
+*/
+/*
+HEADER:
+source file:  1920.arin.rel-ser.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1920.arin.rel-ser.psd	0/0/1149
+*/
+/*
+HEADER:
+source file:  1985.margsaga.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1985.margsaga.nar-fic.psd	0/0/1705
+*/
+/*
+HEADER:
+source file:  1985.sagan.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  1985.sagan.nar-fic.psd	0/0/2045
+*/
+/*
+HEADER:
+source file:  2008.mamma.nar-fic.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  2008.mamma.nar-fic.psd	0/0/1845
+*/
+/*
+HEADER:
+source file:  2008.ofsi.nar-sag.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  2008.ofsi.nar-sag.psd	0/0/1210
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  1150.firstgrammar.sci-lin.psd	0/0/183
+  1150.homiliubok.rel-ser.psd	0/0/2108
+  1210.jartein.rel-sag.psd	0/0/823
+  1210.thorlakur.rel-sag.psd	0/0/540
+  1250.sturlunga.nar-sag.psd	0/0/2225
+  1250.thetubrot.nar-sag.psd	0/0/246
+  1260.jomsvikingar.nar-sag.psd	0/0/1532
+  1270.gragas.law-law.psd	0/0/346
+  1275.morkin.nar-his.psd	0/0/2190
+  1300.alexander.nar-sag.psd	0/0/1383
+  1310.grettir.nar-sag.psd	0/0/2057
+  1325.arni.nar-sag.psd	0/0/1125
+  1350.bandamennM.nar-sag.psd	0/0/1223
+  1350.finnbogi.nar-sag.psd	0/0/2342
+  1350.marta.rel-sag.psd	0/0/977
+  1400.gunnar2.nar-sag.psd	0/0/340
+  1400.gunnar.nar-sag.psd	0/0/935
+  1400.viglundur.nar-sag.psd	0/0/1290
+  1450.bandamenn.nar-sag.psd	0/0/1034
+  1450.ectorssaga.nar-sag.psd	0/0/1950
+  1450.judit.rel-bib.psd	0/0/491
+  1450.vilhjalmur.nar-sag.psd	0/0/2414
+  1475.aevintyri.nar-rel.psd	0/0/1201
+  1480.jarlmann.nar-sag.psd	0/0/1282
+  1525.erasmus.nar-sag.psd	0/0/462
+  1525.georgius.nar-rel.psd	0/0/1062
+  1540.ntacts.rel-bib.psd	0/0/1183
+  1540.ntjohn.rel-bib.psd	1/1/1685
+  1593.eintal.rel-oth.psd	5/3/1553
+  1611.okur.rel-oth.psd	4/3/629
+  1628.olafuregils.bio-tra.psd	0/0/906
+  1630.gerhard.rel-oth.psd	1/1/701
+  1650.illugi.nar-sag.psd	0/0/1929
+  1659.pislarsaga.bio-aut.psd	2/1/324
+  1661.indiafari.bio-tra.psd	0/0/1388
+  1675.armann.nar-fic.psd	0/0/1018
+  1675.magnus.bio-oth.psd	0/0/204
+  1675.modars.nar-fic.psd	0/0/373
+  1680.skalholt.nar-rel.psd	0/0/869
+  1720.vidalin.rel-ser.psd	0/0/1112
+  1725.biskupasogur.nar-rel.psd	0/0/1105
+  1745.klim.nar-fic.psd	0/0/874
+  1790.fimmbraedra.nar-sag.psd	2/1/1602
+  1791.jonsteingrims.bio-aut.psd	0/0/1518
+  1830.hellismenn.nar-sag.psd	0/0/1411
+  1835.jonasedli.sci-nat.psd	0/0/161
+  1850.piltur.nar-fic.psd	0/0/1440
+  1859.hugvekjur.rel-ser.psd	0/0/1110
+  1861.orrusta.nar-fic.psd	0/0/1804
+  1882.torfhildur.nar-fic.psd	0/0/2000
+  1883.voggur.nar-fic.psd	1/1/130
+  1888.grimur.nar-fic.psd	0/0/625
+  1888.vordraumur.nar-fic.psd	0/0/759
+  1902.fossar.nar-fic.psd	0/0/1659
+  1907.leysing.nar-fic.psd	0/0/1521
+  1908.ofurefli.nar-fic.psd	0/0/1743
+  1920.arin.rel-ser.psd	0/0/1149
+  1985.margsaga.nar-fic.psd	0/0/1705
+  1985.sagan.nar-fic.psd	0/0/2045
+  2008.mamma.nar-fic.psd	0/0/1845
+  2008.ofsi.nar-sag.psd	0/0/1210
+whole search, hits/tokens/total
+		16/11/73051
+*/

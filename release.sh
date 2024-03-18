@@ -4,6 +4,7 @@ DIRNAME=$CORPUSNAME"-v"$VERSION"/"
 TEMPFILE="temp.psd"
 rm -rf $DIRNAME
 mkdir $DIRNAME
+cp cc-by-4.0.txt $DIRNAME"cc-by-4.0.txt"
 cp lgpl.txt $DIRNAME"lgpl.txt"
 cp gpl.txt $DIRNAME"gpl.txt"
 cp README $DIRNAME"README"

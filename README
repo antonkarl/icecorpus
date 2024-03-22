@@ -9,34 +9,26 @@ Note on Versions and Dates of Versions:
 
 This version, 2024.03, is the stable public release immediately following Version 0.9. (For all intents and purposes, this version is equivalent to a Version 1.0, though there is no "Version 1.0".) For future stable releases, we will continue to number versions with the format YYYY.MM corresponding to the date of release, rather than an arbitrary version number. We also continue to make public our working files for IcePaHC here: <https://github.com/antonkarl/icecorpus/tree/master/finished>. Note that the files at the above link are UNSTABLE; we may modify these at any point, and caution users who wish to use them to review the version histories of the relevant files in that depository.
 
-The texts found in this version are the as in Version 0.9. However, various parsing, tagging and lemmatization corrections have been made and some typos have also been corrected.
+The Icelandic Parsed Historical Corpus (IcePaHC) is a treebank that contains Icelandic texts organized by period. See the website, <http://linguist.is/wiki>, for further information. The texts found in this version are the same as in Version 0.9. However, various parsing, tagging and lemmatization corrections have been made and some typos have also been corrected.
 
 IcePaHC contains .psd, .tagged, .txt and .info files:
 
-* psd files contain the parsed text.
-* tagged files contain the original text together with morphological tags (e.g., NS-A, VAN) and lemmas.
-* txt files contain the raw text.
-* info files contain information about the texts in the corpus.
+– psd files contain the parsed text.
+– tagged files contain the original text together with morphological tags (e.g., NS-A, VAN) and lemmas.
+– txt files contain the raw text.
+– info files contain information about the texts in the corpus.
 
 Icelandic Parsed Historical Corpus (IcePaHC) 2024.03
 is free software: you can redistribute it and/or modify it under the terms of the Creative Commons Attribution International Public License (CC BY), either version 4.0 of the License, or (at your option) any later version. 
 
-(Note that IcePaHC v0.9 continues to be distributed under the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.)
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Lesser General Public License for more details.
-
 You should have received a copy of the Creative Commons Attribution 4.0 International Public License (CC BY 4.0). If not, it can be found at: <https://creativecommons.org/licenses/by/4.0>.
-
-The Icelandic Parsed Historical Corpus (IcePaHC) is a set of software tools for developing a treebank and a treebank that is developed using the same tools. The treebank contains Icelandic texts organized by period. See website, <http://linguist.is/wiki>, for further information.
 
 The original project was funded in part by the following grants:
 
-* From the Icelandic Research Fund (RANNÍS), grant nr. 090662011, Viable Language Technology beyond English – Icelandic as a test case.
-* From the U.S. National Science Foundation (NSF) International Research Fellowship Program (IRFP), grant #OISE-0853114, Evolution of Language Systems: a comparative study of grammatical change in Icelandic and English
-* From the ICT Policy Support Programme (EU 7th Framework), grant nr. 270899, META-NORD, Baltic and Nordic Parts of the European Open Linguistic Infrastructure.
+– From the Icelandic Research Fund (RANNÍS), grant nr. 090662011, Viable Language Technology beyond English – Icelandic as a test case.
+– From the U.S. National Science Foundation (NSF) International Research Fellowship Program (IRFP), grant #OISE-0853114, Evolution of Language Systems: a comparative study of grammatical change in Icelandic and English
+– From the ICT Policy Support Programme (EU 7th Framework), grant nr. 270899, META-NORD, Baltic and Nordic Parts of the European Open Linguistic Infrastructure.
 
 We would like to thank everyone who has contributed to this project in one way or another, including 
 Þórunn Arnardóttir, Jana Beck, Aaron Ecay, Hinrik Hafsteinsson, Anthony Kroch, Hulda Óladóttir, Kristján Rúnarsson, Beatrice Santorini, Brynhildur Stefánsdóttir.
+
